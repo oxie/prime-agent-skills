@@ -16,6 +16,7 @@ description: >
   unreachable config file; pair it with a CLAUDE.md instruction or a harness
   session-start hook (references/environments.md) — description matching
   alone is not enforceable.
+disable-model-invocation: true
 ---
 
 # Task Observer — Continuous Skill Discovery & Improvement

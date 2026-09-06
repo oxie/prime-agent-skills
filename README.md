@@ -14,7 +14,7 @@ Prime Agent discovers each child directory containing a valid `SKILL.md`. Start 
 
 | Skill | Purpose | Upstream |
 |---|---|---|
-| `task-observer` | Finds reusable skill ideas and improvements during tool-using work. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |
+| `task-observer` | Finds reusable skill ideas and improvements during tool-using work. Manual-only: `/skill:task-observer`. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |
 
 ## Validate
 

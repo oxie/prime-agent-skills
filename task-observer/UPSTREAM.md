@@ -7,3 +7,7 @@
 - License: CC BY 4.0; see `LICENSE.txt`
 
 The runnable bundle is `SKILL.md`, `references/`, and `scripts/`.
+
+## Prime Agent adaptation
+
+`disable-model-invocation: true` is added to `SKILL.md`. This keeps the broad Claude-oriented workflow manual-only during the Prime Agent trial. Invoke it with `/skill:task-observer`. No Claude hook, schedule, or autonomous review is installed.
