@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "tag": "v2.11.1",
+    "license": "MIT",
+    "tree": "e13a1d9e5500ab1390353c6c7d74499978e89603"
+  },
+  "installed_at": "2026-09-06",
+  "adaptation": "Prime Agent v0.9.2 safety-adapted runtime bundle",
+  "excluded": [
+    "tools/clis/",
+    "scripts/",
+    ".github/",
+    ".claude-plugin/",
+    "CLAUDE.md",
+    "AGENTS.md"
+  ],
+  "skills": [
+    {
+      "name": "ab-testing",
+      "version": "2.0.0",
+      "path": "skills/ab-testing",
+      "sha256": "b58fdd5da12a733397062c3bc73a6ef63d52438d03492d0f5e5f95bb17fbc481"
+    },
+    {
+      "name": "ad-creative",
+      "version": "2.8.2",
+      "path": "skills/ad-creative",
+      "sha256": "a3cb5d169ef82c76f69c021b84bc430c0e4122e868ddbcf3400db41cc35662f4"
+    },
+    {
+      "name": "ads",
+      "version": "2.3.2",
+      "path": "skills/ads",
+      "sha256": "cec2fc50e99ad2a8d6cec1dbf5336b8335ec617c6e5eda5fe0033eb774efa73c"
+    },
+    {
+      "name": "ai-seo",
+      "version": "2.5.0",
+      "path": "skills/ai-seo",
+      "sha256": "f794ef255f81166cb53d854fe61e255d8d16c2c2c26bd4b98e407dcb75973cf3"
+    },
+    {
+      "name": "analytics",
+      "version": "2.0.1",
+      "path": "skills/analytics",
+      "sha256": "291a87b3928610345cee2f5e25174e46ed382aa9692a3a4b40de7222894f0755"
+    },
+    {
+      "name": "aso",
+      "version": "2.0.1",
+      "path": "skills/aso",
+      "sha256": "153fc271b79c63d0a3e6c701efa50680a3392f24936d4d6b7c2fc7eb90999b68"
+    },
+    {
+      "name": "attribution",
+      "version": "1.1.0",
+      "path": "skills/attribution",
+      "sha256": "74857167fd568857e57bd4c12686e9ff3cd13ce1cfca5d79113a9e6d09c35809"
+    },
+    {
+      "name": "churn-prevention",
+      "version": "2.0.0",
+      "path": "skills/churn-prevention",
+      "sha256": "5dcdcc665ad5ef4f1e9ba38597873a7ea3048e40e5a90cac8c14ef401715a047"
+    },
+    {
+      "name": "co-marketing",
+      "version": "2.0.1",
+      "path": "skills/co-marketing",
+      "sha256": "9cf0ee5c85583c27350ee5c02613b818e8b339ae58f392a33f7838bbe971da0f"
+    },
+    {
+      "name": "cold-email",
+      "version": "2.0.0",
+      "path": "skills/cold-email",
+      "sha256": "ad533f77ed82cd1ae75837cd77d82548275870eb5ffe615e166b45fc6a56c625"
+    },
+    {
+      "name": "community-marketing",
+      "version": "2.0.1",
+      "path": "skills/community-marketing",
+      "sha256": "21a6e3431089bf1647531bc360a35c708ae0bfcfd0d9c813e9ef5e89cfe3e360"
+    },
+    {
+      "name": "competitor-profiling",
+      "version": "2.0.1",
+      "path": "skills/competitor-profiling",
+      "sha256": "f804f5cc6ad94279b9a64df8230b817604dc2fd6e50237e4ef400da887714689"
+    },
+    {
+      "name": "competitors",
+      "version": "2.0.1",
+      "path": "skills/competitors",
+      "sha256": "20120c1ed667def5d9cf745fca6d7b7b6b56b5133b5490c89c68bb0dd9327f9c"
+    },
+    {
+      "name": "content-strategy",
+      "version": "2.1.1",
+      "path": "skills/content-strategy",
+      "sha256": "416242b3e2b693744ff53b1ecdbedfba08e96110c25575a87a4eb7fba11d98e5"
+    },
+    {
+      "name": "copy-editing",
+      "version": "2.0.0",
+      "path": "skills/copy-editing",
+      "sha256": "3e77acb982a504a365808b72ca543ae367fc755f125d5c387cf4a19658f894d1"
+    },
+    {
+      "name": "copywriting",
+      "version": "2.0.2",
+      "path": "skills/copywriting",
+      "sha256": "abf836047d04efb2813590a69e2a62ce43e89df405dadd94d78a6eab449baf51"
+    },
+    {
+      "name": "cro",
+      "version": "2.0.0",
+      "path": "skills/cro",
+      "sha256": "57560fababd78b628d7b149a5a19a005c276ab22dca8e5b35ab42ae53ab5c451"
+    },
+    {
+      "name": "customer-research",
+      "version": "2.0.2",
+      "path": "skills/customer-research",
+      "sha256": "677ee8a891a47431ddbb843c9a7bec02fe3bc18de6ecb6b6a9350b6f7f67a97b"
+    },
+    {
+      "name": "directory-submissions",
+      "version": "2.0.0",
+      "path": "skills/directory-submissions",
+      "sha256": "e5062df386ae6c9ffc4e7f6427211d4b5e246ab80711fa92b6407e21b6e55522"
+    },
+    {
+      "name": "emails",
+      "version": "2.0.0",
+      "path": "skills/emails",
+      "sha256": "523c5b1da408cef0adba1376f69ace6ec1814ee5590b4fffd1e90eda28991b27"
+    },
+    {
+      "name": "events",
+      "version": "1.0.0",
+      "path": "skills/events",
+      "sha256": "d3c5176a3abbd0ade03acb7b74d0a9973c569f1a8d76c0b94249577bf9477a27"
+    },
+    {
+      "name": "free-tools",
+      "version": "2.0.1",
+      "path": "skills/free-tools",
+      "sha256": "051feb61e0ffeb884b3c9b02d33bcd3426b350ec2c5c32b8fef9e57e1a321ab9"
+    },
+    {
+      "name": "image",
+      "version": "2.0.1",
+      "path": "skills/image",
+      "sha256": "c141152285132480b0f70493192686755ae4bdfef1c50ecc7c66a4077d8d0ea0"
+    },
+    {
+      "name": "influencer-marketing",
+      "version": "1.1.0",
+      "path": "skills/influencer-marketing",
+      "sha256": "0319c916af919912c044bf7db55732babd7ad314a664f193ce8732f9626415f5"
+    },
+    {
+      "name": "launch",
+      "version": "2.0.2",
+      "path": "skills/launch",
+      "sha256": "033b0c56be9fe93c103417de6026c23a5406d12545cc41cbf70f89e90802e0a8"
+    },
+    {
+      "name": "lead-magnets",
+      "version": "2.0.0",
+      "path": "skills/lead-magnets",
+      "sha256": "6088e4787cd7bfcc4e83dd4d42cf3a883edf960d3687148b82d5d850b5027a54"
+    },
+    {
+      "name": "marketing-council",
+      "version": "1.0.0",
+      "path": "skills/marketing-council",
+      "sha256": "a26b019bb91a36ef9d73e6f439ef20db2dd1d2436d60dc1698936a2989029125"
+    },
+    {
+      "name": "marketing-ideas",
+      "version": "2.0.1",
+      "path": "skills/marketing-ideas",
+      "sha256": "a17c6bea1ae9c004d337690d9aee90f62839c20a87b6128f58d54c2300e160ea"
+    },
+    {
+      "name": "marketing-loops",
+      "version": "1.2.0",
+      "path": "skills/marketing-loops",
+      "sha256": "0b094af7e800f540b4f5aef6d1921f5e7d45ae63bccf1cbe2c08b06d3aacedde"
+    },
+    {
+      "name": "marketing-plan",
+      "version": "1.1.1",
+      "path": "skills/marketing-plan",
+      "sha256": "b89a2ef27ff7292235db9545616739e9a128932bd865d66185ecec1048d73591"
+    },
+    {
+      "name": "marketing-psychology",
+      "version": "2.0.0",
+      "path": "skills/marketing-psychology",
+      "sha256": "c10a28ed369d5d38f13b628fb611dc4d3dd43a61596fc0c6373e825a03f65c6c"
+    },
+    {
+      "name": "offers",
+      "version": "1.0.1",
+      "path": "skills/offers",
+      "sha256": "dde9cbcf1e4a63668f01fb3ae3dfcbabc6e3c23b4ea2a4a2670b579da9472b52"
+    },
+    {
+      "name": "onboarding",
+      "version": "2.0.1",
+      "path": "skills/onboarding",
+      "sha256": "712ef297715ae1a4a57469d0f5105f4232f9f3a95724a1fc3199c148cdaf2d88"
+    },
+    {
+      "name": "paywalls",
+      "version": "2.0.0",
+      "path": "skills/paywalls",
+      "sha256": "8e88bf14a124b1fd6fa093cb20dea785656dcb9a7675bb7c9546a19e27103733"
+    },
+    {
+      "name": "popups",
+      "version": "2.0.0",
+      "path": "skills/popups",
+      "sha256": "ffcac52cde62da555745047eca9f36dc565e02ef79e755499cdb19a9ab5dd672"
+    },
+    {
+      "name": "pricing",
+      "version": "2.1.1",
+      "path": "skills/pricing",
+      "sha256": "0f998e750a0c057c367d696b63fdaf708b72c4b106aa052ce51d7959da282b64"
+    },
+    {
+      "name": "product-marketing",
+      "version": "2.1.0",
+      "path": "skills/product-marketing",
+      "sha256": "f0c86bf50fbcb9d0c08092662e20126ec404e40551db3e0629cfdc0312bb7b7d"
+    },
+    {
+      "name": "programmatic-seo",
+      "version": "2.0.0",
+      "path": "skills/programmatic-seo",
+      "sha256": "5f9c1c4449f1558a6812f0ef47d6ab3a7b9a6bb00fc0b8f809fcef1b45233588"
+    },
+    {
+      "name": "prospecting",
+      "version": "1.1.0",
+      "path": "skills/prospecting",
+      "sha256": "d0d7f5164a906d4aa2aabd72a870a33bcecb4e9b43fb7b6bbf80dda6d85d9e1b"
+    },
+    {
+      "name": "public-relations",
+      "version": "1.1.1",
+      "path": "skills/public-relations",
+      "sha256": "3a170c641ef78a4b697b19f7f6e67b42885545041abb4362afef79dfae965382"
+    },
+    {
+      "name": "referrals",
+      "version": "2.0.1",
+      "path": "skills/referrals",
+      "sha256": "e51cefeb8b2d0c4bf1aee6a64e43f952e88cac60a23d159f18c43295b11fd724"
+    },
+    {
+      "name": "revops",
+      "version": "2.0.0",
+      "path": "skills/revops",
+      "sha256": "48fa34ba3b952f2ef3d8362162d46073f3dbbdfbc2aa966ad63770c215860884"
+    },
+    {
+      "name": "sales-enablement",
+      "version": "2.0.1",
+      "path": "skills/sales-enablement",
+      "sha256": "665ad5bf8a5d22bd4e48d45f9e5ceb4a76a87692a4ce4500a10acbf1f6f6865b"
+    },
+    {
+      "name": "schema",
+      "version": "2.0.0",
+      "path": "skills/schema",
+      "sha256": "a45054c4b234f6bd076e4817a6e3faef726e129f844c92720b8e35fe7ae2dddd"
+    },
+    {
+      "name": "seo-audit",
+      "version": "2.0.1",
+      "path": "skills/seo-audit",
+      "sha256": "649205b30c2e4de96866035d729a634987bafdab527f7da7017677fda69f2213"
+    },
+    {
+      "name": "signup",
+      "version": "2.0.0",
+      "path": "skills/signup",
+      "sha256": "37c88090ab780f3b3d102f0f7aee76c51b17d6b1feaee9f1bd457caa188b7aa1"
+    },
+    {
+      "name": "site-architecture",
+      "version": "2.0.0",
+      "path": "skills/site-architecture",
+      "sha256": "c7709bb2807efba65723fe02814d0743a9cf1cb77c843f59d3907875b9e96c7d"
+    },
+    {
+      "name": "sms",
+      "version": "1.0.0",
+      "path": "skills/sms",
+      "sha256": "da3e257aca5691f1192ee695e47fdb6e9bc87f8924afa86b0c65e43bf3965f8e"
+    },
+    {
+      "name": "social",
+      "version": "2.2.0",
+      "path": "skills/social",
+      "sha256": "f6fb747c5cda4483560795c652b3d2fb68dd2a1787ec29b1701d43ac39463f38"
+    },
+    {
+      "name": "video",
+      "version": "2.1.0",
+      "path": "skills/video",
+      "sha256": "7be442c96d0a7d8e79b2d8c3e37748a904184e2334b9e02783ad9a44c63c6335"
+    }
+  ]
+}
