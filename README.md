@@ -17,9 +17,9 @@ Prime Agent discovers each child directory containing a valid `SKILL.md`. Start 
 
 | Skill | Purpose | Upstream |
 |---|---|---|
-| `task-observer` | Always-on observation during user-started tool sessions. Uses Prime's continual harness and `refine` as its only persistence path. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |
+| `task-observer` | Always-on observation during user-started tool sessions. Uses Prime's continual harness for decisions and isolated Git proposal branches for tested installable-skill improvements. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |
 
-Task Observer does not create a parallel filesystem log, Claude hook, schedule, heartbeat, or background daemon. Installable skill source remains authoritative in this Git repository.
+Task Observer does not create a parallel observation log, Claude hook, schedule, heartbeat, or background daemon. It may autonomously prepare and commit tested changes in isolated `observer/...` proposal branches. It cannot merge into live `main` or push without explicit approval.
 
 ## Validate
 

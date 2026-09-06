@@ -112,23 +112,43 @@ result artifact and parent message. The root decides whether to call
 If `refine` is unavailable in a root session, do not fall back to a filesystem
 log. State once at delivery that the candidate was not persisted.
 
-## Git-synced installable skills
+## Autonomous Git-synced skill improvement
 
 The Git repository at `~/.prime/agent/skills` is authoritative for installable
-skill source. Observation alone does not authorize changing that source.
+skill source. Task Observer may autonomously turn a strong skill-specific
+observation into a **tested proposal commit**. It must not change the live
+`main` checkout, merge, or push merely from an observation.
 
-When the user asks to create or update an installable skill:
+For a concrete improvement:
 
-1. Load the built-in `skill-creator` instructions.
-2. Inspect upstream code and executable behavior before installation.
-3. Edit the Git working tree under `~/.prime/agent/skills/<name>/`.
-4. Run the skill's validator and a fresh Prime Agent discovery/invocation test.
-5. Scan the staged diff for credentials before commit or push.
-6. Commit and sync only after the requested change is validated.
+1. Schedule the focused `refine` candidate in the root session. The harness
+   records the reusable decision; it must not contain the full patch.
+2. Load `references/prime-skill-maintenance.md` and follow it exactly.
+3. Create a unique `observer/<skill>/...` branch in an isolated worktree under
+   `~/.prime/agent/skill-worktrees/`, outside every skill-discovery directory.
+4. Load the built-in `skill-creator` instructions, inspect the target and its
+   provenance, and make the smallest evidence-backed change in that worktree.
+5. Run applicable validation, tests, a secret scan, and a fresh Prime Agent
+   test when routing or executable behavior changes.
+6. Commit a passing proposal on its branch and report the evidence, risk,
+   branch, commit, diff, tests, and exact approval needed.
+7. Merge into live `main` and push only after explicit user approval, then
+   revalidate the merged skill and verify the remote state.
 
-If an observation suggests a future installable skill but the user did not ask
-for implementation, preserve only the focused candidate through `refine`; do
-not silently edit or publish skill source.
+Low-risk Markdown, reference, routing, and test improvements may be authored,
+validated, and committed as proposals without asking first. Scripts,
+dependencies, hooks, network or credential behavior, destructive commands,
+global activation, provider configuration, and changes to `task-observer`
+itself are controlled-risk: prepare and inspect the diff, but get approval
+before executing changed code, merging, or pushing.
+
+Do not patch built-in skills inside Prime Agent's installed package; updates
+would overwrite them. Preserve those candidates through `refine` and propose
+an upstream contribution or an explicitly approved Git-managed override.
+
+A repeated, well-defined missing workflow may become a complete new-skill
+proposal by the same process. Weak or ambiguous candidates remain harness
+refinements only. Never create placeholder skill directories.
 
 ## Safety and autonomy boundary
 
