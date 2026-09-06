@@ -1,0 +1,63 @@
+{
+  "exitCode": 1,
+  "receipt": {
+    "schemaVersion": 1,
+    "ok": false,
+    "command": "visual-check",
+    "evidenceKind": "automated-browser",
+    "status": "fail",
+    "visualReview": "pending",
+    "artifact": {
+      "path": "/tmp/archify-prime-browser-9mPEHr/missing-svg.html",
+      "sha256": "a637575b0127c3c423b909b3803ad616e034e30f357810abd51b30c910d3165b",
+      "bytes": 46
+    },
+    "state": {
+      "detail": "read",
+      "motion": "still"
+    },
+    "chrome": {
+      "status": "available",
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome"
+    },
+    "diagnostics": [
+      {
+        "code": "viewer/visual-check-runtime",
+        "severity": "error",
+        "message": "visual-check could not complete its Chrome inspection.",
+        "subject": {
+          "artifact": "/tmp/archify-prime-browser-9mPEHr/missing-svg.html"
+        },
+        "evidence": {
+          "reason": "Error: Missing rendered SVG, labels, or initialized Archify reader runtime\n    at <anonymous>:11:15\n    at <anonymous>:80:7"
+        },
+        "supportedFixes": [
+          "resolve the reported Chrome inspection error, then rerun visual-check"
+        ]
+      }
+    ],
+    "containment": {
+      "status": "fail",
+      "viewports": []
+    },
+    "readability": {
+      "status": "fail",
+      "minimumProjectedNodeTextPx": 6,
+      "viewports": []
+    },
+    "viewerChrome": {
+      "status": "fail",
+      "viewports": []
+    },
+    "captures": {
+      "status": "fail",
+      "screenshots": [],
+      "contactSheet": null
+    },
+    "sidecars": {
+      "receipt": "missing-svg.visual-check.json",
+      "contactSheet": "missing-svg.visual-check.html"
+    },
+    "error": "Error: Missing rendered SVG, labels, or initialized Archify reader runtime\n    at <anonymous>:11:15\n    at <anonymous>:80:7"
+  }
+}

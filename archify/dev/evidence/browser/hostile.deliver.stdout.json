@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/tmp/archify-prime-browser-9mPEHr/hostile.json",
+  "output": "/tmp/archify-prime-browser-9mPEHr/hostile.html",
+  "specification": {
+    "sha256": "c7b5c0a6e095c7ec23828dcfa26b6169f492f7d6242eb5c1fb1f73507522e88f",
+    "bytes": 504
+  },
+  "artifact": {
+    "sha256": "f4d05fa7bcd3b3543ddae4c57594759c0c4763080dc9a8339119c882aff3c1cd",
+    "bytes": 695744
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "standard",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

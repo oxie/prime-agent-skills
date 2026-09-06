@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/home/prime-agent/.prime/agent/skill-worktrees/archify-prime-20260906T211831Z/archify/examples/web-app.architecture.json",
+  "output": "/tmp/archify-prime-browser-9mPEHr/canonical.html",
+  "specification": {
+    "sha256": "483350f5297df682aba4e4a0fa491307ce3d3abd725ae4df07fab177490752cf",
+    "bytes": 3793
+  },
+  "artifact": {
+    "sha256": "f569fb5f079086a711665df3aec4df699ac68ba85bab36b896f0fe55249851c5",
+    "bytes": 715009
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "standard",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}
