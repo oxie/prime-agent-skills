@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repair Circle</title>
+  <link rel="stylesheet" href="tokens.css">
+  <style>
+body.repair-page {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font);
+}
+.repair-page .site-nav,
+.repair-page .page-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 4rem);
+}
+.repair-page .site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.repair-page .site-nav a { max-width: 100%; line-height: 1.5; }
+.repair-page .site-nav a:first-child { font-size: 1.25rem; font-weight: bold; }
+.repair-page .site-nav a:last-child { max-width: 28rem; }
+.repair-page a { color: var(--brand); text-underline-offset: 0.2em; }
+.repair-page a:hover { text-decoration-thickness: 0.15em; }
+.repair-page a:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 5px;
+}
+.repair-page h1,
+.repair-page h2,
+.repair-page p { margin: 0; }
+.repair-page p { max-width: 50ch; line-height: 1.65; }
+.repair-page h2 { font-size: 1.5rem; line-height: 1.25; }
+.repair-page #booking { scroll-margin-top: 2rem; }
+
+.repair-page .page-content { padding-block: clamp(2.5rem, 7vw, 6rem); }
+.repair-page .action-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+.repair-page .introduction h1 {
+  max-width: 12ch;
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  line-height: 1.05;
+  font-weight: normal;
+}
+.repair-page .introduction p { margin-top: 1.5rem; font-size: 1.25rem; }
+.repair-page .action-panel {
+  border-block: 3px solid var(--brand);
+  padding-block: 2rem;
+}
+.repair-page .booking-link {
+  display: block;
+  box-sizing: border-box;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  color: var(--paper);
+  background: var(--brand);
+  font-size: clamp(1.375rem, 2.8vw, 2rem);
+  line-height: 1.35;
+  text-decoration-thickness: 1px;
+}
+.repair-page .booking-information {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1.25rem 3rem;
+  margin-top: clamp(2.5rem, 7vw, 5rem);
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.repair-page .booking-information p { font-size: 1.0625rem; }
+@media (max-width: 44rem) {
+  .repair-page .action-grid,
+  .repair-page .booking-information { grid-template-columns: minmax(0, 1fr); }
+  .repair-page .action-panel { padding-block: 1.25rem; }
+}
+  </style>
+</head>
+<body class="repair-page">
+<nav class="site-nav" aria-label="Main">
+  <a href="#services">Repair Circle</a>
+  <a href="#booking">Find a repair session near your neighbourhood</a>
+</nav>
+<main class="page-content" id="services" data-variate-section="index">
+  <div class="action-grid">
+    <div class="introduction">
+      <h1>Repair what you love.</h1>
+      <p>Bring one broken household item. Work alongside a volunteer to explore a repair.</p>
+    </div>
+    <div class="action-panel">
+      <a class="booking-link" href="#booking">Find a repair session near your neighbourhood</a>
+    </div>
+  </div>
+  <section class="booking-information" id="booking" aria-labelledby="booking-heading">
+    <h2 id="booking-heading">Booking information</h2>
+    <p>Contact your local organiser for dates and access needs. This prototype does not submit bookings.</p>
+  </section>
+</main>
+</body>
+</html>

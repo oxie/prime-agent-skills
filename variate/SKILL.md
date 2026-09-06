@@ -83,6 +83,14 @@ chat decisions when secure browser access is unavailable.
 Tell the user: arrows switch real files; Keep/Refine queues a decision. Send a chat
 message when ready for the agent to handle it. Do not imply clicks wake an idle agent.
 
+## Design guidance with Hallmark
+
+For requested visual alternatives, use the installed [Hallmark skill](../hallmark/SKILL.md)
+to choose deliberate structures and tradeoffs when useful. Preserve the user's existing
+system. Hallmark guides the drafts; Variate still owns the one-file round, baseline,
+queue and cleanup. Do not create shared token files, global styles or design logs during
+a round. A multi-file direction requires separate approved preparation before registration.
+
 ## Continue without waiting
 
 During an active, relevant design session, inspect once with

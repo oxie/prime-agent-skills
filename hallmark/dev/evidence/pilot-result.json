@@ -1,0 +1,115 @@
+{
+  "browser": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+  "node": "v22.22.2",
+  "startedAt": "2026-09-06T21:00:36.074Z",
+  "checks": [
+    {
+      "name": "real Chromium CDP connected"
+    },
+    {
+      "name": "drafts leave live file baseline and shared tokens unchanged"
+    },
+    {
+      "name": "real card arrow switches to Hallmark draft 2"
+    },
+    {
+      "name": "draft 2: 1280px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 2: 768px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 2: 414px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 2: 375px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 2: 320px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 2: 200% root text scaling at 375px without horizontal overflow"
+    },
+    {
+      "name": "draft 2: real Tab focus and Enter activation; measured focus contrast",
+      "contrast": 6.719839888764607
+    },
+    {
+      "name": "draft 2: reduced-motion preference exercised with no page animation"
+    },
+    {
+      "name": "real card arrow switches to Hallmark draft 3"
+    },
+    {
+      "name": "draft 3: 1280px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 3: 768px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 3: 414px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 3: 375px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 3: 320px reflow, intact copy/nav, existing font-family configuration/palette and measured body/action contrast",
+      "bodyContrast": 15.863181573813568,
+      "actionContrast": 6.719839888764607
+    },
+    {
+      "name": "draft 3: 200% root text scaling at 375px without horizontal overflow"
+    },
+    {
+      "name": "draft 3: real Tab focus and Enter activation; measured focus contrast",
+      "contrast": 6.719839888764607
+    },
+    {
+      "name": "draft 3: reduced-motion preference exercised with no page animation"
+    },
+    {
+      "name": "distinct rendered compositions and no page JavaScript exceptions"
+    },
+    {
+      "name": "keep uses trusted snapshot, claim and full end; shared tokens intact and no extra project files"
+    }
+  ],
+  "screenshots": [
+    "draft-2-1280.png",
+    "draft-2-320.png",
+    "draft-3-1280.png",
+    "draft-3-320.png"
+  ],
+  "browserVersion": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/152.0.7977.64",
+    "revision": "@506c834ecceaa943c5f41e6cfe7f68acb5c45346",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "jsVersion": "15.2.124.18"
+  },
+  "status": "passed",
+  "browserExit": {
+    "code": 0,
+    "signal": null
+  },
+  "finishedAt": "2026-09-06T21:00:43.203Z",
+  "fixturesRemoved": true
+}

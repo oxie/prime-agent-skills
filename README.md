@@ -13,12 +13,14 @@ python3 ~/.prime/agent/skills/activate.py
 
 A skill or standing-instruction change is considered synced only after validation, commit, push to this repository's configured `origin`, and remote-ref verification. Project-scoped home instructions are mirrored in `config/projects/prime-agent-home/AGENTS.md`; global instructions remain in `config/AGENTS.md`. If authentication blocks the push, record and report the pending commit rather than claiming completion.
 
+The root `.ignore` excludes only this repository README from loose-Markdown skill parsing.
 Prime Agent discovers directories containing a valid `SKILL.md` recursively. Start a new session or run `/reload` after changes.
 
 ## Skills
 
 | Skill | Purpose | Upstream |
 |---|---|---|
+| `hallmark` | Lean, project-first visual design, audit and screenshot study; design guidance for Variate rounds. | [nutlope/hallmark](https://github.com/nutlope/hallmark) @ `13ac0ec` (curated Prime adaptation) |
 | `variate` | On-demand design alternatives with a foreground localhost preview and Prime-native, nonblocking decisions. | [Nutlope/variate](https://github.com/Nutlope/variate) @ `3a82377` (reviewed local adaptation) |
 | `task-observer` | Always-on observation during user-started tool sessions. Uses Prime's continual harness for decisions and isolated Git proposal branches for tested installable-skill improvements. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |
 | `marketingskills` (50 skills) | Pinned, Prime-adapted marketing strategy and execution guidance. Content-only install; API CLIs and upstream automation are excluded. | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) @ `5b2c000` |

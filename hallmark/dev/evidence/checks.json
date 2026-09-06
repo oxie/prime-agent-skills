@@ -1,0 +1,28 @@
+{
+  "node": "v22.22.2",
+  "prime": "0.9.3",
+  "contracts": {
+    "exit": 0,
+    "tests": 13
+  },
+  "variate": {
+    "cli": 61,
+    "http": 16,
+    "exit": 0
+  },
+  "harness": {
+    "unit_tests": 45,
+    "exit": 0
+  },
+  "discovery": {
+    "skills": 53,
+    "diagnostics": [],
+    "commands": [
+      "skill:hallmark",
+      "skill:variate"
+    ],
+    "exit": 0,
+    "model_request": false
+  },
+  "browser_checks": 22
+}
