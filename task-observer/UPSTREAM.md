@@ -6,8 +6,17 @@
 - Commit: `2967fa5f2f16336677d216fe83d9832a52aadc00`
 - License: CC BY 4.0; see `LICENSE.txt`
 
-The runnable bundle is `SKILL.md`, `references/`, and `scripts/`.
+The bundled `references/` and `scripts/` come from the reviewed upstream release.
+The original upstream `SKILL.md` is preserved in Git history at commit
+`1721278` in this repository.
 
 ## Prime Agent adaptation
 
-`disable-model-invocation: true` is added to `SKILL.md`. This keeps the broad Claude-oriented workflow manual-only during the Prime Agent trial. Invoke it with `/skill:task-observer`. No Claude hook, schedule, or autonomous review is installed.
+The active `SKILL.md` is rewritten as a concise Prime-native adapter. It uses
+Prime Agent's continual harness and `refine` as the sole durable observation
+and refinement authority. It does not create the upstream filesystem backlog,
+install a Claude hook, or enable schedules, heartbeats, autonomous background
+runs, retained workers, or daemons.
+
+Global in-session activation is versioned at `config/AGENTS.md` and installed
+safely by the repository's `activate.py`.
