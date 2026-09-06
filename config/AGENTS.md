@@ -30,3 +30,9 @@ been validated.
 
 Casual conversation and factual answers that require no tools do not need
 activation.
+
+## Git synchronization invariant
+
+`~/.prime/agent/skills` is the authoritative Git checkout for installed skills. A user-requested skill installation, update, removal, or approved Task Observer merge is not complete or synced until the change is validated, committed, pushed to its configured `origin`, and the remote ref is verified at the intended commit.
+
+If authentication, network access, or a remote conflict blocks the push, report the exact pending commit and ahead/behind state. Never claim that the change is synced. Resume the push after secure authentication is available. Never place tokens in skill files, repository files, remotes, Git configuration, command arguments, logs, or continual-harness entries. Task Observer proposal branches remain approval-gated as described in its maintenance workflow.

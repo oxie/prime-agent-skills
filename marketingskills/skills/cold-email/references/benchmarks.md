@@ -1,3 +1,4 @@
+<!-- task-observer: allow-template-placeholders -->
 # Benchmarks, Data & Expert Methods
 
 ## Core Performance Metrics (2024–2025)

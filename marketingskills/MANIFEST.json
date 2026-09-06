@@ -46,7 +46,7 @@
       "name": "analytics",
       "version": "2.0.1",
       "path": "skills/analytics",
-      "sha256": "291a87b3928610345cee2f5e25174e46ed382aa9692a3a4b40de7222894f0755"
+      "sha256": "de69fbaf305511539464ce2022a1377ddec86067c5362a4f9297290832fb4558"
     },
     {
       "name": "aso",
@@ -76,7 +76,7 @@
       "name": "cold-email",
       "version": "2.0.0",
       "path": "skills/cold-email",
-      "sha256": "ad533f77ed82cd1ae75837cd77d82548275870eb5ffe615e166b45fc6a56c625"
+      "sha256": "b8b5ba0d273a679204663a2af93730af2394277d05e6734617cdc4cce43d6c9a"
     },
     {
       "name": "community-marketing",

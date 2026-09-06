@@ -30,5 +30,6 @@
 - Rewrote links to excluded CLI sources as pinned upstream GitHub links.
 - Replaced the ad-review HTML template's real-brand health/discount claims with neutral placeholders.
 - Removed one upstream trailing-space defect so `git diff --check` passes.
+- Added explicit Task Observer validation markers to reviewed files that intentionally use mail-merge or Google Tag Manager `{{...}}` syntax.
 
 These local changes are intended to preserve Prime Agent compatibility and safety. Review and reapply them when updating from upstream.

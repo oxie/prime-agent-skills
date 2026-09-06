@@ -1,3 +1,4 @@
+<!-- task-observer: allow-template-placeholders -->
 # Google Tag Manager Implementation Reference
 
 Detailed guide for implementing tracking via Google Tag Manager.

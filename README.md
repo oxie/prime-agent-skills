@@ -11,6 +11,8 @@ python3 ~/.prime/agent/skills/activate.py
 
 `activate.py` creates `~/.prime/agent/AGENTS.md` as a symlink to the versioned global instructions in this repository. It refuses to overwrite an existing file.
 
+A skill change is considered synced only after validation, commit, push to this repository's configured `origin`, and remote-ref verification. If authentication blocks the push, record and report the pending commit rather than claiming completion.
+
 Prime Agent discovers directories containing a valid `SKILL.md` recursively. Start a new session or run `/reload` after changes.
 
 ## Skills

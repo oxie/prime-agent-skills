@@ -1,3 +1,4 @@
+<!-- task-observer: allow-template-placeholders -->
 # Cold Email Copywriting Frameworks
 
 Frameworks beat templates — they teach thinking patterns, not copy-paste shortcuts.

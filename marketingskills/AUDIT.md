@@ -32,7 +32,7 @@ The upstream checkout includes 64 credentialed Node API clients, executable repo
 - All local Markdown links resolve, using a stricter scan that also inspected code fences.
 - No symlink, executable bit, executable source extension, or common credential/private-key pattern was found in the installed set.
 - The upstream validator passed all 50 source bundles before adaptation.
-- The local Task Observer bundle gate passes 48/50 adapted bundles. Its two remaining failures are expected false positives for intentional `{...}` marketing/data-layer template placeholders in `analytics` and `cold-email`; custom parsing and Prime discovery pass both.
+- The local Task Observer bundle gate passes 50/50 adapted bundles. Reviewed `analytics` and `cold-email` files use an explicit file-local marker for intentional `{{...}}` Google Tag Manager and mail-merge syntax; the validator emits warnings for those exceptions while keeping all other residue checks active.
 
 ## Remaining use-time risks
 

@@ -20,3 +20,5 @@ runs, retained workers, or daemons. Concrete installed-skill improvements are pr
 
 Global in-session activation is versioned at `config/AGENTS.md` and installed
 safely by the repository's `activate.py`.
+
+The Prime validator supports an explicit, file-local `<!-- task-observer: allow-template-placeholders -->` marker within the first 20 lines for reviewed documents that intentionally use moustache syntax. The exception applies only to the template-slot residue check and emits a warning.

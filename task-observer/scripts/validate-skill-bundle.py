@@ -32,6 +32,7 @@ MAX_DESCRIPTION_CHARS = 1024   # installer's documented cap on the folded descri
 NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")   # kebab-case
 PATH_RE = re.compile(r"`((?:references|scripts|assets)/[^`\s*?]+\.[A-Za-z0-9]+)`")
 BUILD_JUNK = {"__pycache__", ".DS_Store"}
+TEMPLATE_SLOT_ALLOW_MARKER = "<!-- task-observer: allow-template-placeholders -->"
 # Edit residue: strings that only ever enter a file through a failed
 # replacement, an unresolved template slot or an unfinished merge. The gate
 # checks bundle FORM; this is the one CONTENT assertion, because a literal
@@ -115,7 +116,19 @@ def check_dir(skill_dir, fails):
             # fenced blocks and inline spans, keeping line numbers intact
             prose = re.sub(r"(?ms)^```.*?^```[ \t]*$", lambda m: re.sub(r"[^\n]", " ", m.group(0)), body)
             prose = re.sub(r"`[^`\n]*`", lambda m: " " * len(m.group(0)), prose)
+            # Moustache syntax is also legitimate domain content (for example,
+            # mail-merge fields and Google Tag Manager variables). Keep the
+            # default strict, but allow a visible file-local exception near the
+            # top of a reviewed document instead of weakening every scan.
+            allow_template_slots = any(
+                line.strip() == TEMPLATE_SLOT_ALLOW_MARKER
+                for line in body.splitlines()[:20]
+            )
+            if allow_template_slots:
+                print(f"warn: intentional template placeholders allowed in {p.relative_to(skill_dir)}")
             for rx, why in RESIDUE_RES:
+                if why == "unresolved template slot" and allow_template_slots:
+                    continue
                 m = rx.search(prose)
                 if m:
                     line = body.count("\n", 0, m.start()) + 1
