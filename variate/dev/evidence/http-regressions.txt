@@ -1,0 +1,106 @@
+TAP version 13
+# Subtest: Nuxt collision preserves unmarked user plugin
+ok 1 - Nuxt collision preserves unmarked user plugin
+  ---
+  duration_ms: 8.843031
+  type: 'test'
+  ...
+# Subtest: generated plugin deletion requires its recorded hash
+ok 2 - generated plugin deletion requires its recorded hash
+  ---
+  duration_ms: 129.786052
+  type: 'test'
+  ...
+# Subtest: attachment removes only its marked lines in an existing file
+ok 3 - attachment removes only its marked lines in an existing file
+  ---
+  duration_ms: 45.608782
+  type: 'test'
+  ...
+# Subtest: pre-existing ignore rules and legacy ownership are preserved
+ok 4 - pre-existing ignore rules and legacy ownership are preserved
+  ---
+  duration_ms: 2.191662
+  type: 'test'
+  ...
+# Subtest: owned ignore rules are removed without deleting user additions
+ok 5 - owned ignore rules are removed without deleting user additions
+  ---
+  duration_ms: 14.129703
+  type: 'test'
+  ...
+# Subtest: attachment and ignore writes reject symlink files and parents
+ok 6 - attachment and ignore writes reject symlink files and parents
+  ---
+  duration_ms: 16.397657
+  type: 'test'
+  ...
+# Subtest: Vite attachment remains valid after multiline imports and restores exact bytes
+ok 7 - Vite attachment remains valid after multiline imports and restores exact bytes
+  ---
+  duration_ms: 206.636029
+  type: 'test'
+  ...
+# Subtest: frameworks without a reviewed body anchor return an error without writes
+ok 8 - frameworks without a reviewed body anchor return an error without writes
+  ---
+  duration_ms: 10.932973
+  type: 'test'
+  ...
+# Subtest: HTTP static serving refuses direct and resolved hidden paths, allows safe aliases
+ok 9 - HTTP static serving refuses direct and resolved hidden paths, allows safe aliases
+  ---
+  duration_ms: 139.79569
+  type: 'test'
+  ...
+# Subtest: actual HTTP Host, Origin and Bearer boundaries still gate reads and writes
+ok 10 - actual HTTP Host, Origin and Bearer boundaries still gate reads and writes
+  ---
+  duration_ms: 95.434386
+  type: 'test'
+  ...
+# Subtest: HTTP switches reject symlinked targets without altering the victim
+ok 11 - HTTP switches reject symlinked targets without altering the victim
+  ---
+  duration_ms: 11.010477
+  type: 'test'
+  ...
+# Subtest: sidecar startup refuses token and state symlink write paths
+ok 12 - sidecar startup refuses token and state symlink write paths
+  ---
+  duration_ms: 13.572558
+  type: 'test'
+  ...
+# Subtest: HTTP switch checks breadcrumb paths before changing the target
+ok 13 - HTTP switch checks breadcrumb paths before changing the target
+  ---
+  duration_ms: 19.13302
+  type: 'test'
+  ...
+# Subtest: startup rejects a late symlink ledger and tears down its socket
+ok 14 - startup rejects a late symlink ledger and tears down its socket
+  ---
+  duration_ms: 4.977007
+  type: 'test'
+  ...
+# Subtest: HTTP shutdown closes only the sidecar, including SSE, not its host process
+ok 15 - HTTP shutdown closes only the sidecar, including SSE, not its host process
+  ---
+  duration_ms: 18.028217
+  type: 'test'
+  ...
+# Subtest: HTTP switch refuses the shared cleanup lock without changing target
+ok 16 - HTTP switch refuses the shared cleanup lock without changing target
+  ---
+  duration_ms: 11.71185
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 731.473005

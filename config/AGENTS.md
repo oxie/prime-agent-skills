@@ -33,6 +33,13 @@ activation.
 
 ## Git synchronization invariant
 
-`~/.prime/agent/skills` is the authoritative Git checkout for installed skills. A user-requested skill installation, update, removal, or approved Task Observer merge is not complete or synced until the change is validated, committed, pushed to its configured `origin`, and the remote ref is verified at the intended commit.
+`~/.prime/agent/skills` is the authoritative Git checkout for installed skills and
+versioned instruction sources in `prime-agent-skills`. A user-requested skill or
+standing-instruction installation, update, removal, or approved Task Observer merge
+is not complete or synced until it is reflected here, validated, committed, pushed
+to the configured `origin`, and the remote ref is verified at the intended commit.
+A commit in the separate `/home/prime-agent` harness repository is not synchronization
+to this repository. Preserve instruction scope when mirroring project rules; do not
+silently turn project-only rules into global ones.
 
 If authentication, network access, or a remote conflict blocks the push, report the exact pending commit and ahead/behind state. Never claim that the change is synced. Resume the push after secure authentication is available. Never place tokens in skill files, repository files, remotes, Git configuration, command arguments, logs, or continual-harness entries. Task Observer proposal branches remain approval-gated as described in its maintenance workflow.

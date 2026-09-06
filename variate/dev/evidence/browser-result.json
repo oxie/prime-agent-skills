@@ -1,0 +1,152 @@
+{
+  "browser": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+  "node": "v22.22.2",
+  "startedAt": "2026-09-06T20:13:21.348Z",
+  "checks": [
+    {
+      "name": "real Chromium CDP connected"
+    },
+    {
+      "name": "card mounted with 1 variant(s)"
+    },
+    {
+      "name": "1 variants: keep queues exact set and position",
+      "request": {
+        "v": 3,
+        "id": "0001",
+        "type": "done",
+        "createdAt": "2026-09-06T20:13:23.885Z",
+        "label": "keep 1 of test-1",
+        "params": {
+          "set": "test-1",
+          "n": 1,
+          "label": "direction 1",
+          "liveHash": "0d1acc44c2f5ca0e1ca117598103189aae962d09003ea441a2f2628354fd29f3",
+          "selectedHash": "0d1acc44c2f5ca0e1ca117598103189aae962d09003ea441a2f2628354fd29f3"
+        }
+      }
+    },
+    {
+      "name": "card mounted with 2 variant(s)"
+    },
+    {
+      "name": "2 variants: arrow to 2 updates target and fresh rendered document"
+    },
+    {
+      "name": "2 variants: arrow to 1 updates target and fresh rendered document"
+    },
+    {
+      "name": "2 variants: arrow to 2 updates target and fresh rendered document"
+    },
+    {
+      "name": "2 variants: keep queues exact set and position",
+      "request": {
+        "v": 3,
+        "id": "0001",
+        "type": "done",
+        "createdAt": "2026-09-06T20:13:28.949Z",
+        "label": "keep 2 of test-2",
+        "params": {
+          "set": "test-2",
+          "n": 2,
+          "label": "direction 2",
+          "liveHash": "8d41ca3b97b0cb3c52651931ba237faf1e31c6a3980df4edba34c198da18824d",
+          "selectedHash": "8d41ca3b97b0cb3c52651931ba237faf1e31c6a3980df4edba34c198da18824d"
+        }
+      }
+    },
+    {
+      "name": "card mounted with 3 variant(s)"
+    },
+    {
+      "name": "3 variants: arrow to 2 updates target and fresh rendered document"
+    },
+    {
+      "name": "3 variants: arrow to 3 updates target and fresh rendered document"
+    },
+    {
+      "name": "3 variants: arrow to 2 updates target and fresh rendered document"
+    },
+    {
+      "name": "3 variants: arrow to 3 updates target and fresh rendered document"
+    },
+    {
+      "name": "3 variants: keep queues exact set and position",
+      "request": {
+        "v": 3,
+        "id": "0001",
+        "type": "done",
+        "createdAt": "2026-09-06T20:13:35.133Z",
+        "label": "keep 3 of test-3",
+        "params": {
+          "set": "test-3",
+          "n": 3,
+          "label": "direction 3",
+          "liveHash": "6fb64ed5e5677a30bd3a321764a3e7eda925f8f7f90c7fe2a3f05ee3359b69c9",
+          "selectedHash": "6fb64ed5e5677a30bd3a321764a3e7eda925f8f7f90c7fe2a3f05ee3359b69c9"
+        }
+      }
+    },
+    {
+      "name": "card mounted with 4 variant(s)"
+    },
+    {
+      "name": "4 variants: arrow to 2 updates target and fresh rendered document"
+    },
+    {
+      "name": "4 variants: arrow to 3 updates target and fresh rendered document"
+    },
+    {
+      "name": "4 variants: arrow to 4 updates target and fresh rendered document"
+    },
+    {
+      "name": "4 variants: arrow to 3 updates target and fresh rendered document"
+    },
+    {
+      "name": "4 variants: arrow to 4 updates target and fresh rendered document"
+    },
+    {
+      "name": "390px card fits and real hit-tested arrow switches page",
+      "x": 10,
+      "y": 790,
+      "width": 370,
+      "height": 44,
+      "viewport": 390
+    },
+    {
+      "name": "4 variants: keep queues exact set and position",
+      "request": {
+        "v": 3,
+        "id": "0001",
+        "type": "done",
+        "createdAt": "2026-09-06T20:13:45.802Z",
+        "label": "keep 3 of test-4",
+        "params": {
+          "set": "test-4",
+          "n": 3,
+          "label": "direction 3",
+          "liveHash": "5a3f6f6a4996900105493421c35cf8545c5e46594a44b859d0592d078299f090",
+          "selectedHash": "5a3f6f6a4996900105493421c35cf8545c5e46594a44b859d0592d078299f090"
+        }
+      }
+    }
+  ],
+  "screenshots": [
+    "desktop-1280.png",
+    "mobile-390.png"
+  ],
+  "browserVersion": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/152.0.7977.64",
+    "revision": "@506c834ecceaa943c5f41e6cfe7f68acb5c45346",
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "jsVersion": "15.2.124.18"
+  },
+  "status": "passed",
+  "browserExit": {
+    "code": 0,
+    "signal": null
+  },
+  "finishedAt": "2026-09-06T20:13:46.029Z",
+  "fixturesRemoved": true
+}

@@ -1,0 +1,387 @@
+TAP version 13
+# Subtest: foreground preview completes real lifecycle and preserves preexisting ignore rule
+ok 1 - foreground preview completes real lifecycle and preserves preexisting ignore rule
+  ---
+  duration_ms: 930.57755
+  type: 'test'
+  ...
+# Subtest: owned gitignore creation is removed after preview ends
+ok 2 - owned gitignore creation is removed after preview ends
+  ---
+  duration_ms: 406.34685
+  type: 'test'
+  ...
+# Subtest: Nuxt edited generated plugin blocks cleanup before destroying anything
+ok 3 - Nuxt edited generated plugin blocks cleanup before destroying anything
+  ---
+  duration_ms: 668.051678
+  type: 'test'
+  ...
+# Subtest: Vite no-final-newline attachment ledger allows exact restoration
+ok 4 - Vite no-final-newline attachment ledger allows exact restoration
+  ---
+  duration_ms: 509.723886
+  type: 'test'
+  ...
+# Subtest: advisory check reports parser execution failure instead of success
+ok 5 - advisory check reports parser execution failure instead of success
+  ---
+  duration_ms: 602.124646
+  type: 'test'
+  ...
+# Subtest: runtime version matches skill metadata and no executable hook installer is shipped
+ok 6 - runtime version matches skill metadata and no executable hook installer is shipped
+  ---
+  duration_ms: 746.804009
+  type: 'test'
+  ...
+# Subtest: unowned existing marked Nuxt plugin is never claimed or removed
+ok 7 - unowned existing marked Nuxt plugin is never claimed or removed
+  ---
+  duration_ms: 529.303152
+  type: 'test'
+  ...
+# Subtest: sparse extension guidance chooses a vacant slot and releases registration lock
+ok 8 - sparse extension guidance chooses a vacant slot and releases registration lock
+  ---
+  duration_ms: 502.024309
+  type: 'test'
+  ...
+# Subtest: explicit narrow saves unmatched edit and original through later rounds
+ok 9 - explicit narrow saves unmatched edit and original through later rounds
+  ---
+  duration_ms: 242.719903
+  type: 'test'
+  ...
+# Subtest: single-position narrow still preserves and replaces unmatched live edit
+ok 10 - single-position narrow still preserves and replaces unmatched live edit
+  ---
+  duration_ms: 44.125684
+  type: 'test'
+  ...
+# Subtest: positions 99 and above stay visible and adoption never overwrites 100
+ok 11 - positions 99 and above stay visible and adoption never overwrites 100
+  ---
+  duration_ms: 73.712457
+  type: 'test'
+  ...
+# Subtest: safePath rejects lexical escape and missing descendants of symlinks, allows root alias
+ok 12 - safePath rejects lexical escape and missing descendants of symlinks, allows root alias
+  ---
+  duration_ms: 16.68978
+  type: 'test'
+  ...
+# Subtest: switchTo rejects target symlink without external changes
+ok 13 - switchTo rejects target symlink without external changes
+  ---
+  duration_ms: 8.521483
+  type: 'test'
+  ...
+# Subtest: switchTo rejects parent symlink without external changes
+ok 14 - switchTo rejects parent symlink without external changes
+  ---
+  duration_ms: 23.676751
+  type: 'test'
+  ...
+# Subtest: switchTo rejects scratch-alias symlink without external changes
+ok 15 - switchTo rejects scratch-alias symlink without external changes
+  ---
+  duration_ms: 6.877439
+  type: 'test'
+  ...
+# Subtest: switchTo rejects variant symlink without external changes
+ok 16 - switchTo rejects variant symlink without external changes
+  ---
+  duration_ms: 5.57047
+  type: 'test'
+  ...
+# Subtest: switchTo rejects target-record symlink without external changes
+ok 17 - switchTo rejects target-record symlink without external changes
+  ---
+  duration_ms: 4.942593
+  type: 'test'
+  ...
+# Subtest: switchTo rejects plan symlink without external changes
+ok 18 - switchTo rejects plan symlink without external changes
+  ---
+  duration_ms: 7.187134
+  type: 'test'
+  ...
+# Subtest: switchTo rejects set symlink without external changes
+ok 19 - switchTo rejects set symlink without external changes
+  ---
+  duration_ms: 5.357304
+  type: 'test'
+  ...
+# Subtest: switchTo rejects dropped symlink without external changes
+ok 20 - switchTo rejects dropped symlink without external changes
+  ---
+  duration_ms: 12.176966
+  type: 'test'
+  ...
+# Subtest: switchTo rejects board symlink without external changes
+ok 21 - switchTo rejects board symlink without external changes
+  ---
+  duration_ms: 11.273927
+  type: 'test'
+  ...
+# Subtest: switchTo rejects variate symlink without external changes
+ok 22 - switchTo rejects variate symlink without external changes
+  ---
+  duration_ms: 9.113964
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects target symlink without external changes
+ok 23 - narrowTo rejects target symlink without external changes
+  ---
+  duration_ms: 6.413206
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects parent symlink without external changes
+ok 24 - narrowTo rejects parent symlink without external changes
+  ---
+  duration_ms: 52.975368
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects scratch-alias symlink without external changes
+ok 25 - narrowTo rejects scratch-alias symlink without external changes
+  ---
+  duration_ms: 7.528118
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects variant symlink without external changes
+ok 26 - narrowTo rejects variant symlink without external changes
+  ---
+  duration_ms: 3.849242
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects target-record symlink without external changes
+ok 27 - narrowTo rejects target-record symlink without external changes
+  ---
+  duration_ms: 4.95672
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects plan symlink without external changes
+ok 28 - narrowTo rejects plan symlink without external changes
+  ---
+  duration_ms: 8.276968
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects set symlink without external changes
+ok 29 - narrowTo rejects set symlink without external changes
+  ---
+  duration_ms: 8.112533
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects dropped symlink without external changes
+ok 30 - narrowTo rejects dropped symlink without external changes
+  ---
+  duration_ms: 6.504084
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects board symlink without external changes
+ok 31 - narrowTo rejects board symlink without external changes
+  ---
+  duration_ms: 11.498914
+  type: 'test'
+  ...
+# Subtest: narrowTo rejects variate symlink without external changes
+ok 32 - narrowTo rejects variate symlink without external changes
+  ---
+  duration_ms: 7.268696
+  type: 'test'
+  ...
+# Subtest: listSets rejects a symlink set instead of silently accepting an alias
+ok 33 - listSets rejects a symlink set instead of silently accepting an alias
+  ---
+  duration_ms: 5.306489
+  type: 'test'
+  ...
+# Subtest: narrow archive collisions retain all previous snapshots
+ok 34 - narrow archive collisions retain all previous snapshots
+  ---
+  duration_ms: 10.752388
+  type: 'test'
+  ...
+# Subtest: target switching, narrowing and atomic writes preserve modes
+ok 35 - target switching, narrowing and atomic writes preserve modes
+  ---
+  duration_ms: 23.591162
+  type: 'test'
+  ...
+# Subtest: atomicWrite rejects symlink leaf and parent without writing outside
+ok 36 - atomicWrite rejects symlink leaf and parent without writing outside
+  ---
+  duration_ms: 5.073877
+  type: 'test'
+  ...
+# Subtest: atomicWrite rejects stale expected bytes and cleans temp on a mid-write edit
+ok 37 - atomicWrite rejects stale expected bytes and cleans temp on a mid-write edit
+  ---
+  duration_ms: 6.187488
+  type: 'test'
+  ...
+# Subtest: atomicWrite cleans temporary files after rename and write failures
+ok 38 - atomicWrite cleans temporary files after rename and write failures
+  ---
+  duration_ms: 5.004249
+  type: 'test'
+  ...
+# Subtest: exclusive temp creation cannot clobber a pre-existing temporary file
+ok 39 - exclusive temp creation cannot clobber a pre-existing temporary file
+  ---
+  duration_ms: 4.829552
+  type: 'test'
+  ...
+# Subtest: failed narrow target replacement retains numbered originals and recovery copies
+ok 40 - failed narrow target replacement retains numbered originals and recovery copies
+  ---
+  duration_ms: 8.836248
+  type: 'test'
+  ...
+# Subtest: stale live changes during narrow abort before target or numbered replacement
+ok 41 - stale live changes during narrow abort before target or numbered replacement
+  ---
+  duration_ms: 7.164221
+  type: 'test'
+  ...
+# Subtest: failed switch leaves the adopted edit and all prior variants intact
+ok 42 - failed switch leaves the adopted edit and all prior variants intact
+  ---
+  duration_ms: 12.263616
+  type: 'test'
+  ...
+# Subtest: late narrow scratch failure leaves all bytes recoverable in dropped
+ok 43 - late narrow scratch failure leaves all bytes recoverable in dropped
+  ---
+  duration_ms: 8.577216
+  type: 'test'
+  ...
+# Subtest: archive leaf symlinks, including dangling links, are refused
+ok 44 - archive leaf symlinks, including dangling links, are refused
+  ---
+  duration_ms: 5.766003
+  type: 'test'
+  ...
+# variate: The file changed after keep was clicked; preserve it and reconcile the decision first
+# variate: Queued or unfinished decisions remain; reconcile and acknowledge them before ending
+# variate: Prime does not wait here. Run peek or drain once, then end the turn; clicks wait for the next user message
+# variate: Hooks and waiting are disabled in the Prime adaptation
+# variate: --new cannot discard an existing file baseline; omit --new
+# variate: target must be a non-hidden project design file, not scratch or secrets
+# variate: Unreadable request 0001-vary.json; preserve and reconcile before cleanup
+# variate: Unreadable request 0001-vary.json.working; preserve and reconcile before cleanup
+# variate: Request queue busy or interrupted: inspect queue.lock; never steal a live lock
+# variate: Request queue busy or interrupted: inspect queue.lock; never steal a live lock
+# variate: Request queue busy or interrupted: inspect queue.lock; never steal a live lock
+# Subtest: peek/drain after end do not recreate a workspace
+ok 45 - peek/drain after end do not recreate a workspace
+  ---
+  duration_ms: 488.706906
+  type: 'test'
+  ...
+# Subtest: claim-before-action crash redelivers without treating receipt as fulfillment
+ok 46 - claim-before-action crash redelivers without treating receipt as fulfillment
+  ---
+  duration_ms: 15.614873
+  type: 'test'
+  ...
+# Subtest: foreign consumer cannot steal or acknowledge unfinished work
+ok 47 - foreign consumer cannot steal or acknowledge unfinished work
+  ---
+  duration_ms: 25.863855
+  type: 'test'
+  ...
+# Subtest: explicit ack stores terminal state and a later drain does not redeliver it
+ok 48 - explicit ack stores terminal state and a later drain does not redeliver it
+  ---
+  duration_ms: 14.021743
+  type: 'test'
+  ...
+# Subtest: crash after terminal metadata but before rename is recovered without redoing action
+ok 49 - crash after terminal metadata but before rename is recovered without redoing action
+  ---
+  duration_ms: 15.648906
+  type: 'test'
+  ...
+# Subtest: queue lock fails closed; neither concurrent consumer overwrites records
+ok 50 - queue lock fails closed; neither concurrent consumer overwrites records
+  ---
+  duration_ms: 4.997535
+  type: 'test'
+  ...
+# Subtest: keep snapshots are server-derived, not supplied by page text
+ok 51 - keep snapshots are server-derived, not supplied by page text
+  ---
+  duration_ms: 11.995658
+  type: 'test'
+  ...
+# Subtest: stale keep refuses without overwriting newer hand edits or removing alternatives
+ok 52 - stale keep refuses without overwriting newer hand edits or removing alternatives
+  ---
+  duration_ms: 160.831334
+  type: 'test'
+  ...
+# Subtest: end refuses pending asks and preserves all state
+ok 53 - end refuses pending asks and preserves all state
+  ---
+  duration_ms: 169.054704
+  type: 'test'
+  ...
+# Subtest: final keep validates and acknowledges before removing queue; later peek stays absent
+ok 54 - final keep validates and acknowledges before removing queue; later peek stays absent
+  ---
+  duration_ms: 157.046332
+  type: 'test'
+  ...
+# Subtest: legacy waiting and wake flags are refused without creating state
+ok 55 - legacy waiting and wake flags are refused without creating state
+  ---
+  duration_ms: 416.349055
+  type: 'test'
+  ...
+# Subtest: new cannot discard existing baseline and hidden targets cannot be registered
+ok 56 - new cannot discard existing baseline and hidden targets cannot be registered
+  ---
+  duration_ms: 478.279583
+  type: 'test'
+  ...
+# Subtest: malformed queued and working records block end without file loss
+ok 57 - malformed queued and working records block end without file loss
+  ---
+  duration_ms: 478.804045
+  type: 'test'
+  ...
+# Subtest: producers cannot recreate a closed workspace
+ok 58 - producers cannot recreate a closed workspace
+  ---
+  duration_ms: 13.552531
+  type: 'test'
+  ...
+# Subtest: old lock owner never removes a replacement holder's lock
+ok 59 - old lock owner never removes a replacement holder's lock
+  ---
+  duration_ms: 10.606867
+  type: 'test'
+  ...
+# Subtest: cooperating offline use narrow and add refuse a busy mutation lock
+ok 60 - cooperating offline use narrow and add refuse a busy mutation lock
+  ---
+  duration_ms: 807.979062
+  type: 'test'
+  ...
+# Subtest: edit injected after keep preflight preserves live bytes alternatives and unfinished claim
+ok 61 - edit injected after keep preflight preserves live bytes alternatives and unfinished claim
+  ---
+  duration_ms: 569.385396
+  type: 'test'
+  ...
+1..61
+# tests 61
+# suites 0
+# pass 61
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5135.723457
