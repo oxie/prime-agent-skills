@@ -14,6 +14,12 @@ const TYPES = new Set(['architecture', 'workflow', 'sequence', 'dataflow', 'life
 
 function usage() {
   return `Usage:
+  archify catalogue [--json]
+  archify import mermaid|drawio <input> [--out new.json]
+  archify editorial check <input.html> [--json]
+  archify editorial deliver <input.html> <new.html> [--json]
+  archify editorial visual-check <input.html> [--capture-dir new-directory] [--json]
+  archify editorial export <input.html> <new.png|svg> [--scale number] [--json]
   archify render <type> <input.json> [output.html] [--quality standard|showcase] [--repo-root path (architecture only)]
   archify compare architecture <base.json> <head.json> [output.html] [--receipt path] [--json] [--quality standard|showcase] [--repo-root path]
   archify deliver <type> <input.json> [output.html] [--json] [--open] [--quality standard|showcase] [--repo-root path (architecture only)]
@@ -1232,6 +1238,18 @@ async function commandDoctor() {
     failureLabel: 'unsupported',
   });
 
+  for (const relative of ['editorial/catalogue.json', 'editorial/check.py', 'bin/editorial.mjs',
+    'bin/editorial-browser.mjs', 'bin/import-diagram.mjs', 'imports/drawio_extract.py', 'imports/mermaid_extract.py']) {
+    checks.push({label: `Unified package: ${relative}`, ok: fs.existsSync(path.join(skillRoot, relative)),
+      missing: fs.existsSync(path.join(skillRoot, relative)) ? 0 : 1});
+  }
+  const python = spawnSync(process.env.ARCHIFY_PYTHON || 'python3', ['-I', '-B', '--version'],
+    {encoding: 'utf8', timeout: 5000});
+  const pythonVersion = `${python.stdout || ''} ${python.stderr || ''}`.match(/Python (\d+)\.(\d+)/);
+  const pythonOk = python.status === 0 && pythonVersion &&
+    (Number(pythonVersion[1]) > 3 || (Number(pythonVersion[1]) === 3 && Number(pythonVersion[2]) >= 10));
+  checks.push({label: 'Python >=3.10 for imports/editorial checks (typed rendering uses Node only)',
+    ok: Boolean(pythonOk), invalid: pythonOk ? 0 : 1, missing: 0, failureLabel: 'unsupported'});
   const template = path.join(skillRoot, 'assets/template.html');
   checks.push({
     label: 'Core template',
@@ -1954,6 +1972,30 @@ switch (command) {
   case 'help':
     console.log(usage());
     break;
+  case 'catalogue': {
+    if (args.some(arg => arg !== '--json')) fail('Usage: archify catalogue [--json]');
+    const catalogue = JSON.parse(fs.readFileSync(path.join(skillRoot, 'editorial/catalogue.json'), 'utf8'));
+    console.log(JSON.stringify({schemaVersion: 1, typedRenderers: [...TYPES], editorial: catalogue,
+      note: 'Editorial entries are guided static HTML/SVG layouts, not additional typed renderers.'}, null, 2));
+    break;
+  }
+  case 'import': {
+    const {runImport} = await import('./import-diagram.mjs');
+    process.exitCode = await runImport(args);
+    break;
+  }
+  case 'editorial': {
+    if (['visual-check', 'export'].includes(args[0])) {
+      const {runEditorialBrowser} = await import('./editorial-browser.mjs');
+      const result = await runEditorialBrowser(args);
+      console.log(JSON.stringify(result.receipt, null, 2));
+      process.exitCode = result.exitCode;
+    } else {
+      const {runEditorial} = await import('./editorial.mjs');
+      process.exitCode = await runEditorial(args);
+    }
+    break;
+  }
   case 'render':
     commandRender(args);
     break;

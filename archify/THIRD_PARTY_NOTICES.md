@@ -54,3 +54,18 @@ Brand names, logos, and trademarks remain the property of their respective
 owners. This notice records provenance and known terms; it does not grant rights
 that Archify does not hold, and it does not state that every packaged mark has
 been cleared for every commercial, promotional, or redistributive use.
+
+
+## Diagram Design editorial guidance and import extractors
+
+Source: Cathryn Lavery / cathrynlavery/diagram-design, commit
+`3b446333f164174a571106673f943c58df282ff8` (plugin version 2.6.15), MIT.
+The upstream MIT notice is retained in `editorial/LICENSE.diagram-design` and
+`imports/LICENSE`. The 39 selective briefs and design/semantic references are curated
+adaptations, not claims of additional typed renderers. Templates and demonstrations
+are original Prime compositions with visible synthetic-data attribution.
+
+Only the local Mermaid/draw.io extractor code is reused from upstream runtime tools;
+its wrapper and safety changes are documented in `references/imports.md`. No upstream
+plugin, remote onboarding, profile updater, icon package or motion controller is
+included. Existing Archify asset notices elsewhere in this document still apply.

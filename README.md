@@ -20,7 +20,7 @@ Prime Agent discovers directories containing a valid `SKILL.md` recursively. Sta
 
 | Skill | Purpose | Upstream |
 |---|---|---|
-| `archify` | Local validated architecture, workflow, sequence, dataflow and lifecycle diagrams with an interactive HTML/SVG reader. | [tt-a1i/archify](https://github.com/tt-a1i/archify) @ `c651940` (Prime adaptation of a development snapshot) |
+| `archify` | Unified technical diagrams, 39 guided editorial layouts, local draw.io/Mermaid imports, static checks and exports. | [tt-a1i/archify](https://github.com/tt-a1i/archify) @ `c651940`, plus [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) @ `3b44633` (curated unified Prime adaptation) |
 | `hallmark` | Lean, project-first visual design, audit and screenshot study; design guidance for Variate rounds. | [nutlope/hallmark](https://github.com/nutlope/hallmark) @ `13ac0ec` (curated Prime adaptation) |
 | `variate` | On-demand design alternatives with a foreground localhost preview and Prime-native, nonblocking decisions. | [Nutlope/variate](https://github.com/Nutlope/variate) @ `3a82377` (reviewed local adaptation) |
 | `task-observer` | Always-on observation during user-started tool sessions. Uses Prime's continual harness for decisions and isolated Git proposal branches for tested installable-skill improvements. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |

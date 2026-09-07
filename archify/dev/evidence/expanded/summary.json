@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "version": "2.17.0-dev.1-prime.2",
+  "packageValidation": "passed",
+  "typedRenderers": 5,
+  "guidedEditorialLayouts": 39,
+  "native": {
+    "command": "npm test",
+    "passed": 298,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "browser": {
+    "pilotCommandCases": 35,
+    "expectedRefusals": 7,
+    "actualBrowserSessions": 29,
+    "pageHttpAttempts": 0,
+    "ownedCleanupVerified": true,
+    "rootCliSmokeExitCode": 0,
+    "sandbox": true,
+    "viewports": [
+      "390x844",
+      "1440x1000"
+    ]
+  },
+  "syntax": {
+    "nodeFiles": 53,
+    "pythonFiles": 3,
+    "exitCode": 0
+  },
+  "discovery": {
+    "skills": 54,
+    "diagnostics": 0,
+    "modelRequests": 0
+  },
+  "hostHealth": {
+    "core": {
+      "exitCode": 0,
+      "log": "completion-core.log"
+    },
+    "status": {
+      "exitCode": 0,
+      "log": "completion-status.log"
+    },
+    "doctor": {
+      "exitCode": 0,
+      "log": "completion-doctor.log"
+    }
+  },
+  "visualReview": "Six viewport images plus SVG roundtrip and normalized PNG inspected; mobile wide figures scroll locally.",
+  "limits": [
+    "Guides are not typed renderers",
+    "Static lint is not a sanitizer/security/accessibility/chart-math proof",
+    "Partial import grammar requires fidelity review",
+    "Fractional PNG normalization may interpolate pixels",
+    "Only recorded browser/host/fixtures tested; unrelated temporary profiles preserved"
+  ],
+  "installationProof": "Host-specific installed tests and independently verified remote commit are recorded in the final release handoff, not self-referentially embedded in this source commit."
+}

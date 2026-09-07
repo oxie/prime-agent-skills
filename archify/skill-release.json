@@ -2,9 +2,14 @@
   "schemaVersion": 1,
   "skillId": "archify",
   "channel": "prime-adaptation",
-  "version": "2.17.0-dev.1-prime.1",
+  "version": "2.17.0-dev.1-prime.2",
   "source": {
     "repository": "https://github.com/tt-a1i/archify"
   },
-  "upstreamCommit": "c6519401f7b91b9d43011657880893b0a8955548"
+  "upstreamCommit": "c6519401f7b91b9d43011657880893b0a8955548",
+  "editorialSource": {
+    "repository": "https://github.com/cathrynlavery/diagram-design",
+    "commit": "3b446333f164174a571106673f943c58df282ff8",
+    "version": "2.6.15"
+  }
 }

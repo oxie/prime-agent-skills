@@ -1,3 +1,62 @@
+# Unified Archify expansion — 2.17.0-dev.1-prime.2
+
+This release keeps **one Archify skill/CLI**, five typed technical renderers and their
+existing evidence contract. It adds 39 selectively loaded static editorial layout
+guides, seven semantic patterns, two offline draft templates, three original synthetic
+examples, local Mermaid/draw.io import, conservative editorial checks/new-only delivery,
+and explicit sandboxed Chromium screenshot/PNG/SVG commands.
+
+The 39 guides are **not 39 new typed renderers**. Import IR is not renderer JSON.
+Project facts, quantities, relationships, branding and accessibility needs outrank
+optional visual presets. There is no installed profile mutation, font download,
+remote onboarding, new motion controller, server, scheduler or dependency install.
+
+## Expansion evidence
+
+Final machine evidence and review records are in `dev/evidence/expanded/`.
+**298/298 native tests passed** (exit 0). Three real Chromium pilots passed 35
+command cases (including 7 expected refusals), across 29 browser sessions. The
+root CLI browser smoke also passed. Six viewport images plus the standalone SVG
+roundtrip and normalized PNG were inspected. Doctor, syntax, 54-skill native
+discovery with no diagnostics, and host health checks passed.
+The final summary distinguishes native tests, real Chromium commands, image review,
+package validation. Host-specific installed-path tests and remote synchronization
+are recorded in the final release handoff outside this source commit. Earlier review findings are historical;
+the verification follow-up closes the demonstrated SVG reference-amplification and
+DrawIO invalid-UTF8 bugs. Atomic import publication uses fsynced same-directory scratch
+and exclusive hard links; cleanup errors report whether complete output was published.
+
+The browser path checks immutable private bytes and managed CSP before navigation,
+disables document scripts, blocks/records page HTTP(S), rejects root/no-sandbox,
+and limits export dimensions. Fractional native clip rounding can be normalized by
+bounded canvas resampling; this is recorded. Standalone SVG preserves resolved styles,
+geometry, backgrounds and internal references. Transformed root SVGs are refused for
+SVG export instead of being double-scaled. Browser/profile/snapshot cleanup is recorded.
+
+## Acceptance limits
+
+- Editorial checking is conservative subset lint, not universal sanitization, typed
+  validation, factual/chart-math proof, WCAG certification or full geometry validation.
+- Only the recorded synthetic cases/viewports were browser-tested. No all-39-layout,
+  cross-browser, cross-platform, Figma/Illustrator, print, video or screen-reader claim.
+- Bar fits mobile. Wardley and journey use local horizontal scrolling with equivalent
+  reflowing text. A fitting page does not mean all figure pixels are visible at once.
+- Actual viewport images were inspected separately. Font configuration is not proof
+  of glyph selection or portable typography. SVG portability depends on the consumer.
+- Imports are partial grammar/heuristic extraction. Unknown Mermaid statements can
+  be omitted; draw.io nested geometry is a hint. Inspect the documented fidelity ledger.
+  Invalid supported UTF8 decoding fails instead of silently changing source facts.
+- New output paths never overwrite. These filesystem APIs assume stable directory
+  ownership; complete publication/receipt emission is not one global transaction,
+  file fsync is not directory-entry crash durability, and no OS-wide sandbox is claimed.
+- Browser command network evidence covers observed page HTTP(S), not every OS process.
+  Unrelated pre-existing temporary profiles are not deleted or claimed as owned cleanup.
+
+## Initial adaptation evidence (historical)
+
+The following audit records the earlier installed prime.1 baseline. It remains for
+provenance; use the expansion summary above for the current release.
+
 # Archify Prime installation audit
 
 Reviewed source: tt-a1i/archify `c6519401f7b91b9d43011657880893b0a8955548`.

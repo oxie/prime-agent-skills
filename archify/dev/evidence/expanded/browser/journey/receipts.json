@@ -1,0 +1,1102 @@
+[
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [
+          {
+            "tag": "div",
+            "overflowX": "auto",
+            "clientWidth": 356,
+            "scrollWidth": 640,
+            "keyboardFocusable": true,
+            "box": {
+              "x": 16,
+              "width": 358
+            }
+          }
+        ],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": false,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 239.03125,
+          "width": 640,
+          "height": 423.109375
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 1114,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "sourceSha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-Zwf1Vi/input.html",
+        "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+        "bytes": 7223
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 66,
+          "expandedByteEstimate": 7476
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 23
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-aPfmUk",
+      "pid": 241653
+    },
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [
+          {
+            "tag": "div",
+            "overflowX": "auto",
+            "clientWidth": 356,
+            "scrollWidth": 640,
+            "keyboardFocusable": true,
+            "box": {
+              "x": 16,
+              "width": 358
+            }
+          }
+        ],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": false,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 239.03125,
+          "width": 640,
+          "height": 423.109375
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 1114,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "sourceSha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-2oyCVD/input.html",
+        "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+        "bytes": 7223
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 66,
+          "expandedByteEstimate": 7476
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 23
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-ux22dF",
+      "pid": 242104
+    },
+    "captureDirectory": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/viewports",
+    "captures": [
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/viewports/390x844.png",
+        "sha256": "961612bba4752a8f028a125c69b6dab7622e04d1cd49b34a289a0a5e2054405f",
+        "bytes": 58283,
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/viewports/1440x1000.png",
+        "sha256": "3fdacfb393cb93a9a66a19c31169102704d91eaae6e5852e6871cc644e0d3b7c",
+        "bytes": 109021,
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    },
+    "captureStatus": "complete"
+  },
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "fail",
+    "viewports": [],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "error": "Output already exists; exports never overwrite files or symlinks.",
+    "network": {
+      "httpBlockingEnabled": false,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "sourceSha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-86WjXC/input.html",
+        "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+        "bytes": 7223
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 66,
+          "expandedByteEstimate": 7476
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 23
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-yGX6sd",
+      "pid": 242567
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 910,
+      "height": 601.609375
+    },
+    "scale": 0.25,
+    "dimensions": {
+      "width": 228,
+      "height": 150
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/primary-0.25.png",
+    "outputSha256": "91f00244948f49e4042f0c91a2cd9ed1dd82454ff4c70f66afccef8ba5bbad0e",
+    "outputBytes": 8275,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "sourceSha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-ykr8UE/input.html",
+        "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+        "bytes": 7223
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 66,
+          "expandedByteEstimate": 7476
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 23
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-OY2Hkc",
+      "pid": 243040
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 910,
+      "height": 601.609375
+    },
+    "scale": 0.5,
+    "dimensions": {
+      "width": 455,
+      "height": 301
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/primary-0.5.png",
+    "outputSha256": "c404de04804aab5b707adbb4ce79b02a3cfde4a422af7e1385fd468c682006f8",
+    "outputBytes": 21336,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "sourceSha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-rew7c6/input.html",
+        "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+        "bytes": 7223
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 66,
+          "expandedByteEstimate": 7476
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 23
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-bqacBZ",
+      "pid": 243507
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 910,
+      "height": 601.609375
+    },
+    "scale": 1,
+    "dimensions": {
+      "width": 910,
+      "height": 602
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/primary-1.png",
+    "outputSha256": "76acd3787fb1500facf6a8ed078df167c9056cbdcf2f28cc280f3c192d643120",
+    "outputBytes": 50333,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "sourceSha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-KM9x5A/input.html",
+        "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+        "bytes": 7223
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 66,
+          "expandedByteEstimate": 7476
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 23
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-PewKkU",
+      "pid": 243998
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 910,
+      "height": 601.609375
+    },
+    "scale": 1.5,
+    "dimensions": {
+      "width": 1365,
+      "height": 902
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/primary-1.5.png",
+    "outputSha256": "c423d0f7ae2dbb553a2670aa98f7ca71547d76689e648ba5272b2c3ce8d8dbac",
+    "outputBytes": 79604,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "sourceSha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-UKXxyL/input.html",
+        "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+        "bytes": 7223
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 66,
+          "expandedByteEstimate": 7476
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 23
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-bGFN8f",
+      "pid": 244584
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 910,
+      "height": 601.609375
+    },
+    "scale": null,
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/primary.svg",
+    "outputSha256": "7a0487f6ee516ab9752098e0c150173a66a217ce0a6c4bac71f10908aaed220c",
+    "outputBytes": 62263,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "fail",
+    "viewports": [],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/input.html",
+    "error": "Output already exists; exports never overwrite files or symlinks.",
+    "network": {
+      "httpBlockingEnabled": false,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  }
+]

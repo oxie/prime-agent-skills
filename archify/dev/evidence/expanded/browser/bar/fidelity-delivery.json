@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "evidenceKind": "static-editorial-check",
+  "browserReview": "untested",
+  "visualReview": "untested",
+  "limitations": [
+    "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+    "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+    "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+    "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+    "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+  ],
+  "command": "editorial deliver",
+  "input": {
+    "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-source.html",
+    "sha256": "d6eba615cf8ae5056c53982765bdcf683861699905b659c69f65d31c285f3ff0",
+    "bytes": 1292
+  },
+  "checks": [
+    {
+      "name": "bounded_utf8_input",
+      "ok": true
+    },
+    {
+      "name": "strict_static_html_svg_subset",
+      "ok": true
+    },
+    {
+      "name": "offline_css_and_fragment_references",
+      "ok": true
+    },
+    {
+      "name": "unique_resolving_ids",
+      "ok": true
+    },
+    {
+      "name": "finite_geometry_bounds",
+      "ok": true
+    },
+    {
+      "name": "bounded_svg_use_expansion",
+      "ok": true,
+      "expandedNodeEstimate": 20,
+      "expandedByteEstimate": 1646
+    },
+    {
+      "name": "authored_title_description_text_candidates",
+      "ok": true,
+      "textCandidates": 1
+    },
+    {
+      "name": "restrictive_delivery_csp",
+      "ok": true,
+      "status": "present"
+    }
+  ],
+  "managedCsp": true,
+  "artifact": {
+    "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.html",
+    "sha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+    "bytes": 1518
+  }
+}

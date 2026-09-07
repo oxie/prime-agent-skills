@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A reservation service, mapped by evolution</title>
+<!-- Original Prime static shell. Design guidance curated from Cathryn Lavery's diagram-design,
+MIT, commit 3b446333f164174a571106673f943c58df282ff8. Retained license: editorial/LICENSE.diagram-design. -->
+<style> :root { --paper: #f7f6f2; --surface: #ffffff; --ink: #202b35; --muted: #52606d; --rule: #c8ced2; --accent: #a43d12; --accent-tint: #fff0e4; --series: #526d82; --figure-min-width: 640px; }
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 24px; }
+h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.15; margin: 8px 0 16px; letter-spacing: -0.025em; }
+h2 { font-size: 1.1rem; margin: 20px 0 8px; }
+p { margin: 8px 0 16px; }
+.eyebrow { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.note { color: var(--muted); font-size: .95rem; }
+figure { margin: 24px 0; }
+.figure-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+.figure-scroll:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+svg { display: block; width: 100%; min-width: var(--figure-min-width); height: auto; background: var(--surface); }
+svg text { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; fill: var(--ink); }
+svg .small { font-size: 16px; }
+svg .muted { fill: var(--muted); }
+svg .strong { font-weight: 700; }
+svg .accent-text { fill: var(--accent); }
+svg .edge { fill: none; stroke: var(--muted); stroke-width: 2; }
+svg .grid { fill: none; stroke: var(--rule); stroke-width: 1; }
+svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+svg .node { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+svg .focal { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 2; }
+figcaption { margin-top: 16px; }
+ul { padding-left: 24px; }
+li { margin: 6px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+caption { text-align: left; font-weight: 700; padding: 8px 0; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+th { font-weight: 650; }
+@media (max-width: 600px) { main { padding: 24px 16px; } }
+@media print { main { max-width: none; padding: 0; } .figure-scroll { overflow: visible; border: 0; } svg { min-width: 0; } }
+:root { --figure-min-width: 680px; }</style>
+</head>
+<body>
+<main>
+<header>
+<p class="eyebrow">Archify · Synthetic Wardley example</p>
+<h1>A reservation service, mapped by evolution</h1>
+<p>A fictional value chain. Positions are qualitative judgments, not measurements or a runtime network.</p>
+</header>
+<figure>
+<div class="figure-scroll" role="region" aria-label="Scrollable diagram" tabindex="0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 484" role="img" data-archify-editorial="wardley" aria-labelledby="figure-title" aria-describedby="figure-description">
+<title id="figure-title">A synthetic seat-reservation value chain</title>
+<desc id="figure-description">Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.</desc>
+<line x1="135" y1="64" x2="135" y2="380" class="axis"></line>
+<line x1="135" y1="380" x2="735" y2="380" class="axis"></line>
+<line x1="285" y1="64" x2="285" y2="380" class="grid" stroke-dasharray="5 5"></line>
+<line x1="435" y1="64" x2="435" y2="380" class="grid" stroke-dasharray="5 5"></line>
+<line x1="585" y1="64" x2="585" y2="380" class="grid" stroke-dasharray="5 5"></line>
+<text x="24" y="80" text-anchor="start" class="small muted">Visible</text>
+<text x="24" y="101" text-anchor="start" class="small muted">to user</text>
+<text x="24" y="345" text-anchor="start" class="small muted">Less</text>
+<text x="24" y="366" text-anchor="start" class="small muted">visible</text>
+<text x="210" y="410" text-anchor="middle" class="small strong">Genesis</text>
+<text x="360" y="410" text-anchor="middle" class="small strong">Custom-built</text>
+<text x="510" y="410" text-anchor="middle" class="small strong">Product</text>
+<text x="660" y="410" text-anchor="middle" class="small strong">Commodity</text>
+<line x1="370" y1="108" x2="330" y2="196" class="edge"></line>
+<line x1="330" y1="196" x2="500" y2="282" class="edge"></line>
+<line x1="500" y1="282" x2="660" y2="346" class="edge"></line>
+<defs><marker id="evolution-arrow" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8 Z" fill="var(--accent)"></path></marker></defs>
+<path d="M 340 196 H 423" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#evolution-arrow)"></path>
+<circle cx="370" cy="108" r="7" class="node"></circle>
+<circle cx="330" cy="196" r="8" class="focal"></circle>
+<circle cx="500" cy="282" r="7" class="node"></circle>
+<circle cx="660" cy="346" r="7" class="node"></circle>
+<text x="386" y="114" text-anchor="start" class="strong">Reserve a seat</text>
+<text x="314" y="202" text-anchor="end" class="strong">Seat finder</text>
+<text x="516" y="270" text-anchor="start" class="strong">Catalogue</text>
+<text x="676" y="352" text-anchor="start" class="small strong">Hosting</text>
+<line x1="150" y1="448" x2="182" y2="448" class="edge"></line>
+<text x="192" y="454" text-anchor="start" class="small muted">Dependency</text>
+<path d="M 390 448 H 427" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#evolution-arrow)"></path>
+<text x="440" y="454" text-anchor="start" class="small muted">Possible evolution</text>
+</svg>
+</div>
+<figcaption>
+<p><strong>Reading the map:</strong> Reserve a seat → Seat finder → Catalogue → Hosting is the dependency chain. The dashed arrow proposes possible evolution of the Seat finder; no timeline is asserted.</p>
+<p class="note">All components, positions and the movement hypothesis were invented for this demonstration. On narrow screens, scroll the figure horizontally; this caption preserves the full chain.</p>
+</figcaption>
+</figure>
+
+</main>
+</body>
+</html>

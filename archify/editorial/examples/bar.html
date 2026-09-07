@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three groups, one shared scale</title>
+<!-- Original Prime static shell. Design guidance curated from Cathryn Lavery's diagram-design,
+MIT, commit 3b446333f164174a571106673f943c58df282ff8. Retained license: editorial/LICENSE.diagram-design. -->
+<style> :root { --paper: #f7f6f2; --surface: #ffffff; --ink: #202b35; --muted: #52606d; --rule: #c8ced2; --accent: #a43d12; --accent-tint: #fff0e4; --series: #526d82; --figure-min-width: 640px; }
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 24px; }
+h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.15; margin: 8px 0 16px; letter-spacing: -0.025em; }
+h2 { font-size: 1.1rem; margin: 20px 0 8px; }
+p { margin: 8px 0 16px; }
+.eyebrow { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.note { color: var(--muted); font-size: .95rem; }
+figure { margin: 24px 0; }
+.figure-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+.figure-scroll:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+svg { display: block; width: 100%; min-width: var(--figure-min-width); height: auto; background: var(--surface); }
+svg text { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; fill: var(--ink); }
+svg .small { font-size: 16px; }
+svg .muted { fill: var(--muted); }
+svg .strong { font-weight: 700; }
+svg .accent-text { fill: var(--accent); }
+svg .edge { fill: none; stroke: var(--muted); stroke-width: 2; }
+svg .grid { fill: none; stroke: var(--rule); stroke-width: 1; }
+svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+svg .node { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+svg .focal { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 2; }
+figcaption { margin-top: 16px; }
+ul { padding-left: 24px; }
+li { margin: 6px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+caption { text-align: left; font-weight: 700; padding: 8px 0; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+th { font-weight: 650; }
+@media (max-width: 600px) { main { padding: 24px 16px; } }
+@media print { main { max-width: none; padding: 0; } .figure-scroll { overflow: visible; border: 0; } svg { min-width: 0; } }
+:root { --figure-min-width: 352px; } .figure-scroll { max-width: 640px; }</style>
+</head>
+<body>
+<main>
+<header>
+<p class="eyebrow">Archify · Synthetic bar example</p>
+<h1>Three groups, one shared scale</h1>
+<p>Invented task counts for a chart demonstration. These are not benchmark results, an experiment or measured productivity.</p>
+</header>
+<figure>
+<div class="figure-scroll" role="region" aria-label="Scrollable diagram" tabindex="0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 354" role="img" data-archify-editorial="bar" aria-labelledby="figure-title" aria-describedby="figure-description">
+<title id="figure-title">Synthetic practice-task counts for three groups</title>
+<desc id="figure-description">Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.</desc>
+<text x="24" y="35" text-anchor="start" class="small strong">Completed practice tasks</text>
+<line x1="140" y1="65" x2="140" y2="262" class="axis"></line>
+<text x="140" y="292" text-anchor="middle" class="small muted">0</text>
+<line x1="220" y1="65" x2="220" y2="262" class="grid"></line>
+<text x="220" y="292" text-anchor="middle" class="small muted">10</text>
+<line x1="300" y1="65" x2="300" y2="262" class="grid"></line>
+<text x="300" y="292" text-anchor="middle" class="small muted">20</text>
+<line x1="380" y1="65" x2="380" y2="262" class="grid"></line>
+<text x="380" y="292" text-anchor="middle" class="small muted">30</text>
+<text x="24" y="96" text-anchor="start" class="strong">Group A</text>
+<rect x="140" y="72" width="96" height="36" fill="var(--series)" stroke="var(--ink)" stroke-width="1"></rect>
+<text x="246" y="96" text-anchor="start" class="strong">12</text>
+<text x="24" y="162" text-anchor="start" class="strong">Group B</text>
+<rect x="140" y="138" width="192" height="36" fill="var(--series)" stroke="var(--ink)" stroke-width="1"></rect>
+<text x="342" y="162" text-anchor="start" class="strong">24</text>
+<text x="24" y="228" text-anchor="start" class="strong">Group C</text>
+<rect x="140" y="204" width="144" height="36" fill="var(--series)" stroke="var(--ink)" stroke-width="1"></rect>
+<text x="294" y="228" text-anchor="start" class="strong">18</text>
+<text x="260" y="326" text-anchor="middle" class="small muted">Tasks · zero baseline</text>
+</svg>
+</div>
+<figcaption>
+<table>
+<caption>Synthetic source values</caption>
+<thead><tr><th scope="col">Group</th><th scope="col">Completed tasks</th></tr></thead>
+<tbody>
+<tr><th scope="row">Group A</th><td>12</td></tr>
+<tr><th scope="row">Group B</th><td>24</td></tr>
+<tr><th scope="row">Group C</th><td>18</td></tr>
+</tbody>
+</table>
+<p class="note">Each bar starts at zero. Width is 8 SVG units per task; all three use the same scale. Group order is alphabetical. No cause or real-world performance claim is implied.</p>
+</figcaption>
+</figure>
+
+</main>
+</body>
+</html>

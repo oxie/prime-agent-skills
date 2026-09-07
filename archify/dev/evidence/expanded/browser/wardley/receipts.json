@@ -1,0 +1,1102 @@
+[
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [
+          {
+            "tag": "div",
+            "overflowX": "auto",
+            "clientWidth": 356,
+            "scrollWidth": 680,
+            "keyboardFocusable": true,
+            "box": {
+              "x": 16,
+              "width": 358
+            }
+          }
+        ],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": false,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 239.03125,
+          "width": 680,
+          "height": 433.046875
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 987,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "sourceSha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-33cjPH/input.html",
+        "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+        "bytes": 6860
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 54,
+          "expandedByteEstimate": 7028
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 14
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-X02I7G",
+      "pid": 241651
+    },
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [
+          {
+            "tag": "div",
+            "overflowX": "auto",
+            "clientWidth": 356,
+            "scrollWidth": 680,
+            "keyboardFocusable": true,
+            "box": {
+              "x": 16,
+              "width": 358
+            }
+          }
+        ],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": false,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 239.03125,
+          "width": 680,
+          "height": 433.046875
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 987,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "sourceSha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-JJh9et/input.html",
+        "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+        "bytes": 6860
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 54,
+          "expandedByteEstimate": 7028
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 14
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-yeMFhm",
+      "pid": 242112
+    },
+    "captureDirectory": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/viewports",
+    "captures": [
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/viewports/390x844.png",
+        "sha256": "3333f2b83d428f3bd97e313a63f0807ca071e68be732679ecc0713ba4cb8efd3",
+        "bytes": 55371,
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/viewports/1440x1000.png",
+        "sha256": "59b2d5b0f29e441bbe7457cb9fbd14f2e2cc914b34c1baf351de3fe341e43fa9",
+        "bytes": 102225,
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    },
+    "captureStatus": "complete"
+  },
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "fail",
+    "viewports": [],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "error": "Output already exists; exports never overwrite files or symlinks.",
+    "network": {
+      "httpBlockingEnabled": false,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "sourceSha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-hy6deG/input.html",
+        "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+        "bytes": 6860
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 54,
+          "expandedByteEstimate": 7028
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 14
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-ScSEmJ",
+      "pid": 242631
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 184.34375,
+      "width": 910,
+      "height": 579.515625
+    },
+    "scale": 0.25,
+    "dimensions": {
+      "width": 228,
+      "height": 145
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/primary-0.25.png",
+    "outputSha256": "c1c86887c13185c74575ad9027a356226459222937fb95b15fe14d7d560158f9",
+    "outputBytes": 6845,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "sourceSha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-QOab2M/input.html",
+        "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+        "bytes": 6860
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 54,
+          "expandedByteEstimate": 7028
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 14
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-AsqOeE",
+      "pid": 243044
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 184.34375,
+      "width": 910,
+      "height": 579.515625
+    },
+    "scale": 0.5,
+    "dimensions": {
+      "width": 455,
+      "height": 290
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/primary-0.5.png",
+    "outputSha256": "01f3443abd4fdc42b438983be417308b5dcb0286aa570c01048a0d77d06961d4",
+    "outputBytes": 17176,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "sourceSha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-uuGdkw/input.html",
+        "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+        "bytes": 6860
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 54,
+          "expandedByteEstimate": 7028
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 14
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-f4M7FN",
+      "pid": 243508
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 184.34375,
+      "width": 910,
+      "height": 579.515625
+    },
+    "scale": 1,
+    "dimensions": {
+      "width": 910,
+      "height": 580
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/primary-1.png",
+    "outputSha256": "e63a5de4f817c7771aff8942cf24a49326d42531ec875477948c47728ddd7dbf",
+    "outputBytes": 40520,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "sourceSha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-hRGx56/input.html",
+        "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+        "bytes": 6860
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 54,
+          "expandedByteEstimate": 7028
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 14
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-WpUOOp",
+      "pid": 243977
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 184.34375,
+      "width": 910,
+      "height": 579.515625
+    },
+    "scale": 1.5,
+    "dimensions": {
+      "width": 1365,
+      "height": 869
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/primary-1.5.png",
+    "outputSha256": "221cadb88a32acf1695f36f8600cb22113b1322fd270b80191d79943e20f2e46",
+    "outputBytes": 60200,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "sourceSha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-F7x2hg/input.html",
+        "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+        "bytes": 6860
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 54,
+          "expandedByteEstimate": 7028
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 14
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-3c6emj",
+      "pid": 244527
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 184.34375,
+      "width": 910,
+      "height": 579.515625
+    },
+    "scale": null,
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/primary.svg",
+    "outputSha256": "623ecff20074a67737b66292d2568f0e67e8942b02f05376996757bf60ba4b22",
+    "outputBytes": 55992,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "fail",
+    "viewports": [],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/input.html",
+    "error": "Output already exists; exports never overwrite files or symlinks.",
+    "network": {
+      "httpBlockingEnabled": false,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  }
+]

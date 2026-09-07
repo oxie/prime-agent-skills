@@ -1,0 +1,581 @@
+{
+  "wardley": {
+    "helper": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial check",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/skill-worktrees/archify-expanded-20260906T221844Z/archify/editorial/examples/wardley.html",
+          "sha256": "8c21f543061bc23f93648fb38c69728765bf987440fd9b33581dc1a5934f6b87",
+          "bytes": 6634
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 53,
+            "expandedByteEstimate": 6788
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 14
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "inserted only during delivery"
+          }
+        ],
+        "managedCsp": false
+      }
+    },
+    "deliver": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial deliver",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/skill-worktrees/archify-expanded-20260906T221844Z/archify/editorial/examples/wardley.html",
+          "sha256": "8c21f543061bc23f93648fb38c69728765bf987440fd9b33581dc1a5934f6b87",
+          "bytes": 6634
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 54,
+            "expandedByteEstimate": 7028
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 14
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "present"
+          }
+        ],
+        "managedCsp": true,
+        "artifact": {
+          "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-833f014b/payload/.integration-test-output/wardley.html",
+          "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+          "bytes": 6860
+        }
+      }
+    },
+    "recheck": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial check",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-833f014b/payload/.integration-test-output/wardley.html",
+          "sha256": "15e9d1fce935e76264286f6bb915ff0ce0168adf6ccfe0b45e78759babcc96cc",
+          "bytes": 6860
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 54,
+            "expandedByteEstimate": 7028
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 14
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "present"
+          }
+        ],
+        "managedCsp": true
+      }
+    }
+  },
+  "journey": {
+    "helper": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial check",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/skill-worktrees/archify-expanded-20260906T221844Z/archify/editorial/examples/journey.html",
+          "sha256": "b9edbd26d02efb227c9a4ad5f9bedf41e3882fbf8247b9f4b7119adc95c47a2a",
+          "bytes": 6997
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 65,
+            "expandedByteEstimate": 7236
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 23
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "inserted only during delivery"
+          }
+        ],
+        "managedCsp": false
+      }
+    },
+    "deliver": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial deliver",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/skill-worktrees/archify-expanded-20260906T221844Z/archify/editorial/examples/journey.html",
+          "sha256": "b9edbd26d02efb227c9a4ad5f9bedf41e3882fbf8247b9f4b7119adc95c47a2a",
+          "bytes": 6997
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 66,
+            "expandedByteEstimate": 7476
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 23
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "present"
+          }
+        ],
+        "managedCsp": true,
+        "artifact": {
+          "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-833f014b/payload/.integration-test-output/journey.html",
+          "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+          "bytes": 7223
+        }
+      }
+    },
+    "recheck": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial check",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-833f014b/payload/.integration-test-output/journey.html",
+          "sha256": "8695917f1e61a63e0b587a5b101015c89d36badd8ad4970f782f72c7ca818cba",
+          "bytes": 7223
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 66,
+            "expandedByteEstimate": 7476
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 23
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "present"
+          }
+        ],
+        "managedCsp": true
+      }
+    }
+  },
+  "bar": {
+    "helper": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial check",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/skill-worktrees/archify-expanded-20260906T221844Z/archify/editorial/examples/bar.html",
+          "sha256": "28160bd8952cf765ba5fbedea5452b3a2fb99d1924ff39f372f184f2f0b89115",
+          "bytes": 5705
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 54,
+            "expandedByteEstimate": 5893
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 5
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "inserted only during delivery"
+          }
+        ],
+        "managedCsp": false
+      }
+    },
+    "deliver": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial deliver",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/skill-worktrees/archify-expanded-20260906T221844Z/archify/editorial/examples/bar.html",
+          "sha256": "28160bd8952cf765ba5fbedea5452b3a2fb99d1924ff39f372f184f2f0b89115",
+          "bytes": 5705
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 55,
+            "expandedByteEstimate": 6133
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 5
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "present"
+          }
+        ],
+        "managedCsp": true,
+        "artifact": {
+          "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-833f014b/payload/.integration-test-output/bar.html",
+          "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+          "bytes": 5931
+        }
+      }
+    },
+    "recheck": {
+      "exit": 0,
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "evidenceKind": "static-editorial-check",
+        "browserReview": "untested",
+        "visualReview": "untested",
+        "limitations": [
+          "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+          "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+          "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+          "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+          "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+        ],
+        "command": "editorial check",
+        "input": {
+          "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-833f014b/payload/.integration-test-output/bar.html",
+          "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+          "bytes": 5931
+        },
+        "checks": [
+          {
+            "name": "bounded_utf8_input",
+            "ok": true
+          },
+          {
+            "name": "strict_static_html_svg_subset",
+            "ok": true
+          },
+          {
+            "name": "offline_css_and_fragment_references",
+            "ok": true
+          },
+          {
+            "name": "unique_resolving_ids",
+            "ok": true
+          },
+          {
+            "name": "finite_geometry_bounds",
+            "ok": true
+          },
+          {
+            "name": "bounded_svg_use_expansion",
+            "ok": true,
+            "expandedNodeEstimate": 55,
+            "expandedByteEstimate": 6133
+          },
+          {
+            "name": "authored_title_description_text_candidates",
+            "ok": true,
+            "textCandidates": 5
+          },
+          {
+            "name": "restrictive_delivery_csp",
+            "ok": true,
+            "status": "present"
+          }
+        ],
+        "managedCsp": true
+      }
+    }
+  }
+}

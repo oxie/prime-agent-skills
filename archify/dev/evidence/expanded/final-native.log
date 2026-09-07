@@ -1,0 +1,1802 @@
+
+> archify@2.17.0-dev.1-prime.2 test
+> node --test --test-concurrency=1 test/geometry.test.mjs test/grid.test.mjs test/degraded.test.mjs test/repair-receipt.test.mjs test/render-output-checks.test.mjs test/base-input-compatibility.test.mjs test/artifact-receipt-flush.test.mjs dev/prime-contracts.test.mjs dev/editorial.test.mjs dev/editorial-browser.test.mjs dev/imports.test.mjs dev/unified-contracts.test.mjs
+
+TAP version 13
+# Subtest: strict editorial argument bounds and output extensions
+ok 1 - strict editorial argument bounds and output extensions
+  ---
+  duration_ms: 7.102041
+  type: 'test'
+  ...
+# Subtest: exclusive publication preserves files, symlinks and race winners
+ok 2 - exclusive publication preserves files, symlinks and race winners
+  ---
+  duration_ms: 11.79732
+  type: 'test'
+  ...
+# Subtest: PNG header dimension check rejects non-PNG bytes
+ok 3 - PNG header dimension check rejects non-PNG bytes
+  ---
+  duration_ms: 0.671639
+  type: 'test'
+  ...
+# Subtest: invalid arguments and existing output fail before gate/browser
+ok 4 - invalid arguments and existing output fail before gate/browser
+  ---
+  duration_ms: 2.521568
+  type: 'test'
+  ...
+# Subtest: input byte bounds and symlinks fail before static gate or browser
+ok 5 - input byte bounds and symlinks fail before static gate or browser
+  ---
+  duration_ms: 17.528783
+  type: 'test'
+  ...
+# Subtest: FIFO input is rejected without blocking before gate/browser
+ok 6 - FIFO input is rejected without blocking before gate/browser
+  ---
+  duration_ms: 15.273131
+  type: 'test'
+  ...
+# Subtest: unmanaged benign HTML is refused after an exact gate check, before browser
+ok 7 - unmanaged benign HTML is refused after an exact gate check, before browser
+  ---
+  duration_ms: 151.388574
+  type: 'test'
+  ...
+# Subtest: valid static authored document with CSS variables, print/media, gradients and marker refs passes
+ok 8 - valid static authored document with CSS variables, print/media, gradients and marker refs passes
+  ---
+  duration_ms: 174.622803
+  type: 'test'
+  ...
+# Subtest: reject script
+ok 9 - reject script
+  ---
+  duration_ms: 242.226141
+  type: 'test'
+  ...
+# Subtest: reject foreignObject
+ok 10 - reject foreignObject
+  ---
+  duration_ms: 350.67234
+  type: 'test'
+  ...
+# Subtest: reject iframe
+ok 11 - reject iframe
+  ---
+  duration_ms: 288.444606
+  type: 'test'
+  ...
+# Subtest: reject object
+ok 12 - reject object
+  ---
+  duration_ms: 209.334129
+  type: 'test'
+  ...
+# Subtest: reject embed
+ok 13 - reject embed
+  ---
+  duration_ms: 286.618321
+  type: 'test'
+  ...
+# Subtest: reject base
+ok 14 - reject base
+  ---
+  duration_ms: 268.99965
+  type: 'test'
+  ...
+# Subtest: reject link
+ok 15 - reject link
+  ---
+  duration_ms: 273.033659
+  type: 'test'
+  ...
+# Subtest: reject media
+ok 16 - reject media
+  ---
+  duration_ms: 334.521147
+  type: 'test'
+  ...
+# Subtest: reject form
+ok 17 - reject form
+  ---
+  duration_ms: 170.996353
+  type: 'test'
+  ...
+# Subtest: reject refresh
+ok 18 - reject refresh
+  ---
+  duration_ms: 215.482748
+  type: 'test'
+  ...
+# Subtest: reject event attribute
+ok 19 - reject event attribute
+  ---
+  duration_ms: 308.710478
+  type: 'test'
+  ...
+# Subtest: reject case event attribute
+ok 20 - reject case event attribute
+  ---
+  duration_ms: 245.694938
+  type: 'test'
+  ...
+# Subtest: reject external use
+ok 21 - reject external use
+  ---
+  duration_ms: 319.422931
+  type: 'test'
+  ...
+# Subtest: reject relative use
+ok 22 - reject relative use
+  ---
+  duration_ms: 438.194995
+  type: 'test'
+  ...
+# Subtest: reject data use
+ok 23 - reject data use
+  ---
+  duration_ms: 240.351266
+  type: 'test'
+  ...
+# Subtest: reject javascript use
+ok 24 - reject javascript use
+  ---
+  duration_ms: 366.430133
+  type: 'test'
+  ...
+# Subtest: reject encoded href
+ok 25 - reject encoded href
+  ---
+  duration_ms: 242.330565
+  type: 'test'
+  ...
+# Subtest: reject external marker
+ok 26 - reject external marker
+  ---
+  duration_ms: 267.047762
+  type: 'test'
+  ...
+# Subtest: reject XML entity declaration
+ok 27 - reject XML entity declaration
+  ---
+  duration_ms: 174.361749
+  type: 'test'
+  ...
+# Subtest: reject processing instruction
+ok 28 - reject processing instruction
+  ---
+  duration_ms: 224.256016
+  type: 'test'
+  ...
+# Subtest: reject CDATA
+ok 29 - reject CDATA
+  ---
+  duration_ms: 195.013387
+  type: 'test'
+  ...
+# Subtest: reject CSS import
+ok 30 - reject CSS import
+  ---
+  duration_ms: 220.054235
+  type: 'test'
+  ...
+# Subtest: reject CSS font-face
+ok 31 - reject CSS font-face
+  ---
+  duration_ms: 187.753353
+  type: 'test'
+  ...
+# Subtest: reject CSS escapes
+ok 32 - reject CSS escapes
+  ---
+  duration_ms: 220.613626
+  type: 'test'
+  ...
+# Subtest: reject CSS comment obfuscation
+ok 33 - reject CSS comment obfuscation
+  ---
+  duration_ms: 208.696343
+  type: 'test'
+  ...
+# Subtest: reject CSS external URL
+ok 34 - reject CSS external URL
+  ---
+  duration_ms: 191.569155
+  type: 'test'
+  ...
+# Subtest: reject CSS relative URL
+ok 35 - reject CSS relative URL
+  ---
+  duration_ms: 187.726052
+  type: 'test'
+  ...
+# Subtest: reject CSS image-set
+ok 36 - reject CSS image-set
+  ---
+  duration_ms: 185.249438
+  type: 'test'
+  ...
+# Subtest: reject CSS expression
+ok 37 - reject CSS expression
+  ---
+  duration_ms: 218.617524
+  type: 'test'
+  ...
+# Subtest: reject CSS behavior
+ok 38 - reject CSS behavior
+  ---
+  duration_ms: 206.460527
+  type: 'test'
+  ...
+# Subtest: reject CSS binding
+ok 39 - reject CSS binding
+  ---
+  duration_ms: 203.286686
+  type: 'test'
+  ...
+# Subtest: reject CSS custom property resource
+ok 40 - reject CSS custom property resource
+  ---
+  duration_ms: 218.201552
+  type: 'test'
+  ...
+# Subtest: reject CSS nested unsupported rule
+ok 41 - reject CSS nested unsupported rule
+  ---
+  duration_ms: 173.236857
+  type: 'test'
+  ...
+# Subtest: reject CSS unclosed block
+ok 42 - reject CSS unclosed block
+  ---
+  duration_ms: 290.586658
+  type: 'test'
+  ...
+# Subtest: reject style attribute external resource
+ok 43 - reject style attribute external resource
+  ---
+  duration_ms: 186.72433
+  type: 'test'
+  ...
+# Subtest: reject style attribute encoded resource
+ok 44 - reject style attribute encoded resource
+  ---
+  duration_ms: 445.126289
+  type: 'test'
+  ...
+# Subtest: reject duplicate attribute
+ok 45 - reject duplicate attribute
+  ---
+  duration_ms: 732.592037
+  type: 'test'
+  ...
+# Subtest: reject unquoted attribute
+ok 46 - reject unquoted attribute
+  ---
+  duration_ms: 257.818285
+  type: 'test'
+  ...
+# Subtest: reject missing attribute whitespace
+ok 47 - reject missing attribute whitespace
+  ---
+  duration_ms: 241.199884
+  type: 'test'
+  ...
+# Subtest: reject misnested HTML
+ok 48 - reject misnested HTML
+  ---
+  duration_ms: 831.691221
+  type: 'test'
+  ...
+# Subtest: reject implicit p repair
+ok 49 - reject implicit p repair
+  ---
+  duration_ms: 400.900078
+  type: 'test'
+  ...
+# Subtest: reject implicit table repair
+ok 50 - reject implicit table repair
+  ---
+  duration_ms: 380.939935
+  type: 'test'
+  ...
+# Subtest: reject selfclosing nonvoid
+ok 51 - reject selfclosing nonvoid
+  ---
+  duration_ms: 236.034151
+  type: 'test'
+  ...
+# Subtest: reject unclosed comment
+ok 52 - reject unclosed comment
+  ---
+  duration_ms: 226.20016
+  type: 'test'
+  ...
+# Subtest: reject unclosed tag
+ok 53 - reject unclosed tag
+  ---
+  duration_ms: 198.650309
+  type: 'test'
+  ...
+# Subtest: reject unknown entity
+ok 54 - reject unknown entity
+  ---
+  duration_ms: 225.066152
+  type: 'test'
+  ...
+# Subtest: reject ambiguous entity
+ok 55 - reject ambiguous entity
+  ---
+  duration_ms: 356.021945
+  type: 'test'
+  ...
+# Subtest: reject unknown attr entity
+ok 56 - reject unknown attr entity
+  ---
+  duration_ms: 269.480294
+  type: 'test'
+  ...
+# Subtest: reject duplicate IDs
+ok 57 - reject duplicate IDs
+  ---
+  duration_ms: 333.863676
+  type: 'test'
+  ...
+# Subtest: reject missing IDs
+ok 58 - reject missing IDs
+  ---
+  duration_ms: 212.050187
+  type: 'test'
+  ...
+# Subtest: reject ARIA missing IDs
+ok 59 - reject ARIA missing IDs
+  ---
+  duration_ms: 199.134658
+  type: 'test'
+  ...
+# Subtest: reject fragment outside SVG
+ok 60 - reject fragment outside SVG
+  ---
+  duration_ms: 505.443765
+  type: 'test'
+  ...
+# Subtest: reject recursive use
+ok 61 - reject recursive use
+  ---
+  duration_ms: 222.118313
+  type: 'test'
+  ...
+# Subtest: reject placeholder title
+ok 62 - reject placeholder title
+  ---
+  duration_ms: 300.869203
+  type: 'test'
+  ...
+# Subtest: reject placeholder description
+ok 63 - reject placeholder description
+  ---
+  duration_ms: 170.479232
+  type: 'test'
+  ...
+# Subtest: reject placeholder label
+ok 64 - reject placeholder label
+  ---
+  duration_ms: 220.180631
+  type: 'test'
+  ...
+# Subtest: reject no authored text
+ok 65 - reject no authored text
+  ---
+  duration_ms: 254.237058
+  type: 'test'
+  ...
+# Subtest: reject hidden display
+ok 66 - reject hidden display
+  ---
+  duration_ms: 221.48194
+  type: 'test'
+  ...
+# Subtest: reject hidden visibility
+ok 67 - reject hidden visibility
+  ---
+  duration_ms: 201.018351
+  type: 'test'
+  ...
+# Subtest: reject hidden opacity
+ok 68 - reject hidden opacity
+  ---
+  duration_ms: 433.335081
+  type: 'test'
+  ...
+# Subtest: reject zero font
+ok 69 - reject zero font
+  ---
+  duration_ms: 272.476003
+  type: 'test'
+  ...
+# Subtest: reject transparent paint
+ok 70 - reject transparent paint
+  ---
+  duration_ms: 371.997853
+  type: 'test'
+  ...
+# Subtest: reject missing viewBox
+ok 71 - reject missing viewBox
+  ---
+  duration_ms: 230.465681
+  type: 'test'
+  ...
+# Subtest: reject zero viewBox
+ok 72 - reject zero viewBox
+  ---
+  duration_ms: 286.83837
+  type: 'test'
+  ...
+# Subtest: reject negative viewBox
+ok 73 - reject negative viewBox
+  ---
+  duration_ms: 279.84466
+  type: 'test'
+  ...
+# Subtest: reject infinite viewBox
+ok 74 - reject infinite viewBox
+  ---
+  duration_ms: 186.218791
+  type: 'test'
+  ...
+# Subtest: reject NaN geometry
+ok 75 - reject NaN geometry
+  ---
+  duration_ms: 237.788724
+  type: 'test'
+  ...
+# Subtest: reject huge geometry
+ok 76 - reject huge geometry
+  ---
+  duration_ms: 183.174942
+  type: 'test'
+  ...
+# Subtest: reject negative size
+ok 77 - reject negative size
+  ---
+  duration_ms: 213.515332
+  type: 'test'
+  ...
+# Subtest: reject scalar misuse
+ok 78 - reject scalar misuse
+  ---
+  duration_ms: 187.484783
+  type: 'test'
+  ...
+# Subtest: reject bad path
+ok 79 - reject bad path
+  ---
+  duration_ms: 211.265278
+  type: 'test'
+  ...
+# Subtest: reject bad arc
+ok 80 - reject bad arc
+  ---
+  duration_ms: 198.404883
+  type: 'test'
+  ...
+# Subtest: reject bad transform
+ok 81 - reject bad transform
+  ---
+  duration_ms: 267.734128
+  type: 'test'
+  ...
+# Subtest: reject second SVG
+ok 82 - reject second SVG
+  ---
+  duration_ms: 270.46817
+  type: 'test'
+  ...
+# Subtest: reject nested SVG
+ok 83 - reject nested SVG
+  ---
+  duration_ms: 245.557825
+  type: 'test'
+  ...
+# Subtest: reject wrong SVG namespace
+ok 84 - reject wrong SVG namespace
+  ---
+  duration_ms: 196.580272
+  type: 'test'
+  ...
+# Subtest: reject NUL
+ok 85 - reject NUL
+  ---
+  duration_ms: 239.256681
+  type: 'test'
+  ...
+# Subtest: reject source custom CSP
+ok 86 - reject source custom CSP
+  ---
+  duration_ms: 209.543207
+  type: 'test'
+  ...
+# Subtest: reject duplicate managed CSP
+ok 87 - reject duplicate managed CSP
+  ---
+  duration_ms: 210.596094
+  type: 'test'
+  ...
+# Subtest: reject late managed CSP
+ok 88 - reject late managed CSP
+  ---
+  duration_ms: 164.093442
+  type: 'test'
+  ...
+# Subtest: bounded input, invalid UTF-8, and non-regular input fail without output
+ok 89 - bounded input, invalid UTF-8, and non-regular input fail without output
+  ---
+  duration_ms: 702.842637
+  type: 'test'
+  ...
+# Subtest: delivery checks exact bytes, inserts CSP first, rechecks, creates only HTML and refuses replacement
+ok 90 - delivery checks exact bytes, inserts CSP first, rechecks, creates only HTML and refuses replacement
+  ---
+  duration_ms: 1234.595246
+  type: 'test'
+  ...
+# Subtest: failed source leaves no artifact; invalid output suffix, aliases and symlinks rejected
+ok 91 - failed source leaves no artifact; invalid output suffix, aliases and symlinks rejected
+  ---
+  duration_ms: 1519.688743
+  type: 'test'
+  ...
+# Subtest: CRLF document offsets, quoted entities and safe complete comments stay exact
+ok 92 - CRLF document offsets, quoted entities and safe complete comments stay exact
+  ---
+  duration_ms: 213.541271
+  type: 'test'
+  ...
+# Subtest: two concurrent deliverers publish one complete winner and leave no scratch
+ok 93 - two concurrent deliverers publish one complete winner and leave no scratch
+  ---
+  duration_ms: 265.616121
+  type: 'test'
+  ...
+# Subtest: helper start errors and unknown flags fail closed with machine receipts
+ok 94 - helper start errors and unknown flags fail closed with machine receipts
+  ---
+  duration_ms: 345.008383
+  type: 'test'
+  ...
+# Subtest: node count and nesting bounds reject oversized trees
+ok 95 - node count and nesting bounds reject oversized trees
+  ---
+  duration_ms: 710.064762
+  type: 'test'
+  ...
+# Subtest: managed CSP cannot be hidden in a comment to claim delivery evidence
+ok 96 - managed CSP cannot be hidden in a comment to claim delivery evidence
+  ---
+  duration_ms: 173.603329
+  type: 'test'
+  ...
+# Subtest: attribute entities and explicit signed decimal path numbers pass
+ok 97 - attribute entities and explicit signed decimal path numbers pass
+  ---
+  duration_ms: 204.998951
+  type: 'test'
+  ...
+# Subtest: helper malformed output and bounded output are fail-closed process errors
+ok 98 - helper malformed output and bounded output are fail-closed process errors
+  ---
+  duration_ms: 381.895812
+  type: 'test'
+  ...
+# Subtest: helper timeout stops a stuck executable and emits a machine error
+ok 99 - helper timeout stops a stuck executable and emits a machine error
+  ---
+  duration_ms: 10133.105839
+  type: 'test'
+  ...
+# Subtest: reject malformed comment delimiter
+ok 100 - reject malformed comment delimiter
+  ---
+  duration_ms: 204.040549
+  type: 'test'
+  ...
+# Subtest: reject malformed path exponent
+ok 101 - reject malformed path exponent
+  ---
+  duration_ms: 154.001483
+  type: 'test'
+  ...
+# Subtest: reject invalid numeric attribute entity
+ok 102 - reject invalid numeric attribute entity
+  ---
+  duration_ms: 254.779819
+  type: 'test'
+  ...
+# Subtest: reject zero-percent opacity
+ok 103 - reject zero-percent opacity
+  ---
+  duration_ms: 393.692893
+  type: 'test'
+  ...
+# Subtest: reject negative opacity
+ok 104 - reject negative opacity
+  ---
+  duration_ms: 260.877614
+  type: 'test'
+  ...
+# Subtest: static scroll-region keyboard access permits only tabindex=0
+ok 105 - static scroll-region keyboard access permits only tabindex=0
+  ---
+  duration_ms: 1039.768218
+  type: 'test'
+  ...
+# Subtest: bounded editorial SVG marker and color-scheme are inert supported metadata
+ok 106 - bounded editorial SVG marker and color-scheme are inert supported metadata
+  ---
+  duration_ms: 1828.99085
+  type: 'test'
+  ...
+# Subtest: acyclic exponential use fanout is rejected without browser execution
+ok 107 - acyclic exponential use fanout is rejected without browser execution
+  ---
+  duration_ms: 200.267376
+  type: 'test'
+  ...
+# Subtest: wide direct SVG cloning is bounded by nodes and estimated bytes
+ok 108 - wide direct SVG cloning is bounded by nodes and estimated bytes
+  ---
+  duration_ms: 434.342106
+  type: 'test'
+  ...
+# Subtest: FIFO source is rejected before any blocking read or delivery
+ok 109 - FIFO source is rejected before any blocking read or delivery
+  ---
+  duration_ms: 370.715932
+  type: 'test'
+  ...
+# Subtest: root CLI import dispatch seam and direct module preserve flowchart IR
+ok 110 - root CLI import dispatch seam and direct module preserve flowchart IR
+  ---
+  duration_ms: 464.004376
+  type: 'test'
+  ...
+# Subtest: sequence grammar retains actor, message order, fragment and notes
+ok 111 - sequence grammar retains actor, message order, fragment and notes
+  ---
+  duration_ms: 249.51336
+  type: 'test'
+  ...
+# Subtest: state grammar retains start/end and transitions
+ok 112 - state grammar retains start/end and transitions
+  ---
+  duration_ms: 251.435122
+  type: 'test'
+  ...
+# Subtest: ER grammar retains fields and cardinality text
+ok 113 - ER grammar retains fields and cardinality text
+  ---
+  duration_ms: 290.951559
+  type: 'test'
+  ...
+# Subtest: Markdown selectors preserve block count and reject unavailable index
+ok 114 - Markdown selectors preserve block count and reject unavailable index
+  ---
+  duration_ms: 1013.335123
+  type: 'test'
+  ...
+# Subtest: unsupported, malformed, invalid UTF8 and unfinished fences fail
+ok 115 - unsupported, malformed, invalid UTF8 and unfinished fences fail
+  ---
+  duration_ms: 1485.743051
+  type: 'test'
+  ...
+# Subtest: adversarial labels and click/style/directive payloads remain inert
+ok 116 - adversarial labels and click/style/directive payloads remain inert
+  ---
+  duration_ms: 234.348981
+  type: 'test'
+  ...
+# Subtest: Mermaid source, node and edge caps reject oversized inputs
+ok 117 - Mermaid source, node and edge caps reject oversized inputs
+  ---
+  duration_ms: 907.030113
+  type: 'test'
+  ...
+# Subtest: draw.io raw and compressed sources preserve nodes/edges
+ok 118 - draw.io raw and compressed sources preserve nodes/edges
+  ---
+  duration_ms: 638.522377
+  type: 'test'
+  ...
+# Subtest: draw.io page selection and inert UserObject link
+ok 119 - draw.io page selection and inert UserObject link
+  ---
+  duration_ms: 893.216828
+  type: 'test'
+  ...
+# Subtest: draw.io rejects XML declarations, malformed XML and missing embedded data
+ok 120 - draw.io rejects XML declarations, malformed XML and missing embedded data
+  ---
+  duration_ms: 1467.085099
+  type: 'test'
+  ...
+# Subtest: draw.io actual 32MiB source and 64MiB decompression caps
+ok 121 - draw.io actual 32MiB source and 64MiB decompression caps
+  ---
+  duration_ms: 1371.842393
+  type: 'test'
+  ...
+# Subtest: new JSON output is exact IR and default creates no sidecar
+ok 122 - new JSON output is exact IR and default creates no sidecar
+  ---
+  duration_ms: 615.95698
+  type: 'test'
+  ...
+# Subtest: output rejects overwrite, aliases, symlinks, parents, directory and wrong suffix
+ok 123 - output rejects overwrite, aliases, symlinks, parents, directory and wrong suffix
+  ---
+  duration_ms: 909.539099
+  type: 'test'
+  ...
+# Subtest: input rejects symlink, directory, FIFO-like non-regular and missing paths
+ok 124 - input rejects symlink, directory, FIFO-like non-regular and missing paths
+  ---
+  duration_ms: 510.045251
+  type: 'test'
+  ...
+# Subtest: help and strict documented options
+ok 125 - help and strict documented options
+  ---
+  duration_ms: 1787.885104
+  type: 'test'
+  ...
+# Subtest: missing Python, extractor failure, timeout and output-limit receipts preserve files
+ok 126 - missing Python, extractor failure, timeout and output-limit receipts preserve files
+  ---
+  duration_ms: 1062.439235
+  type: 'test'
+  ...
+# Subtest: draw.io PNG/SVG embedded metadata imports without rendering
+ok 127 - draw.io PNG/SVG embedded metadata imports without rendering
+  ---
+  duration_ms: 508.584496
+  type: 'test'
+  ...
+# Subtest: draw.io rejects raw, deflated, percent-encoded and embedded invalid UTF8 without output
+ok 128 - draw.io rejects raw, deflated, percent-encoded and embedded invalid UTF8 without output
+  ---
+  duration_ms: 1706.757097
+  type: 'test'
+  ...
+# Subtest: concurrent publishers never clobber and remove owned scratch files
+ok 129 - concurrent publishers never clobber and remove owned scratch files
+  ---
+  duration_ms: 490.501512
+  type: 'test'
+  ...
+# Subtest: failed fsync never publishes partial JSON and cleans scratch
+ok 130 - failed fsync never publishes partial JSON and cleans scratch
+  ---
+  duration_ms: 244.966407
+  type: 'test'
+  ...
+# Subtest: exclusive publication preserves a competing destination created after preflight
+ok 131 - exclusive publication preserves a competing destination created after preflight
+  ---
+  duration_ms: 317.943054
+  type: 'test'
+  ...
+# Subtest: cleanup failure reports truth after successful publication, never removes destination
+ok 132 - cleanup failure reports truth after successful publication, never removes destination
+  ---
+  duration_ms: 352.943526
+  type: 'test'
+  ...
+# Subtest: architecture: validate and deliver produce checked, hash-bound artifacts offline
+ok 133 - architecture: validate and deliver produce checked, hash-bound artifacts offline
+  ---
+  duration_ms: 1289.23148
+  type: 'test'
+  ...
+# Subtest: architecture: remote brand objects fail before networking despite legacy bypass
+ok 134 - architecture: remote brand objects fail before networking despite legacy bypass
+  ---
+  duration_ms: 304.45428
+  type: 'test'
+  ...
+# Subtest: workflow: validate and deliver produce checked, hash-bound artifacts offline
+ok 135 - workflow: validate and deliver produce checked, hash-bound artifacts offline
+  ---
+  duration_ms: 2286.147817
+  type: 'test'
+  ...
+# Subtest: workflow: remote brand objects fail before networking despite legacy bypass
+ok 136 - workflow: remote brand objects fail before networking despite legacy bypass
+  ---
+  duration_ms: 324.458525
+  type: 'test'
+  ...
+# Subtest: sequence: validate and deliver produce checked, hash-bound artifacts offline
+ok 137 - sequence: validate and deliver produce checked, hash-bound artifacts offline
+  ---
+  duration_ms: 1461.678232
+  type: 'test'
+  ...
+# Subtest: sequence: remote brand objects fail before networking despite legacy bypass
+ok 138 - sequence: remote brand objects fail before networking despite legacy bypass
+  ---
+  duration_ms: 361.187952
+  type: 'test'
+  ...
+# Subtest: dataflow: validate and deliver produce checked, hash-bound artifacts offline
+ok 139 - dataflow: validate and deliver produce checked, hash-bound artifacts offline
+  ---
+  duration_ms: 1524.946492
+  type: 'test'
+  ...
+# Subtest: dataflow: remote brand objects fail before networking despite legacy bypass
+ok 140 - dataflow: remote brand objects fail before networking despite legacy bypass
+  ---
+  duration_ms: 354.210302
+  type: 'test'
+  ...
+# Subtest: lifecycle: validate and deliver produce checked, hash-bound artifacts offline
+ok 141 - lifecycle: validate and deliver produce checked, hash-bound artifacts offline
+  ---
+  duration_ms: 1596.522355
+  type: 'test'
+  ...
+# Subtest: lifecycle: remote brand objects fail before networking despite legacy bypass
+ok 142 - lifecycle: remote brand objects fail before networking despite legacy bypass
+  ---
+  duration_ms: 767.097327
+  type: 'test'
+  ...
+# Subtest: embedded IDs and known-domain aliases resolve without network; capture is disabled
+ok 143 - embedded IDs and known-domain aliases resolve without network; capture is disabled
+  ---
+  duration_ms: 907.044997
+  type: 'test'
+  ...
+# Subtest: preview rejects both CLI and imported invocation without output or server
+ok 144 - preview rejects both CLI and imported invocation without output or server
+  ---
+  duration_ms: 400.604673
+  type: 'test'
+  ...
+# Subtest: update check is a stateless disabled receipt even when explicitly enabled
+ok 145 - update check is a stateless disabled receipt even when explicitly enabled
+  ---
+  duration_ms: 438.543158
+  type: 'test'
+  ...
+# Subtest: default render refuses a non-HTML symlink target and preserves exact bytes
+ok 146 - default render refuses a non-HTML symlink target and preserves exact bytes
+  ---
+  duration_ms: 399.369469
+  type: 'test'
+  ...
+# Subtest: explicit render refuses a non-HTML symlink target and preserves exact bytes
+ok 147 - explicit render refuses a non-HTML symlink target and preserves exact bytes
+  ---
+  duration_ms: 396.162427
+  type: 'test'
+  ...
+# Subtest: meta render refuses a non-HTML symlink target and preserves exact bytes
+ok 148 - meta render refuses a non-HTML symlink target and preserves exact bytes
+  ---
+  duration_ms: 323.816393
+  type: 'test'
+  ...
+# Subtest: direct-default render refuses a non-HTML symlink target and preserves exact bytes
+ok 149 - direct-default render refuses a non-HTML symlink target and preserves exact bytes
+  ---
+  duration_ms: 326.510792
+  type: 'test'
+  ...
+# Subtest: render refuses direct input aliases without modifying source bytes
+ok 150 - render refuses direct input aliases without modifying source bytes
+  ---
+  duration_ms: 386.941525
+  type: 'test'
+  ...
+# Subtest: deliver refuses direct input aliases without modifying source bytes
+ok 151 - deliver refuses direct input aliases without modifying source bytes
+  ---
+  duration_ms: 271.518195
+  type: 'test'
+  ...
+# Subtest: render refuses symlink input aliases without modifying source bytes
+ok 152 - render refuses symlink input aliases without modifying source bytes
+  ---
+  duration_ms: 328.91512
+  type: 'test'
+  ...
+# Subtest: deliver refuses symlink input aliases without modifying source bytes
+ok 153 - deliver refuses symlink input aliases without modifying source bytes
+  ---
+  duration_ms: 215.109627
+  type: 'test'
+  ...
+# Subtest: render refuses hardlink input aliases without modifying source bytes
+ok 154 - render refuses hardlink input aliases without modifying source bytes
+  ---
+  duration_ms: 352.731453
+  type: 'test'
+  ...
+# Subtest: deliver refuses hardlink input aliases without modifying source bytes
+ok 155 - deliver refuses hardlink input aliases without modifying source bytes
+  ---
+  duration_ms: 210.03232
+  type: 'test'
+  ...
+# Subtest: meta.output rejects absolute escapes without modifying outside bytes
+ok 156 - meta.output rejects absolute escapes without modifying outside bytes
+  ---
+  duration_ms: 314.667025
+  type: 'test'
+  ...
+# Subtest: meta.output rejects parent escapes without modifying outside bytes
+ok 157 - meta.output rejects parent escapes without modifying outside bytes
+  ---
+  duration_ms: 506.474897
+  type: 'test'
+  ...
+# Subtest: meta.output rejects directory-symlink escapes without modifying outside bytes
+ok 158 - meta.output rejects directory-symlink escapes without modifying outside bytes
+  ---
+  duration_ms: 679.044226
+  type: 'test'
+  ...
+# Subtest: failed deliver preserves the previous artifact and removes staging candidates
+ok 159 - failed deliver preserves the previous artifact and removes staging candidates
+  ---
+  duration_ms: 421.029873
+  type: 'test'
+  ...
+# Subtest: local Git evidence validates pinned source lines and fails closed on invalid evidence
+ok 160 - local Git evidence validates pinned source lines and fails closed on invalid evidence
+  ---
+  duration_ms: 3814.05872
+  type: 'test'
+  ...
+# Subtest: one CLI distinguishes typed renderers from 39 editorial layouts
+ok 161 - one CLI distinguishes typed renderers from 39 editorial layouts
+  ---
+  duration_ms: 88.242715
+  type: 'test'
+  ...
+# Subtest: unified CLI help exposes all branches without spawning a browser
+ok 162 - unified CLI help exposes all branches without spawning a browser
+  ---
+  duration_ms: 76.67419
+  type: 'test'
+  ...
+# Subtest: three complete editorial examples check and deliver without overwrite
+ok 163 - three complete editorial examples check and deliver without overwrite
+  ---
+  duration_ms: 2682.482781
+  type: 'test'
+  ...
+# Subtest: only one skill entry point exists within expanded package
+ok 164 - only one skill entry point exists within expanded package
+  ---
+  duration_ms: 2.20009
+  type: 'test'
+  ...
+# Subtest: doctor separates unavailable Python from missing files
+ok 165 - doctor separates unavailable Python from missing files
+  ---
+  duration_ms: 140.722259
+  type: 'test'
+  ...
+# Subtest: artifact checker flushes a large standard receipt to a pipe
+ok 166 - artifact checker flushes a large standard receipt to a pipe
+  ---
+  duration_ms: 269.158691
+  type: 'test'
+  ...
+# Subtest: artifact checker flushes a large showcase receipt to a pipe
+ok 167 - artifact checker flushes a large showcase receipt to a pipe
+  ---
+  duration_ms: 211.324081
+  type: 'test'
+  ...
+# Subtest: validate consumes a complete artifact receipt larger than 64 KiB
+ok 168 - validate consumes a complete artifact receipt larger than 64 KiB
+  ---
+  duration_ms: 618.734017
+  type: 'test'
+  ...
+# Subtest: deliver consumes a complete artifact receipt larger than 64 KiB
+ok 169 - deliver consumes a complete artifact receipt larger than 64 KiB
+  ---
+  duration_ms: 538.77471
+  type: 'test'
+  ...
+# Subtest: compare consumes a complete artifact receipt larger than 64 KiB
+ok 170 - compare consumes a complete artifact receipt larger than 64 KiB
+  ---
+  duration_ms: 2760.207808
+  type: 'test'
+  ...
+# Subtest: base named-route fixtures remain valid without redundant authored endpoint sides
+ok 171 - base named-route fixtures remain valid without redundant authored endpoint sides
+  ---
+  duration_ms: 884.55359
+  type: 'test'
+  ...
+# Subtest: workflow: lanes as a string fails friendly
+ok 172 - workflow: lanes as a string fails friendly
+  ---
+  duration_ms: 226.425313
+  type: 'test'
+  ...
+# Subtest: workflow: phases as a string fails friendly
+ok 173 - workflow: phases as a string fails friendly
+  ---
+  duration_ms: 145.254024
+  type: 'test'
+  ...
+# Subtest: workflow: groups as a string fails friendly
+ok 174 - workflow: groups as a string fails friendly
+  ---
+  duration_ms: 167.655365
+  type: 'test'
+  ...
+# Subtest: workflow: mainPath as a string fails friendly
+ok 175 - workflow: mainPath as a string fails friendly
+  ---
+  duration_ms: 151.313616
+  type: 'test'
+  ...
+# Subtest: workflow: nodes as a string fails friendly
+ok 176 - workflow: nodes as a string fails friendly
+  ---
+  duration_ms: 188.551399
+  type: 'test'
+  ...
+# Subtest: workflow: edges as a string fails friendly
+ok 177 - workflow: edges as a string fails friendly
+  ---
+  duration_ms: 174.836234
+  type: 'test'
+  ...
+# Subtest: workflow: cards as a string fails friendly
+ok 178 - workflow: cards as a string fails friendly
+  ---
+  duration_ms: 343.688834
+  type: 'test'
+  ...
+# Subtest: workflow: scalar meta fails friendly
+ok 179 - workflow: scalar meta fails friendly
+  ---
+  duration_ms: 188.117553
+  type: 'test'
+  ...
+# Subtest: sequence: participants as a string fails friendly
+ok 180 - sequence: participants as a string fails friendly
+  ---
+  duration_ms: 218.798835
+  type: 'test'
+  ...
+# Subtest: sequence: messages as a string fails friendly
+ok 181 - sequence: messages as a string fails friendly
+  ---
+  duration_ms: 256.378733
+  type: 'test'
+  ...
+# Subtest: sequence: segments as a string fails friendly
+ok 182 - sequence: segments as a string fails friendly
+  ---
+  duration_ms: 225.781977
+  type: 'test'
+  ...
+# Subtest: sequence: activations as a string fails friendly
+ok 183 - sequence: activations as a string fails friendly
+  ---
+  duration_ms: 156.311808
+  type: 'test'
+  ...
+# Subtest: sequence: cards as a string fails friendly
+ok 184 - sequence: cards as a string fails friendly
+  ---
+  duration_ms: 151.588258
+  type: 'test'
+  ...
+# Subtest: sequence: scalar meta fails friendly
+ok 185 - sequence: scalar meta fails friendly
+  ---
+  duration_ms: 161.148821
+  type: 'test'
+  ...
+# Subtest: dataflow: stages as a string fails friendly
+ok 186 - dataflow: stages as a string fails friendly
+  ---
+  duration_ms: 175.088883
+  type: 'test'
+  ...
+# Subtest: dataflow: nodes as a string fails friendly
+ok 187 - dataflow: nodes as a string fails friendly
+  ---
+  duration_ms: 191.727283
+  type: 'test'
+  ...
+# Subtest: dataflow: flows as a string fails friendly
+ok 188 - dataflow: flows as a string fails friendly
+  ---
+  duration_ms: 201.036378
+  type: 'test'
+  ...
+# Subtest: dataflow: cards as a string fails friendly
+ok 189 - dataflow: cards as a string fails friendly
+  ---
+  duration_ms: 213.515926
+  type: 'test'
+  ...
+# Subtest: dataflow: scalar meta fails friendly
+ok 190 - dataflow: scalar meta fails friendly
+  ---
+  duration_ms: 180.392131
+  type: 'test'
+  ...
+# Subtest: lifecycle: lanes as a string fails friendly
+ok 191 - lifecycle: lanes as a string fails friendly
+  ---
+  duration_ms: 184.058056
+  type: 'test'
+  ...
+# Subtest: lifecycle: states as a string fails friendly
+ok 192 - lifecycle: states as a string fails friendly
+  ---
+  duration_ms: 164.125814
+  type: 'test'
+  ...
+# Subtest: lifecycle: transitions as a string fails friendly
+ok 193 - lifecycle: transitions as a string fails friendly
+  ---
+  duration_ms: 153.587013
+  type: 'test'
+  ...
+# Subtest: lifecycle: cards as a string fails friendly
+ok 194 - lifecycle: cards as a string fails friendly
+  ---
+  duration_ms: 268.30902
+  type: 'test'
+  ...
+# Subtest: lifecycle: scalar meta fails friendly
+ok 195 - lifecycle: scalar meta fails friendly
+  ---
+  duration_ms: 127.702316
+  type: 'test'
+  ...
+# Subtest: architecture: components as a string fails friendly
+ok 196 - architecture: components as a string fails friendly
+  ---
+  duration_ms: 181.354591
+  type: 'test'
+  ...
+# Subtest: architecture: boundaries as a string fails friendly
+ok 197 - architecture: boundaries as a string fails friendly
+  ---
+  duration_ms: 250.961012
+  type: 'test'
+  ...
+# Subtest: architecture: connections as a string fails friendly
+ok 198 - architecture: connections as a string fails friendly
+  ---
+  duration_ms: 141.172396
+  type: 'test'
+  ...
+# Subtest: architecture: cards as a string fails friendly
+ok 199 - architecture: cards as a string fails friendly
+  ---
+  duration_ms: 133.773171
+  type: 'test'
+  ...
+# Subtest: architecture: scalar meta fails friendly
+ok 200 - architecture: scalar meta fails friendly
+  ---
+  duration_ms: 163.593143
+  type: 'test'
+  ...
+# Subtest: workflow: node missing col never writes NaN
+ok 201 - workflow: node missing col never writes NaN
+  ---
+  duration_ms: 209.732923
+  type: 'test'
+  ...
+# Subtest: lifecycle: state missing col never writes NaN
+ok 202 - lifecycle: state missing col never writes NaN
+  ---
+  duration_ms: 126.766466
+  type: 'test'
+  ...
+# Subtest: property: shuffling node/state order still renders (order-independence)
+ok 203 - property: shuffling node/state order still renders (order-independence)
+  ---
+  duration_ms: 11875.034054
+  type: 'test'
+  ...
+# Subtest: installed skill rejects unknown fields without node_modules
+ok 204 - installed skill rejects unknown fields without node_modules
+  ---
+  duration_ms: 158.207333
+  type: 'test'
+  ...
+# Subtest: installed skill retains full workflow schema without node_modules
+ok 205 - installed skill retains full workflow schema without node_modules
+  ---
+  duration_ms: 155.106608
+  type: 'test'
+  ...
+# Subtest: installed skill retains full sequence schema without node_modules
+ok 206 - installed skill retains full sequence schema without node_modules
+  ---
+  duration_ms: 152.453888
+  type: 'test'
+  ...
+# Subtest: installed skill retains full dataflow schema without node_modules
+ok 207 - installed skill retains full dataflow schema without node_modules
+  ---
+  duration_ms: 140.853393
+  type: 'test'
+  ...
+# Subtest: installed skill retains full lifecycle schema without node_modules
+ok 208 - installed skill retains full lifecycle schema without node_modules
+  ---
+  duration_ms: 143.122241
+  type: 'test'
+  ...
+# Subtest: installed skill retains full architecture schema without node_modules
+ok 209 - installed skill retains full architecture schema without node_modules
+  ---
+  duration_ms: 125.860654
+  type: 'test'
+  ...
+# Subtest: automaticPortRhythmBridge: near parallel ports use readable outside runs
+ok 210 - automaticPortRhythmBridge: near parallel ports use readable outside runs
+  ---
+  duration_ms: 5.188836
+  type: 'test'
+  ...
+# Subtest: rectsOverlap: separated rects do not overlap
+ok 211 - rectsOverlap: separated rects do not overlap
+  ---
+  duration_ms: 0.563417
+  type: 'test'
+  ...
+# Subtest: rectsOverlap: clearly overlapping rects overlap
+ok 212 - rectsOverlap: clearly overlapping rects overlap
+  ---
+  duration_ms: 0.21529
+  type: 'test'
+  ...
+# Subtest: rectsOverlap: edge-touching is NOT overlap at gap 0 (<= boundary)
+ok 213 - rectsOverlap: edge-touching is NOT overlap at gap 0 (<= boundary)
+  ---
+  duration_ms: 0.22065
+  type: 'test'
+  ...
+# Subtest: rectsOverlap: positive gap flags rects within that gap as too close
+ok 214 - rectsOverlap: positive gap flags rects within that gap as too close
+  ---
+  duration_ms: 0.402347
+  type: 'test'
+  ...
+# Subtest: rectsOverlap: negative gap shrinks the hit box (label-collision convention)
+ok 215 - rectsOverlap: negative gap shrinks the hit box (label-collision convention)
+  ---
+  duration_ms: 0.233294
+  type: 'test'
+  ...
+# Subtest: rectsOverlap: non-finite geometry is not an overlap
+ok 216 - rectsOverlap: non-finite geometry is not an overlap
+  ---
+  duration_ms: 0.39762
+  type: 'test'
+  ...
+# Subtest: segmentIntersectsRect: detects an edge crossing a node box
+ok 217 - segmentIntersectsRect: detects an edge crossing a node box
+  ---
+  duration_ms: 0.578695
+  type: 'test'
+  ...
+# Subtest: segmentRectClearance measures horizontal, vertical, and reversed diagonal segments
+ok 218 - segmentRectClearance measures horizontal, vertical, and reversed diagonal segments
+  ---
+  duration_ms: 1.139478
+  type: 'test'
+  ...
+# Subtest: label-route clearance locks tangent, sub-threshold, boundary, and reversed coordinates
+ok 219 - label-route clearance locks tangent, sub-threshold, boundary, and reversed coordinates
+  ---
+  duration_ms: 2.287091
+  type: 'test'
+  ...
+# Subtest: collectLabelRouteClearance exempts only the owning relationship at an exact threshold
+ok 220 - collectLabelRouteClearance exempts only the owning relationship at an exact threshold
+  ---
+  duration_ms: 1.222563
+  type: 'test'
+  ...
+# Subtest: endpoint-side direction distinguishes perpendicular entry from a tangent border run
+ok 221 - endpoint-side direction distinguishes perpendicular entry from a tangent border run
+  ---
+  duration_ms: 1.141723
+  type: 'test'
+  ...
+# Subtest: endpoint-side direction can fail closed on renderer-inferred automatic sides
+ok 222 - endpoint-side direction can fail closed on renderer-inferred automatic sides
+  ---
+  duration_ms: 0.548529
+  type: 'test'
+  ...
+# Subtest: cleanFlowProblems reports collection index, ids, segment, clearance, and fix
+ok 223 - cleanFlowProblems reports collection index, ids, segment, clearance, and fix
+  ---
+  duration_ms: 0.680314
+  type: 'test'
+  ...
+# Subtest: cleanFlowProblems exempts endpoints and ignores missing endpoint geometry
+ok 224 - cleanFlowProblems exempts endpoints and ignores missing endpoint geometry
+  ---
+  duration_ms: 0.469161
+  type: 'test'
+  ...
+# Subtest: cleanFlowProblems uses clearance, reports the first segment, and deduplicates an obstacle
+ok 225 - cleanFlowProblems uses clearance, reports the first segment, and deduplicates an obstacle
+  ---
+  duration_ms: 0.336625
+  type: 'test'
+  ...
+# Subtest: cleanCrossingProblems reports one deterministic proper X in showcase
+ok 226 - cleanCrossingProblems reports one deterministic proper X in showcase
+  ---
+  duration_ms: 1.225689
+  type: 'test'
+  ...
+# Subtest: cleanCrossingProblems keeps proper X as non-blocking in standard
+ok 227 - cleanCrossingProblems keeps proper X as non-blocking in standard
+  ---
+  duration_ms: 0.248543
+  type: 'test'
+  ...
+# Subtest: cleanCrossingProblems exempts shared endpoints
+ok 228 - cleanCrossingProblems exempts shared endpoints
+  ---
+  duration_ms: 8.596791
+  type: 'test'
+  ...
+# Subtest: cleanCrossingProblems exempts endpoint touches and collinear corridors
+ok 229 - cleanCrossingProblems exempts endpoint touches and collinear corridors
+  ---
+  duration_ms: 1.171207
+  type: 'test'
+  ...
+# Subtest: ambiguous corridor gate reports unrelated collinear overlap with exact identities
+ok 230 - ambiguous corridor gate reports unrelated collinear overlap with exact identities
+  ---
+  duration_ms: 2.188919
+  type: 'test'
+  ...
+# Subtest: ambiguous corridor gate exempts shared endpoints, point touches, and overlaps below 8px
+ok 231 - ambiguous corridor gate exempts shared endpoints, point touches, and overlaps below 8px
+  ---
+  duration_ms: 0.627676
+  type: 'test'
+  ...
+# Subtest: ambiguous corridor gate keeps standard renderable
+ok 232 - ambiguous corridor gate keeps standard renderable
+  ---
+  duration_ms: 0.574167
+  type: 'test'
+  ...
+# Subtest: cleanBorderRunProblems reports a deterministic long run on a rounded frame side
+ok 233 - cleanBorderRunProblems reports a deterministic long run on a rounded frame side
+  ---
+  duration_ms: 2.182336
+  type: 'test'
+  ...
+# Subtest: border-run contract allows perpendicular crossings, point touches, and rounded corners
+ok 234 - border-run contract allows perpendicular crossings, point touches, and rounded corners
+  ---
+  duration_ms: 0.940458
+  type: 'test'
+  ...
+# Subtest: border-run contract detects vertical frames and merges hits per relation side
+ok 235 - border-run contract detects vertical frames and merges hits per relation side
+  ---
+  duration_ms: 0.62443
+  type: 'test'
+  ...
+# Subtest: border-run contract merges adjacent primitives and counts any positive straight overlap
+ok 236 - border-run contract merges adjacent primitives and counts any positive straight overlap
+  ---
+  duration_ms: 0.673341
+  type: 'test'
+  ...
+# Subtest: routeBudgetMetrics normalizes collinear points and records neutral route evidence
+ok 237 - routeBudgetMetrics normalizes collinear points and records neutral route evidence
+  ---
+  duration_ms: 0.598001
+  type: 'test'
+  ...
+# Subtest: route rhythm separates ordinary endpoint stubs from cramped turns and micro segments
+ok 238 - route rhythm separates ordinary endpoint stubs from cramped turns and micro segments
+  ---
+  duration_ms: 0.603911
+  type: 'test'
+  ...
+# Subtest: route rhythm is a showcase-only generation gate with actionable relationship identity
+ok 239 - route rhythm is a showcase-only generation gate with actionable relationship identity
+  ---
+  duration_ms: 0.927955
+  type: 'test'
+  ...
+# Subtest: asArray coerces non-arrays to [] (degraded-mode guard)
+ok 240 - asArray coerces non-arrays to [] (degraded-mode guard)
+  ---
+  duration_ms: 0.799877
+  type: 'test'
+  ...
+# Subtest: isFinitePoint rejects NaN/undefined/Infinity
+ok 241 - isFinitePoint rejects NaN/undefined/Infinity
+  ---
+  duration_ms: 0.389805
+  type: 'test'
+  ...
+# Subtest: anchor returns the correct edge midpoint for each side
+ok 242 - anchor returns the correct edge midpoint for each side
+  ---
+  duration_ms: 1.895583
+  type: 'test'
+  ...
+# Subtest: anchor falls back to the right edge for unknown/auto sides
+ok 243 - anchor falls back to the right edge for unknown/auto sides
+  ---
+  duration_ms: 0.722603
+  type: 'test'
+  ...
+# Subtest: defaultFromSide / defaultToSide are mirror pairs
+ok 244 - defaultFromSide / defaultToSide are mirror pairs
+  ---
+  duration_ms: 0.690715
+  type: 'test'
+  ...
+# Subtest: chosenSide treats explicit "auto" as "use the geometric fallback"
+ok 245 - chosenSide treats explicit "auto" as "use the geometric fallback"
+  ---
+  duration_ms: 0.193921
+  type: 'test'
+  ...
+# Subtest: polylinePath emits M then L commands
+ok 246 - polylinePath emits M then L commands
+  ---
+  duration_ms: 0.350992
+  type: 'test'
+  ...
+# Subtest: roundedPath degrades to a polyline for <3 points or radius<=0
+ok 247 - roundedPath degrades to a polyline for <3 points or radius<=0
+  ---
+  duration_ms: 0.367673
+  type: 'test'
+  ...
+# Subtest: roundedPath inserts a quadratic corner and never emits NaN
+ok 248 - roundedPath inserts a quadratic corner and never emits NaN
+  ---
+  duration_ms: 0.217394
+  type: 'test'
+  ...
+# Subtest: roundedPath clamps radius to half the shorter adjacent segment
+ok 249 - roundedPath clamps radius to half the shorter adjacent segment
+  ---
+  duration_ms: 0.188221
+  type: 'test'
+  ...
+# Subtest: labelPoint: 2-point path is the midpoint lifted 10px, plus offsets
+ok 250 - labelPoint: 2-point path is the midpoint lifted 10px, plus offsets
+  ---
+  duration_ms: 0.328131
+  type: 'test'
+  ...
+# Subtest: labelPoint: labelSegment selects a segment and clamps to range
+ok 251 - labelPoint: labelSegment selects a segment and clamps to range
+  ---
+  duration_ms: 0.787624
+  type: 'test'
+  ...
+# Subtest: labelPoint: explicit labelAt wins outright
+ok 252 - labelPoint: explicit labelAt wins outright
+  ---
+  duration_ms: 0.572845
+  type: 'test'
+  ...
+# Subtest: textUnits: ASCII=1, CJK=2, mixed sums, fullwidth supplementary=2
+ok 253 - textUnits: ASCII=1, CJK=2, mixed sums, fullwidth supplementary=2
+  ---
+  duration_ms: 0.611067
+  type: 'test'
+  ...
+# Subtest: textUnits follows wide and halfwidth East Asian presentation boundaries
+ok 254 - textUnits follows wide and halfwidth East Asian presentation boundaries
+  ---
+  duration_ms: 0.24748
+  type: 'test'
+  ...
+# Subtest: textUnits counts emoji-presentation symbols in the BMP as wide
+ok 255 - textUnits counts emoji-presentation symbols in the BMP as wide
+  ---
+  duration_ms: 0.366922
+  type: 'test'
+  ...
+# Subtest: textUnits measures a variation-selector sequence from the selector
+ok 256 - textUnits measures a variation-selector sequence from the selector
+  ---
+  duration_ms: 0.184654
+  type: 'test'
+  ...
+# Subtest: semantic sigils cover every component and lifecycle kind without literal color
+ok 257 - semantic sigils cover every component and lifecycle kind without literal color
+  ---
+  duration_ms: 1.71627
+  type: 'test'
+  ...
+# Subtest: unknown semantic sigils fail closed to a neutral role stamp
+ok 258 - unknown semantic sigils fail closed to a neutral role stamp
+  ---
+  duration_ms: 0.214108
+  type: 'test'
+  ...
+# Subtest: suggestLabelObstacleFix includes rects and labelAt/labelDy hints
+ok 259 - suggestLabelObstacleFix includes rects and labelAt/labelDy hints
+  ---
+  duration_ms: 0.912797
+  type: 'test'
+  ...
+# Subtest: suggestComponentSeparation proposes nudged pos
+ok 260 - suggestComponentSeparation proposes nudged pos
+  ---
+  duration_ms: 0.404131
+  type: 'test'
+  ...
+# Subtest: applyTemplate preserves dollar sequences in titles
+ok 261 - applyTemplate preserves dollar sequences in titles
+  ---
+  duration_ms: 8.103684
+  type: 'test'
+  ...
+# Subtest: applyTemplate omits the subtitle row when no subtitle is authored
+ok 262 - applyTemplate omits the subtitle row when no subtitle is authored
+  ---
+  duration_ms: 7.498088
+  type: 'test'
+  ...
+# Subtest: applyTemplate requires the new evidence slot only when evidence is present
+ok 263 - applyTemplate requires the new evidence slot only when evidence is present
+  ---
+  duration_ms: 2.550671
+  type: 'test'
+  ...
+# Subtest: gridLayout returns null for free placement
+ok 264 - gridLayout returns null for free placement
+  ---
+  duration_ms: 2.94827
+  type: 'test'
+  ...
+# Subtest: resolveComponentPos prefers explicit pos over row/col
+ok 265 - resolveComponentPos prefers explicit pos over row/col
+  ---
+  duration_ms: 1.584916
+  type: 'test'
+  ...
+# Subtest: resolveComponentPos maps row/col to pixel origin
+ok 266 - resolveComponentPos maps row/col to pixel origin
+  ---
+  duration_ms: 0.336526
+  type: 'test'
+  ...
+# Subtest: validateGridPlacement rejects duplicate cells and missing row/col
+ok 267 - validateGridPlacement rejects duplicate cells and missing row/col
+  ---
+  duration_ms: 0.620594
+  type: 'test'
+  ...
+# Subtest: validateGridPlacement ignores explicit pos overrides without row/col
+ok 268 - validateGridPlacement ignores explicit pos overrides without row/col
+  ---
+  duration_ms: 0.510198
+  type: 'test'
+  ...
+# Subtest: render output check: showcase rejects node copy that becomes illegible at 1440px
+ok 269 - render output check: showcase rejects node copy that becomes illegible at 1440px
+  ---
+  duration_ms: 95.801215
+  type: 'test'
+  ...
+# Subtest: render output check: compares exact projected size before rounding diagnostics
+ok 270 - render output check: compares exact projected size before rounding diagnostics
+  ---
+  duration_ms: 90.00478
+  type: 'test'
+  ...
+# Subtest: render output check: includes primary node labels in desktop readability
+ok 271 - render output check: includes primary node labels in desktop readability
+  ---
+  duration_ms: 87.019481
+  type: 'test'
+  ...
+# Subtest: render output check: includes semantic boundary labels in desktop readability
+ok 272 - render output check: includes semantic boundary labels in desktop readability
+  ---
+  duration_ms: 105.779043
+  type: 'test'
+  ...
+# Subtest: render output check: accepts orthogonal arrows away from legend
+ok 273 - render output check: accepts orthogonal arrows away from legend
+  ---
+  duration_ms: 149.137543
+  type: 'test'
+  ...
+# Subtest: render output check: rejects two-point diagonal arrows
+ok 274 - render output check: rejects two-point diagonal arrows
+  ---
+  duration_ms: 97.450051
+  type: 'test'
+  ...
+# Subtest: render output check: rejects a diagonal segment inside a polyline
+ok 275 - render output check: rejects a diagonal segment inside a polyline
+  ---
+  duration_ms: 79.81046
+  type: 'test'
+  ...
+# Subtest: render output check: rejects arrows crossing legend text
+ok 276 - render output check: rejects arrows crossing legend text
+  ---
+  duration_ms: 99.233496
+  type: 'test'
+  ...
+# Subtest: render output check: ignores unmarked sequence lifelines near legend
+ok 277 - render output check: ignores unmarked sequence lifelines near legend
+  ---
+  duration_ms: 105.626168
+  type: 'test'
+  ...
+# Subtest: render output check: standard records a proper X as a composition warning
+ok 278 - render output check: standard records a proper X as a composition warning
+  ---
+  duration_ms: 103.16349
+  type: 'test'
+  ...
+# Subtest: render output check: showcase rejects a proper X with semantic identities
+ok 279 - render output check: showcase rejects a proper X with semantic identities
+  ---
+  duration_ms: 88.572788
+  type: 'test'
+  ...
+# Subtest: render output check: shared endpoints and endpoint touches pass showcase
+ok 280 - render output check: shared endpoints and endpoint touches pass showcase
+  ---
+  duration_ms: 104.69561
+  type: 'test'
+  ...
+# Subtest: render output check: relationship labels cannot hide another shared-source route
+ok 281 - render output check: relationship labels cannot hide another shared-source route
+  ---
+  duration_ms: 214.08243
+  type: 'test'
+  ...
+# Subtest: render output check: repeated endpoint messages keep their own stable owner identity
+ok 282 - render output check: repeated endpoint messages keep their own stable owner identity
+  ---
+  duration_ms: 94.308771
+  type: 'test'
+  ...
+# Subtest: render output check: duplicate fragments of the owning relationship stay exempt
+ok 283 - render output check: duplicate fragments of the owning relationship stay exempt
+  ---
+  duration_ms: 98.997387
+  type: 'test'
+  ...
+# Subtest: render output check: duplicate fragments of another relationship count once
+ok 284 - render output check: duplicate fragments of another relationship count once
+  ---
+  duration_ms: 124.875541
+  type: 'test'
+  ...
+# Subtest: render output check: label-route thresholds include exact 2px and 4px boundaries
+ok 285 - render output check: label-route thresholds include exact 2px and 4px boundaries
+  ---
+  duration_ms: 530.606188
+  type: 'test'
+  ...
+# Subtest: render output check: unrelated shared corridors warn in standard and fail showcase
+ok 286 - render output check: unrelated shared corridors warn in standard and fail showcase
+  ---
+  duration_ms: 357.280141
+  type: 'test'
+  ...
+# Subtest: render output check: visible quadratic crossing is caught in showcase
+ok 287 - render output check: visible quadratic crossing is caught in showcase
+  ---
+  duration_ms: 146.492166
+  type: 'test'
+  ...
+# Subtest: render output check: container border runs fail both profiles with frame identity
+ok 288 - render output check: container border runs fail both profiles with frame identity
+  ---
+  duration_ms: 280.339496
+  type: 'test'
+  ...
+# Subtest: render output check: perpendicular crossings, rounded-corner touches, and tangent Q curves pass
+ok 289 - render output check: perpendicular crossings, rounded-corner touches, and tangent Q curves pass
+  ---
+  duration_ms: 104.473606
+  type: 'test'
+  ...
+# Subtest: render output check: a fully collinear quadratic primitive is a border run
+ok 290 - render output check: a fully collinear quadratic primitive is a border run
+  ---
+  duration_ms: 111.325703
+  type: 'test'
+  ...
+# Subtest: render output check: composition receipt records neutral normalized route metrics
+ok 291 - render output check: composition receipt records neutral normalized route metrics
+  ---
+  duration_ms: 98.052481
+  type: 'test'
+  ...
+# Subtest: render output check: endpoint stubs from 8px pass while cramped interior turns are profile-aware
+ok 292 - render output check: endpoint stubs from 8px pass while cramped interior turns are profile-aware
+  ---
+  duration_ms: 306.543607
+  type: 'test'
+  ...
+# Subtest: repair receipt: malformed JSON is one clean machine object without a Node stack
+ok 293 - repair receipt: malformed JSON is one clean machine object without a Node stack
+  ---
+  duration_ms: 283.731672
+  type: 'test'
+  ...
+# Subtest: repair receipt: all five modes identify schema subjects and supported fixes
+ok 294 - repair receipt: all five modes identify schema subjects and supported fixes
+  ---
+  duration_ms: 1290.965947
+  type: 'test'
+  ...
+# Subtest: repair receipt: human validation formats the same rule without a stack
+ok 295 - repair receipt: human validation formats the same rule without a stack
+  ---
+  duration_ms: 243.860574
+  type: 'test'
+  ...
+# Subtest: repair receipt: validate and deliver share exact Clean Flow evidence while delivery preserves the trusted artifact
+ok 296 - repair receipt: validate and deliver share exact Clean Flow evidence while delivery preserves the trusted artifact
+  ---
+  duration_ms: 568.369246
+  type: 'test'
+  ...
+# Subtest: repair receipt: repository evidence failures retain a stable rule and exact repair
+ok 297 - repair receipt: repository evidence failures retain a stable rule and exact repair
+  ---
+  duration_ms: 241.765229
+  type: 'test'
+  ...
+# Subtest: repair receipt: public validate reports borderline desktop readability with a supported fix
+ok 298 - repair receipt: public validate reports borderline desktop readability with a supported fix
+  ---
+  duration_ms: 415.113918
+  type: 'test'
+  ...
+1..298
+# tests 298
+# suites 0
+# pass 298
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 117934.390096

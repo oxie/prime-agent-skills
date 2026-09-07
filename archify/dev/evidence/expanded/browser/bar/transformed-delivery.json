@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "evidenceKind": "static-editorial-check",
+  "browserReview": "untested",
+  "visualReview": "untested",
+  "limitations": [
+    "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+    "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+    "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+    "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+    "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+  ],
+  "command": "editorial deliver",
+  "input": {
+    "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/transformed-source.html",
+    "sha256": "2fc8db4cf42a401dd768af94b84fe2eab15ad31173203d0f8bf52ef92a4a875b",
+    "bytes": 1338
+  },
+  "checks": [
+    {
+      "name": "bounded_utf8_input",
+      "ok": true
+    },
+    {
+      "name": "strict_static_html_svg_subset",
+      "ok": true
+    },
+    {
+      "name": "offline_css_and_fragment_references",
+      "ok": true
+    },
+    {
+      "name": "unique_resolving_ids",
+      "ok": true
+    },
+    {
+      "name": "finite_geometry_bounds",
+      "ok": true
+    },
+    {
+      "name": "bounded_svg_use_expansion",
+      "ok": true,
+      "expandedNodeEstimate": 20,
+      "expandedByteEstimate": 1692
+    },
+    {
+      "name": "authored_title_description_text_candidates",
+      "ok": true,
+      "textCandidates": 1
+    },
+    {
+      "name": "restrictive_delivery_csp",
+      "ok": true,
+      "status": "present"
+    }
+  ],
+  "managedCsp": true,
+  "artifact": {
+    "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/transformed.html",
+    "sha256": "eedc92ea9f01fc4f50bad26e1e2bcc6c75888f1e37d36a294f92479a52ff4dc6",
+    "bytes": 1564
+  }
+}

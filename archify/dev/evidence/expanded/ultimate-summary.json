@@ -1,0 +1,406 @@
+{
+  "wardley": {
+    "exitCode": 0,
+    "cases": 9,
+    "passedReceipts": 7,
+    "expectedRefusals": 2,
+    "httpAttempts": 0,
+    "allCleanupComplete": true,
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [
+          {
+            "tag": "div",
+            "overflowX": "auto",
+            "clientWidth": 356,
+            "scrollWidth": 680,
+            "keyboardFocusable": true,
+            "box": {
+              "x": 16,
+              "width": 358
+            }
+          }
+        ],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": false,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 239.03125,
+          "width": 680,
+          "height": 433.046875
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 987,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A synthetic seat-reservation value chain",
+        "description": "Qualitative strategy example. Reserve a seat depends on Seat finder, which depends on Catalogue, which depends on Hosting. Visibility decreases downward. Evolution moves from Genesis to Commodity. Seat finder has a hypothetical rightward evolution arrow; it is not a forecast backed by research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 364,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 184.34375,
+          "width": 910,
+          "height": 579.515625
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "pngDimensions": [
+      [
+        0.25,
+        {
+          "width": 228,
+          "height": 145
+        },
+        null
+      ],
+      [
+        0.5,
+        {
+          "width": 455,
+          "height": 290
+        },
+        null
+      ],
+      [
+        1,
+        {
+          "width": 910,
+          "height": 580
+        },
+        null
+      ],
+      [
+        1.5,
+        {
+          "width": 1365,
+          "height": 869
+        },
+        null
+      ]
+    ]
+  },
+  "journey": {
+    "exitCode": 0,
+    "cases": 9,
+    "passedReceipts": 7,
+    "expectedRefusals": 2,
+    "httpAttempts": 0,
+    "allCleanupComplete": true,
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [
+          {
+            "tag": "div",
+            "overflowX": "auto",
+            "clientWidth": 356,
+            "scrollWidth": 640,
+            "keyboardFocusable": true,
+            "box": {
+              "x": 16,
+              "width": 358
+            }
+          }
+        ],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": false,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 239.03125,
+          "width": 640,
+          "height": 423.109375
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 1114,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "A fictional first-time workshop attendee journey",
+        "description": "Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 457,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 910,
+          "height": 601.609375
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1105,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "pngDimensions": [
+      [
+        0.25,
+        {
+          "width": 228,
+          "height": 150
+        },
+        null
+      ],
+      [
+        0.5,
+        {
+          "width": 455,
+          "height": 301
+        },
+        null
+      ],
+      [
+        1,
+        {
+          "width": 910,
+          "height": 602
+        },
+        null
+      ],
+      [
+        1.5,
+        {
+          "width": 1365,
+          "height": 902
+        },
+        null
+      ]
+    ]
+  },
+  "bar": {
+    "exitCode": 0,
+    "cases": 17,
+    "passedReceipts": 14,
+    "expectedRefusals": 3,
+    "httpAttempts": 0,
+    "allCleanupComplete": true,
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 263.03125,
+          "width": 356,
+          "height": 286.40625
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 938,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "pngDimensions": [
+      [
+        0.25,
+        {
+          "width": 160,
+          "height": 128
+        },
+        null
+      ],
+      [
+        0.5,
+        {
+          "width": 319,
+          "height": 257
+        },
+        null
+      ],
+      [
+        1,
+        {
+          "width": 638,
+          "height": 513
+        },
+        null
+      ],
+      [
+        1.5,
+        {
+          "width": 957,
+          "height": 770
+        },
+        null
+      ],
+      [
+        0.25,
+        {
+          "width": 75,
+          "height": 45
+        },
+        null
+      ],
+      [
+        0.5,
+        {
+          "width": 150,
+          "height": 90
+        },
+        null
+      ],
+      [
+        1,
+        {
+          "width": 301,
+          "height": 181
+        },
+        null
+      ],
+      [
+        1.5,
+        {
+          "width": 451,
+          "height": 271
+        },
+        {
+          "method": "canvas-resample-rounding-only",
+          "nativeDimensions": {
+            "width": 450,
+            "height": 270
+          }
+        }
+      ]
+    ]
+  }
+}

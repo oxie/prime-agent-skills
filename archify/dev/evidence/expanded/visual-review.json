@@ -1,0 +1,47 @@
+{
+  "reviewKind": "human-model-image-review",
+  "status": "reviewed",
+  "scope": "Six actual viewport screenshots from completed three-example pilots",
+  "observations": [
+    "Desktop bar, journey and Wardley show clear heading hierarchy, labels and legends without obvious collisions in captured views.",
+    "Bar lengths correspond to synthetic12/24/18 counts with common zero baseline; source table agrees.",
+    "Mobile bar fits the viewport with readable labels.",
+    "Mobile journey and Wardley show only part of the wide figure at once; local horizontal scrolling is intentional and equivalent text reflows below. Do not claim full SVG fits narrow viewport.",
+    "Screenshots are viewport captures, not a full-page or screen-reader audit; host font configuration is not glyph or cross-platform fidelity proof.",
+    "Trusted standalone SVG round-trip and fractional normalized PNG visibly retain dark gradient background, red-to-blue rectangle and white label. Ultimate mobile screenshots are byte-identical to inspected mobile captures."
+  ],
+  "images": [
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/viewports/1440x1000.png",
+      "sha256": "3fdacfb393cb93a9a66a19c31169102704d91eaae6e5852e6871cc644e0d3b7c"
+    },
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/journey-ultimate/pilot/viewports/390x844.png",
+      "sha256": "961612bba4752a8f028a125c69b6dab7622e04d1cd49b34a289a0a5e2054405f"
+    },
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/viewports/1440x1000.png",
+      "sha256": "59b2d5b0f29e441bbe7457cb9fbd14f2e2cc914b34c1baf351de3fe341e43fa9"
+    },
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/wardley-ultimate/pilot/viewports/390x844.png",
+      "sha256": "3333f2b83d428f3bd97e313a63f0807ca071e68be732679ecc0713ba4cb8efd3"
+    },
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/viewports/1440x1000.png",
+      "sha256": "c92aedc3b97d988c31e161aa4262a432b9c47b09a2d21a502e3f5d33178c9032"
+    },
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/viewports/390x844.png",
+      "sha256": "4ca6f23cd7c5fee7f80bc41ac2449217841ab9588c74a93a9eedc8e314866846"
+    },
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-roundtrip.png",
+      "sha256": "f69a26254d5436c8423187d9c56ce049d172abf479e80b90da90bbc0423a74f9"
+    },
+    {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-1.5.png",
+      "sha256": "b2f38dbc540611df56e90a88fcaec29ceb3b56f679b347b4e13d30f1ed5aa941"
+    }
+  ]
+}

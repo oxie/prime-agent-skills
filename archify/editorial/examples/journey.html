@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking is the hypothetical low point</title>
+<!-- Original Prime static shell. Design guidance curated from Cathryn Lavery's diagram-design,
+MIT, commit 3b446333f164174a571106673f943c58df282ff8. Retained license: editorial/LICENSE.diagram-design. -->
+<style> :root { --paper: #17212b; --surface: #202d39; --ink: #f3f5f6; --muted: #bccad5; --rule: #657584; --accent: #ffbc8a; --accent-tint: #473425; --series: #a0bfd5; --figure-min-width: 640px; }
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 24px; }
+h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.15; margin: 8px 0 16px; letter-spacing: -0.025em; }
+h2 { font-size: 1.1rem; margin: 20px 0 8px; }
+p { margin: 8px 0 16px; }
+.eyebrow { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.note { color: var(--muted); font-size: .95rem; }
+figure { margin: 24px 0; }
+.figure-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+.figure-scroll:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+svg { display: block; width: 100%; min-width: var(--figure-min-width); height: auto; background: var(--surface); }
+svg text { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; fill: var(--ink); }
+svg .small { font-size: 16px; }
+svg .muted { fill: var(--muted); }
+svg .strong { font-weight: 700; }
+svg .accent-text { fill: var(--accent); }
+svg .edge { fill: none; stroke: var(--muted); stroke-width: 2; }
+svg .grid { fill: none; stroke: var(--rule); stroke-width: 1; }
+svg .axis { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+svg .node { fill: var(--surface); stroke: var(--ink); stroke-width: 2; }
+svg .focal { fill: var(--accent-tint); stroke: var(--accent); stroke-width: 2; }
+figcaption { margin-top: 16px; }
+ul { padding-left: 24px; }
+li { margin: 6px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+caption { text-align: left; font-weight: 700; padding: 8px 0; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+th { font-weight: 650; }
+@media (max-width: 600px) { main { padding: 24px 16px; } }
+@media print { main { max-width: none; padding: 0; } .figure-scroll { overflow: visible; border: 0; } svg { min-width: 0; } }
+html { color-scheme: dark; }</style>
+</head>
+<body>
+<main>
+<header>
+<p class="eyebrow">Archify · Synthetic journey example</p>
+<h1>Booking is the hypothetical low point</h1>
+<p>One fictional first-time workshop attendee. The line joins named feelings across stages; it does not measure emotion between them.</p>
+</header>
+<figure>
+<div class="figure-scroll" role="region" aria-label="Scrollable diagram" tabindex="0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 476" role="img" data-archify-editorial="journey" aria-labelledby="figure-title" aria-describedby="figure-description">
+<title id="figure-title">A fictional first-time workshop attendee journey</title>
+<desc id="figure-description">Discover: neutral, find a workshop on a website. Choose: high, compare sessions on a schedule. Book: low, enter details on a long form. Attend: high, join the session at a venue. All sentiments are hypothetical ordinal labels, not customer research.</desc>
+<line x1="140" y1="118" x2="690" y2="118" class="grid"></line>
+<text x="28" y="124" text-anchor="start" class="small muted">High</text>
+<line x1="140" y1="182" x2="690" y2="182" class="grid"></line>
+<text x="28" y="188" text-anchor="start" class="small muted">Neutral</text>
+<line x1="140" y1="246" x2="690" y2="246" class="grid"></line>
+<text x="28" y="252" text-anchor="start" class="small muted">Low</text>
+<text x="210" y="48" text-anchor="middle" class="strong">Discover</text>
+<text x="350" y="48" text-anchor="middle" class="strong">Choose</text>
+<text x="490" y="48" text-anchor="middle" class="strong">Book</text>
+<text x="630" y="48" text-anchor="middle" class="strong">Attend</text>
+<polyline points="210,182 350,118 490,246 630,118" class="edge"></polyline>
+<path d="M 350 118 L 490 246" fill="none" stroke="var(--accent)" stroke-width="3"></path>
+<circle cx="210" cy="182" r="7" class="node"></circle>
+<circle cx="350" cy="118" r="7" class="node"></circle>
+<circle cx="490" cy="246" r="7" class="focal"></circle>
+<circle cx="630" cy="118" r="7" class="node"></circle>
+<line x1="24" y1="292" x2="696" y2="292" class="grid"></line>
+<line x1="24" y1="368" x2="696" y2="368" class="grid"></line>
+<line x1="24" y1="422" x2="696" y2="422" class="grid"></line>
+<text x="28" y="324" text-anchor="start" class="small strong">Action</text>
+<text x="28" y="401" text-anchor="start" class="small strong">Touchpoint</text>
+<text x="210" y="324" text-anchor="middle" class="small">Find a</text>
+<text x="210" y="346" text-anchor="middle" class="small">workshop</text>
+<text x="210" y="401" text-anchor="middle" class="small muted">Website</text>
+<text x="350" y="324" text-anchor="middle" class="small">Compare</text>
+<text x="350" y="346" text-anchor="middle" class="small">sessions</text>
+<text x="350" y="401" text-anchor="middle" class="small muted">Schedule</text>
+<text x="490" y="324" text-anchor="middle" class="small">Enter</text>
+<text x="490" y="346" text-anchor="middle" class="small">details</text>
+<text x="490" y="401" text-anchor="middle" class="small muted">Form</text>
+<text x="630" y="324" text-anchor="middle" class="small">Join the</text>
+<text x="630" y="346" text-anchor="middle" class="small">session</text>
+<text x="630" y="401" text-anchor="middle" class="small muted">Venue</text>
+<rect x="436" y="258" width="108" height="26" rx="3" fill="var(--accent-tint)" stroke="var(--accent)" stroke-dasharray="4 3"></rect>
+<text x="490" y="276" text-anchor="middle" class="small accent-text">Long form</text>
+<text x="28" y="453" text-anchor="start" class="small muted">Named levels are ordinal, not numeric scores.</text>
+</svg>
+</div>
+<figcaption>
+<h2>Equivalent stage notes</h2>
+<ul>
+<li><strong>Discover — Neutral.</strong> Find a workshop on the website.</li>
+<li><strong>Choose — High.</strong> Compare sessions on the schedule.</li>
+<li><strong>Book — Low.</strong> Enter details on a form. The imagined friction is its length.</li>
+<li><strong>Attend — High.</strong> Join the session at the venue.</li>
+</ul>
+<p class="note">Synthetic scenario only. No interview, survey or behavior data supports these feelings. The outlined low-point marker and its incoming segment identify the proposed friction. Scroll the figure on narrow screens.</p>
+</figcaption>
+</figure>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "wardley": {
+    "390x844": {
+      "finalSha256": "3333f2b83d428f3bd97e313a63f0807ca071e68be732679ecc0713ba4cb8efd3",
+      "identicalToComplete": true
+    },
+    "1440x1000": {
+      "finalSha256": "59b2d5b0f29e441bbe7457cb9fbd14f2e2cc914b34c1baf351de3fe341e43fa9",
+      "identicalToComplete": true
+    }
+  },
+  "journey": {
+    "390x844": {
+      "finalSha256": "961612bba4752a8f028a125c69b6dab7622e04d1cd49b34a289a0a5e2054405f",
+      "identicalToComplete": true
+    },
+    "1440x1000": {
+      "finalSha256": "3fdacfb393cb93a9a66a19c31169102704d91eaae6e5852e6871cc644e0d3b7c",
+      "identicalToComplete": true
+    }
+  },
+  "bar": {
+    "390x844": {
+      "finalSha256": "4ca6f23cd7c5fee7f80bc41ac2449217841ab9588c74a93a9eedc8e314866846",
+      "identicalToComplete": true
+    },
+    "1440x1000": {
+      "finalSha256": "c92aedc3b97d988c31e161aa4262a432b9c47b09a2d21a502e3f5d33178c9032",
+      "identicalToComplete": true
+    }
+  }
+}

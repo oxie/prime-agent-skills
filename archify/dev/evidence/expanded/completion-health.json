@@ -1,0 +1,14 @@
+{
+  "core": {
+    "exitCode": 0,
+    "log": "completion-core.log"
+  },
+  "status": {
+    "exitCode": 0,
+    "log": "completion-status.log"
+  },
+  "doctor": {
+    "exitCode": 0,
+    "log": "completion-doctor.log"
+  }
+}

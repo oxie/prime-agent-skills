@@ -1,0 +1,5 @@
+native loader PASS: 54 skills, no diagnostics
+fresh Prime default discovery PASS: skill:archify
+fresh Prime default discovery PASS: skill:hallmark
+fresh Prime default discovery PASS: skill:variate
+no model request, no runtime configuration changed

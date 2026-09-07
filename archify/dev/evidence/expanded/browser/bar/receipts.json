@@ -1,0 +1,2134 @@
+[
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 263.03125,
+          "width": 356,
+          "height": 286.40625
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 938,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-ZZLmSh/input.html",
+        "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+        "bytes": 5931
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 55,
+          "expandedByteEstimate": 6133
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 5
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-dhGKBK",
+      "pid": 241652
+    },
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 17,
+          "y": 263.03125,
+          "width": 356,
+          "height": 286.40625
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 938,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-vh16EI/input.html",
+        "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+        "bytes": 5931
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 55,
+          "expandedByteEstimate": 6133
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 5
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-Zst4zI",
+      "pid": 242105
+    },
+    "captureDirectory": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/viewports",
+    "captures": [
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/viewports/390x844.png",
+        "sha256": "4ca6f23cd7c5fee7f80bc41ac2449217841ab9588c74a93a9eedc8e314866846",
+        "bytes": 55987,
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/viewports/1440x1000.png",
+        "sha256": "c92aedc3b97d988c31e161aa4262a432b9c47b09a2d21a502e3f5d33178c9032",
+        "bytes": 74882,
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    },
+    "captureStatus": "complete"
+  },
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "fail",
+    "viewports": [],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "error": "Output already exists; exports never overwrite files or symlinks.",
+    "network": {
+      "httpBlockingEnabled": false,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-sLQStY/input.html",
+        "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+        "bytes": 5931
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 55,
+          "expandedByteEstimate": 6133
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 5
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-MwtmI9",
+      "pid": 242561
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 638,
+      "height": 513.296875
+    },
+    "scale": 0.25,
+    "dimensions": {
+      "width": 160,
+      "height": 128
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/primary-0.25.png",
+    "outputSha256": "f17ca06c29e4e8c1201f5b904adc8a3d2fa0d2eab2c2f021a0399cfd0dc10dff",
+    "outputBytes": 3656,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-lK9nl0/input.html",
+        "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+        "bytes": 5931
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 55,
+          "expandedByteEstimate": 6133
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 5
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-9v1jn5",
+      "pid": 243039
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 638,
+      "height": 513.296875
+    },
+    "scale": 0.5,
+    "dimensions": {
+      "width": 319,
+      "height": 257
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/primary-0.5.png",
+    "outputSha256": "3c44fb41132cb8df590bbce5dc69cddc5bdcf952b5d7df772574a784788a4945",
+    "outputBytes": 10597,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-dwJQHK/input.html",
+        "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+        "bytes": 5931
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 55,
+          "expandedByteEstimate": 6133
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 5
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-NiPWgf",
+      "pid": 243512
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 638,
+      "height": 513.296875
+    },
+    "scale": 1,
+    "dimensions": {
+      "width": 638,
+      "height": 513
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/primary-1.png",
+    "outputSha256": "eccf6c347d118cb84d16d905d002638efff6a94ad1f46d077f4f775f840e8e7d",
+    "outputBytes": 22718,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-dIFNdT/input.html",
+        "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+        "bytes": 5931
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 55,
+          "expandedByteEstimate": 6133
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 5
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-jUYek6",
+      "pid": 243976
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 638,
+      "height": 513.296875
+    },
+    "scale": 1.5,
+    "dimensions": {
+      "width": 957,
+      "height": 770
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/primary-1.5.png",
+    "outputSha256": "3b127956f09bf4911884f8d30557823c95c9e8c6a9be751812205570e06312bd",
+    "outputBytes": 35308,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Synthetic practice-task counts for three groups",
+        "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 245,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 265,
+          "y": 208.34375,
+          "width": 638,
+          "height": 513.296875
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1072,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": true,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-mZEBQb/input.html",
+        "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+        "bytes": 5931
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 55,
+          "expandedByteEstimate": 6133
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 5
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-uZCer1",
+      "pid": 244528
+    },
+    "renderedBox": {
+      "x": 265,
+      "y": 208.34375,
+      "width": 638,
+      "height": 513.296875
+    },
+    "scale": null,
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/primary.svg",
+    "outputSha256": "7cd6838e432386931787c4e59afc59e4eaffb1f662a9165eb9a428aa6283f15c",
+    "outputBytes": 35180,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "fail",
+    "viewports": [],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+    "error": "Output already exists; exports never overwrite files or symlinks.",
+    "network": {
+      "httpBlockingEnabled": false,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-check",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 300.5,
+          "height": 180.5
+        },
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 300.5,
+          "height": 180.5
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "visual-check",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.html",
+    "sourceSha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-d4a0iF/input.html",
+        "sha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+        "bytes": 1518
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 20,
+          "expandedByteEstimate": 1646
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 1
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-I4FyeD",
+      "pid": 245057
+    },
+    "captureDirectory": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-viewports",
+    "captures": [
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-viewports/390x844.png",
+        "sha256": "5738fe93d85130a142f5ee1d1265136734ff82a83b5651f1d358ef19bfcfcffc",
+        "bytes": 23641,
+        "width": 390,
+        "height": 844
+      },
+      {
+        "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-viewports/1440x1000.png",
+        "sha256": "fd3626ec8b0ee039178a45a5cda7b14fc20593935b4aca988d95d80023ba7b92",
+        "bytes": 31373,
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    },
+    "captureStatus": "complete"
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 300.5,
+          "height": 180.5
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.html",
+    "sourceSha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-7aFVQJ/input.html",
+        "sha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+        "bytes": 1518
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 20,
+          "expandedByteEstimate": 1646
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 1
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-TSpZZD",
+      "pid": 245314
+    },
+    "renderedBox": {
+      "x": 16,
+      "y": 79.875,
+      "width": 300.5,
+      "height": 180.5
+    },
+    "scale": null,
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.svg",
+    "outputSha256": "303831f3f19168f93acb087f362480da3a006a9fe29f50fe63f04714d53408cb",
+    "outputBytes": 13629,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "trusted-svg-roundtrip",
+    "status": "pass",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.svg",
+    "network": {
+      "httpBlockingEnabled": true,
+      "attemptCount": 0,
+      "attempts": []
+    },
+    "profilePath": "/tmp/archify-visual-check-profile-BOoGSD",
+    "metrics": {
+      "tag": "svg",
+      "title": "Benign CSS geometry and gradient",
+      "description": "A red to blue rectangle on a dark background with white text.",
+      "backgroundColor": "rgb(16, 32, 48)",
+      "backgroundImage": "linear-gradient(90deg, rgb(16, 32, 48), rgb(48, 64, 80))",
+      "shapeWidth": "160px",
+      "shapeHeight": "70px",
+      "fill": "url(\"#paint\")",
+      "labelledby": "figure-title",
+      "describedby": "figure-desc",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 300.5,
+        "height": 180.5
+      }
+    },
+    "capture": {
+      "path": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-roundtrip.png",
+      "sha256": "f69a26254d5436c8423187d9c56ce049d172abf479e80b90da90bbc0423a74f9",
+      "bytes": 8507
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 300.5,
+          "height": 180.5
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.html",
+    "sourceSha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-8qcl30/input.html",
+        "sha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+        "bytes": 1518
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 20,
+          "expandedByteEstimate": 1646
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 1
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-mnZkGr",
+      "pid": 245806
+    },
+    "renderedBox": {
+      "x": 16,
+      "y": 79.875,
+      "width": 300.5,
+      "height": 180.5
+    },
+    "scale": 0.25,
+    "dimensions": {
+      "width": 75,
+      "height": 45
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-0.25.png",
+    "outputSha256": "18a15cb5174a2f239841d5a5c9689cf000c9dab6d91cda1ac6447e4d6d45215b",
+    "outputBytes": 1142,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 300.5,
+          "height": 180.5
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.html",
+    "sourceSha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-mPb8TW/input.html",
+        "sha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+        "bytes": 1518
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 20,
+          "expandedByteEstimate": 1646
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 1
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-GeExOp",
+      "pid": 246027
+    },
+    "renderedBox": {
+      "x": 16,
+      "y": 79.875,
+      "width": 300.5,
+      "height": 180.5
+    },
+    "scale": 0.5,
+    "dimensions": {
+      "width": 150,
+      "height": 90
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-0.5.png",
+    "outputSha256": "984828909c7aab0ea15f6c4e7985d0087a3d328c0680f674016dc3b2163bef53",
+    "outputBytes": 2741,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 300.5,
+          "height": 180.5
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.html",
+    "sourceSha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-sxSFSE/input.html",
+        "sha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+        "bytes": 1518
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 20,
+          "expandedByteEstimate": 1646
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 1
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-e3ep6X",
+      "pid": 246244
+    },
+    "renderedBox": {
+      "x": 16,
+      "y": 79.875,
+      "width": 300.5,
+      "height": 180.5
+    },
+    "scale": 1,
+    "dimensions": {
+      "width": 301,
+      "height": 181
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-1.png",
+    "outputSha256": "01701e0278654f7dc96f2a5964e9cceaa91a4790621f000be4881620984dda0d",
+    "outputBytes": 10525,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "pass",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 300.5,
+          "height": 180.5
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity.html",
+    "sourceSha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-KGxXWW/input.html",
+        "sha256": "73f3c45820d2d124ae92a9acaf0a42ccb8183ea91036b1dea7124bead1627efb",
+        "bytes": 1518
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 20,
+          "expandedByteEstimate": 1646
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 1
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-fgc0Vk",
+      "pid": 246474
+    },
+    "renderedBox": {
+      "x": 16,
+      "y": 79.875,
+      "width": 300.5,
+      "height": 180.5
+    },
+    "scale": 1.5,
+    "dimensions": {
+      "width": 451,
+      "height": 271
+    },
+    "rasterNormalization": {
+      "method": "canvas-resample-rounding-only",
+      "nativeDimensions": {
+        "width": 450,
+        "height": 270
+      }
+    },
+    "output": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/fidelity-1.5.png",
+    "outputSha256": "b2f38dbc540611df56e90a88fcaec29ceb3b56f679b347b4e13d30f1ed5aa941",
+    "outputBytes": 37263,
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  },
+  {
+    "evidenceKind": "browser-editorial-export",
+    "status": "fail",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "title": "Benign CSS geometry and gradient",
+        "description": "A red to blue rectangle on a dark background with white text.",
+        "fonts": {
+          "status": "loaded",
+          "configuredFamilies": [
+            "sans-serif"
+          ]
+        },
+        "localHorizontalScroll": [],
+        "hiddenHorizontalClipping": false,
+        "svgFitsViewport": true,
+        "equivalentContent": {
+          "selector": "figure > figcaption",
+          "present": true,
+          "characters": 55,
+          "positiveBox": true
+        },
+        "box": {
+          "x": 16,
+          "y": 79.875,
+          "width": 270.4499816894531,
+          "height": 162.4499969482422
+        },
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "positiveBox": true,
+        "horizontalOverflow": false,
+        "verticalScrolling": false,
+        "status": "pass"
+      }
+    ],
+    "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+    "command": "export",
+    "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/pilot/transformed.html",
+    "sourceSha256": "eedc92ea9f01fc4f50bad26e1e2bcc6c75888f1e37d36a294f92479a52ff4dc6",
+    "staticGate": {
+      "schemaVersion": 1,
+      "ok": true,
+      "evidenceKind": "static-editorial-check",
+      "browserReview": "untested",
+      "visualReview": "untested",
+      "limitations": [
+        "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+        "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+        "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+        "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+        "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+      ],
+      "command": "editorial check",
+      "input": {
+        "path": "/tmp/archify-editorial-ZVy4rI/input.html",
+        "sha256": "eedc92ea9f01fc4f50bad26e1e2bcc6c75888f1e37d36a294f92479a52ff4dc6",
+        "bytes": 1564
+      },
+      "checks": [
+        {
+          "name": "bounded_utf8_input",
+          "ok": true
+        },
+        {
+          "name": "strict_static_html_svg_subset",
+          "ok": true
+        },
+        {
+          "name": "offline_css_and_fragment_references",
+          "ok": true
+        },
+        {
+          "name": "unique_resolving_ids",
+          "ok": true
+        },
+        {
+          "name": "finite_geometry_bounds",
+          "ok": true
+        },
+        {
+          "name": "bounded_svg_use_expansion",
+          "ok": true,
+          "expandedNodeEstimate": 20,
+          "expandedByteEstimate": 1692
+        },
+        {
+          "name": "authored_title_description_text_candidates",
+          "ok": true,
+          "textCandidates": 1
+        },
+        {
+          "name": "restrictive_delivery_csp",
+          "ok": true,
+          "status": "present"
+        }
+      ],
+      "managedCsp": true
+    },
+    "browser": {
+      "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+      "sandboxEnabled": true,
+      "documentScriptsDisabled": true,
+      "media": "screen",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "deviceScaleFactor": 1,
+      "profilePath": "/tmp/archify-visual-check-profile-Zxmybf",
+      "pid": 246724
+    },
+    "renderedBox": {
+      "x": 16,
+      "y": 79.875,
+      "width": 270.4499816894531,
+      "height": 162.4499969482422
+    },
+    "scale": null,
+    "error": "Error: Standalone SVG export does not support a transformed root SVG; remove its root transform before delivery.\n    at <anonymous>:10:60\n    at <anonymous>:66:3",
+    "network": {
+      "httpBlockingEnabled": true,
+      "attempts": [],
+      "attemptCount": 0
+    },
+    "cleanup": {
+      "processExited": true,
+      "profileRemoved": true,
+      "snapshotRemoved": true,
+      "complete": true
+    }
+  }
+]

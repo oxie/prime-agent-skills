@@ -4,7 +4,7 @@
 - Reviewed commit: `c6519401f7b91b9d43011657880893b0a8955548`
 - Source subtree: `archify/`
 - Upstream version/channel: `2.17.0-dev.1`, development (not a stable-release claim).
-- Prime adaptation: `2.17.0-dev.1-prime.1`.
+- Prime adaptation: `2.17.0-dev.1-prime.2`.
 - Upstream MIT LICENSE and THIRD_PARTY_NOTICES.md retained; embedded marks retain
   their own source/license metadata. Archify credits Cocoon-AI's MIT diagram generator.
 
@@ -26,3 +26,26 @@ about unexecuted features. See AUDIT.md for measured results and known limits.
 Updates are explicit reviewed changes to prime-agent-skills, not a background checker.
 Preserve focused local changes when comparing a future upstream revision. Test in an
 isolated checkout, review evidence, commit/push and independently verify remote HEAD.
+
+
+## Unified editorial/import expansion
+
+The same Archify package now also curates **cathrynlavery/diagram-design** at
+`3b446333f164174a571106673f943c58df282ff8` (plugin 2.6.15, MIT).
+Its license is retained at `editorial/LICENSE.diagram-design` and `imports/LICENSE`.
+
+Added: 39 selectively loaded editorial layout guides; semantic-pattern and
+brand-first design guidance; offline static templates and original synthetic examples;
+reviewed bounded Mermaid/draw.io extraction; conservative static editorial checks,
+new-output-only delivery and explicit sandboxed browser/export helpers.
+
+These are two modes under **one skill and CLI**, not a separate Diagram Design skill,
+and not 39 new typed JSON renderers. Existing five renderers and their receipts retain
+their meaning. Editorial checks are weaker structural/lint evidence and are labeled
+separately. Browser checks and visual review remain separate.
+
+Not imported: upstream plugin/marketplace/auto-update scripts, website onboarding,
+shared home profiles or installed-style mutation, external fonts, icon bundles,
+optional JS motion, whole-repository CI or unreviewed dependency installation.
+Brand/fact/quantity preservation replaces rigid font, grid, palette and deletion bans.
+See AUDIT.md and expansion evidence for exactly what was tested.

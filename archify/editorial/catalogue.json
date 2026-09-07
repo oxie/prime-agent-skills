@@ -1,0 +1,197 @@
+[
+  {
+    "id": "architecture",
+    "title": "Architecture",
+    "reference": "editorial/references/type-architecture.md"
+  },
+  {
+    "id": "it-state",
+    "title": "IT current-state",
+    "reference": "editorial/references/type-it-state.md"
+  },
+  {
+    "id": "flowchart",
+    "title": "Flowchart",
+    "reference": "editorial/references/type-flowchart.md"
+  },
+  {
+    "id": "sequence",
+    "title": "Sequence",
+    "reference": "editorial/references/type-sequence.md"
+  },
+  {
+    "id": "state",
+    "title": "State machine",
+    "reference": "editorial/references/type-state.md"
+  },
+  {
+    "id": "er",
+    "title": "ER / data model",
+    "reference": "editorial/references/type-er.md"
+  },
+  {
+    "id": "timeline",
+    "title": "Timeline",
+    "reference": "editorial/references/type-timeline.md"
+  },
+  {
+    "id": "swimlane",
+    "title": "Swimlane",
+    "reference": "editorial/references/type-swimlane.md"
+  },
+  {
+    "id": "quadrant",
+    "title": "Quadrant",
+    "reference": "editorial/references/type-quadrant.md"
+  },
+  {
+    "id": "radar",
+    "title": "Radar / Spider",
+    "reference": "editorial/references/type-radar.md"
+  },
+  {
+    "id": "polar",
+    "title": "Polar chart",
+    "reference": "editorial/references/type-polar.md"
+  },
+  {
+    "id": "loop",
+    "title": "Loop / flywheel",
+    "reference": "editorial/references/type-loop.md"
+  },
+  {
+    "id": "nested",
+    "title": "Nested containment",
+    "reference": "editorial/references/type-nested.md"
+  },
+  {
+    "id": "tree",
+    "title": "Tree / hierarchy",
+    "reference": "editorial/references/type-tree.md"
+  },
+  {
+    "id": "org-chart",
+    "title": "Org chart / responsibility map",
+    "reference": "editorial/references/type-org-chart.md"
+  },
+  {
+    "id": "layers",
+    "title": "Layer stack",
+    "reference": "editorial/references/type-layers.md"
+  },
+  {
+    "id": "venn",
+    "title": "Venn / set overlap",
+    "reference": "editorial/references/type-venn.md"
+  },
+  {
+    "id": "pyramid",
+    "title": "Pyramid / funnel",
+    "reference": "editorial/references/type-pyramid.md"
+  },
+  {
+    "id": "bar",
+    "title": "Bar / column chart",
+    "reference": "editorial/references/type-bar.md"
+  },
+  {
+    "id": "treemap",
+    "title": "Treemap",
+    "reference": "editorial/references/type-treemap.md"
+  },
+  {
+    "id": "line",
+    "title": "Line chart",
+    "reference": "editorial/references/type-line.md"
+  },
+  {
+    "id": "gantt",
+    "title": "Gantt chart",
+    "reference": "editorial/references/type-gantt.md"
+  },
+  {
+    "id": "scatter",
+    "title": "Scatter plot",
+    "reference": "editorial/references/type-scatter.md"
+  },
+  {
+    "id": "high-level",
+    "title": "High-level data stack",
+    "reference": "editorial/references/type-high-level.md"
+  },
+  {
+    "id": "process",
+    "title": "Process",
+    "reference": "editorial/references/type-process.md"
+  },
+  {
+    "id": "medallion",
+    "title": "Medallion / data-quality tiers",
+    "reference": "editorial/references/type-medallion.md"
+  },
+  {
+    "id": "data-flow",
+    "title": "Role-scoped data flow",
+    "reference": "editorial/references/type-data-flow.md"
+  },
+  {
+    "id": "dp-integration",
+    "title": "Data-platform integration",
+    "reference": "editorial/references/type-dp-integration.md"
+  },
+  {
+    "id": "dp-security-matrix",
+    "title": "Data-platform security matrix",
+    "reference": "editorial/references/type-dp-security-matrix.md"
+  },
+  {
+    "id": "sankey",
+    "title": "Sankey / flow quantity",
+    "reference": "editorial/references/type-sankey.md"
+  },
+  {
+    "id": "fishbone",
+    "title": "Fishbone / Ishikawa",
+    "reference": "editorial/references/type-fishbone.md"
+  },
+  {
+    "id": "wardley",
+    "title": "Wardley map",
+    "reference": "editorial/references/type-wardley.md"
+  },
+  {
+    "id": "kanban",
+    "title": "Kanban board",
+    "reference": "editorial/references/type-kanban.md"
+  },
+  {
+    "id": "journey",
+    "title": "User journey map",
+    "reference": "editorial/references/type-journey.md"
+  },
+  {
+    "id": "deployment",
+    "title": "Deployment",
+    "reference": "editorial/references/type-deployment.md"
+  },
+  {
+    "id": "dependency",
+    "title": "Dependency graph",
+    "reference": "editorial/references/type-dependency.md"
+  },
+  {
+    "id": "uml-class",
+    "title": "UML class diagram",
+    "reference": "editorial/references/type-uml-class.md"
+  },
+  {
+    "id": "story-map",
+    "title": "User story map",
+    "reference": "editorial/references/type-story-map.md"
+  },
+  {
+    "id": "db-schema",
+    "title": "Physical database schema",
+    "reference": "editorial/references/type-db-schema.md"
+  }
+]

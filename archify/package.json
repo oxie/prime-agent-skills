@@ -1,9 +1,9 @@
 {
   "name": "archify",
-  "version": "2.17.0-dev.1-prime.1",
+  "version": "2.17.0-dev.1-prime.2",
   "private": true,
   "type": "module",
-  "description": "JSON-IR diagram renderers (architecture / workflow / sequence / dataflow / lifecycle).",
+  "description": "Unified technical diagram renderers, editorial layout guidance, local imports, static checks and exports.",
   "license": "MIT",
   "bin": {
     "archify": "./bin/archify.mjs"
@@ -12,8 +12,11 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node --test --test-concurrency=1 test/geometry.test.mjs test/grid.test.mjs test/degraded.test.mjs test/repair-receipt.test.mjs test/render-output-checks.test.mjs test/base-input-compatibility.test.mjs test/artifact-receipt-flush.test.mjs dev/prime-contracts.test.mjs",
+    "test": "node --test --test-concurrency=1 test/geometry.test.mjs test/grid.test.mjs test/degraded.test.mjs test/repair-receipt.test.mjs test/render-output-checks.test.mjs test/base-input-compatibility.test.mjs test/artifact-receipt-flush.test.mjs dev/prime-contracts.test.mjs dev/editorial.test.mjs dev/editorial-browser.test.mjs dev/imports.test.mjs dev/unified-contracts.test.mjs",
     "test:browser": "node dev/prime-browser.mjs",
-    "doctor": "node bin/archify.mjs doctor"
+    "doctor": "node bin/archify.mjs doctor",
+    "test:editorial": "node --test --test-concurrency=1 dev/editorial.test.mjs dev/editorial-browser.test.mjs dev/unified-contracts.test.mjs",
+    "test:imports": "node --test --test-concurrency=1 dev/imports.test.mjs",
+    "test:editorial-browser": "node dev/editorial-browser-pilot.mjs"
   }
 }

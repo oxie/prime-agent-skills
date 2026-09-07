@@ -1,0 +1,161 @@
+{
+  "evidenceKind": "browser-editorial-check",
+  "status": "pass",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "title": "Synthetic practice-task counts for three groups",
+      "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+      "fonts": {
+        "status": "loaded",
+        "configuredFamilies": [
+          "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        ]
+      },
+      "localHorizontalScroll": [],
+      "hiddenHorizontalClipping": false,
+      "svgFitsViewport": true,
+      "equivalentContent": {
+        "selector": "figure > figcaption",
+        "present": true,
+        "characters": 245,
+        "positiveBox": true
+      },
+      "box": {
+        "x": 17,
+        "y": 263.03125,
+        "width": 356,
+        "height": 286.40625
+      },
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 938,
+      "positiveBox": true,
+      "horizontalOverflow": false,
+      "verticalScrolling": true,
+      "status": "pass"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "title": "Synthetic practice-task counts for three groups",
+      "description": "Horizontal bars on a shared zero-to-thirty task scale. Group A: 12 completed tasks. Group B: 24. Group C: 18. Bar widths are proportional to these invented counts. Groups are not an experiment and no real team was measured.",
+      "fonts": {
+        "status": "loaded",
+        "configuredFamilies": [
+          "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        ]
+      },
+      "localHorizontalScroll": [],
+      "hiddenHorizontalClipping": false,
+      "svgFitsViewport": true,
+      "equivalentContent": {
+        "selector": "figure > figcaption",
+        "present": true,
+        "characters": 245,
+        "positiveBox": true
+      },
+      "box": {
+        "x": 265,
+        "y": 208.34375,
+        "width": 638,
+        "height": 513.296875
+      },
+      "innerWidth": 1440,
+      "innerHeight": 1000,
+      "scrollWidth": 1440,
+      "scrollHeight": 1072,
+      "positiveBox": true,
+      "horizontalOverflow": false,
+      "verticalScrolling": true,
+      "status": "pass"
+    }
+  ],
+  "limitations": "Conservative static lint, not a sanitizer. Browser checks measure structure and horizontal containment, not aesthetics or accessibility certification. Local horizontal diagram scrolling is reported separately from page containment; equivalent-text presence is not semantic-equivalence proof. System fonts are host-dependent; glyph fidelity is not guaranteed.",
+  "command": "visual-check",
+  "input": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/sub-402a8f99/evidence/bar-ultimate/input.html",
+  "sourceSha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+  "staticGate": {
+    "schemaVersion": 1,
+    "ok": true,
+    "evidenceKind": "static-editorial-check",
+    "browserReview": "untested",
+    "visualReview": "untested",
+    "limitations": [
+      "Conservative static editorial lint; not a sanitizer, browser-security proof, or typed Archify validation.",
+      "Does not verify chart math, factual accuracy, arbitrary CSS layout, rendered visibility, overlap, contrast, accessibility, or visual polish.",
+      "Browser and visual review remain untested. Open only separately reviewed, delivered HTML.",
+      "Publication requires POSIX no-follow directory handles and same-directory hard links; unsupported filesystems fail closed.",
+      "Delivery uses an exact read snapshot and atomic no-clobber publication; it does not lock concurrent source editors or promise crash durability."
+    ],
+    "command": "editorial check",
+    "input": {
+      "path": "/tmp/archify-editorial-E1lBjl/input.html",
+      "sha256": "4a7db317f9b789febc0f1f66171ad71401383ca7c50c557c8a0a1e3a0d403336",
+      "bytes": 5931
+    },
+    "checks": [
+      {
+        "name": "bounded_utf8_input",
+        "ok": true
+      },
+      {
+        "name": "strict_static_html_svg_subset",
+        "ok": true
+      },
+      {
+        "name": "offline_css_and_fragment_references",
+        "ok": true
+      },
+      {
+        "name": "unique_resolving_ids",
+        "ok": true
+      },
+      {
+        "name": "finite_geometry_bounds",
+        "ok": true
+      },
+      {
+        "name": "bounded_svg_use_expansion",
+        "ok": true,
+        "expandedNodeEstimate": 55,
+        "expandedByteEstimate": 6133
+      },
+      {
+        "name": "authored_title_description_text_candidates",
+        "ok": true,
+        "textCandidates": 5
+      },
+      {
+        "name": "restrictive_delivery_csp",
+        "ok": true,
+        "status": "present"
+      }
+    ],
+    "managedCsp": true
+  },
+  "browser": {
+    "executable": "/snap/chromium/current/usr/lib/chromium-browser/chrome",
+    "sandboxEnabled": true,
+    "documentScriptsDisabled": true,
+    "media": "screen",
+    "colorScheme": "light",
+    "reducedMotion": "reduce",
+    "deviceScaleFactor": 1,
+    "profilePath": "/tmp/archify-visual-check-profile-LzRzYz",
+    "pid": 251843
+  },
+  "network": {
+    "httpBlockingEnabled": true,
+    "attempts": [],
+    "attemptCount": 0
+  },
+  "cleanup": {
+    "processExited": true,
+    "profileRemoved": true,
+    "snapshotRemoved": true,
+    "complete": true
+  }
+}

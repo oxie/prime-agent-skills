@@ -1,0 +1,27 @@
+Archify doctor
+
+[ok] Node.js v22.22.2 (requires >=18)
+[ok] Unified package: editorial/catalogue.json
+[ok] Unified package: editorial/check.py
+[ok] Unified package: bin/editorial.mjs
+[ok] Unified package: bin/editorial-browser.mjs
+[ok] Unified package: bin/import-diagram.mjs
+[ok] Unified package: imports/drawio_extract.py
+[ok] Unified package: imports/mermaid_extract.py
+[ok] Python >=3.10 for imports/editorial checks (typed rendering uses Node only)
+[ok] Core template
+[ok] Example renderer
+[ok] Disabled preview compatibility stub
+[ok] Visual-check runtime
+[ok] Output path safety runtime
+[ok] Scenario recipe guide
+[ok] Progressive authoring references
+[ok] Architecture compare runtime and proof fixtures
+[ok] Standalone schema validators
+[ok] architecture renderer, schema, and example
+[ok] workflow renderer, schema, and example
+[ok] sequence renderer, schema, and example
+[ok] dataflow renderer, schema, and example
+[ok] lifecycle renderer, schema, and example
+
+Archify is ready.

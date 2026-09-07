@@ -1,0 +1,91 @@
+== identity ==
+== installed runtime ==
+{
+  "runtime": "/home/prime-agent/.local/lib/node_modules/prime-agent",
+  "version": "0.9.3",
+  "node": "v22.22.2",
+  "policy": "installed"
+}
+== runtime patches ==
+{
+  "runtime": "/home/prime-agent/.local/lib/node_modules/prime-agent",
+  "version": "0.9.3",
+  "patches": [
+    {
+      "patch": "kernel-recovery",
+      "file": "dist/core/tools/ipython.js",
+      "scope": "readable",
+      "status": "installed",
+      "sha256": "15397bdb69bc0349d34b35a29cca93ebb116e2ffe59ca3ba83cc9a836db831e1"
+    },
+    {
+      "patch": "kernel-recovery-bundle",
+      "file": "dist/bundle/chunk-YROFJ6N5.js",
+      "scope": "bundle_module",
+      "status": "installed",
+      "sha256": "7ddac05bca33e65bcd7687f1af18422b8ad8e17c59b03f0634a7464d8039b4e5"
+    }
+  ]
+}
+== script syntax ==
+== Python tests ==
+test_agent_owns_user_requested_health_check_and_known_repair (test_readiness.ReadinessContractTests.test_agent_owns_user_requested_health_check_and_known_repair) ... ok
+test_coding_simplicity_does_not_override_safety_or_verification (test_readiness.ReadinessContractTests.test_coding_simplicity_does_not_override_safety_or_verification) ... ok
+test_diagnostics_are_separate (test_readiness.ReadinessContractTests.test_diagnostics_are_separate) ... ok
+test_local_credential_paths_are_ignored (test_readiness.ReadinessContractTests.test_local_credential_paths_are_ignored) ... ok
+test_no_autonomy_features_enabled (test_readiness.ReadinessContractTests.test_no_autonomy_features_enabled) ... ok
+test_obsolete_runtime_result_writer_is_retired (test_readiness.ReadinessContractTests.test_obsolete_runtime_result_writer_is_retired) ... ok
+test_reproduction_uses_selected_runtime_and_content_baseline (test_readiness.ReadinessContractTests.test_reproduction_uses_selected_runtime_and_content_baseline) ... ok
+test_runtime_gates_check_the_installed_runtime (test_readiness.ReadinessContractTests.test_runtime_gates_check_the_installed_runtime) ... ok
+test_runtime_uses_content_compatibility_not_a_release_pin (test_readiness.ReadinessContractTests.test_runtime_uses_content_compatibility_not_a_release_pin) ... ok
+test_standing_coding_policy_covers_workflow_without_extra_approval (test_readiness.ReadinessContractTests.test_standing_coding_policy_covers_workflow_without_extra_approval) ... ok
+test_verified_092_release_provenance_is_preserved_as_history (test_readiness.ReadinessContractTests.test_verified_092_release_provenance_is_preserved_as_history) ... ok
+test_completed_child_result_survives_parent_compaction (test_recover_subagent_results.RecoverResultsTests.test_completed_child_result_survives_parent_compaction) ... ok
+test_noncompleted_child_is_not_published (test_recover_subagent_results.RecoverResultsTests.test_noncompleted_child_is_not_published) ... ok
+test_cli_package_mismatch_rejected (test_runtime_identity.RuntimeIdentityTests.test_cli_package_mismatch_rejected) ... ok
+test_future_version_needs_no_manifest_bump (test_runtime_identity.RuntimeIdentityTests.test_future_version_needs_no_manifest_bump) ... ok
+test_node_minimum_includes_patch_component (test_runtime_identity.RuntimeIdentityTests.test_node_minimum_includes_patch_component) ... ok
+test_node_version_and_range_fail_closed (test_runtime_identity.RuntimeIdentityTests.test_node_version_and_range_fail_closed) ... ok
+test_same_version_wrong_installation_rejected (test_runtime_identity.RuntimeIdentityTests.test_same_version_wrong_installation_rejected) ... ok
+test_wrong_package_name_rejected (test_runtime_identity.RuntimeIdentityTests.test_wrong_package_name_rejected) ... ok
+test_adjacent_unexpected_module_boundary_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_adjacent_unexpected_module_boundary_fails_without_writes) ... ok
+test_ambiguous_bundle_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_ambiguous_bundle_fails_without_writes) ... ok
+test_anchor_ambiguity_fails_closed (test_runtime_patches.RuntimePatchTests.test_anchor_ambiguity_fails_closed) ... ok
+test_apply_preflights_every_file_before_writing (test_runtime_patches.RuntimePatchTests.test_apply_preflights_every_file_before_writing) ... ok
+test_bad_expected_output_hash_fails_before_writing (test_runtime_patches.RuntimePatchTests.test_bad_expected_output_hash_fails_before_writing) ... ok
+test_check_on_pristine_runtime_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_check_on_pristine_runtime_fails_without_writes) ... ok
+test_concurrent_package_change_during_preflight_prevents_all_replacements (test_runtime_patches.RuntimePatchTests.test_concurrent_package_change_during_preflight_prevents_all_replacements) ... ok
+test_concurrent_target_change_during_preflight_is_not_overwritten (test_runtime_patches.RuntimePatchTests.test_concurrent_target_change_during_preflight_is_not_overwritten) ... ok
+test_duplicate_class_in_one_bundle_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_duplicate_class_in_one_bundle_fails_without_writes) ... ok
+test_each_patch_is_idempotent (test_runtime_patches.RuntimePatchTests.test_each_patch_is_idempotent) ... ok
+test_file_modes_are_preserved (test_runtime_patches.RuntimePatchTests.test_file_modes_are_preserved) ... ok
+test_future_version_and_renamed_bundle_apply_check_idempotently (test_runtime_patches.RuntimePatchTests.test_future_version_and_renamed_bundle_apply_check_idempotently) ... ok
+test_malformed_boundary_before_class_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_malformed_boundary_before_class_fails_without_writes) ... ok
+test_missing_bundle_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_missing_bundle_fails_without_writes) ... ok
+test_missing_ipython_boundary_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_missing_ipython_boundary_fails_without_writes) ... ok
+test_missing_next_module_boundary_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_missing_next_module_boundary_fails_without_writes) ... ok
+test_missing_version_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_missing_version_fails_without_writes) ... ok
+test_mixed_patched_and_pristine_targets_are_completed (test_runtime_patches.RuntimePatchTests.test_mixed_patched_and_pristine_targets_are_completed) ... ok
+test_partial_replace_failure_reports_incomplete_and_rerun_converges (test_runtime_patches.RuntimePatchTests.test_partial_replace_failure_reports_incomplete_and_rerun_converges) ... ok
+test_patched_anchor_does_not_authorize_unknown_readable_or_bundle (test_runtime_patches.RuntimePatchTests.test_patched_anchor_does_not_authorize_unknown_readable_or_bundle) ... ok
+test_repeated_source_marker_selects_implementation_not_imports (test_runtime_patches.RuntimePatchTests.test_repeated_source_marker_selects_implementation_not_imports) ... ok
+test_successful_check_does_not_write_or_replace_files (test_runtime_patches.RuntimePatchTests.test_successful_check_does_not_write_or_replace_files) ... ok
+test_unknown_bundle_module_change_outside_ensure_fails_closed (test_runtime_patches.RuntimePatchTests.test_unknown_bundle_module_change_outside_ensure_fails_closed) ... ok
+test_unknown_readable_change_outside_patch_anchor_fails_closed (test_runtime_patches.RuntimePatchTests.test_unknown_readable_change_outside_patch_anchor_fails_closed) ... ok
+test_unrelated_bundle_code_changes_are_preserved (test_runtime_patches.RuntimePatchTests.test_unrelated_bundle_code_changes_are_preserved) ... ok
+test_wrong_package_fails_without_writes (test_runtime_patches.RuntimePatchTests.test_wrong_package_fails_without_writes) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.256s
+
+OK
+== safe pre-patch failure reproduction ==
+safe pristine-0.9.3 poisoned-manager failure REPRODUCED
+== Node lifecycle regression ==
+readable repair-aware provisioner lifecycle PASS
+bundle repair-aware provisioner lifecycle PASS
+== Node kernel regression ==
+kernel restart + rehydration PASS
+== permissions and secret boundary ==
+security boundary PASS (24 repository files scanned)
+CORE READINESS PASS
