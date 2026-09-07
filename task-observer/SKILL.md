@@ -34,8 +34,9 @@ Run this once at the start of a session that will use tools:
    a plan. The dedicated call used to read this file is the activation call,
    not a task-specific call.
 2. Use the continual harness summaries already present in the system prompt as
-   current context. Do not scan unrelated files, Git history, credentials, or
-   every installed skill.
+   current context. Summaries can omit entries or truncate content: inspect relevant
+   full entries through the native harness interface when needed. Do not scan unrelated
+   entries, files, Git history, credentials, or every installed skill.
 3. Keep the observer active silently for the rest of the session. Do not block
    the user's task and do not create setup files.
 4. For casual conversation or a factual answer that needs no tools, remain
@@ -54,8 +55,10 @@ Look for evidence that can improve future work:
 - an existing skill whose instructions or validation are incomplete;
 - a narrow policy that prevents a demonstrated safety or quality problem.
 
-Do not preserve one-off task facts, transient guesses, secrets, credentials,
-client-sensitive details, or advice already represented in the active harness.
+Never preserve secrets or credentials in either harness scope. Keep client-sensitive
+details out of reusable lessons. Do not promote one-off task facts or transient
+guesses into global lessons. Temporary task coordination stays local when needed.
+Do not duplicate advice already represented in the harness.
 When uncertain whether a signal generalizes, consult
 `references/signals.md` and treat its examples as methodology, not as a
 separate storage contract.
@@ -67,26 +70,61 @@ When there is a strong, evidence-backed observation:
 1. Finish or safely pause the user's immediate task first.
 2. Check the continual harness summaries in context. Do not duplicate an
    existing prompt, memory, skill, or subagent entry.
-3. In a persistent root session, schedule one focused refinement from the
-   Python REPL:
+3. Choose scope **before calling refinement**. Stable, evidence-backed workflow
+   lessons and durable user preferences that should survive a new session belong
+   in the **global harness**. Pass `global_=True`; mentioning global scope only in prose is not
+   enough. Qualify project-specific lessons with their project and conditions.
+   Current-task progress, temporary blockers and worker handles stay local.
+4. In a persistent root session, schedule one focused refinement from the
+   Python REPL. Set the explicit scope flag to match step 3:
 
    ```python
+   use_global = True  # Reviewed reusable lesson; use False for temporary local state.
    await refine.run("""Task-observer candidate.
    Signal: <new-workflow | improve-existing | simplify-existing>
    Source: <user correction | agent behavior | tool/project evidence | successful technique>
    Evidence: <specific event in this trajectory>
    General rule: <concise reusable and client-safe lesson>
    Target: <existing harness/installed skill, or new candidate>
-   Scope reason: <why local scope is sufficient>
+   Scope reason: <why the selected local or global scope is appropriate>
    Make the smallest evidence-backed change; create no observation backlog.
-   """)
+   """, global_=use_global)
    ```
 
-4. Use `global_=True` only for a stable lesson that should apply across future
-   Prime Agent sessions. Default to local refinement for current-task state,
-   temporary blockers, and session coordination.
 5. Continue normally. Refinement runs when the turn ends. One request per turn
-   is enough. Do not edit harness state directly.
+   is enough. Do not edit harness state directly. A scheduled request is not proof
+   of persistence: inspect the resulting entry and its scope before claiming it
+   was saved. For cross-session availability claims, verify fresh-session loading.
+
+### Cross-session learning contract
+
+The purpose is to reuse strong lessons, not merely document the last task. When a
+user correction or repeated failure yields a reusable rule, generalize away private
+examples and temporary paths, check for an equivalent global entry, and request the
+smallest global refinement. Keep weak or untested hypotheses out of global policy.
+For a reviewed reusable lesson, the native call is:
+
+```python
+await refine.run(
+    "Persist the reviewed reusable lesson as a focused global harness entry; "
+    "exclude temporary task state and preserve approval/safety boundaries.",
+    global_=True,
+)
+```
+
+Use a prompt note for a narrow behavior rule, a memory for a durable fact/preference,
+and a skill or subagent specification only when a sufficiently repeated procedure
+or role warrants it. Do not turn every progress update into a global instruction.
+
+Global means persisted across sessions using this Prime Agent installation's global
+harness store. It is not a promise of backup to another machine or Git synchronization
+of harness state. Installed skill files have their separate Git workflow below.
+Never create a parallel lesson database or copy full session history into Git.
+
+An instruction being loaded is not proof that mistakes cannot recur. Verify the next
+relevant action, retain regression tests when appropriate, and report any remaining
+limits honestly. Scope promotion does not authorize new tools, hooks, schedules,
+credential access, runtime changes or automatic live-skill merges.
 
 Use the smallest suitable harness component:
 

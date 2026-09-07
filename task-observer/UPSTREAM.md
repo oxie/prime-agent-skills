@@ -22,3 +22,13 @@ Global in-session activation is versioned at `config/AGENTS.md` and installed
 safely by the repository's `activate.py`.
 
 The Prime validator supports an explicit, file-local `<!-- task-observer: allow-template-placeholders -->` marker within the first 20 lines for reviewed documents that intentionally use moustache syntax. The exception applies only to the template-slot residue check and emits a warning.
+
+
+## Cross-session learning clarification
+
+The Prime adapter now explicitly routes reviewed reusable workflow lessons and durable
+preferences to `refine.run(..., global_=True)`, while keeping temporary task state local.
+It requires checking persisted scope and fresh-session loading before claiming global
+availability. This changes guidance, not the runtime, permissions, activation mechanism,
+backup behavior or approval-gated skill-maintenance workflow. Learned global harness
+state remains in Prime's native store, not a second Git observation database.
