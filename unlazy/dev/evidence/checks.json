@@ -1,0 +1,30 @@
+{
+  "version": "2.1.0-prime.1",
+  "upstream": "16671491f6679ad9378f52604d3bc2415b4120c7",
+  "platform": "Linux",
+  "node": "v22.22.2",
+  "nativeSuite": {
+    "exit": 0,
+    "registeredCases": 202,
+    "retainedUpstream": 177,
+    "primeContracts": 15,
+    "manualPilot": 10,
+    "removedInstallerOnly": 11
+  },
+  "nativeDiscovery": {
+    "skills": 55,
+    "diagnostics": 0,
+    "modelRequests": 0
+  },
+  "coreTests": 45,
+  "statusExit": 0,
+  "doctorExit": 0,
+  "nodeSyntaxFiles": 19,
+  "localLinkFindings": [],
+  "credentialPatternFindings": [],
+  "runtimeChanged": [
+    "scripts/install-hooks.mjs"
+  ],
+  "runtimeUnchanged": 9,
+  "testCleanupComplete": true
+}

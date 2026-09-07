@@ -1,0 +1,13 @@
+{
+  "name": "unlazy-skill",
+  "version": "2.1.0-prime.1",
+  "private": true,
+  "description": "Manual acceptance gates and native Prime workflow guidance",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run-tests.mjs && node tests/dispatch-tests.mjs && node tests/hardening-tests.mjs && node tests/stress-tests.mjs && node tests/lint-tests.mjs && node tests/contract-tests.mjs && node tests/self-check.mjs && node tests/prime-tests.mjs && node tests/prime-manual-pilot.mjs"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

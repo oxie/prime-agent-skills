@@ -1,0 +1,22 @@
+# Provenance and adaptation
+
+Source: https://github.com/Leonxlnx/unlazy
+Pin: `16671491f6679ad9378f52604d3bc2415b4120c7`
+Source target: `2.1.0` (not asserted to be a tagged release).
+Prime package: `2.1.0-prime.1`. License: MIT, retained unchanged in LICENSE.
+
+Changes: Prime-native workflow/docs/templates; bounded polish; explicit approval and
+outside-root approval storage; native handles, atomic handoffs and completed-exit checks;
+no duplicate observation system. README replaced with Prime guidance. Hook installer
+replaced by unconditional refusal. Four run-tests and seven stress-tests installer-only
+cases replaced by Prime refusal tests and an actual manual gate pilot; all other behavioral test bodies retained.
+Nine other runtime modules remain byte-identical to the source pin.
+
+The upstream installer had overbroad substring/marker ownership and no concurrent settings
+update lock. It is not repaired or supported: the Prime entry point cannot execute it.
+The scan-only hook is retained for fixture tests but is not configured or part of Prime
+execution. No global settings or hooks are installed.
+
+Research files are retained as historical motivation with their reproducibility caveats,
+not independently validated research or evidence of Prime efficacy. Linux/Node validation
+does not establish Windows or all Node-version compatibility. See AUDIT.md.

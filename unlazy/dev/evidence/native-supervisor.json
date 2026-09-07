@@ -1,0 +1,48 @@
+{
+  "candidate": "/home/prime-agent/.prime/agent/skill-worktrees/unlazy-prime-20260907T093256Z/unlazy",
+  "state_directory": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho",
+  "log": "/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/npm-test.log",
+  "main_pid": 282504,
+  "main_actual_exit": 0,
+  "timed_out": false,
+  "external_signal": null,
+  "adopted_children": [
+    {
+      "pid": 285725,
+      "exit_code": -9,
+      "cleanup_sigkill_sent": false
+    },
+    {
+      "pid": 285724,
+      "exit_code": -9,
+      "cleanup_sigkill_sent": false
+    },
+    {
+      "pid": 286488,
+      "exit_code": -9,
+      "cleanup_sigkill_sent": false
+    },
+    {
+      "pid": 286487,
+      "exit_code": -9,
+      "cleanup_sigkill_sent": false
+    },
+    {
+      "pid": 286495,
+      "exit_code": -9,
+      "cleanup_sigkill_sent": false
+    },
+    {
+      "pid": 286524,
+      "exit_code": -9,
+      "cleanup_sigkill_sent": false
+    }
+  ],
+  "cleanup_complete": true,
+  "remaining_direct_children": [],
+  "errors": [],
+  "supervisor_exit": 0,
+  "test_deadline_seconds": 420,
+  "cleanup_deadline_seconds": 5,
+  "elapsed_seconds": 94.061
+}

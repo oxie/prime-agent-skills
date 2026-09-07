@@ -1,0 +1,212 @@
+
+> unlazy-skill@2.1.0-prime.1 test
+> node tests/run-tests.mjs && node tests/dispatch-tests.mjs && node tests/hardening-tests.mjs && node tests/stress-tests.mjs && node tests/lint-tests.mjs && node tests/contract-tests.mjs && node tests/self-check.mjs && node tests/prime-tests.mjs && node tests/prime-manual-pilot.mjs
+
+ok   args: two explicit files are both processed without --timeout
+ok   args: one explicit file never widens to the rest of the tree
+ok   args: unknown option is rejected instead of treated as a file
+ok   scope: running one pipeline leaves the other pipeline alone
+ok   scope: two pipelines and no scope is refused, not guessed
+ok   scope: UNLAZY_SCOPE selects the pipeline
+ok   scope: a single pipeline needs no flag
+ok   scope: legacy GATES.md layout still works
+ok   state: checked box with pending evidence counts as unmet
+ok   state: ABANDON is a non-success handoff, not completion
+ok   state: abandoned and mixed ledgers stay handoffs in every run mode
+ok   state: multi-file verification cannot hide one abandoned child
+ok   hierarchy: an abandoned child cannot promote its N1 parent
+ok   state: unmet gates are reported with file-qualified ids
+ok   run: a concurrent edit to another gate in the same file survives
+ok   checks: CWD runs a check in the directory it names
+ok   leases: overlapping OWNS across pipelines is refused
+ok   leases: disjoint OWNS both succeed, and release frees them
+ok   status log: appends, and appends survive concurrency
+ok   hook: does not block on a pipeline this session does not own
+ok   hook: blocks on its own scope, naming qualified ids
+ok   hook: stale definition evidence blocks repeated ids without executing and keeps semantic progress
+ok   hook: a matching digest with a malformed success transcript stays unmet
+ok   hook: abandonment allows Stop but reports an explicit bounded handoff
+ok   hook: unresolvable scope allows the stop instead of blocking blindly
+ok   hook: session binding resolves the scope among several
+ok   hook: each pipeline keeps its own loop-guard counter
+ok   hook: the loop guard tracks gate state, not file bytes
+ok   hook: meeting a gate resets the loop guard
+ok   hook: no gate files anywhere means silence
+
+30/30 passed
+ok   CLI: hostile commands and options are escaped and bounded while help stays multiline
+ok   validation: line separators are rejected in abandonment reasons
+ok   barrier: every leaf must start before seal or return
+ok   validation: duplicate leaves and duplicate waves are rejected
+ok   validation: unknown leaves and reused handles are rejected
+ok   locking: simultaneous start records are not lost
+ok   validation: malformed ids, handles, and state fail closed
+ok   state file: symlinks are rejected without reading or changing the victim
+ok   state file: a dangling symlink is invalid rather than missing
+ok   state file: hard links are rejected without reading or changing the victim
+ok   state file: oversized input is rejected before JSON parsing
+ok   state file: replacement during the read is rejected as unstable
+ok   state file: a FIFO is rejected promptly without waiting for a writer
+ok   validation: persisted terminal states must describe a possible lifecycle
+ok   validation: legal ids cannot collide with object prototypes
+ok   hook: an incomplete dispatch wave blocks an otherwise complete scope
+ok   recovery: a failed native launch can be abandoned without a fabricated handle
+ok   hook: an abandoned wave does not re-block a new session
+ok   scope completion includes abandoned and unfinished dispatch waves
+ok   hook: invalid dispatch diagnostics cannot inject privileged message lines
+ok   hook: loop-guard release retains mixed abandonment handoff ids
+ok   hook: malformed sibling session entries are discarded without fail-open
+ok   dispatch audit log: a symlink refusal warns after the state commit
+ok   dispatch audit log: committed warning sanitizes and bounds hostile path text
+ok   dispatch audit log: every transition survives a poisoned hard-link target
+ok   hook: dispatch transitions reset the semantic loop guard but metadata-only edits do not
+ok   overlap: native starts precede waits and workers run simultaneously
+
+27/27 passed
+ok   windows identity: same-file comparison stays strict across device and inode controls
+ok   approval: directory identity snapshots retain BigInt precision
+ok   definition digest: golden vector and stale evidence state table are exact
+ok   approval: status is read-only and an unapproved CHECK is printed but not run
+ok   approval: token binds the full oracle and changing CWD invalidates it
+ok   approval: storage failures use the infrastructure exit code
+ok   approval: a lexical outside alias cannot resolve back into the repository
+ok   approval: an existing store must remain private to its owner
+ok   approval: a FIFO record is rejected without blocking or executing
+ok   approval: a hard-linked existing record is rejected without executing or mutation
+ok   shell: resolution and PATH context are visible, invalid overrides are usage errors
+ok   execution: exit zero and EXPECT must both pass
+ok   execution: failure summaries retain early assertion diagnostics
+ok   evidence: successful output is fingerprinted instead of persisted or echoed
+ok   evidence binding: status is environment-independent and stale reruns repair or demote
+ok   evidence binding: long runtime transcript cannot truncate definition or output digests
+ok   terminal: repository titles and diagnostics cannot emit controls, line separators, or bidi overrides
+ok   reverify: a stale success is demoted and a reproducible success stays met
+ok   parser: fenced examples are ignored and CRLF plus missing EVIDENCE are preserved
+ok   parser: Markdown fence length and closing syntax are respected
+ok   parser: malformed ledgers are usage errors in checker and blocking in hook
+ok   regex: a decisive regex succeeds and catastrophic matching is bounded
+ok   regex: worker startup is outside the match budget and concurrency is capped
+ok   execution: output is capped and overflow cannot certify a gate
+ok   output representation: exact-cap split streams and invalid UTF-8 enforce canonical cap
+ok   jobs: rolling concurrency is opt-in and output stays in gate order
+ok   jobs: runner waits for stdio close so delayed descendant output is visible
+ok   writeback: a result cannot certify a gate whose oracle changed in flight
+ok   reverify: a stale in-flight result cannot leave old evidence falsely green
+ok   writeback: same-definition stale pass and fail races are last-writer-wins
+ok   CLI: numeric bounds, incompatible modes, and file types fail with exit 2
+ok   CLI: trusted help layout remains multiline
+ok   targeting: explicit files anchor relative commands and every positional file is honored
+ok   targeting: discovered and explicit ledgers reject links and FIFOs without outside reads
+ok   leases: unsafe declarations, unknown leaves, and wildcard witnesses fail closed
+ok   parser: an indented ABANDON is diagnosed instead of silently ignored
+ok   parser: a slash wrapped literal path warns that it became a regex
+ok   win32 cleanup: taskkill ENOENT invokes child.kill fallback
+ok   win32 cleanup: taskkill itself has a bounded timeout
+ok   win32 cleanup: nonzero taskkill status invokes fallback and checker settles
+ok   win32 cleanup: a false child.kill result is reported as fallback failure
+ok   win32 cleanup: internal taskkill resolution cannot be shadowed by test PATH
+ok   win32 cleanup: a non-C system drive keeps protected tree cleanup
+ok   win32 cleanup: inconsistent system directory variables fail closed
+ok   win32 cleanup: missing trusted system root skips PATH lookup
+ok   win32 cleanup: an arbitrary absolute SystemRoot is not executable trust
+ok   cleanup: an already-exited child is never signalled through a reusable PID
+ok   posix cleanup: an exited supervisor never targets a reusable process group
+ok   win32 integration: a timed-out shell and nested descendant are both reaped
+ok   execution: timeout settlement is bounded even when a detached descendant keeps pipes
+ok   posix integration: an exited shell leader still has its ordinary descendants reaped
+
+51/51 passed
+ok   leases: 200 simultaneous conflicting claim pairs never both succeed
+ok   leases: the same scope and leaf cannot be claimed by two workers
+ok   locks: real and symlink root aliases serialize one physical target
+ok   leases: a disjoint re-claim cannot overwrite the same live owner
+ok   stable reader: regular control passes and links, FIFO, overflow, and outside roots fail promptly
+ok   leases: linked and FIFO records fail closed while a regular record remains usable
+ok   leases: an explicit release cleans orphaned leases after a scope directory is gone
+ok   hook: repeated 64-writer bursts are serialized without lost increments
+ok   hook: sessions remain isolated and completion/no-gates clears stale state
+ok   hook: a FIFO session binding is ignored promptly while a regular sibling binding resolves
+ok   hook: absent pinned scopes allow while existing unsafe pinned scopes block
+ok   hook: named special ledgers fail closed promptly instead of becoming no gates
+ok   hook: linked and FIFO progress state never blocks or changes a victim
+ok   atomic writer: predictable pre-created temp links are never followed
+ok   status log: an existing symlink is refused without touching its target
+ok   status log: an existing hard link is refused without touching its sibling
+ok   status log: a FIFO is rejected without blocking the logger
+
+17/17 passed
+ok   lint: a fixed-output command is advisory by default
+ok   lint: a chained verifier is not classified as a tautology
+ok   lint: EXPECT passed as an argument is not guaranteed output
+ok   lint: an expectation shared with failure output is warned
+ok   lint: an activity title is warned
+ok   lint: an unmeasured number in a manual gate is warned
+ok   lint: a literal path read as a regex is warned
+ok   lint: a deliberate slash wrapped pattern is not warned
+ok   lint: shipped leaf and node templates satisfy the documented size policy
+ok   lint: a sound ledger is clean and exits 0
+ok   lint: a symlink ledger is refused without changing its victim
+ok   lint: a hard-linked ledger is refused without changing its victim
+ok   lint: a FIFO ledger is refused promptly instead of blocking
+ok   lint: a gate ledger over 8 MiB is refused before parsing
+ok   lint: default warnings and strict warnings have distinct gate markers and exits
+ok   lint: json reports counts and stays parseable
+ok   lint: default output escapes terminal and bidi controls in finding data
+ok   lint: JSON escapes terminal data while retaining pretty parseable output
+ok   CLI: unknown-option diagnostics escape terminal and bidi controls
+ok   lint: hostile field expansion stays bounded in text and JSON
+ok   lint: finding count is capped without hiding totals or failure state
+ok   CLI: help retains trusted multiline formatting
+ok   lint: a ledger the shared parser rejects exits 2, not 1
+ok   lint: multiple ledgers in one run are all honored
+ok   lint: path ambiguity is sourced once from the shared parser
+ok   lint: an unknown option exits 2
+ok   CLI: an unknown short option exits 2
+ok   CLI: the positional marker permits literal files named --help and -h
+ok   lint: no arguments exits 2
+
+29/29 passed
+ok   contract: A and B mapped to live owners and observations reconcile
+ok   contract: an omitted B is reported
+ok   contract: an unowned B is reported
+ok   contract: missing, stale, or wrong observations are reported
+ok   contract: explicit removal is distinct from abandonment or deferment
+ok   contract: amendment C invalidates the prior revision until reconciled
+ok   contract: acceptance constraints count while optional ideas do not
+ok   contract: a table cannot pass without the current request denominator
+
+8/8 passed
+ok   zero non-stdlib imports
+ok   one shared gate parser
+ok   no index-arithmetic argument filtering
+ok   gate files are written atomically
+ok   checks wait for close and cap output
+ok   approval identity binds execution semantics
+ok   the hook resolves a scope rather than globbing the tree
+ok   every local resource the skill names exists
+ok   all executable sources retain the Node 16 floor
+ok   the PLAN template carries a revisioned contract denominator
+ok   the PLAN dispatch table is the single operational authority
+ok   the PLAN structural check rejects contradictory representations
+ok   leaf release precedes dependent promotion everywhere
+ok   request reconciliation keeps the focused solo cheap path
+ok   abandonment is terminal handoff rather than ALL MET
+
+self-check ok (15/15)
+ok   Prime: installer refusal has no new state: []
+ok   Prime: installer refusal has no new state: ["--help"]
+ok   Prime: installer refusal has no new state: ["-h"]
+ok   Prime: installer refusal has no new state: ["--global"]
+ok   Prime: installer refusal has no new state: ["--shared"]
+ok   Prime: installer refusal has no new state: ["--uninstall"]
+ok   Prime: installer refusal has no new state: ["--global","--uninstall"]
+ok   Prime: installer refusal has no new state: ["--scope","bad;echo\nprivate"]
+ok   Prime: existing local/shared/global settings and unrelated substring handlers are byte-preserved
+ok   Prime: symlink settings victim preserved
+ok   Prime: hardlink settings victim preserved
+ok   Prime: FIFO settings refused without opening or blocking
+ok   Prime: Prime adapter states authorization and evidence limitations
+ok   Prime: active skill has no hook-install offer or endless polish
+ok   Prime: native adapter and plan avoid foreign launch tools
+Prime contracts 15/15
+{"ok":true,"cases":10,"results":[{"name":"status rejects runtime cwd","exit":2,"output":"gate-check: --timeout, --jobs, --shell, and --cwd are execution options only\nrun gate-check.mjs --help for usage\n"},{"name":"status does not execute/write","exit":1,"output":"  UNMET acceptance:G1 (unchecked): artifact has expected bytes\nacceptance.md: 1 gates\nUNMET: 1 (met: 0)\n  acceptance:G1\n"},{"name":"normal unapproved mode refuses","exit":1,"output":"APPROVAL REQUIRED acceptance:G1\n    CHECK: \"/usr/bin/node\" verify.mjs\n    EXPECT: ARTIFACT_OK\n    CWD: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project\n    SHELL: /bin/sh\n    PATH: /usr/bin:/bin\n    NOT RUN: inspect this oracle, then re-run with --approve\nacceptance.md: 1 gates\nUNMET: 1 (met: 0)\n  acceptance:G1\n"},{"name":"named ledger defaults to adjacent cwd","exit":1,"output":"APPROVAL REQUIRED acceptance:G1\n    CHECK: \"/usr/bin/node\" verify.mjs\n    EXPECT: ARTIFACT_OK\n    CWD: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project/evidence\n    SHELL: /bin/sh\n    PATH: /usr/bin:/bin\n    NOT RUN: inspect this oracle, then re-run with --approve\nacceptance.md: 1 gates\nUNMET: 1 (met: 0)\n  acceptance:G1\n"},{"name":"default approval store inside root refuses","exit":2,"output":"gate-check: UNLAZY_APPROVAL_DIR must be outside the repository root\nrun gate-check.mjs --help for usage\n"},{"name":"authorized artifact check succeeds","exit":0,"output":"APPROVAL REQUIRED acceptance:G1\n    CHECK: \"/usr/bin/node\" verify.mjs\n    EXPECT: ARTIFACT_OK\n    CWD: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project\n    SHELL: /bin/sh\n    PATH: /usr/bin:/bin\n    APPROVED: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/approvals/3a67b53ffc91d531ccbac1e27feccae93d7297948d57a6864af50f7ee4ed611e.json\n  RUN  acceptance:G1 shell=/bin/sh cwd=/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project PATH=/usr/bin:/bin\n  PASS acceptance:G1: artifact has expected bytes\n       exit=0; EXPECT=matched; output=sha256=4c18600b5acfd25ec03425915617047295e9ad147509fb443aa2ff239ebf4057; bytes=12\nacceptance.md: 1 gates\nALL MET (1 met)\n"},{"name":"status cannot detect changed artifact","exit":0,"output":"acceptance.md: 1 gates\nALL MET (1 met)\n"},{"name":"fresh reverify catches changed artifact","exit":1,"output":"  RUN  acceptance:G1 shell=/bin/sh cwd=/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project PATH=/usr/bin:/bin\n  FAIL acceptance:G1: artifact has expected bytes\n       exit=1; EXPECT=not matched; output=file:///home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project/verify.mjs:2 | if(readFileSync('artifact.txt','utf8')!=='good\\n')throw new Error('artifact mismatch'); | ^ | Error: artifact mismatch | at file:///home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unla\nacceptance.md: 1 gates\nUNMET: 1 (met: 0, reran: 1, previously met reverified: 1)\n  acceptance:G1\n"},{"name":"restored artifact freshly passes","exit":0,"output":"  RUN  acceptance:G1 shell=/bin/sh cwd=/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project PATH=/usr/bin:/bin\n  PASS acceptance:G1: artifact has expected bytes\n       exit=0; EXPECT=matched; output=sha256=4c18600b5acfd25ec03425915617047295e9ad147509fb443aa2ff239ebf4057; bytes=12\nacceptance.md: 1 gates\nALL MET (1 met, reran: 1, previously met reverified: 0)\n"},{"name":"abandonment is non-success","exit":1,"output":"acceptance.md: 1 gates\nHANDOFF REQUIRED: 1 abandoned (met: 0)\n  acceptance:G1\n"}]}

@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "cases": 10,
+  "results": [
+    {
+      "name": "status rejects runtime cwd",
+      "exit": 2,
+      "output": "gate-check: --timeout, --jobs, --shell, and --cwd are execution options only\nrun gate-check.mjs --help for usage\n"
+    },
+    {
+      "name": "status does not execute/write",
+      "exit": 1,
+      "output": "  UNMET acceptance:G1 (unchecked): artifact has expected bytes\nacceptance.md: 1 gates\nUNMET: 1 (met: 0)\n  acceptance:G1\n"
+    },
+    {
+      "name": "normal unapproved mode refuses",
+      "exit": 1,
+      "output": "APPROVAL REQUIRED acceptance:G1\n    CHECK: \"/usr/bin/node\" verify.mjs\n    EXPECT: ARTIFACT_OK\n    CWD: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project\n    SHELL: /bin/sh\n    PATH: /usr/bin:/bin\n    NOT RUN: inspect this oracle, then re-run with --approve\nacceptance.md: 1 gates\nUNMET: 1 (met: 0)\n  acceptance:G1\n"
+    },
+    {
+      "name": "named ledger defaults to adjacent cwd",
+      "exit": 1,
+      "output": "APPROVAL REQUIRED acceptance:G1\n    CHECK: \"/usr/bin/node\" verify.mjs\n    EXPECT: ARTIFACT_OK\n    CWD: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project/evidence\n    SHELL: /bin/sh\n    PATH: /usr/bin:/bin\n    NOT RUN: inspect this oracle, then re-run with --approve\nacceptance.md: 1 gates\nUNMET: 1 (met: 0)\n  acceptance:G1\n"
+    },
+    {
+      "name": "default approval store inside root refuses",
+      "exit": 2,
+      "output": "gate-check: UNLAZY_APPROVAL_DIR must be outside the repository root\nrun gate-check.mjs --help for usage\n"
+    },
+    {
+      "name": "authorized artifact check succeeds",
+      "exit": 0,
+      "output": "APPROVAL REQUIRED acceptance:G1\n    CHECK: \"/usr/bin/node\" verify.mjs\n    EXPECT: ARTIFACT_OK\n    CWD: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project\n    SHELL: /bin/sh\n    PATH: /usr/bin:/bin\n    APPROVED: /home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/approvals/3a67b53ffc91d531ccbac1e27feccae93d7297948d57a6864af50f7ee4ed611e.json\n  RUN  acceptance:G1 shell=/bin/sh cwd=/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project PATH=/usr/bin:/bin\n  PASS acceptance:G1: artifact has expected bytes\n       exit=0; EXPECT=matched; output=sha256=4c18600b5acfd25ec03425915617047295e9ad147509fb443aa2ff239ebf4057; bytes=12\nacceptance.md: 1 gates\nALL MET (1 met)\n"
+    },
+    {
+      "name": "status cannot detect changed artifact",
+      "exit": 0,
+      "output": "acceptance.md: 1 gates\nALL MET (1 met)\n"
+    },
+    {
+      "name": "fresh reverify catches changed artifact",
+      "exit": 1,
+      "output": "  RUN  acceptance:G1 shell=/bin/sh cwd=/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project PATH=/usr/bin:/bin\n  FAIL acceptance:G1: artifact has expected bytes\n       exit=1; EXPECT=not matched; output=file:///home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project/verify.mjs:2 | if(readFileSync('artifact.txt','utf8')!=='good\\n')throw new Error('artifact mismatch'); | ^ | Error: artifact mismatch | at file:///home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unla\nacceptance.md: 1 gates\nUNMET: 1 (met: 0, reran: 1, previously met reverified: 1)\n  acceptance:G1\n"
+    },
+    {
+      "name": "restored artifact freshly passes",
+      "exit": 0,
+      "output": "  RUN  acceptance:G1 shell=/bin/sh cwd=/home/prime-agent/.prime/agent/session-artifacts/01a077c2-76c2-70fa-9967-55011b3b6685/unlazy-install-20260907T093007Z/native-npm-test-aa2upmho/tmp/unlazy-manual-sl5V7I/project PATH=/usr/bin:/bin\n  PASS acceptance:G1: artifact has expected bytes\n       exit=0; EXPECT=matched; output=sha256=4c18600b5acfd25ec03425915617047295e9ad147509fb443aa2ff239ebf4057; bytes=12\nacceptance.md: 1 gates\nALL MET (1 met, reran: 1, previously met reverified: 0)\n"
+    },
+    {
+      "name": "abandonment is non-success",
+      "exit": 1,
+      "output": "acceptance.md: 1 gates\nHANDOFF REQUIRED: 1 abandoned (met: 0)\n  acceptance:G1\n"
+    }
+  ]
+}
