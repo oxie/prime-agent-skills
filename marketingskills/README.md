@@ -14,6 +14,13 @@ The upstream API CLI helpers, repository scripts, workflows, Claude plugin files
 
 Every installed `SKILL.md` includes a Prime safety wrapper. The skills are guidance, not standing authorization. External publishing, sending, spending, account changes, package installation, scheduling, broad file access, data uploads, and other consequential actions require explicit user authorization; preview them and prefer read-only or dry-run steps.
 
+## Selective quality-review expansion
+
+`copy-editing` also covers non-marketing prose and code comments through a separate,
+non-conversion workflow. `copywriting` retains marketing scope with source-fidelity
+checks. See UPSTREAM.md and THIRD_PARTY.md for the reviewed Anti-slop selection.
+No separate skill, always-on pointer, installer or MCP server is added.
+
 ## Installed skills
 
 - `ab-testing`

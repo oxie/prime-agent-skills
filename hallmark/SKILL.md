@@ -3,7 +3,8 @@ name: hallmark
 description: >
   Design distinctive, usable interfaces; audit visual design; redesign within an
   existing system; or study a supplied screenshot. Use when the user asks for UI
-  design direction, a landing page or component redesign, a visual-design audit,
+  design direction, a landing page or component redesign, an app/mobile usability
+  review, a visual-design audit,
   screenshot analysis, or Hallmark by name. Complements Variate when comparing
   alternatives. Not for routine nonvisual coding, security/SEO audits, conversion
   measurement, or automatic redesign of every UI edit. URL-only study asks for a
@@ -13,7 +14,7 @@ compatibility: >
   Prime-native Markdown guidance. No runtime package, provider key, installer,
   server or hook. Implementation and verification use the target project's tools.
 metadata:
-  version: 1.1.0-prime.1
+  version: 1.1.0-prime.2
   upstream: https://github.com/nutlope/hallmark
   upstream-commit: 13ac0ec7e148655948100b6396439e481361d690
 ---
@@ -68,6 +69,9 @@ Read the workflow reference above. For design, use the compact
 [themes](references/themes.md) only when the project has no selected palette/type
 system or the user requests exploration. Pick a few relevant rows, not the entire
 upstream library. Use [verification.md](references/verification.md) at handoff.
+For app states, tables/charts, controls or responsive/mobile usability, read the
+relevant sections of [app-quality.md](references/app-quality.md). These checks do
+not widen an audit/study into implementation or a full accessibility audit.
 Read [tokens.md](references/tokens.md) only when token changes/exports are in scope.
 No upstream site, external asset kit or companion provider is needed.
 

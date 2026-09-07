@@ -21,11 +21,11 @@ Prime Agent discovers directories containing a valid `SKILL.md` recursively. Sta
 | Skill | Purpose | Upstream |
 |---|---|---|
 | `archify` | Unified technical diagrams, 39 guided editorial layouts, local draw.io/Mermaid imports, static checks and exports. | [tt-a1i/archify](https://github.com/tt-a1i/archify) @ `c651940`, plus [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) @ `3b44633` (curated unified Prime adaptation) |
-| `hallmark` | Lean, project-first visual design, audit and screenshot study; design guidance for Variate rounds. | [nutlope/hallmark](https://github.com/nutlope/hallmark) @ `13ac0ec` (curated Prime adaptation) |
+| `hallmark` | Project-first visual design, app/mobile usability, audit and screenshot study; design guidance for Variate rounds. | [nutlope/hallmark](https://github.com/nutlope/hallmark) @ `13ac0ec` (curated Prime adaptation) |
 | `unlazy` | On-demand acceptance ledgers, reviewed checks and Prime-native handoffs; hook installer disabled. | [Leonxlnx/unlazy](https://github.com/Leonxlnx/unlazy) @ `1667149` (Prime adaptation) |
 | `variate` | On-demand design alternatives with a foreground localhost preview and Prime-native, nonblocking decisions. | [Nutlope/variate](https://github.com/Nutlope/variate) @ `3a82377` (reviewed local adaptation) |
 | `task-observer` | Always-on observation during user-started tool sessions. Uses Prime's continual harness for decisions and isolated Git proposal branches for tested installable-skill improvements. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |
-| `marketingskills` (50 skills) | Pinned, Prime-adapted marketing strategy and execution guidance. Content-only install; API CLIs and upstream automation are excluded. | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) @ `5b2c000` |
+| `marketingskills` (50 skills) | Pinned marketing guidance plus non-marketing prose/comment review in copy-editing. Content-only; API CLIs and upstream automation excluded. | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) @ `5b2c000` |
 
 Task Observer does not create a parallel observation log, Claude hook, schedule, heartbeat, or background daemon. It may autonomously prepare and commit tested changes in isolated `observer/...` proposal branches. It cannot merge into live `main` or push without explicit approval.
 
@@ -37,3 +37,20 @@ python3 activate.py
 # Marketing bundle review and provenance:
 cat marketingskills/AUDIT.md
 ```
+
+## Quality-review coverage
+
+Selective Anti-slop material expands existing skills, not a separate always-on core:
+
+| Task | Relevant skill |
+|---|---|
+| UI/app/mobile design or usability review | `hallmark` |
+| Existing prose, documentation, reports, or a draft just written | `copy-editing` general-prose branch |
+| Focused code-comment review/cleanup | `copy-editing` comment branch; not a code correctness/security audit |
+| New marketing text | `copywriting`, with source-fidelity review |
+| Substantial task completion/evidence | `unlazy`, not a substitute for content judgment |
+
+Descriptions guide agent selection; manual invocation is optional, not required.
+This is not AI-authorship detection or a guarantee of automatic activation/compliance.
+Non-marketing branches skip product-context intake, conversion sweeps and scoring panels.
+See receiving packages' UPSTREAM.md and THIRD_PARTY.md for provenance and exclusions.

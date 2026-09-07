@@ -1,0 +1,73 @@
+{
+  "kind": "instruction-guided synthetic task pilot, not benchmark",
+  "guidance_sha256": {
+    "hallmark/SKILL.md": "d4a58068a91fed8e7cc009e74195b2fd3f20bc4370002d8717e60648388a2187",
+    "hallmark/references/app-quality.md": "1942f6fe049a3cca7252843eb855f2b74ed4187fd90314beea08362e44a94132",
+    "hallmark/references/audit.md": "0a7183e6a2de1b34f6b9840998469e367e48780fdf3f5c69f5aaa0b4674fb5f5",
+    "hallmark/references/verification.md": "82f0c03f62931615a2690ba7607d1d54897d311191debaabb57f622caf1b7309",
+    "marketingskills/skills/copy-editing/SKILL.md": "9a1b911cc508d873e08364761ec64f96bb2ea9a5ee5a9276692c38066280ec35",
+    "marketingskills/skills/copy-editing/references/comment-review.md": "ce9292d09688259c6303bdd6805eefc519485cc5d1aed349ed5d4c02bacad649",
+    "marketingskills/skills/copy-editing/references/source-fidelity-and-clarity.md": "dbf8b1dcd18ad11d632bc776a63cefdcfe5314e579621297a6fcc2fb7f2b5c39",
+    "marketingskills/skills/copywriting/SKILL.md": "d1e1bbb3f6a2c76ffca7f1151d6ca81be50f08d33f3dbe4a8a77ab7df0b5dccd"
+  },
+  "inputs": {
+    "prose": {
+      "request": "Tighten this internal release note. Keep its facts, uncertainty, exact command and quotation. Do not turn it into marketing copy. Return edited prose only.",
+      "input": "The export is currently in beta. In a 12-run local test, median export time fell from 8 s to 6 s; this may not generalize to production. We have not verified Windows support. Run `tool export --dry-run` before publishing. The approved label is \u201cFast\u2014when it fits.\u201d"
+    },
+    "comments": {
+      "request": "Remove only genuinely redundant comments. Keep code, behavior and tool directives unchanged. Return the complete file.",
+      "input": "#!/usr/bin/env node\n// SPDX-License-Identifier: MIT\n// eslint-disable-next-line no-console\nconsole.log(\"ready\");\n// Increment count by one.\ncount += 1;\n// This key makes retries idempotent; do not regenerate it per attempt.\nsend(requestKey);\n/* istanbul ignore next -- compatibility fallback */\nif (!globalThis.crypto) useFallback();\n//# sourceMappingURL=worker.js.map\n"
+    },
+    "ui": {
+      "request": "Read-only source audit. This established brand intentionally uses a purple gradient, three real pricing tiers, a fixed dark theme and an approved em dash. Data loads locally, so do not invent loading/error API behavior. No browser is available. Identify concrete issues and distinguish them from valid design choices. Do not edit or claim runtime checks.",
+      "input": "<html lang=\"en\"><head><style>body{overflow-x:hidden;background:#151515;color:white}button:focus{outline:none} .plans{display:grid;grid-template-columns:repeat(3,1fr);min-width:900px}</style></head><body><main><h1>Build\u2014your way</h1><div class=\"plans\"><section>Starter</section><section>Team</section><section>Enterprise</section></div><div onclick=\"openMenu()\">Menu</div></main></body></html>"
+    },
+    "draft": {
+      "request": "Write a short factual product description using only the supplied facts. Do not invent outcomes, metrics, guarantees or research.",
+      "input": "TraceKit is a command-line tool. It exports local logs as JSON. The dry-run option previews which files would be exported. Production benchmarks have not been measured."
+    }
+  },
+  "outputs": {
+    "prose": {
+      "selectedSkills": [
+        "copy-editing"
+      ],
+      "loadedReferences": [
+        "marketingskills/skills/copy-editing/references/source-fidelity-and-clarity.md"
+      ],
+      "output": "The export is in beta. In a 12-run local test, median export time fell from 8 s to 6 s; this may not generalize to production. We have not verified Windows support. Run `tool export --dry-run` before publishing. The approved label is \u201cFast\u2014when it fits.\u201d"
+    },
+    "comments": {
+      "selectedSkills": [
+        "copy-editing"
+      ],
+      "loadedReferences": [
+        "marketingskills/skills/copy-editing/references/comment-review.md",
+        "marketingskills/skills/copy-editing/references/source-fidelity-and-clarity.md"
+      ],
+      "output": "#!/usr/bin/env node\n// SPDX-License-Identifier: MIT\n// eslint-disable-next-line no-console\nconsole.log(\"ready\");\n\ncount += 1;\n// This key makes retries idempotent; do not regenerate it per attempt.\nsend(requestKey);\n/* istanbul ignore next -- compatibility fallback */\nif (!globalThis.crypto) useFallback();\n//# sourceMappingURL=worker.js.map\n"
+    },
+    "ui": {
+      "selectedSkills": [
+        "hallmark"
+      ],
+      "loadedReferences": [
+        "hallmark/references/audit.md",
+        "hallmark/references/app-quality.md",
+        "hallmark/references/verification.md"
+      ],
+      "output": "## Source-only audit\n\nAll evidence below comes from the supplied single-line HTML. No files were edited. Rendering and runtime behavior were not tested.\n\n### Findings\n\n1. **Reflow and content-access risk \u2014 accessibility.** The `.plans` grid sets `min-width:900px` and three fixed columns; `body` sets `overflow-x:hidden`. These declarations prevent the grid from shrinking below 900px and hide root horizontal overflow. On a narrower layout viewport, plan content risks being clipped rather than reachable. Smallest recommendation: allow the grid to shrink and wrap or stack its three tiers where the content needs it; remove root clipping rather than using it to hide overflow. Actual narrow-width rendering and text zoom are **not tested**.\n\n2. **Menu lacks native control semantics \u2014 accessibility.** `<div onclick=\"openMenu()\">Menu</div>` supplies a click handler but no native button semantics, keyboard focusability or keyboard activation in the supplied markup. Keyboard and assistive-technology access are therefore a source-level concern, not an observed interaction result. Smallest recommendation: use a native button for this action and preserve its existing action contract. Then test Tab, Enter/Space and menu focus behavior. The `openMenu()` implementation was not supplied; its existence or behavior cannot be verified here.\n\n3. **Focus-outline suppression \u2014 accessibility risk.** `button:focus{outline:none}` removes button outlines without a replacement focus indicator in the supplied CSS. There is no button in this snippet, so this is not evidence of a currently invisible focused button. It would affect a native Menu button or other buttons under this stylesheet. Smallest recommendation: retain the native outline or provide a visible focus style. Rendered focus visibility is **not tested**.\n\n### Valid design choices\n\n- Keep all three real pricing tiers. Three cards are not a defect; the unshrinkable width and clipping are the concern.\n- Preserve the fixed dark theme. A theme switcher is not required by this brief.\n- Preserve the intentional purple gradient and approved \u201cBuild\u2014your way\u201d wording. Neither a gradient nor an em dash establishes an authorship or usability defect. The gradient is stated in the brief but is not shown in this snippet; its rendered contrast cannot be assessed here.\n- Local data loading does not justify invented API loading, error or retry flows.\n\n**Limits:** Only source inspection was performed. Browser rendering, breakpoints, keyboard/pointer interactions, screen-reader behavior, text zoom and rendered contrast are **not tested**. No compliance or conversion claim is made."
+    },
+    "draft": {
+      "selectedSkills": [
+        "copywriting"
+      ],
+      "loadedReferences": [
+        "marketingskills/skills/copy-editing/references/source-fidelity-and-clarity.md"
+      ],
+      "output": "TraceKit is a command-line tool that exports local logs as JSON. Its dry-run option previews which files would be exported. Production benchmarks have not been measured."
+    }
+  },
+  "limits": "No browser, fixture runtime, source-map consumer or efficacy benchmark. Initial comment output failed source-position review; final rerun retained every other line."
+}

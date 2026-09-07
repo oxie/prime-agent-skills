@@ -2,12 +2,14 @@
 
 Headline formulas, page section types, and structural templates.
 
+**Conditional examples, not product facts:** Names, figures, outcomes, features, deadlines, guarantees, compliance claims, and offer terms in these templates must be supported by the actual task sources before use. Do not invent proof or first-person experience to fill a section. Use the real number of steps and omit sections without relevant content. A concrete sentence is not necessarily a true sentence. See [Source Fidelity and Clarity](../../copy-editing/references/source-fidelity-and-clarity.md).
+
 ## Contents
 - Headline Formulas (outcome-focused, problem-focused, audience-focused, differentiation-focused, proof-focused, additional formulas)
 - Landing Page Section Types (core sections, supporting sections)
 - Page Structure Templates (feature-heavy page, varied engaging page, compact landing page, enterprise/B2B landing page, product launch page)
 - Section Writing Tips (problem section, benefits section, how it works section, testimonial selection)
-- Clarity & Message-Market Fit (the "Now you can" test, Human Action Model, the Perception Gap, the SavvyCal case, clarity metrics)
+- Clarity & Message-Market Fit (the "Now you can" test, Human Action Model, the Perception Gap, the SavvyCal example, measurement limits)
 
 ## Headline Formulas
 
@@ -326,7 +328,7 @@ Each step should be:
 - **Simple verb**: "Connect," "Set up," "Get"
 - **Outcome-oriented**: What they get from this step
 
-Example:
+Conditional example (verify the setup time, automation, and schedule before use):
 1. Connect your tools (takes 2 minutes)
 2. Set your preferences
 3. Get automated reports every Monday
@@ -359,9 +361,9 @@ The test works because "Now you can…" forces the copy into the reader's world 
 | Original line | "Now you can…" version | Verdict |
 |---------------|------------------------|---------|
 | "Powerful analytics platform" | Now you can… have a powerful analytics platform | Fails — not a new ability, just a description |
-| "See which companies visit your site" | Now you can… see which companies visit your site | Works — compelling + true |
+| "See which companies visit your site" | Now you can… see which companies visit your site | Potentially useful — verify the capability and audience relevance |
 | "Streamline your workflow" | Now you can… streamline your workflow | Fails — vague, unfalsifiable |
-| "Send unlimited docs, images, and audio in one place" | Now you can… send unlimited docs, images, and audio in one place | Works — concrete + true |
+| "Send unlimited docs, images, and audio in one place" | Now you can… send unlimited docs, images, and audio in one place | Potentially useful — verify upload types and limits |
 
 Use it as a filter, not a formula: draft with the headline formulas above, then run each candidate through "Now you can…" and keep the survivors.
 
@@ -398,36 +400,30 @@ The fix isn't softer copy — it's **matching the value prop to the reader's ris
 | "Enterprise-grade security & SLAs" | Bloated, slow, expensive (🚩) | Safe, trustworthy (✅) |
 | "Trusted by the Fortune 500" | Not built for me (🚩) | Proven, de-risked (✅) |
 
-**Value-prop swap in practice** — same product, two audiences:
+**Conditional value-prop examples** — use only if the same product truly supports every stated capability, term, and assurance; changing the audience does not authorize new facts:
 
 - *Startup landing page:* "Ship your first integration this afternoon. No sales calls, no procurement."
 - *Enterprise landing page:* "SOC 2 Type II, 99.99% uptime SLA, and a named implementation lead. Roll out with confidence."
 
 When a page has to serve both, don't average them into mush — segment the traffic (separate pages, or a persona split) and let each read its own version of the truth.
 
-### Worked Example — SavvyCal (message-market fit)
+### Reported Example — SavvyCal (source not supplied)
 
-SavvyCal (a scheduling tool) originally led with feature-forward copy. They rewrote the hero around a single felt discomfort:
+This reference includes a SavvyCal headline example, but supplies no primary source for its wording, history, or performance. Treat it as an unverified reference example, not evidence or a testimonial for another product:
 
 > **"You shouldn't have to feel awkward sending out your scheduling link."**
 
-That one line **roughly tripled (3×) conversions**. It works because it hits all three beats of the Human Action Model at once:
+The line can be discussed as a framing example, not a verified conversion result. A possible reading through the Human Action Model is:
 
 - **Discomfort:** the small social awkwardness of "here's my link, pick a time" — named exactly as users feel it.
 - **Vision:** scheduling that feels considerate to *both* people.
-- **Path:** SavvyCal's overlay-your-calendar mechanic is the bridge, so the CTA feels like the obvious next step.
+- **Path:** A real product capability and matching CTA would need to complete the story; verify them before making a claim.
 
-The lesson: message-market fit beats feature lists. The winning line wasn't cleverer — it named a real feeling the reader hadn't heard a scheduling tool acknowledge before. Run your own hero through "Now you can…" and the Human Action Model to find that line.
+Use this to consider whether a headline names a relevant feeling. It does not establish superiority over feature lists or prove what readers felt. Test the framing with the actual audience and offer.
 
-### Clarity Beats Cleverness (the metrics)
+### Clarity and Measurement Limits
 
-When teams measure it, clarity — not wit — is what moves the numbers. Clearer positioning and copy is associated with:
-
-- **+81% conversions**
-- **−38% sales cycle** (shorter time to close)
-- **−28% CAC** (lower customer acquisition cost)
-- **+175% referrals**
-
-The mechanism: clear copy lets the *right* buyer self-qualify fast and the wrong one bounce early, so every downstream metric improves. Clever copy that requires decoding does the opposite — it adds a comprehension tax at the exact moment attention is scarcest.
-
-**Practical rule:** if a reader has to pause to figure out what you mean, you've already lost. When forced to choose between a clever line and a clear one, ship the clear one — then use the tests above ("Now you can…", the Human Action Model, the Perception Gap) to make the clear line compelling too.
+Prefer copy readers can understand. This reference does not supply primary evidence
+for numerical conversion, sales-cycle, CAC, or referral effects from clearer wording.
+Do not reuse unsourced percentages as proof, forecast gains, or infer causation from
+a rewrite. Use task-specific evidence or an appropriate experiment to measure results.

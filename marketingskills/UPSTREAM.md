@@ -33,3 +33,17 @@
 - Added explicit Task Observer validation markers to reviewed files that intentionally use mail-merge or Google Tag Manager `{{...}}` syntax.
 
 These local changes are intended to preserve Prime Agent compatibility and safety. Review and reapply them when updating from upstream.
+
+
+## Selective Anti-slop expansion
+
+Additional reviewed source: miqdadbadjuber/anti-slop package 3.2.4 at
+`55e0e160d18a9a963c6486d5c6be6d9e82418c5c`; attribution in [THIRD_PARTY.md](THIRD_PARTY.md).
+Copy-editing now also selects non-marketing prose and code-comment review. Those paths
+skip marketing context, conversion sweeps and scoring panels; comment work is not an
+executable-code/security audit. Copywriting retains its marketing scope and gains
+source-fidelity safeguards. The remaining 48 skill entry points are unchanged.
+No separate Anti-slop skill, always-on pointer, installer, plugin/MCP code or permission
+metadata is added. Upstream versions remain upstream identifiers; Prime adaptation
+metadata and this record identify the local additions. Facts, quotes, uncertainty,
+code directives and author voice take priority over cosmetic pattern removal.

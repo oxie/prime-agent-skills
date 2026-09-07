@@ -106,13 +106,13 @@
       "name": "copy-editing",
       "version": "2.0.0",
       "path": "skills/copy-editing",
-      "sha256": "3e77acb982a504a365808b72ca543ae367fc755f125d5c387cf4a19658f894d1"
+      "sha256": "c213895bff34bb76497f1959e762733ae52d1133e5cfba430c071eb63625f7eb"
     },
     {
       "name": "copywriting",
       "version": "2.0.2",
       "path": "skills/copywriting",
-      "sha256": "abf836047d04efb2813590a69e2a62ce43e89df405dadd94d78a6eab449baf51"
+      "sha256": "38e678ba1d0f2c5f71d76f1bc0bac17120db194a49b52b8e7838596ecf2b1dd2"
     },
     {
       "name": "cro",
@@ -317,6 +317,19 @@
       "version": "2.1.0",
       "path": "skills/video",
       "sha256": "7be442c96d0a7d8e79b2d8c3e37748a904184e2334b9e02783ad9a44c63c6335"
+    }
+  ],
+  "hash_algorithm": "SHA-256 over files sorted by skill-relative POSIX path: UTF-8 relative path + NUL + exact file bytes + NUL, repeated for every regular file in each skill directory.",
+  "local_expansions": [
+    {
+      "source": "https://github.com/miqdadbadjuber/anti-slop",
+      "commit": "55e0e160d18a9a963c6486d5c6be6d9e82418c5c",
+      "license": "MIT",
+      "skills": [
+        "copy-editing",
+        "copywriting"
+      ],
+      "scope": "Source-preserving edits/drafts; non-marketing prose and protected code-comment review. No installer, core gate, MCP or global activation."
     }
   ]
 }

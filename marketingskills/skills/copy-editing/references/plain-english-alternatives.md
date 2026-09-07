@@ -1,6 +1,6 @@
 # Plain English Alternatives
 
-Replace complex or pompous words with plain English alternatives.
+Consider plain English alternatives when they preserve the exact meaning. Do not use this as a bulk replacement list. Keep technical terms, identifiers, quotations, legal wording, uncertainty, requirements, and intentional voice. For example, “compile” in compiler documentation and “robust” in robust statistics may be the precise terms needed.
 
 Source: Plain English Campaign A-Z of Alternative Words (2001), Australian Government Style Manual (2024), plainlanguage.gov
 
@@ -22,7 +22,7 @@ Source: Plain English Campaign A-Z of Alternative Words (2001), Australian Gover
 - S
 - T-U
 - V-Z
-- Phrases to Remove Entirely
+- Phrases to Review for Filler
 
 ## A
 
@@ -367,9 +367,9 @@ Source: Plain English Campaign A-Z of Alternative Words (2001), Australian Gover
 
 ---
 
-## Phrases to Remove Entirely
+## Phrases to Review for Filler
 
-These phrases often add nothing. Delete them:
+These phrases can add nothing. Delete only when no meaning, condition, timing, or voice is lost; “all things being equal” and “currently,” for example, can limit a claim. Do not replace an unknown date with an invented “soon”:
 
 - a total of
 - absolutely

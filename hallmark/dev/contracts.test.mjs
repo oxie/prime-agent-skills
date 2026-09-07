@@ -15,10 +15,10 @@ test("routing metadata is bounded and distinguishes visual tasks from other audi
   const desc=main.match(/description: >\n([\s\S]*?)\nlicense:/)[1].replace(/^  /gm,"");
   assert.ok(desc.trim().length>20&&desc.length<=1024);
   for(const word of ["visual-design audit","screenshot","Variate","nonvisual","security/SEO"])assert.ok(desc.includes(word),word);
-  assert.match(main,/version: 1\.1\.0-prime\.1/);assert.ok(!/^hooks:|^allowed-tools:/m.test(main));
+  assert.match(main,/version: 1\.1\.0-prime\.2/);assert.ok(!/^hooks:|^allowed-tools:/m.test(main));
 });
 test("entrypoint and references stay small enough for selective reading",()=>{
-  assert.ok(Buffer.byteLength(main)<=8500);assert.equal(Object.keys(refs).length,8);
+  assert.ok(Buffer.byteLength(main)<=8500);assert.equal(Object.keys(refs).length,9);
   assert.ok(Object.values(refs).reduce((n,t)=>n+Buffer.byteLength(t),0)<=30000);
 });
 test("all local Markdown links resolve without upstream site dependencies",()=>{

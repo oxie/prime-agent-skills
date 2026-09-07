@@ -1,6 +1,6 @@
 # Copy Editing Checklist
 
-Use this checklist alongside the Seven Sweeps Framework (see SKILL.md) as a final QA pass before delivering edited copy.
+Use this marketing checklist at the depth the task needs. General prose and comments use the early branch in SKILL.md instead. Apply [Source Fidelity and Clarity](source-fidelity-and-clarity.md) in every branch. Missing evidence is a finding, not permission to invent proof or a reason to withhold an honest review.
 
 ## Before You Start
 
@@ -40,7 +40,7 @@ Use this checklist alongside the Seven Sweeps Framework (see SKILL.md) as a fina
 ## Specificity (Sweep 5)
 
 - [ ] Vague words replaced with concrete ones
-- [ ] Numbers and timeframes included
+- [ ] Numbers and timeframes included only when supported; missing detail flagged
 - [ ] Generic statements made specific
 - [ ] Filler content removed
 
@@ -54,13 +54,13 @@ Use this checklist alongside the Seven Sweeps Framework (see SKILL.md) as a fina
 ## Zero Risk (Sweep 7)
 
 - [ ] Objections addressed near CTA
-- [ ] Trust signals present
+- [ ] Trust signals used only when supported; gaps flagged
 - [ ] Next steps are crystal clear
-- [ ] Risk reversals stated (guarantee, trial, etc.)
+- [ ] Only real offer terms stated (guarantee, trial, etc.); no invented assurances
 
 ## Final Checks
 
 - [ ] No typos or grammatical errors
 - [ ] Consistent formatting
 - [ ] Links work (if applicable)
-- [ ] Core message preserved through all edits
+- [ ] Facts, numbers, units, uncertainty, negation, requirements, exact quotes, identifiers, and voice preserved through all edits

@@ -12,11 +12,11 @@ Copy editing isn't just for new content. Existing pages and posts decay over tim
 
 ## Content Refresh Checklist
 
-1. **Freshness pass** — Update all dates, stats, and examples. Replace "in 2024" with current data. Remove references to deprecated features or tools.
+1. **Freshness pass** — Check dates, stats, examples, features, and tools against supplied current evidence. Update only supported changes. Keep historical dates and attribution when they remain relevant; never relabel old data as current. Flag missing evidence instead of inventing an update.
 2. **Accuracy pass** — Verify all claims are still true. Check that linked resources still exist. Confirm pricing and feature descriptions match current state.
 3. **Voice pass** — Does the tone match your current brand voice? Older content often reflects an earlier stage of the company.
 4. **SEO pass** — Has search intent shifted for this topic? Are there new keywords or questions to address? Add "Last updated: [date]" prominently.
-5. **Proof pass** — Can you add newer testimonials, case studies, or data points that didn't exist when this was first published?
+5. **Proof pass** — Add newer testimonials, case studies, or data points only when real evidence is supplied and their use is in scope. Do not manufacture proof to freshen the page.
 6. **Structure pass** — Add comparison tables, FAQ sections, or other scannable formats that make the content easier to consume.
 
 ## Refresh vs. Rewrite

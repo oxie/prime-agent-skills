@@ -2,7 +2,7 @@
 
 - Source: https://github.com/nutlope/hallmark
 - Pinned reviewed commit: 13ac0ec7e148655948100b6396439e481361d690
-- Upstream v1.1.0; local v1.1.0-prime.1.
+- Upstream v1.1.0; local v1.1.0-prime.2.
 - MIT license retained verbatim in LICENSE. No Together AI account/API is required.
 
 This is a curated adaptation, not an unchanged upstream installation or upstream
@@ -36,3 +36,14 @@ choices without loading the full upstream reference tree or requiring its demo w
 Treat future upstream updates as reviewed changes. Do not overwrite this directory with
 an installer. Reconcile with the pinned source, retain local contract and pilot coverage,
 then validate, commit, push and verify the authoritative skills remote.
+
+## Selective Anti-slop expansion
+
+Reviewed additional source: miqdadbadjuber/anti-slop package 3.2.4 at
+`55e0e160d18a9a963c6486d5c6be6d9e82418c5c`. See [MIT notice](THIRD_PARTY.md).
+Adds progressive app-state, mobile and usability review examples. Hallmark remains
+UI guidance, not general prose editing, code correctness or AI-authorship detection.
+General prose/comments are routed by the separately expanded copy-editing skill.
+Corrected standards and preserved brief, brand, native semantics and evidence limits;
+no universal layout, theme-switcher, motion, palette or punctuation requirements.
+No additional executable runtime or upstream installer/MCP code is included.
