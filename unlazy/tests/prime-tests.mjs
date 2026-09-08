@@ -61,6 +61,47 @@ test('native adapter and plan avoid foreign launch tools',()=>{
   assert.ok(dispatch.includes('rlm_child_id'));assert.ok(!dispatch.includes('call `spawn_agent`'));
   const plan=readFileSync(join(root,'templates/PLAN.md'),'utf8');assert.ok(plan.includes('Prime native RLM'));
 });
+
+// Documentation contracts: these guard the handoff specification, not agent behavior.
+function assertResearchHandoffContract(text){
+  const sections=new Map([...text.matchAll(/^## (.+)\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(m=>[m[1],m[2]]));
+  const required={
+    'Scope and authority':['not a second memory','permission','untrusted data'],
+    'Report shape':['Brief','Overview','Evidence','Transfer to Prime','existing equivalent','rollback','blocked','untested'],
+    'Freshness and access':['historical','timestamp','digest','missing','canonical','Do not crawl'],
+    'Publishing':['temporary','previous','manifest last','not power-loss'],
+    'Verification and value':['negative control','preparation','not tokens','not a blinded','Do not lower']
+  };
+  for(const [heading,tokens] of Object.entries(required)){
+    assert.ok(sections.has(heading),`missing section: ${heading}`);
+    for(const token of tokens)assert.ok(sections.get(heading).includes(token),`${heading}: ${token}`);
+  }
+}
+test('research handoff reference has required routing, sections and tokens',()=>{
+  const skill=readFileSync(join(root,'SKILL.md'),'utf8');
+  assert.ok(skill.includes('[research handoffs](references/research-handoffs.md)'));
+  assertResearchHandoffContract(readFileSync(join(root,'references/research-handoffs.md'),'utf8'));
+});
+for(const heading of ['Scope and authority','Report shape','Freshness and access','Publishing','Verification and value']){
+  test('research contract rejects missing '+heading,()=>{
+    const text=readFileSync(join(root,'references/research-handoffs.md'),'utf8');
+    assertResearchHandoffContract(text); // Positive control before testing rejection.
+    const damaged=text.replace('## '+heading+'\n','## Removed section\n');
+    assert.notEqual(damaged,text);
+    assert.throws(()=>assertResearchHandoffContract(damaged),/missing section/);
+  });
+}
+
+for(const token of ['not a second memory','rollback','canonical','not power-loss','not a blinded']){
+  test('research contract rejects missing token '+token,()=>{
+    const text=readFileSync(join(root,'references/research-handoffs.md'),'utf8');
+    assertResearchHandoffContract(text);
+    const damaged=text.replace(token,'REMOVED_REQUIRED_TOKEN');
+    assert.notEqual(damaged,text);
+    assert.throws(()=>assertResearchHandoffContract(damaged));
+  });
+}
+
 let failures=0;
 for(const {name,fn} of tests){try{fn();console.log('ok   Prime: '+name);}catch(e){failures++;console.error('FAIL Prime: '+name+'\n'+e.stack);}}
 console.log(`Prime contracts ${tests.length-failures}/${tests.length}`);

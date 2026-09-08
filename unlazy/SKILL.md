@@ -38,6 +38,10 @@ started process, returned worker or successful status read is not task completio
 See [Prime execution](references/prime.md) before first use, and use its native RLM
 adapter for delegation rather than Codex/Claude tool names.
 
+For substantial external reviews or research handoffs, also read
+[research handoffs](references/research-handoffs.md) for layered evidence and
+knowledge transfer; this is not a new global activation rule.
+
 ## Write gates before real work
 
 For solo work, create `GATES.md` from the local file `templates/gates-leaf.md` before implementing (orchestrated mode instead starts from `templates/PLAN.md` plus per-leaf `templates/gates-leaf.md` and per-branch `templates/gates-node.md` under `.unlazy/<scope>/`; see Build the Depth Tree below). State one observable outcome per gate. Give every runnable gate an indented `CHECK:` and `EXPECT:`; use a manual gate only when no command can decide the outcome.
