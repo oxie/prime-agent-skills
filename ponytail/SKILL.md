@@ -1,15 +1,16 @@
 ---
 name: ponytail
 description: >
-  Find the simplest correct implementation or review code for unnecessary
-  complexity. Use when the user asks for Ponytail, code simplification, a
-  minimal implementation, an over-engineering review/audit, or a report of
-  ponytail: shortcut comments. Offers task-scoped implementation, read-only
-  review/audit, and debt-report paths. Not an always-on coding mode, general
-  code/security audit, prose review, SEO audit, or visual-design skill.
+  Review code for unnecessary complexity or report deliberate shortcuts. Use
+  for explicit Ponytail requests, focused code-simplification/over-engineering
+  reviews, audits, or reports of ponytail: shortcut comments. Ordinary
+  implementation follows standing coding rules without loading this skill.
+  Offers optional implementation guidance, read-only review/audit and debt
+  reports. Not an always-on coding mode, general code/security audit, prose
+  review, SEO audit, or visual-design skill.
 license: MIT
 metadata:
-  version: 4.9.0-prime.1
+  version: 4.9.0-prime.2
   upstream: https://github.com/DietrichGebert/ponytail
   upstream-commit: 356918eba965ee1eac64bd3a7f0dd02108350de5
 ---
@@ -21,6 +22,12 @@ on-demand checklist for the current task, not a persistent persona or mode.
 Existing user and project instructions take priority. Ordinary coding does not
 require invoking this skill. Do not install upstream plugins, hooks, MCP,
 statuslines, flags, global rules, or background processes.
+
+Do not load this skill merely to repeat equivalent standing coding rules. When
+those rules already cover the implementation checks below, apply them once rather
+than running this ladder again. Use the specialized review/audit/debt sections only
+when relevant to the request. Other projects keep their own instruction scope;
+do not import the Prime harness workspace's project policy into them.
 
 ## Choose the path and scope
 

@@ -51,6 +51,19 @@ test('payload is only reviewed documentation and the full MIT notice',()=>{
  assert.match(read('UPSTREAM.md'),/356918eba965ee1eac64bd3a7f0dd02108350de5/);
  for(const name of fs.readdirSync(dir))assert.ok(!fs.lstatSync(path.join(dir,name)).isSymbolicLink());
 });
+
+test('project coding rules own routine reuse without a second skill pass',()=>{
+ const rules=fs.readFileSync(path.join(root,'config/projects/prime-agent-home/AGENTS.md'),'utf8').replace(/\s+/g,' ');
+ for(const term of ['Trace relevant callers and their contracts',
+ 'existing code, then the standard library, native platform features, and suitable installed dependencies',
+ 'earlier option does not win if it changes required semantics',
+ 'do not require a Ponytail invocation or a second simplification pass'])assert.ok(rules.includes(term),term);
+ requires(['Do not load this skill merely to repeat equivalent standing coding rules',
+ 'apply them once rather than running this ladder again']);
+ const globalRules=fs.readFileSync(path.join(root,'config/AGENTS.md'),'utf8');
+ assert.ok(!globalRules.includes('existing code, then the standard library'));
+});
+
 test('relative documentation links resolve within the skill',()=>{
  for(const [,href] of text.matchAll(/\]\(([^)]+)\)/g)){
   if(href.includes('://'))continue;

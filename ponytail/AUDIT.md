@@ -1,4 +1,22 @@
-# Ponytail installation evaluation
+# Ponytail coding-policy alignment — 4.9.0-prime.2
+
+User-requested alignment folds the compatible reuse ladder and caller/root-cause
+checks into the existing project coding policy. Routine coding follows that policy
+once; it does not load Ponytail or run a second simplification pass. The skill stays
+optional for focused reviews/audits, shortcut reports and explicit invocation.
+
+Active `/home/prime-agent/AGENTS.md` equals the project-scoped Git mirror. Existing
+focused-edit, safeguard, test and verification rules (3–6) are unchanged, as is the
+health-check policy. No project-only rule was added to global instructions.
+
+Fresh checks: the new alignment contract failed against the previous policy, then
+all 8 package contracts passed. Bundle validation and native loader/offline RPC
+discovery passed (56 skills, no diagnostics). Core verification passed, including
+45 Python tests and lifecycle/recovery checks. Isolated status and then doctor
+also passed as separate commands. These are instruction-content and integration checks, not proof of future model compliance or measured efficiency.
+The previous 8-case coding pilot below was not rerun for this wording/routing update.
+
+## Original installation evidence — 4.9.0-prime.1 (historical)
 
 Reviewed upstream 4.9.0 at `356918eba965ee1eac64bd3a7f0dd02108350de5`.
 Installed form: one on-demand Markdown skill, `4.9.0-prime.1`; no plugin runtime,

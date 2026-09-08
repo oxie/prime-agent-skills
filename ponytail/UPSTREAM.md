@@ -2,12 +2,17 @@
 
 Source: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail),
 package 4.9.0, commit `356918eba965ee1eac64bd3a7f0dd02108350de5`.
-Prime adaptation: `4.9.0-prime.1`. The complete MIT notice is retained in LICENSE.
+Prime adaptation: `4.9.0-prime.2`. The complete MIT notice is retained in LICENSE.
 
 Selectively adapted from the main, review, audit and debt SKILL.md files. The
 ordered reuse ladder and evidence-based complexity/debt review are the useful
 additions. Most general coding principles already exist in this workspace's
-project-scoped instructions; those instructions were not made global or changed.
+project-scoped instructions. At the user’s request, revision prime.2 aligns their
+reuse and caller/root-cause checks with that existing policy. Ordinary coding uses
+the standing rules once, without loading a duplicate skill pass. The active project
+instructions and their config/projects/prime-agent-home mirror stay identical;
+no project-only rule is made global. The skill keeps optional detailed review/debt
+and explicit-invocation guidance for projects with their own instructions.
 
 One on-demand skill replaces six upstream entries. Omitted: persistent activation,
 lite/full/ultra enforcement, one-line/fewest-line targets, one-test ceiling,

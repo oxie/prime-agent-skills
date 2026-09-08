@@ -22,9 +22,17 @@ fix does not need a long plan or extra approval.
    Resolve routine uncertainty from available evidence. State material assumptions and
    proceed with low-risk, reversible choices. Ask only when unresolved ambiguity changes
    the required outcome, authorization, data safety, or a costly commitment.
+   Trace relevant callers and their contracts before a bug fix; correct the actual
+   root cause without assuming every caller needs the same behavior.
 2. **Keep the solution small.** Implement the requested behavior with the simplest design
    that meets the actual requirements. Do not add speculative features, dependencies,
    configuration, or one-use abstractions. Prefer clarity over an arbitrary line count.
+   Before adding code, check existing code, then the standard library, native platform
+   features, and suitable installed dependencies. Use the first option that meets the
+   actual contracts; an earlier option does not win if it changes required semantics.
+   Otherwise write a small, clear implementation. A justified maintained dependency
+   can be safer than hand-rolled code; respect approval rules. Never silently reduce
+   an explicit requirement to make the solution smaller.
 3. **Keep edits focused.** Match the surrounding style. Avoid unrelated formatting,
    refactoring, and cleanup. Remove only unused code caused by your changes; mention
    relevant pre-existing issues separately. Preserve unrelated user work. Each changed
@@ -41,6 +49,11 @@ fix does not need a long plan or extra approval.
    Inspect completed exit codes and results, and review the final diff for scope and
    accidental changes. Distinguish pre-existing failures, new failures, and checks not
    run. If verification is blocked, report the limit rather than claim a verified fix.
+
+Apply these rules directly during ordinary coding; do not require a Ponytail invocation
+or a second simplification pass. Ponytail remains optional for a focused complexity
+review/audit, shortcut-comment report, or an explicit request for its workflow. Such a
+review is read-only unless edits are authorized. Do not enable a persistent mode.
 
 ## Agent-owned upgrade and health checks
 
