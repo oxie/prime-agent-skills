@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canvas effects — bounded original studies</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./style.css"></head>
+<body><main><header><p class="eyebrow">CANVAS EFFECTS / ORIGINAL STUDIES</p><h1>Small fields. Deliberate motion.</h1>
+<p>Four decorative studies with ordinary HTML controls. Each starts still. Play runs for eight seconds; Stop keeps the current frame. Leaving the screen stops motion without restarting it.</p></header>
+<noscript><p class="notice">JavaScript is off. These scene descriptions remain available; animated previews need JavaScript.</p></noscript>
+<div class="grid">
+<section data-effect="ripples" aria-labelledby="ripples-title"><h2 id="ripples-title">01 / Ripples</h2><canvas aria-hidden="true"></canvas>
+<p>Mint rings cross a dark pool. During Play, move or tap the canvas to place the next ring. A bounded wave sketch, not a fluid solver.</p>
+<div class="controls"><button type="button" data-action="play" disabled aria-label="Play ripples">Play</button><button type="button" data-action="stop" disabled aria-label="Stop ripples">Stop</button></div><output role="status" aria-live="polite">Static description. JavaScript enables the optional preview.</output></section>
+<section data-effect="particles" aria-labelledby="particles-title"><h2 id="particles-title">02 / Particles</h2><canvas aria-hidden="true"></canvas>
+<p>Amber and mint points drift across a finite field. During Play, move or tap near the points to gently push them away. There are at most 96 points.</p>
+<div class="controls"><button type="button" data-action="play" disabled aria-label="Play particles">Play</button><button type="button" data-action="stop" disabled aria-label="Stop particles">Stop</button></div><output role="status" aria-live="polite">Static description. JavaScript enables the optional preview.</output></section>
+<section data-effect="glyph" aria-labelledby="glyph-title"><h2 id="glyph-title">03 / Glyph reveal</h2><canvas aria-hidden="true"></canvas>
+<p>A moon, observatory tower, and rolling hillside emerge from a grid of text marks. This original generated scene does not capture page content or decrypt data.</p>
+<div class="controls"><button type="button" data-action="play" disabled aria-label="Play glyph reveal">Play</button><button type="button" data-action="stop" disabled aria-label="Stop glyph reveal">Stop</button></div><output role="status" aria-live="polite">Static description. JavaScript enables the optional preview.</output></section>
+<section data-effect="warp" aria-labelledby="warp-title"><h2 id="warp-title">04 / Field distortion</h2><canvas aria-hidden="true"></canvas>
+<p>WebGL2 bends a striped landscape and amber sun. During Play, move or tap to shift its lens. The shader creates the entire original field; no image or network asset is used.</p>
+<div class="controls"><button type="button" data-action="play" disabled aria-label="Play field distortion">Play</button><button type="button" data-action="stop" disabled aria-label="Stop field distortion">Stop</button></div><output role="status" aria-live="polite">Static description. JavaScript enables the optional preview.</output></section>
+</div><footer>Reduced motion keeps a still preview. If canvas or WebGL2 is unavailable, the scene descriptions remain readable.</footer></main><script type="module" src="./main.mjs"></script></body></html>
