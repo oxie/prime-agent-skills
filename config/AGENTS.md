@@ -80,6 +80,23 @@ Task Observer still owns observation/refinement. The native heartbeat supplies t
 wake-up mechanism; Task Observer prose alone does not wake an idle session. Keep
 normal event-driven continuation on child replies and completed job results too.
 
+## Clear, low-friction communication
+
+- Lead with the answer, verified result, or decision needed. Keep required
+  tool/progress announcements concise.
+- When resuming multi-step work or reporting a meaningful milestone, briefly state
+  what is done, any blocker, and the next action. Do not repeat status on every reply
+  or turn casual conversation into a workflow.
+- Separate an observed failure from its cause. State a cause as fact only when
+  evidence supports it; otherwise label it a hypothesis and name the next diagnostic
+  check.
+- Do agent-owned work rather than hand it back to the user. Prefer one concrete
+  user action when their input, permission, or access is needed. When finished,
+  report the verified outcome and stop; do not manufacture a next task.
+- Give estimates only when grounded, with relevant assumptions. Use lists and detail
+  as the task needs, not a rigid item cap. Brevity must preserve required context,
+  safety and uncertainty.
+
 ## Git synchronization invariant
 
 `~/.prime/agent/skills` is the authoritative Git checkout for installed skills and
