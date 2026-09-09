@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "frozen_at_utc": "2026-09-09T18:12:02.120327+00:00",
+  "status": "hand-authored pre-implementation acceptance fixtures; not an unbiased benchmark",
+  "semantics": {
+    "required_skills": "Lower-bound availability via selected metadata or complete current native-eligible fallback, not a ranking/order oracle. Explicit by-name and native-disabled exceptions use their stated modes. Pinned skills count as available.",
+    "must_not_force": "Do not mandate skill activation; extra visible metadata is allowed.",
+    "fallback_allowed": "Full current native-eligible catalogue is safe but must not be reported as selective routing success or prompt reduction.",
+    "fallback_required": "An explicit complete-catalogue route is required alongside any candidates; semantic uncertainty is not silent omission.",
+    "eligibility": "Native effective registry resolves path/name/kind/disabled state before optional presentation filtering. No query invents permissions."
+  },
+  "proposed_optional_cohort": {
+    "ads": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/ads/SKILL.md",
+      "frontmatter_sha256": "e2d6e4a432a973b93ca1106db46848bb792c665b0b50a9e8850e5b7a41e82237"
+    },
+    "ad-creative": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/ad-creative/SKILL.md",
+      "frontmatter_sha256": "7e766ac133571bdc2c60b1f864310f69eb66cd71ed2564c0c825289c45987c25"
+    },
+    "analytics": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/analytics/SKILL.md",
+      "frontmatter_sha256": "4bbc02c2f710317d4852bfbd28a2f9f5c19e2e93451b5f42dd5992e28257127b"
+    },
+    "attribution": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/attribution/SKILL.md",
+      "frontmatter_sha256": "2c2eca4382d92ad9bca20e935f57e0b81237561015a87279e2fa9e90c6325a91"
+    },
+    "customer-research": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/customer-research/SKILL.md",
+      "frontmatter_sha256": "b2da554ec9ea33cb653b932256c9d2b4ea7072e9d8daa2a570b5d38d05ef114b"
+    },
+    "seo-audit": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/seo-audit/SKILL.md",
+      "frontmatter_sha256": "111fb3a27f1d82f8905b33d4e66fe1eb0b33ff08bc3c5db9f10fa28e8d0a3517"
+    },
+    "ai-seo": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/ai-seo/SKILL.md",
+      "frontmatter_sha256": "d771e19f3f8edd86c1eb457009fdc31774b1033fa8d1bccf0e6cfca5bbdfc905"
+    },
+    "schema": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/schema/SKILL.md",
+      "frontmatter_sha256": "808a6d932e4369179a3ccafb0cd8ea3815d9a2de0f274566573b7d63c07c6a78"
+    },
+    "marketing-plan": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/marketing-plan/SKILL.md",
+      "frontmatter_sha256": "6c53572c013037a4d2a83082fde6ce231cd524ee0d60bfc63906d35710ff090a"
+    },
+    "pricing": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/pricing/SKILL.md",
+      "frontmatter_sha256": "fee8365208e68bea31290e9b10c7dc0f7130abb6c0e728e924e1a986f8481010"
+    },
+    "video": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/video/SKILL.md",
+      "frontmatter_sha256": "dcc0f601977cdf33814e78b701452fda4b468c83ec5f3bcb73136bad8fb6d666"
+    },
+    "image": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/image/SKILL.md",
+      "frontmatter_sha256": "761a290fba34183479c4fdcbc7a471dea3b7b76705fd2234f94b3df8c013ddb4"
+    },
+    "sales-enablement": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/sales-enablement/SKILL.md",
+      "frontmatter_sha256": "40fd7a0d64d35c27f85fec01d1c1d7e7c962dfebca74e8bd72309b402df63975"
+    },
+    "copywriting": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/copywriting/SKILL.md",
+      "frontmatter_sha256": "31e3fc0203859555635ce66ba51f05efee27381c69a8f18c249033203e652c70"
+    },
+    "social": {
+      "path": "/home/prime-agent/.prime/agent/skills/marketingskills/skills/social/SKILL.md",
+      "frontmatter_sha256": "9aad6d316585bbaceac5c6e3e10e65d763baaec256c139be13a0e5fd85b6c0fc"
+    }
+  },
+  "fixtures": [
+    {
+      "id": "code-map",
+      "query": "Trace the callers of this function across the repository, then draw its dataflow.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "code-navigation",
+        "archify"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "code-prose",
+      "query": "Review this README and code comments for awkward prose. Do not run a marketing audit.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "copy-editing"
+      ],
+      "fallback_allowed": false,
+      "must_not_force": [
+        "product-marketing",
+        "copywriting"
+      ]
+    },
+    {
+      "id": "routine-code",
+      "query": "Fix the off-by-one error in this loop.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "must_not_force": [
+        "ponytail",
+        "ab-testing",
+        "analytics"
+      ],
+      "note": "Zero specialised match is valid; ordinary coding policy remains active."
+    },
+    {
+      "id": "design-variants",
+      "query": "Create three alternative landing-page hero layouts and compare the visual designs.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "hallmark",
+        "variate"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "design-single",
+      "query": "Audit the visual design of this supplied screenshot.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "hallmark"
+      ],
+      "fallback_allowed": false,
+      "must_not_force": [
+        "variate"
+      ]
+    },
+    {
+      "id": "experiment-not-design",
+      "query": "Plan an A/B test and estimate the sample size for a signup conversion change.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "ab-testing"
+      ],
+      "fallback_allowed": false,
+      "must_not_force": [
+        "variate"
+      ]
+    },
+    {
+      "id": "multi-domain",
+      "query": "Trace repository dependencies, draw the architecture, redesign the pricing page, and write paid ad variants.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "code-navigation",
+        "archify",
+        "hallmark",
+        "pricing",
+        "ad-creative",
+        "product-marketing"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "marketing-new",
+      "query": "New project: define our ideal customer profile and rewrite our homepage copy.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "product-marketing",
+        "copywriting"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "marketing-metrics",
+      "query": "Set up GA4 conversion events and explain why Meta and GA4 revenue disagree.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "analytics",
+        "attribution",
+        "product-marketing"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "seo-multi",
+      "query": "Audit technical SEO, add JSON-LD, and improve visibility in AI-generated answers.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "seo-audit",
+        "schema",
+        "ai-seo",
+        "product-marketing"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "campaign-multi",
+      "query": "Plan LinkedIn paid campaign targeting and create ad headlines and organic posts.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "ads",
+        "ad-creative",
+        "social",
+        "product-marketing"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "research-sales",
+      "query": "Analyse customer interviews and turn the findings into a sales one-pager.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "customer-research",
+        "sales-enablement",
+        "product-marketing"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "creative-production",
+      "query": "Create a marketing hero image and produce an explainer video.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "image",
+        "video",
+        "product-marketing"
+      ],
+      "fallback_allowed": false,
+      "note": "Discovery is not authorization to invoke paid providers or install production dependencies."
+    },
+    {
+      "id": "growth-plan",
+      "query": "Write a comprehensive 90-day marketing plan for this client.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "marketing-plan",
+        "product-marketing"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "semantic-miss",
+      "query": "Visitors keep leaving without becoming customers. What expertise could help?",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "fallback_required": true,
+      "note": "Do not hard-code a single skill as ground truth. Surface related candidates plus complete catalogue route, or use full catalogue."
+    },
+    {
+      "id": "ambiguous",
+      "query": "Can you review this?",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "fallback_required": true,
+      "note": "Ask for the object or list categories/full catalogue. Do not silently interpret as marketing or code."
+    },
+    {
+      "id": "zero",
+      "query": "What is the boiling point of water?",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "empty_result_valid": true,
+      "note": "No special skill needed. An empty search must still advertise the complete-catalogue route; do not auto-load all skill bodies."
+    },
+    {
+      "id": "name-alias-upper",
+      "query": "Use Ponytail for a focused complexity audit.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "ponytail"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "name-alias-space",
+      "query": "Use code navigation to map dependencies and Task Observer for this tool-using work.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "code-navigation",
+        "task-observer"
+      ],
+      "fallback_allowed": false
+    },
+    {
+      "id": "name-alias-domain",
+      "query": "Help with AEO / GEO / LLMO visibility and PPC creative.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "ai-seo",
+        "ads",
+        "ad-creative",
+        "product-marketing"
+      ],
+      "fallback_allowed": false,
+      "note": "Bounded hand-authored aliases only; no promise of complete semantic synonym coverage."
+    },
+    {
+      "id": "by-name-optional",
+      "query": "/skill:ad-creative",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "ad-creative"
+      ],
+      "fallback_allowed": false,
+      "mode": "explicit_native_invocation",
+      "expected_path": "native effective ad-creative filePath; no fuzzy substitute"
+    },
+    {
+      "id": "by-name-unmatched",
+      "query": "Find skill exactly named sales-enablement.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "sales-enablement"
+      ],
+      "fallback_allowed": false,
+      "mode": "exact_name_lookup",
+      "note": "Exact lookup does not depend on ranked search cutoff."
+    },
+    {
+      "id": "by-name-absent",
+      "query": "Find skill exactly named nonexistent-fixture-skill.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "mode": "exact_name_lookup",
+      "expected_result": "not_found; full catalogue route; no invented skill or arbitrary filesystem lookup"
+    },
+    {
+      "id": "all-pages",
+      "query": "List all available skills.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": false,
+      "mode": "catalogue",
+      "expected_result": "Union of all pages equals native model-eligible effective catalogue by name+path, once each. Full-catalogue option or complete stable pagination, no hidden rank cap."
+    },
+    {
+      "id": "disabled-search",
+      "query": "Search for a synthetic skill with disable-model-invocation: true.",
+      "expected_eligibility": "exclude disabled entries from model discovery, full model catalogue and automatic routing",
+      "required_skills": [],
+      "fallback_allowed": false,
+      "mode": "synthetic_registry"
+    },
+    {
+      "id": "disabled-explicit",
+      "query": "/skill:synthetic-disabled",
+      "expected_eligibility": "native explicit user slash invocation only; no automatic model eligibility",
+      "required_skills": [
+        "synthetic-disabled"
+      ],
+      "fallback_allowed": false,
+      "mode": "synthetic_registry"
+    },
+    {
+      "id": "mid-task-domain",
+      "query": "Now stop the code audit and write ad headlines for our product.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "ad-creative",
+        "product-marketing"
+      ],
+      "fallback_allowed": false,
+      "mode": "follow_up_after_code_map",
+      "note": "Re-discovery must work without new session. Existing legitimate skill body/history need not be erased."
+    },
+    {
+      "id": "mid-task-reference",
+      "query": "The selected skill says to use analytics next.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "analytics"
+      ],
+      "fallback_allowed": false,
+      "mode": "skill_referenced_dependency",
+      "note": "References can request additional skills; initial query selection is not a permanent allow-list."
+    },
+    {
+      "id": "compaction",
+      "query": "Continue the current task after compaction.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "mode": "compaction_then_follow_up",
+      "expected_result": "Mandatory policy, Python access, discovery entry point and exact/full catalogue routes remain available. Recover uncertain active selection conservatively."
+    },
+    {
+      "id": "parallel-sessions",
+      "query": "Session A requests ads; session B requests repository navigation.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [
+        "ads",
+        "code-navigation"
+      ],
+      "fallback_allowed": false,
+      "mode": "two_isolated_sessions",
+      "expected_result": "A/B route state and project effective paths do not leak; required set is checked in each corresponding session, not both at once."
+    },
+    {
+      "id": "rules-scope",
+      "query": "Continue in a different project with project-specific instructions and a same-name skill override.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "mode": "project_switch_or_new_session",
+      "expected_result": "Use native current cwd/rules/effective skill precedence; retain original instruction scope. No stale path, broad home scan or transplanted project rules."
+    },
+    {
+      "id": "reload-edit",
+      "query": "Change an optional skill description, then perform native reload.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "mode": "metadata_change",
+      "expected_result": "Native refreshed metadata becomes current; edited/unvetted entry defaults visible, not suppressed by stale allow-list or cached rank."
+    },
+    {
+      "id": "read-time-removal",
+      "query": "Remove a discovered optional skill file before reading it.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "mode": "read_after_delete",
+      "expected_result": "Explicit unavailable result, no stale body or success claim; refresh native catalogue when supported. No requirement to erase old transcript text."
+    },
+    {
+      "id": "unknown-new",
+      "query": "Add a valid new Markdown skill outside the reviewed cohort, then native reload.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "mode": "new_skill",
+      "expected_result": "New native model-eligible entry is visible by default. Python-kind changes and same-name new paths also disqualify old optional match."
+    },
+    {
+      "id": "incompatible",
+      "query": "Discovery hook receives an unsupported event shape or cannot read required metadata.",
+      "expected_eligibility": "native model-eligible effective catalogue",
+      "required_skills": [],
+      "fallback_allowed": true,
+      "mode": "fault_injection",
+      "expected_result": "Use original native model-visible metadata, preserve disabled exclusion, avoid partial silent filtering; explicit read error rather than invented file content."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "metadataFields": [
+    "name",
+    "description",
+    "kind",
+    "disableModelInvocation",
+    "python"
+  ],
+  "skills": [
+    {
+      "name": "ad-creative",
+      "path": "marketingskills/skills/ad-creative/SKILL.md",
+      "fingerprint": "f0170a33e7fd6fab74aa7853911bdf6008c76c77ab7e2e9bac55a0f9fbdb3114"
+    },
+    {
+      "name": "ads",
+      "path": "marketingskills/skills/ads/SKILL.md",
+      "fingerprint": "ebc78b13dd8057ef97ecc50523506c4cb603f906d7bfc9849f384958658e911e"
+    },
+    {
+      "name": "ai-seo",
+      "path": "marketingskills/skills/ai-seo/SKILL.md",
+      "fingerprint": "5ef6da7afe28db4d4bba2517979bfd1cf465e4a74f575828a40e8eeb29fd2a02"
+    },
+    {
+      "name": "analytics",
+      "path": "marketingskills/skills/analytics/SKILL.md",
+      "fingerprint": "8b311dde3bdd7a38350f762151b91bfaa3c3e9f78f4f56817dcaaf6adb9432a0"
+    },
+    {
+      "name": "attribution",
+      "path": "marketingskills/skills/attribution/SKILL.md",
+      "fingerprint": "9e6ca948be7497576554f4a531da78850cdd4dd2bc8b6d49cf7e488a31c52ea7"
+    },
+    {
+      "name": "copywriting",
+      "path": "marketingskills/skills/copywriting/SKILL.md",
+      "fingerprint": "7461cbb83d6d751a364607b3fa289455be4f8a91475bcd63ed92c560343f919d"
+    },
+    {
+      "name": "customer-research",
+      "path": "marketingskills/skills/customer-research/SKILL.md",
+      "fingerprint": "01669669a77f2c2992abce9a3e4618ac3d73d5a4b5abf4760754383e95a05a87"
+    },
+    {
+      "name": "image",
+      "path": "marketingskills/skills/image/SKILL.md",
+      "fingerprint": "bc29d643ef4523863d2260797ad4fdb273d4587c4c6664568c5c3d626e99913c"
+    },
+    {
+      "name": "marketing-plan",
+      "path": "marketingskills/skills/marketing-plan/SKILL.md",
+      "fingerprint": "d06dcf2a3c8a362c6ab242af78be4b857fbd006aa65d144d275a22ae55aee86f"
+    },
+    {
+      "name": "pricing",
+      "path": "marketingskills/skills/pricing/SKILL.md",
+      "fingerprint": "cb9e486eba0f6e5e5b1ab2c1880c6700958426a7d5a389dd34d846d76cff4b76"
+    },
+    {
+      "name": "sales-enablement",
+      "path": "marketingskills/skills/sales-enablement/SKILL.md",
+      "fingerprint": "ec54d093974ac150af2c05723312c959b3e2c70428cbb9563603654be201aabe"
+    },
+    {
+      "name": "schema",
+      "path": "marketingskills/skills/schema/SKILL.md",
+      "fingerprint": "08a2a2ebad19b6ee1113dc7081dc7fd0e0ed52eb15ad41c93e7fe29943893c26"
+    },
+    {
+      "name": "seo-audit",
+      "path": "marketingskills/skills/seo-audit/SKILL.md",
+      "fingerprint": "ba6d7f2cec1260ddb91be5a4a7bd1fb6de9b0ed12e2c31cbd9c7b5859ef20578"
+    },
+    {
+      "name": "social",
+      "path": "marketingskills/skills/social/SKILL.md",
+      "fingerprint": "0dfd56df6c95822d474c86d9929df8e52aa1622bf6807f5fec9f466d4bd0b93a"
+    },
+    {
+      "name": "video",
+      "path": "marketingskills/skills/video/SKILL.md",
+      "fingerprint": "3f336c20b5f811543e76e56969fa676befad3710efff3d7f366a901165244f07"
+    }
+  ]
+}
