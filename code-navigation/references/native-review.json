@@ -1,0 +1,179 @@
+{
+  "tree-sitter": {
+    "version": "0.21.1",
+    "scripts": {
+      "install": "node-gyp-build",
+      "build": "prebuildify --napi --strip",
+      "rebuild": "node-gyp rebuild",
+      "test": "mocha && jest"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_runtime_binding\",\n      \"dependencies\": [\n          \"tree_sitter\",\n          \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"sources\": [\n        \"src/binding.cc\",\n        \"src/conversions.cc\",\n        \"src/language.cc\",\n        \"src/logger.cc\",\n        \"src/lookaheaditerator.cc\",\n        \"src/node.cc\",\n        \"src/parser.cc\",\n        \"src/query.cc\",\n        \"src/tree.cc\",\n        \"src/tree_cursor.cc\",\n      ],\n      \"include_dirs\": [\n        \"vendor/tree-sitter/lib/include\",\n      ],\n      \"defines\": [\n        \"NAPI_VERSION=<(napi_build_version)\",\n      ],\n      \"cflags\": [\n        \"-std=c++17\"\n      ],\n      \"cflags_cc\": [\n        \"-std=c++17\"\n      ],\n      \"conditions\": [\n        [\"OS=='mac'\", {\n          \"xcode_settings\": {\n            \"GCC_SYMBOLS_PRIVATE_EXTERN\": \"YES\", # -fvisibility=hidden\n            \"CLANG_CXX_LANGUAGE_STANDARD\": \"c++17\",\n            \"MACOSX_DEPLOYMENT_TARGET\": \"10.9\",\n          },\n        }],\n        [\"OS=='win'\", {\n          \"msvs_settings\": {\n            \"VCCLCompilerTool\": {\n              \"AdditionalOptions\": [\n                \"/std:c++17\",\n              ],\n              \"RuntimeLibrary\": 0,\n            },\n          },\n        }],\n        [\"OS == 'linux'\", {\n          \"cflags_cc\": [\n            \"-Wno-cast-function-type\"\n          ]\n        }],\n      ]\n    },\n    {\n      \"target_name\": \"tree_sitter\",\n      \"type\": \"static_library\",\n      \"sources\": [\n        \"vendor/tree-sitter/lib/src/lib.c\"\n      ],\n      \"include_dirs\": [\n        \"vendor/tree-sitter/lib/src\",\n        \"vendor/tree-sitter/lib/include\",\n      ],\n      \"cflags\": [\n        \"-std=c11\"\n      ]\n    }\n  ],\n  \"variables\": {\n    \"runtime%\": \"node\",\n    \"openssl_fips\": \"\",\n    \"v8_enable_pointer_compression%\": 0,\n    \"v8_enable_31bit_smis_on_64bit_arch%\": 0,\n  }\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter.node",
+      "prebuilds/darwin-x64/tree-sitter.node",
+      "prebuilds/win32-x64/tree-sitter.node",
+      "prebuilds/linux-x64/tree-sitter.node"
+    ]
+  },
+  "tree-sitter-go": {
+    "version": "0.23.4",
+    "scripts": {
+      "install": "node-gyp-build",
+      "lint": "eslint grammar.js",
+      "prestart": "tree-sitter build --wasm",
+      "start": "tree-sitter playground",
+      "test": "node --test bindings/node/*_test.js"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_go_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"src\",\n      ],\n      \"sources\": [\n        \"bindings/node/binding.cc\",\n        \"src/parser.c\",\n      ],\n      \"conditions\": [\n        [\"OS!='win'\", {\n          \"cflags_c\": [\n            \"-std=c11\",\n          ],\n        }, { # OS == \"win\"\n          \"cflags_c\": [\n            \"/std:c11\",\n            \"/utf-8\",\n          ],\n        }],\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter-go.node",
+      "prebuilds/darwin-x64/tree-sitter-go.node",
+      "prebuilds/win32-x64/tree-sitter-go.node",
+      "prebuilds/win32-arm64/tree-sitter-go.node",
+      "prebuilds/linux-arm64/tree-sitter-go.node",
+      "prebuilds/linux-x64/tree-sitter-go.node"
+    ]
+  },
+  "tree-sitter-java": {
+    "version": "0.23.5",
+    "scripts": {
+      "install": "node-gyp-build",
+      "lint": "eslint grammar.js",
+      "prestart": "tree-sitter build --wasm",
+      "start": "tree-sitter playground",
+      "test": "node --test bindings/node/*_test.js"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_java_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"src\",\n      ],\n      \"sources\": [\n        \"bindings/node/binding.cc\",\n        \"src/parser.c\",\n      ],\n      \"conditions\": [\n        [\"OS!='win'\", {\n          \"cflags_c\": [\n            \"-std=c11\",\n          ],\n        }, { # OS == \"win\"\n          \"cflags_c\": [\n            \"/std:c11\",\n            \"/utf-8\",\n          ],\n        }],\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter-java.node",
+      "prebuilds/darwin-x64/tree-sitter-java.node",
+      "prebuilds/win32-x64/tree-sitter-java.node",
+      "prebuilds/win32-arm64/tree-sitter-java.node",
+      "prebuilds/linux-arm64/tree-sitter-java.node",
+      "prebuilds/linux-x64/tree-sitter-java.node"
+    ]
+  },
+  "tree-sitter-javascript": {
+    "version": "0.23.1",
+    "scripts": {
+      "install": "node-gyp-build",
+      "lint": "eslint grammar.js",
+      "prestart": "tree-sitter build --wasm",
+      "start": "tree-sitter playground",
+      "test": "node --test bindings/node/*_test.js"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_javascript_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"src\",\n      ],\n      \"sources\": [\n        \"bindings/node/binding.cc\",\n        \"src/parser.c\",\n        \"src/scanner.c\",\n      ],\n      \"conditions\": [\n        [\"OS!='win'\", {\n          \"cflags_c\": [\n            \"-std=c11\",\n          ],\n        }, { # OS == \"win\"\n          \"cflags_c\": [\n            \"/std:c11\",\n            \"/utf-8\",\n          ],\n        }],\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter-javascript.node",
+      "prebuilds/darwin-x64/tree-sitter-javascript.node",
+      "prebuilds/win32-x64/tree-sitter-javascript.node",
+      "prebuilds/win32-arm64/tree-sitter-javascript.node",
+      "prebuilds/linux-arm64/tree-sitter-javascript.node",
+      "prebuilds/linux-x64/tree-sitter-javascript.node"
+    ]
+  },
+  "tree-sitter-kotlin": {
+    "version": "0.3.8",
+    "scripts": {
+      "test": "tree-sitter test",
+      "install": "node-gyp-build",
+      "generate": "tree-sitter generate",
+      "parse": "tree-sitter parse",
+      "build-wasm": "tree-sitter build --wasm",
+      "playground": "tree-sitter playground",
+      "prestart": "npm run build-wasm",
+      "start": "npm run playground",
+      "prebuildify": "prebuildify --napi --strip"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_kotlin_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"src\",\n      ],\n      \"sources\": [\n        \"bindings/node/binding.cc\",\n        \"src/parser.c\",\n        \"src/scanner.c\"\n      ],\n      \"conditions\": [\n        [\"OS!='win'\", {\n          \"cflags_c\": [\n            \"-std=c11\",\n          ],\n        }, { # OS == \"win\"\n          \"cflags_c\": [\n            \"/std:c11\",\n            \"/utf-8\",\n          ],\n        }],\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": []
+  },
+  "tree-sitter-php": {
+    "version": "0.23.12",
+    "scripts": {
+      "install": "node-gyp-build",
+      "lint": "eslint common/define-grammar.js",
+      "test": "node --test bindings/node/*_test.js"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_php_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"php/src\",\n      ],\n      \"sources\": [\n        \"php/src/parser.c\",\n        \"php/src/scanner.c\",\n        \"php_only/src/parser.c\",\n        \"php_only/src/scanner.c\",\n        \"bindings/node/binding.cc\",\n      ],\n      \"conditions\": [\n        [\"OS!='win'\", {\n          \"cflags_c\": [\n            \"-std=c11\",\n          ],\n        }, { # OS == \"win\"\n          \"cflags_c\": [\n            \"/std:c11\",\n            \"/utf-8\",\n          ],\n        }],\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter-php.node",
+      "prebuilds/darwin-x64/tree-sitter-php.node",
+      "prebuilds/win32-x64/tree-sitter-php.node",
+      "prebuilds/win32-arm64/tree-sitter-php.node",
+      "prebuilds/linux-arm64/tree-sitter-php.node",
+      "prebuilds/linux-x64/tree-sitter-php.node"
+    ]
+  },
+  "tree-sitter-python": {
+    "version": "0.21.0",
+    "scripts": {
+      "build": "tree-sitter generate --no-bindings",
+      "lint": "eslint grammar.js",
+      "parse": "tree-sitter parse",
+      "test": "tree-sitter test",
+      "install": "node-gyp-build",
+      "prebuildify": "prebuildify --napi --strip"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_python_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"src\",\n      ],\n      \"sources\": [\n        \"bindings/node/binding.cc\",\n        \"src/parser.c\",\n        \"src/scanner.c\",\n      ],\n      \"cflags_c\": [\n        \"-std=c11\",\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter-python.node",
+      "prebuilds/darwin-x64/tree-sitter-python.node",
+      "prebuilds/win32-x64/tree-sitter-python.node",
+      "prebuilds/linux-x64/tree-sitter-python.node"
+    ]
+  },
+  "tree-sitter-r": {
+    "version": "1.3.0",
+    "scripts": {
+      "install": "node-gyp-build",
+      "prestart": "tree-sitter build --wasm",
+      "start": "tree-sitter playground",
+      "test": "node --test bindings/node/*_test.js"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_r_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"src\",\n      ],\n      \"sources\": [\n        \"bindings/node/binding.cc\",\n        \"src/parser.c\",\n        \"src/scanner.c\"\n      ],\n      \"conditions\": [\n        [\"OS!='win'\", {\n          \"cflags_c\": [\n            \"-std=c11\",\n          ],\n        }, { # OS == \"win\"\n          \"cflags_c\": [\n            \"/std:c11\",\n            \"/utf-8\",\n          ],\n        }],\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/@davisvaughan+tree-sitter-r.node",
+      "prebuilds/darwin-x64/@davisvaughan+tree-sitter-r.node",
+      "prebuilds/win32-x64/@davisvaughan+tree-sitter-r.node",
+      "prebuilds/win32-arm64/@davisvaughan+tree-sitter-r.node",
+      "prebuilds/linux-arm64/@davisvaughan+tree-sitter-r.node",
+      "prebuilds/linux-x64/@davisvaughan+tree-sitter-r.node"
+    ]
+  },
+  "tree-sitter-swift": {
+    "version": "0.7.1",
+    "scripts": {
+      "install": "node-gyp-build",
+      "prestart": "tree-sitter build --wasm",
+      "start": "tree-sitter playground",
+      "test": "node --test bindings/node/*_test.js"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_swift_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"src\",\n      ],\n      \"sources\": [\n        \"bindings/node/binding.cc\",\n        \"src/parser.c\",\n        # NOTE: if your language has an external scanner, add it here.\n        \"src/scanner.c\",\n      ],\n      \"cflags_c\": [\n        \"-std=c11\",\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter-swift.node",
+      "prebuilds/darwin-x64/tree-sitter-swift.node",
+      "prebuilds/win32-x64/tree-sitter-swift.node",
+      "prebuilds/win32-arm64/tree-sitter-swift.node",
+      "prebuilds/linux-arm64/tree-sitter-swift.node",
+      "prebuilds/linux-x64/tree-sitter-swift.node"
+    ]
+  },
+  "tree-sitter-typescript": {
+    "version": "0.23.2",
+    "scripts": {
+      "install": "node-gyp-build",
+      "lint": "eslint common/define-grammar.js",
+      "test": "node --test bindings/node/*_test.js"
+    },
+    "binding_gyp": "{\n  \"targets\": [\n    {\n      \"target_name\": \"tree_sitter_typescript_binding\",\n      \"dependencies\": [\n        \"<!(node -p \\\"require('node-addon-api').targets\\\"):node_addon_api_except\",\n      ],\n      \"include_dirs\": [\n        \"typescript/src\",\n      ],\n      \"sources\": [\n        \"typescript/src/parser.c\",\n        \"typescript/src/scanner.c\",\n        \"tsx/src/parser.c\",\n        \"tsx/src/scanner.c\",\n        \"bindings/node/binding.cc\",\n      ],\n      \"conditions\": [\n        [\"OS!='win'\", {\n          \"cflags_c\": [\n            \"-std=c11\",\n          ],\n        }, { # OS == \"win\"\n          \"cflags_c\": [\n            \"/std:c11\",\n            \"/utf-8\",\n          ],\n        }],\n      ],\n    }\n  ]\n}\n",
+    "prebuilds": [
+      "prebuilds/darwin-arm64/tree-sitter-typescript.node",
+      "prebuilds/darwin-x64/tree-sitter-typescript.node",
+      "prebuilds/win32-x64/tree-sitter-typescript.node",
+      "prebuilds/win32-arm64/tree-sitter-typescript.node",
+      "prebuilds/linux-arm64/tree-sitter-typescript.node",
+      "prebuilds/linux-x64/tree-sitter-typescript.node"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+--- a/src/graph/extract.ts
++++ b/src/graph/extract.ts
+@@ -335,6 +335,7 @@
+   enclosingClass: string | null; // nearest enclosing class (py/ts `self`/`this`)
+   goReceiverVar: string | null; // Go receiver var, e.g. `w` in `func (w *Worker)`
+   importedSymbols: ReadonlyMap<string, { name: string; specifier: string }>;
++  originalImports: ReadonlyMap<string, { name: string; specifier: string }>;
+   // R6 (Phase 2): which list we're inside while walking an `R6Class(...)` call's
+   // arguments — set only for the direct span of a `public =`/`private =`/
+   // `active =` `list(...)`'s own entries (see walk()'s special-cased `argument`
+@@ -422,6 +423,7 @@
+     enclosingClass: null,
+     goReceiverVar: null,
+     importedSymbols,
++    originalImports: importedSymbols,
+     rR6Access: null,
+     rGenerics,
+     rSuperClass: null,
+@@ -561,6 +563,11 @@
+ }
+ 
+ function walk(node: Parser.SyntaxNode, ctx: WalkCtx, out: NodeV1[], edges: RawEdge[], minted: Set<string>): void {
++  // Block/catch/loop and anonymous-function scopes have no definition descriptor.
++  if ((ctx.lang === "typescript" || ctx.lang === "tsx") &&
++      (isFunctionBoundary(node) || ["statement_block", "catch_clause", "for_in_statement", "for_statement"].includes(node.type))) {
++    ctx = { ...ctx, importedSymbols: withoutShadowedImports(ctx.importedSymbols, node) };
++  }
+   const desc = describe(node, ctx);
+   if (desc) {
+     // `idName` scopes the id (e.g. a Go method under its receiver: `#DB.Count`) while
+@@ -721,11 +728,16 @@
+     const isConsumedRClassCall =
+       consumedCallee === "R6Class" || (consumedCallee === "list" && rIsMixinContainer(node));
+     const callee = isConsumedRClassCall ? null : calleeName(node, ctx.lang);
+-    if (callee) {
++    const tsBare = callee && !callee.viaMember && (ctx.lang === "typescript" || ctx.lang === "tsx");
++    const imported = tsBare ? ctx.importedSymbols.get(callee.name) : undefined;
++    // A shadowed import must not fall back to a same-file or unique-global guess.
++    const shadowedImport = tsBare && ctx.originalImports.has(callee.name) && !imported;
++    if (callee && !shadowedImport) {
+       const callEdge: RawEdge = {
+         source: ctx.parentId,
+         relation: "calls",
+-        name: callee.name,
++        name: imported?.name ?? callee.name,
++        ...(imported ? { specifier: imported.specifier } : {}),
+         viaMember: callee.viaMember,
+         file: ctx.rel,
+         ...(callee.kinds ? { kinds: callee.kinds } : {}),
+@@ -1052,20 +1064,29 @@
+   if (imports.size === 0) return imports;
+   const shadowed = new Set<string>();
+   const definitionValue = definition.childForFieldName("value");
++  // Conservative binding-pattern scan: over-suppress uncertain destructuring,
++  // rather than claim an imported target for a lexical local or default value.
++  const bind = (node: Parser.SyntaxNode | null): void => {
++    if (!node) return;
++    if (["identifier", "shorthand_property_identifier_pattern", "type_identifier"].includes(node.type)) shadowed.add(node.text);
++    for (const child of node.namedChildren) bind(child);
++  };
+   const visit = (node: Parser.SyntaxNode): void => {
+-    if (!sameSyntaxNode(node, definition) && !sameSyntaxNode(node, definitionValue) && isFunctionBoundary(node)) {
+-      const name = node.childForFieldName("name");
+-      if (name?.type === "identifier") shadowed.add(name.text);
+-      return;
+-    }
++    const boundary = isFunctionBoundary(node) || node.type === "class_declaration";
++    if (boundary) bind(node.childForFieldName("name"));
++    if (!sameSyntaxNode(node, definition) && !sameSyntaxNode(node, definitionValue) && boundary) return;
+     if (node.type === "variable_declarator") {
+-      const name = node.childForFieldName("name");
+-      if (name?.type === "identifier") shadowed.add(name.text);
++      bind(node.childForFieldName("name"));
+     } else if (node.type === "required_parameter" || node.type === "optional_parameter") {
+-      const pattern = node.childForFieldName("pattern");
+-      if (pattern?.type === "identifier") shadowed.add(pattern.text);
+-    } else if (node.type === "identifier" && node.parent?.type === "formal_parameters") {
+-      shadowed.add(node.text);
++      bind(node.childForFieldName("pattern"));
++    } else if (node.type === "formal_parameters") {
++      for (const child of node.namedChildren) if (child.type === "identifier" || child.type.endsWith("pattern")) bind(child);
++    } else if (node.type === "catch_clause") {
++      bind(node.childForFieldName("parameter"));
++    } else if (node.type === "for_in_statement") {
++      bind(node.childForFieldName("left"));
++    } else if (node.type === "arrow_function") {
++      bind(node.childForFieldName("parameter"));
+     }
+     for (const child of node.namedChildren) visit(child);
+   };
+--- a/src/graph/resolve.ts
++++ b/src/graph/resolve.ts
+@@ -268,6 +268,17 @@
+         if (hit && hit.id !== e.source) add(e.source, hit.id, "references", hit.confidence);
+       }
+     } else if (e.relation === "calls") {
++      if (e.specifier && !e.viaMember && familyOf(e.file) === "typescript") {
++        // Explicit named imports never guess outside their module or at inner defs.
++        if (!e.specifier.startsWith(".")) continue;
++        const targetFile = resolveImport(e.specifier, e.file, byId);
++        if (byId.get(targetFile)?.kind !== "file") continue;
++        const candidates = (perFileName.get(targetFile)?.get(e.name!) ?? []).filter(
++          (n) => n.kind === "function" && n.exported && !n.id.slice(targetFile.length + 1).includes("."),
++        );
++        if (candidates.length === 1) add(e.source, candidates[0].id, "calls", "extracted");
++        continue;
++      }
+       if (e.viaMember) {
+         if (!e.recvType) continue;
+         const hit = resolveTypedMember(e.recvType, e.name!, e.file, ownerMethod, classParents, classTraits, e.argCount);

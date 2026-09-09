@@ -1,0 +1,2 @@
+# A unified diff encodes an empty context line as one mandatory space.
+named-import-calls.patch whitespace=-blank-at-eol
