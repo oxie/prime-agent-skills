@@ -8,13 +8,14 @@ description: >
   screenshot analysis, or Hallmark by name. Complements Variate when comparing
   alternatives. Not for routine nonvisual coding, security/SEO audits, conversion
   measurement, or automatic redesign of every UI edit. URL-only study asks for a
-  screenshot; it does not provide a web crawler.
+  screenshot; authorized local previews can use the shared browser-check skill.
+  It does not provide a public-web crawler.
 license: MIT; Apache-2.0 for references/ux-review.md (see THIRD_PARTY.md)
 compatibility: >
   Prime-native Markdown guidance. No runtime package, provider key, installer,
   server or hook. Implementation and verification use the target project's tools.
 metadata:
-  version: 1.1.0-prime.3
+  version: 1.1.0-prime.4
   upstream: https://github.com/nutlope/hallmark
   upstream-commit: 13ac0ec7e148655948100b6396439e481361d690
 ---
@@ -55,8 +56,10 @@ user intent. Keep existing routes, semantics, business logic and interaction con
   [audit.md](references/audit.md). Separate observed functional/accessibility defects
   from optional taste suggestions. Cite file/line or visible evidence.
 - **Study:** analyse a supplied screenshot using [study.md](references/study.md).
-  For a URL-only request, ask for a screenshot or user-provided source; this edition
-  does not fetch or crawl the URL. Diagnosis does not authorize building or writing
+  For an authorized owned local preview, use the shared
+  `browser-check` skill to capture evidence. For other
+  URL-only requests, ask for a screenshot or user-provided source; this edition
+  does not crawl public URLs. Diagnosis does not authorize building or writing
   `design.md`. Obtain the user's choice before turning the study into changes.
 - **Compare alternatives:** use Variate for the round and Hallmark for direction.
   Read [variate.md](references/variate.md) and the installed Variate `SKILL.md` before

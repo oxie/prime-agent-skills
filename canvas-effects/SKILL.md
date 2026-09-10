@@ -92,6 +92,13 @@ intended project on loopback, and stop it afterward. Do not weaken a browser san
 enable experimental DOM-capture flags, configure MCP, or install dependencies merely
 to make a sample work. Surface genuine capability/access blockers.
 
+## Shared browser evidence
+
+For an authorized owned local preview, use the shared
+`browser-check` skill for viewport screenshots and explicit
+input/reduced-motion checks. Inspect the saved pixels. A generic capture does not
+replace shader, lifecycle, GPU-failure or performance tests; label those separately.
+
 ## Hand off and extend
 
 Report changed files, intended visual result, implemented versus proposed behavior,

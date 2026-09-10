@@ -99,6 +99,13 @@ A useful compact decision note (not a mandatory file):
 | Concrete quiet and expressive website directions | [worked directions](references/worked-directions.md) |
 | Semantics, motion lifecycle, rendering/failure and measured checks | [production checks](references/production-checks.md) |
 
+## Shared browser evidence
+
+Use the shared `browser-check` skill for an authorized
+owned local preview: actual screenshots, narrow/reduced-motion captures and explicit
+inputs. Hallmark still interprets usability and design; this skill directs the frame.
+Generic captures do not replace the fixture's specialized native tests.
+
 ## Educational fixture and handoff
 
 [assets/demo/index.html](assets/demo/index.html) is a small original, opt-in

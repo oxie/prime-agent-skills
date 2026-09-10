@@ -10,11 +10,14 @@ This check requires the **existing reviewed local environment**, not dependencie
 bundled in this skill:
 
 - `/home/prime-agent/.local/share/prime-agent/browser-use-tools/.venv/bin/python`
-- `/snap/chromium/current/usr/lib/chromium-browser/chrome`
-- `/home/prime-agent/.local/share/prime-agent/browser-use-tools/checks/verify_browser.py`
+- Maintained private Google Chrome153 under
+  `/home/prime-agent/.local/share/prime-agent/browser-use-tools/chrome/153.0.8010.36/`
+- Sibling `browser-check/scripts/chrome_launch.py`, `owned_chrome.py` and
+  `optional_optout.py` (reviewed browser-use0.13.10 optional-listener opt-out)
 
-The last file supplies only its reviewed exact-process ownership helpers
-(`identity`, `proc_snapshot`, `remember_helpers`). Its main program is not run.
+The shared launcher verifies the full pinned runtime before executing only the
+actual Chrome binary under the existing `chrome` AppArmor profile. That profile
+permits normal user namespaces; it is not whole-browser filesystem/egress isolation.
 BrowserSession attaches through loopback CDP; it does not manage Chromium or call
 an Agent, provider, cloud service or model. Private CDP event-registry APIs are
 version-specific. A different installation needs review before adaptation; do not
@@ -23,7 +26,7 @@ install dependencies or remove the sandbox to make this check pass.
 From this skill directory, use the native environment and a **new** evidence path:
 
 ```text
-/home/prime-agent/.local/share/prime-agent/browser-use-tools/.venv/bin/python tests/browser.py --output /tmp/salt-evidence-UNIQUE
+/home/prime-agent/.local/share/prime-agent/browser-use-tools/.venv/bin/python -I -B tests/browser.py --output /tmp/salt-evidence-UNIQUE
 ```
 
 The default test deadline is 120 seconds (accepted range: 30–180), plus bounded
@@ -37,15 +40,19 @@ The server binds an ephemeral loopback port and serves only three fixture files.
 There is no directory listing, arbitrary path serving or external asset request.
 The browser gets a short private profile and clean environment, with telemetry,
 cloud sync, extensions and version checks disabled. A bound non-listening local
-proxy and fail-closed DNS rules constrain non-loopback browser requests. CDP denies
-downloads after attachment. These are browser controls, **not OS egress isolation**
+proxy and fail-closed DNS rules permit only the exact owned fixture127.0.0.1 port
+for browser traffic, not every loopback service. Optional download/dialog listeners
+are disabled before BrowserSession starts. CDP denies downloads after attachment;
+unexpected dialogs are dismissed and fail the run. These are browser controls, **not OS egress isolation**
 or a packet audit. Do not describe absence of fixture network requests as proof
 that every Chromium background component is silent.
 
-Cleanup disconnects BrowserSession, terminates/reaps only its owned process group,
-checks exact referenced Crashpad helper identities, closes the server/proxy and
-removes only its private temporary tree. No user browser is attached or stopped.
-Start/end hashes bind receipts to the fixture, runner and installed helper source.
+Cleanup disconnects BrowserSession and delegates process shutdown to shared
+OwnedChrome. The fresh CLI is a subreaper and sole browser wait owner; detached
+adopted children are pidfd-pinned/reaped. No numeric process-group signal follows
+leader reaping. Each server/proxy/log cleanup is attempted independently. Private
+work is retained when child cleanup is uncertain. No user browser is attached or
+stopped. Start/end hashes cover fixture, runner and all shared helper sources.
 
 ## What the checks mean
 

@@ -83,6 +83,13 @@ chat decisions when secure browser access is unavailable.
 Tell the user: arrows switch real files; Keep/Refine queues a decision. Send a chat
 message when ready for the agent to handle it. Do not imply clicks wake an idle agent.
 
+## Shared browser evidence
+
+For an authorized owned local preview, use the shared
+`browser-check` skill for screenshots and explicit input
+checks. Variate remains the sole owner of the round, live-file switching, queue and
+preview handle. The browser does not select variants or acknowledge decisions.
+
 ## Design guidance with Hallmark
 
 For requested visual alternatives, use the installed [Hallmark skill](../hallmark/SKILL.md)

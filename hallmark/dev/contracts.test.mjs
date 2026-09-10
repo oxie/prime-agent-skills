@@ -15,7 +15,7 @@ test("routing metadata is bounded and distinguishes visual tasks from other audi
   const desc=main.match(/description: >\n([\s\S]*?)\nlicense:/)[1].replace(/^  /gm,"");
   assert.ok(desc.trim().length>20&&desc.length<=1024);
   for(const word of ["visual-design audit","screenshot","Variate","nonvisual","security/SEO"])assert.ok(desc.includes(word),word);
-  assert.match(main,/version: 1\.1\.0-prime\.3/);assert.ok(!/^hooks:|^allowed-tools:/m.test(main));
+  assert.match(main,/version: 1\.1\.0-prime\.4/);assert.ok(!/^hooks:|^allowed-tools:/m.test(main));
 });
 test("entrypoint and references stay small enough for selective reading",()=>{
   assert.ok(Buffer.byteLength(main)<=8500);assert.equal(Object.keys(refs).length,10);
@@ -57,7 +57,9 @@ test("audit is read-only and distinguishes functional issues from taste",()=>{
 });
 test("study has explicit vision evidence limits and no invented URL fetch capability",()=>{
   const text=refs['study.md'];for(const part of ['URL-only request','does not prove ownership','Do not execute','Only explicit approval','unknown','vision is unavailable'])assert.ok(text.includes(part),part);
-  assert.match(main,/URL-only request, ask for a screenshot/);assert.match(text,/Private\/internal URLs/);
+  assert.match(main,/URL-only requests, ask for a screenshot/);assert.match(text,/Private\/internal URLs/);
+  assert.match(main,/authorized owned local preview/);assert.match(main,/`browser-check` skill/);
+  assert.match(main,/does not crawl public URLs/);
 });
 test("tokens follow actual consumer and do not create parallel authorities",()=>{
   const text=refs['tokens.md'];for(const part of ['Do not always add tokens.css','version','native','shadcn','DTCG','unvalidated','No token or global stylesheet changes during an open Variate'])assert.ok(text.includes(part),part);

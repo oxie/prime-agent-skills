@@ -3,14 +3,16 @@
 Run from this skill directory with the existing reviewed local environment:
 
 ```text
-/home/prime-agent/.local/share/prime-agent/browser-use-tools/.venv/bin/python tests/browser.py --output /tmp/canvas-effects-evidence-UNIQUE --deadline 180
+/home/prime-agent/.local/share/prime-agent/browser-use-tools/.venv/bin/python -I -B tests/browser.py --output /tmp/canvas-effects-evidence-UNIQUE --deadline 180
 ```
 
 The evidence directory must be new and outside the package. The runner resolves
 assets relative to itself, so the same command works after installation. It needs
-the existing browser-use environment (including Pillow), sandboxed Chromium at
-`/snap/chromium/current/usr/lib/chromium-browser/chrome`, and exact-process helpers
-from `/home/prime-agent/.local/share/prime-agent/browser-use-tools/checks/verify_browser.py`.
+the existing browser-use environment (including Pillow), maintained private Google
+Chrome153 at `/home/prime-agent/.local/share/prime-agent/browser-use-tools/chrome/153.0.8010.36/`,
+and sibling `browser-check/scripts/{chrome_launch,owned_chrome,optional_optout}.py`.
+The launcher verifies the pinned full runtime, then labels only actual Chrome with
+the existing `chrome` AppArmor profile so normal namespace sandboxing can work.
 It does not install dependencies. A different environment needs review; never add
 unsafe browser flags to force WebGL success.
 
@@ -19,20 +21,21 @@ unsafe browser flags to force WebGL success.
 Only packaged assets are served by an ephemeral loopback server. The history
 check serves the same demo HTML at one extra local URL; no extra script is added. Symlinks and
 unknown asset types are refused. Chromium receives a private temporary profile,
-clean environment, disabled downloads/telemetry/cloud extensions, fail-closed
-non-loopback proxy and DNS controls. This is not OS egress isolation or a packet
+clean environment, disabled telemetry/cloud extensions and exact owned-port browser
+proxy/DNS controls. The shared optional-listener opt-out runs before BrowserSession
+startup; CDP denies downloads, and unexpected dialogs are dismissed and fail the run. This is not OS egress isolation or a packet
 audit. BrowserSession attaches to CDP without an Agent, provider, cloud or model.
 The renderer sandbox and exact owned process cleanup are checked. The reviewed
-launch/CDP/cleanup infrastructure comes from cinematic-ui's local browser runner;
+launch/owned-cleanup infrastructure comes from the sibling browser-check modules;
 the acceptance checks are independently written for this contract.
 
 Keep the command handle. Read its **completed exit code**, `evidence.json`, and
 screenshots. An admitted process or screenshot alone is not a pass. Each check
 records its assertion and data. Failures remain in separate evidence directories.
 Start/end source hashes cover all assets, this runner and the reviewed helper.
-Cleanup disconnects BrowserSession, terminates/reaps only the owned process group
-and exact remembered helper identities, closes the server/proxy, and removes only
-the private temporary tree. The deadline bounds testing, with bounded extra cleanup.
+Cleanup disconnects BrowserSession, uses the shared sole-wait-owner/subreaper
+lifecycle and pidfd-pinned adopted-child reaping, and independently closes the
+server/proxy/log. Private work stays when child cleanup is uncertain. The deadline bounds testing, with bounded extra cleanup.
 
 ## Assertions
 
@@ -63,8 +66,10 @@ the private temporary tree. The deadline bounds testing, with bounded extra clea
 - No unexpected runtime/console errors, only successful fixture-origin requests,
   stable source hashes and exact private resource cleanup.
 
-These are bounded Chromium software-renderer samples (Chromium selected SwiftShader
-without a test-supplied unsafe enabling flag), not hardware-GPU evidence or FPS, heap, GPU-memory, accessibility or
+The prior Chromium run selected SwiftShader without a test-supplied unsafe enabling
+flag. Fresh maintained-Chrome runs must again prove the existing WebGL2/pixel
+assertions; no unsafe enabling flag or weaker assertion is added. These are bounded
+browser samples, not hardware-GPU evidence or FPS, heap, GPU-memory, accessibility or
 WCAG certification. They do not test mobile hardware, assistive technology or other
 engines. Inspect screenshots before accepting the visual result. No live website,
 restricted upstream implementation or external image is involved.

@@ -23,10 +23,13 @@ test("exact Apache license and upstream NOTICE retained with source pins",()=>{
     assert.throws(()=>verifyLicenses(...changed));
   }
 });
-test("progressive UX route exists without changing the discovery description",()=>{
+test("progressive UX route and approved local-browser discovery remain scoped",()=>{
   const main=read("SKILL.md");
   const description=main.match(/description: >\n([\s\S]*?)\nlicense:/)[1];
-  assert.equal(hash(description),"b039273a8f03f156af3f30bbf44cd6d451bd06ce6ed5d56aac1c002ba3871b19");
+  // Browser-check integration deliberately extends the prior source-only description.
+  assert.equal(hash(description),"4ae516c933a0ef5c2a343d12affe20ba0a2948db369fc30bebafc05670038f2e");
+  assert.match(description,/authorized local previews/);
+  assert.match(description,/does not provide a public-web crawler/);
   assert.match(main,/\[ux-review.md\]\(references\/ux-review.md\)/);
   assert.match(main,/MIT; Apache-2.0 for references\/ux-review.md/);
 });

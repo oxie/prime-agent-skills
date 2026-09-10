@@ -12,7 +12,7 @@ import logging
 import os
 from pathlib import Path
 import shutil
-import signal
+import ctypes
 import socket
 import sys
 import tempfile
@@ -22,8 +22,7 @@ import traceback
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 FIXTURE = Path(__file__).resolve().parents[1] / 'assets'
-CHROME = '/snap/chromium/current/usr/lib/chromium-browser/chrome'
-HELPERS = Path('/home/prime-agent/.local/share/prime-agent/browser-use-tools/checks/verify_browser.py')
+SHARED = Path(__file__).resolve().parents[2] / 'browser-check/scripts'
 
 
 def atomic(path, value):
@@ -35,11 +34,17 @@ def atomic(path, value):
 async def run(args, work):
     sys.dont_write_bytecode = True
     from browser_use import BrowserSession
-    spec = importlib.util.spec_from_file_location('reviewed_browser_checks', HELPERS)
-    helper = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(helper)
+    modules = {}
+    shared_paths = [SHARED / (name + '.py') for name in ('chrome_launch', 'owned_chrome', 'optional_optout')]
+    for path in shared_paths:
+        spec = importlib.util.spec_from_file_location(path.stem, path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        modules[path.stem] = module
+    launch, owner, optional = (modules[name] for name in ('chrome_launch', 'owned_chrome', 'optional_optout'))
+    optional_policy = optional.disable_optional_watchdogs()
     out = args.output
-    source_paths = [Path(__file__).resolve(), HELPERS, *sorted(p for p in FIXTURE.rglob('*') if p.is_file())]
+    source_paths = [Path(__file__).resolve(), *shared_paths, *sorted(p for p in FIXTURE.rglob('*') if p.is_file())]
     source_hashes = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in source_paths}
     record = {'checks': [], 'errors': [], 'requests': [], 'cleanup': {},
               'scope': 'Original fixture only; no WCAG certification or frame-performance benchmark.'}
@@ -51,6 +56,7 @@ async def run(args, work):
         if not ok:
             raise AssertionError(name)
     record['source_hashes_start'] = source_hashes
+    record['optional_listener_policy'] = optional_policy
     files = {}
     for path in sorted(FIXTURE.rglob('*')):
         if path.is_symlink():
@@ -74,46 +80,32 @@ async def run(args, work):
             self.wfile.write(item[0] if item else b'Not found')
         def log_message(self, *args):
             pass
-    server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)
-    server.daemon_threads = True
-    thread = threading.Thread(target=server.serve_forever, daemon=True)
-    thread.start()
-    origin = f'http://127.0.0.1:{server.server_port}'
-    proxy = socket.socket()
-    proxy.bind(('127.0.0.1', 0))  # Bound, not listening: fail-closed proxy.
-    profile = work / 'profile'
-    profile.mkdir()
-    command = [CHROME, '--headless=new', '--remote-debugging-address=127.0.0.1',
-               '--remote-debugging-port=0', f'--user-data-dir={profile}', '--no-first-run',
-               '--disable-extensions', '--disable-background-networking', '--disable-component-update',
-               '--disable-sync', '--disable-default-apps', '--disable-quic',
-               '--force-webrtc-ip-handling-policy=disable_non_proxied_udp',
-               f'--proxy-server=http://127.0.0.1:{proxy.getsockname()[1]}',
-               '--proxy-bypass-list=127.0.0.1;localhost',
-               '--host-resolver-rules=MAP * ~NOTFOUND, EXCLUDE 127.0.0.1, EXCLUDE localhost', 'about:blank']
-    record['command'] = command
-    record['origin'] = origin
-    chrome = browser = drain = None
-    helpers = {}
-    logfile = (out / 'chromium.log').open('wb')
+    chrome = browser = server = thread = proxy = logfile = None
     try:
+        server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)
+        server.daemon_threads = True
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        origin = f'http://127.0.0.1:{server.server_port}'
+        proxy = socket.socket()
+        proxy.bind(('127.0.0.1', 0))  # Bound, not listening: fail-closed proxy.
+        profile = work / 'profile'
+        profile.mkdir(mode=0o700)
+        command = launch.launch_argv(profile, proxy.getsockname()[1], server.server_port)
+        record['command'] = command
+        record['origin'] = origin
+        logfile = (out / 'chromium.log').open('wb')
         async with asyncio.timeout(args.deadline):
-            chrome = await asyncio.create_subprocess_exec(*command, stdout=logfile,
-                         stderr=asyncio.subprocess.PIPE, start_new_session=True)
-            record['browser_pid'] = chrome.pid
+            chrome = owner.OwnedChrome()
+            chrome.start(command, logfile)
+            record['browser_pid'] = chrome.process.pid
             async with asyncio.timeout(15):
-                while True:
-                    line = await chrome.stderr.readline()
-                    logfile.write(line)
-                    if not line:
-                        raise RuntimeError('Chromium exited before CDP')
-                    if b'DevTools listening on ' in line:
-                        websocket = line.decode().split('DevTools listening on ', 1)[1].strip()
-                        break
-            async def drain_log():
-                async for line in chrome.stderr:
-                    logfile.write(line)
-            drain = asyncio.create_task(drain_log())
+                while not (profile / 'DevToolsActivePort').exists():
+                    if chrome.exited():
+                        raise RuntimeError('Chrome exited before CDP')
+                    await asyncio.sleep(.05)
+            port = int((profile / 'DevToolsActivePort').read_text().splitlines()[0])
+            websocket = f'http://127.0.0.1:{port}'
             browser = BrowserSession(cdp_url=websocket, is_local=False, use_cloud=False,
                 headless=True, chromium_sandbox=True, disable_security=False, keep_alive=False,
                 enable_default_extensions=False, captcha_solver=False, auto_download_pdfs=False,
@@ -121,6 +113,15 @@ async def run(args, work):
                 downloads_path=work / 'downloads', device_scale_factor=1)
             await browser.start()
             cdp = browser.cdp_client
+            record['native_version'] = await cdp.send.Browser.getVersion()
+            check('maintained_native_chrome', record['native_version'].get('product') == 'Chrome/' + launch.VERSION, record['native_version'])
+            async def unexpected_dialog(event, session):
+                record['errors'].append('Unexpected JavaScript dialog: ' + str(event.get('type')))
+                try:
+                    await cdp.send.Page.handleJavaScriptDialog(params={'accept': False}, session_id=session)
+                except Exception as exc:
+                    record['errors'].append('Dialog dismissal failed: ' + repr(exc))
+            cdp.register.Page._registry.register('Page.javascriptDialogOpening', unexpected_dialog)
             await cdp.send.Browser.setDownloadBehavior(params={'behavior': 'deny', 'eventsEnabled': True})
             page = await browser.new_page()
             sid = await page.session_id
@@ -183,10 +184,12 @@ async def run(args, work):
             await navigate('chrome://sandbox/')
             sandbox = await ev('() => document.body.innerText')
             record['sandbox'] = sandbox
-            helper.remember_helpers(chrome.pid, helpers, work)
-            processes = helper.proc_snapshot(chrome.pid, helpers)
-            renderers = [p for p in processes if '--type=renderer' in p['cmd']]
+            processes = chrome.observe()
+            renderers = [p for p in processes if p['renderer']]
             check('sandbox', 'Seccomp-BPF' in sandbox and bool(renderers) and all(p['status'].get('Seccomp') == '2' and p['status'].get('NoNewPrivs') == '1' for p in renderers), processes)
+            native_sandbox = await ev('() => ({url:location.href,rows:[...document.querySelectorAll("#sandbox-status tr")].map(r=>[...r.cells].map(c=>c.textContent.trim())),adequacy:document.querySelector("#evaluation")?.textContent.trim()})')
+            rows = dict(native_sandbox['rows'])
+            check('native_sandbox_adequate', native_sandbox['url'] == 'chrome://sandbox/' and native_sandbox['adequacy'] == 'You are adequately sandboxed.' and all(rows.get(key) == 'Yes' for key in ('PID namespaces', 'Network namespaces', 'Seccomp-BPF sandbox', 'Seccomp-BPF sandbox supports TSYNC')), native_sandbox)
             requests = []
             errors = []
             for domain, method, sink in [('Network', 'Network.requestWillBeSent', requests), ('Runtime', 'Runtime.exceptionThrown', errors), ('Runtime', 'Runtime.consoleAPICalled', errors)]:
@@ -463,47 +466,40 @@ async def run(args, work):
     finally:
         if browser:
             try:
-                async with asyncio.timeout(10):
-                    await browser.kill()
+                async with asyncio.timeout(10): await browser.kill()
                 record['cleanup']['browser_disconnected'] = True
-            except Exception as exc:
-                record['cleanup']['disconnect_error'] = repr(exc)
+            except Exception as exc: record['cleanup']['disconnect_error'] = repr(exc)
         if chrome:
-            helper.remember_helpers(chrome.pid, helpers, work)
-            record['cleanup']['helpers'] = helpers
             try:
-                os.killpg(chrome.pid, signal.SIGTERM)
-            except ProcessLookupError:
-                pass
+                receipt = chrome.close()
+                record['cleanup']['owned_chrome'] = receipt
+                record['cleanup']['no_live_owned_processes'] = receipt['no_owned_children']
+                record['cleanup']['browser_returncode'] = receipt['browser_exit']
+            except Exception as exc: record['cleanup']['owned_chrome_error'] = repr(exc)
+        try:
+            if server and thread and thread.is_alive(): server.shutdown()
+        except Exception as exc: record['cleanup']['server_shutdown_error'] = repr(exc)
+        try:
+            if server: server.server_close()
+            if thread: thread.join(timeout=2)
+            record['cleanup']['server_stopped'] = not thread or not thread.is_alive()
+        except Exception as exc: record['cleanup']['server_close_error'] = repr(exc)
+        for name, resource in [('proxy', proxy), ('log', logfile)]:
             try:
-                await asyncio.wait_for(chrome.wait(), 5)
-            except asyncio.TimeoutError:
-                os.killpg(chrome.pid, signal.SIGKILL)
-                await asyncio.wait_for(chrome.wait(), 3)
-            for process in helper.proc_snapshot(chrome.pid, helpers):
-                if not process['status'].get('State', '').startswith('Z'):
-                    try:
-                        if helper.identity(process['pid']) == process['start_ticks']:
-                            os.kill(process['pid'], signal.SIGTERM)
-                    except ProcessLookupError:
-                        pass
-            if drain:
-                await asyncio.wait_for(drain, 3)
-            remaining = helper.proc_snapshot(chrome.pid, helpers)
-            record['cleanup']['remaining'] = remaining
-            record['cleanup']['no_live_owned_processes'] = not any(not p['status'].get('State', '').startswith('Z') for p in remaining)
-            record['cleanup']['browser_returncode'] = chrome.returncode
-        server.shutdown()
-        server.server_close()
-        thread.join(timeout=2)
-        proxy.close()
-        logfile.close()
-        shutil.rmtree(work)
-        record['cleanup']['server_stopped'] = not thread.is_alive()
-        record['cleanup']['private_work_removed'] = not work.exists()
+                if resource: resource.close()
+                record['cleanup'][name + '_closed'] = True
+            except Exception as exc: record['cleanup'][name + '_error'] = repr(exc)
+        try:
+            if chrome is None or record['cleanup'].get('no_live_owned_processes', False):
+                shutil.rmtree(work)
+                record['cleanup']['private_work_removed'] = not work.exists()
+            else:
+                record['cleanup']['preserved_private_work'] = str(work)
+                record['cleanup']['private_work_removed'] = False
+        except Exception as exc: record['cleanup']['private_work_error'] = repr(exc)
     record['source_hashes_end'] = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in source_paths}
     record['checks'].append({'name': 'sources_unchanged', 'pass': record['source_hashes_end'] == source_hashes})
-    record['pass'] = not record['errors'] and bool(record['checks']) and all(c['pass'] for c in record['checks']) and all(record['cleanup'].get(k) for k in ('browser_disconnected', 'no_live_owned_processes', 'server_stopped', 'private_work_removed'))
+    record['pass'] = not record['errors'] and bool(record['checks']) and all(c['pass'] for c in record['checks']) and all(record['cleanup'].get(k) for k in ('browser_disconnected', 'no_live_owned_processes', 'server_stopped', 'private_work_removed', 'proxy_closed', 'log_closed')) and not any('error' in key for key in record['cleanup'])
     atomic(out / 'evidence.json', json.dumps(record, indent=2))
     print('RESULT', record['pass'], str(out / 'evidence.json'), flush=True)
     return 0 if record['pass'] else 1
@@ -521,6 +517,8 @@ def main():
         parser.error('evidence must be outside the skill package')
     if os.geteuid() == 0:
         parser.error('run as the unprivileged prime-agent user, never root')
+    if ctypes.CDLL(None, use_errno=True).prctl(36, 1, 0, 0, 0) != 0:
+        raise OSError(ctypes.get_errno(), 'subreaper')
     args.output.mkdir(parents=True, exist_ok=False)
     work = Path(tempfile.mkdtemp(prefix='canvas-effects-', dir='/tmp'))
     os.chmod(work, 0o700)
@@ -534,13 +532,24 @@ def main():
         'BROWSER_USE_SETUP_LOGGING': 'false', 'BROWSER_USE_DISABLE_EXTENSIONS': '1',
         'BROWSER_USE_VERSION_CHECK': 'false', 'BROWSER_USE_LOGGING_LEVEL': 'error',
         'LMNR_LOGGING_LEVEL': 'warning', 'NO_PROXY': '127.0.0.1,localhost,::1'})
+    tempfile.tempdir = None  # Keep library-created scratch inside the new TMPDIR.
     os.chdir(work/'cwd')
     logging.basicConfig(level=logging.ERROR)
     try:
         return asyncio.run(run(args, work))
     finally:
         if work.exists():
-            shutil.rmtree(work)
+            try:
+                children = set()
+                for task in Path('/proc/self/task').iterdir():
+                    try: children.update((task / 'children').read_text().split())
+                    except FileNotFoundError: continue
+                if children:
+                    print('PRESERVED_PRIVATE_WORK ' + str(work) + ' owned children remain', flush=True)
+                else:
+                    shutil.rmtree(work)
+            except Exception as exc:
+                print('PRESERVED_PRIVATE_WORK ' + str(work) + ' cleanup uncertain: ' + repr(exc), flush=True)
 
 
 if __name__ == '__main__':

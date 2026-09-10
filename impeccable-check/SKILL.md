@@ -5,11 +5,12 @@ description: >
   observations. Use when the user requests Impeccable detection, a deterministic
   source UI check, or a selected-file anti-pattern scan. Optional and read-only:
   not a universal frontend router, design verdict, accessibility certificate,
-  browser audit or automatic fixer. Rendered mode is currently unavailable.
+  automatic fixer or full rendered detector. Can pair with the shared browser-check
+  skill for separately labeled browser-assisted review.
 license: Apache-2.0
 compatibility: Linux x86_64, Python 3.12+, Landlock ABI 4, and separately verified pinned native runtime.
 metadata:
-  version: 1.0.0
+  version: 1.0.1
 ---
 
 # Impeccable Check
@@ -40,7 +41,21 @@ never call this clean. JSON includes source hashes, scope, actual event counts,
 findings, primary/advisory counts and errors. A clean result is not a quality or
 WCAG certificate. Existing design specialists remain independent owners.
 
-Rendered mode is **not supported** here. It refuses before HTTP or browser launch.
-The trial could not run Chromium's namespace sandbox together with required
-`NO_NEW_PRIVS`. Do not bypass that failure with `--no-sandbox`, weaker filesystem
-controls, host changes or a foreign browser/agent runner.
+## Optional browser-assisted review
+
+The automated `rendered` command remains **unsupported** and refuses before HTTP or
+browser launch. The unfinished custom rendered backend was discontinued in favor
+of the shared [Browser Check skill](../browser-check/SKILL.md).
+
+For an authorized owned local preview, run Browser Check separately for screenshots,
+DOM observations and explicit interaction tests. Its fresh browser does not replace
+or bypass this detector's confinement. Keep three result sections:
+
+1. **Automated source findings:** this checker's rule IDs and actual coverage.
+2. **Browser observations:** screenshot hashes, viewport, actions and observed facts.
+3. **Not tested:** native Impeccable rendered detectors and any unexercised behavior.
+
+Do not turn browser observations into native detector results, invent executed counts
+or claim paired-pixel/contrast checks ran. Hallmark can interpret visual evidence;
+existing design and project owners stay unchanged. Browser execution/actions need
+applicable authorization even though the source scan is read-only.
