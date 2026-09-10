@@ -1,0 +1,6 @@
+Supplied synthetic trace, not a test run by the reviewer:
+POST /api/payroll returned HTTP 403; body {"error":"payroll_role_required"}.
+The page displayed "All paid! Another boring payday conquered!".
+The Total field became empty.
+The only documented recovery route is /help/payroll-access.
+Payment settlement and server-side idempotency are not known from this trace.

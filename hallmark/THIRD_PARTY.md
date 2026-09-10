@@ -1,4 +1,6 @@
-# Selective Anti-slop attribution
+# Third-party attribution
+
+## Selective Anti-slop attribution
 
 This package includes a small, adapted selection of quality-review guidance from
 [miqdadbadjuber/anti-slop](https://github.com/miqdadbadjuber/anti-slop), repository package
@@ -30,3 +32,31 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Selective Impeccable attribution and modification notice
+
+`references/ux-review.md` is adapted from [Impeccable](https://github.com/pbakaus/impeccable)
+by Paul Bakaus, pinned reviewed commit `cd12f8660e2dde57b9615c8a6b8ea674101f9cfc`:
+`skill/reference/critique.md` (task heuristics, cognitive load, review lenses) and
+`skill/reference/delight.md` (contextual emotional moments).
+
+Modification notice, 2026-09-10: Prime adaptation substantially rewrites and condenses
+these sources into one optional reference. It removes scores, arbitrary choice limits,
+aesthetic bans, automatic persistence, workers, detector execution, interviews and
+context-file mandates. It retains task/evidence review and contextual delight while
+preserving Hallmark's read-only audit and existing product/design authority.
+The SKILL.md routing link and mixed-license declaration are local additions.
+
+The adapted reference is distributed under [Apache License 2.0](LICENSE-IMPECCABLE.md).
+The original Hallmark [MIT license](LICENSE) and Anti-slop MIT notice above are
+unchanged. [Upstream NOTICE](NOTICE-IMPECCABLE.md) is retained verbatim for attribution;
+its native-platform references are not included in this adaptation. No Impeccable
+runtime, installer, hooks, agents, native-platform text or source implementation is
+bundled. This is not an unchanged installation or upstream endorsement.
+
+Reviewed source SHA-256:
+
+- `skill/reference/critique.md`: `8d2cdf4f583a0caf7685620069069354b4fb81582fb63c349783298454140a0e`
+- `skill/reference/delight.md`: `8f157ae861c578d54b2710ea200a6ba2253bd36ab68b6b4c4b880875bd0a415b`
+- `LICENSE`: `02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812`
+- `NOTICE.md`: `c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb`

@@ -9,12 +9,12 @@ description: >
   alternatives. Not for routine nonvisual coding, security/SEO audits, conversion
   measurement, or automatic redesign of every UI edit. URL-only study asks for a
   screenshot; it does not provide a web crawler.
-license: MIT
+license: MIT; Apache-2.0 for references/ux-review.md (see THIRD_PARTY.md)
 compatibility: >
   Prime-native Markdown guidance. No runtime package, provider key, installer,
   server or hook. Implementation and verification use the target project's tools.
 metadata:
-  version: 1.1.0-prime.2
+  version: 1.1.0-prime.3
   upstream: https://github.com/nutlope/hallmark
   upstream-commit: 13ac0ec7e148655948100b6396439e481361d690
 ---
@@ -72,6 +72,8 @@ upstream library. Use [verification.md](references/verification.md) at handoff.
 For app states, tables/charts, controls or responsive/mobile usability, read the
 relevant sections of [app-quality.md](references/app-quality.md). These checks do
 not widen an audit/study into implementation or a full accessibility audit.
+For task-flow friction, recovery/help or contextual delight, selectively read
+[ux-review.md](references/ux-review.md); it preserves the chosen workflow and owners.
 Read [tokens.md](references/tokens.md) only when token changes/exports are in scope.
 No upstream site, external asset kit or companion provider is needed.
 

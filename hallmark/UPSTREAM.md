@@ -2,7 +2,7 @@
 
 - Source: https://github.com/nutlope/hallmark
 - Pinned reviewed commit: 13ac0ec7e148655948100b6396439e481361d690
-- Upstream v1.1.0; local v1.1.0-prime.2.
+- Upstream v1.1.0; local v1.1.0-prime.3.
 - MIT license retained verbatim in LICENSE. No Together AI account/API is required.
 
 This is a curated adaptation, not an unchanged upstream installation or upstream
@@ -47,3 +47,12 @@ General prose/comments are routed by the separately expanded copy-editing skill.
 Corrected standards and preserved brief, brand, native semantics and evidence limits;
 no universal layout, theme-switcher, motion, palette or punctuation requirements.
 No additional executable runtime or upstream installer/MCP code is included.
+
+## Selective Impeccable UX enrichment
+
+Optional [UX review](references/ux-review.md) adds cross-screen memory, task help,
+review lenses and contextual delight, without replacing app-quality checks or
+introducing a second product/design owner. Source pins, hashes, Apache license and
+modification notices are in [THIRD_PARTY.md](THIRD_PARTY.md). The detector is separate
+and not needed to use Hallmark. Original source-only fixtures and manual review
+criteria are in [the UX acceptance cases](dev/fixtures/ux-review/cases.md).

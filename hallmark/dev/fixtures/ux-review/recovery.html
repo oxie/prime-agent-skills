@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Payroll recovery source fixture</title>
+<body><h1>Submit payroll batch</h1>
+<form id="batch"><label>Total (EUR)<input name="total" value="18420.00"></label>
+<button type="submit">Submit once</button></form><p id="status" role="status"></p>
+<a href="/help/payroll-access">Payroll access policy</a>
+<script>
+const batch = document.querySelector('#batch');
+const statusText = document.querySelector('#status');
+batch.addEventListener('submit', async event => {
+  event.preventDefault();
+  const response = await fetch('/api/payroll', {method:'POST', body:new FormData(batch)});
+  statusText.textContent = 'All paid! Another boring payday conquered!';
+  batch.reset();
+  batch.querySelector('input').value = '';
+});
+</script></body></html>

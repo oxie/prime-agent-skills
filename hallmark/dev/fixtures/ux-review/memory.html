@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Relay settings source fixture</title>
+<body>
+<!-- These panels model separate screens, not simultaneous rendered content. -->
+<section id="record-screen"><h1>Relay Juniper</h1>
+<p>Approved warning limit: <strong>725 ms</strong>.</p>
+<a href="/settings/juniper">Edit warning limit</a></section>
+<section id="settings-screen"><h1>Edit warning limit</h1>
+<form action="/settings/juniper" method="post">
+<label for="limit">Warning limit (ms)</label><input id="limit" name="limit" type="number">
+<button type="submit">Save</button><a href="/relays/juniper">Back to relay</a>
+</form></section>
+</body></html>
