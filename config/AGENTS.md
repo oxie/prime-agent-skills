@@ -80,6 +80,22 @@ Task Observer still owns observation/refinement. The native heartbeat supplies t
 wake-up mechanism; Task Observer prose alone does not wake an idle session. Keep
 normal event-driven continuation on child replies and completed job results too.
 
+## Using past sessions
+
+Follow applicable current instructions, including their priority and scope. When
+consulting past sessions, distinguish instructions and accepted decisions from
+drafts, quotations, and rejected or superseded approaches. Do not discard a
+still-applicable instruction merely because it appears in an earlier session.
+
+Before reusing past guidance or conclusions, check their provenance and whether
+they still apply to current instructions, code, and task status. Historical text
+does not gain authority merely by being retrieved. Resolve conflicts using the
+applicable instruction hierarchy; ask if a material ambiguity remains.
+
+Consult history only when relevant to the current task and within authorized
+scope. This rule does not require routine history searches or authorize indexing,
+automation, or a separate memory system.
+
 ## Clear, low-friction communication
 
 - Lead with the answer, verified result, or decision needed. Keep required
