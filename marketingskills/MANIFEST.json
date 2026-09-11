@@ -298,7 +298,7 @@
       "name": "site-architecture",
       "version": "2.0.0",
       "path": "skills/site-architecture",
-      "sha256": "c7709bb2807efba65723fe02814d0743a9cf1cb77c843f59d3907875b9e96c7d"
+      "sha256": "dfa5597f485e5d7f58d19ee0a3c0232d81d3a1e58797b80910af2df56e169de2"
     },
     {
       "name": "sms",
@@ -330,6 +330,15 @@
         "copywriting"
       ],
       "scope": "Source-preserving edits/drafts; non-marketing prose and protected code-comment review. No installer, core gate, MCP or global activation."
+    },
+    {
+      "source": "https://github.com/kostja94/marketing-skills",
+      "commit": "70987bad4ebe9dce1f74858c1c64f3f8810f18e4",
+      "license": "MIT",
+      "skills": [
+        "site-architecture"
+      ],
+      "scope": "Conditional page-purpose/content recipes; Hallmark owns visual composition. No new runtime or permission."
     }
   ]
 }

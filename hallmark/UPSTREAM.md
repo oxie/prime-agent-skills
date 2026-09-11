@@ -2,7 +2,7 @@
 
 - Source: https://github.com/nutlope/hallmark
 - Pinned reviewed commit: 13ac0ec7e148655948100b6396439e481361d690
-- Upstream v1.1.0; local v1.1.0-prime.3.
+- Upstream v1.1.0; local v1.1.0-prime.5.
 - MIT license retained verbatim in LICENSE. No Together AI account/API is required.
 
 This is a curated adaptation, not an unchanged upstream installation or upstream
@@ -56,3 +56,26 @@ introducing a second product/design owner. Source pins, hashes, Apache license a
 modification notices are in [THIRD_PARTY.md](THIRD_PARTY.md). The detector is separate
 and not needed to use Hallmark. Original source-only fixtures and manual review
 criteria are in [the UX acceptance cases](dev/fixtures/ux-review/cases.md).
+
+## Selective website guidance
+
+Source: https://github.com/kostja94/marketing-skills at
+`70987bad4ebe9dce1f74858c1c64f3f8810f18e4` (MIT; notice in THIRD_PARTY.md). This is not an unchanged
+installation or endorsement. Selected source files:
+
+- `skills/components/layout/card/SKILL.md` (SHA-256 `ce98d67c14882396789e394414a222ac00136eed3f5728a0cf07b74eda0c103a`)
+- `skills/components/layout/grid/SKILL.md` (SHA-256 `f56328c72c6ab3ff3a21c42330f3dedfd292c3d550371990b819799e110d6ea6`)
+- `skills/components/layout/list/SKILL.md` (SHA-256 `6c2bbb7d93d606d349abbf8ec16d88f7bb95584f11c6daf4946a56660a8b6b86`)
+- `skills/components/layout/masonry/SKILL.md` (SHA-256 `55ad97adae945bf406511a147066864ad8f07f4d7026042d466920896bdd342e`)
+- `skills/components/layout/carousel/SKILL.md` (SHA-256 `295666ea3d86eefd193715a9efcf29368871654fc83acb6c2417964e3e53b0ac`)
+
+Adaptation: condense the selected page/component decisions into an on-demand
+reference under the existing owner. Portfolio application, useful omissions and
+Prime handoffs are local synthesis. Remove numeric quotas, unsupported traffic/SEO
+claims, fixed layout requirements, automatic research, promotion, foreign context
+paths and operational setup. Preserve actual content, permissions, existing design
+systems and source/browser verification. No new skill names, runtime or installer.
+Update only after source review; retain scope controls and run website-guidance tests.
+
+Runtime reference: references/content-layouts.md. Site-architecture owns page content;
+Hallmark retains visual direction and component choice.

@@ -15,7 +15,7 @@ compatibility: >
   Prime-native Markdown guidance. No runtime package, provider key, installer,
   server or hook. Implementation and verification use the target project's tools.
 metadata:
-  version: 1.1.0-prime.4
+  version: 1.1.0-prime.5
   upstream: https://github.com/nutlope/hallmark
   upstream-commit: 13ac0ec7e148655948100b6396439e481361d690
 ---
@@ -75,6 +75,9 @@ upstream library. Use [verification.md](references/verification.md) at handoff.
 For app states, tables/charts, controls or responsive/mobile usability, read the
 relevant sections of [app-quality.md](references/app-quality.md). These checks do
 not widen an audit/study into implementation or a full accessibility audit.
+For page-specific lists, grids, galleries or reading layouts, use
+[content-layouts.md](references/content-layouts.md); read only the relevant comparison.
+Use site-architecture for page-purpose/content decisions, not a duplicate design plan.
 For task-flow friction, recovery/help or contextual delight, selectively read
 [ux-review.md](references/ux-review.md); it preserves the chosen workflow and owners.
 Read [tokens.md](references/tokens.md) only when token changes/exports are in scope.

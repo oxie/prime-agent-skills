@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/kostja94/marketing-skills",
+  "commit": "70987bad4ebe9dce1f74858c1c64f3f8810f18e4",
+  "upstream_sha256": {
+    "skills/components/layout/card/SKILL.md": "ce98d67c14882396789e394414a222ac00136eed3f5728a0cf07b74eda0c103a",
+    "skills/components/layout/grid/SKILL.md": "f56328c72c6ab3ff3a21c42330f3dedfd292c3d550371990b819799e110d6ea6",
+    "skills/components/layout/list/SKILL.md": "6c2bbb7d93d606d349abbf8ec16d88f7bb95584f11c6daf4946a56660a8b6b86",
+    "skills/components/layout/masonry/SKILL.md": "55ad97adae945bf406511a147066864ad8f07f4d7026042d466920896bdd342e",
+    "skills/components/layout/carousel/SKILL.md": "295666ea3d86eefd193715a9efcf29368871654fc83acb6c2417964e3e53b0ac",
+    "skills/pages/content/blog/SKILL.md": "e6b5e99842316156389b3008021a3305680900561c45432236eab866d2a1fd1c",
+    "skills/pages/content/article/SKILL.md": "36098e7ca47e9638f1a2340a97534b907611cb438fd77775bcebe5488f45e01c",
+    "skills/pages/marketing/showcase/SKILL.md": "38a81c70bb5c9ba40ba4ddcff9244cb9628f37188f5e8d03a5dc27a529a35e5a",
+    "skills/pages/marketing/customer-stories/SKILL.md": "727e01369058ca6d8e042383dd9048208f2e65c5686cdb9f5521a426edb9a0ed",
+    "skills/pages/marketing/services/SKILL.md": "df3bf5ce06810d08d921a163cea80a9a2d6f5aabd72df33214b19fd0be8fd0fe",
+    "skills/pages/content/docs/SKILL.md": "0b6278230babf1f9ae3438cb41807f5ed15cab57dfca88ad883ead46d8b1dc71",
+    "skills/pages/content/resources/SKILL.md": "8936f3ff2db32dfe2020ff8977903bd29af26be969da5e7980fcea0041a262ac"
+  },
+  "installed_sha256": {
+    "marketingskills/skills/site-architecture/references/page-purpose.md": "3401b581283732194577afd6816a675cccd4835582f5cf490b6b622f645848d5",
+    "hallmark/references/content-layouts.md": "a3d29a7c022df29a46494a5e1af563d3b9850b4ce34fac2c1b6ca607e39474bb"
+  },
+  "method": "Condensed adaptation, not verbatim copying; portfolio and omission examples are local synthesis."
+}
