@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/ciembor/agent-rules-books",
+  "commit": "893a88a6fce3a80c565bf39ac65021b43a8b2990",
+  "license": "MIT",
+  "adaptation": "Only the first heading of each mini file is replaced to remove its global-sounding OBEY wording. All remaining reference bytes are unchanged. The Prime wrapper supplies task scope, authority, and permission boundaries.",
+  "files": [
+    {
+      "path": "references/release-it.md",
+      "upstream_path": "release-it/release-it.mini.md",
+      "upstream_heading": "# OBEY Release It! by Michael T. Nygard",
+      "installed_heading": "# Release It! \u2014 scoped reference",
+      "upstream_sha256": "21f3e9cdef379f4980b8883d36b587770e56917f0862fac46e57cd1e58d18855",
+      "installed_sha256": "679755209ebf0a092af4cafa66478f91ab80d5a16c44cb0450f4305796c5e329"
+    },
+    {
+      "path": "references/data-intensive-applications.md",
+      "upstream_path": "designing-data-intensive-applications/designing-data-intensive-applications.mini.md",
+      "upstream_heading": "# OBEY Designing Data-Intensive Applications by Martin Kleppmann",
+      "installed_heading": "# Designing Data-Intensive Applications \u2014 scoped reference",
+      "upstream_sha256": "cb4ca5fa4dc4fe179772f6fc42f4cd8899a7b95677e5cee13602229099063a12",
+      "installed_sha256": "4a249e5973a5d85ebe941f85dae11a53ab526e56861497711b3b2489e72feccf"
+    },
+    {
+      "path": "references/legacy-code.md",
+      "upstream_path": "working-effectively-with-legacy-code/working-effectively-with-legacy-code.mini.md",
+      "upstream_heading": "# OBEY Working Effectively with Legacy Code by Michael Feathers",
+      "installed_heading": "# Working Effectively with Legacy Code \u2014 scoped reference",
+      "upstream_sha256": "44eb9d44b7fd51cac342348c65f099deb806729d40edacd43b96fb435fa31051",
+      "installed_sha256": "cf21febb651dc040ea9c07f4a3e5a065d0096c2daad3fb2e36bb964042fc628a"
+    }
+  ],
+  "license_sha256": "c21def7bbce1900717a361a06af67399903d31bd3a695757fff534d6698d1bdb"
+}
