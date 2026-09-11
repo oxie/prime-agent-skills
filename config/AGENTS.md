@@ -80,6 +80,32 @@ Task Observer still owns observation/refinement. The native heartbeat supplies t
 wake-up mechanism; Task Observer prose alone does not wake an idle session. Keep
 normal event-driven continuation on child replies and completed job results too.
 
+## Scoped project instructions and contract upkeep
+
+Before editing project files, identify the target paths and read the applicable
+project-root, ancestor and target-area instructions (such as AGENTS.md). Follow
+relevant scoped links or child indexes along those paths; do not assume a session
+started at the project root has loaded descendant instructions. Re-read the
+applicable chain for the current task, and check any newly added target area before
+editing it. Do not recursively scan unrelated folders or initialize a documentation
+tree. Instruction priority and scope still apply; proximity does not authorize a
+child document to override higher-priority instructions or expand permissions.
+
+For authorized project documentation work, create local instruction files only at
+real, durable boundaries with distinct constraints that are not already clear in
+existing guidance. Keep them concise: purpose/ownership, non-obvious contracts,
+relevant constraints and existing verification commands. Link to authoritative
+sources rather than copy them. Small projects may need only their root instructions;
+no per-folder files, empty templates or mandatory child indexes are required.
+
+When an authorized change alters a documented durable contract, update the owning
+document and any affected links or indexes in the same change. Keep relevant parent
+and local guidance consistent; preserve useful rationale and unrelated user work.
+A typo or behavior-preserving edit needs no documentation change or unchanged-doc
+report. Do not invent tests or claim a documented command was executed. This rule
+does not authorize a broad documentation rewrite, automation or a separate memory
+system; global preferences and refinement remain with the continual harness.
+
 ## Using past sessions
 
 Follow applicable current instructions, including their priority and scope. When
