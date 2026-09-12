@@ -1,0 +1,130 @@
+{
+  "collection": {
+    "repository": "https://github.com/sickn33/agentic-awesome-skills",
+    "commit": "bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3",
+    "original_noncode_license": "CC-BY-4.0; specific upstream licenses retained"
+  },
+  "adaptation": "Selectively rewritten prose and conceptual worksheet/pseudocode; corrected unsafe examples. Not copied executable implementations or additional book excerpts. No upstream endorsement.",
+  "sources": [
+    {
+      "path": "skills/cross-platform-contract-propagation-audit/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/cross-platform-contract-propagation-audit/SKILL.md",
+      "sha256": "f1d88ed129d60fdf0781f1e6585afaaf219d685957988a6be59779b7b5097cdf",
+      "author": "Whxuan0701",
+      "underlying_license": "CC-BY-4.0"
+    },
+    {
+      "path": "skills/frontend-data-contracts/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/frontend-data-contracts/SKILL.md",
+      "sha256": "b1e15badf569183b80c7769a1d1cc8befdb32d5c6acb190033fcdfdab69ecd30",
+      "author": "stareezy-1",
+      "underlying_license": "MIT"
+    },
+    {
+      "path": "skills/api-and-interface-design/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/api-and-interface-design/SKILL.md",
+      "sha256": "9e0ed660e3b9249e77cd55bb43cfc7279e3ec0567db6c66b89c581763264963e",
+      "author": "Addy Osmani",
+      "underlying_license": "MIT"
+    },
+    {
+      "path": "skills/frontend-optimistic-mutations/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/frontend-optimistic-mutations/SKILL.md",
+      "sha256": "2dd381d358b41b4a0a54000cc053865dea63746bc7367c2384cf72369a24e20a",
+      "author": "stareezy-1",
+      "underlying_license": "MIT"
+    },
+    {
+      "path": "skills/pre-release-review/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/pre-release-review/SKILL.md",
+      "sha256": "135ef93385198f91a40687831e76055f9b9efa81dfa61147e2eb52067b97056f",
+      "author": "chaunsin",
+      "underlying_license": "Apache-2.0"
+    },
+    {
+      "path": "skills/pre-release-review/references/checklist.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/pre-release-review/references/checklist.md",
+      "sha256": "8606934b217018541853ae58ed4c274b6cfcdc639f6b775bd6bd01199ccfad6b",
+      "author": "chaunsin",
+      "underlying_license": "Apache-2.0"
+    },
+    {
+      "path": "skills/pre-ship-gate/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/pre-ship-gate/SKILL.md",
+      "sha256": "9ad874fca7c06b2981f52fd6ab708888506a49e4592078eb73adb3974df10071",
+      "author": "Sharrmavishal",
+      "underlying_license": "MIT"
+    }
+  ],
+  "origin_license_checks": [
+    {
+      "repository": "stareezy-1/frontend-architecture-skill",
+      "commit": "d7f0c53dcd0c2c43f455bd5ce88aa6797c585fe0",
+      "license_url": "https://raw.githubusercontent.com/stareezy-1/frontend-architecture-skill/d7f0c53dcd0c2c43f455bd5ce88aa6797c585fe0/LICENSE",
+      "license_sha256": "3a82e47df9ab1017d61dd760cdc7200422ed84d7bb694ff8ac86b06694ec30f2"
+    },
+    {
+      "repository": "chaunsin/agent-skills",
+      "commit": "ad4c62f4e49d0cd020e48a4ac8cca7492939053e",
+      "license_url": "https://raw.githubusercontent.com/chaunsin/agent-skills/ad4c62f4e49d0cd020e48a4ac8cca7492939053e/LICENSE",
+      "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "repository": "Sharrmavishal/operating-kit",
+      "commit": "1ad1df770e51385bdbf1d8ec568bd6e15d7de8c4",
+      "license_url": "https://raw.githubusercontent.com/Sharrmavishal/operating-kit/1ad1df770e51385bdbf1d8ec568bd6e15d7de8c4/LICENSE",
+      "license_sha256": "aca69f0468abc0f8066e11d75b85306d1144292c6cd24442449dcdeec90784c2"
+    },
+    {
+      "repository": "addyosmani/agent-skills",
+      "commit": "be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39",
+      "license_url": "https://raw.githubusercontent.com/addyosmani/agent-skills/be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39/LICENSE",
+      "license_sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ],
+  "files": [
+    {
+      "path": "references/contract-boundaries.md",
+      "sha256": "589cd66b429bfbba29557038a4daa81d01548080dbf204a99459a1d1284d6e60",
+      "sources": [
+        "skills/cross-platform-contract-propagation-audit/SKILL.md",
+        "skills/frontend-data-contracts/SKILL.md",
+        "skills/api-and-interface-design/SKILL.md",
+        "skills/frontend-optimistic-mutations/SKILL.md"
+      ]
+    },
+    {
+      "path": "references/release-dependencies.md",
+      "sha256": "51cc22c323bc3fd6ba2072b70b20d0463a90d1d9a8177ec9cd0ff0a5a2b8fa65",
+      "sources": [
+        "skills/pre-release-review/SKILL.md",
+        "skills/pre-release-review/references/checklist.md",
+        "skills/pre-ship-gate/SKILL.md"
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "path": "licenses/CC-BY-4.0.txt",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+      "source_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "adaptation": "Trailing blank lines removed only; license wording unchanged."
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/stareezy-1-MIT.txt",
+      "sha256": "3a82e47df9ab1017d61dd760cdc7200422ed84d7bb694ff8ac86b06694ec30f2"
+    },
+    {
+      "path": "licenses/operating-kit-MIT.txt",
+      "sha256": "aca69f0468abc0f8066e11d75b85306d1144292c6cd24442449dcdeec90784c2"
+    },
+    {
+      "path": "licenses/addyosmani-MIT.txt",
+      "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+    }
+  ]
+}

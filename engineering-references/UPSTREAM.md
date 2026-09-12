@@ -32,6 +32,16 @@ The other eleven packs, full/nano variants, compatibility matrix, extraction and
 release workflows, npm installer, editor configuration, hooks and global rules
 are not installed. No runtime dependency or automatic updater is required.
 
+## Selected engineering core extension
+
+Version 1.1.0-prime.1 adds two independently worded, corrected references:
+[contract boundaries](references/contract-boundaries.md) and
+[release dependencies](references/release-dependencies.md). They are not book minis.
+The original three minis, LICENSE and provenance.json remain unchanged.
+See [THIRD_PARTY.md](THIRD_PARTY.md) and core-provenance.json for the seven selected
+AAS sources, canonical origin checks, distinct licenses and modification notices.
+No AAS runtime, installer, MCP manager, provider SDK or global process is installed.
+
 ## Maintenance and removal
 
 Updates are manual: review a new upstream pin and selected changes, preserve

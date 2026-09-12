@@ -14,8 +14,8 @@ const expected=["references/data-intensive-applications.md","references/legacy-c
 assert.equal(manifest.commit,"893a88a6fce3a80c565bf39ac65021b43a8b2990");
 assert.equal(manifest.repository,"https://github.com/ciembor/agent-rules-books");
 assert.deepEqual(manifest.files.map(f=>f.path).sort(),expected);
-assert.deepEqual(fs.readdirSync(path.join(skill,"references")).sort(),expected.map(p=>path.basename(p)));
-assert.deepEqual(fs.readdirSync(skill).sort(),["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references"].sort());
+assert.deepEqual(fs.readdirSync(path.join(skill,"references")).sort(),[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md"].sort());
+assert.deepEqual(fs.readdirSync(skill).sort(),["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses"].sort());
 assert.equal(hash(read("LICENSE")),manifest.license_sha256);
 assert.ok(read("LICENSE").includes("Copyright (c) 2026 Maciej Ciemborowicz"));
 for(const item of manifest.files){
@@ -30,8 +30,8 @@ function checkScope(input){
  const normalized=input.replace(/\s+/g," ");
  for(const phrase of [
   "Ordinary coding does not require an extra checklist pass",
-  "not all three by default",
-  "Combine references only when the actual risk spans both subjects",
+  "not every reference by default",
+  "Combine references only when the actual risk spans multiple subjects",
   "Applicable user and project instructions take priority",
   "diagnostic questions, not a requirement to implement every named mechanism",
   "A review is read-only unless edits are authorized",
@@ -45,7 +45,7 @@ function checkScope(input){
  ]) assert.ok(normalized.includes(phrase),`Missing scope contract: ${phrase}`);
 }
 checkScope(text);
-assert.throws(()=>checkScope(text.replace("not all three by default","all three by default")));
+assert.throws(()=>checkScope(text.replace("not every reference by default","every reference by default")));
 assert.throws(()=>checkScope(text.replace("instructions take priority","instructions are optional")));
 assert.throws(()=>checkScope(text.replace("A review is read-only unless edits are authorized","A review always edits")));
 assert.throws(()=>checkScope(text.replace("Preserve required real-boundary tests","Skip real-boundary tests")));
@@ -65,7 +65,10 @@ assert.equal(matches.length,1,"Exactly one router must be discovered");
 const prompt=formatSkillsForPrompt(matches);
 assert.ok(prompt.includes("engineering-references"));
 assert.ok(prompt.includes("production failure handling"));
-assert.ok(!prompt.includes("## Choose one reference"),"Skill body must remain on demand");
+assert.ok(prompt.includes("mutation/cache reconciliation"));
+assert.ok(prompt.includes("running-revision evidence"));
+assert.ok(!prompt.includes("Retry an intent"),"New reference content remains on demand");
+assert.ok(!prompt.includes("## Choose the relevant reference"),"Skill body must remain on demand");
 for(const item of manifest.files)assert.ok(!prompt.includes(item.installed_heading),"Reference bodies must remain on demand");
 assert.equal(matches[0].disableModelInvocation,false,"Targeted automatic discovery should remain available");
 console.log("ENGINEERING_REFERENCES_CONTRACT_AND_NATIVE_METADATA_OK");

@@ -15,7 +15,7 @@ compatibility: >
   Prime-native Markdown guidance. No runtime package, provider key, installer,
   server or hook. Implementation and verification use the target project's tools.
 metadata:
-  version: 1.1.0-prime.5
+  version: 1.1.0-prime.6
   upstream: https://github.com/nutlope/hallmark
   upstream-commit: 13ac0ec7e148655948100b6396439e481361d690
 ---
@@ -80,6 +80,10 @@ For page-specific lists, grids, galleries or reading layouts, use
 Use site-architecture for page-purpose/content decisions, not a duplicate design plan.
 For task-flow friction, recovery/help or contextual delight, selectively read
 [ux-review.md](references/ux-review.md); it preserves the chosen workflow and owners.
+Use engineering-references only when data-backed controls expose a material response,
+write-completion or cache-reconciliation risk. It owns those implementation contracts;
+Hallmark retains visual design and truthful pending/unknown/confirmed presentation.
+Do not turn a static page or visual-only edit into a data-layer review.
 Read [tokens.md](references/tokens.md) only when token changes/exports are in scope.
 No upstream site, external asset kit or companion provider is needed.
 

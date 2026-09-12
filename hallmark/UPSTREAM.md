@@ -2,7 +2,7 @@
 
 - Source: https://github.com/nutlope/hallmark
 - Pinned reviewed commit: 13ac0ec7e148655948100b6396439e481361d690
-- Upstream v1.1.0; local v1.1.0-prime.5.
+- Upstream v1.1.0; local v1.1.0-prime.6.
 - MIT license retained verbatim in LICENSE. No Together AI account/API is required.
 
 This is a curated adaptation, not an unchanged upstream installation or upstream
@@ -79,3 +79,10 @@ Update only after source review; retain scope controls and run website-guidance 
 
 Runtime reference: references/content-layouts.md. Site-architecture owns page content;
 Hallmark retains visual direction and component choice.
+
+## Engineering handoff (1.1.0-prime.6)
+
+A local routing-only addition points data-backed control failures to the existing
+engineering-references owner. No AAS prose, scripts, styles or providers are copied
+into Hallmark. Static/visual-only work does not trigger a data-layer review.
+Engineering source notices stay with engineering-references/THIRD_PARTY.md.
