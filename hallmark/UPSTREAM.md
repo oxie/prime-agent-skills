@@ -2,7 +2,7 @@
 
 - Source: https://github.com/nutlope/hallmark
 - Pinned reviewed commit: 13ac0ec7e148655948100b6396439e481361d690
-- Upstream v1.1.0; local v1.1.0-prime.6.
+- Upstream v1.1.0; local v1.2.0-prime.1.
 - MIT license retained verbatim in LICENSE. No Together AI account/API is required.
 
 This is a curated adaptation, not an unchanged upstream installation or upstream
@@ -86,3 +86,9 @@ A local routing-only addition points data-backed control failures to the existin
 engineering-references owner. No AAS prose, scripts, styles or providers are copied
 into Hallmark. Static/visual-only work does not trigger a data-layer review.
 Engineering source notices stay with engineering-references/THIRD_PARTY.md.
+
+## Four-priority batch: composition and localization (1.2.0-prime.1)
+
+Adds two narrowly routed references, with distinct [source and license notices](NEXT_SOURCES.md)
+and next-provenance.json. Existing reference content and historical evidence remain
+unchanged. No runtime, installer, provider, framework project or Astro skill is installed.

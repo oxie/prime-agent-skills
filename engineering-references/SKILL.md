@@ -6,11 +6,12 @@ description: >
   Use for reliability reviews, retry/timeout/overload design, transactional or
   derived-data changes, safe legacy test seams, cross-path field/enum propagation,
   parsed network responses, mutation/cache reconciliation, and diff-linked release
-  dependencies or running-revision evidence. Not a general coding
+  dependencies or running-revision evidence, API object/tenant authorization and
+  denied-write tests, or result-preserving SQL diagnosis. Not a general coding
   rulebook, routine cleanup pass, or deployment tool.
 license: "MIT for original wrapper/book references; CC-BY-4.0, MIT and Apache-2.0 for selected adaptations (see THIRD_PARTY.md)"
 metadata:
-  version: 1.1.0-prime.1
+  version: 1.2.0-prime.1
   upstream: https://github.com/ciembor/agent-rules-books
   upstream-commit: 893a88a6fce3a80c565bf39ac65021b43a8b2990
 ---
@@ -42,6 +43,11 @@ Read only the reference matching the main risk, not every reference by default:
 - [Release dependencies](references/release-dependencies.md): diff-linked config,
   schema, worker and callback prerequisites; intended rollout and running revision/traffic
   evidence. Supplements Release It! only when that detail is relevant.
+
+- [API authorization](references/api-authorization.md): protected endpoint changes,
+  caller/tenant/object/operation enforcement and denial-with-no-write tests.
+- [SQL diagnosis](references/sql-diagnosis.md): a slow query or authorized rewrite;
+  preserve results/order/multiplicity before interpreting representative plans.
 
 Combine references only when the actual risk spans multiple subjects. For example,
 bounded retries do not establish duplicate-write safety. Do not combine merely
@@ -83,7 +89,9 @@ handoffs; Task Observer retains observation/refinement. No duplicate pass is nee
 Three unofficial, book-inspired mini references by Maciej Ciemborowicz, not book
 texts or author/publisher-endorsed materials. See [UPSTREAM.md](UPSTREAM.md) for
 the pin, MIT attribution, heading-only book adaptations and maintenance limits.
-The two additional references are scoped, corrected adaptations from selected
+The two core references are scoped, corrected adaptations from selected
 Agentic Awesome Skills sources, not additional book extracts.
 See [THIRD_PARTY.md](THIRD_PARTY.md) for their distinct licenses and modification
 notices; core-provenance.json records their exact source and installed hashes.
+The API/SQL additions have separate [source notices](NEXT_SOURCES.md) and
+next-provenance.json; they do not change the original book/core reference files.

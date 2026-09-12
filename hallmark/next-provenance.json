@@ -1,0 +1,95 @@
+{
+  "collection": {
+    "repository": "https://github.com/sickn33/agentic-awesome-skills",
+    "commit": "bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3"
+  },
+  "sources": [
+    {
+      "path": "skills/shadcn/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/shadcn/SKILL.md",
+      "sha256": "faa5fb30df1f79a4e70d98ace24acd183ab7a5feabbeeba73ce1e9ba007f2ea8",
+      "git_blob": "c5d243c7866e92cb0d15888381de62ef9977ac79"
+    },
+    {
+      "path": "skills/shadcn/rules/base-vs-radix.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/shadcn/rules/base-vs-radix.md",
+      "sha256": "2b2deb47d004285220c1fc6b38bb2edc2d0ccbcdafd031b0b189d5d8ed0d1ba8",
+      "git_blob": "c1ed7d111a0195cab801d2b3d38dee3aee0b8e10"
+    },
+    {
+      "path": "skills/shadcn/rules/forms.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/shadcn/rules/forms.md",
+      "sha256": "29593e14381e34626f8e0e9c15c59f3394b92a0623af6a6ec94585400123853c",
+      "git_blob": "f451e2f7bc17d9c5738691931964744a568ea5d6"
+    },
+    {
+      "path": "skills/i18n-localization/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/i18n-localization/SKILL.md",
+      "sha256": "8e862c5792fdbcd9d9d2de150f975fb26885613ff2227be7453c2fa24b4a3cc8",
+      "git_blob": "9623bfff97754452742549e2555971ff3b7cafe3"
+    },
+    {
+      "path": "skills/i18n-localization/scripts/i18n_checker.py",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/i18n-localization/scripts/i18n_checker.py",
+      "sha256": "a90946f9ffee5fc83b1dbdbd001616eceb299101bf255efaec4601cecf210379",
+      "git_blob": "099faaeaa52a80681d452447ba618ceb36fadd2c"
+    }
+  ],
+  "files": [
+    {
+      "path": "references/shadcn-composition.md",
+      "sha256": "22aed4c3e5eac414a07ed631fa01dcef5e55e9f84da62930a64d9092cd4c57e0",
+      "sources": [
+        "skills/shadcn/SKILL.md",
+        "skills/shadcn/rules/base-vs-radix.md",
+        "skills/shadcn/rules/forms.md"
+      ]
+    },
+    {
+      "path": "references/ui-localization.md",
+      "sha256": "4900b4ab149375b0273262af84607827970acfef6b1624a0ef8d89fbbd302e9e",
+      "sources": [
+        "skills/i18n-localization/SKILL.md",
+        "skills/i18n-localization/scripts/i18n_checker.py"
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "path": "licenses/CC-BY-4.0.txt",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "licenses/AAS-LICENSE-CONTENT.txt",
+      "sha256": "deae07ece522fbca65ab33f0c18ca9630b1077a8f3f233c0af445235b3fb6fcf"
+    },
+    {
+      "path": "licenses/shadcn-MIT.txt",
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    }
+  ],
+  "modifications": "Modified for Prime: selected independently rewritten prose, corrected version/safety/coverage contracts; no upstream implementation or commands copied. No endorsement or runtime effectiveness claim.",
+  "canonical_shadcn": {
+    "repository": "https://github.com/shadcn-ui/ui",
+    "commit": "2b3e6d4f8d9161fe5c19340dc383aade392012dd",
+    "license_path": "LICENSE.md",
+    "upstream_license_sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+    "sources": [
+      {
+        "path": "skills/shadcn/SKILL.md",
+        "sha256": "deba6c5152d9835892fa7dffeb1fedbb689ddac7e59e14e57ec5eaf9463309e4",
+        "same_as_AAS": false
+      },
+      {
+        "path": "skills/shadcn/rules/base-vs-radix.md",
+        "sha256": "2b2deb47d004285220c1fc6b38bb2edc2d0ccbcdafd031b0b189d5d8ed0d1ba8",
+        "same_as_AAS": true
+      },
+      {
+        "path": "skills/shadcn/rules/forms.md",
+        "sha256": "29593e14381e34626f8e0e9c15c59f3394b92a0623af6a6ec94585400123853c",
+        "same_as_AAS": true
+      }
+    ]
+  }
+}

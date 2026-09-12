@@ -52,3 +52,9 @@ upstream content automatically during ordinary use.
 Remove the engineering-references directory through that same approved workflow
 to remove the skill. No settings, database, background process, or dependencies
 need undoing. Other sessions pick up discovery changes on their next reload/start.
+
+## Four-priority batch: API and SQL (1.2.0-prime.1)
+
+Adds two narrowly routed references, with distinct [source and license notices](NEXT_SOURCES.md)
+and next-provenance.json. Existing reference content and historical evidence remain
+unchanged. No runtime, installer, provider, framework project or Astro skill is installed.

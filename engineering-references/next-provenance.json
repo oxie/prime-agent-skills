@@ -1,0 +1,54 @@
+{
+  "collection": {
+    "repository": "https://github.com/sickn33/agentic-awesome-skills",
+    "commit": "bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3"
+  },
+  "sources": [
+    {
+      "path": "skills/api-security-best-practices/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/api-security-best-practices/SKILL.md",
+      "sha256": "f01d39fb4e2a134f4ae416dc03701d99b5e703d49472376a7ce488cfdd55328f",
+      "git_blob": "30189456170209ad287a1d82fa5ceab3e6423527"
+    },
+    {
+      "path": "skills/sql-optimization-patterns/SKILL.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/sql-optimization-patterns/SKILL.md",
+      "sha256": "e5e212280c58e04ed35df715b093f6e95ef0c382235104e3b4477fd9920bbd03",
+      "git_blob": "c287cd3d79758c8ed859e4aef3ba7d8b68e9cfe6"
+    },
+    {
+      "path": "skills/sql-optimization-patterns/resources/implementation-playbook.md",
+      "url": "https://github.com/sickn33/agentic-awesome-skills/blob/bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3/skills/sql-optimization-patterns/resources/implementation-playbook.md",
+      "sha256": "a42a1614aafa56f50dac45735a87b982a1c437ca57d876b570dcbd072d09c648",
+      "git_blob": "724943b0e918d6aa87966fac3a3b678e6c7d3862"
+    }
+  ],
+  "files": [
+    {
+      "path": "references/api-authorization.md",
+      "sha256": "62b12ba0aeb5e791d259e7e1893a95697e14c954a652313e339107ac8dbb387a",
+      "sources": [
+        "skills/api-security-best-practices/SKILL.md"
+      ]
+    },
+    {
+      "path": "references/sql-diagnosis.md",
+      "sha256": "75a9091556af355d4d3c6493c76780dd5a35a35f93bc651d996ea07debe83240",
+      "sources": [
+        "skills/sql-optimization-patterns/SKILL.md",
+        "skills/sql-optimization-patterns/resources/implementation-playbook.md"
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "path": "licenses/CC-BY-4.0.txt",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "licenses/AAS-LICENSE-CONTENT.txt",
+      "sha256": "deae07ece522fbca65ab33f0c18ca9630b1077a8f3f233c0af445235b3fb6fcf"
+    }
+  ],
+  "modifications": "Modified for Prime: selected independently rewritten prose, corrected version/safety/coverage contracts; no upstream implementation or commands copied. No endorsement or runtime effectiveness claim."
+}

@@ -14,8 +14,8 @@ const expected=["references/data-intensive-applications.md","references/legacy-c
 assert.equal(manifest.commit,"893a88a6fce3a80c565bf39ac65021b43a8b2990");
 assert.equal(manifest.repository,"https://github.com/ciembor/agent-rules-books");
 assert.deepEqual(manifest.files.map(f=>f.path).sort(),expected);
-assert.deepEqual(fs.readdirSync(path.join(skill,"references")).sort(),[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md"].sort());
-assert.deepEqual(fs.readdirSync(skill).sort(),["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses"].sort());
+assert.deepEqual(fs.readdirSync(path.join(skill,"references")).sort(),[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md","api-authorization.md","sql-diagnosis.md"].sort());
+assert.deepEqual(fs.readdirSync(skill).sort(),["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json"].sort());
 assert.equal(hash(read("LICENSE")),manifest.license_sha256);
 assert.ok(read("LICENSE").includes("Copyright (c) 2026 Maciej Ciemborowicz"));
 for(const item of manifest.files){
@@ -67,6 +67,14 @@ assert.ok(prompt.includes("engineering-references"));
 assert.ok(prompt.includes("production failure handling"));
 assert.ok(prompt.includes("mutation/cache reconciliation"));
 assert.ok(prompt.includes("running-revision evidence"));
+assert.ok(prompt.includes("denied-write tests"));
+assert.ok(prompt.includes("result-preserving SQL diagnosis"));
+const hall=n=>loaded.skills.filter(s=>s.name===n);
+assert.equal(hall("hallmark").length,1);
+const hallPrompt=formatSkillsForPrompt(hall("hallmark"));
+assert.ok(hallPrompt.includes("version-aware shadcn composition"));
+assert.ok(hallPrompt.includes("localized UI usability"));
+assert.ok(!hallPrompt.includes("Only when locales or language-dependent UI"));
 assert.ok(!prompt.includes("Retry an intent"),"New reference content remains on demand");
 assert.ok(!prompt.includes("## Choose the relevant reference"),"Skill body must remain on demand");
 for(const item of manifest.files)assert.ok(!prompt.includes(item.installed_heading),"Reference bodies must remain on demand");
