@@ -1,0 +1,195 @@
+{
+  "authorship": "Original Prime guidance and examples; no copied upstream Astro Builder or Taste text",
+  "inspiration": {
+    "repository": "https://github.com/IncomeStreamSurfer/astro-builder-skill",
+    "commit": "8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae",
+    "rights_status": "Package declares MIT; actual author notice unresolved. Review/inspiration only, not copied redistribution."
+  },
+  "reviewed_sources": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/README.md",
+      "sha256": "bfcc507a52df83f03b00def19d60d135e34ac561451b09d8606613dce2d9d66d",
+      "git_blob": "b191fdde8132bfb51a503735e3dc17a21d074a69"
+    },
+    {
+      "path": "bin/install.mjs",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/bin/install.mjs",
+      "sha256": "8f8bbefd9dc5623660ac668c0dc82781c1d96d7e2060a33f3b6f3eea810556a6",
+      "git_blob": "19cd4b83865e9447a657af900975869adb2df555"
+    },
+    {
+      "path": "package.json",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/package.json",
+      "sha256": "89568457d95ee06a577cedd8c8220af0071d55c187bb81931ec207f7e8de3898",
+      "git_blob": "b6ddcf1ba95835fb2978c649dfbf306bd6767e46"
+    },
+    {
+      "path": "skill/SKILL.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/SKILL.md",
+      "sha256": "57125fea9fb6a25d06fbbf681ce2c779eb7dad579a5335923becfd5efe17c19b",
+      "git_blob": "77ec91a56c8d7c3dc0dc7c3153b8d82c8d5d64e3"
+    },
+    {
+      "path": "skill/references/astro-setup.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/astro-setup.md",
+      "sha256": "adf0de2684b17cea7a9afa28d4436415e4279bcbc4e98b59fb9a90bb94ec616e",
+      "git_blob": "2f40c41959ca5ae969ab7e4b7a3862f1eeb1b417"
+    },
+    {
+      "path": "skill/references/content-collections.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/content-collections.md",
+      "sha256": "6264f9bd66067228951b7e8cbb5802188309f93002150fceeeeb09dfb26af642",
+      "git_blob": "fb6e2084dd67ce27ce6124459199f46fde10506b"
+    },
+    {
+      "path": "skill/references/deployment.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/deployment.md",
+      "sha256": "6e180150b23d8cca300b9d278179a6d7cefb091a3ab64e36548d3dcc2503fb32",
+      "git_blob": "386948372c868e48900cb683a69e48554a5c31f6"
+    },
+    {
+      "path": "skill/references/image-generation.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/image-generation.md",
+      "sha256": "753b725e11e457dc5fbb64cb9f8e3cf67a3641cdd1cbb537e710ba4fc3dc10f3",
+      "git_blob": "88e667a8b900bd0e0813c4e8ad601cb00a4d6dd3"
+    },
+    {
+      "path": "skill/references/seo-checklist.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/seo-checklist.md",
+      "sha256": "8037ae373c80e4ea61205d7d022cde85a321a35fd5e4d78a202a3f90e662c61e",
+      "git_blob": "912223ab38606a54e4faed387560e108a55a6a40"
+    },
+    {
+      "path": "skill/references/tailwind-components.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/tailwind-components.md",
+      "sha256": "789e1a83c1d08ea54ad27ddcc7012986084848a576f937c457010af9807cee8b",
+      "git_blob": "497ee77623fd3f64bd2376f28fed7ab66c8a07f7"
+    },
+    {
+      "path": "skill/references/taste-skill.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/taste-skill.md",
+      "sha256": "17747a7212b1aeaa7a565d85096fcb50af83acaf32d7a9ec97b0ad8359301ef2",
+      "git_blob": "67288c2a783c90d18d1d46d2c65fc5755e6d29f5"
+    },
+    {
+      "path": "skill/references/turso-setup.md",
+      "url": "https://raw.githubusercontent.com/IncomeStreamSurfer/astro-builder-skill/8b2343c6b515b80ea44f9c69a16dd38d54e6e9ae/skill/references/turso-setup.md",
+      "sha256": "7796b1c8d7099c59b31686b678657cb2db1ddb771b57f2139feafa3cf18e4dd8",
+      "git_blob": "f72d6acd5b7a66404be1bcda6a763fce6494ca87"
+    }
+  ],
+  "primary_evidence": [
+    {
+      "name": "loaders-reference",
+      "url": "https://docs.astro.build/en/reference/content-loader-reference/",
+      "sha256": "b0e8e605a634b80cc6b4ea11aa3c3d9b73e40fc27860618d5c71b69ffaea3005",
+      "status": 200
+    },
+    {
+      "name": "rss",
+      "url": "https://docs.astro.build/en/recipes/rss/",
+      "sha256": "b1d7fdb77d196d25a6598e55b76f60184cff282b4e4a2d052266c3ffab1b7acd",
+      "status": 200
+    },
+    {
+      "name": "sitemap",
+      "url": "https://docs.astro.build/en/guides/integrations-guide/sitemap/",
+      "sha256": "f6bfb2b193fb9f1f90d5e895f70fdd15b23a162ab1e9c3b69ce61d160d5b8b02",
+      "status": 200
+    },
+    {
+      "name": "on-demand",
+      "url": "https://docs.astro.build/en/guides/on-demand-rendering/",
+      "sha256": "35deb3ddf68d0e03eb587259bfeae184ae3f2725e0dd661d77a2b2776d35ad1e",
+      "status": 200
+    },
+    {
+      "name": "forms",
+      "url": "https://docs.astro.build/en/recipes/build-forms/",
+      "sha256": "a9de12034edc338be53646e14a11c18a58b0bf1363147889401f7954d020b833",
+      "status": 200
+    },
+    {
+      "name": "v5-content",
+      "url": "https://v5.docs.astro.build/en/guides/content-collections/",
+      "sha256": "feed83ab8f9fc8c9876a334c55530f9623f79b6d5b648e010094773691321ce3",
+      "status": 200
+    },
+    {
+      "name": "astro-5.0-package",
+      "url": "https://raw.githubusercontent.com/withastro/astro/astro%405.0.0/packages/astro/package.json",
+      "sha256": "72f2487d21056bf1cf3a244593a005f9d963dd9debe9e76bb973947ebb45adf7",
+      "status": 200
+    },
+    {
+      "name": "astro-5.0-zod",
+      "url": "https://raw.githubusercontent.com/withastro/astro/astro%405.0.0/packages/astro/zod.mjs",
+      "sha256": "3a936d4dd71c46f298b4886c003cfd9aa27d663414d86f31517bdf442dae1518",
+      "status": 200
+    },
+    {
+      "name": "astro-5.0-glob",
+      "url": "https://raw.githubusercontent.com/withastro/astro/astro%405.0.0/packages/astro/src/content/loaders/glob.ts",
+      "sha256": "9fcc9ca1e74f2123bfd909ca51603f414242591263fceb269e1e03a79ce8e687",
+      "status": 200
+    },
+    {
+      "name": "astro-v5",
+      "url": "https://docs.astro.build/en/guides/upgrade-to/v5/",
+      "sha256": "95f945652717b1ff5f840dcdcd8a5749211e7e00e1a699d08f6ddf2fe8a2b4a4",
+      "status": 200
+    },
+    {
+      "name": "astro-v6",
+      "url": "https://docs.astro.build/en/guides/upgrade-to/v6/",
+      "sha256": "2bea89c6362a3bd3106de2a76567b633eb64bf2521fa63f0c2c4ff0eb3018a12",
+      "status": 200
+    },
+    {
+      "name": "astro-tailwind",
+      "url": "https://docs.astro.build/en/guides/styling/",
+      "sha256": "62ec58d77b3d6f903681791b929edf1c3a747b81758e80d91090a984ed6f3b3c",
+      "status": 200
+    },
+    {
+      "name": "astro-images",
+      "url": "https://docs.astro.build/en/guides/images/",
+      "sha256": "bb4941e58eee445955e9952f30a63cb37539eb083ff53ac6310c8fe4179432f2",
+      "status": 200
+    },
+    {
+      "name": "astro-islands",
+      "url": "https://docs.astro.build/en/concepts/islands/",
+      "sha256": "68958c7ad14cd3dfb4b2733dc1f72a2e2bc4ec35a36d66af9bd92084b8eb72e3",
+      "status": 200
+    }
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "1067f7dedf07b5102fdce99ab1fee011944579926abe1310dd449c1f2fc91ea0"
+    },
+    {
+      "path": "references/project-setup.md",
+      "sha256": "548a48f6ea3e27c2246d86deb046b44a143e6756fd7d80c0b0805dbd1cf8369b"
+    },
+    {
+      "path": "references/content-routes.md",
+      "sha256": "31f0f5c51a325d24999b6542854f1fe20147170f74be0eb401cee9e3312d442a"
+    },
+    {
+      "path": "references/page-delivery.md",
+      "sha256": "c52432ce4ba0321d23721274fb4875ad667d8edfa8c74dc44b3d74d5ead39fad"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a47a56a88156dd9fcef10aa832d99d8c12e825052e26d27fb526569a3bcc60d2"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "4a852f1401a1502aba417fec4b9cf037d85535c08e404e5cc7b9814a135906c6"
+    }
+  ],
+  "limits": "Source/document review, original pure predicate fixture and native availability only; no Astro runtime or deployed-output claim."
+}
