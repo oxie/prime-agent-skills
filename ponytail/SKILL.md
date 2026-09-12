@@ -10,7 +10,7 @@ description: >
   review, SEO audit, or visual-design skill.
 license: MIT
 metadata:
-  version: 4.9.0-prime.2
+  version: 4.9.0-prime.3
   upstream: https://github.com/DietrichGebert/ponytail
   upstream-commit: 356918eba965ee1eac64bd3a7f0dd02108350de5
 ---
@@ -69,6 +69,16 @@ per-user isolation and invalidation for caches; locale, browser support,
 keyboard operation and accessibility for native UI; mismatched-length behavior
 for data conversions. Do not replace required validation with a weak heuristic.
 Do not remove retries solely because an operation is local or idempotent.
+
+For JS/TS representation or async-boundary simplification, check caller-visible
+contracts: object versus Map result, nested value shape, key coercion/identity,
+iteration order and serialization; synchronous throws versus Promise rejection,
+Promise identity and relevant catch/finally cleanup ordering. Removing an async
+adapter or `return await` can change those contracts. Test the distinguishing case,
+not just happy-path values, before replacing the construct. Preserve the boundary
+unless actual callers and tests support the change. An explicitly requested behavior
+change is not an exact refactor; keep unrelated hardening separate. These questions
+apply to the relevant JS/TS change, not every language or review.
 
 For bugs, trace relevant callers and their contracts. Fix the actual root cause,
 not automatically the deepest shared helper: callers may need different behavior.

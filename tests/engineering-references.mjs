@@ -14,8 +14,8 @@ const expected=["references/data-intensive-applications.md","references/legacy-c
 assert.equal(manifest.commit,"893a88a6fce3a80c565bf39ac65021b43a8b2990");
 assert.equal(manifest.repository,"https://github.com/ciembor/agent-rules-books");
 assert.deepEqual(manifest.files.map(f=>f.path).sort(),expected);
-assert.deepEqual(fs.readdirSync(path.join(skill,"references")).sort(),[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md","api-authorization.md","sql-diagnosis.md"].sort());
-assert.deepEqual(fs.readdirSync(skill).sort(),["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json"].sort());
+assert.deepEqual(fs.readdirSync(path.join(skill,"references")).sort(),[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md","api-authorization.md","sql-diagnosis.md","telemetry-evidence.md"].sort());
+assert.deepEqual(fs.readdirSync(skill).sort(),["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json","ADDY_SOURCES.md","addy-provenance.json"].sort());
 assert.equal(hash(read("LICENSE")),manifest.license_sha256);
 assert.ok(read("LICENSE").includes("Copyright (c) 2026 Maciej Ciemborowicz"));
 for(const item of manifest.files){

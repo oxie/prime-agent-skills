@@ -1,0 +1,59 @@
+{
+  "repository": "https://github.com/addyosmani/agent-skills",
+  "commit": "be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39",
+  "license_sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+  "adaptation": "Selective corrected prose and original local analysis; no upstream executable code or linked external text copied. Current whole-file hashes identify packaging, not model or application outcome proof. See ADDY_SOURCES.md and Ponytail UPSTREAM.md for portion-level mapping.",
+  "sources": [
+    {
+      "path": "skills/observability-and-instrumentation/SKILL.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39/skills/observability-and-instrumentation/SKILL.md",
+      "git_blob": "84d9cb373467fe0e15236e190833ecc90f840c38",
+      "sha256": "e7fcb0820306d46268de9594d676ad98e35040858926c412b7000faa52a61f87"
+    },
+    {
+      "path": "references/observability-checklist.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39/references/observability-checklist.md",
+      "git_blob": "ad40d7aa3fca5d2091fa45be234c14aee22c3588",
+      "sha256": "25fcd0e854596a5ab6f11b002050d245bf78f5ae0fcbd1df699b89451ae0e1e8"
+    },
+    {
+      "path": "skills/api-and-interface-design/SKILL.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39/skills/api-and-interface-design/SKILL.md",
+      "git_blob": "820d6d981f90b7802e0ea8b75bb966a3d78b8d0f",
+      "sha256": "5dafd0c44a3aabf11cae5bcb34f6fcc24dfa5c01ba6e0d3176bce997f4d68bc8"
+    },
+    {
+      "path": "skills/deprecation-and-migration/SKILL.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39/skills/deprecation-and-migration/SKILL.md",
+      "git_blob": "7bf884ca5743d63be448725f88041dde8a10cd5d",
+      "sha256": "6a624f942e09c69863a4219b9bd5d56975026b67b0c70bc83385ffd2120b6142"
+    },
+    {
+      "path": "skills/code-simplification/SKILL.md",
+      "url": "https://github.com/addyosmani/agent-skills/blob/be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39/skills/code-simplification/SKILL.md",
+      "git_blob": "239b2848489511de30d9e63b0bd183adc4b01347",
+      "sha256": "f0c5ed754057eb0c1e027e2587f59de816651feb5e837242296c43ea21cf621d"
+    }
+  ],
+  "files": [
+    {
+      "path": "engineering-references/references/telemetry-evidence.md",
+      "sha256": "13978684bb0fb7cf42b0a7c3e71163f1fc5f4be7ec3f4be58071437dbf280126"
+    },
+    {
+      "path": "engineering-references/references/contract-boundaries.md",
+      "sha256": "fc3119b6040f6a5636594cdb440a76e53321828fc1a2d8965e18f66d43c1072f",
+      "previous_sha256": "589cd66b429bfbba29557038a4daa81d01548080dbf204a99459a1d1284d6e60"
+    },
+    {
+      "path": "engineering-references/references/release-dependencies.md",
+      "sha256": "3749da35996c7fd14db793a288a8b25fecab178230135acc04e819ff2ba05d30",
+      "previous_sha256": "51cc22c323bc3fd6ba2072b70b20d0463a90d1d9a8177ec9cd0ff0a5a2b8fa65"
+    },
+    {
+      "path": "ponytail/SKILL.md",
+      "sha256": "eb3b9fc06660afea35557964a25300cf6578e65c468f7fdc74b795cdd2fd1dac",
+      "previous_sha256": "0995481f5964ff12f739a62e3eef860a79378b08bdcedf498a00f0295270e909"
+    }
+  ]
+}

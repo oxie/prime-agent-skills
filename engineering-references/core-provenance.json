@@ -85,22 +85,24 @@
   "files": [
     {
       "path": "references/contract-boundaries.md",
-      "sha256": "589cd66b429bfbba29557038a4daa81d01548080dbf204a99459a1d1284d6e60",
+      "sha256": "fc3119b6040f6a5636594cdb440a76e53321828fc1a2d8965e18f66d43c1072f",
       "sources": [
         "skills/cross-platform-contract-propagation-audit/SKILL.md",
         "skills/frontend-data-contracts/SKILL.md",
         "skills/api-and-interface-design/SKILL.md",
         "skills/frontend-optimistic-mutations/SKILL.md"
-      ]
+      ],
+      "pre_addy_sha256": "589cd66b429bfbba29557038a4daa81d01548080dbf204a99459a1d1284d6e60"
     },
     {
       "path": "references/release-dependencies.md",
-      "sha256": "51cc22c323bc3fd6ba2072b70b20d0463a90d1d9a8177ec9cd0ff0a5a2b8fa65",
+      "sha256": "3749da35996c7fd14db793a288a8b25fecab178230135acc04e819ff2ba05d30",
       "sources": [
         "skills/pre-release-review/SKILL.md",
         "skills/pre-release-review/references/checklist.md",
         "skills/pre-ship-gate/SKILL.md"
-      ]
+      ],
+      "pre_addy_sha256": "51cc22c323bc3fd6ba2072b70b20d0463a90d1d9a8177ec9cd0ff0a5a2b8fa65"
     }
   ],
   "licenses": [
@@ -126,5 +128,6 @@
       "path": "licenses/addyosmani-MIT.txt",
       "sha256": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
     }
-  ]
+  ],
+  "later_direct_additions": "See ADDY_SOURCES.md and addy-provenance.json; original source identities preserved."
 }

@@ -3,6 +3,7 @@
 Modified for Prime: selectively rewritten and corrected; not an upstream implementation.
 See [source and license notices](../THIRD_PARTY.md) and core-provenance.json
 at the skill root. No upstream endorsement or runtime validation is implied.
+Later direct Addy additions are identified in [ADDY_SOURCES.md](../ADDY_SOURCES.md).
 
 ## When this adds value
 
@@ -60,6 +61,37 @@ readers/writers to retire. Include queued messages and old cache shapes in that 
 Distinguish reversible rollback, roll-forward, compensating action and restoration.
 Reverting code does not undo written data or side effects. Do not prescribe a `down`
 migration for an irreversible change or replace tables with lossy snapshots.
+
+### Phased migration exit evidence, when old and new shapes coexist
+
+Use only the phases the actual database/API contract needs. For each phase record
+compatible readers/writers, exit evidence and recovery action in the existing plan.
+An additive change is not automatically online-safe: check actual database/version
+DDL locks, validation, table rewrites, index/disk cost and representative workload.
+
+| Phase | Evidence before advancing |
+|---|---|
+| Expand shape | Supported old/new code can use the actual schema; lock/resource impact is acceptable |
+| Deploy compatible writers | All relevant writers maintain the required old/new meaning, including jobs and replay paths |
+| Backfill | Bounded resumable batches, race-safe predicate/version handling, throttling and pause/stop behavior |
+| Switch readers | Reconciliation shows required agreement; backfill cannot overwrite newer writes; mixed readers remain compatible |
+| Observe and retire old use | Coverage includes sparse consumers, old workers, rollback binaries, retained payloads and actual retry/replay horizon |
+| Contract separately | Old readers/writers are retired, constraints/defaults and new-only writes work, and the remaining recovery plan is explicit |
+
+Dual writes need their own consistency/repair contract; two writes alone are not
+atomic. A batch size alone prevents neither locks nor stale-value races. Test
+interrupted/restarted backfill and concurrent writes on a representative disposable
+database when authorized. Preserve source-of-truth semantics through cutover.
+
+For public API retirement, inspect the real consumer and contractual notice inventory,
+contact gaps, needed replacement parity or the authorized no-replacement decision,
+migration help and observation interval. A short quiet period or active-key count
+does not prove every consumer migrated. Do not impose a universal sunset schedule.
+
+No mandatory down path: identify the point after which rollback is unsafe and the
+roll-forward, compensation or restoration evidence needed. Re-adding a dropped
+column does not restore its data. Separate tested compatibility from unexecuted
+migration/recovery claims; this worksheet does not authorize a migration or probe.
 
 ## 3. Verify the intended running state, if authorized
 

@@ -58,3 +58,8 @@ license notices; the selected content pin remains the AAS commit above.
 
 Updates are manual and require review of changed bytes, notices and target contracts.
 No automatic fetch, AAS installer, Core/MCP runtime, dependencies or update service.
+
+Later direct Addy retry/migration sections and the telemetry reference have separate
+[mappings and modification notices](ADDY_SOURCES.md) and addy-provenance.json.
+Original AAS/canonical source identities above are preserved. Current core file
+hashes and their pre-addition hashes are recorded in core-provenance.json.

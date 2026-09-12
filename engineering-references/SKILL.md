@@ -7,11 +7,12 @@ description: >
   derived-data changes, safe legacy test seams, cross-path field/enum propagation,
   parsed network responses, mutation/cache reconciliation, and diff-linked release
   dependencies or running-revision evidence, API object/tenant authorization and
-  denied-write tests, or result-preserving SQL diagnosis. Not a general coding
+  denied-write tests, result-preserving SQL diagnosis, or operator-led telemetry
+  evidence. Not a general coding
   rulebook, routine cleanup pass, or deployment tool.
 license: "MIT for original wrapper/book references; CC-BY-4.0, MIT and Apache-2.0 for selected adaptations (see THIRD_PARTY.md)"
 metadata:
-  version: 1.2.0-prime.1
+  version: 1.3.0-prime.1
   upstream: https://github.com/ciembor/agent-rules-books
   upstream-commit: 893a88a6fce3a80c565bf39ac65021b43a8b2990
 ---
@@ -42,12 +43,15 @@ Read only the reference matching the main risk, not every reference by default:
   with concurrent cache reconciliation. Read only the section matching the risk.
 - [Release dependencies](references/release-dependencies.md): diff-linked config,
   schema, worker and callback prerequisites; intended rollout and running revision/traffic
-  evidence. Supplements Release It! only when that detail is relevant.
+  evidence, or phased migration exit conditions. Supplements Release It! only when
+  that detail is relevant.
 
 - [API authorization](references/api-authorization.md): protected endpoint changes,
   caller/tenant/object/operation enforcement and denial-with-no-write tests.
 - [SQL diagnosis](references/sql-diagnosis.md): a slow query or authorized rewrite;
   preserve results/order/multiplicity before interpreting representative plans.
+- [Telemetry evidence](references/telemetry-evidence.md): operator questions, safe
+  attribution and bounded signals; distinguish emission, ingestion and diagnosis.
 
 Combine references only when the actual risk spans multiple subjects. For example,
 bounded retries do not establish duplicate-write safety. Do not combine merely
@@ -94,4 +98,8 @@ Agentic Awesome Skills sources, not additional book extracts.
 See [THIRD_PARTY.md](THIRD_PARTY.md) for their distinct licenses and modification
 notices; core-provenance.json records their exact source and installed hashes.
 The API/SQL additions have separate [source notices](NEXT_SOURCES.md) and
-next-provenance.json; they do not change the original book/core reference files.
+next-provenance.json; that earlier batch did not change the book/core references.
+Later direct Addy telemetry/retry/migration additions have separate
+[notices](ADDY_SOURCES.md) and addy-provenance.json. Original book files and
+prior source identities remain unchanged; core-provenance.json records both the
+pre-addition and current core file hashes.

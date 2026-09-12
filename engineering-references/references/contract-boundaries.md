@@ -3,6 +3,7 @@
 Modified for Prime: selectively rewritten and corrected; not an upstream implementation.
 See [source and license notices](../THIRD_PARTY.md) and core-provenance.json
 at the skill root. No upstream endorsement or runtime validation is implied.
+Later direct Addy additions are identified in [ADDY_SOURCES.md](../ADDY_SOURCES.md).
 
 ## Select the relevant section
 
@@ -165,6 +166,32 @@ retain the recovery reference as needed. Abandoning UI is not undoing server eff
 Bound allowed retries and total time; do not retry deliberate cancellation,
 validation or conflict blindly. If duplicate safety is unknown, show unknown outcome
 and reconcile/status-check within authority instead of issuing a fresh write.
+
+### Server recovery details, when retries cross a durable boundary
+
+For server-backed idempotency, bound caller key bytes and scope identity to the
+actual principal/tenant/operation. Define semantic payload binding, including
+canonicalization/version rules; hashing arbitrary JSON bytes is not that definition.
+Recheck current authorization before status lookup or response replay. A key alone
+must not expose another caller's stored result.
+
+Specify what an in-flight duplicate receives: bounded wait, pending/status response,
+or a documented conflict. A local atomic claim is not atomic with an external effect.
+After a crash or timeout, do not release a claim and retry just because it seems old.
+Keep unknown outcome distinct from failure. Name the authorized reconciliation owner
+and provider idempotency/status evidence or other recovery contract needed before
+another effect is allowed. Local uniqueness alone is not exactly-once execution.
+
+Set retention from supported retry/replay horizons, including delayed queues and
+manual replay policy, with explicit expiry behavior and privacy/storage limits.
+Do not silently treat the oldest supported replay as a fresh intent after key expiry.
+If the horizon cannot be retained, bound/reject that replay or use another durable
+identity policy; no universal TTL or dispute-window rule fits every operation.
+
+When authorized, test concurrent same-key requests, changed payload, cross-tenant
+key reuse, success followed by response loss/crash, and expiry with the oldest
+supported replay. Assert authorized resulting effects at the real uniqueness and
+provider boundary; a stub call-count test cannot prove those guarantees.
 
 ## Select checks, then report evidence
 
