@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "owner": "hallmark",
+  "change": "Original reference-intent clarification; no standalone skill or workflow",
+  "source": {
+    "url": "https://www.aura.build/skills/a1ba11a7-002f-4cda-b4f7-fef201b57f02/creative-agency-design-protocol",
+    "content_sha256": "7b37e1e0e5050b847ce8ecae7cd962f57b5f6f9b0a2b9bc0e44da1c8e1b2d462",
+    "content_bytes": 7396,
+    "updated_at": "2026-09-13T11:31:46.578452+00:00",
+    "reuse_license_found": false,
+    "treatment": "General reference-role distinction only, expressed in original prose; upstream text not bundled or relicensed"
+  },
+  "path": "references/reference-synthesis.md",
+  "previous": {
+    "sha256": "dc29eb2e94b90ae37a45b401dee94e6808e2f1a162201939f1e1f8fbc7a42c16",
+    "bytes": 7141
+  },
+  "addition": {
+    "sha256": "d17ce9ae271f13010fceec23678d61d4c9f07734a897f1f1a34dee866ef074ec",
+    "bytes": 2601,
+    "license": "MIT for original added wording only; existing Hallmark licensing and source notices remain in force"
+  },
+  "current": {
+    "sha256": "0cbda2aa1d258c62496bdc631891206ccf8c8a3ed4be3bf6d0cdd3dcfb1b0426",
+    "bytes": 9742
+  },
+  "preserved_provenance": "refero-provenance.json records its original payload; it was not rebound to this later extension",
+  "limits": "Textual guidance and native metadata checks, not rendered quality, model compliance or a new authorization boundary"
+}

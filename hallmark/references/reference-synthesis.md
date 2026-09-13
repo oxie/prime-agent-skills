@@ -107,3 +107,39 @@ rule. An unavailable tool does not permit fabricated evidence or wider browser a
 
 ---
 Adapted selectively from Refero's MIT methodology; see [source notices](../REFERO_SOURCES.md).
+
+## Identify each reference's job
+
+Before choosing a primary direction, establish why each supplied reference matters.
+Use the user's words and project context, not the reference's appearance alone:
+
+| Job | Carry into the work | Do not assume |
+|---|---|---|
+| **Mood direction** | The observed relationships that create the intended feeling: pace, density, contrast, type or framing | Every asset, layout detail or brand trait must follow the source |
+| **Craft benchmark** | Evidenced standards to aim for, such as readable hierarchy, precise spacing or an observed interaction state | Its palette, fonts or composition are the desired aesthetic |
+| **Named contribution** | The specified element and its boundaries, such as a filter arrangement or caption treatment | The surrounding design system should come with it |
+
+One reference may have several jobs; state which details belong to each. A craft-only
+source is not the primary visual direction. Keep the project's chosen identity and
+use that source to define relevant craft criteria, not a palette to imitate. Explicit
+brand or layout requirements still apply; these roles do not cancel a requested match.
+Infer intent when context is clear. Ask only if the unresolved distinction would
+materially change the outcome, not as a new intake step or fixed question quota.
+
+**Hypothetical example:** a dark finance dashboard is supplied for a daylight museum
+programme. As a craft benchmark, it may inform clear grouping and readable dense
+information without introducing dark surfaces or animated counters. As a mood source,
+its measured rhythm could inform quiet labels and a light grid. As a named contribution,
+only its filter arrangement might be relevant. Keep the museum's real content and actions.
+
+Put the selected jobs in the existing direction note when useful; no new document or
+research round is required. During existing QA, compare the agreed mood traits,
+evidenced craft criteria or named element—not every visible source detail. A screenshot
+cannot establish hidden states, motion quality or responsive behavior. Mark these as
+unobserved unless relevant evidence was inspected. A reference role does not authorize
+fetching assets, running tools or changing a read-only study into implementation.
+
+Original Prime guidance informed by the reference-intent distinction in the
+[Aura Creative Agency Design Protocol](https://www.aura.build/skills/a1ba11a7-002f-4cda-b4f7-fef201b57f02/creative-agency-design-protocol).
+No upstream text is bundled or relicensed. See the
+[snapshot and change record](../aura-reference-intent.json).

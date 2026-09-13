@@ -113,14 +113,28 @@ test('existing metadata and historical files remain preserved; only five documen
  const prior=JSON.parse(read('ui-skills-provenance.json'));
  for(const f of prior.files)assert.equal(hash(read(f.path)),f.sha256,f.path);
 });
-test('four pinned MIT sources, license and eight current payloads match provenance',()=>{
+test('four pinned MIT sources, license and eight original payloads remain bound alongside the approved appendix',()=>{
  const p=JSON.parse(read('refero-provenance.json'));
  assert.equal(p.commit,'a9b54a3e62a6391f5f5ab7a20e4ddb32fb79a27d');
  assert.equal(p.repository,'https://github.com/referodesign/refero_skill');
  assert.deepEqual(p.sources,sources);
  assert.deepEqual(p.files.map(f=>f.path).sort(),["README.md", "REFERO_SOURCES.md", "UPSTREAM.md", "licenses/refero-MIT.txt", "references/design.md", "references/reference-synthesis.md", "references/study.md", "references/verification.md"]);
  assert.equal(p.license.sha256,"7b5d57a0e210289fa900a0e2ab0513442e439e9d20b96f0cf5cba0e1b31b665e");
- for(const f of p.files){const b=fs.readFileSync(path.join(hall,f.path));assert.equal(hash(b),f.sha256,f.path);assert.equal(b.length,f.bytes);if(previous[f.path])assert.equal(f.previous_sha256,previous[f.path]);}
+ for(const f of p.files){
+  const b=fs.readFileSync(path.join(hall,f.path));
+  // This one file has a later approved appendix. Keep the Refero snapshot exact;
+  // bind the entire current file and appendix too, not arbitrary trailing bytes.
+  const snapshot=f.path===reference?b.subarray(0,f.bytes):b;
+  assert.equal(hash(snapshot),f.sha256,f.path);assert.equal(snapshot.length,f.bytes);
+  if(f.path===reference){
+   const later=JSON.parse(read('aura-reference-intent.json'));
+   assert.equal(later.path,reference);assert.deepEqual(later.previous,{sha256:f.sha256,bytes:f.bytes});
+   assert.equal(hash(b),later.current.sha256);assert.equal(b.length,later.current.bytes);
+   const addition=b.subarray(f.bytes);
+   assert.equal(hash(addition),later.addition.sha256);assert.equal(addition.length,later.addition.bytes);
+  }
+  if(previous[f.path])assert.equal(f.previous_sha256,previous[f.path]);
+ }
  assert.equal(hash(read(p.license.path)),p.license.sha256);
  assert.ok(read(p.license.path).includes('Copyright (c) 2026 Refero'));
  assert.ok(read(p.license.path).includes('THE SOFTWARE IS PROVIDED "AS IS"'));
