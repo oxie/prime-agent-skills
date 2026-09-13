@@ -2,7 +2,7 @@
 
 - Source: https://github.com/nutlope/hallmark
 - Pinned reviewed commit: 13ac0ec7e148655948100b6396439e481361d690
-- Upstream v1.1.0; local v1.2.0-prime.1.
+- Upstream v1.1.0; local v1.3.0-prime.1.
 - MIT license retained verbatim in LICENSE. No Together AI account/API is required.
 
 This is a curated adaptation, not an unchanged upstream installation or upstream
@@ -92,3 +92,13 @@ Engineering source notices stay with engineering-references/THIRD_PARTY.md.
 Adds two narrowly routed references, with distinct [source and license notices](NEXT_SOURCES.md)
 and next-provenance.json. Existing reference content and historical evidence remain
 unchanged. No runtime, installer, provider, framework project or Astro skill is installed.
+
+## Selective UI Skills detail (1.3.0-prime.1)
+
+Adds original, corrected guidance for reversible control motion, bounded toolbar
+tooltip timing, source-traced design drift and requested handoffs, design-document
+claim promotion/export loss, and conditional DOM-motion diagnosis. See
+[UI Skills source notices](UI_SKILLS_SOURCES.md) and ui-skills-provenance.json.
+Existing audit/token sections are extended, not replaced; other references and
+historical pilots are unchanged. No runtime, external schema/CLI, public crawler,
+new design authority or automatic motion pass is installed.

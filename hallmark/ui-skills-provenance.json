@@ -1,0 +1,137 @@
+{
+  "repository": "https://github.com/ibelick/ui-skills",
+  "commit": "79081abff1e887d55920f3debc11d78fea83a1b3",
+  "adaptation": "Original corrected prose based on selected reviewed sources; no upstream executable implementations, external linked text or assets copied. See UI_SKILLS_SOURCES.md for portion mapping and evidence limits.",
+  "sources": [
+    {
+      "path": "skills/improve-ui/SKILL.md",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/skills/improve-ui/SKILL.md",
+      "sha256": "fa2ac808f6d9dab7bb3620880b014d2c18e227e5b006102856038096e573e69a",
+      "git_blob": "c3ed42a578d3c0ca798ddd122fe0886e9c9acbc0",
+      "bytes": 7830
+    },
+    {
+      "path": "skills/improve-ui/references/plan-template.md",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/skills/improve-ui/references/plan-template.md",
+      "sha256": "8faca7a14659a7f951d3b89fb730a43a4ce99966cc00481bf83d82b90f34b868",
+      "git_blob": "e08b3dd0b3a3a4c40a3861e0326e1159558ff7b7",
+      "bytes": 1590
+    },
+    {
+      "path": "skills/create-design-md/SKILL.md",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/skills/create-design-md/SKILL.md",
+      "sha256": "adba4fa94a9ca0291811ac26405e8fe15c1a6375743a80971c6f895bb837eeed",
+      "git_blob": "1aa15726985929fe8d95624767cdc9a524418925",
+      "bytes": 16208
+    },
+    {
+      "path": "skills/fixing-motion-performance/SKILL.md",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/skills/fixing-motion-performance/SKILL.md",
+      "sha256": "0a2d654902bc04263ce68c8c02967ef03f17b482e855360a5463211d99d7baa9",
+      "git_blob": "7d22f2ecdd3305f73cf202cb9b5a0e4c1d3700e5",
+      "bytes": 5565
+    },
+    {
+      "path": "src/ui/playbook/interruptible-transition-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/interruptible-transition-demo.tsx",
+      "sha256": "8e1beae85dc5951a5f83e71d3d439445c26a294112f48648f661c49b3903c183",
+      "git_blob": "236f8f94b7443ed3f5f877a8f2964f09ecaa2c31",
+      "bytes": 1756
+    },
+    {
+      "path": "src/ui/playbook/popover-origin-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/popover-origin-demo.tsx",
+      "sha256": "79acca5dbda1b478f7c4cedac505fec06cf599c052b1bf3a329eea00f8f1abdc",
+      "git_blob": "0bd7a46f8236cd3ea14037a0bed445e68115f134",
+      "bytes": 1958
+    },
+    {
+      "path": "src/ui/playbook/ease-out-enter-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/ease-out-enter-demo.tsx",
+      "sha256": "0f695c43ad0832536f0afdb6bac29d118d76304efb8c13a9b525b56be8f1d6d4",
+      "git_blob": "ce607b4280af3e725f05fa005c06c9145042bc65",
+      "bytes": 3019
+    },
+    {
+      "path": "src/ui/playbook/menu-exit-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/menu-exit-demo.tsx",
+      "sha256": "2a56c3d65a8be2f7f6ffb92e7da3821883e43e668bcb6ec53ff591633f67e1d5",
+      "git_blob": "2b51d2a841c33e9b90b45df4939ceec9b831a112",
+      "bytes": 2756
+    },
+    {
+      "path": "src/ui/playbook/subtle-exit-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/subtle-exit-demo.tsx",
+      "sha256": "e87f2aa9ed3e9f69b3809f9ced2309601fb18447cc760adf954ad877984501ff",
+      "git_blob": "f1310bb853c3135a84eb26ad939f458c33aa7c7b",
+      "bytes": 2907
+    },
+    {
+      "path": "src/ui/playbook/spring-vs-ease-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/spring-vs-ease-demo.tsx",
+      "sha256": "250a762729846b5fb111e7a34eef76ebbf165ba34dc4137f6bc9f863141fd81e",
+      "git_blob": "2c512307bb2ca93900cbce1661d98a53f06e330b",
+      "bytes": 1291
+    },
+    {
+      "path": "src/ui/playbook/icon-state-crossfade-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/icon-state-crossfade-demo.tsx",
+      "sha256": "962daf37e48355b0cdbe7f26759024379773510b7a70e6c33667ce371ec8e1d2",
+      "git_blob": "b0ec8ce640aee8082aa1e6b263d4db659fe6ab51",
+      "bytes": 2702
+    },
+    {
+      "path": "src/ui/playbook/motion-restraint-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/motion-restraint-demo.tsx",
+      "sha256": "79c5281dda11c7535e0b9f345240d68427df45c5b4b14cb98adb33ca7ef2d94a",
+      "git_blob": "45c72d14aa4782b75fce1739daa6763ed9b31764",
+      "bytes": 2179
+    },
+    {
+      "path": "src/ui/playbook/tooltip-warm-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/tooltip-warm-demo.tsx",
+      "sha256": "316bff5a4e8f7bbf942e9af03d189fc954b98387290e2161ba2a94d0aea616f0",
+      "git_blob": "b711c23ed764a9c37b8bf895a7dd42bbbb24aad7",
+      "bytes": 2996
+    },
+    {
+      "path": "src/ui/playbook/demo-card.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/demo-card.tsx",
+      "sha256": "75d1f50232d6398fde1f7edaef0355f3b748635ac24fba8ce71e50f927a8d5e8",
+      "git_blob": "7b46c5ec781c85f1dceab4fe094f1fe181d4b187",
+      "bytes": 4229
+    },
+    {
+      "path": "src/ui/playbook/label-morph-demo.tsx",
+      "url": "https://github.com/ibelick/ui-skills/blob/79081abff1e887d55920f3debc11d78fea83a1b3/src/ui/playbook/label-morph-demo.tsx",
+      "sha256": "0dd9b69ee88bc621704285270353571691bbcf50cb97759b39ac54af9e999244",
+      "git_blob": "c9a6cbf2a21704e61790bc354cc3f228202b6fe0",
+      "bytes": 3069
+    }
+  ],
+  "license": {
+    "path": "licenses/ui-skills-MIT.txt",
+    "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "44f66f48f6f367a595653f23e774bd5fcde4ce67c3a10d181f35a10fe1869833",
+      "previous_sha256": "e3b56c1dfa95e65ac80b8b181716288762c476142a3c4a531cf2957f8232718f"
+    },
+    {
+      "path": "references/audit.md",
+      "sha256": "8d627308f55413cfc17ee0eeff1e84817784397fdeaac1b8727729b7b55913d4",
+      "previous_sha256": "0a7183e6a2de1b34f6b9840998469e367e48780fdf3f5c69f5aaa0b4674fb5f5"
+    },
+    {
+      "path": "references/tokens.md",
+      "sha256": "34489a9502fc4f4654d32b84b884fe9c1ee08bff21210f770074d201a676672f",
+      "previous_sha256": "1fe911f7f19e77be5518a4eb0b078a2d7e091365faf3ce5ef4e2e1cb9287a52e"
+    },
+    {
+      "path": "references/interaction-motion.md",
+      "sha256": "1ecd7737b5fa83bfbd0c9934385393282848987ccab481b39919fdbd2150c157"
+    }
+  ]
+}

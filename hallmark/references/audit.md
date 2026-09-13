@@ -22,3 +22,41 @@ available, report the limit and source-level findings without fabricating observ
 Do not infer who or what authored a page from its fonts, gradients or card layout.
 User-requested visual parity is not a defect. Recommend a separate, scoped redesign
 only when it would meet the brief better; an audit is not approval to perform it.
+
+## Prove claimed design-system drift
+
+Use this extra test only when calling a difference a design-system inconsistency,
+not as a gate on every visual suggestion. Begin at the selected route/layout and
+trace its actual compositions, variants, token aliases, configuration and inherited
+styles. A similar name, repeated literal or nearby file is not proof of ownership.
+Exclude disconnected demos, other products and unused legacy themes from that claim.
+
+Before reporting drift, establish:
+- **Governing contract:** a current accepted design rule for this property/surface,
+  or a direct contradiction in presentation within the same task. A preference,
+  stale proposal or undocumented exception is not automatically a binding rule.
+- **Applied path:** source evidence that the owner/value reaches the surface through
+  imports, props, resolved configuration or CSS inheritance. Call this source-traced,
+  not observed rendering. Use rendered evidence for perceived hierarchy or usability.
+- **Supported correction:** name the exact existing token, variant or owner when the
+  contract determines one. If the right choice depends on unknown product intent,
+  label that uncertainty rather than invent a mandatory correction.
+
+Reopen cited sources and try to disprove the claim: wrong scope, deliberate exception,
+stale evidence, different lifecycle/theme, or another finding with the same root cause.
+If no candidate inconsistency survives these checks, say no supported inconsistency
+was found in the inspected scope.
+Do not impose a finding quota. Multiple valid solutions can remain optional suggestions
+or a requested Variate comparison. Do not suppress observed functional/accessibility
+problems because they fail this narrower drift test; report them in their own category.
+
+## Selected handoff, only when requested
+
+A chat finding does not require a plan file. For a requested implementation handoff,
+make the selected change understandable without this conversation: target revision,
+exact owner/exemplar, evidence, what changes and stays, affected/inheriting consumers,
+possibly affected consumers still needing checks, and deliberate exclusions. Include
+actual project check commands when known, acceptance conditions and stop conditions
+for changed source or ambiguous authority. Unknown checks remain unknown, not invented.
+Reuse the existing plan format/location. This does not grant edits during an audit or
+require a second approval when the user already authorized the selected implementation.

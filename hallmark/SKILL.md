@@ -4,7 +4,8 @@ description: >
   Design distinctive, usable interfaces; audit visual design; redesign within an
   existing system; or study a supplied screenshot. Use when the user asks for UI
   design direction, a landing page or component redesign, an app/mobile usability
-  review, version-aware shadcn composition, localized UI usability, a visual-design audit,
+  review, microinteraction tuning, design-system drift or design-document review,
+  version-aware shadcn composition, localized UI usability, a visual-design audit,
   screenshot analysis, or Hallmark by name. Complements Variate when comparing
   alternatives. Not for routine nonvisual coding, security/SEO audits, conversion
   measurement, or automatic redesign of every UI edit. URL-only study asks for a
@@ -15,7 +16,7 @@ compatibility: >
   Prime-native Markdown guidance. No runtime package, provider key, installer,
   server or hook. Implementation and verification use the target project's tools.
 metadata:
-  version: 1.2.0-prime.1
+  version: 1.3.0-prime.1
   upstream: https://github.com/nutlope/hallmark
   upstream-commit: 13ac0ec7e148655948100b6396439e481361d690
 ---
@@ -91,7 +92,10 @@ Only when locales or language-dependent UI are in scope, use
 [UI localization](references/ui-localization.md) for message/format/layout coverage.
 Project engineering owns runtime implementation; seo-audit retains locale indexing.
 These references preserve the selected workflow; no new full design or audit pass.
-Read [tokens.md](references/tokens.md) only when token changes/exports are in scope.
+Only for an animated control, tooltip timing issue or named DOM-motion concern, use
+[interaction motion](references/interaction-motion.md); select its relevant section.
+No decorative motion, library or performance-trace capability is added by that route.
+Read [tokens.md](references/tokens.md) only when token changes/exports or a requested design document are in scope.
 No upstream site, external asset kit or companion provider is needed.
 
 ## Make useful work, not extra machinery

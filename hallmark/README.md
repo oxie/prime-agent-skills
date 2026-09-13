@@ -12,6 +12,11 @@ Read SKILL.md for the workflow and UPSTREAM.md for provenance and intentional ch
 - “Audit this page's visual design; give findings only.”
 - “Study this screenshot. Explain the hierarchy and what remains uncertain.”
 - “Use Hallmark and Variate for two structurally different options for this file.”
+- “Fix this sidebar’s reversal without changing its focus or open/close behavior.”
+- “Check whether this screen actually violates our design system.”
+
+Task-specific motion, audit and design-document additions have separate
+[source notices](UI_SKILLS_SOURCES.md). They do not require animation or a new schema.
 
 Hallmark chooses and explains the design. Variate handles the file comparison and
 acceptance when requested. Neither skill makes conversion or accessibility guarantees
