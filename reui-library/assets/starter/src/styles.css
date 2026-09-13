@@ -1,0 +1,188 @@
+/* ReUI Vega anatomy/density adapted at the pin in source-selection.json.
+   Import once. Wrap consumers in .reui-kit (data-theme="dark" is optional).
+   No Tailwind preflight, body reset, host stylesheet, remote font, or asset import.
+   Tailwind theme/utilities are explicit; base normalization below is wrapper-scoped. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme inline {
+  --color-reui-foreground: var(--reui-fg);
+  --color-reui-muted-foreground: var(--reui-muted);
+  --color-reui-primary: var(--reui-primary);
+  --color-reui-muted: var(--reui-soft);
+}
+
+.reui-kit {
+  --reui-bg: #f6f7f9;
+  --reui-card: #ffffff;
+  --reui-fg: #19232f;
+  --reui-muted: #566575;
+  --reui-line: #d7dfe6;
+  --reui-input-line: #79899a;
+  --reui-soft: #edf1f5;
+  --reui-primary: #244fa8;
+  --reui-primary-ink: #ffffff;
+  --reui-danger: #b22335;
+  --reui-success: #19623e;
+  --reui-success-bg: #e5f4eb;
+  --reui-focus: #3168d5;
+  color-scheme: light;
+  color: var(--reui-fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: start;
+}
+.reui-kit[data-theme="dark"] {
+  --reui-bg: #121820;
+  --reui-card: #1b242f;
+  --reui-fg: #f0f4fa;
+  --reui-muted: #b3c0d0;
+  --reui-line: #3b4b5d;
+  --reui-input-line: #8395a9;
+  --reui-soft: #293646;
+  --reui-primary: #a9c5ff;
+  --reui-primary-ink: #122c5c;
+  --reui-danger: #ffa6b1;
+  --reui-success: #a4e4be;
+  --reui-success-bg: #203f32;
+  --reui-focus: #a9c5ff;
+  color-scheme: dark;
+}
+.reui-kit *, .reui-kit *::before, .reui-kit *::after { box-sizing: border-box; }
+.reui-kit :where(h1, h2, p, dl, dd) { margin: 0; }
+.reui-kit :where(button, input) { font: inherit; }
+.reui-kit :where(button, input, a, [tabindex]):focus-visible {
+  outline: 3px solid var(--reui-focus);
+  outline-offset: 3px;
+}
+.reui-kit a { color: var(--reui-primary); }
+.reui-kit .cn-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: .4rem;
+  border: 1px solid transparent; border-radius: .45rem; background: transparent;
+  color: inherit; font-size: .875rem; font-weight: 600; line-height: 1.35;
+  cursor: pointer; white-space: normal; text-align: center; text-decoration: none;
+  transition: background-color 120ms, border-color 120ms;
+}
+.reui-kit .cn-button:disabled { cursor: not-allowed; opacity: .55; }
+.reui-kit .cn-button svg { width: 1rem; height: 1rem; flex-shrink: 0; }
+.reui-kit .cn-button-variant-default { background: var(--reui-primary); color: var(--reui-primary-ink); }
+.reui-kit .cn-button-variant-outline { background: var(--reui-card); border-color: var(--reui-input-line); }
+.reui-kit .cn-button-variant-secondary { background: var(--reui-soft); }
+.reui-kit .cn-button-variant-destructive { background: var(--reui-soft); color: var(--reui-danger); }
+.reui-kit .cn-button-variant-link { color: var(--reui-primary); text-decoration: underline; text-underline-offset: 3px; }
+.reui-kit .cn-button:hover:not(:disabled) { box-shadow: inset 0 0 0 999px color-mix(in srgb, currentColor 7%, transparent); }
+.reui-kit .cn-button-variant-ghost:hover:not(:disabled) { background: var(--reui-soft); }
+.reui-kit .cn-button-size-default { min-height: 2.5rem; padding: .5rem .9rem; }
+.reui-kit .cn-button-size-xs { min-height: 1.75rem; padding: .25rem .5rem; font-size: .75rem; }
+.reui-kit .cn-button-size-sm { min-height: 2rem; padding: .35rem .65rem; }
+.reui-kit .cn-button-size-lg { min-height: 2.75rem; padding: .65rem 1rem; }
+.reui-kit .cn-button-size-icon { width: 2.5rem; height: 2.5rem; }
+.reui-kit .cn-button-size-icon-xs { width: 1.75rem; height: 1.75rem; }
+.reui-kit .cn-button-size-icon-sm { width: 2rem; height: 2rem; }
+.reui-kit .cn-button-size-icon-lg { width: 2.75rem; height: 2.75rem; }
+.reui-kit .cn-card {
+  --card-spacing: 1.5rem;
+  display: flex; flex-direction: column; gap: var(--card-spacing); min-width: 0;
+  padding-block: var(--card-spacing); border: 1px solid var(--reui-line);
+  border-radius: .85rem; background: var(--reui-card); color: var(--reui-fg);
+  font-size: .875rem; box-shadow: 0 2px 4px #00000004;
+}
+.reui-kit .cn-card[data-size="sm"] { --card-spacing: 1.125rem; }
+.reui-kit .cn-card-header, .reui-kit .cn-card-content, .reui-kit .cn-card-footer { padding-inline: var(--card-spacing); min-width: 0; }
+.reui-kit .cn-card-header { display: grid; gap: .35rem; }
+.reui-kit .cn-card-title { font-size: 1rem; line-height: 1.4; font-weight: 650; overflow-wrap: anywhere; }
+.reui-kit .cn-card-description { color: var(--reui-muted); font-size: .875rem; }
+.reui-kit .cn-card-footer { padding-top: 1rem; border-top: 1px solid var(--reui-line); }
+.reui-kit .cn-field-group, .reui-kit .cn-field-set { display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+.reui-kit .cn-field-set { border: 0; padding: 0; margin: 0; }
+.reui-kit .cn-field-legend { margin-bottom: .75rem; font-weight: 600; }
+.reui-kit .cn-field { gap: .5rem; min-width: 0; }
+.reui-kit .cn-field-content { gap: .25rem; min-width: 0; }
+.reui-kit .cn-field-label, .reui-kit .cn-field-title { font-size: .875rem; font-weight: 600; line-height: 1.4; }
+.reui-kit .cn-field-description { color: var(--reui-muted); font-size: .8125rem; line-height: 1.5; }
+.reui-kit .cn-field-error { color: var(--reui-danger); font-size: .875rem; }
+.reui-kit .cn-input {
+  display: block; width: 100%; min-width: 0; min-height: 2.625rem;
+  padding: .5rem .65rem; border: 1px solid var(--reui-input-line); border-radius: .4rem;
+  background: var(--reui-card); color: var(--reui-fg); font-size: 1rem; line-height: 1.4;
+}
+.reui-kit .cn-input::placeholder { color: var(--reui-muted); opacity: 1; }
+.reui-kit .cn-input[aria-invalid="true"] { border-color: var(--reui-danger); }
+.reui-kit .cn-input:disabled { opacity: .65; cursor: not-allowed; }
+.reui-kit .cn-empty { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; padding: 2rem 1rem; text-align: center; border-radius: .6rem; }
+.reui-kit .cn-empty-header { display: flex; flex-direction: column; align-items: center; max-width: 24rem; gap: .5rem; }
+.reui-kit .cn-empty-title { font-size: 1.0625rem; font-weight: 600; }
+.reui-kit .cn-empty-description { color: var(--reui-muted); font-size: .875rem; line-height: 1.6; }
+.reui-kit .cn-empty-content { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.reui-kit .cn-empty-media { margin-bottom: .35rem; }
+.reui-kit .cn-empty-media-icon { width: 2.5rem; height: 2.5rem; border-radius: .65rem; background: var(--reui-soft); }
+.reui-kit .cn-empty-media-icon svg { width: 1.5rem; height: 1.5rem; }
+.reui-kit .cn-table-container { position: relative; width: 100%; overflow-x: auto; }
+.reui-kit .cn-table { width: 100%; border-collapse: collapse; caption-side: bottom; font-size: .875rem; }
+.reui-kit .cn-table-row { border-bottom: 1px solid var(--reui-line); }
+.reui-kit .cn-table-body .cn-table-row:last-child { border-bottom: 0; }
+.reui-kit .cn-table-body .cn-table-row:hover { background: var(--reui-soft); }
+.reui-kit .cn-table-head { height: 2.75rem; padding: .4rem .5rem; text-align: start; font-weight: 600; }
+.reui-kit .cn-table-head:first-child { padding-inline-start: 0; }
+.reui-kit .cn-table-cell { padding: .85rem .5rem; vertical-align: middle; white-space: normal; overflow-wrap: anywhere; }
+.reui-kit .cn-table-footer { background: var(--reui-soft); font-weight: 600; }
+.reui-kit .cn-table-caption { padding-top: .75rem; text-align: start; color: var(--reui-muted); font-size: .8125rem; }
+.reui-kit .reui-panel { min-width: 0; }
+.reui-kit .reui-panel-body { max-height: min(34rem, 70dvh); overflow: auto; padding-block: 3px; scroll-padding: 1rem; }
+.reui-kit .reui-panel-body:focus-visible { outline-offset: -4px; }
+.reui-kit .reui-panel-footer { width: 100%; color: var(--reui-muted); font-size: .75rem; }
+.reui-kit .reui-form-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.reui-kit .reui-save-status { color: var(--reui-success); font-size: .875rem; }
+.reui-kit .reui-profile-form > [role="alert"] { margin-top: .75rem; }
+.reui-kit .reui-table-tools { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: .75rem; margin-bottom: 1rem; }
+.reui-kit .reui-search-field { display: flex; flex-direction: column; gap: .4rem; flex: 1 1 14rem; max-width: 24rem; }
+.reui-kit .reui-table-count { color: var(--reui-muted); font-size: .75rem; padding-block: .6rem; }
+.reui-kit .reui-resource-name { font-weight: 550; }
+.reui-kit .reui-badge { display: inline-block; padding: .15rem .5rem; border-radius: 1rem; background: var(--reui-soft); color: var(--reui-muted); font-size: .75rem; white-space: nowrap; }
+.reui-kit .reui-badge[data-status="active"] { color: var(--reui-success); background: var(--reui-success-bg); }
+.reui-kit .reui-table-empty { height: 8rem; text-align: center; color: var(--reui-muted); }
+.reui-kit .reui-data-state { border: 1px dashed var(--reui-line); }
+
+/* Demo-only layout: importing the library does not style the consumer's page. */
+.reui-demo { min-height: 100dvh; background: var(--reui-bg); }
+.reui-demo .demo-topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem max(1.25rem, calc((100vw - 1160px) / 2)); background: var(--reui-card); border-bottom: 1px solid var(--reui-line); }
+.reui-demo .demo-wordmark { display: inline-flex; align-items: center; gap: .6rem; color: var(--reui-fg); text-decoration: none; font-size: 1rem; font-weight: 700; }
+.reui-demo .demo-wordmark-sub { color: var(--reui-muted); font-weight: 400; }
+.reui-demo .demo-mark { display: grid; place-items: center; width: 1.75rem; height: 1.75rem; background: var(--reui-primary); color: var(--reui-primary-ink); border-radius: .35rem; font-size: .875rem; }
+.reui-demo .demo-main { max-width: 1200px; padding: 2.5rem 1.25rem 1.5rem; margin-inline: auto; }
+.reui-demo .demo-heading { display: flex; justify-content: space-between; align-items: start; gap: 1.5rem; }
+.reui-demo .demo-eyebrow { font-size: .6875rem; font-weight: 650; letter-spacing: .09em; color: var(--reui-muted); }
+.reui-demo h1 { font-size: clamp(1.8rem, 4vw, 2.3rem); font-weight: 650; letter-spacing: -.04em; line-height: 1.2; margin-block: .6rem .8rem; }
+.reui-demo .demo-lead { max-width: 40rem; font-size: .9375rem; color: var(--reui-muted); }
+.reui-demo .demo-version { flex-shrink: 0; font-size: .6875rem; color: var(--reui-muted); border-top: 2px solid var(--reui-line); padding-top: .6rem; letter-spacing: .08em; }
+.reui-demo .demo-disclaimer { margin-block: 1.5rem; padding: .85rem 1rem; border: 1px solid var(--reui-line); border-inline-start: 3px solid var(--reui-primary); border-radius: .3rem; color: var(--reui-muted); font-size: .8125rem; background: var(--reui-card); }
+.reui-demo .demo-disclaimer strong { color: var(--reui-fg); font-weight: 650; }
+.reui-demo .demo-workspace { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.35fr); align-items: start; gap: 1.25rem; }
+.reui-demo .demo-stack { display: flex; flex-direction: column; gap: 1.25rem; min-width: 0; }
+.reui-demo .demo-section-intro { color: var(--reui-muted); font-size: .875rem; margin-bottom: 1.25rem; }
+.reui-demo .demo-profile-output { display: grid; gap: .8rem; }
+.reui-demo .demo-profile-output > div { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: .75rem; }
+.reui-demo .demo-profile-output dt { color: var(--reui-muted); font-size: .8125rem; }
+.reui-demo .demo-profile-output dd { overflow-wrap: anywhere; }
+.reui-demo .demo-state-picker { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1rem; }
+.reui-demo .demo-retry-note { font-size: .8125rem; color: var(--reui-muted); margin-top: .75rem; }
+.reui-demo .demo-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem; color: var(--reui-muted); font-size: .75rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--reui-line); }
+.reui-demo .reui-skip-link { position: absolute; top: .5rem; left: 1rem; z-index: 10; padding: .65rem; border-radius: .25rem; background: var(--reui-card); transform: translateY(-200%); }
+.reui-demo .reui-skip-link:focus { transform: translateY(0); }
+@media (max-width: 800px) {
+  .reui-demo .demo-workspace { grid-template-columns: minmax(0, 1fr); }
+  .reui-demo .demo-main { padding-top: 1.75rem; }
+}
+@media (max-width: 480px) {
+  .reui-kit .cn-card { --card-spacing: 1rem; }
+  .reui-kit .cn-button-size-sm { min-height: 2.5rem; }
+  .reui-demo .demo-version { display: none; }
+  .reui-demo .demo-topbar { padding-inline: 1rem; }
+  .reui-demo .demo-main { padding-inline: .85rem; }
+  .reui-kit .cn-table-cell { padding: .75rem .35rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reui-kit .cn-button { transition: none; }
+}

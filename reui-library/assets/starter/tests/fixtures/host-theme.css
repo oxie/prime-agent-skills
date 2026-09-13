@@ -1,0 +1,9 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@theme { --color-primary: #d95f02; --color-foreground: #ffffff; }
+@import "../../src/styles.css";
+/* Fixture layout does not override the background utilities being tested. */
+body { margin: 0; padding: 24px; font: 16px system-ui; background: white; color: #19232f; }
+main { max-width: 700px; }
+section { padding: 16px; margin-top: 16px; border: 1px solid #79899a; }
+button { display: block; width: 200px; height: 72px; margin-top: 16px; border: 0; }

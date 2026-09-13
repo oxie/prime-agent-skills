@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/keenthemes/reui",
+    "commit": "8a2c701eaf95729f238274d5ce2555a5a8bd23e7",
+    "license": "MIT",
+    "scope": "Free GitHub source only; parent supplies full ReUI and shadcn notices. No premium assets, upstream installers, MCP or host icon/media dependencies."
+  },
+  "source_identity": "Each upstream entry verified as SHA1(blob <byte-length>\\0<bytes>) against saved complete tree.json. Source SHA256 also recorded. This verifies identity, not correctness.",
+  "style_integration": {
+    "import": "src/styles.css once",
+    "wrapper": "reui-kit",
+    "dark": "data-theme=\"dark\" on the same reui-kit wrapper",
+    "tailwind": "Theme and utilities imports only; no preflight/reset. Selectors/base normalization scoped to wrapper. Do not import the upstream globals.css. Custom semantic utility names are reui-*; standard Tailwind theme/utilities are still global. Local unlayered CSS is not universally overridden by className utilities.",
+    "demo_marker": ".reui-demo"
+  },
+  "files": [
+    {
+      "local_file": "src/components/button.tsx",
+      "relationship": "adapted-source-body",
+      "sources": [
+        {
+          "path": "registry/bases/base/ui/button.tsx",
+          "git_blob_sha": "fa343173a022bb2dd18247daa2c34e6e7b37c38c",
+          "sha256": "97bfee456444f0495deee6a321933c24267477645b0bf4bfea67c3c62d425a12",
+          "bytes": 1538
+        }
+      ],
+      "changes": "Preserved Base UI wrapper body, cva variants/sizes, data-slot and class map. Replaced host cn alias with local utility; narrowed className to string (no callback-class API). Local CSS supplies selected Vega-derived styling, larger default hit area, no translate animation. Attribution header links the parent-owned THIRD_PARTY.md notice."
+    },
+    {
+      "local_file": "src/components/card.tsx",
+      "relationship": "adapted-source-body",
+      "sources": [
+        {
+          "path": "registry/bases/base/ui/card.tsx",
+          "git_blob_sha": "bed029b599af855dd76e1ec9f83d5d7d01be700a",
+          "sha256": "8b3ba229472f266d3c2e49e0feff6c59fb1842282d0842aae470675b0e926665",
+          "bytes": 2061
+        }
+      ],
+      "changes": "Preserved all seven native wrapper bodies, slots, size API and class composition. Replaced host cn alias. Local CSS subset supplies spacing/border/token styles. Compositions supply real h2 headings rather than claiming CardTitle div is a heading. Attribution header links the parent-owned THIRD_PARTY.md notice."
+    },
+    {
+      "local_file": "src/components/field.tsx",
+      "relationship": "adapted-source-body",
+      "sources": [
+        {
+          "path": "registry/bases/base/ui/field.tsx",
+          "git_blob_sha": "8ab9ef35e41a06c7fc1c29df7417155d60024562",
+          "sha256": "b965ae608453b047c11c71154df817764dbe5c5e38b5c6bb1a2c6a07c38edd68",
+          "bytes": 5367
+        }
+      ],
+      "changes": "Preserved nine field-family wrappers, orientation cva map and deduplicating FieldError body. Replaced host cn alias and Label dependency with native label; explicit React type imports; removed FieldSeparator/Separator dependency and unnamed role=group. Form owns unique IDs, label/help/error links, validation and async behavior. Attribution header links the parent-owned THIRD_PARTY.md notice. Parent integration namespaces custom semantic Tailwind mappings/utilities as reui-* to avoid taking over host foreground/primary/muted tokens; no generic semantic aliases remain. Parent regression fix filters absent/blank error messages before deduplication; no empty alert/list is emitted for a blank-only errors array."
+    },
+    {
+      "local_file": "src/components/input.tsx",
+      "relationship": "adapted-source-body",
+      "sources": [
+        {
+          "path": "registry/bases/base/ui/input.tsx",
+          "git_blob_sha": "d45a0b058ba9f59a11334ca6fcbf02a81506ad66",
+          "sha256": "8e6368337d35d3f2dcf54696d37ece8375d3065f9dc1ee80dc9e33fb1164f95f",
+          "bytes": 628
+        }
+      ],
+      "changes": "Preserved input wrapper/prop forwarding and slot/class anatomy. Replaced host cn alias; native input replaces Base UI Input to keep simple control contract/ref; explicit type remains native input props. Attribution header links the parent-owned THIRD_PARTY.md notice. Parent integration namespaces custom semantic Tailwind mappings/utilities as reui-* to avoid taking over host foreground/primary/muted tokens; no generic semantic aliases remain."
+    },
+    {
+      "local_file": "src/components/empty.tsx",
+      "relationship": "adapted-source-body",
+      "sources": [
+        {
+          "path": "registry/bases/base/ui/empty.tsx",
+          "git_blob_sha": "38ff021d6b1f5edd3cceadd6812aa27edbdc2885",
+          "sha256": "f022b2014448c212e3545d12e09a0fbe038ceebdb4dca848e9c3c9b1e1c640aa",
+          "bytes": 2306
+        }
+      ],
+      "changes": "Preserved six Empty wrappers, media variants and class/slot anatomy. Replaced host cn alias; imported React types explicitly; corrected EmptyDescription implementation from div to p to match declared props. Attribution header links the parent-owned THIRD_PARTY.md notice. Parent integration namespaces custom semantic Tailwind mappings/utilities as reui-* to avoid taking over host foreground/primary/muted tokens; no generic semantic aliases remain."
+    },
+    {
+      "local_file": "src/components/table.tsx",
+      "relationship": "adapted-source-body",
+      "sources": [
+        {
+          "path": "registry/bases/base/ui/table.tsx",
+          "git_blob_sha": "8167a7bc1a3eecbd0b649a01232694d7b9f1b851",
+          "sha256": "4e90502c6dd7478e2baa19a4010e52718c2fd958ead136d31b18eacd5b3cd1fb",
+          "bytes": 1995
+        }
+      ],
+      "changes": "Preserved all eight semantic table wrapper bodies, container and class/slot anatomy. Replaced host cn alias. Local styles allow content wrapping and preserve local horizontal overflow rather than globally clipping. Attribution header links the parent-owned THIRD_PARTY.md notice. Parent integration namespaces custom semantic Tailwind mappings/utilities as reui-* to avoid taking over host foreground/primary/muted tokens; no generic semantic aliases remain."
+    },
+    {
+      "local_file": "src/compositions/profile-form.tsx",
+      "relationship": "composition-adaptation",
+      "sources": [
+        {
+          "path": "registry-reui/bases/base/components/field/c-field-1.tsx",
+          "git_blob_sha": "44c9d3e0e49123e15c64931a605e979a6f754f17",
+          "sha256": "165d36370f94dbe1b3e79aa08bac0811b4e7a6a66326781fe0ef012b81eacf7b",
+          "bytes": 1795
+        }
+      ],
+      "changes": "Original working profile form adapting reviewed field stack anatomy. Removed username-availability fiction/input-group suffix, added controlled values, useId links, native email type, required trimmed name/email, input focus on invalid, locked async submit, save/rejection/retry states. No backend. Email validation uses nonempty trimmed value plus native type=email validity; no dot-required or custom email regex (valid local-domain addresses accepted)."
+    },
+    {
+      "local_file": "src/compositions/data-state.tsx",
+      "relationship": "composition-adaptation",
+      "sources": [
+        {
+          "path": "registry-reui/bases/base/components/empty/c-empty-10.tsx",
+          "git_blob_sha": "f637189b1c7ec7deb01e587690056a53ecfb9bac",
+          "sha256": "bbb96cd781a1b118769151866bde0d2a0a4b76c8522672594b3f19074c40379b",
+          "bytes": 1257
+        }
+      ],
+      "changes": "Adapted Empty/Header/Media/Title/Description/Content composition. Replaced host icon dependency with original decorative SVG. Truthful explicit loading/empty/error contracts, retry only when callback supplied. No external assets."
+    },
+    {
+      "local_file": "src/compositions/panel.tsx",
+      "relationship": "composition-adaptation",
+      "sources": [
+        {
+          "path": "registry-reui/bases/base/components/drawer/c-drawer-1.tsx",
+          "git_blob_sha": "4765e73c06f8b015232b96f64d61eb5a86bb93ea",
+          "sha256": "5842a3ebc34a474d3bf91fb6973c2ad0a01acdd9272d514a4434d686c5c46a9c",
+          "bytes": 1700
+        }
+      ],
+      "changes": "Anatomy reference only: named heading, bounded scrollable body, distinct footer. Original semantic section using adapted Card primitives, useId, no drawer dependency/portal/trap/modal claims. Body keyboard focusable."
+    },
+    {
+      "local_file": "src/styles.css",
+      "relationship": "selected-style-adaptation",
+      "sources": [
+        {
+          "path": "registry/styles/style-vega.css",
+          "git_blob_sha": "7b07854ab490e32c7de468756642b4016b2379c2",
+          "sha256": "7b0dc3a9d2245ab6ce3d17653fa74a07f0ce2541e480bef36d2600fe38f1281b",
+          "bytes": 74972
+        }
+      ],
+      "changes": "Selected Button/Card/Field/Input/Empty/Table sections informed scoped plain-CSS replacement. Preserved cn slot/variant anatomy and coordinated density, using local semantic palette and slightly larger default controls. No global source CSS imported. Tailwind theme/utilities only, no preflight. Original scoped demo layout, light/dark tokens, visible focus and reduced-motion override. Parent integration namespaces custom semantic Tailwind mappings/utilities as reui-* to avoid taking over host foreground/primary/muted tokens; no generic semantic aliases remain."
+    },
+    {
+      "local_file": "src/compositions/resource-table.tsx",
+      "relationship": "local-original",
+      "sources": [],
+      "changes": "Original client-side search/stable sort behavior composed from adapted native Table/Input/Button/FieldLabel primitives. Does not copy/import advanced grid."
+    },
+    {
+      "local_file": "src/components/utils.ts",
+      "relationship": "local-original",
+      "sources": [],
+      "changes": "Locally authored clsx + tailwind-merge composition utility replacing all host aliases."
+    },
+    {
+      "local_file": "src/index.ts",
+      "relationship": "local-original",
+      "sources": [],
+      "changes": "Local explicit public exports; no demo or CSS side effects."
+    },
+    {
+      "local_file": "demo/App.tsx",
+      "relationship": "local-original",
+      "sources": [],
+      "changes": "Original settings/resources workbench; parent-owned local profile state, explicit local-only disclaimer, manual state previews with real local retry callback, local theme toggle."
+    },
+    {
+      "local_file": "demo/main.tsx",
+      "relationship": "local-original",
+      "sources": [],
+      "changes": "Original Vite React mount; explicitly imports starter CSS."
+    },
+    {
+      "local_file": "index.html",
+      "relationship": "local-original",
+      "sources": [],
+      "changes": "Original minimal demo HTML; body margin reset is demo-only, not shipped in library CSS."
+    }
+  ],
+  "exports": [
+    "export { Button, buttonVariants } from \"./components/button\"",
+    "export { Card, CardHeader, CardFooter, CardTitle, CardAction, CardDescription, CardContent } from \"./components/card\"",
+    "export { Field, FieldLabel, FieldDescription, FieldError, FieldGroup, FieldLegend, FieldSet, FieldContent, FieldTitle } from \"./components/field\"",
+    "export { Input } from \"./components/input\"",
+    "export { Empty, EmptyHeader, EmptyTitle, EmptyDescription, EmptyContent, EmptyMedia } from \"./components/empty\"",
+    "export { Table, TableHeader, TableBody, TableFooter, TableHead, TableRow, TableCell, TableCaption } from \"./components/table\"",
+    "export { ProfileForm, type ProfileFormProps, type ProfileValue } from \"./compositions/profile-form\"",
+    "export { ResourceTable, type ResourceTableProps, type Resource } from \"./compositions/resource-table\"",
+    "export { DataState, type DataStateProps } from \"./compositions/data-state\"",
+    "export { Panel, type PanelProps } from \"./compositions/panel\""
+  ],
+  "excluded": [
+    "Advanced data grid/TanStack stack",
+    "filters",
+    "Gantt",
+    "stepper",
+    "file upload/gallery",
+    "drawer modal behavior",
+    "remote API/persistence",
+    "provider/MCP integrations",
+    "remote fonts/icons/images"
+  ],
+  "validation_note": "Source identity is not runtime correctness. Native and bounded rendered pilot evidence, exact limitations and reproduction are described in ../../VERIFICATION.md. Future adapted consumers require their own checks."
+}

@@ -22,6 +22,7 @@ Prime Agent discovers directories containing a valid `SKILL.md` recursively. Sta
 |---|---|---|
 | `archify` | Unified technical diagrams, 39 guided editorial layouts, local draw.io/Mermaid imports, static checks and exports. | [tt-a1i/archify](https://github.com/tt-a1i/archify) @ `c651940`, plus [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) @ `3b44633` (curated unified Prime adaptation) |
 | `hallmark` | Project-first visual design, app/mobile usability, scoped shadcn/localization, microinteractions, evidence-led audit and screenshot study; design guidance for Variate rounds. | [nutlope/hallmark](https://github.com/nutlope/hallmark) @ `13ac0ec` (curated Prime adaptation) |
+| `reui-library` | Actual reusable React UI source: six primitive families, four working compositions, isolated demo and behavior tests; customize with Hallmark. | [keenthemes/reui](https://github.com/keenthemes/reui) @ `8a2c701` (selected source-owned starter) |
 | `astro-website-builder` | Explicitly selected Astro content sites: shared layouts, collections/routes, selective islands and publication checks. | [Original Prime guidance and source record](astro-website-builder/UPSTREAM.md); inspired by reviewed Astro Builder |
 | `ponytail` | On-demand minimal implementation, evidence-based complexity review/audit and shortcut-comment reports, including JS semantic-refactor checks; no persistent mode or plugins. | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) @ `356918e` (selective Prime adaptation) |
 | `engineering-references` | On-demand reliability, data/response/mutation contracts, API authorization, SQL diagnosis, migration/release dependencies, operator-led telemetry and safe legacy changes; not global coding rules. | Three [agent-rules-books](https://github.com/ciembor/agent-rules-books) minis plus [selected corrected core](engineering-references/THIRD_PARTY.md) |
@@ -48,6 +49,7 @@ Selective Anti-slop material expands existing skills, not a separate always-on c
 | Task | Relevant skill |
 |---|---|
 | UI/app/mobile design or usability review | `hallmark` |
+| Ready-made React components to customize or redesign | `reui-library` |
 | Existing prose, documentation, reports, or a draft just written | `copy-editing` general-prose branch |
 | Focused code-comment review/cleanup | `copy-editing` comment branch; not a code correctness/security audit |
 | New marketing text | `copywriting`, with source-fidelity review |

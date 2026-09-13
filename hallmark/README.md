@@ -22,6 +22,11 @@ Hallmark chooses and explains the design. Variate handles the file comparison an
 acceptance when requested. Neither skill makes conversion or accessibility guarantees
 from a screenshot. Project builds and real browser checks remain necessary.
 
+For ready-made React implementation material, [ReUI Library](../reui-library/README.md)
+provides selected source-owned primitives and working compositions to adapt or redesign.
+It is a separate on-demand code library, not a required design system. Check the
+host stack and style boundaries; Hallmark still owns the visual brief.
+
 No runtime dependency, provider key, CLI installer, asset download, hook or server.
 URL-only study requests a screenshot; there is no unvalidated URL-fetch implementation.
 All required design guidance is local; no companion website/assets are needed.
