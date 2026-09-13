@@ -24,3 +24,8 @@ and own any preview process with a recorded handle. Shut down owned processes af
 A useful final reply is brief: changed files, chosen direction and tradeoff, actual
 checks, and limits. Do not claim conversion improvements without measurement. For
 screenshot study/audit, explicitly separate observed facts from inferred recommendations.
+
+When a substantial reference-led design used a [direction lock](reference-synthesis.md),
+compare its selected traits and media roles with the same rendered viewport/state
+evidence above. Distinguish drift, intentional adaptation and blocked evidence; do
+not add a second QA workflow or certify a placeholder as completed product evidence.

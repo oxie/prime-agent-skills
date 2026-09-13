@@ -27,3 +27,7 @@ trademarks. Use owned/approved assets in any later build; check actual license t
 If the user requests a portable `design.md`, record a concise observed/proposed system
 and provenance without copying protected content, sensitive URLs or reference commands.
 Read and preserve any existing design document before making scoped amendments.
+
+For a reference-led study, [reference synthesis](reference-synthesis.md) can make the
+proposed carry-over traits and media roles concrete. Keep observed evidence separate
+from inference. This remains diagnosis; it does not authorize a build or new assets.

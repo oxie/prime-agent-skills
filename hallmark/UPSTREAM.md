@@ -102,3 +102,12 @@ claim promotion/export loss, and conditional DOM-motion diagnosis. See
 Existing audit/token sections are extended, not replaced; other references and
 historical pilots are unchanged. No runtime, external schema/CLI, public crawler,
 new design authority or automatic motion pass is installed.
+
+## Selective Refero reference synthesis
+
+Adds optional dominant-reference synthesis, bounded secondary roles, media-slot
+preservation and target-linked existing QA. See [Refero source notices](REFERO_SOURCES.md)
+and refero-provenance.json. Existing SKILL.md, metadata, historical provenance and
+other reference bodies stay unchanged; current design/study/verification routes gain
+narrow links. No default-authority takeover, general craft bundle, service connection,
+new tool, asset collection or required extra approval is installed.

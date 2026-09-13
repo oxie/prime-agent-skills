@@ -1,0 +1,88 @@
+{
+  "repository": "https://github.com/referodesign/refero_skill",
+  "commit": "a9b54a3e62a6391f5f5ab7a20e4ddb32fb79a27d",
+  "version": "1.0.2",
+  "adaptation": "optional-reference-synthesis-media-and-target-qa",
+  "sources": [
+    {
+      "path": "skills/refero-design/SKILL.md",
+      "url": "https://github.com/referodesign/refero_skill/blob/a9b54a3e62a6391f5f5ab7a20e4ddb32fb79a27d/skills/refero-design/SKILL.md",
+      "sha256": "4a4a7a0b72a2fa0a454903debe6e872ada79a724cb452fe2113d266c2f0c6978",
+      "git_blob": "9ac6970ce8e02fbc90e9bda4c2750daf1462f45c",
+      "bytes": 21189
+    },
+    {
+      "path": "skills/refero-design/references/anti-ai-slop.md",
+      "url": "https://github.com/referodesign/refero_skill/blob/a9b54a3e62a6391f5f5ab7a20e4ddb32fb79a27d/skills/refero-design/references/anti-ai-slop.md",
+      "sha256": "433b5639b17ceec877ce827799c2c2e1ca3dbc05a00540e87db3ad95e78f914e",
+      "git_blob": "38c4e7c259d552580a039c71296d53ab338e9e91",
+      "bytes": 13318
+    },
+    {
+      "path": "skills/refero-design/references/visual-workflow.md",
+      "url": "https://github.com/referodesign/refero_skill/blob/a9b54a3e62a6391f5f5ab7a20e4ddb32fb79a27d/skills/refero-design/references/visual-workflow.md",
+      "sha256": "0647bfdfeb503649263a81f3dbc23ffd6f257a5d41ca5fb8921ed9bf1fdfde5a",
+      "git_blob": "18fa7c2d96ab2f5e10482e8a03012150df257fce",
+      "bytes": 4798
+    },
+    {
+      "path": "skills/refero-design/references/example-workflow.md",
+      "url": "https://github.com/referodesign/refero_skill/blob/a9b54a3e62a6391f5f5ab7a20e4ddb32fb79a27d/skills/refero-design/references/example-workflow.md",
+      "sha256": "c0b4aefdbab428bfbcc53b0185ff08ad9c0827dbb038ea12a80ec8b12c237a1a",
+      "git_blob": "994b045482b28fd5e144e99da392d4fd3b2f3759",
+      "bytes": 10517
+    }
+  ],
+  "license": {
+    "path": "licenses/refero-MIT.txt",
+    "sha256": "7b5d57a0e210289fa900a0e2ab0513442e439e9d20b96f0cf5cba0e1b31b665e",
+    "source_git_blob": "2c7d699d6123a4dc9ea5ec7dfbc2939963e6ef01"
+  },
+  "files": [
+    {
+      "path": "references/design.md",
+      "sha256": "8b3de166f6f9dc63383a52cda92c4aeb31c8e3f7571ee22e98722d0835afa79d",
+      "bytes": 3131,
+      "previous_sha256": "ed23791d468309a6c7dd6ff0e2f25d7834b2fada1a7580e8b149ed3110e29f5f"
+    },
+    {
+      "path": "references/study.md",
+      "sha256": "3b582349c3f0ab55de70c1943ad8a9d46a66dc0d3c924f78723f1d2dc2a1d593",
+      "bytes": 2319,
+      "previous_sha256": "af1e28377de3fc5a4aeffb141447bdd37075b25d8a24f0b9db77dbd3169075c8"
+    },
+    {
+      "path": "references/verification.md",
+      "sha256": "1e409f733fdedc39757d5ffe635e464e76fd60cbb8e9b1c52cfd3aac7b227762",
+      "bytes": 2297,
+      "previous_sha256": "82f0c03f62931615a2690ba7607d1d54897d311191debaabb57f622caf1b7309"
+    },
+    {
+      "path": "README.md",
+      "sha256": "008fce62ac505d58c0bcdbfb77decc0c33102d1fd1cbc3ba89c59ff6c81925ad",
+      "bytes": 3394,
+      "previous_sha256": "0831dbf426f6e0f18b27550533512ccab471510e483fbb660076adb091d9257d"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "e36440e0a1baee2584112e9cb285d506410bbfa9ef524248eae9e21f1d93b6f6",
+      "bytes": 6991,
+      "previous_sha256": "6f90981bce4886619396239ef2e590f225793cce86441e50f609c3b24452b9b7"
+    },
+    {
+      "path": "references/reference-synthesis.md",
+      "sha256": "dc29eb2e94b90ae37a45b401dee94e6808e2f1a162201939f1e1f8fbc7a42c16",
+      "bytes": 7141
+    },
+    {
+      "path": "licenses/refero-MIT.txt",
+      "sha256": "7b5d57a0e210289fa900a0e2ab0513442e439e9d20b96f0cf5cba0e1b31b665e",
+      "bytes": 1063
+    },
+    {
+      "path": "REFERO_SOURCES.md",
+      "sha256": "08338539e64919609f8a027b4470cc53929646a9394dfe56638bf13b3c779a70",
+      "bytes": 3281
+    }
+  ]
+}

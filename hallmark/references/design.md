@@ -46,3 +46,10 @@ actual messaging rewrite, load the installed copywriting skill rather than inven
 claims. Use the CRO skill for conversion hypotheses and analytics/ab-testing for
 measurement. Hallmark's visual judgement is not conversion evidence. Load only the
 skill needed for the requested subtask; do not fan out across the marketing catalogue.
+
+## Reference-led direction, when relevant
+
+For a requested new direction or reference-led redesign, use
+[reference synthesis](reference-synthesis.md) to preserve the primary traits, bound
+secondary borrowing and specify media roles. Keep a brief task-local lock, not a new
+mandatory research or approval stage. Compare those commitments during existing QA.

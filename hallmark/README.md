@@ -50,3 +50,12 @@ For the optional UX reference, [original acceptance cases](dev/fixtures/ux-revie
 cover memory, recovery, valid density, a pinned editorial brief and strict read-only
 review. These need manual or fresh-agent evaluation. The Node tests validate metadata,
 links, source notices and fixture integrity, not UX effectiveness or model behavior.
+
+## Reference-led design
+
+For a new direction or reference-led redesign, the optional
+[reference-synthesis guide](references/reference-synthesis.md) adds a dominant direction,
+bounded secondary borrowing, media-role/asset-slot guidance and target-linked QA.
+Existing task matching reaches it through design, study and verification; no new skill
+name, account, paid MCP connection or mandatory research workflow. See
+[Refero source notices](REFERO_SOURCES.md) for rights and deliberate corrections.
