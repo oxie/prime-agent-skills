@@ -4,7 +4,7 @@ description: >
   Shape cinematic websites through film-to-web art direction: framing, typography,
   light, material, narrative pacing and optional motion. Use when the user asks for
   cinematic UI, a film-inspired website, director- or genre-inspired art direction,
-  a cinematic portfolio, cultural/editorial site, campaign or immersive landing
+  an artistic or cinematic portfolio, cultural/editorial site, campaign or immersive landing
   page, or Cinematic UI by name. Also supports a cinematic component within an
   existing site. Not for ordinary noncinematic UI edits, generic app/backend work,
   film/video production, technical diagrams, or an automatic whole-site redesign.
@@ -14,7 +14,7 @@ compatibility: >
   CDN or dependency required. Use the target project's tools for implementation
   and checks; browsing and previews depend on available, authorized tools.
 metadata:
-  version: 1.0.0-prime.1
+  version: 1.1.0-prime.1
   upstream: https://github.com/akseolabs-seo/cinematic-ui
   upstream-commit: 24a66c1d6140c21ec0d0e4d9ef663a97264003de
   adaptation: prime-agent-native
@@ -97,6 +97,8 @@ A useful compact decision note (not a mandatory file):
 | Daylight, shadow, practical light, color and tactile surfaces | [light and material](references/light-material.md) |
 | Content rhythm, montage, continuity and bounded optional animation | [pacing and motion](references/pacing-motion.md) |
 | Concrete quiet and expressive website directions | [worked directions](references/worked-directions.md) |
+| Buildable scenes, asset-led stories, controlled before/after and creative self-checks | [production scenes](references/production-scenes.md) |
+| Optional reusable static mesh, grain and ledger CSS/SVG | [quiet surfaces](references/quiet-surfaces.md) |
 | Semantics, motion lifecycle, rendering/failure and measured checks | [production checks](references/production-checks.md) |
 
 ## Shared browser evidence

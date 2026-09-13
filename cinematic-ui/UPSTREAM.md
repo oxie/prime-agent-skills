@@ -68,3 +68,11 @@ or code claim. The rewritten craft entries are design guidance, not benchmarked
 components. The fixture's checks concern that fixture under documented conditions;
 they do not establish general accessibility compliance, production backend readiness,
 performance, model reliability, conversion uplift or faithful film reproduction.
+
+## Later selective Auteur addition
+
+Version `1.1.0-prime.1` adds optional producible scene/asset guidance and actual
+static CSS/SVG mesh, grain and ledger recipes. The earlier source map and notice
+above remain historical. [AUTEUR_SOURCES.md](AUTEUR_SOURCES.md) identifies the
+separate source pin, retained license, rewritten methods and local implementation.
+The advanced video engine and upstream browser/sourcing tools are not included.

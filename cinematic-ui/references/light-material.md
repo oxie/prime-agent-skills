@@ -124,3 +124,10 @@ Sources: [background light/material entries](https://github.com/akseolabs-seo/ci
 [texture ideas](https://github.com/akseolabs-seo/cinematic-ui/blob/24a66c1d6140c21ec0d0e4d9ef663a97264003de/references/data/textures.md#L1-L36),
 [light leak / vignette](https://github.com/akseolabs-seo/cinematic-ui/blob/24a66c1d6140c21ec0d0e4d9ef663a97264003de/references/data/visual-elements.md#L491-L541).
 Treatment descriptions are rewritten, not a validated palette or optics catalogue.
+
+## Optional static implementation recipes
+
+[Quiet surfaces](quiet-surfaces.md) supplies actual local CSS/SVG mesh, grain and
+ledger recipes with a standalone fixture. Choose a useful treatment or keep a
+solid fill. Adapt the explicit palette to existing tokens; the recipes are not a
+mandatory theme, calibrated material model or performance guarantee.

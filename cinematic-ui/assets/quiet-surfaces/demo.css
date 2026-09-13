@@ -1,0 +1,190 @@
+/* Standalone fixture only. Do not copy this stylesheet as a host library. */
+body {
+  margin: 0;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: #ffffff;
+  color: #222222;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.qs-demo-header,
+.qs-demo-main,
+.qs-demo-footer {
+  max-width: 76rem;
+  margin-inline: auto;
+}
+
+.qs-demo-header h1 {
+  max-width: 24ch;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  line-height: 1.12;
+}
+
+.qs-demo-header,
+.qs-demo-main,
+.qs-demo-footer {
+  overflow-wrap: anywhere;
+}
+
+.qs-demo-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-block: 1.5rem;
+}
+
+.qs-demo-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.qs-demo-card {
+  min-width: 0;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  border-radius: 0.75rem;
+}
+
+.qs-demo-card h2 {
+  margin-block: 0.25rem 1rem;
+  font-family: Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+
+.qs-demo-card p {
+  max-width: 58ch;
+}
+
+.qs-demo-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.qs-demo-panel {
+  min-width: 0;
+  margin: 1.5rem 0 0;
+  padding: 1rem;
+  color: #20382a;
+  background: #ffffff;
+  border: 1px solid #52685a;
+  border-radius: 0.35rem;
+}
+
+.qs-demo-panel legend {
+  padding: 0.15rem 0.5rem;
+  color: #20382a;
+  background: #ffffff;
+  border: 1px solid #52685a;
+}
+
+.qs-demo-card--dark .qs-demo-panel,
+.qs-demo-card--dark .qs-demo-panel legend {
+  color: #eef3ee;
+  background: #102017;
+  border-color: #a3b8aa;
+}
+
+.qs-demo-panel label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.qs-demo-panel input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: 0.6rem;
+  border: 2px solid #52685a;
+  border-radius: 0.2rem;
+  font: inherit;
+  color: #20382a;
+  background: #ffffff;
+}
+
+.qs-demo-card--dark .qs-demo-panel input {
+  color: #eef3ee;
+  background: #102017;
+  border-color: #a3b8aa;
+  color-scheme: dark;
+}
+
+.qs-demo-header a,
+.qs-demo-main a,
+.qs-demo-footer a {
+  color: #17462d;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.qs-demo-card--dark a {
+  color: #d3eadb;
+}
+
+.qs-demo-header :focus-visible,
+.qs-demo-main :focus-visible,
+.qs-demo-footer :focus-visible {
+  outline: 3px solid #17462d;
+  outline-offset: 4px;
+}
+
+.qs-demo-card--dark :focus-visible {
+  outline-color: #d3eadb;
+}
+
+.qs-demo-neutral {
+  margin-block: 2rem;
+  padding: 1rem;
+  color: #222222;
+  background: #ffffff;
+  border: 1px solid #555555;
+}
+
+.qs-demo-neutral .qs-demo-panel,
+.qs-demo-neutral .qs-demo-panel legend,
+.qs-demo-neutral .qs-demo-panel input {
+  color: #222222;
+  background: #ffffff;
+  border-color: #555555;
+}
+
+.qs-demo-footer {
+  margin-top: 2rem;
+}
+
+@media (min-width: 52em) {
+  .qs-demo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (forced-colors: active) {
+  .qs-demo-panel,
+  .qs-demo-panel legend,
+  .qs-demo-panel input,
+  .qs-demo-card--dark .qs-demo-panel,
+  .qs-demo-card--dark .qs-demo-panel legend,
+  .qs-demo-card--dark .qs-demo-panel input,
+  .qs-demo-neutral,
+  .qs-demo-neutral .qs-demo-panel,
+  .qs-demo-neutral .qs-demo-panel legend,
+  .qs-demo-neutral .qs-demo-panel input {
+    color: CanvasText;
+    background: Canvas;
+    border-color: CanvasText;
+  }
+
+  .qs-demo-header a,
+  .qs-demo-main a,
+  .qs-demo-footer a {
+    color: LinkText;
+  }
+
+  .qs-demo-header :focus-visible,
+  .qs-demo-main :focus-visible,
+  .qs-demo-footer :focus-visible {
+    outline-color: Highlight;
+  }
+}

@@ -51,3 +51,12 @@ Source adaptation: [reference decomposition](https://github.com/akseolabs-seo/ci
 and [one idea / restraint](https://github.com/akseolabs-seo/cinematic-ui/blob/24a66c1d6140c21ec0d0e4d9ef663a97264003de/references/premium-calibration.md#L18-L35).
 Routes and local IDs are authored for this adaptation. Source platform risk tiers,
 shared-system holdback, director pools and novelty rules are not carried forward.
+
+## From a direction to a producible scene
+
+When a mood needs a shot, asset or narrative decision, use
+[production scenes](production-scenes.md). It adds FEEL + LEARN, asset anatomy,
+controlled A → B continuity and a category/anti-category/house-style self-check.
+Use these questions only where they resolve a real creative choice; keep useful
+conventions and existing Hallmark reference decisions. No new document, reference
+search, novelty quota or separate review round is required.

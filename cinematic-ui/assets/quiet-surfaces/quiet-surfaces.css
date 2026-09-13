@@ -1,0 +1,87 @@
+/* Quiet surfaces: optional static recipes, not a page theme.
+ * Adapted from Auteur 1.3.1 ambient-backgrounds; see ../../AUTEUR_SOURCES.md.
+ * Copy this file and grain.svg together. Do not import demo.css into a host site.
+ */
+.cui-quiet {
+  position: relative;
+  isolation: isolate;
+  color: #20382a;
+  background-color: #f3f5f2;
+  border: 1px solid #bdc8bf;
+}
+
+/* This local stacking context keeps the decoration above its opaque base and
+ * below ordinary content. It is not a CSS reset or protection from host rules.
+ * Use a fresh wrapper when the host component already owns ::before.
+ */
+.cui-quiet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Choose one recipe per wrapper. Broad same-hue fields, no luminous focal orb. */
+.cui-quiet--mesh::before {
+  background-image:
+    radial-gradient(ellipse 90% 85% at 12% 6%, rgb(48 83 62 / 7%), transparent 75%),
+    radial-gradient(ellipse 80% 90% at 94% 96%, rgb(48 83 62 / 5%), transparent 75%);
+}
+
+/* Small fixed local tile of authored dots; no SVG filter or runtime noise. */
+.cui-quiet--grain::before {
+  background-image: url("./grain.svg");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  opacity: 0.055;
+}
+
+/* Open horizontal rhythm: hairlines at 40px, a stronger rule every fifth line.
+ * This is decoration, not table structure, measurement or a data grid.
+ */
+.cui-quiet--ledger::before {
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 39px, rgb(48 83 62 / 4%) 39px 40px),
+    repeating-linear-gradient(0deg, transparent 0 199px, rgb(48 83 62 / 5%) 199px 200px);
+}
+
+/* Explicit dark preset; it does not change the page or follow OS theme. */
+.cui-quiet.cui-quiet--dark {
+  color: #eef3ee;
+  background-color: #182c20;
+  border-color: #617567;
+}
+
+.cui-quiet--dark.cui-quiet--mesh::before {
+  background-image:
+    radial-gradient(ellipse 90% 85% at 12% 6%, rgb(191 218 200 / 7%), transparent 75%),
+    radial-gradient(ellipse 80% 90% at 94% 96%, rgb(191 218 200 / 5%), transparent 75%);
+}
+
+.cui-quiet--dark.cui-quiet--grain::before {
+  opacity: 0.085;
+}
+
+.cui-quiet--dark.cui-quiet--ledger::before {
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 39px, rgb(191 218 200 / 4%) 39px 40px),
+    repeating-linear-gradient(0deg, transparent 0 199px, rgb(191 218 200 / 5%) 199px 200px);
+}
+
+/* Static by construction, including with reduced motion enabled or changed.
+ * Forced colors removes decoration, not content or the surface boundary.
+ */
+@media (forced-colors: active) {
+  .cui-quiet,
+  .cui-quiet.cui-quiet--dark {
+    color: CanvasText;
+    background-color: Canvas;
+    border-color: CanvasText;
+  }
+
+  .cui-quiet::before {
+    display: none;
+  }
+}
