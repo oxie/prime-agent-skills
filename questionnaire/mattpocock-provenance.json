@@ -1,0 +1,43 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "3cca18b368ae95cdbdebbff572ccafa662551015",
+  "license": "LICENSE",
+  "license_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+  "adaptation": "Selected corrected Prime material; source identities do not prove model behavior. No upstream runtime or automatic operational authority.",
+  "sources": [
+    {
+      "path": "skills/productivity/to-questionnaire/SKILL.md",
+      "git_blob_sha": "dadd0c00d6a350acaa15bb9ca1b96b20ead684ca",
+      "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+      "bytes": 2904,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/productivity/to-questionnaire/SKILL.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "bytes": 1068
+    },
+    {
+      "path": "README.md",
+      "sha256": "2660deecc1ad90cfec64703b92499f7aafd66e0dfbf7656e9d7384531558a714",
+      "bytes": 704
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "86a4000fa1a072c6e0c64c854f964c3d4a238d38f97442f0945ca62e9193e7cd",
+      "bytes": 4933
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "162c4fd87b2e5e72b54ed17ab3a8885b0fb277fa74e6cd3ed1308e8a405a400d",
+      "bytes": 1581
+    },
+    {
+      "path": "references/draft-guide.md",
+      "sha256": "50a02b8dd8c2bd7da184ce10ce85b312d752846042a5aa70da8a095ea20621ae",
+      "bytes": 3521
+    }
+  ]
+}

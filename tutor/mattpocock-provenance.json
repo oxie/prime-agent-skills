@@ -1,0 +1,71 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "3cca18b368ae95cdbdebbff572ccafa662551015",
+  "license": "LICENSE",
+  "license_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+  "adaptation": "Selected corrected Prime material; source identities do not prove model behavior. No upstream runtime or automatic operational authority.",
+  "sources": [
+    {
+      "path": "skills/productivity/teach/SKILL.md",
+      "git_blob_sha": "c679eeccd48ca720c8196e5d9a9e58223abf213b",
+      "sha256": "a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43",
+      "bytes": 9506,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/productivity/teach/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/teach/GLOSSARY-FORMAT.md",
+      "git_blob_sha": "fdd7e366ad9760588b28981e42b3d3b561e56aca",
+      "sha256": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+      "bytes": 2122,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/productivity/teach/GLOSSARY-FORMAT.md"
+    },
+    {
+      "path": "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
+      "git_blob_sha": "953c61422776b47612c3c945920358ad7b5daee7",
+      "sha256": "701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
+      "bytes": 2747,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/productivity/teach/LEARNING-RECORD-FORMAT.md"
+    },
+    {
+      "path": "skills/productivity/teach/MISSION-FORMAT.md",
+      "git_blob_sha": "45250bb1bad70988bf381625931df64645e10246",
+      "sha256": "8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
+      "bytes": 1540,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/productivity/teach/MISSION-FORMAT.md"
+    },
+    {
+      "path": "skills/productivity/teach/RESOURCES-FORMAT.md",
+      "git_blob_sha": "18b588c8b6f96a50ae2352f264928c643d2782e4",
+      "sha256": "e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec",
+      "bytes": 1924,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/productivity/teach/RESOURCES-FORMAT.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "bytes": 1068
+    },
+    {
+      "path": "README.md",
+      "sha256": "eb1f4d5383e4755d13bef9d96943695334b89520957906b3bcdfda8a45747d11",
+      "bytes": 843
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "31947e98bb39abf40fc79a49da49cbd902e5ca0f94a799e3d0721592ea9944b7",
+      "bytes": 5289
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "f2ee1f9c4c235c2b60ce79dbeed6196557b4cf7cef7b129b949a42671538e674",
+      "bytes": 2285
+    },
+    {
+      "path": "references/lesson-record.md",
+      "sha256": "47d9d7ea0ef1c7a02ca26c1c448c7bdae5e2651baecdcf1c42751d942540ed97",
+      "bytes": 3796
+    }
+  ]
+}

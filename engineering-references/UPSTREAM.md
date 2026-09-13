@@ -58,3 +58,10 @@ need undoing. Other sessions pick up discovery changes on their next reload/star
 Adds two narrowly routed references, with distinct [source and license notices](NEXT_SOURCES.md)
 and next-provenance.json. Existing reference content and historical evidence remain
 unchanged. No runtime, installer, provider, framework project or Astro skill is installed.
+
+## Selected Matt Pocock additions (1.4.0-prime.1)
+
+Adds four corrected on-demand references for debugging, test design, interface
+comparison and domain terminology. [Source notices](MATTPOCOCK_SOURCES.md) record
+the exact selected sources and MIT terms. No upstream setup or workflow runtime
+is installed. Existing references and historical provenance remain unchanged.

@@ -27,3 +27,9 @@ Inspired by the reviewed progressive-context methodology in
 https://github.com/volcengine/OpenViking (reviewed commit
 2eb36eabbd6b589bc14e89f462d852b887dc62bf); no upstream OpenViking code or text copied.
 This is a manual convention, not a retrieval engine or measured savings claim.
+
+## Prime work-slicing reference
+
+Version 2.1.0-prime.2 adds an on-demand planning reference adapted from selected
+Matt Pocock sources. Existing scripts, templates and acceptance mechanisms are
+unchanged. See [MATTPOCOCK_SOURCES.md](MATTPOCOCK_SOURCES.md).

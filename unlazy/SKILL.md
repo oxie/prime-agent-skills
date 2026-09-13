@@ -3,7 +3,7 @@ name: unlazy
 description: Guides completion discipline for substantial agent work by writing acceptance gates before execution, decomposing work with the Depth Tree, running approved checks, and re-verifying evidence before reporting. Use when an agent faces a long or multi-part task, work that has returned half-done, an exhaustive audit or build, parallel leaves or pipelines, or explicit triggers such as /unlazy, $unlazy, "tree N", "gates", and "do not stop until it is done".
 license: MIT
 metadata:
-  version: 2.1.0-prime.1
+  version: 2.1.0-prime.2
   upstream: Leonxlnx/unlazy@16671491f6679ad9378f52604d3bc2415b4120c7
 ---
 
@@ -77,6 +77,10 @@ Do not silently remove an impossible gate. Add `ABANDON: <id> <non-empty reason>
 - **Parallel:** Before dispatching concurrent leaves or pipelines, also read the local `references/parallel.md`. Reconcile normalized set equality between each PLAN `Owns` planning mirror and the leaf ledger's command-time `OWNS:` authority before marking it `READY` and again before claiming it, then use a dispatch launch wave. Release the exact leaf lease after parent verification. Release the whole scope only after every leaf is settled and final scope verification has run. Treat scopes, leases, and wave state as coordination, never as filesystem isolation or a security boundary.
 
 Keep check execution sequential by default. Use `--jobs <N>` only for independent runnable gates when deterministic parallel verification saves wall-clock time. Continue printing and recording results in gate order. `--jobs` never creates agent sessions; native agent concurrency follows the dispatch contract.
+
+For independently verifiable slices, dependency-ready decisions or wide refactors,
+read [work slicing](references/work-slicing.md). It extends the existing plan and
+verification contracts; no separate scheduler or tracker setup is required.
 
 ## Build the Depth Tree
 

@@ -1,0 +1,123 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "3cca18b368ae95cdbdebbff572ccafa662551015",
+  "license": "licenses/mattpocock-MIT.txt",
+  "license_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+  "adaptation": "Selected corrected Prime material; source identities do not prove model behavior. No upstream runtime or automatic operational authority.",
+  "sources": [
+    {
+      "path": "skills/engineering/codebase-design/DEEPENING.md",
+      "git_blob_sha": "cd94075cfd754d147555c5d747a16431ed4c7dd8",
+      "sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+      "bytes": 2553,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/codebase-design/DEEPENING.md"
+    },
+    {
+      "path": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+      "git_blob_sha": "7edc861a31b1b219b933af18079f66b564c5de67",
+      "sha256": "8e740bf98446dbd4dfdc132ac4346d9a7eedaf93de6a495889171cf7f99f16bd",
+      "bytes": 2664,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/codebase-design/DESIGN-IT-TWICE.md"
+    },
+    {
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "git_blob_sha": "3f63c8146dd2604b419c929e9876b90c30d410e9",
+      "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+      "bytes": 6446,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/codebase-design/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "git_blob_sha": "061c25a524acaa93d4534e9e08a793c0a5fe45fd",
+      "sha256": "77f3cf31bc99b2f49af943222526531fcc9fc41d047626d3640e875e85af3e84",
+      "bytes": 8529,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/diagnosing-bugs/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "git_blob_sha": "d7e61f30a9fd8ca70d9ee68f019c2a9ebf2d13f7",
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+      "bytes": 2733,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/domain-modeling/ADR-FORMAT.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/CONTEXT-FORMAT.md",
+      "git_blob_sha": "79bbb32f6fda55758b377c980f72a6cb2b8c670e",
+      "sha256": "17ab16ce783e4d2801ee52fd9acdf550cbf44de65ae76797a93943bbedf22a13",
+      "bytes": 2290,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/domain-modeling/CONTEXT-FORMAT.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "git_blob_sha": "9b97707e19ef1f590aada356f2b3f6bb881f91be",
+      "sha256": "327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e",
+      "bytes": 3331,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/domain-modeling/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/tdd/SKILL.md",
+      "git_blob_sha": "8fc086710806190ee7c4baa32089cb877a75736a",
+      "sha256": "cb01f66bebfaa25fa1f88e6b7e769cd9fd9f35b1120b8563749820738814c927",
+      "bytes": 3549,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/tdd/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/tdd/mocking.md",
+      "git_blob_sha": "71cbfee674d93244ce81d1830b930ca9a69200bd",
+      "sha256": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+      "bytes": 1481,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/tdd/mocking.md"
+    },
+    {
+      "path": "skills/engineering/tdd/tests.md",
+      "git_blob_sha": "7ab86479f925a1f9e8ba680af33cb3b12e015381",
+      "sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+      "bytes": 2214,
+      "url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/tdd/tests.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "MATTPOCOCK_SOURCES.md",
+      "sha256": "19f1d5f0cd9c1b9e6d54309225778e39cd4dc516f47976b64cbfe3bff4a79405",
+      "bytes": 3189
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "2a30a68ebb43812832b6fd425df706e52678a704a6e45f19f4da58dc293bba51",
+      "bytes": 7174,
+      "previous_sha256": "be268c2a131ec6486feae233bd0fdd8d6dfd7ae51cfea5aa34ab9ed64ae9cbe1"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "b043e81c57592832f534ca7af7de07c456b6b6fa24f704483b25a33c302005dc",
+      "bytes": 3578,
+      "previous_sha256": "0e68bd4b67bac21fe18d5d66ba6154e9cce2104510b967b39794b46c153b8543"
+    },
+    {
+      "path": "licenses/mattpocock-MIT.txt",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "bytes": 1068
+    },
+    {
+      "path": "references/debugging.md",
+      "sha256": "27c4d5c5ee9fc49fafa5bc407434a2172dd2d5bd3ba9aa837ebd082a39260e7a",
+      "bytes": 5521
+    },
+    {
+      "path": "references/domain-modeling.md",
+      "sha256": "c44e31a2986803b789176b67465e5031c4846cfc2eacb8e8886b6f602d467caf",
+      "bytes": 5762
+    },
+    {
+      "path": "references/interface-design.md",
+      "sha256": "229ec7703abc5f2cb878a8112c80f17bd87068c4ba3268f5176393d35bb96a8b",
+      "bytes": 6004
+    },
+    {
+      "path": "references/test-design.md",
+      "sha256": "f57f608c93389fe3a65cb71dc637fbaacf2ddd78788984ded0adba6ff814c0e9",
+      "bytes": 5851
+    }
+  ]
+}

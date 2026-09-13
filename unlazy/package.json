@@ -1,6 +1,6 @@
 {
   "name": "unlazy-skill",
-  "version": "2.1.0-prime.1",
+  "version": "2.1.0-prime.2",
   "private": true,
   "description": "Manual acceptance gates and native Prime workflow guidance",
   "type": "module",

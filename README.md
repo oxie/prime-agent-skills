@@ -25,7 +25,10 @@ Prime Agent discovers directories containing a valid `SKILL.md` recursively. Sta
 | `reui-library` | Actual reusable React UI source: six primitive families, four working compositions, isolated demo and behavior tests; customize with Hallmark. | [keenthemes/reui](https://github.com/keenthemes/reui) @ `8a2c701` (selected source-owned starter) |
 | `astro-website-builder` | Explicitly selected Astro content sites: shared layouts, collections/routes, selective islands and publication checks. | [Original Prime guidance and source record](astro-website-builder/UPSTREAM.md); inspired by reviewed Astro Builder |
 | `ponytail` | On-demand minimal implementation, evidence-based complexity review/audit and shortcut-comment reports, including JS semantic-refactor checks; no persistent mode or plugins. | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) @ `356918e` (selective Prime adaptation) |
-| `engineering-references` | On-demand reliability, data/response/mutation contracts, API authorization, SQL diagnosis, migration/release dependencies, operator-led telemetry and safe legacy changes; not global coding rules. | Three [agent-rules-books](https://github.com/ciembor/agent-rules-books) minis plus [selected corrected core](engineering-references/THIRD_PARTY.md) |
+| `engineering-references` | On-demand reliability, data/response/mutation contracts, API authorization, SQL diagnosis, migration/release dependencies, operator-led telemetry and safe legacy changes; debugging/test oracles, interface comparisons and domain terminology; not global coding rules. | Three [agent-rules-books](https://github.com/ciembor/agent-rules-books) minis plus [selected corrected core](engineering-references/THIRD_PARTY.md) |
+| `code-review` | Requirements/correctness and project-standards review of the actual branch, staged or dirty-work snapshot; read-only by default. | [Matt Pocock source adaptation](code-review/UPSTREAM.md) |
+| `tutor` | Goal-led practice and feedback, with optional evidence-based learner records in a requested workspace. | [Matt Pocock source adaptation](tutor/UPSTREAM.md) |
+| `questionnaire` | Coverage-checked questions for the person who holds the missing facts; draft-only, no automatic sending. | [Matt Pocock source adaptation](questionnaire/UPSTREAM.md) |
 | `unlazy` | On-demand acceptance ledgers, reviewed checks and Prime-native handoffs; hook installer disabled. | [Leonxlnx/unlazy](https://github.com/Leonxlnx/unlazy) @ `1667149` (Prime adaptation) |
 | `variate` | On-demand design alternatives with a foreground localhost preview and Prime-native, nonblocking decisions. | [Nutlope/variate](https://github.com/Nutlope/variate) @ `3a82377` (reviewed local adaptation) |
 | `task-observer` | Always-on observation during user-started tool sessions. Uses Prime's continual harness for decisions and isolated Git proposal branches for tested installable-skill improvements. | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) |
@@ -40,6 +43,9 @@ python3 task-observer/scripts/validate-skill-bundle.py task-observer
 python3 activate.py
 # Marketing bundle review and provenance:
 cat marketingskills/AUDIT.md
+# Selected Matt Pocock content, Git fixtures and native discovery:
+# Set PRIME_NATIVE_ROOT to the actual installed prime-agent package directory.
+PRIME_NATIVE_ROOT=/absolute/prime-agent/package node --test tests/mattpocock-adaptations.test.mjs
 ```
 
 ## Quality-review coverage
@@ -50,6 +56,9 @@ Selective Anti-slop material expands existing skills, not a separate always-on c
 |---|---|
 | UI/app/mobile design or usability review | `hallmark` |
 | Ready-made React components to customize or redesign | `reui-library` |
+| Code review against requirements and project standards | `code-review` |
+| Guided learning, exercises and feedback | `tutor` |
+| Questions for a colleague, expert or client | `questionnaire` |
 | Existing prose, documentation, reports, or a draft just written | `copy-editing` general-prose branch |
 | Focused code-comment review/cleanup | `copy-editing` comment branch; not a code correctness/security audit |
 | New marketing text | `copywriting`, with source-fidelity review |

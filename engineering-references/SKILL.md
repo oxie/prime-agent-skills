@@ -8,11 +8,12 @@ description: >
   parsed network responses, mutation/cache reconciliation, and diff-linked release
   dependencies or running-revision evidence, API object/tenant authorization and
   denied-write tests, result-preserving SQL diagnosis, or operator-led telemetry
-  evidence. Not a general coding
-  rulebook, routine cleanup pass, or deployment tool.
+  evidence, exact-symptom debugging, independent test oracles, interface design
+  comparisons, or domain terminology and material decision records. Not a mandatory
+  coding rulebook, routine cleanup pass, or deployment tool.
 license: "MIT for original wrapper/book references; CC-BY-4.0, MIT and Apache-2.0 for selected adaptations (see THIRD_PARTY.md)"
 metadata:
-  version: 1.3.0-prime.1
+  version: 1.4.0-prime.1
   upstream: https://github.com/ciembor/agent-rules-books
   upstream-commit: 893a88a6fce3a80c565bf39ac65021b43a8b2990
 ---
@@ -52,6 +53,15 @@ Read only the reference matching the main risk, not every reference by default:
   preserve results/order/multiplicity before interpreting representative plans.
 - [Telemetry evidence](references/telemetry-evidence.md): operator questions, safe
   attribution and bounded signals; distinguish emission, ingestion and diagnosis.
+
+- [Debugging](references/debugging.md): build evidence for the reported symptom,
+  distinguish nearby failures, falsify causes and recheck original callers.
+- [Test design](references/test-design.md): choose independent oracles, behavior
+  slices and observation points while retaining meaningful side-effect coverage.
+- [Interface design](references/interface-design.md): compare real alternatives
+  under the same caller contracts; preserve necessary adapters and migration evidence.
+- [Domain modeling](references/domain-modeling.md): resolve ambiguous terms against
+  scenarios/code and record accepted meanings or material decisions at existing owners.
 
 Combine references only when the actual risk spans multiple subjects. For example,
 bounded retries do not establish duplicate-write safety. Do not combine merely
@@ -103,3 +113,8 @@ Later direct Addy telemetry/retry/migration additions have separate
 [notices](ADDY_SOURCES.md) and addy-provenance.json. Original book files and
 prior source identities remain unchanged; core-provenance.json records both the
 pre-addition and current core file hashes.
+
+Selected Matt Pocock mechanisms have separate [source notices](MATTPOCOCK_SOURCES.md)
+and mattpocock-provenance.json. Prior book/core/Addy bodies remain unchanged.
+For a requested general diff review, use code-review; this owner supplies targeted
+engineering references, not a second mandatory review.
