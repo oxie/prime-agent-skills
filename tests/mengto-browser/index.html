@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Small weather — foliage and distance trails</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../canvas-effects/assets/mengto-demo/style.css"></head>
+<body class="foliage-trails"><main>
+<header><p class="eyebrow">Canvas field studies · 01 / 02</p><h1>Small weather.<br>Light that lingers.</h1>
+<p>Two local, original studies of moving matter. One turns through the air. The other records a path through it. Both begin as still compositions.</p></header>
+<div class="studies">
+<section data-study="foliage" aria-labelledby="foliage-title"><p class="eyebrow">01 · The turning blade</p><h2 id="foliage-title">Copper understory</h2>
+<div class="scene"><svg viewBox="0 0 480 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="480" height="320" fill="#172b29"/><circle cx="372" cy="76" r="39" fill="#d6b985"/>
+<path d="M0 267Q148 144 250 250T480 219V320H0Z" fill="#102420"/>
+<g fill="#bd542d" stroke="#592b20" stroke-width="1.5"><path d="M105 59l10 22 13-7-4 21 17 3-25 21-3 14-8-15-19-4 8-15-8-14 15 3Z"/>
+<path d="M282 136l7 17 11-6-4 16 12 4-19 14-1 15-7-16-15-2 8-11-6-11 12 3Z"/></g>
+<g fill="#b4a07f"><path d="M187 206l13-18 5 21 17 2-14 9-5 20-8-19-15-4Z"/><path d="M416 161l8 9-5 26-4-8Z"/></g>
+</svg><canvas aria-hidden="true"></canvas></div>
+<p>Toothed leaves turn face to edge to dull underside. Their sideways slip peaks at the edge-on phase. Smaller, dimmer leaves sit behind the copper foreground.</p>
+<div class="controls"><button type="button" data-action="play" disabled aria-label="Play foliage for eight seconds">Play foliage</button><button type="button" data-action="stop" disabled aria-label="Stop foliage">Stop</button></div>
+<output role="status" aria-live="polite">Still artwork. JavaScript enables the optional eight-second study.</output></section>
+<section data-study="trail" aria-labelledby="trail-title"><p class="eyebrow">02 · The measured path</p><h2 id="trail-title">River lanterns</h2>
+<div class="scene"><svg viewBox="0 0 480 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="480" height="320" fill="#102a30"/><circle cx="372" cy="76" r="39" fill="#1b3d42"/>
+<path d="M0 267Q148 144 250 250T480 219V320H0Z" fill="#0e2329"/>
+<path d="M58 208C146 272 211 114 420 118" fill="none" stroke="#63c7ae" stroke-width="7" opacity=".18"/>
+<path d="M58 208C146 272 211 114 420 118" fill="none" stroke="#c3eed4" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 14"/>
+</svg><canvas aria-hidden="true"></canvas></div>
+<p>Play traces a short river of light. Move a pointer across this panel to take over. Marks follow distance, then coast and fade. A resting pointer emits nothing; touch does not block page scrolling.</p>
+<div class="controls"><button type="button" data-action="play" disabled aria-label="Play trail for eight seconds">Play trail</button><button type="button" data-action="stop" disabled aria-label="Stop trail">Stop</button></div>
+<output role="status" aria-live="polite">Still artwork. JavaScript enables the optional eight-second study.</output></section>
+</div><footer>Keyboard: Tab to Play, then press Enter or Space for the complete authored path. Stop keeps the last frame. Hidden, offscreen and reduced-motion states stop playback; return never restarts it. No remote assets.</footer>
+</main><script type="module" src="../../canvas-effects/assets/mengto-demo/main.mjs"></script><aside><button id="run-probe" style="position:fixed;top:8px;right:8px;z-index:10" type="button">Run owned render checks</button><pre id="probe-status" role="status">Ready</pre></aside><script type="module" src="probe.mjs"></script></body></html>

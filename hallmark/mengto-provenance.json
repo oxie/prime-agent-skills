@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MengTo/Skills",
+  "commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
+  "scope": "approved first selective package",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "git_blob": "b3a5f823a69b4b010f92930ac09e8a776daf65c6",
+      "bytes": 1064
+    },
+    {
+      "path": "agent-skills/codex/html-to-interaction-prompts/SKILL.md",
+      "sha256": "59b800616a70b89b2d5b3d85b8b138c3d22afc83a23fe7e565e08bd1610a8999",
+      "git_blob": "6689ce7abb55ea25597e5e3b2396a6287c65b0cc",
+      "bytes": 15114
+    },
+    {
+      "path": "agent-skills/codex/video-to-superprompt/SKILL.md",
+      "sha256": "2b0db0096fb715f9e5c6be419f2be5caf0df5e1991ac019308185e2d72c2f950",
+      "git_blob": "d3fc85c4d7d63aa7f6eddb4daf50d861c61bcf60",
+      "bytes": 5538
+    },
+    {
+      "path": "agent-skills/codex/video-to-superprompt/references/superprompt-template.md",
+      "sha256": "8f5d73d56a453a754ad325f3f512a455f34711ea07677539d445672b7016361d",
+      "git_blob": "f8ce4e87659c22e5f2ee738472bf27528a1da184",
+      "bytes": 2243
+    },
+    {
+      "path": "agent-skills/codex/audit-reference-originality/SKILL.md",
+      "sha256": "8b8b5e6c6174ff790f08541e444fe64b48f8d078b1f5783b36c3204a690616b6",
+      "git_blob": "ed6aaf9d0a5052f692cc615fa9ad59f7c189a4d1",
+      "bytes": 7064
+    },
+    {
+      "path": "agent-skills/codex/audit-reference-originality/references/audit-rubric.md",
+      "sha256": "0a61dceef97dd7f06676a3007b6c66e90c40351ea3ab1b036bf69511db11a0ac",
+      "git_blob": "76eb1b4b66ed6ee3439a3c73f29dee25628dc0f0",
+      "bytes": 5441
+    }
+  ],
+  "license": {
+    "path": "licenses/mengto-MIT.txt",
+    "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6"
+  },
+  "routing": {
+    "path": "SKILL.md",
+    "previous": {
+      "bytes": 9000,
+      "sha256": "44f66f48f6f367a595653f23e774bd5fcde4ce67c3a10d181f35a10fe1869833"
+    },
+    "addition": {
+      "bytes": 446,
+      "sha256": "5873c91b1c2d524d9edf68c43a23f66df4baf585b4a89d7b15ca43c89ccac5b4"
+    },
+    "current": {
+      "bytes": 9446,
+      "sha256": "d63b9421aeed3022b99ddabe9aeacb2b594736f9095909193e60ca876b53125b"
+    }
+  },
+  "adapted_files": {
+    "MENGTO_SOURCES.md": {
+      "sha256": "eb49960ef0fd7efdea421f0ba94ff0cf7aab845b8eb01bfc14f921ec2acbc11f",
+      "bytes": 1335
+    },
+    "SKILL.md": {
+      "sha256": "d63b9421aeed3022b99ddabe9aeacb2b594736f9095909193e60ca876b53125b",
+      "bytes": 9446
+    },
+    "licenses/mengto-MIT.txt": {
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "bytes": 1064
+    },
+    "references/interaction-evidence.md": {
+      "sha256": "bd6030b8ffc97817713de1795609a371f05e4d27207b608c1c5a75c22c273736",
+      "bytes": 7288
+    },
+    "references/originality-evidence.md": {
+      "sha256": "57b40e7488548af0f4444a3a41182f7361271eb4fda931467195f9ae4684e561",
+      "bytes": 4911
+    }
+  }
+}

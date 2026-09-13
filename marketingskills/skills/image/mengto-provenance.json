@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MengTo/Skills",
+  "commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
+  "scope": "approved first selective package",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "git_blob": "b3a5f823a69b4b010f92930ac09e8a776daf65c6",
+      "bytes": 1064
+    },
+    {
+      "path": "agent-skills/codex/generate-reference-inspired-brand-worlds/SKILL.md",
+      "sha256": "ac378caa7a2093d1f34c0d96b0e21739b6826526ce58b0afe57adebc888fd363",
+      "git_blob": "706eb71f5620a264cdab12f2f095c0dbf6d9db15",
+      "bytes": 7835
+    },
+    {
+      "path": "agent-skills/codex/generate-reference-inspired-brand-worlds/references/example-prompts.md",
+      "sha256": "4c9633c7e0b93c39eb836ef75b70f9ad9e3646ddbe951c688dfa38861c3e1328",
+      "git_blob": "149aecb60009a44656ac38cda738064559116795",
+      "bytes": 6244
+    }
+  ],
+  "license": {
+    "path": "licenses/mengto-MIT.txt",
+    "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6"
+  },
+  "routing": {
+    "path": "SKILL.md",
+    "previous": {
+      "bytes": 16146,
+      "sha256": "7711d1a43af22ec62da8a33e3252d5ea37e2fd5a90053a83144189d3bd26ee82"
+    },
+    "addition": {
+      "bytes": 329,
+      "sha256": "3b8e382fca9242366792fe2cf42da31cea7f93594064cd3d5b82370a2aed242b"
+    },
+    "current": {
+      "bytes": 16475,
+      "sha256": "0b1a13a9db01ef82d01f02cfc61fc84d1f3718234ace98b8fb30f92354f0bdcb"
+    }
+  },
+  "adapted_files": {
+    "MENGTO_SOURCES.md": {
+      "sha256": "5e4c9cb906f1eebceaedab67180abaa07a5dd37a2934d45d09d5fe5b5ecd2cf5",
+      "bytes": 1172
+    },
+    "SKILL.md": {
+      "sha256": "0b1a13a9db01ef82d01f02cfc61fc84d1f3718234ace98b8fb30f92354f0bdcb",
+      "bytes": 16475
+    },
+    "licenses/mengto-MIT.txt": {
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "bytes": 1064
+    },
+    "references/brand-worlds.md": {
+      "sha256": "5f9798e4be2a2f562abefa145b26c496414fd053c54bd8b4ac661f7fd022337b",
+      "bytes": 6507
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.foliage-trails { margin:0; background:#edf0e4; color:#173b35; font:16px/1.6 system-ui,sans-serif; }
+.foliage-trails * { box-sizing:border-box; }
+.foliage-trails main { max-width:1160px; margin:auto; padding:clamp(20px,5vw,64px); }
+.foliage-trails header { max-width:740px; margin-bottom:48px; }
+.foliage-trails .eyebrow { text-transform:uppercase; letter-spacing:.18em; font-size:.75rem; font-weight:700; }
+.foliage-trails h1 { font:clamp(42px,7vw,82px)/1.03 Georgia,serif; letter-spacing:-.035em; margin:12px 0 24px; }
+.foliage-trails h2 { font:32px/1.15 Georgia,serif; margin:0; }
+.foliage-trails .studies { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; }
+.foliage-trails section { min-width:0; border-top:1px solid #81948a; padding-top:20px; }
+.foliage-trails .scene { position:relative; height:320px; overflow:hidden; background:#172b29; border-radius:2px; margin:24px 0 20px; }
+.foliage-trails .scene svg,.foliage-trails canvas { position:absolute; width:100%; height:100%; inset:0; display:block; }
+.foliage-trails canvas[hidden] { display:none; }
+.foliage-trails .controls { display:flex; gap:10px; flex-wrap:wrap; }
+.foliage-trails button { border:1px solid #173b35; border-radius:3px; padding:10px 20px; color:inherit; background:transparent; font:inherit; cursor:pointer; }
+.foliage-trails button:not(:disabled):hover { background:#173b35; color:#edf0e4; }
+.foliage-trails button:disabled { opacity:.5; cursor:default; }
+.foliage-trails :focus-visible { outline:3px solid #9c3f16; outline-offset:4px; }
+.foliage-trails output { display:block; min-height:3.2em; margin-top:12px; font-size:.875rem; }
+.foliage-trails footer { border-top:1px solid #81948a; margin-top:48px; padding-top:20px; font-size:.875rem; }
+@media (max-width:760px) { .foliage-trails .studies { grid-template-columns:1fr; } .foliage-trails .scene { height:280px; } }

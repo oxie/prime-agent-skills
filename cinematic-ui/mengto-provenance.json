@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MengTo/Skills",
+  "commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
+  "scope": "approved first selective package",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "git_blob": "b3a5f823a69b4b010f92930ac09e8a776daf65c6",
+      "bytes": 1064
+    },
+    {
+      "path": "agent-skills/web-design/beautiful-shadows/SKILL.md",
+      "sha256": "10b6cc0964919118218ffe0845e4a00954f39788d89d4ec29827d100f254e135",
+      "git_blob": "384699e2e4c3dc0bc979f9ad3f1aea811fb4ab94",
+      "bytes": 2540
+    },
+    {
+      "path": "agent-skills/web-design/skeuomorphic-ui/SKILL.md",
+      "sha256": "2de1673864f136b05b10a17fcf987f39864f30a716250b98e09ce669525292e4",
+      "git_blob": "c13194f30f4503b332124a532b03849e45fdd4d9",
+      "bytes": 4371
+    },
+    {
+      "path": "agent-skills/web-design/framed-tech-dark-border-gradient/SKILL.md",
+      "sha256": "ab553a6dceadfc4b391d4e3927a64b9c408eb60f41468d02d0d153902295c154",
+      "git_blob": "3f162fccd9e9a99a1dc24fc6b4ec28df9edbf8b1",
+      "bytes": 4879
+    },
+    {
+      "path": "agent-skills/web-design/css-border-gradient/SKILL.md",
+      "sha256": "6c5e1924a7ec55044aca52801cd30efb06cb922fa47e4c4b85d16b39471c922a",
+      "git_blob": "c5287d620e6f64e1e994e7497d4512c864506acc",
+      "bytes": 2931
+    },
+    {
+      "path": "agent-skills/web-design/high-contrast-skeuomorphic-clean/SKILL.md",
+      "sha256": "6381a8257a1a42df490a12ce0902fb7b70acd50c8d231e86aaaed29d33fdee81",
+      "git_blob": "8e31221e976310d9da9bf1b6bd287a4900058ca4",
+      "bytes": 4713
+    }
+  ],
+  "license": {
+    "path": "licenses/mengto-MIT.txt",
+    "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6"
+  },
+  "routing": {
+    "path": "SKILL.md",
+    "previous": {
+      "bytes": 8121,
+      "sha256": "1d62102bf7ed0dca73c254961ab44ea761d7c0e7d5b0e6d5cdbe6eda361d4a82"
+    },
+    "addition": {
+      "bytes": 325,
+      "sha256": "d5f1790c664cfa85d3ecb89939175a7af1d93d06552807ae3e03d2ba4af4ee00"
+    },
+    "current": {
+      "bytes": 8446,
+      "sha256": "ae748ac24fe63ac8dc4c4c4d57551e453767bf1bbb64b6c4eed3becb29b328d1"
+    }
+  },
+  "adapted_files": {
+    "MENGTO_SOURCES.md": {
+      "sha256": "8d7fcbcd6a2931a0ae5b33878b0d8517e2d9830de95a7fb80b29d5f630c001ce",
+      "bytes": 1310
+    },
+    "SKILL.md": {
+      "sha256": "ae748ac24fe63ac8dc4c4c4d57551e453767bf1bbb64b6c4eed3becb29b328d1",
+      "bytes": 8446
+    },
+    "assets/material-surfaces/demo.css": {
+      "sha256": "bd806f0df7659eb10de04337ea90f6c39c80e84bee37ec0ee129b13db4b647f0",
+      "bytes": 2215
+    },
+    "assets/material-surfaces/demo.mjs": {
+      "sha256": "65795d1033628ea2195e42e47a1ec8f4bcf6729be211934e6696d17485e9d8c2",
+      "bytes": 1259
+    },
+    "assets/material-surfaces/index.html": {
+      "sha256": "b94092966520e69b0c5e4deaac63a8abb5af13e25b44c49f3c2390005dad75a7",
+      "bytes": 5698
+    },
+    "assets/material-surfaces/surfaces.css": {
+      "sha256": "df87237bccde43a46c89768a64d1336609fa72e4149acafffbb7081009a7487b",
+      "bytes": 5084
+    },
+    "licenses/mengto-MIT.txt": {
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "bytes": 1064
+    },
+    "references/material-surfaces.md": {
+      "sha256": "1bf5610ce671463655bf0da8db210c604180b20d33f33b857ce6947abff30850",
+      "bytes": 12965
+    },
+    "tests/material-surfaces.mjs": {
+      "sha256": "40c486d8f833b1589a618b253026010f225aabbcb4c443eb94a8cc63b05200bc",
+      "bytes": 9834
+    }
+  }
+}

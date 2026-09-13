@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MengTo/Skills",
+  "commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
+  "scope": "approved first selective package",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "git_blob": "b3a5f823a69b4b010f92930ac09e8a776daf65c6",
+      "bytes": 1064
+    },
+    {
+      "path": "agent-skills/web-design/falling-leaves/SKILL.md",
+      "sha256": "8776f677ccb9e5a18d7950cffe960b32f1c1e1c9aff1c2be0868316a1f1c7ace",
+      "git_blob": "ad257dd19843298c91b0fb253cdf3cb44a29abc3",
+      "bytes": 7896
+    },
+    {
+      "path": "agent-skills/web-design/falling-leaves/demo/index.html",
+      "sha256": "a5f97c2fb5a19e7a441af6468c4f7976cfa4e5e2677f009a371fcd55d965ceda",
+      "git_blob": "fa3bb183925c4e26451284afe18929b5ba379910",
+      "bytes": 17612
+    },
+    {
+      "path": "agent-skills/web-design/pointer-trail-emitter/SKILL.md",
+      "sha256": "2cca505af09e4f34a96e1dd08b1d9bc1caca467dba3debfe62fce4756b2f2964",
+      "git_blob": "1913edbd49b5daf4024c64f7c935650bc1c1a17e",
+      "bytes": 10566
+    },
+    {
+      "path": "agent-skills/web-design/pointer-trail-emitter/demo/index.html",
+      "sha256": "59e414cc7b7b784a73e5fd1c6e757c6c3ddee72a0ad381ec1ceb1b98e6348979",
+      "git_blob": "9078c091f987fde6ac80f33b243f56af68b3bc68",
+      "bytes": 23445
+    },
+    {
+      "path": "agent-skills/codex/optimize-web-animations/SKILL.md",
+      "sha256": "37a8f512bb22a4f2112e4ed388068c0cd184d312d64ee00a993da5bf04ded947",
+      "git_blob": "76f05a8827e51be0042a51633b767f75f2a78734",
+      "bytes": 8257
+    },
+    {
+      "path": "agent-skills/codex/optimize-web-animations/references/browser-profiling.md",
+      "sha256": "69df1bc96bdd4ee2d149527b7fce4065801b83afff33b5b70a2d654bb300f53d",
+      "git_blob": "ce2610753ab29f9aaadd7027ee1181fc0d11b5cd",
+      "bytes": 11212
+    }
+  ],
+  "license": {
+    "path": "licenses/mengto-MIT.txt",
+    "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6"
+  },
+  "routing": {
+    "path": "SKILL.md",
+    "previous": {
+      "bytes": 6697,
+      "sha256": "a6268ba4e5c92eb4caa2feb80d532705d087c548d61f2b62effc30990c3eb1fe"
+    },
+    "addition": {
+      "bytes": 457,
+      "sha256": "78dac02e065b9ce0496064f973b725b27fa49f21827497830e1bb28ba76709e2"
+    },
+    "current": {
+      "bytes": 7154,
+      "sha256": "2e71c43709ba37b11b977a07706470c5e3f58317e92bb8d3f067f24d09a1d1ee"
+    }
+  },
+  "adapted_files": {
+    "MENGTO_SOURCES.md": {
+      "sha256": "29a029d7ebb58f524d9685b6b376291f0d713132959e3035922c6337bef13f22",
+      "bytes": 1376
+    },
+    "SKILL.md": {
+      "sha256": "2e71c43709ba37b11b977a07706470c5e3f58317e92bb8d3f067f24d09a1d1ee",
+      "bytes": 7154
+    },
+    "assets/foliage-trails.mjs": {
+      "sha256": "1e1a2feddb8690c37759b7efba0247f0eeede52500fa63befbe107ef4b811c26",
+      "bytes": 9444
+    },
+    "assets/mengto-demo/index.html": {
+      "sha256": "c21bc52ce0d5a884c8a09c8809600f17f016fcf851a7abad83702e7b396d9618",
+      "bytes": 3475
+    },
+    "assets/mengto-demo/main.mjs": {
+      "sha256": "ab3fdb8d483fd14960994b9b6f9981d4ac184d541316d8c2df24c7cbb6426d6f",
+      "bytes": 803
+    },
+    "assets/mengto-demo/style.css": {
+      "sha256": "a38a423e311a177354fba05e840296e5004701e469572f94c8b8d03bf1fb564d",
+      "bytes": 1872
+    },
+    "licenses/mengto-MIT.txt": {
+      "sha256": "b2a071ba22fefd803f4e9d1f5c777dd79c62d191695586a1a73fd4d0ebd051c6",
+      "bytes": 1064
+    },
+    "references/foliage-trails.md": {
+      "sha256": "1b3b8c3b979b4f0d1a07489c78d208ac3822bcc0a221c518defb1710e6e088f7",
+      "bytes": 8665
+    },
+    "references/motion-profiling.md": {
+      "sha256": "709ea54f3f7b95fcb523da6f81b04ea8b1fe61bbb9477ea6d40c3d63f3bf5793",
+      "bytes": 11210
+    },
+    "tests/foliage-trails.mjs": {
+      "sha256": "6ff83bdc8b60848b11159f4b69d6cf4c3a6f0c8a1142d35505bf60464701ac8e",
+      "bytes": 10093
+    }
+  }
+}

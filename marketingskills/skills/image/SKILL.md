@@ -338,3 +338,7 @@ Generate OG images programmatically for pages with dynamic content (blog posts, 
 - **seo-audit**: For image SEO (alt text, file names, lazy loading)
 - **aso**: For app store screenshot specs and optimization
 - **directory-submissions**: For Product Hunt gallery images and directory listing visuals
+
+## Reference-inspired brand worlds
+
+For a requested family of visual concepts, use [brand worlds](references/brand-worlds.md): shared visual constants with distinct meaning, environment, human activity and motif. Preserve the actual brand and use named reference roles, not numerical similarity scores or a mandatory generator.

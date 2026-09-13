@@ -136,3 +136,7 @@ Report: what changed, the design rationale/tradeoff, checks actually run and rem
 limits. Include the affected-file diff. For audits/studies, distinguish observation,
 inference and recommendation. Do not certify “AI-free”, accessibility compliance or
 conversion gains from appearance or a self-rating.
+
+## Source-backed interaction and originality evidence
+
+When studying supplied HTML or a UI clip for a reusable behavior, use [interaction evidence](references/interaction-evidence.md). When a reference-led design needs an explicit similarity review, use [paired originality evidence](references/originality-evidence.md). Keep the selected workflow and reference jobs; neither route mandates research, another pass, a scanner or a legal verdict.

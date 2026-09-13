@@ -1,3 +1,4 @@
+import {previousMengtoSkill} from './helpers/mengto-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -44,7 +45,7 @@ test('only the selected sections expand the previous audit and token bodies',()=
   const record=p.files.find(f=>f.path===files[name]);assert.equal(hash(before),record.previous_sha256);
  }
  assert.deepEqual(p.files.map(f=>f.path).sort(),['SKILL.md',...Object.values(files)].sort());
- for(const f of p.files)assert.equal(hash(read(f.path)),f.sha256,f.path);
+ for(const f of p.files)assert.equal(hash(f.path==='SKILL.md'?previousMengtoSkill(root,'hallmark'):read(f.path)),f.sha256,f.path);
 });
 test('pinned direct provenance and distinct full MIT notice retained',()=>{
  const p=JSON.parse(read('ui-skills-provenance.json'));

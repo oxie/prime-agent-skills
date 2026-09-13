@@ -1,3 +1,4 @@
+import {previousMengtoSkill} from './helpers/mengto-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -35,7 +36,7 @@ test('snapshot attribution is explicit, does not claim an upstream license, and 
  assert.equal(record.source.reuse_license_found,false);
  assert.equal(record.source.treatment,'General reference-role distinction only, expressed in original prose; upstream text not bundled or relicensed');
  assert.equal(hash(read('refero-provenance.json')),"44df23ec8b2aef3a19510ab72d1e696764ad98e214747aa6ef8b2c3ce14b4f4b");
- assert.equal(hash(read('SKILL.md')),"44f66f48f6f367a595653f23e774bd5fcde4ce67c3a10d181f35a10fe1869833");
+ assert.equal(hash(previousMengtoSkill(root,'hallmark')),"44f66f48f6f367a595653f23e774bd5fcde4ce67c3a10d181f35a10fe1869833");
 });
 test('existing reference routes and new local attribution link resolve',()=>{
  for(const rel of ['references/design.md','references/study.md','references/verification.md'])assert(read(rel).toString().includes('](reference-synthesis.md)'));

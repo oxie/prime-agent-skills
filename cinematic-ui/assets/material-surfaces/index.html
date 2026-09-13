@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material surfaces — local CSS recipes</title>
+  <link rel="stylesheet" href="./surfaces.css">
+  <link rel="stylesheet" href="./demo.css">
+  <script type="module" src="./demo.mjs"></script>
+</head>
+<body>
+<header>
+  <p class="sample-code">CINEMATIC UI / MATERIAL STUDIES</p>
+  <h1>Depth without a new design system.</h1>
+  <p>Three static recipes: a sheet resting on a desk, a tactile toggle, and an aligned diagnostic frame. Each surface keeps its reading plane opaque. These are sample production notes, not live equipment readings.</p>
+  <a href="#light-heading">Compare the light and dark presets</a>
+  <div class="neutral-host" id="neutral-host">
+    <h2>Neutral host strip</h2>
+    <p>This unwrapped host content must not acquire the material recipes. <a href="#notes">Read integration notes</a>.</p>
+    <label for="host-note">Scratch note (not saved)</label>
+    <input id="host-note" type="text" placeholder="Type to check the host field">
+  </div>
+</header>
+<main>
+  <div class="presets">
+    <section class="preset preset--light" aria-labelledby="light-heading">
+      <h2 id="light-heading">Light preset</h2>
+      <article class="specimen cui-material cui-material--contact" aria-labelledby="light-contact">
+        <p class="sample-code">01 / CONTACT ELEVATION</p>
+        <h3 id="light-contact">Care notes for a travelling exhibition</h3>
+        <p>Keep the transport frame until the installation is complete. The narrow contact shadow grounds this sheet; the wider layers suggest a small air gap, not a floating modal.</p>
+        <p>Allow room for a long accession reference such as EXHIBITION-TRANSPORT-RECORD-2026-NORTH-ANNEX-REVISION-THREE without cropping the record.</p>
+        <a href="#notes">Read the preservation note</a>
+      </article>
+      <div class="control-sample">
+        <p class="sample-code">02 / RAISED TO PRESSED</p>
+        <h3>Cue-sheet pin</h3>
+        <button class="cui-material cui-material--control" type="button" aria-pressed="false" aria-describedby="light-status" data-material-toggle disabled>Pin the installation cue sheet</button>
+        <p id="light-status" role="status">Control unavailable until the local demo script loads. Nothing is pinned or saved.</p>
+      </div>
+      <section class="specimen cui-material cui-material--frame" aria-labelledby="light-frame">
+        <p class="sample-code">03 / DIAGNOSTIC FRAME</p>
+        <h3 id="light-frame">Before opening the gallery</h3>
+        <p>The rails share the panel edge rather than an unrelated page grid. Corner brackets mark a bounded record, not an interactive target.</p>
+        <dl>
+          <dt>Lighting check</dt>
+          <dd>Confirm the actual conservation limit for each object. No sensor is connected to this example.</dd>
+          <dt>Access route</dt>
+          <dd>Leave the passage clear when packing materials are removed. Read the venue plan before moving any plinth.</dd>
+        </dl>
+        <a href="#notes">Review the host integration conditions</a>
+      </section>
+    </section>
+    <section class="preset preset--dark" aria-labelledby="dark-heading">
+      <h2 id="dark-heading">Dark preset</h2>
+      <article class="specimen cui-material cui-material--contact" aria-labelledby="dark-contact">
+        <p class="sample-code">01 / CONTACT ELEVATION</p>
+        <h3 id="dark-contact">Care notes for a travelling exhibition</h3>
+        <p>Keep the transport frame until the installation is complete. The narrow contact shadow grounds this sheet; the wider layers suggest a small air gap, not a floating modal.</p>
+        <p>Allow room for a long accession reference such as EXHIBITION-TRANSPORT-RECORD-2026-NORTH-ANNEX-REVISION-THREE without cropping the record.</p>
+        <a href="#notes">Read the preservation note</a>
+      </article>
+      <div class="control-sample">
+        <p class="sample-code">02 / RAISED TO PRESSED</p>
+        <h3>Cue-sheet pin</h3>
+        <button class="cui-material cui-material--control" type="button" aria-pressed="false" aria-describedby="dark-status" data-material-toggle disabled>Pin the installation cue sheet</button>
+        <p id="dark-status" role="status">Control unavailable until the local demo script loads. Nothing is pinned or saved.</p>
+      </div>
+      <section class="specimen cui-material cui-material--frame" aria-labelledby="dark-frame">
+        <p class="sample-code">03 / DIAGNOSTIC FRAME</p>
+        <h3 id="dark-frame">Before opening the gallery</h3>
+        <p>The rails share the panel edge rather than an unrelated page grid. Corner brackets mark a bounded record, not an interactive target.</p>
+        <dl>
+          <dt>Lighting check</dt>
+          <dd>Confirm the actual conservation limit for each object. No sensor is connected to this example.</dd>
+          <dt>Access route</dt>
+          <dd>Leave the passage clear when packing materials are removed. Read the venue plan before moving any plinth.</dd>
+        </dl>
+        <a href="#notes">Review the host integration conditions</a>
+      </section>
+    </section>
+  </div>
+</main>
+<footer id="notes">
+  <h2>Preserve the host, not the fixture</h2>
+  <p>Copy surfaces.css only. Keep the host's type, spacing, content, tokens and actual application behavior. The demo script only toggles these two local pins. Without JavaScript they remain honestly disabled.</p>
+  <noscript><p>JavaScript is disabled. Both pin controls are unavailable; every note and link remains readable.</p></noscript>
+  <a href="#neutral-host">Return to the neutral host strip</a>
+</footer>
+</body>
+</html>

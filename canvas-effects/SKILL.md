@@ -111,3 +111,7 @@ Add a new renderer or reference only for a real need and validate its distinct
 contract. Other effect types can have separate specialist skills; this package
 must not become the mandatory home or authority for every future visualization.
 [Provenance](PROVENANCE.md) explains the reference project and license boundary.
+
+## Foliage, laid trails and scoped motion measurements
+
+For tumbling leaves or a pointer-laid trail, use [foliage and trails](references/foliage-trails.md) and its local examples. These add bounded renderers, not a new host or default animation. For a specific animation-cost or lifecycle question, use [motion profiling](references/motion-profiling.md) with the actual project test interface; Browser Check does not expose arbitrary evaluation or traces.

@@ -126,3 +126,7 @@ calibrated color science or speed from appearance or check counts.
 [UPSTREAM.md](UPSTREAM.md) maps selected ideas to the pinned source and explains
 what was rewritten or omitted. Its repository MIT notice does not clear rights to
 third-party films, fonts, screenshots, websites or logos.
+
+## Optional material construction
+
+For contact shadows, raised/pressed depth, masked gradient edges or measured brackets, use [material surfaces](references/material-surfaces.md). These scoped CSS recipes complement the existing quiet backgrounds; they do not impose a palette, frame every component or replace host tokens.

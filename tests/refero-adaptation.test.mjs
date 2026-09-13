@@ -1,3 +1,4 @@
+import {previousMengtoSkill} from './helpers/mengto-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -104,14 +105,14 @@ test('worked direction keeps source roles, explicit adaptation and honest missin
  for(const phrase of examples){assert.ok(text.includes(phrase),phrase);assert.ok(!text.replace(phrase,'REMOVED').includes(phrase));}
 });
 test('existing metadata and historical files remain preserved; only five documented appendices',()=>{
- assert.equal(hash(read('SKILL.md')),skillHash);
+ assert.equal(hash(previousMengtoSkill(root,'hallmark')),skillHash);
  for(const [p,marker] of Object.entries(boundaries)){
   const content=read(p),i=content.indexOf(marker);assert.ok(i>=0,p);
   assert.equal(content.lastIndexOf(marker),i,p);
   assert.equal(hash(content.slice(0,i)),previous[p],p);
  }
  const prior=JSON.parse(read('ui-skills-provenance.json'));
- for(const f of prior.files)assert.equal(hash(read(f.path)),f.sha256,f.path);
+ for(const f of prior.files)assert.equal(hash(f.path==='SKILL.md'?previousMengtoSkill(root,'hallmark'):read(f.path)),f.sha256,f.path);
 });
 test('four pinned MIT sources, license and eight original payloads remain bound alongside the approved appendix',()=>{
  const p=JSON.parse(read('refero-provenance.json'));

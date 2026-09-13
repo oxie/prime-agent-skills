@@ -1,0 +1,51 @@
+/* Standalone fixture only. Never copy this stylesheet into the host project. */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #242628;
+  background: #ebedeb;
+}
+header, main, footer { max-inline-size: 72rem; margin-inline: auto; padding: 1.5rem; }
+h1 { font-size: clamp(2rem, 5vw, 3.75rem); line-height: 1.12; max-inline-size: 20ch; }
+h2, h3 { line-height: 1.25; }
+p { max-inline-size: 65ch; }
+a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+a:focus-visible, input:focus-visible { outline: 3px solid #174ba6; outline-offset: 4px; }
+.neutral-host { padding: 1rem; margin-block: 1.5rem; background: white; border: 1px solid #727574; }
+.neutral-host input { font: inherit; max-inline-size: 100%; box-sizing: border-box; }
+.presets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.preset { min-inline-size: 0; padding: 1.5rem; background: #e8eae7; color: #242628; }
+.preset--dark {
+  --cui-ms-ink: #f1f3f1;
+  --cui-ms-fill: #202423;
+  --cui-ms-top: #343937;
+  --cui-ms-bottom: #202423;
+  --cui-ms-line: #919991;
+  --cui-ms-highlight: rgb(255 255 255 / 22%);
+  --cui-ms-focus: #a9caff;
+  --cui-ms-rail: #7d897f;
+  --cui-ms-edge: #c2cbc3;
+  color: #f1f3f1;
+  background: #141817;
+  color-scheme: dark;
+}
+.specimen { margin-block: 2rem; padding: 1.25rem; overflow-wrap: anywhere; }
+.specimen h3 { margin-block-start: 0; }
+.specimen dl { margin-block-end: 0; }
+.specimen dt { font-weight: 650; }
+.specimen dd { margin-inline-start: 0; margin-block-end: 1rem; }
+.control-sample { margin-block: 2rem; }
+.control-sample p { overflow-wrap: anywhere; }
+.sample-code { font-family: ui-monospace, monospace; font-size: 0.875rem; letter-spacing: 0.04em; }
+.preset--dark a:focus-visible { outline-color: #a9caff; }
+@media (max-width: 52rem) { .presets { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 24rem) {
+  header, main, footer { padding: 1rem; }
+  .preset { padding: 1rem; }
+}
+@media (forced-colors: active) {
+  body, .preset, .neutral-host { color: CanvasText; background: Canvas; }
+  a:focus-visible, input:focus-visible, .preset--dark a:focus-visible { outline-color: CanvasText; }
+}
