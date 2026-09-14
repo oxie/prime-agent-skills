@@ -7,7 +7,7 @@ node --test hallmark/dev/contracts.test.mjs hallmark/dev/ux-review.test.mjs
 ```
 
 The contract tests use the current `SKILL.md` and `UPSTREAM.md` release agreement,
-semantic routing/scope checks, and an explicit inventory of 18 reviewed references.
+semantic routing/scope checks, and an explicit inventory of 19 reviewed references.
 They do not pin mutable description bytes. The original Apache license/NOTICE and
 source pins remain exact integrity checks. Earlier failures recorded in source notices
 and historical evidence are not rewritten as passes by these current tests.
@@ -31,3 +31,11 @@ recipe/fixture. They do not allow arbitrary sibling trees, scripts or external f
 HTTP(S) links are citations only and are not fetched. Mutation tests exercise missing
 boundaries, oversized/missing references, unreviewed payloads and link/path escapes.
 These are bounded packaging checks, not a general Markdown parser or malware scanner.
+
+## Original storefront guidance
+
+The opt-in storefront reference and short entrypoint route fit the existing budgets;
+no ceiling was increased. Source/reuse limits are recorded in the reference itself.
+The exact later routing transition is checked by tests/helpers/storefront-snapshot.mjs;
+older Taste/MengTo tests still check their original predecessor bytes, not new text.
+Run the top-level storefront-guidance tests alongside these packaging checks.

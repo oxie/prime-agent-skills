@@ -144,3 +144,7 @@ When studying supplied HTML or a UI clip for a reusable behavior, use [interacti
 ## Industrial print and telemetry direction
 
 For an industrial visual brief, use [print and telemetry](references/print-telemetry.md) to choose a coherent type, density and grid treatment. For a heading that benefits from a small image fragment, use Cinematic UI’s [inline-media recipe](../cinematic-ui/references/inline-media-type.md). Preserve the brand, real content and existing interaction contracts; these are optional directions, not general design rules.
+
+## Storefront UI
+
+For product choices, browsing or cart/checkout feedback, read [storefront decisions](references/storefront.md). Keep the selected workflow; visual-only work does not require a transaction review.

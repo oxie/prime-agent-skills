@@ -1,3 +1,4 @@
+import {beforeStorefrontSkill} from './storefront-snapshot.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
@@ -7,7 +8,7 @@ export const tasteRoutes = {"cinematic-ui": {"path": "SKILL.md", "previous": {"b
 // Accept only exact approved current bytes or exact historical fixture bytes.
 export function beforeTasteSkill(skills,owner){
  assert(Object.hasOwn(tasteRoutes,owner),'Only the three approved Taste owners');
- const r=tasteRoutes[owner],b=readFileSync(resolve(skills,owner,'SKILL.md'));
+ const r=tasteRoutes[owner],b=owner==='hallmark'?beforeStorefrontSkill(skills,owner):readFileSync(resolve(skills,owner,'SKILL.md'));
  if(b.length===r.previous.bytes && sha(b)===r.previous.sha256)return b;
  assert.equal(b.length,r.current.bytes);assert.equal(sha(b),r.current.sha256);
  const previous=b.subarray(0,r.previous.bytes),addition=b.subarray(r.previous.bytes);

@@ -27,7 +27,7 @@ function rejectsMutation(change,reason){
   fs.rmSync(fixture,{recursive:true,force:true});
  }
 }
-for(const name of ["debugging.md","domain-modeling.md","interface-design.md","test-design.md","agent-evaluation.md","threat-modeling.md"]){
+for(const name of ["debugging.md","domain-modeling.md","interface-design.md","test-design.md","agent-evaluation.md","threat-modeling.md","commerce.md"]){
  test(`reject missing reviewed reference ${name}`,()=>{
   rejectsMutation(owner=>fs.unlinkSync(path.join(owner,"references",name)),/Reviewed inventory: references/);
  });

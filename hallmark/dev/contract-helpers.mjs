@@ -9,7 +9,7 @@ export const referenceNames = [
   "design.md", "audit.md", "study.md", "variate.md", "directions.md", "themes.md",
   "tokens.md", "verification.md", "app-quality.md", "ux-review.md", "content-layouts.md",
   "shadcn-composition.md", "ui-localization.md", "interaction-motion.md",
-  "reference-synthesis.md", "interaction-evidence.md", "originality-evidence.md", "print-telemetry.md",
+  "reference-synthesis.md", "interaction-evidence.md", "originality-evidence.md", "print-telemetry.md", "storefront.md",
 ];
 export const dataPayloads = [
   "next-provenance.json", "ui-skills-provenance.json", "refero-provenance.json",

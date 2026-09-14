@@ -123,3 +123,7 @@ engineering references, not a second mandatory review.
 ## Agent evaluation and system threats
 
 For requested agent-quality comparisons, use [agent evaluation](references/agent-evaluation.md). For a changed system boundary or a requested threat model, use [threat modeling](references/threat-modeling.md). These optional references add no evaluator service, model calls or scanner. See [source notes](SUPER_SKILLS_SOURCES.md).
+
+## Commerce boundaries
+
+For cart writes, regional price dependencies, checkout completion or guest-order access, read [commerce boundaries](references/commerce.md). Select only the changed boundary; this does not mandate a full store review.
