@@ -39,3 +39,28 @@ no ceiling was increased. Source/reuse limits are recorded in the reference itse
 The exact later routing transition is checked by tests/helpers/storefront-snapshot.mjs;
 older Taste/MengTo tests still check their original predecessor bytes, not new text.
 Run the top-level storefront-guidance tests alongside these packaging checks.
+
+## Optional read-only UI UX catalogue
+
+Version 1.4.0-prime.1 adds an optional Python 3 standard-library helper, not a new
+skill or runtime package. Core guidance remains usable without running it. The
+explicit payload inventory now also permits catalogue/lookup.py, its three named
+CSV files, catalogue/provenance.json and licenses/uiux-pro-max-MIT.txt. No arbitrary
+scripts/data paths are allowed. Catalogue data is not loaded into the prompt.
+The existing reference count and byte ceilings are unchanged; themes.md provides
+one conditional handoff to catalogue/README.md. That CLI guide is separately bounded.
+Historical entrypoint tests use the exact compatibility/version transition in
+tests/helpers/catalogue-snapshot.mjs; prior hashes and results are not rewritten.
+
+Run from the skills repository with Python 3 and Node 22:
+
+```text
+python3 -B -m unittest discover -s hallmark/dev -p test_catalogue.py -v
+node --test tests/*.test.mjs hallmark/dev/*.test.mjs
+```
+
+The lookup suite checks exact identities, aliases, deprecated redirects, stable tie
+order, semantic palette role preservation, excluded code fields, Unicode, bounded
+output, no-match, failures, integrity and no bundle writes. Packaging/native checks
+verify installed routing/path and source identity. These are deterministic interface
+and data checks, not model-effectiveness, rendered accessibility or design-quality tests.

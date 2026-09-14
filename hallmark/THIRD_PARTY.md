@@ -88,3 +88,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Optional UI UX Pro Max catalogue (local v1.4.0-prime.1)
+
+User-approved read-only catalogue addition from Next Level Builder at
+`7f69fed6a2717900085f1bc3b263721f8ba025e2`. See [usage and scope](catalogue/README.md),
+[exact data provenance](catalogue/provenance.json) and [MIT notice](licenses/uiux-pro-max-MIT.txt).
+Three verbatim datasets and a bounded stdlib lookup are included; core guidance still
+needs no runtime. No upstream generator, CSS output, MASTER/page persistence, rule
+engine, stack library, installer, companion skills, downloads or auto-update.
+The helper's retrieval checks do not establish design quality or model effectiveness.
+Earlier notices and experimental source identities remain historical, not rerun evidence.

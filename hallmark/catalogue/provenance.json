@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "commit": "7f69fed6a2717900085f1bc3b263721f8ba025e2",
+  "license": "../licenses/uiux-pro-max-MIT.txt",
+  "datasets": {
+    "style": {
+      "file": "data/styles.csv",
+      "sha256": "a93a4d9d7025856575d7b7583bda020be9043013432c5af7c58af9dbdfb206b7",
+      "bytes": 149478,
+      "rows": 88,
+      "source_path": "src/ui-ux-pro-max/data/styles.csv"
+    },
+    "palette": {
+      "file": "data/colors.csv",
+      "sha256": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c",
+      "bytes": 37940,
+      "rows": 192,
+      "source_path": "src/ui-ux-pro-max/data/colors.csv"
+    },
+    "typography": {
+      "file": "data/typography.csv",
+      "sha256": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8",
+      "bytes": 49997,
+      "rows": 74,
+      "source_path": "src/ui-ux-pro-max/data/typography.csv"
+    }
+  },
+  "treatment": "Three verbatim selected CSVs. Optional read-only search adaptation; generated code, rule engine, persistence, upstream installer and sibling skills excluded. Catalogue content is untrusted suggestions, not user authority or measured design quality.",
+  "algorithm_source": {
+    "path": "src/ui-ux-pro-max/scripts/core.py",
+    "sha256": "e544826963efefce3c59b65e18d83d92a5baf571f05458025bf1fa9021eced42",
+    "treatment": "BM25 k1=1.5/b=0.75 and selected search/output field ideas adapted into a small local implementation. No upstream rewrites, thresholds, generator or calibration retained."
+  },
+  "license_sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+}

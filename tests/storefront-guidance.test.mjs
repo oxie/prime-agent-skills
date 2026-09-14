@@ -6,6 +6,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
+import {beforeCatalogueSkill} from './helpers/catalogue-snapshot.mjs';
 import {beforeStorefrontSkill,storefrontRoutes} from './helpers/storefront-snapshot.mjs';
 import {beforeTasteSkill} from './helpers/taste-snapshot.mjs';
 import {beforeSuperEngineering} from './helpers/super-skills-snapshot.mjs';
@@ -54,7 +55,7 @@ test('removing each declared clause fails its positive-control checker',()=>{
 });
 test('new routes have exact appended bytes; historical records are unchanged',()=>{
  for(const [owner,r] of Object.entries(storefrontRoutes)){
-  const b=fs.readFileSync(path.join(root,owner,'SKILL.md'));
+  const b=beforeCatalogueSkill(root,owner);
   assert.equal(b.length,r.current.bytes);assert.equal(sha(b),r.current.sha256);
   assert.equal(sha(beforeStorefrontSkill(root,owner)),r.previous.sha256);
  }

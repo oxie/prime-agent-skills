@@ -1,3 +1,4 @@
+import {beforeCatalogueFile} from './helpers/catalogue-snapshot.mjs';
 import {previousMengtoSkill} from './helpers/mengto-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -7,7 +8,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const hall=path.join(root,'hallmark');
-const read=p=>fs.readFileSync(path.join(hall,p),'utf8');
+const read=p=>beforeCatalogueFile(root,'hallmark/'+p).toString('utf8');
 const hash=s=>createHash('sha256').update(s).digest('hex');
 const flat=s=>s.replace(/\s+/g,' ');
 const reference='references/reference-synthesis.md';
@@ -122,7 +123,7 @@ test('four pinned MIT sources, license and eight original payloads remain bound 
  assert.deepEqual(p.files.map(f=>f.path).sort(),["README.md", "REFERO_SOURCES.md", "UPSTREAM.md", "licenses/refero-MIT.txt", "references/design.md", "references/reference-synthesis.md", "references/study.md", "references/verification.md"]);
  assert.equal(p.license.sha256,"7b5d57a0e210289fa900a0e2ab0513442e439e9d20b96f0cf5cba0e1b31b665e");
  for(const f of p.files){
-  const b=fs.readFileSync(path.join(hall,f.path));
+  const b=beforeCatalogueFile(root,'hallmark/'+f.path);
   // This one file has a later approved appendix. Keep the Refero snapshot exact;
   // bind the entire current file and appendix too, not arbitrary trailing bytes.
   const snapshot=f.path===reference?b.subarray(0,f.bytes):b;

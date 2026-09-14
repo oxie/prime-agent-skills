@@ -13,12 +13,12 @@ export const referenceNames = [
 ];
 export const dataPayloads = [
   "next-provenance.json", "ui-skills-provenance.json", "refero-provenance.json",
-  "aura-reference-intent.json", "mengto-provenance.json", "taste-provenance.json",
+  "aura-reference-intent.json", "mengto-provenance.json", "taste-provenance.json", "catalogue/provenance.json",
 ];
 export const licensePayloads = [
   "licenses/AAS-LICENSE-CONTENT.txt", "licenses/CC-BY-4.0.txt", "licenses/shadcn-MIT.txt",
   "licenses/ui-skills-MIT.txt", "licenses/refero-MIT.txt", "licenses/mengto-MIT.txt",
-  "licenses/taste-MIT.txt",
+  "licenses/taste-MIT.txt", "licenses/uiux-pro-max-MIT.txt",
 ];
 // Optional, source-owned handoffs only; not permission to read an entire sibling tree.
 const siblingLinks = new Map([
@@ -73,6 +73,7 @@ export function files(dir) {
     return [file];
   });
 }
+const cataloguePayloads = ["catalogue/lookup.py", "catalogue/data/styles.csv", "catalogue/data/colors.csv", "catalogue/data/typography.csv"];
 export function verifyPayload(root, file) {
   assert.ok(within(root, file), `escaping payload: ${file}`);
   assert.equal(fs.realpathSync(file), file, `symlink payload: ${file}`);
@@ -81,10 +82,10 @@ export function verifyPayload(root, file) {
   const rel = path.relative(root, file);
   if (rel.startsWith("dev" + path.sep)) return; // Tests/fixtures are not skill runtime.
   assert.ok(!(stat.mode & 0o111), `executable payload: ${rel}`);
-  assert.ok(file.endsWith(".md") || rel === "LICENSE" || dataPayloads.includes(rel) || licensePayloads.includes(rel),
+  assert.ok(file.endsWith(".md") || rel === "LICENSE" || dataPayloads.includes(rel) || licensePayloads.includes(rel) || cataloguePayloads.includes(rel),
     `unexpected runtime payload: ${rel}`);
   const text = fs.readFileSync(file, "utf8");
-  assert.ok(text.trim() && !text.includes("\0") && !text.startsWith("#!"), `non-text payload: ${rel}`);
+  assert.ok(text.trim() && !text.includes("\0") && (!text.startsWith("#!") || rel === "catalogue/lookup.py"), `non-text payload: ${rel}`);
   if (dataPayloads.includes(rel)) {
     const data = JSON.parse(text);
     assert.ok(data && typeof data === "object" && !Array.isArray(data), `expected record object: ${rel}`);

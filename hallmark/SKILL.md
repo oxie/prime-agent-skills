@@ -13,10 +13,10 @@ description: >
   It does not provide a public-web crawler.
 license: MIT; Apache-2.0 for references/ux-review.md; CC-BY-4.0 and MIT for selected additions (see THIRD_PARTY.md and NEXT_SOURCES.md)
 compatibility: >
-  Prime-native Markdown guidance. No runtime package, provider key, installer,
-  server or hook. Implementation and verification use the target project's tools.
+  Markdown guidance; optional Python 3 stdlib catalogue helper. No runtime package,
+  provider key, installer, server or hook. Implementation uses project tools.
 metadata:
-  version: 1.3.0-prime.1
+  version: 1.4.0-prime.1
   upstream: https://github.com/nutlope/hallmark
   upstream-commit: 13ac0ec7e148655948100b6396439e481361d690
 ---

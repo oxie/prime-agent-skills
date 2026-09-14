@@ -4,6 +4,9 @@ Optional starting points. The user and project system win; theme and page
 structure are independent. No rotation or font, italic, white/black, or gradient
 ban applies. Keep working brand choices and adapt only the roles needed.
 
+For explicitly requested style, palette or font-pairing exploration beyond these
+anchors, read the optional [offline lookup](../catalogue/README.md) first.
+
 ## Original upstream anchors: all 21 named themes
 
 Source: upstream `site/css/tokens.css`. Palette order: **paper; ink; accent**.

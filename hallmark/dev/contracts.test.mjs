@@ -27,7 +27,7 @@ test("local Markdown links resolve with only documented optional sibling handoff
     for(const match of text.matchAll(/\]\(([^)]+)\)/g))verifyLink(root,file,match[1]);
   }
 });
-test("skill needs no executable runtime installer service or external asset kit",()=>{
+test("only the named optional catalogue helper adds runtime code; no installer or service",()=>{
   for(const file of all)verifyPayload(root,file);
   for(const rel of [...dataPayloads,...licensePayloads])assert.ok(all.includes(path.join(root,rel)),`missing reviewed payload ${rel}`);
   assert.match(main,/No runtime package/);assert.match(main,/No hooks, schedules, watchers/);
