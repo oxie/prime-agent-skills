@@ -28,18 +28,21 @@
     },
     {
       "path": "README.md",
-      "sha256": "18d92a905b094f4e4b114f7f43cd0643d5707192aa79350483fe8795141819cc",
-      "bytes": 479
+      "sha256": "83738ccdb9e07e063842c30d958b562d2b0dc07708d4fda72b61581b0ae3bd39",
+      "bytes": 650,
+      "previous_sha256": "18d92a905b094f4e4b114f7f43cd0643d5707192aa79350483fe8795141819cc"
     },
     {
       "path": "SKILL.md",
-      "sha256": "f3f827bec14d6cb5ff1bb1480ee9bbe76e71dc22b1e48aaad088df1b04984d43",
-      "bytes": 5722
+      "sha256": "9c74128df4eb7659eb6000ba45d68f1db86fd2826f25dbad55e5522b811249cc",
+      "bytes": 5956,
+      "previous_sha256": "f3f827bec14d6cb5ff1bb1480ee9bbe76e71dc22b1e48aaad088df1b04984d43"
     },
     {
       "path": "UPSTREAM.md",
-      "sha256": "ba6f3d545146499cc3cf0f9284456a3e6885eb253d560a51d7f0549a2ef082c3",
-      "bytes": 1733
+      "sha256": "9eda91aeff6fa35243a8b79fc9629531a9dd338591e8e215a8f3e5c07db145a3",
+      "bytes": 2020,
+      "previous_sha256": "ba6f3d545146499cc3cf0f9284456a3e6885eb253d560a51d7f0549a2ef082c3"
     },
     {
       "path": "references/scope.md",

@@ -72,6 +72,48 @@ Use real-boundary tests for real-boundary claims when authorized. See the existi
 [contract boundaries](contract-boundaries.md) reference for retry/side-effect risks,
 not as a reason to add those mechanisms to every test.
 
+## Async readiness is not a timing contract
+
+For a flaky asynchronous test, first decide what it promises:
+
+- **Readiness:** use the project's existing event subscription or assertion-wait
+  facility for the exact state/output, not a guessed sleep. Subscribe before the
+  trigger when events are transient. Re-read mutable state on each check. Bound
+  the overall wait and report safe last-observed state on timeout; clean up owned
+  subscriptions and timers, including cancellation paths.
+- **Timing:** for debounce, expiry or throttling, use the existing controlled clock
+  and test the specified boundary. For a 100 ms debounce after one input, assert no
+  call at 99 ms and the expected call after advancing the final millisecond and
+  flushing the runner's scheduled work. An eventual-success wait cannot establish
+  the no-early-call contract. Start a real-time measurement only after observing
+  the relevant trigger; retain integration coverage when simulated time omits risk.
+
+For readiness, checking that a result is present must not reject valid `0`, `false`
+or empty-string results. Prefer native primitives over a new polling helper; use a
+monotonic deadline where supported, not a universal polling interval or retry count.
+A timeout is failed or inconclusive evidence, not permission to rerun until green.
+These are application-test recipes, not permission for agent-side polling loops,
+background workers, live-service probes or extra model calls.
+
+## Preserve prerequisite effects when mocking
+
+Before replacing a method, list its effects and identify which ones the behavior
+under test needs. Keep those effects real in a disposable fixture; substitute only
+at the slow or external boundary using an existing seam. Inspect code and existing
+fixtures rather than contacting live providers to discover side effects.
+
+Example: discovery fetches a catalogue and saves its IDs; duplicate detection later
+reads the saved IDs. Mocking the whole discover-and-save method removes the write
+and stops testing that handoff. Fake the catalogue fetch below it, keep the save
+and duplicate check real, and assert the same ID is not inserted twice. A dispatch
+count alone does not establish stored uniqueness or concurrent-write safety.
+
+Use realistic contract-valid doubles for normal paths and explicit incomplete or
+malformed doubles for rejection paths. Check arguments, counts or ordering when
+contractual; do not require every possible field or ban mock assertions wholesale.
+If mock setup dominates the test, consider a small authorized integration fixture,
+not a speculative production interface or deletion of necessary lifecycle methods.
+
 ## Use substitutes deliberately
 
 Control time, randomness and external I/O through existing injection or test tools.
@@ -88,4 +130,5 @@ Preserve distinct characterization, internal invariants and failure-path coverag
 Report what ran, completed exits and uncovered contracts. A green suite proves only
 its exercised assertions, not all behavior or educational claims about the method.
 
-Source and adaptations: [MATTPOCOCK_SOURCES.md](../MATTPOCOCK_SOURCES.md).
+Source and adaptations: [Matt Pocock](../MATTPOCOCK_SOURCES.md) and
+[selected Superpowers recipes](../SUPERPOWERS_SOURCES.md).

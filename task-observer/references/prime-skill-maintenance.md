@@ -88,6 +88,41 @@ variables and pass them explicitly on every command.
 6. For a new skill, create a complete atomic skill directory rather than a
    placeholder.
 
+## Improve instructions from real work
+
+Use outcomes from authorized tasks as the primary evidence of instruction quality.
+Do not launch synthetic agent trials, pressure-test loops or extra evaluation
+workers merely because a skill changed. A separate model-based experiment requires
+explicit user approval, a small fixed call/spend budget and a stopping rule. Do not
+retry indefinitely to obtain a passing result. Ordinary task regression tests and
+cheap deterministic link, metadata and contract checks remain required where
+applicable; they prove their stated checks, not model effectiveness.
+
+When actual work reveals a concrete instruction problem, first distinguish it
+from a missing tool, access limit or runtime failure. Choose the smallest useful
+form of guidance:
+
+| Observed problem | Suitable change |
+|---|---|
+| A clear requirement is skipped | State the requirement and an observable check; address the demonstrated reason for skipping it |
+| Output has the wrong structure | Give a short positive recipe for its parts and order |
+| A necessary element is missing | Put a named required field in the existing output template |
+| Behavior depends on context | Use an explicit condition tied to an observable fact |
+
+For example, if a handoff repeatedly omits a completed exit code, add an exit/status
+field to its existing result format rather than many general reminders to be thorough.
+If a safe exception is real, express its condition directly; do not remove necessary
+scope or safety nuance to make a rule shorter. These are design choices, not claims
+that one wording always works better.
+
+After approved changes and normal deterministic checks, assess the guidance during
+the next relevant authorized task. Do not manufacture that task or retain a worker
+waiting for it. A single successful use is limited evidence, not certification.
+Route strong reusable lessons through Task Observer's existing continual-harness
+path; create no second observation log, evaluation service or recurring test job.
+See [source notes](../SUPERPOWERS_SOURCES.md) for the selected instruction-design idea
+and the excluded synthetic testing workflow.
+
 ## Validate before committing
 
 At minimum:
@@ -101,9 +136,11 @@ At minimum:
 5. Confirm the diff touches only the intended skill and necessary repository
    documentation.
 6. For routing, discovery, Python-backed behavior, or activation changes, run a
-   fresh Prime Agent process against the proposal. Use an explicit `--skill`
-   path when testing the undiscovered worktree, and verify the exact path and
-   tool/result behavior rather than trusting a model statement.
+   fresh process using Prime's native loader or relevant local contract interface
+   against the proposal. Verify the exact loaded path and metadata; for executable
+   behavior also test the authorized tool/result contract. Use an explicit skill
+   path when needed for an undiscovered worktree. Loading is not proof of model
+   routing or effectiveness; extra model trials require the separate approval above.
 7. Re-run validation after every fix.
 
 If any gate fails, keep the worktree for diagnosis, report the failure, and do
@@ -141,7 +178,8 @@ After explicit approval:
 3. Merge using a reviewable Git operation. Do not silently discard concurrent
    changes.
 4. Validate the merged live skill again.
-5. Run a fresh Prime Agent discovery/invocation test as `prime-agent`.
+5. Run fresh native discovery checks as `prime-agent`, plus local invocation
+   checks when executable behavior changed. Do not add model calls by default.
 6. Scan repository files and Git configuration for persisted credentials.
 7. Push only with a currently authorized secure credential. Never write a token
    into files, remotes, Git configuration, continual-harness entries, or commit

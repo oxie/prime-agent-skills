@@ -1,0 +1,65 @@
+{
+  "repository": "https://github.com/obra/superpowers",
+  "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+  "license": "licenses/superpowers-MIT.txt",
+  "license_sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+  "sources": [
+    {
+      "path": "skills/systematic-debugging/condition-based-waiting.md",
+      "git_blob_sha": "70994f777c586f7d4c43033aac34c7cf0da6688b",
+      "sha256": "e89fec8400d6cd50f43407cec9fab50976ba4d55d0ec2eb51c0bd68036b54c26",
+      "bytes": 3516,
+      "url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/systematic-debugging/condition-based-waiting.md"
+    },
+    {
+      "path": "skills/systematic-debugging/SKILL.md",
+      "git_blob_sha": "095d194ac041502905f15b01d22d294fb94db8b2",
+      "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+      "bytes": 9465,
+      "url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/systematic-debugging/SKILL.md"
+    },
+    {
+      "path": "skills/test-driven-development/writing-good-tests.md",
+      "git_blob_sha": "d3c4482fd30b4f9084bb61545fe73939a7502c28",
+      "sha256": "51471c853306ff92ca8bb41dcaea05f31c0e46b03651f8f3c99754b7172f4ae1",
+      "bytes": 8268,
+      "url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/test-driven-development/writing-good-tests.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "references/test-design.md",
+      "sha256": "f9dd35e1ae25e6c089c2b8a1c723b87463bed73806688c42a208e1a30bc143e4",
+      "bytes": 8555,
+      "previous_sha256": "f57f608c93389fe3a65cb71dc637fbaacf2ddd78788984ded0adba6ff814c0e9"
+    },
+    {
+      "path": "references/debugging.md",
+      "sha256": "2e7eb1e17c80248c7a9ccbec0dcf12c71d503b8ed944a3755facb6a9ab53713d",
+      "bytes": 7218,
+      "previous_sha256": "27c4d5c5ee9fc49fafa5bc407434a2172dd2d5bd3ba9aa837ebd082a39260e7a"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "12ed8398b58732ab8679dae9d9b6f4269aa9dbeed49893d0ddd9409f88a99662",
+      "bytes": 3865,
+      "previous_sha256": "b043e81c57592832f534ca7af7de07c456b6b6fa24f704483b25a33c302005dc"
+    },
+    {
+      "path": "SUPERPOWERS_SOURCES.md",
+      "sha256": "3411c9200bb9651a1475884d68cebad42e9333a8f195431ead17ecfb2910b539",
+      "bytes": 2107
+    },
+    {
+      "path": "licenses/superpowers-MIT.txt",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "bytes": 1070
+    },
+    {
+      "path": "mattpocock-provenance.json",
+      "sha256": "221333caa572e07d1abf4173e7cb9dd391027759ff6218be154dad9fd82f1aef",
+      "bytes": 6025,
+      "previous_sha256": "4529e7ea548656251167000c78835ddf4aa1ddd8343bd2a05a5e24f388d4b36e"
+    }
+  ]
+}

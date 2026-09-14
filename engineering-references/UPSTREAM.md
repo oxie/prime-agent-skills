@@ -65,3 +65,9 @@ Adds four corrected on-demand references for debugging, test design, interface
 comparison and domain terminology. [Source notices](MATTPOCOCK_SOURCES.md) record
 the exact selected sources and MIT terms. No upstream setup or workflow runtime
 is installed. Existing references and historical provenance remain unchanged.
+
+## Selected Superpowers additions
+
+See [SUPERPOWERS_SOURCES.md](SUPERPOWERS_SOURCES.md) for the exact pin, MIT notice,
+selected mechanisms and local exclusions. This is an extension under the existing
+owner, not installation of an upstream process bundle or evidence of measured gains.

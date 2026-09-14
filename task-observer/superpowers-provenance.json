@@ -1,0 +1,45 @@
+{
+  "repository": "https://github.com/obra/superpowers",
+  "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+  "license": "licenses/superpowers-MIT.txt",
+  "license_sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+  "sources": [
+    {
+      "path": "skills/writing-skills/SKILL.md",
+      "git_blob_sha": "f33f39f523c8a3ae2ec0eaf365a524571df8ff3d",
+      "sha256": "d34db5c8aed6a4e0440132bd0613aace70a693ec7819d5637ad77481d8e10d1b",
+      "bytes": 26360,
+      "url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/writing-skills/SKILL.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "1c0505bdc190be068870ce477d01d35948ecbd7b6002465385f2bfd4a6cd95bd",
+      "bytes": 11669,
+      "previous_sha256": "a9e8518d094b6c168bff0a88a01986baf2b49e5472acdbba64b89010c44a8881"
+    },
+    {
+      "path": "references/prime-skill-maintenance.md",
+      "sha256": "c0d2c87a027f6abb7d8056cb64b4e40f32b3b9b2015a1066856bc3e76a43ba4f",
+      "bytes": 9186,
+      "previous_sha256": "f42a6488cd78d4a4622c974104c09f27da57be1d6308c08de91c1de9421e30d8"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "bd2357b5ec59a6a2524d8ec7333fe868b18b5b50bd3d6c70b2f35bd297c2f889",
+      "bytes": 2270,
+      "previous_sha256": "68d18eb27a251a24ad5b3a3e7d29df0b6565c18ce9abbd688c4c58f51902969c"
+    },
+    {
+      "path": "SUPERPOWERS_SOURCES.md",
+      "sha256": "ac63177f732e43f90db1199b3b0da5585624c4a2b4a2793dabb9325fc1e6bbb5",
+      "bytes": 1798
+    },
+    {
+      "path": "licenses/superpowers-MIT.txt",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "bytes": 1070
+    }
+  ]
+}

@@ -67,6 +67,32 @@ For slowness, compare the same workload and environment to a measured baseline;
 choose timing, profiler or query-plan evidence that observes the reported bottleneck.
 A changed timing result alone does not identify its cause.
 
+## Find the first divergent handoff
+
+When the symptom crosses components, compare a failing path with a working path
+under the same relevant input and configuration. Use existing safe signals first.
+If it helps isolate the fault, keep a small table in the current task evidence:
+
+| Boundary | Expected input or configuration | Observed safe signal | Downstream result |
+|---|---|---|---|
+| API → queue | Valid versioned message for this request | Correlation ID and schema version | Accepted or rejected |
+| Queue → worker | Same message contract and compatible worker | Delivery ID, worker revision, validation status | Applied, rejected or unknown |
+
+Trace upstream from the first observed mismatch and check whether it originated
+at that handoff or arrived from an earlier one. Missing telemetry means unknown,
+not proof a component failed or never ran. Compare recent code/config changes and
+narrow the next probe to one distinguishing hypothesis. A fixed number of failed
+fixes is not evidence that the architecture must be replaced.
+
+Do not log payloads or environment dumps by default. Allowlist nonsecret status,
+redact identifiers when needed, and follow [telemetry evidence](telemetry-evidence.md)
+for permission, collection bounds and cleanup. For a credential, presence/absence
+is enough when relevant; never interpolate its value into a diagnostic. Add a
+probe only when existing evidence is insufficient and the action is authorized.
+No table or instrumentation is required for a bug already explained by the source.
+For asynchronous reproduction, distinguish readiness from timing contracts in
+[test design](test-design.md).
+
 ## When red remains unresolved
 
 Continue safe source inspection and label hypotheses as unconfirmed. State what was
@@ -88,4 +114,5 @@ Remove only task-created temporary probes and disposable harnesses no longer nee
 Keep useful regression fixtures and tests. Report the supported cause, actual checks,
 completed exits, and any unresolved reproduction or runtime limits.
 
-Source and adaptations: [MATTPOCOCK_SOURCES.md](../MATTPOCOCK_SOURCES.md).
+Source and adaptations: [Matt Pocock](../MATTPOCOCK_SOURCES.md) and
+[selected Superpowers recipes](../SUPERPOWERS_SOURCES.md).

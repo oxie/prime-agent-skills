@@ -32,12 +32,12 @@ for(const name of ["debugging.md","domain-modeling.md","interface-design.md","te
   rejectsMutation(owner=>fs.unlinkSync(path.join(owner,"references",name)),/Reviewed inventory: references/);
  });
 }
-for(const name of ["MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json"]){
+for(const name of ["MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json","SUPERPOWERS_SOURCES.md","superpowers-provenance.json"]){
  test(`reject missing source record ${name}`,()=>{
   rejectsMutation(owner=>fs.unlinkSync(path.join(owner,name)),/Reviewed inventory: \./);
  });
 }
-for(const name of ["mattpocock-MIT.txt","super-skills-MIT.txt"]){
+for(const name of ["mattpocock-MIT.txt","super-skills-MIT.txt","superpowers-MIT.txt"]){
  test(`reject missing source license ${name}`,()=>{
   rejectsMutation(owner=>fs.unlinkSync(path.join(owner,"licenses",name)),/Reviewed inventory: licenses/);
  });

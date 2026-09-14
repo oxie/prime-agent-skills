@@ -32,3 +32,9 @@ It requires checking persisted scope and fresh-session loading before claiming g
 availability. This changes guidance, not the runtime, permissions, activation mechanism,
 backup behavior or approval-gated skill-maintenance workflow. Learned global harness
 state remains in Prime's native store, not a second Git observation database.
+
+## Selected Superpowers additions
+
+See [SUPERPOWERS_SOURCES.md](SUPERPOWERS_SOURCES.md) for the exact pin, MIT notice,
+selected mechanisms and local exclusions. This is an extension under the existing
+owner, not installation of an upstream process bundle or evidence of measured gains.

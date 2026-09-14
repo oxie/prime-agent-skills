@@ -25,3 +25,9 @@ Updates are manual: review a new pin and affected source contracts, preserve not
 run relevant checks, then use the approved commit/push/remote-verification workflow.
 Remove only this addition and its routes through the same approved workflow; preserve
 unrelated owner content. No runtime installation or settings cleanup is needed.
+
+## Selected Superpowers additions
+
+See [SUPERPOWERS_SOURCES.md](SUPERPOWERS_SOURCES.md) for the exact pin, MIT notice,
+selected mechanisms and local exclusions. This is an extension under the existing
+owner, not installation of an upstream process bundle or evidence of measured gains.

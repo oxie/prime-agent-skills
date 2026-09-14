@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/obra/superpowers",
+  "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+  "license": "licenses/superpowers-MIT.txt",
+  "license_sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+  "sources": [
+    {
+      "path": "skills/receiving-code-review/SKILL.md",
+      "git_blob_sha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7",
+      "sha256": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438",
+      "bytes": 6203,
+      "url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/receiving-code-review/SKILL.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "9c74128df4eb7659eb6000ba45d68f1db86fd2826f25dbad55e5522b811249cc",
+      "bytes": 5956,
+      "previous_sha256": "f3f827bec14d6cb5ff1bb1480ee9bbe76e71dc22b1e48aaad088df1b04984d43"
+    },
+    {
+      "path": "README.md",
+      "sha256": "83738ccdb9e07e063842c30d958b562d2b0dc07708d4fda72b61581b0ae3bd39",
+      "bytes": 650,
+      "previous_sha256": "18d92a905b094f4e4b114f7f43cd0643d5707192aa79350483fe8795141819cc"
+    },
+    {
+      "path": "references/receiving-feedback.md",
+      "sha256": "e609f076147a2fc1882d6605ea4294ad20594314c98cf16d28ddb48dce39e285",
+      "bytes": 2533
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "9eda91aeff6fa35243a8b79fc9629531a9dd338591e8e215a8f3e5c07db145a3",
+      "bytes": 2020,
+      "previous_sha256": "ba6f3d545146499cc3cf0f9284456a3e6885eb253d560a51d7f0549a2ef082c3"
+    },
+    {
+      "path": "SUPERPOWERS_SOURCES.md",
+      "sha256": "feb4189eee1a0bc8147f8c34914924a8bf0c8d7f333347c4e5f5d60d8c9976c0",
+      "bytes": 1732
+    },
+    {
+      "path": "licenses/superpowers-MIT.txt",
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "bytes": 1070
+    },
+    {
+      "path": "mattpocock-provenance.json",
+      "sha256": "9eca48a949ab90ffbf1c09ee100837cb0751fc2e9abeff8bd5872dce67269a79",
+      "bytes": 2180,
+      "previous_sha256": "a2f104046b2e878b105d08f3961ab6898520a515681cddded8e031654fada6f3"
+    }
+  ]
+}

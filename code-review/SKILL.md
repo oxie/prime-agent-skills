@@ -3,13 +3,14 @@ name: code-review
 description: >
   Review code changes for requirement conformance, correctness and project standards.
   Use for a branch or PR review, staged or uncommitted work, a pre-commit review,
-  or changes since a specified revision. Reports findings without editing by default.
+  changes since a specified revision, or assessing incoming review comments.
+  Reports findings without editing by default.
   Keeps spec and standards evidence distinct while prioritizing consequential risks.
   Complements Ponytail's focused complexity review and Hallmark's visual review.
 license: MIT; see LICENSE and UPSTREAM.md
 compatibility: Git for diff-based review; checks use the target project's native environment.
 metadata:
-  version: 1.0.0-prime.1
+  version: 1.1.0-prime.1
 ---
 
 # Code review
@@ -17,6 +18,10 @@ metadata:
 Review the requested change, not an older committed substitute. This workflow is
 read-only unless edits are authorized. Do not commit, stage, rebase, install packages
 or publish comments simply because a review was requested.
+
+For incoming comments, use [feedback assessment](references/receiving-feedback.md)
+with the same scope and evidence rules below. Review is not permission to apply
+suggestions or publish replies.
 
 ## 1. Freeze the scope
 

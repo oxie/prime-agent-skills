@@ -8,7 +8,7 @@ description: >
   Prime Agent's continual harness and refine capability as the sole source of
   truth. Also use when the user mentions task observation, skill improvement,
   the observation workflow, or "One Skill to Rule Them All".
-license: CC-BY-4.0
+license: "CC-BY-4.0; selected MIT adaptation (see UPSTREAM.md)"
 metadata:
   upstream: https://github.com/rebelytics/one-skill-to-rule-them-all
   upstream-version: 3.1.0
@@ -62,6 +62,17 @@ Do not duplicate advice already represented in the harness.
 When uncertain whether a signal generalizes, consult
 `references/signals.md` and treat its examples as methodology, not as a
 separate storage contract.
+
+## Learn through real work
+
+Judge instruction quality primarily during authorized tasks, not synthetic model
+trials. Keep normal task tests and cheap deterministic skill checks; loading and
+static checks do not establish model effectiveness. Extra model-based evaluations
+require explicit approval, a small fixed call/spend budget and a stopping rule.
+Do not create evaluation loops, background testing or extra workers just to test
+instructions. Improve a concrete observed failure, then assess the change on the
+next relevant real task. For the writing method, see
+[skill maintenance](references/prime-skill-maintenance.md#improve-instructions-from-real-work).
 
 ## One persistence path: Prime continual harness
 
@@ -166,8 +177,9 @@ For a concrete improvement:
    `~/.prime/agent/skill-worktrees/`, outside every skill-discovery directory.
 4. Load the built-in `skill-creator` instructions, inspect the target and its
    provenance, and make the smallest evidence-backed change in that worktree.
-5. Run applicable validation, tests, a secret scan, and a fresh Prime Agent
-   test when routing or executable behavior changes.
+5. Run applicable validation, tests, a secret scan, and fresh native loading
+   or local contract checks when routing or executable behavior changes. Do not
+   add model-based trials without their separate explicit approval.
 6. Commit a passing proposal on its branch and report the evidence, risk,
    branch, commit, diff, tests, and exact approval needed.
 7. Merge into live `main` and push only after explicit user approval, then

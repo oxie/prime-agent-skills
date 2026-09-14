@@ -90,9 +90,10 @@
     },
     {
       "path": "UPSTREAM.md",
-      "sha256": "b043e81c57592832f534ca7af7de07c456b6b6fa24f704483b25a33c302005dc",
-      "bytes": 3578,
-      "previous_sha256": "0e68bd4b67bac21fe18d5d66ba6154e9cce2104510b967b39794b46c153b8543"
+      "sha256": "12ed8398b58732ab8679dae9d9b6f4269aa9dbeed49893d0ddd9409f88a99662",
+      "bytes": 3865,
+      "previous_sha256": "b043e81c57592832f534ca7af7de07c456b6b6fa24f704483b25a33c302005dc",
+      "earlier_previous_sha256": "0e68bd4b67bac21fe18d5d66ba6154e9cce2104510b967b39794b46c153b8543"
     },
     {
       "path": "licenses/mattpocock-MIT.txt",
@@ -101,8 +102,9 @@
     },
     {
       "path": "references/debugging.md",
-      "sha256": "27c4d5c5ee9fc49fafa5bc407434a2172dd2d5bd3ba9aa837ebd082a39260e7a",
-      "bytes": 5521
+      "sha256": "2e7eb1e17c80248c7a9ccbec0dcf12c71d503b8ed944a3755facb6a9ab53713d",
+      "bytes": 7218,
+      "previous_sha256": "27c4d5c5ee9fc49fafa5bc407434a2172dd2d5bd3ba9aa837ebd082a39260e7a"
     },
     {
       "path": "references/domain-modeling.md",
@@ -116,8 +118,9 @@
     },
     {
       "path": "references/test-design.md",
-      "sha256": "f57f608c93389fe3a65cb71dc637fbaacf2ddd78788984ded0adba6ff814c0e9",
-      "bytes": 5851
+      "sha256": "f9dd35e1ae25e6c089c2b8a1c723b87463bed73806688c42a208e1a30bc143e4",
+      "bytes": 8555,
+      "previous_sha256": "f57f608c93389fe3a65cb71dc637fbaacf2ddd78788984ded0adba6ff814c0e9"
     }
   ]
 }

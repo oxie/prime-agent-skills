@@ -26,8 +26,26 @@ test('actual historical adapter accepts only known old/current snapshots and rej
   for(const b of [Buffer.concat([current,Buffer.from('extra')]),current.subarray(0,current.length-1),Buffer.from('foreign skill')]){fs.writeFileSync(p,b);assert.throws(()=>beforeSuperEngineering(temp));}
  }finally{fs.rmSync(temp,{recursive:true,force:true});}
 });
-test('prior owner files and provenance remain byte-exact',()=>{
- for(const [p,h] of Object.entries(preserved))assert.equal(sha(read(p)),h,p);
+// Original batch identities above remain historical evidence. Only these four
+// reviewed Superpowers extensions supersede current-file equality; no old run is
+// claimed to have tested the new content.
+const superpowersRevisions={
+  "engineering-references/UPSTREAM.md": "12ed8398b58732ab8679dae9d9b6f4269aa9dbeed49893d0ddd9409f88a99662",
+  "engineering-references/mattpocock-provenance.json": "221333caa572e07d1abf4173e7cb9dd391027759ff6218be154dad9fd82f1aef",
+  "engineering-references/references/test-design.md": "f9dd35e1ae25e6c089c2b8a1c723b87463bed73806688c42a208e1a30bc143e4",
+  "engineering-references/references/debugging.md": "2e7eb1e17c80248c7a9ccbec0dcf12c71d503b8ed944a3755facb6a9ab53713d"
+};
+test('prior files stay exact except explicitly approved later Superpowers revisions',()=>{
+ const later=JSON.parse(read('engineering-references/superpowers-provenance.json'));
+ for(const [p,h] of Object.entries(preserved)){
+  if(Object.hasOwn(superpowersRevisions,p)){
+   const rel=p.slice('engineering-references/'.length);
+   const record=later.files.find(f=>f.path===rel);assert(record,p);
+   assert.equal(record.previous_sha256,h,p+' original identity');
+   assert.equal(record.sha256,superpowersRevisions[p],p+' approved revision');
+   assert.equal(sha(read(p)),superpowersRevisions[p],p);
+  }else assert.equal(sha(read(p)),h,p);
+ }
 });
 test('selected source/license identities and every adapted owner file are bound',()=>{
  for(const owner of owners){const p=JSON.parse(read(owner+'/super-skills-provenance.json'));assert.equal(p.repository,'https://github.com/BigY0shi/super-skills');assert.equal(p.commit,'86e4cec2d51927a8ecff4370f892136fc6317523');assert.deepEqual(p.routing,routes[owner]);
