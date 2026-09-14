@@ -43,10 +43,16 @@ python3 task-observer/scripts/validate-skill-bundle.py task-observer
 python3 activate.py
 # Marketing bundle review and provenance:
 cat marketingskills/AUDIT.md
-# Selected Matt Pocock content, Git fixtures and native discovery:
+# Current integration contracts, including historical-evidence integrity:
 # Set PRIME_NATIVE_ROOT to the actual installed prime-agent package directory.
-PRIME_NATIVE_ROOT=/absolute/prime-agent/package node --test tests/mattpocock-adaptations.test.mjs
+export PRIME_NATIVE_ROOT=/absolute/prime-agent/package
+node --test tests/*.test.mjs
+# Owner checks are separate; the top-level glob does not include these:
+node --test hallmark/dev/contracts.test.mjs hallmark/dev/ux-review.test.mjs
+node tests/engineering-references.mjs "$PWD" "$PRIME_NATIVE_ROOT"
 ```
+
+[Hallmark development checks](hallmark/dev/README.md) document the current packaging, routing and reading-budget contracts. The historical Anti-slop pilot stays bound to its [original source snapshot](tests/fixtures/anti-slop-pilot-README.md), not today's skill bytes. Current integration checks remain separate. Browser execution is also separate: use the [MengTo probe instructions](tests/mengto-browser/README.md) and the relevant example's native tests. Static or historical passes do not prove current model effectiveness or rendered behavior.
 
 ## Quality-review coverage
 

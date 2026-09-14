@@ -20,7 +20,12 @@ document.querySelector('#run-probe').addEventListener('click',async event=>{
  destroy();await frames(4);
  for(const p of pairs){checks[p.name+'-destroy-static']=!differs(p.stopped,pixels(p.canvas));const state=p.c.getState();checks[p.name+'-owned-resources-released']=state.destroyed===true&&state.listenerCount===0&&state.observerCount===0&&state.pendingFrame===false&&state.pendingTimer===false;checks[p.name+'-controls-disabled']=[...p.canvas.closest('[data-study]').querySelectorAll('button')].every(b=>b.disabled);}
  checks['controllers-released']=controllers.size===0;
- result.textContent=JSON.stringify({checks,passed:Object.values(checks).every(Boolean)},null,2);
+ const write=()=>{result.textContent=JSON.stringify({checks,passed:Object.values(checks).every(Boolean)},null,2);};
+ checks['final-output-no-horizontal-overflow']=true;
+ write();
+ // Measure after diagnostic text is in layout, not just the empty status element.
+ checks['final-output-no-horizontal-overflow']=document.documentElement.scrollWidth<=document.documentElement.clientWidth;
+ write();
  result.dataset.complete='true';result.dataset.passed=String(Object.values(checks).every(Boolean));
  }catch(error){result.textContent=String(error.stack);result.dataset.complete='true';result.dataset.passed='false';destroy();}
 },{once:true});

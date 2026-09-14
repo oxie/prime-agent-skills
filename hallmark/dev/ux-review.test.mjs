@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {createHash} from "node:crypto";
 import {fileURLToPath} from "node:url";
+import {descriptionOf, verifyDescription} from "./contract-helpers.mjs";
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const hash=s=>createHash("sha256").update(s).digest("hex");
@@ -25,11 +26,8 @@ test("exact Apache license and upstream NOTICE retained with source pins",()=>{
 });
 test("progressive UX route and approved local-browser discovery remain scoped",()=>{
   const main=read("SKILL.md");
-  const description=main.match(/description: >\n([\s\S]*?)\nlicense:/)[1];
-  // Browser-check integration deliberately extends the prior source-only description.
-  assert.equal(hash(description),"4ae516c933a0ef5c2a343d12affe20ba0a2948db369fc30bebafc05670038f2e");
-  assert.match(description,/authorized local previews/);
-  assert.match(description,/does not provide a public-web crawler/);
+  // Mutable routing prose is checked by meaning; upstream legal text stays byte-pinned.
+  verifyDescription(descriptionOf(main));
   assert.match(main,/\[ux-review.md\]\(references\/ux-review.md\)/);
   assert.match(main,/MIT; Apache-2.0 for references\/ux-review.md/);
 });

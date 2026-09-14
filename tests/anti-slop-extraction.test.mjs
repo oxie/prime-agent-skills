@@ -78,11 +78,72 @@ test('all 50 marketing skill directory digests match the documented byte contrac
  }
 });
 
-const pilot=JSON.parse(read('tests/fixtures/anti-slop-pilot.json'));
-test('recorded task pilot is bound to the exact loaded skill and reference bytes',()=>{
- for(const [p,digest] of Object.entries(pilot.guidance_sha256))assert.equal(createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex'),digest,p);
+// Historical evidence is frozen; the current integration contracts above still
+// read installed source. This archive does not measure current model behavior.
+const pilotBytes=fs.readFileSync(path.join(root,'tests/fixtures/anti-slop-pilot.json'));
+const snapshotBytes=fs.readFileSync(path.join(root,'tests/fixtures/anti-slop-pilot-snapshot.json'));
+const pilot=JSON.parse(pilotBytes);
+const snapshot=JSON.parse(snapshotBytes);
+const pilotSha256='78406a029e2e404f2125c1caca3f581a8f24c865974c20df776a8da5bfdf6e49';
+const snapshotSha256='7e6b993b0037e221a19c3cb29a7513d63e63df6213cb97656ae7c9318d150899';
+const sourceRevision='22980c2eff795b81fb52a877a0086ff2f12d4dd1';
+const sha256=bytes=>createHash('sha256').update(bytes).digest('hex');
+const gitBlob=bytes=>createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
+function historicalBinding(recordBytes,archive){
+ assert.equal(sha256(recordBytes),pilotSha256,'original pilot bytes');
+ const record=JSON.parse(recordBytes);
+ assert.deepEqual(Object.keys(archive).sort(),['pilot','source_revision','sources']);
+ assert.equal(archive.source_revision,sourceRevision,'historical source revision');
+ assert.deepEqual(archive.pilot,{
+  path:'tests/fixtures/anti-slop-pilot.json',sha256:pilotSha256,git_blob:gitBlob(recordBytes)
+ },'pilot provenance');
+ assert.deepEqual(Object.keys(archive.sources).sort(),Object.keys(record.guidance_sha256).sort(),'exact historical source set');
+ for(const [p,digest] of Object.entries(record.guidance_sha256)){
+  const source=archive.sources[p];
+  assert.deepEqual(Object.keys(source).sort(),['git_blob','sha256','utf8'],p+': source manifest');
+  assert.equal(typeof source.utf8,'string',p+': UTF-8 source');
+  const bytes=Buffer.from(source.utf8,'utf8');
+  assert.equal(source.sha256,digest,p+': recorded guidance digest');
+  assert.equal(sha256(bytes),digest,p+': historical source bytes');
+  assert.equal(gitBlob(bytes),source.git_blob,p+': Git blob provenance');
+ }
+ for(const output of Object.values(record.outputs)){
+  for(const p of output.loadedReferences)assert.ok(Object.hasOwn(archive.sources,p),p+': archived reference');
+ }
+}
+test('historical pilot binds unchanged evidence to authentic archived source, not current skill bytes',()=>{
+ assert.equal(sha256(snapshotBytes),snapshotSha256,'exact archived snapshot bytes');
+ historicalBinding(pilotBytes,snapshot);
  const routes={prose:'copy-editing',comments:'copy-editing',ui:'hallmark',draft:'copywriting'};
  for(const [key,skill] of Object.entries(routes))assert.deepEqual(pilot.outputs[key].selectedSkills,[skill]);
+});
+test('historical binding rejects changed pilot bytes or rewritten guidance hashes',()=>{
+ assert.throws(()=>historicalBinding(Buffer.concat([pilotBytes,Buffer.from('\n')]),snapshot),/original pilot bytes/);
+ const changed=pilotBytes.toString('utf8').replace(pilot.guidance_sha256['hallmark/SKILL.md'],'0'.repeat(64));
+ assert.throws(()=>historicalBinding(Buffer.from(changed),snapshot),/original pilot bytes/);
+});
+test('historical binding rejects corrupted provenance and incomplete source manifests',()=>{
+ const wrongRevision=structuredClone(snapshot);wrongRevision.source_revision='0'.repeat(40);
+ assert.throws(()=>historicalBinding(pilotBytes,wrongRevision),/historical source revision/);
+ const wrongPilot=structuredClone(snapshot);wrongPilot.pilot.git_blob='0'.repeat(40);
+ assert.throws(()=>historicalBinding(pilotBytes,wrongPilot),/pilot provenance/);
+ const missing=structuredClone(snapshot);delete missing.sources['hallmark/SKILL.md'];
+ assert.throws(()=>historicalBinding(pilotBytes,missing),/exact historical source set/);
+ const extra=structuredClone(snapshot);extra.sources['unrecorded.md']=snapshot.sources['hallmark/SKILL.md'];
+ assert.throws(()=>historicalBinding(pilotBytes,extra),/exact historical source set/);
+});
+test('historical binding rejects corrupt source bytes, rebinding and fabricated source hashes',()=>{
+ const p='hallmark/SKILL.md';
+ const corrupt=structuredClone(snapshot);corrupt.sources[p].utf8+='\n';
+ assert.throws(()=>historicalBinding(pilotBytes,corrupt),/historical source bytes/);
+ const rebound=structuredClone(snapshot);rebound.sources[p]=snapshot.sources['hallmark/references/audit.md'];
+ assert.throws(()=>historicalBinding(pilotBytes,rebound),/recorded guidance digest/);
+ const fabricated=structuredClone(corrupt);
+ fabricated.sources[p].sha256=sha256(Buffer.from(fabricated.sources[p].utf8));
+ fabricated.sources[p].git_blob=gitBlob(Buffer.from(fabricated.sources[p].utf8));
+ assert.throws(()=>historicalBinding(pilotBytes,fabricated),/recorded guidance digest/);
+ const wrongBlob=structuredClone(snapshot);wrongBlob.sources[p].git_blob='0'.repeat(40);
+ assert.throws(()=>historicalBinding(pilotBytes,wrongBlob),/Git blob provenance/);
 });
 test('prose pilot preserves quantities, qualifiers, command and approved quotation',()=>{
  const text=pilot.outputs.prose.output;
