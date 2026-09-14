@@ -1,0 +1,87 @@
+{
+  "repository": "https://github.com/agentskills/agentskills",
+  "commit": "69ef37e9424c0a7ea9dd2293b559e43ec8176379",
+  "license": "licenses/agentskills-CC-BY-4.0.txt",
+  "license_sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+  "sources": [
+    {
+      "path": "docs/specification.mdx",
+      "git_blob_sha": "d9a2db099d905da8b879a5c6f996728073985279",
+      "sha256": "b9079c0c10b7930e8c6a20ff2bc10cda2a3343c55185120e3f1116a1a529b220",
+      "bytes": 7166,
+      "url": "https://github.com/agentskills/agentskills/blob/69ef37e9424c0a7ea9dd2293b559e43ec8176379/docs/specification.mdx"
+    },
+    {
+      "path": "docs/skill-creation/best-practices.mdx",
+      "git_blob_sha": "cfe9188d2d0b3d5106d528e830d6119adb5cff93",
+      "sha256": "a729bc1d746366ecb8c5056b100439fbf760007a0f836e089c0f3aff9ce5c2f8",
+      "bytes": 14608,
+      "url": "https://github.com/agentskills/agentskills/blob/69ef37e9424c0a7ea9dd2293b559e43ec8176379/docs/skill-creation/best-practices.mdx"
+    },
+    {
+      "path": "docs/skill-creation/using-scripts.mdx",
+      "git_blob_sha": "11ce443e9b17281305e2ac593ef155a83a38a1dd",
+      "sha256": "064185783e0f848a9cad2cf5866902d5c46cbddc71235a124b3abbf3ebd7c02d",
+      "bytes": 12405,
+      "url": "https://github.com/agentskills/agentskills/blob/69ef37e9424c0a7ea9dd2293b559e43ec8176379/docs/skill-creation/using-scripts.mdx"
+    },
+    {
+      "path": "docs/LICENSE",
+      "git_blob_sha": "4ea99c213c5c0c005ae4e80df8e52169d06896ec",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+      "bytes": 18656,
+      "url": "https://github.com/agentskills/agentskills/blob/69ef37e9424c0a7ea9dd2293b559e43ec8176379/docs/LICENSE"
+    }
+  ],
+  "files": [
+    {
+      "path": "AGENTSKILLS_SOURCES.md",
+      "bytes": 2527,
+      "sha256": "be2c8bfd1051a170050085e87d0366b4693f08105db2db17586e6846fc9d8fb0"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "bytes": 2718,
+      "sha256": "98bffcae4875a71f0b4bcc4ce5457578beae13edfa04ad7ffe5ba1ab4c8d7506",
+      "previous_sha256": "bd2357b5ec59a6a2524d8ec7333fe868b18b5b50bd3d6c70b2f35bd297c2f889"
+    },
+    {
+      "path": "references/script-interfaces.md",
+      "bytes": 4730,
+      "sha256": "a85b0d60276db49cabbcfca5200d38c665b9fe8e239b6dbef96cdf6e55bc36e0"
+    },
+    {
+      "path": "references/bundle-validation.md",
+      "bytes": 2577,
+      "sha256": "c02e4c4d6f3795e455f82ac3764774b07ece8abc98e67068815aa5f97a0f51ad"
+    },
+    {
+      "path": "references/prime-skill-maintenance.md",
+      "bytes": 9652,
+      "sha256": "38709b749d4ef06e47ca3793af96c0253cce264b1fcee14575a9ab2b115de990",
+      "previous_sha256": "c0d2c87a027f6abb7d8056cb64b4e40f32b3b9b2015a1066856bc3e76a43ba4f"
+    },
+    {
+      "path": "scripts/validate-skill-bundle.py",
+      "bytes": 10121,
+      "sha256": "7891da457bb4a1d408aa978f3c0b7ef48ee0f3e436853c7c2463734cff9eb0c4",
+      "previous_sha256": "71eb9f9d40e7875852d5a4f94cc9e45d397ffa58dd7cb54326a243caf278717f"
+    },
+    {
+      "path": "tests/test_validate_skill_frontmatter.py",
+      "bytes": 11864,
+      "sha256": "42af24ba41b3881cf4184c9a9469eeaa42973e15ccc1b44fb7067436ba5c848d"
+    },
+    {
+      "path": "licenses/agentskills-CC-BY-4.0.txt",
+      "bytes": 18656,
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "superpowers-provenance.json",
+      "bytes": 1907,
+      "sha256": "5edc6bfccf865b8151462ad674cea8dfe2c71670065f79684c9defde5cea1bb7",
+      "previous_sha256": "fb4948d42c149a88e052e5a82d156660cfd50e3dcad922612fa82df50c2eb017"
+    }
+  ]
+}

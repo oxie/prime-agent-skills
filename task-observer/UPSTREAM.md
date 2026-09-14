@@ -38,3 +38,11 @@ state remains in Prime's native store, not a second Git observation database.
 See [SUPERPOWERS_SOURCES.md](SUPERPOWERS_SOURCES.md) for the exact pin, MIT notice,
 selected mechanisms and local exclusions. This is an extension under the existing
 owner, not installation of an upstream process bundle or evidence of measured gains.
+
+## Selected Agent Skills maintenance additions
+
+See [AGENTSKILLS_SOURCES.md](AGENTSKILLS_SOURCES.md) for the pinned documentation,
+CC-BY-4.0 attribution, script-interface guidance and selected format checks.
+The local checker now needs PyYAML to validate actual parsed metadata; it does not
+install dependencies or replace Prime's native loader. Its exact scope and commands
+are documented in [bundle validation](references/bundle-validation.md).

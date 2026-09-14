@@ -87,6 +87,10 @@ variables and pass them explicitly on every command.
    risk.
 6. For a new skill, create a complete atomic skill directory rather than a
    placeholder.
+7. When changing scripts or supporting-file routes, read
+   [script interfaces and reference loading](script-interfaces.md). Put surprising
+   prerequisites before the affected step and give optional references a clear
+   loading condition; do not add tools or load every reference by default.
 
 ## Improve instructions from real work
 
@@ -129,6 +133,8 @@ At minimum:
 
 1. Run `git diff --check` in the proposal worktree.
 2. Run the target's documented validator and tests through its own environment.
+   For the local bundle checker, follow [its command and scope](bundle-validation.md);
+   it checks selected format contracts, not full portability or model effectiveness.
 3. Inspect all executable changes before running them. Controlled-risk changed
    code requires user approval before execution.
 4. Scan the worktree diff and untracked files for tokens, credentials, private

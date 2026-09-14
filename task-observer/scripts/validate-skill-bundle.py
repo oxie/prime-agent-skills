@@ -3,9 +3,10 @@
 validate-skill-bundle.py — the pre-delivery gate, as assertions.
 
 Checks a staged skill directory (and optionally its packed .skill bundle)
-against the criteria the INSTALLER enforces, not against what seems
-sensible. Every check compares a measurement to a bound in the same step:
-an unasserted metric manufactures confidence that no defect exists.
+against selected Agent Skills frontmatter bounds plus Prime naming and local
+packaging/residue policy. This is a deterministic gate, not proof of runtime
+loading or complete specification compliance. Requires PyYAML in the Python
+environment running this script; there is no regex-only validation fallback.
 
 Usage
 -----
@@ -28,7 +29,10 @@ import struct
 import sys
 import zipfile
 
-MAX_DESCRIPTION_CHARS = 1024   # installer's documented cap on the folded description
+# Agent Skills field bounds (also documented by Prime skill-creator).
+MAX_NAME_CHARS = 64
+MAX_DESCRIPTION_CHARS = 1024
+MAX_COMPATIBILITY_CHARS = 500
 NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")   # kebab-case
 PATH_RE = re.compile(r"`((?:references|scripts|assets)/[^`\s*?]+\.[A-Za-z0-9]+)`")
 BUILD_JUNK = {"__pycache__", ".DS_Store"}
@@ -53,6 +57,7 @@ def frontmatter(text):
 
 
 def folded_description(fm):
+    """Legacy text helper; not used for parsed YAML field validation."""
     m = re.search(r"(?ms)^description:\s*>-?\s*\n(.*?)(?=^\S|\Z)", fm)
     if m:
         return " ".join(m.group(1).split())
@@ -73,30 +78,56 @@ def check_dir(skill_dir, fails):
     if fm is None:
         fails.append("frontmatter: no leading --- block"); return
     try:
-        import yaml  # optional; fall back to regex checks if absent
-        data = yaml.safe_load(fm)
-        if not isinstance(data, dict):
-            fails.append("frontmatter: does not parse to a mapping")
-            data = {}
+        import yaml
     except ImportError:
-        data = {"name": (re.search(r"(?m)^name:\s*(.+)$", fm) or [None, ""])[1].strip(),
-                "description": folded_description(fm)}
-    except Exception as e:  # yaml error
-        fails.append(f"frontmatter: YAML parse error: {e}"); data = {}
-    name = str(data.get("name") or "").strip()
-    if not name:
-        fails.append("frontmatter: `name` missing")
-    elif not NAME_RE.match(name):
+        fails.append(
+            "frontmatter: PyYAML is required; use a Python environment with "
+            "PyYAML installed, or obtain approval to set up that environment, and rerun"
+        )
+        return
+    try:
+        # frontmatter() omits the newline before the closing delimiter. Restore
+        # it so YAML literal/folded block chomping counts the actual value.
+        data = yaml.safe_load(fm + "\n")
+    except Exception as e:  # PyYAML constructors can also raise ValueError.
+        fails.append(f"frontmatter: YAML parse error: {e}")
+        data = {}
+    if not isinstance(data, dict):
+        fails.append("frontmatter: does not parse to a mapping")
+        data = {}
+    name = data.get("name")
+    if not isinstance(name, str):
+        fails.append("frontmatter: `name` must be a string")
+    elif not 1 <= len(name) <= MAX_NAME_CHARS:
+        fails.append(f"frontmatter: `name` must be 1..{MAX_NAME_CHARS} chars (got {len(name)})")
+    elif not NAME_RE.fullmatch(name):
         fails.append(f"frontmatter: `name` not kebab-case: {name!r}")
     elif name != skill_dir.name:
         fails.append(f"frontmatter: `name` {name!r} != directory {skill_dir.name!r}")
-    desc = folded_description(fm)
-    if not desc:
-        fails.append("frontmatter: `description` missing")
-    elif len(desc) > MAX_DESCRIPTION_CHARS:
-        fails.append(f"description {len(desc)} chars > cap {MAX_DESCRIPTION_CHARS}")
+    desc = data.get("description")
+    if not isinstance(desc, str):
+        fails.append("frontmatter: `description` must be a string")
+    elif not desc.strip():
+        fails.append("frontmatter: `description` must not be blank")
+    elif not 1 <= len(desc) <= MAX_DESCRIPTION_CHARS:
+        fails.append(f"frontmatter: `description` must be 1..{MAX_DESCRIPTION_CHARS} chars (got {len(desc)})")
     elif len(desc) > 900:
         print(f"warn: description {len(desc)} chars (cap {MAX_DESCRIPTION_CHARS}) — near the boundary")
+    if "compatibility" in data:
+        compatibility = data["compatibility"]
+        if not isinstance(compatibility, str):
+            fails.append("frontmatter: `compatibility` must be a string")
+        elif not compatibility.strip():
+            fails.append("frontmatter: `compatibility` must not be blank")
+        elif not 1 <= len(compatibility) <= MAX_COMPATIBILITY_CHARS:
+            fails.append(f"frontmatter: `compatibility` must be 1..{MAX_COMPATIBILITY_CHARS} chars (got {len(compatibility)})")
+    if "metadata" in data:
+        metadata = data["metadata"]
+        if not isinstance(metadata, dict) or not all(
+            isinstance(key, str) and isinstance(value, str)
+            for key, value in metadata.items()
+        ):
+            fails.append("frontmatter: `metadata` must be a mapping with string keys and string values")
     # every cited bundled path exists (backticked, real extension — globs in prose are skipped)
     for rel in sorted(set(PATH_RE.findall(text))):
         if not (skill_dir / rel).is_file():
