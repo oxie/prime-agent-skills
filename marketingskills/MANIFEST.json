@@ -286,7 +286,7 @@
       "name": "seo-audit",
       "version": "2.0.1",
       "path": "skills/seo-audit",
-      "sha256": "649205b30c2e4de96866035d729a634987bafdab527f7da7017677fda69f2213"
+      "sha256": "216857f9519c2b5c1bdae49150d58a3497832711d9e43d58e43ae9093fd2af49"
     },
     {
       "name": "signup",
@@ -357,6 +357,12 @@
       "commit": "86e4cec2d51927a8ecff4370f892136fc6317523",
       "scope": "original evidence-backed SWOT cross-actions and optional competitor-profiling route",
       "provenance": "skills/competitor-profiling/super-skills-provenance.json"
+    },
+    {
+      "source": "kostja94/marketing-skills",
+      "commit": "70987bad4ebe9dce1f74858c1c64f3f8810f18e4",
+      "scope": "original corrected Search Console diagnosis and restricted Indexing API guide correction",
+      "provenance": "skills/seo-audit/gsc-provenance.json"
     }
   ]
 }

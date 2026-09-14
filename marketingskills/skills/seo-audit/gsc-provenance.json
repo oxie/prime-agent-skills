@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/kostja94/marketing-skills",
+  "commit": "70987bad4ebe9dce1f74858c1c64f3f8810f18e4",
+  "sources": [
+    {
+      "path": "skills/analytics/seo/google-search-console/SKILL.md",
+      "bytes": 13335,
+      "sha256": "0649408558f273cd32148cc4f46a2a745531b50f30867f47a052ac536d359ba7",
+      "git_blob": "5eb00446284e8c68ba80e16ee50fd02fcb253a3d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "9f06c77b8931e39ae797195faa02c45a9d1785c844d6aa1dcb2056a52fbaa6f5",
+      "git_blob": "b9132b8a1a41a4612837f14fce7d10bfafc91251"
+    }
+  ],
+  "primary_references": [
+    {
+      "name": "gsc-api",
+      "url": "https://developers.google.com/webmaster-tools/v1/searchanalytics/query",
+      "final_url": "https://developers.google.com/webmaster-tools/v1/searchanalytics/query",
+      "bytes": 97790,
+      "sha256": "720c0b921e129540afd43d827e75e9a3f5c7532c2340470ab3e79c321ac7f9f4",
+      "retrieved_utc": "2026-09-14T12:31:14.313676+00:00",
+      "status": 200
+    },
+    {
+      "name": "indexing-api",
+      "url": "https://developers.google.com/search/apis/indexing-api/v3/using-api",
+      "final_url": "https://developers.google.com/search/apis/indexing-api/v3/using-api",
+      "bytes": 84598,
+      "sha256": "837e301de33ae571247bd6bbdec3a86591a3b28e7dbc57591bc7f96e17ea51cd",
+      "retrieved_utc": "2026-09-14T12:31:15.472165+00:00",
+      "status": 200
+    },
+    {
+      "name": "sitemap-submit",
+      "url": "https://developers.google.com/webmaster-tools/v1/sitemaps/submit",
+      "final_url": "https://developers.google.com/webmaster-tools/v1/sitemaps/submit",
+      "bytes": 69622,
+      "sha256": "7ddf05cb041ae59e3df833bea91d83f5a486c234ea770bf74f4cc281155f9904",
+      "retrieved_utc": "2026-09-14T14:05:17.399123+00:00",
+      "status": 200
+    },
+    {
+      "name": "gsc-limits",
+      "url": "https://developers.google.com/webmaster-tools/limits",
+      "final_url": "https://developers.google.com/webmaster-tools/limits",
+      "bytes": 69129,
+      "sha256": "7c05c0f6d2cda76f625683ee72878765fb8d7d33591fb28d2b02e29fc979b391",
+      "retrieved_utc": "2026-09-14T14:05:17.716711+00:00",
+      "status": 200
+    },
+    {
+      "name": "url-inspection",
+      "url": "https://developers.google.com/webmaster-tools/v1/urlInspection.index/inspect",
+      "final_url": "https://developers.google.com/webmaster-tools/v1/urlInspection.index/inspect",
+      "bytes": 74935,
+      "sha256": "40605c7d4100749848552817ea036e3895a016f15d98315ecb6f9b563a0dc014",
+      "retrieved_utc": "2026-09-14T14:05:18.166621+00:00",
+      "status": 200
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+      "final_url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+      "status": 200,
+      "bytes": 1611302,
+      "sha256": "81679fd653baf0c9ff78cd2e16094766495fff6ecd078debbffe73f86507f5f3",
+      "retrieved_utc": "2026-09-14T14:05:47.859262+00:00"
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/7440203?hl=en",
+      "final_url": "https://support.google.com/webmasters/answer/7440203?hl=en",
+      "status": 200,
+      "bytes": 1690270,
+      "sha256": "37173eac9824bc39705ff68f29710984d13891c07b6307bc8253bde2c0c24904",
+      "retrieved_utc": "2026-09-14T14:05:48.275940+00:00"
+    }
+  ],
+  "routing": {
+    "previous": {
+      "bytes": 16958,
+      "sha256": "8ffbf008051949d5203ef9ca220b22593fc986f55fbd847f2b12842e46f2c97e"
+    },
+    "current": {
+      "bytes": 17347,
+      "sha256": "356fb5f7b2a069c609dbf576e2d82f255bee01de68c72f96b7eb141f2539d868"
+    },
+    "change": "one description sentence plus optional append; previous body intact"
+  },
+  "adapted_files": {
+    "marketingskills/skills/seo-audit/SKILL.md": {
+      "bytes": 17347,
+      "sha256": "356fb5f7b2a069c609dbf576e2d82f255bee01de68c72f96b7eb141f2539d868"
+    },
+    "marketingskills/skills/seo-audit/references/search-console-diagnosis.md": {
+      "bytes": 18182,
+      "sha256": "aa07ea46ba04966fec86a08ddb3050a364a77920cb993c8a3f61faa0d70c9633"
+    },
+    "marketingskills/skills/seo-audit/GSC_SOURCES.md": {
+      "bytes": 2191,
+      "sha256": "8b04c2b184f7f303722ecaf131dba07d8b53412a220eaf6dc62ee771c52d8d02"
+    },
+    "marketingskills/skills/seo-audit/licenses/kostja-MIT.txt": {
+      "bytes": 1065,
+      "sha256": "9f06c77b8931e39ae797195faa02c45a9d1785c844d6aa1dcb2056a52fbaa6f5"
+    },
+    "marketingskills/tools/integrations/google-search-console.md": {
+      "bytes": 6621,
+      "sha256": "f5d54f89252280874fd88ce2fef052eab6e188130d3195ba0c356020b2142ed9"
+    }
+  },
+  "limits": "Original offline examples/documentation; no API/client/model/site operations or efficacy proof."
+}
