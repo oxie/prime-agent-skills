@@ -1,3 +1,4 @@
+import {beforeTasteSkill} from './taste-snapshot.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
@@ -8,7 +9,7 @@ const owners=new Set(['hallmark','cinematic-ui','canvas-effects']);
 export function previousMengtoSkill(skills,owner){
  assert(owners.has(owner),'Only the three approved historical SKILL.md snapshots');
  const root=resolve(skills,owner),record=JSON.parse(readFileSync(resolve(root,'mengto-provenance.json'),'utf8')).routing;
- const b=readFileSync(resolve(root,'SKILL.md'));
+ const b=['hallmark','cinematic-ui'].includes(owner) ? beforeTasteSkill(skills,owner) : readFileSync(resolve(root,'SKILL.md'));
  assert.equal(record.path,'SKILL.md');
  assert.equal(b.length,record.current.bytes);assert.equal(sha(b),record.current.sha256);
  const old=b.subarray(0,record.previous.bytes),add=b.subarray(record.previous.bytes);

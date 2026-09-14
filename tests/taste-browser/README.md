@@ -1,0 +1,5 @@
+# Owned Taste browser probes
+
+Use only with the authorized local preview and browser-check. Open craft.html or type.html; Run checks loads the actual reusable CSS after sampling unwrapped host styles. It exercises actual layout and native DOM behavior. The type probe deliberately decodes a local invalid image payload; it must fail without losing text or slot geometry. Craft dispatches a synthetic click after cleanup to check that a leftover listener does not mutate state.
+
+Double text sets every sampled production text element to twice its computed pixel font size and verifies those actual sizes. This is synthetic 200% text stress, NOT browser zoom, native text-only zoom or AT evidence. Probe controls/output are excluded. All flags must be true and the final browser DOM must have no overflow; capture exit alone is insufficient. Forced colors is source-only with the current browser interface. Scripted clicks do not establish trusted keyboard activation; run separate normal demo keyboard actions. No image-provider result, actual brand master, live telemetry, performance or complete accessibility certification is claimed.

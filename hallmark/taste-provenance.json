@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+  "sources": [
+    {
+      "path": "skills/brutalist-skill/SKILL.md",
+      "sha256": "fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa",
+      "git_blob": "f5375b908340e1376ed391232a31c5d82d5babfb",
+      "bytes": 8456
+    },
+    {
+      "path": "skills/gpt-tasteskill/SKILL.md",
+      "sha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+      "git_blob": "03ed209b8fdc0a3cd6bccf8a5b3bfffe56aa4558",
+      "bytes": 7857
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "git_blob": "48a2f6640b81ff8eca9ce7f6a96337692713ef5b",
+      "bytes": 1065
+    }
+  ],
+  "license": {
+    "path": "licenses/taste-MIT.txt",
+    "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+  },
+  "routing": {
+    "path": "SKILL.md",
+    "previous": {
+      "bytes": 9446,
+      "sha256": "d63b9421aeed3022b99ddabe9aeacb2b594736f9095909193e60ca876b53125b"
+    },
+    "addition": {
+      "bytes": 466,
+      "sha256": "816edd69fc05247d5336e240e413b2468e5e53b878b2bbccc9943e57772edeb3"
+    },
+    "current": {
+      "bytes": 9912,
+      "sha256": "a1cf8ce06e0d3305d23a02bb79dcc04d95b0187c31f634b0a4304bd7b8b6f49a"
+    }
+  },
+  "adapted_files": {
+    "TASTE_SOURCES.md": {
+      "bytes": 1211,
+      "sha256": "7f848e718ccefc71d8bf5dbec14e01e10d770f4be947ce2f29aa9af3f95178d0"
+    },
+    "SKILL.md": {
+      "bytes": 9912,
+      "sha256": "a1cf8ce06e0d3305d23a02bb79dcc04d95b0187c31f634b0a4304bd7b8b6f49a"
+    },
+    "references/print-telemetry.md": {
+      "bytes": 6259,
+      "sha256": "6b7fb5b84cc6879f91a3efce0fd7abbf2adedc93adf80fd59029b7b1a5c19cfc"
+    },
+    "licenses/taste-MIT.txt": {
+      "bytes": 1065,
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+    }
+  }
+}

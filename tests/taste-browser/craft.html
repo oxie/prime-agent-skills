@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nested surfaces — local craft examples</title>
+  <link rel="stylesheet" href="../../cinematic-ui/assets/taste-craft/demo.css">
+</head>
+<body data-kind="craft" class="craft-demo">
+<main id="top">
+  <header class="intro">
+    <p>Original CSS study · no external assets</p>
+    <h1>Plate, tray, register.</h1>
+    <p>Two independent treatments of a small material recipe. These are labelled
+      sample notes, not a product dashboard, live telemetry or operational data.</p>
+    <nav aria-label="Examples"><a href="#print">Swiss-print sample</a> ·
+      <a href="#telemetry">Dark telemetry sample</a> · <a href="#host-note">Host field</a></nav>
+  </header>
+  <div class="neutral-host">
+    <p>Unwrapped host strip. The reusable craft stylesheet must not style this field.</p>
+    <label for="host-note">Local scratch note (not saved)</label>
+    <input id="host-note" type="text" placeholder="Type to test native input">
+  </div>
+  <section class="preset preset--print" id="print" aria-labelledby="print-title">
+    <p class="caption">Swiss-print treatment / static sample</p>
+    <h2 id="print-title">The reading plate.</h2>
+    <div class="cui-bezel">
+      <article class="cui-bezel__core" aria-labelledby="print-core">
+        <h3 id="print-core">A note inside a tray</h3>
+        <p>The warm outer shell surrounds an opaque reading surface. Its inner
+          radius subtracts the shell border and padding. Neither layer clips content.</p>
+        <button class="cui-inset-control" type="button" data-craft-toggle
+                aria-pressed="false" aria-describedby="print-state" disabled>
+          <span class="cui-inset-control__label">Emphasize this local control label for a closer inspection</span>
+          <span class="cui-inset-control__arrow" aria-hidden="true">↗</span>
+        </button>
+        <p class="local-state" id="print-state" data-craft-status role="status">Local toggle unavailable until the demo script loads. Nothing is saved or sent.</p>
+        <p><a href="#print-register">Read the sample register</a></p>
+      </article>
+    </div>
+    <h3 id="print-register">Sample register / three entries</h3>
+    <dl class="cui-gap-grid">
+      <div class="cui-gap-grid__cell"><dt>Reading surface</dt><dd>Opaque paper-colored core</dd></div>
+      <div class="cui-gap-grid__cell"><dt>Outer shell</dt><dd>Warm tray with a solid edge</dd></div>
+      <div class="cui-gap-grid__cell"><dt>Long sample identifier</dt><dd>sample-reading-note-with-an-intentionally-long-unbroken-identifier-for-reflow-testing</dd></div>
+    </dl>
+    <p class="preset-footer">The last entry spans the final row. No invented record fills an empty cell.</p>
+  </section>
+  <section class="preset preset--telemetry" id="telemetry" aria-labelledby="telemetry-title">
+    <p class="caption">Telemetry treatment / no live connection</p>
+    <h2 id="telemetry-title">Surface inspection</h2>
+    <div class="cui-bezel">
+      <article class="cui-bezel__core" aria-labelledby="telemetry-core">
+        <h3 id="telemetry-core">A static instrument-like note</h3>
+        <p>Monospaced labels and close-set fields provide a technical rhythm.
+          No sensor, service, measurement or monitoring process is connected.</p>
+        <button class="cui-inset-control" type="button" data-craft-toggle
+                aria-pressed="false" aria-describedby="telemetry-state" disabled>
+          <span class="cui-inset-control__label">Emphasize this local control label for a closer inspection</span>
+          <span class="cui-inset-control__arrow" aria-hidden="true">↗</span>
+        </button>
+        <p class="local-state" id="telemetry-state" data-craft-status role="status">Local toggle unavailable until the demo script loads. Nothing is saved or sent.</p>
+        <p><a href="#telemetry-register">Read the sample inspection fields</a></p>
+      </article>
+    </div>
+    <h3 id="telemetry-register">Sample inspection fields / five entries</h3>
+    <dl class="cui-gap-grid">
+      <div class="cui-gap-grid__cell"><dt>Mode</dt><dd>Static local example</dd></div>
+      <div class="cui-gap-grid__cell"><dt>Connection</dt><dd>No live source</dd></div>
+      <div class="cui-gap-grid__cell"><dt>Text face</dt><dd>System monospace stack</dd></div>
+      <div class="cui-gap-grid__cell"><dt>Decoration</dt><dd>Still borders and opaque fills</dd></div>
+      <div class="cui-gap-grid__cell"><dt>State scope</dt><dd>The buttons change only their own emphasis and local description. Reloading discards the change.</dd></div>
+    </dl>
+    <p class="preset-footer"><a href="#top">Back to the introduction</a></p>
+  </section>
+</main>
+
+<div id="probe-controls" style="position:fixed;right:8px;top:8px;z-index:10;max-width:calc(100% - 16px)"><button id="run-probe" type="button">Run checks</button> <button id="double-text" type="button" disabled>Double text</button></div><pre id="probe-output" role="status" style="white-space:pre-wrap;overflow-wrap:anywhere">Ready</pre><script type="module" src="probe.mjs"></script></body>
+</html>

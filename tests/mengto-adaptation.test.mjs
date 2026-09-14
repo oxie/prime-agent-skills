@@ -1,3 +1,4 @@
+import {beforeTasteSkill,tasteRoutes} from './helpers/taste-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync,mkdtempSync,mkdirSync,writeFileSync,rmSync} from 'node:fs';
@@ -8,7 +9,7 @@ import {createHash} from 'node:crypto';
 import vm from 'node:vm';
 import {previousMengtoSkill} from './helpers/mengto-snapshot.mjs';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>readFileSync(resolve(root,p));
+const read=p=>p.endsWith('/SKILL.md') && Object.hasOwn(tasteRoutes,p.slice(0,-9)) ? beforeTasteSkill(root,p.slice(0,-9)) : readFileSync(resolve(root,p));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const routeRecords={"canvas-effects": {"path": "SKILL.md", "previous": {"bytes": 6697, "sha256": "a6268ba4e5c92eb4caa2feb80d532705d087c548d61f2b62effc30990c3eb1fe"}, "addition": {"bytes": 457, "sha256": "78dac02e065b9ce0496064f973b725b27fa49f21827497830e1bb28ba76709e2"}, "current": {"bytes": 7154, "sha256": "2e71c43709ba37b11b977a07706470c5e3f58317e92bb8d3f067f24d09a1d1ee"}}, "cinematic-ui": {"path": "SKILL.md", "previous": {"bytes": 8121, "sha256": "1d62102bf7ed0dca73c254961ab44ea761d7c0e7d5b0e6d5cdbe6eda361d4a82"}, "addition": {"bytes": 325, "sha256": "d5f1790c664cfa85d3ecb89939175a7af1d93d06552807ae3e03d2ba4af4ee00"}, "current": {"bytes": 8446, "sha256": "ae748ac24fe63ac8dc4c4c4d57551e453767bf1bbb64b6c4eed3becb29b328d1"}}, "hallmark": {"path": "SKILL.md", "previous": {"bytes": 9000, "sha256": "44f66f48f6f367a595653f23e774bd5fcde4ce67c3a10d181f35a10fe1869833"}, "addition": {"bytes": 446, "sha256": "5873c91b1c2d524d9edf68c43a23f66df4baf585b4a89d7b15ca43c89ccac5b4"}, "current": {"bytes": 9446, "sha256": "d63b9421aeed3022b99ddabe9aeacb2b594736f9095909193e60ca876b53125b"}}, "marketingskills/skills/image": {"path": "SKILL.md", "previous": {"bytes": 16146, "sha256": "7711d1a43af22ec62da8a33e3252d5ea37e2fd5a90053a83144189d3bd26ee82"}, "addition": {"bytes": 329, "sha256": "3b8e382fca9242366792fe2cf42da31cea7f93594064cd3d5b82370a2aed242b"}, "current": {"bytes": 16475, "sha256": "0b1a13a9db01ef82d01f02cfc61fc84d1f3718234ace98b8fb30f92354f0bdcb"}}};
 const pin="321c769739b823de5eb94eb3a52aa1974fe783a2";

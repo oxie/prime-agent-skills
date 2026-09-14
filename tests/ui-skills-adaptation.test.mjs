@@ -67,7 +67,9 @@ test('routes preserve workflow and expand no browser or execution authority',()=
  for(const phrase of ['**Audit:** report only','Do not ask answered questions','does not crawl public URLs','No hooks, schedules, watchers','Do not invent backend behavior'])assert.ok(s.includes(phrase),phrase);
  assert.ok(!/^hooks:|^allowed-tools:/m.test(s));
  for(const f of [path.join(hall,'SKILL.md'),...Object.values(files).map(p=>path.join(hall,p)),path.join(hall,'UI_SKILLS_SOURCES.md')]){
-  for(const [,href] of fs.readFileSync(f,'utf8').matchAll(/\]\(([^)]+)\)/g)){
+  // Keep this historical owner-only link contract exact; Taste tests check its new cross-owner route.
+  const linkText=f===path.join(hall,'SKILL.md')?previousMengtoSkill(root,'hallmark').toString('utf8'):fs.readFileSync(f,'utf8');
+  for(const [,href] of linkText.matchAll(/\]\(([^)]+)\)/g)){
    if(/^(https?:|#)/.test(href))continue;
    const target=path.resolve(path.dirname(f),href.split('#')[0]);assert.ok(target.startsWith(hall+path.sep));assert.ok(fs.statSync(target).isFile(),href);
   }

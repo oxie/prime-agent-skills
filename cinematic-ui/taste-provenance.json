@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+  "sources": [
+    {
+      "path": "skills/soft-skill/SKILL.md",
+      "sha256": "e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc",
+      "git_blob": "4038f41ec0137ec92e98ed0151fe3b7038b9329e",
+      "bytes": 10561
+    },
+    {
+      "path": "skills/brutalist-skill/SKILL.md",
+      "sha256": "fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa",
+      "git_blob": "f5375b908340e1376ed391232a31c5d82d5babfb",
+      "bytes": 8456
+    },
+    {
+      "path": "skills/gpt-tasteskill/SKILL.md",
+      "sha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+      "git_blob": "03ed209b8fdc0a3cd6bccf8a5b3bfffe56aa4558",
+      "bytes": 7857
+    },
+    {
+      "path": "skills/minimalist-skill/SKILL.md",
+      "sha256": "36bc7328f085405f43b476938e62460fa573bf7e984e949e072bcf014831a44c",
+      "git_blob": "44ead27ef04ffe79ade0c6df7fd696dbcf7b246b",
+      "bytes": 7901
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "git_blob": "48a2f6640b81ff8eca9ce7f6a96337692713ef5b",
+      "bytes": 1065
+    }
+  ],
+  "license": {
+    "path": "licenses/taste-MIT.txt",
+    "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+  },
+  "routing": {
+    "path": "SKILL.md",
+    "previous": {
+      "bytes": 8446,
+      "sha256": "ae748ac24fe63ac8dc4c4c4d57551e453767bf1bbb64b6c4eed3becb29b328d1"
+    },
+    "addition": {
+      "bytes": 357,
+      "sha256": "2c06400c6d7a2b8fa4211bf3468fc8d5b9e2b848db2983e0cde81824a78d52b0"
+    },
+    "current": {
+      "bytes": 8803,
+      "sha256": "cd7346ca6ddad2d1f898d6b7d9ab5e374157f88c366b87ab9ff05846a0d93572"
+    }
+  },
+  "adapted_files": {
+    "TASTE_SOURCES.md": {
+      "bytes": 1279,
+      "sha256": "7d0b13f69cac52a12d8a50e6918caadefcc2785a999c18ac6421aaa09fbaa566"
+    },
+    "SKILL.md": {
+      "bytes": 8803,
+      "sha256": "cd7346ca6ddad2d1f898d6b7d9ab5e374157f88c366b87ab9ff05846a0d93572"
+    },
+    "references/inline-media-type.md": {
+      "bytes": 5663,
+      "sha256": "13865291f55ae9cd6ba1bbc5e81d5dbdd1b22166d9ee12261a560df08b8680d0"
+    },
+    "references/nested-surfaces.md": {
+      "bytes": 10330,
+      "sha256": "6aac50e79283c44053dda49c1e2462b219eb9701eb9cb8b77327f419482d3fc6"
+    },
+    "assets/taste-craft/demo.css": {
+      "bytes": 2258,
+      "sha256": "3bb6e709cbfd8cf0a52c86af440b470f68cf4f690ba69c6c4bd9b86093af4079"
+    },
+    "assets/taste-craft/craft.css": {
+      "bytes": 4020,
+      "sha256": "7161fb9a316b8d8d45253f992a1eb52f773d89042402c97372df6aaa57dc04c3"
+    },
+    "assets/taste-craft/index.html": {
+      "bytes": 4874,
+      "sha256": "ae80e770e40fbfb73b8d5014d16c96842b8a137be8e058933c11b1e7bdd43528"
+    },
+    "assets/taste-craft/demo.mjs": {
+      "bytes": 1779,
+      "sha256": "bd3d394d7714f6f3469eae8d2c88d6292f5a5b49ae4a1f0444a3d981137a8e86"
+    },
+    "assets/inline-media/demo.css": {
+      "bytes": 1861,
+      "sha256": "a5421edb6428b80ed892ed6d6d44eaa704ae1660cb8e9e1dd0eab43a1fd7d204"
+    },
+    "assets/inline-media/index.html": {
+      "bytes": 3922,
+      "sha256": "47632528a9536f52b258934f982e27a8314f1e4c513949d7d1b16ff25c470bcc"
+    },
+    "assets/inline-media/study.svg": {
+      "bytes": 674,
+      "sha256": "1905b7e5833c6a0bc9ea6cd3082c137fa7b8b57ab9c11ebcf2b73b7b379fbc08"
+    },
+    "assets/inline-media/inline-media.css": {
+      "bytes": 1475,
+      "sha256": "167aad5dcc7eab15fe3579e03f5ae1f5a8074219787bc81c57610b38db99e59b"
+    },
+    "tests/inline-media.mjs": {
+      "bytes": 11079,
+      "sha256": "007837c2c57470f6b8ea1146657e19a373ee96579533e463719d4bccee307513"
+    },
+    "tests/taste-surfaces.mjs": {
+      "bytes": 13818,
+      "sha256": "6d17d08e0a0448dc5b5c785ea90086eebcdf66f51413814ca3a9f1346fceb312"
+    },
+    "licenses/taste-MIT.txt": {
+      "bytes": 1065,
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+    }
+  }
+}

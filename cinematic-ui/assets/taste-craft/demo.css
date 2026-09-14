@@ -1,0 +1,64 @@
+/* Standalone fixture styles only. Not part of the reusable library. */
+.craft-demo {
+  margin: 0;
+  color: #20211e;
+  background: #ffffff;
+  font: 1rem/1.6 system-ui, sans-serif;
+}
+.craft-demo main { max-inline-size: 72rem; margin-inline: auto; padding: 1rem; }
+.craft-demo a { color: inherit; text-underline-offset: 0.2em; }
+.craft-demo a:focus-visible,
+.craft-demo input:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.craft-demo .intro { max-inline-size: 48rem; padding-block: 2rem; }
+.craft-demo h1 { font-size: clamp(2rem, 6vw, 4rem); line-height: 1.1; overflow-wrap: anywhere; }
+.craft-demo .neutral-host { padding-block: 1.5rem; }
+.craft-demo .neutral-host input { box-sizing: border-box; max-inline-size: 100%; font: inherit; }
+.craft-demo .neutral-host label { display: block; }
+.craft-demo .preset { padding: clamp(1rem, 4vw, 3rem); margin-block: 2rem; }
+.craft-demo .preset--print {
+  --cui-tc-ink: #20211e;
+  --cui-tc-core: #faf9f4;
+  --cui-tc-tray: #e4e2da;
+  --cui-tc-line: #66645e;
+  --cui-tc-focus: #9c2820;
+  color: #20211e;
+  background: #f1f0e9;
+  border-block-start: 8px solid #9c2820;
+}
+.craft-demo .preset--telemetry {
+  --cui-tc-ink: #e8f0e9;
+  --cui-tc-core: #171d1a;
+  --cui-tc-tray: #29322c;
+  --cui-tc-line: #97a89b;
+  --cui-tc-focus: #b8e88b;
+  color: #e8f0e9;
+  background: #101511;
+  border-block-start: 2px solid #b8e88b;
+  font-family: ui-monospace, monospace;
+}
+.craft-demo .preset h2 { margin-block: 0.5rem 2rem; overflow-wrap: anywhere; }
+.craft-demo .preset--print h2 {
+  max-inline-size: 10ch;
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+.craft-demo .preset--telemetry h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.2;
+  font-weight: 500;
+}
+.craft-demo .caption { font: 1rem/1.5 ui-monospace, monospace; }
+.craft-demo .preset h3 { margin-block-start: 0; line-height: 1.3; }
+.craft-demo dt { font-weight: 600; }
+.craft-demo dd { margin: 0.5em 0 0; }
+.craft-demo .local-state { max-inline-size: 52ch; }
+.craft-demo .preset-footer { margin-block-end: 0; }
+@media (forced-colors: active) {
+  .craft-demo .preset--print,
+  .craft-demo .preset--telemetry {
+    color: CanvasText;
+    background: Canvas;
+    border-color: CanvasText;
+  }
+}

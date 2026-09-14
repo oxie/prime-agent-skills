@@ -154,7 +154,7 @@
       "name": "image",
       "version": "2.0.1",
       "path": "skills/image",
-      "sha256": "5dc4bda55b75b2cc1b2e2fff1e113eceb85861df509edb5fd995293fe55dac7f"
+      "sha256": "df84827b3c3d66b1e8143bccb65cf8869560ab834e4c90bacab3433fd51ed621"
     },
     {
       "name": "influencer-marketing",
@@ -345,6 +345,12 @@
       "commit": "321c769739b823de5eb94eb3a52aa1974fe783a2",
       "scope": "image brand-worlds reference and append-only route",
       "provenance": "skills/image/mengto-provenance.json"
+    },
+    {
+      "source": "Leonxlnx/taste-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "scope": "identity concepts, ink illustration and append-only image route",
+      "provenance": "skills/image/taste-provenance.json"
     }
   ]
 }

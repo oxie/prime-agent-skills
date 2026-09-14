@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inline media — folded note type study</title>
+  <link rel="stylesheet" href="../../cinematic-ui/assets/inline-media/demo.css">
+</head>
+<body data-kind="type" class="type-demo">
+<header class="type-demo__intro">
+  <h1>Inline media, readable words</h1>
+  <p>An original SVG illustration of an imagined folded note. This is a static typography study, not a production trademark or an image-provider result.</p>
+  <a href="#integration">Read integration notes</a>
+  <div id="neutral-host">
+    <h2>Unstyled host heading</h2>
+    <p>This heading has no recipe class. Its typography must remain host-owned.</p>
+  </div>
+</header>
+<main>
+  <section class="type-demo__panel type-demo__panel--light" aria-labelledby="light-title">
+    <p>Light paper / large display</p>
+    <h2 class="cui-inline-title" id="light-title">A small <span class="cui-inline-media" aria-hidden="true"><img src="../../cinematic-ui/assets/inline-media/study.svg" width="240" height="120" alt=""></span> place for a thought.</h2>
+    <p>The illustration is decorative. The sentence stays complete when it is removed.</p>
+    <a href="#full-study">Inspect the full illustration</a>
+  </section>
+  <section class="type-demo__panel type-demo__panel--dark" aria-labelledby="dark-title">
+    <p>Dark room / pale media insert</p>
+    <h2 class="cui-inline-title" id="dark-title">A small <span class="cui-inline-media" aria-hidden="true"><img src="../../cinematic-ui/assets/inline-media/study.svg" width="240" height="120" alt=""></span> place for a thought.</h2>
+    <p>Light heading ink and a pale insert replace the light scene's dark ink and fine frame. The drawing retains charcoal ink on its pale reading plane.</p>
+    <a href="#full-study">Inspect the full illustration</a>
+  </section>
+  <section class="type-demo__panel type-demo__panel--small" aria-labelledby="long-title">
+    <p>Smaller display / long-language wrapping specimen</p>
+    <h2 class="cui-inline-title" id="long-title" lang="de">Ein kleiner <span class="cui-inline-media" aria-hidden="true"><img src="../../cinematic-ui/assets/inline-media/study.svg" width="240" height="120" alt=""></span> Platz für Gedanken und Aufbewahrungsmöglichkeiten.</h2>
+    <p>No manual line breaks or line-count limit. Long words can wrap even when a hyphenation dictionary is unavailable.</p>
+  </section>
+  <section class="type-demo__panel type-demo__panel--missing" aria-labelledby="missing-title">
+    <p>Image absent / empty reserved slot</p>
+    <h2 class="cui-inline-title" id="missing-title">A small <span class="cui-inline-media" aria-hidden="true"></span> place for a thought.</h2>
+    <p>This explicit image-absent fixture makes no failed network request. A failed image must also leave these words readable; test that separately in the browser.</p>
+  </section>
+  <section class="type-demo__notes" id="integration" aria-labelledby="integration-title">
+    <h2 id="integration-title">Use only where the image helps the reading rhythm</h2>
+    <p>Copy inline-media.css into the host pipeline. Keep your own font, size, text, spacing and colors. No script is needed.</p>
+    <details>
+      <summary>When the image carries meaning</summary>
+      <p>Keep the complete heading in text. Move meaningful media into a nearby figure with a useful alternative and caption, as below. Do not hide evidence inside a decorative span or CSS background.</p>
+    </details>
+    <figure id="full-study">
+      <img src="../../cinematic-ui/assets/inline-media/study.svg" width="240" height="120" alt="A folded sheet outlined with one charcoal line; its peach fill is offset down and to the right.">
+      <figcaption>Original SVG illustration: folded note study. The shape is fictional. The caption and alternative explain the visual construction; this is not a logo or cleared brand identity.</figcaption>
+    </figure>
+    <a href="#neutral-host">Return to the host heading</a>
+  </section>
+</main>
+<div id="probe-controls" style="position:fixed;right:8px;top:8px;z-index:10;max-width:calc(100% - 16px)"><button id="run-probe" type="button">Run checks</button> <button id="double-text" type="button" disabled>Double text</button></div><pre id="probe-output" role="status" style="white-space:pre-wrap;overflow-wrap:anywhere">Ready</pre><script type="module" src="probe.mjs"></script></body>
+</html>

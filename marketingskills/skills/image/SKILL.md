@@ -342,3 +342,7 @@ Generate OG images programmatically for pages with dynamic content (blog posts, 
 ## Reference-inspired brand worlds
 
 For a requested family of visual concepts, use [brand worlds](references/brand-worlds.md): shared visual constants with distinct meaning, environment, human activity and motif. Preserve the actual brand and use named reference roles, not numerical similarity scores or a mandatory generator.
+
+## Symbol concepts and ink illustration
+
+For new or explicitly requested identity exploration, use [identity concepts](references/identity-concepts.md): meaningful symbol operations and application-board planning. For rough linework with a deliberate offset color shape, use [ink and spot illustration](references/ink-spot-illustration.md). Both support concept work without automatically invoking a generator or changing an approved brand.

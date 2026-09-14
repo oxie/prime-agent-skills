@@ -1,0 +1,135 @@
+/* Opt-in Taste craft, rewritten for host-owned tokens and native content.
+ * Copy this library only; demo.css and demo.mjs belong to the fixture.
+ * See ../../references/nested-surfaces.md for geometry and source mapping.
+ */
+.cui-bezel {
+  box-sizing: border-box;
+  min-inline-size: 0;
+  padding: var(--cui-tc-inset, 6px);
+  border: var(--cui-tc-border-width, 1px) solid var(--cui-tc-line, #66645e);
+  border-radius: var(--cui-tc-radius, 24px);
+  color: var(--cui-tc-ink, #20211e);
+  background: var(--cui-tc-tray, #e4e2da);
+}
+
+/* The inner OUTER edge begins after shell border + padding, not padding alone.
+ * Uniform length radii/insets only. Small radii clamp to a square, never negative.
+ */
+.cui-bezel > .cui-bezel__core {
+  box-sizing: border-box;
+  min-inline-size: 0;
+  padding: var(--cui-tc-content-space, 24px);
+  border: 1px solid var(--cui-tc-line, #66645e);
+  border-radius: max(0px, calc(var(--cui-tc-radius, 24px) - var(--cui-tc-border-width, 1px) - var(--cui-tc-inset, 6px)));
+  color: var(--cui-tc-ink, #20211e);
+  background: var(--cui-tc-core, #faf9f4);
+  overflow-wrap: anywhere;
+}
+
+/* One native control; the inset arrow is an inert ornament, not a second button. */
+button.cui-inset-control {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75em;
+  max-inline-size: 100%;
+  min-block-size: 44px;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border: 1px solid var(--cui-tc-line, #66645e);
+  border-radius: var(--cui-tc-control-radius, 28px);
+  color: var(--cui-tc-ink, #20211e);
+  background: var(--cui-tc-core, #faf9f4);
+  font: inherit;
+  font-weight: 600;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+button.cui-inset-control > .cui-inset-control__label {
+  min-inline-size: 0;
+}
+button.cui-inset-control > .cui-inset-control__arrow {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  inline-size: 2em;
+  block-size: 2em;
+  border: 1px solid var(--cui-tc-line, #66645e);
+  border-radius: 50%;
+  color: var(--cui-tc-ink, #20211e);
+  background: var(--cui-tc-tray, #e4e2da);
+  pointer-events: none;
+}
+button.cui-inset-control[aria-pressed="true"] > .cui-inset-control__label {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+button.cui-inset-control:focus-visible {
+  outline: 3px solid var(--cui-tc-focus, #9c2820);
+  outline-offset: 4px;
+}
+button.cui-inset-control:disabled {
+  cursor: not-allowed;
+}
+
+/* Two columns, row-major order. The last odd item occupies the entire last row.
+ * No filler, dense packing or giant unpainted track. Cells may be dl groups.
+ */
+.cui-gap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  padding: 1px;
+  color: var(--cui-tc-ink, #20211e);
+  background: var(--cui-tc-line, #66645e);
+}
+.cui-gap-grid > .cui-gap-grid__cell {
+  min-inline-size: 0;
+  padding: var(--cui-tc-cell-space, 16px);
+  color: var(--cui-tc-ink, #20211e);
+  background: var(--cui-tc-core, #faf9f4);
+  overflow-wrap: anywhere;
+}
+.cui-gap-grid > .cui-gap-grid__cell:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+.cui-gap-grid:empty {
+  display: none;
+}
+@media (max-width: 42rem) {
+  .cui-gap-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .cui-gap-grid > .cui-gap-grid__cell:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
+
+/* Actual borders remain when forced colors suppress the background-gap trick. */
+@media (forced-colors: active) {
+  .cui-bezel,
+  .cui-bezel > .cui-bezel__core,
+  button.cui-inset-control,
+  button.cui-inset-control > .cui-inset-control__arrow {
+    color: CanvasText;
+    background: Canvas;
+    border-color: CanvasText;
+  }
+  .cui-gap-grid {
+    color: CanvasText;
+    background: Canvas;
+    padding: 0;
+    gap: 0;
+    border: 1px solid CanvasText;
+  }
+  .cui-gap-grid > .cui-gap-grid__cell {
+    color: CanvasText;
+    background: Canvas;
+    border: 1px solid CanvasText;
+  }
+  button.cui-inset-control:focus-visible {
+    outline-color: CanvasText;
+  }
+}

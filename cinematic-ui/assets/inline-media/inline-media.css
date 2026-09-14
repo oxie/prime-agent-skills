@@ -1,0 +1,48 @@
+/* Opt-in inline-media type. Copy this file, not demo.css.
+ * Original implementation of selected Taste mechanisms; see the reference.
+ * Host owns typography, ink and media framing through inherited --cui-im-*.
+ */
+.cui-inline-title {
+  color: var(--cui-im-ink, inherit);
+  font-family: var(--cui-im-font, inherit);
+  font-size: var(--cui-im-size, inherit);
+  line-height: var(--cui-im-leading, 1.2);
+  letter-spacing: var(--cui-im-tracking, normal);
+  max-inline-size: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+/* Keep spaces on both sides in HTML. This is one inline object, not a flex row.
+ * Its ratio reserves space even with no image. The heading has no fixed height.
+ */
+.cui-inline-title > .cui-inline-media {
+  display: inline-block;
+  box-sizing: border-box;
+  inline-size: min(var(--cui-im-media-size, 1.8em), 100%);
+  aspect-ratio: 2 / 1;
+  vertical-align: var(--cui-im-align, -0.08em);
+  border: 1px solid var(--cui-im-media-line, currentColor);
+  border-radius: var(--cui-im-media-radius, 999px);
+  background-color: var(--cui-im-media-fill, #fbf8f1);
+  pointer-events: none;
+}
+
+.cui-inline-title > .cui-inline-media > img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+}
+
+@media (forced-colors: active) {
+  .cui-inline-title {
+    color: CanvasText;
+  }
+  .cui-inline-title > .cui-inline-media {
+    background-color: Canvas;
+    border-color: CanvasText;
+  }
+}

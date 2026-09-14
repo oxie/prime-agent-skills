@@ -140,3 +140,7 @@ conversion gains from appearance or a self-rating.
 ## Source-backed interaction and originality evidence
 
 When studying supplied HTML or a UI clip for a reusable behavior, use [interaction evidence](references/interaction-evidence.md). When a reference-led design needs an explicit similarity review, use [paired originality evidence](references/originality-evidence.md). Keep the selected workflow and reference jobs; neither route mandates research, another pass, a scanner or a legal verdict.
+
+## Industrial print and telemetry direction
+
+For an industrial visual brief, use [print and telemetry](references/print-telemetry.md) to choose a coherent type, density and grid treatment. For a heading that benefits from a small image fragment, use Cinematic UI’s [inline-media recipe](../cinematic-ui/references/inline-media-type.md). Preserve the brand, real content and existing interaction contracts; these are optional directions, not general design rules.

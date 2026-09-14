@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="120" viewBox="0 0 240 120" role="img" aria-labelledby="note-title note-description">
+  <title id="note-title">Folded note study</title>
+  <desc id="note-description">An imagined folded sheet, drawn in one continuous charcoal line. A pale peach quadrilateral sits eight units right and five units below its outline.</desc>
+  <polygon points="52,36 171,30 202,78 97,104" fill="#f1cfb5"/>
+  <path d="M 44 31 L 101 27 L 163 25 L 178 48 L 194 73 L 141 88 L 89 99 L 67 64 L 44 31 L 109 66 L 163 25 L 130 76 L 89 99" fill="none" stroke="#292c30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

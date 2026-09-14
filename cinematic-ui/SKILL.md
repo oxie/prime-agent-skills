@@ -130,3 +130,7 @@ third-party films, fonts, screenshots, websites or logos.
 ## Optional material construction
 
 For contact shadows, raised/pressed depth, masked gradient edges or measured brackets, use [material surfaces](references/material-surfaces.md). These scoped CSS recipes complement the existing quiet backgrounds; they do not impose a palette, frame every component or replace host tokens.
+
+## Optional nested surfaces and inline media
+
+For plate-in-tray construction, a decorative inset icon or shared one-pixel grid lines, use [nested surfaces](references/nested-surfaces.md). For image fragments within display headings, use [inline-media type](references/inline-media-type.md). These are scoped recipes, not a required style or motion system.

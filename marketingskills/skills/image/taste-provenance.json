@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+  "sources": [
+    {
+      "path": "skills/brandkit/SKILL.md",
+      "sha256": "b0c4837e1bd140ca816ae54948754ddd2ac1e2a4d3619363777a80caf00b2ede",
+      "git_blob": "d76399f666af97ac8c142928e02602d9732e78aa",
+      "bytes": 15992
+    },
+    {
+      "path": "skills/minimalist-skill/SKILL.md",
+      "sha256": "36bc7328f085405f43b476938e62460fa573bf7e984e949e072bcf014831a44c",
+      "git_blob": "44ead27ef04ffe79ade0c6df7fd696dbcf7b246b",
+      "bytes": 7901
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df",
+      "git_blob": "48a2f6640b81ff8eca9ce7f6a96337692713ef5b",
+      "bytes": 1065
+    }
+  ],
+  "license": {
+    "path": "licenses/taste-MIT.txt",
+    "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+  },
+  "routing": {
+    "path": "SKILL.md",
+    "previous": {
+      "bytes": 16475,
+      "sha256": "0b1a13a9db01ef82d01f02cfc61fc84d1f3718234ace98b8fb30f92354f0bdcb"
+    },
+    "addition": {
+      "bytes": 442,
+      "sha256": "922b2397fb684714bf7aecb10149b002febff85ec7543b9444495d8fbf223b1d"
+    },
+    "current": {
+      "bytes": 16917,
+      "sha256": "f8fe96dfb90fa21fa68fa7858ed772879c2f48eb04ae807a9ee777a7ffb9ae68"
+    }
+  },
+  "adapted_files": {
+    "TASTE_SOURCES.md": {
+      "bytes": 1206,
+      "sha256": "7590aa7c8466f7d83c50b52ce1806c62a1e882288b4fbf19861f22fcd88a566c"
+    },
+    "SKILL.md": {
+      "bytes": 16917,
+      "sha256": "f8fe96dfb90fa21fa68fa7858ed772879c2f48eb04ae807a9ee777a7ffb9ae68"
+    },
+    "references/identity-concepts.md": {
+      "bytes": 8480,
+      "sha256": "7bcee638896fe00e6f0dc6e3b50c1716b6f34868603a691bcd4e90f6850b053a"
+    },
+    "references/ink-spot-illustration.md": {
+      "bytes": 6421,
+      "sha256": "e978e78f81a1c3b104291a9546e33d5bacac1b80d48bd189e47aed511a9c16e7"
+    },
+    "licenses/taste-MIT.txt": {
+      "bytes": 1065,
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+/* Demo host only. Do not copy into another site's shared stylesheet. */
+.type-demo {
+  margin: 0;
+  color: #292c30;
+  background: #eeeae2;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.type-demo__intro,
+.type-demo__notes {
+  max-inline-size: 68rem;
+  margin-inline: auto;
+  padding: clamp(1rem, 4vw, 3rem);
+  overflow-wrap: anywhere;
+}
+.type-demo__panel {
+  --cui-im-size: clamp(2rem, 1.4rem + 4vw, 5rem);
+  --cui-im-font: Georgia, serif;
+  --cui-im-leading: 1.25;
+  --cui-im-tracking: -0.025em;
+  --cui-im-ink: #292c30;
+  --cui-im-media-fill: #fbf8f1;
+  --cui-im-media-line: #555a60;
+  padding: clamp(1rem, 4vw, 3rem);
+  color: #292c30;
+  background: #fbf8f1;
+  overflow-wrap: anywhere;
+}
+.type-demo__panel > h2 {
+  max-inline-size: 18ch;
+  margin-block: 0.4em;
+  font-weight: 400;
+}
+.type-demo__panel > p {
+  max-inline-size: 60ch;
+}
+.type-demo__panel--dark {
+  --cui-im-ink: #f6f2e9;
+  --cui-im-media-line: #c2a78e;
+  color: #f6f2e9;
+  background: #20252a;
+}
+.type-demo__panel--small {
+  --cui-im-size: 2rem;
+  --cui-im-tracking: normal;
+  background: #f0eee8;
+}
+.type-demo__panel--small > h2 {
+  max-inline-size: 32ch;
+}
+.type-demo__panel--missing {
+  --cui-im-size: 2.5rem;
+}
+.type-demo a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.type-demo a:focus-visible,
+.type-demo summary:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+.type-demo summary {
+  cursor: pointer;
+  padding-block: 0.65em;
+}
+.type-demo figure {
+  margin-inline: 0;
+}
+.type-demo figure > img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  background: #fbf8f1;
+  border: 1px solid #555a60;
+}
+.type-demo figcaption {
+  max-inline-size: 65ch;
+}
+@media (forced-colors: active) {
+  .type-demo,
+  .type-demo__panel {
+    color: CanvasText;
+    background: Canvas;
+  }
+}
