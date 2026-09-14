@@ -31,4 +31,3 @@ recipe/fixture. They do not allow arbitrary sibling trees, scripts or external f
 HTTP(S) links are citations only and are not fetched. Mutation tests exercise missing
 boundaries, oversized/missing references, unreviewed payloads and link/path escapes.
 These are bounded packaging checks, not a general Markdown parser or malware scanner.
-
