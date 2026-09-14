@@ -1,3 +1,4 @@
+import {beforeSuperEngineering} from './helpers/super-skills-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -9,7 +10,7 @@ import {execFileSync} from 'node:child_process';
 const installed=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const root=process.env.MI_SKILLS_ROOT||installed;
 const fallback=process.env.MI_BASE_ROOT||installed;
-const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const read=p=>p==='engineering-references/SKILL.md'?beforeSuperEngineering(root).toString('utf8'):fs.readFileSync(path.join(root,p),'utf8');
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const clauses={
  'engineering-references/references/debugging.md':['the tied item IDs in','missing imports','higher reproduction rate','as unverified against the original symptom','original\nunminimized scenario'],

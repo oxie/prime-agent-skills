@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/BigY0shi/super-skills",
+  "commit": "86e4cec2d51927a8ecff4370f892136fc6317523",
+  "sources": [
+    {
+      "path": "skills/research-lab/references/skills-catalog.md",
+      "bytes": 36145,
+      "sha256": "7de22b053885815776c213503123375429ae3452450668b130ae801f24549e78",
+      "git_blob": "abf0774a3f085c379c85463c8cb9b30c92ab6534"
+    },
+    {
+      "path": "skills/purple-team/references/skills-catalog.md",
+      "bytes": 56861,
+      "sha256": "096fd15617c33abbc7c4fa3eb520aefb9fa53d75237cc5c3fc5c46f5a29431f0",
+      "git_blob": "6a55e61c9b2292f452917975b71c55d97a3e3eda"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1062,
+      "sha256": "be611188479546e976cc7c1284e1fd0875f685a37866a62027ff5ce28b2d21b9",
+      "git_blob": "6831ab9d10d2fa1b91ba55a7ddefaa6fe8ac4a14"
+    }
+  ],
+  "license": {
+    "path": "licenses/super-skills-MIT.txt",
+    "sha256": "be611188479546e976cc7c1284e1fd0875f685a37866a62027ff5ce28b2d21b9"
+  },
+  "routing": {
+    "previous": {
+      "bytes": 7174,
+      "sha256": "2a30a68ebb43812832b6fd425df706e52678a704a6e45f19f4da58dc293bba51"
+    },
+    "current": {
+      "bytes": 7609,
+      "sha256": "8ee4682e187b43f82e5ee5dc0220d456b39364bd60503f91fca7e57be4ddc26b"
+    },
+    "addition": {
+      "bytes": 372,
+      "sha256": "41aedeb2ccb1c68b1c02d110b9f3a27c376f912d1d5560f875f04a33ea248b14"
+    }
+  },
+  "primary_references": [
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "version": "unversioned retrieved snapshot",
+      "bytes": 16312,
+      "sha256": "81410b4fa1a3f413800abbec9f4318fd5db78a2c43a803ae7a5df0713671e566",
+      "treatment": "consulted, not copied or relicensed"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "version": "unversioned retrieved snapshot",
+      "bytes": 304714,
+      "sha256": "9a4efefe0a70864461a96d1fcc4b13c1e7c4d9f54ca9b56a4f3808f75afa4a98",
+      "treatment": "consulted, not copied or relicensed"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "version": "unversioned retrieved snapshot",
+      "bytes": 86340,
+      "sha256": "5a59c7ad2a15d9b1476bd488789546d96b571b363ba176be4ba8a46443d21503",
+      "treatment": "consulted, not copied or relicensed"
+    }
+  ],
+  "adapted_files": {
+    "SUPER_SKILLS_SOURCES.md": {
+      "bytes": 2158,
+      "sha256": "e45badbe19bdc050aff40c52303847fb0c81f051ed9c383375dea54aa7868711"
+    },
+    "SKILL.md": {
+      "bytes": 7609,
+      "sha256": "8ee4682e187b43f82e5ee5dc0220d456b39364bd60503f91fca7e57be4ddc26b"
+    },
+    "references/threat-modeling.md": {
+      "bytes": 10608,
+      "sha256": "f28220f30bc01dfb5771c8a8ded3c8c4d5e7405cdd9a3f93151568ea668c2c5d"
+    },
+    "references/agent-evaluation.md": {
+      "bytes": 13476,
+      "sha256": "443464f6c7706c0b104f5d59b048a9783eefc22e59ad1096d4374e3f132480f5"
+    },
+    "licenses/super-skills-MIT.txt": {
+      "bytes": 1062,
+      "sha256": "be611188479546e976cc7c1284e1fd0875f685a37866a62027ff5ce28b2d21b9"
+    }
+  }
+}

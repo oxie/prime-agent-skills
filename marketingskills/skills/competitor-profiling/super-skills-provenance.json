@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/BigY0shi/super-skills",
+  "commit": "86e4cec2d51927a8ecff4370f892136fc6317523",
+  "sources": [
+    {
+      "path": "skills/founders-suite/references/skills-catalog.md",
+      "bytes": 31605,
+      "sha256": "81db4f75b11db7871b72289e602baa4366db370f7769c60a684b67e1534ad3a2",
+      "git_blob": "c35f841bdc71d6af01ac31ef5aedcc432ef19aa4"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1062,
+      "sha256": "be611188479546e976cc7c1284e1fd0875f685a37866a62027ff5ce28b2d21b9",
+      "git_blob": "6831ab9d10d2fa1b91ba55a7ddefaa6fe8ac4a14"
+    }
+  ],
+  "license": {
+    "path": "licenses/super-skills-MIT.txt",
+    "sha256": "be611188479546e976cc7c1284e1fd0875f685a37866a62027ff5ce28b2d21b9"
+  },
+  "routing": {
+    "previous": {
+      "bytes": 14906,
+      "sha256": "446b2ffe684733b15e430b6cbd7ba94ef3d242716a27710cca96d918565d1742"
+    },
+    "current": {
+      "bytes": 15267,
+      "sha256": "267f437f099bcd554b59c0bde2b7c1a69259de9acb845aa0eebb100eb7aebcf9"
+    },
+    "addition": {
+      "bytes": 361,
+      "sha256": "41834621e006e363b901d4ee6e9f29b5f52cda85151246d6e05894f21e750409"
+    }
+  },
+  "primary_references": [
+    {
+      "url": "https://www.business.qld.gov.au/running-business/planning/swot-analysis",
+      "version": "unversioned retrieved snapshot",
+      "bytes": 215876,
+      "sha256": "e9125907e335a78a2149e003b90b68b6f242c43c2ced4c6af4b93219d06f0f58",
+      "treatment": "consulted, not copied or relicensed"
+    }
+  ],
+  "adapted_files": {
+    "SUPER_SKILLS_SOURCES.md": {
+      "bytes": 1946,
+      "sha256": "a8af593a0dbc0fb8f06c5937b35d3da568cdadcdefcc8302fa571dbf596a799f"
+    },
+    "SKILL.md": {
+      "bytes": 15267,
+      "sha256": "267f437f099bcd554b59c0bde2b7c1a69259de9acb845aa0eebb100eb7aebcf9"
+    },
+    "references/swot-actions.md": {
+      "bytes": 10143,
+      "sha256": "ef0a79bc6806ed08d20c3e8643481666d54dbab0d82bbca4e1460144d4eff60e"
+    },
+    "licenses/super-skills-MIT.txt": {
+      "bytes": 1062,
+      "sha256": "be611188479546e976cc7c1284e1fd0875f685a37866a62027ff5ce28b2d21b9"
+    }
+  }
+}

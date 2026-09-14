@@ -9,11 +9,12 @@ description: >
   dependencies or running-revision evidence, API object/tenant authorization and
   denied-write tests, result-preserving SQL diagnosis, or operator-led telemetry
   evidence, exact-symptom debugging, independent test oracles, interface design
-  comparisons, or domain terminology and material decision records. Not a mandatory
+  comparisons, domain terminology and material decision records, stochastic agent
+  evaluation, or trust-boundary threat modeling. Not a mandatory
   coding rulebook, routine cleanup pass, or deployment tool.
 license: "MIT for original wrapper/book references; CC-BY-4.0, MIT and Apache-2.0 for selected adaptations (see THIRD_PARTY.md)"
 metadata:
-  version: 1.4.0-prime.1
+  version: 1.5.0-prime.1
   upstream: https://github.com/ciembor/agent-rules-books
   upstream-commit: 893a88a6fce3a80c565bf39ac65021b43a8b2990
 ---
@@ -118,3 +119,7 @@ Selected Matt Pocock mechanisms have separate [source notices](MATTPOCOCK_SOURCE
 and mattpocock-provenance.json. Prior book/core/Addy bodies remain unchanged.
 For a requested general diff review, use code-review; this owner supplies targeted
 engineering references, not a second mandatory review.
+
+## Agent evaluation and system threats
+
+For requested agent-quality comparisons, use [agent evaluation](references/agent-evaluation.md). For a changed system boundary or a requested threat model, use [threat modeling](references/threat-modeling.md). These optional references add no evaluator service, model calls or scanner. See [source notes](SUPER_SKILLS_SOURCES.md).

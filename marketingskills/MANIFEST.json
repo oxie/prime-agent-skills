@@ -88,7 +88,7 @@
       "name": "competitor-profiling",
       "version": "2.0.1",
       "path": "skills/competitor-profiling",
-      "sha256": "f804f5cc6ad94279b9a64df8230b817604dc2fd6e50237e4ef400da887714689"
+      "sha256": "4faa05285c002502c405c57a00504fb1f00ab9f1323f154d1b8d7895e3ab6934"
     },
     {
       "name": "competitors",
@@ -351,6 +351,12 @@
       "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
       "scope": "identity concepts, ink illustration and append-only image route",
       "provenance": "skills/image/taste-provenance.json"
+    },
+    {
+      "source": "BigY0shi/super-skills",
+      "commit": "86e4cec2d51927a8ecff4370f892136fc6317523",
+      "scope": "original evidence-backed SWOT cross-actions and optional competitor-profiling route",
+      "provenance": "skills/competitor-profiling/super-skills-provenance.json"
     }
   ]
 }

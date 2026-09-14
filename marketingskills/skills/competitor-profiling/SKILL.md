@@ -413,3 +413,7 @@ Only ask if not answered by context or input:
 - **sales-enablement**: For turning profiles into battle cards and sales collateral
 - **ads**: For analyzing competitor ad strategies
 - **pricing**: For deeper pricing analysis informed by competitor profiles
+
+## Optional SWOT-to-action analysis
+
+When the request goes beyond a profile to strategic actions, use [SWOT cross-actions](references/swot-actions.md). Name the focal company, preserve source evidence and uncertainty, and select only useful pairs. This does not authorize new research, outreach or account actions. See [source notes](SUPER_SKILLS_SOURCES.md).
