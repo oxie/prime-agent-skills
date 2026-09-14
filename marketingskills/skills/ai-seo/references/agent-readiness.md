@@ -16,16 +16,16 @@ Run one before and after any agent-readiness work — the score is a shareable a
 ### 1. Access — can an agent get to the page and see real content?
 
 - **Core content in the initial HTML response.** Most agents never execute JavaScript. If the content only exists after client-side rendering, it doesn't exist. This is the #1 essential check in both tools.
-- **No bot challenge or firewall block** on the request path. Aggressive bot protection (Cloudflare challenges, WAF rules) that blocks `GPTBot`, `PerplexityBot`, `ClaudeBot`, etc. is self-inflicted invisibility. Audit what your CDN/WAF actually does to those user agents — many sites block them by default without anyone deciding to.
+- **Access behavior matches the approved site policy.** Review relevant CDN/WAF restrictions for search crawlers and user-requested fetchers separately from training crawlers. Blocking `GPTBot` or `ClaudeBot` is not a blanket search-visibility failure. Use the [crawler-control role table](platform-ranking-factors.md#crawler-controls-by-role), including provider-specific robots.txt caveats. Do not weaken security controls or change robots.txt, CDN, or WAF rules without explicit authorization.
 - **Correct HTTP behavior**: real status codes (no soft-404s), stable canonical URLs, recoverable errors.
 
 ### 2. Discovery — do your files tell agents what's here?
 
-- **robots.txt with an explicit AI-crawler stance** — name the major AI crawlers and state your policy, rather than leaving it to be assumed (see the bot-access table in SKILL.md for the allow/block list).
+- **robots.txt with an explicit AI-crawler stance** — compare named search and training controls with the approved site policy, and review user-requested access separately. See the [role table and official sources](platform-ranking-factors.md#crawler-controls-by-role) (checked 2026-09-14), not a blanket allow/block list.
 - **A sitemap that loads and parses cleanly.**
 - **llms.txt at the domain root** (see Machine-Readable Files in SKILL.md).
 - **`llms-full.txt`** — the newer companion: your entire site content in one file, so an agent gets everything in a single request instead of crawling. Emerging, cheap to generate alongside llms.txt, and scored as bonus signal by both tools.
-- **robots.txt content-usage statements** — an emerging convention for declaring what AI may do with your content (train / cite / summarize), so the answer comes from you instead of being assumed.
+- **Content-usage statements** — distinguish emerging declarations from documented provider controls. Do not assume a robots.txt statement universally enforces training, citation, or summarization preferences; provider support and user-requested fetch exceptions differ.
 
 ### 3. Parseability — once there, can the agent tell what the page is?
 

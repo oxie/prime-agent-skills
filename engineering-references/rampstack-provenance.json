@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/rampstackco/claude-skills",
+  "commit": "a67dd34c609f034c0cfd736a348659bbdf1605bf",
+  "reviewed_on": "2026-09-14",
+  "license": "licenses/rampstack-MIT.txt",
+  "sources": [
+    {
+      "path": "skills/backup-and-disaster-recovery/SKILL.md",
+      "bytes": 10870,
+      "sha256": "ac0e58600d3332a87b64d06f91f13385eb74a599242a2c3634517479dff5dbd9",
+      "git_blob": "3a5c7873c39ef0eeed8197f9495068316e7f3eff"
+    },
+    {
+      "path": "skills/backup-and-disaster-recovery/references/restore-runbook-template.md",
+      "bytes": 5525,
+      "sha256": "96c6cb2b6921ade948d7a0667828148ba36e4845c30e8d7c9feed6f2a7f7c056",
+      "git_blob": "6adf7082f7f9db15a26f0b40fa330fd80d6cfd62"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "7957f4b291988f21be7cb75637d2efb6edd0369a95d3814cac7ef931f7f10b7c",
+      "git_blob": "9d5acfd7a3ad1c3c164a15834a06ff101197cae4"
+    }
+  ],
+  "adapted_files": {
+    "SKILL.md": {
+      "bytes": 8164,
+      "sha256": "4c0c80a5ec73b0b850b580ec273bba474933315878a2c81247b26db6ef7e2a07"
+    },
+    "references/recovery-planning.md": {
+      "bytes": 4945,
+      "sha256": "f128aa3273a53fa012ab515744bf46b75a88ffd19ae451e009c117c1366379ae"
+    }
+  },
+  "limits": "Guidance/packaging verification only; no model trials or live policy/recovery operation."
+}

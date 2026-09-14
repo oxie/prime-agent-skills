@@ -72,3 +72,9 @@ Update only after source review; retain scope controls and run website-guidance 
 
 Runtime reference: skills/site-architecture/references/page-purpose.md. Hallmark owns
 visual layout; site-architecture retains hierarchy and page-purpose decisions.
+
+## Selective RampStack guidance and factual corrections
+
+See [source notes](RAMPSTACK_SOURCES.md) and rampstack-provenance.json for the
+reviewed selection, corrections, exact source/local identities and exclusions.
+No new skill, executable payload or automatic workflow is installed.

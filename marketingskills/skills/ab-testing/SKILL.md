@@ -193,9 +193,18 @@ Looking at results before reaching sample size and stopping early leads to false
 ## Analyzing Results
 
 ### Statistical Significance
-- 95% confidence = p-value < 0.05
-- Means <5% chance result is random
-- Not a guarantee—just a threshold
+- A p-value is the probability, under the null hypothesis and the test assumptions,
+  of a test statistic at least as extreme as observed, using the pre-specified tail(s).
+- It is not the probability that the null hypothesis is true and not the probability
+  that the result is random. A threshold such as alpha = 0.05 is a decision rule,
+  not a 95% probability that a variant wins.
+- Report effect size and uncertainty, guardrails and practical importance. Do not
+  make a shipping decision from a p-value alone. A 95% confidence interval describes
+  a procedure's long-run coverage under its assumptions, not a 95% probability for
+  this fixed parameter after observing the interval.
+- Pre-specify the test, stopping rule and any multiple-comparison adjustment; those
+  choices affect valid interpretation. See the
+  [ASA statement](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
 
 ### Analysis Checklist
 

@@ -346,3 +346,7 @@ For a requested family of visual concepts, use [brand worlds](references/brand-w
 ## Symbol concepts and ink illustration
 
 For new or explicitly requested identity exploration, use [identity concepts](references/identity-concepts.md): meaningful symbol operations and application-board planning. For rough linework with a deliberate offset color shape, use [ink and spot illustration](references/ink-spot-illustration.md). Both support concept work without automatically invoking a generator or changing an approved brand.
+
+## Approved-logo production and delivery
+
+For requested refinement or delivery of an approved logo, read [logo delivery](references/logo-delivery.md). Verify the actual master, exports, rights and handoff; this does not authorize redesign, generation or publication.

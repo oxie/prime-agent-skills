@@ -1,3 +1,4 @@
+import {beforeRampstackSkill} from './rampstack-snapshot.mjs';
 // Exact compatibility/version transition; earlier evidence retains its source bytes.
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -6,7 +7,7 @@ import {createHash} from 'node:crypto';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 export const catalogueTransition = {"previous": "9e587d73b1716716b81c7fc7e0b35b6a0bd6f4dbfe0fbbbc3c38b395cb172bd6", "current": "b7f63620fbc73f5c0f6b9f452ff79f9ad5f16a0f4f6dcf286fdcf2a061f0de2f", "replacements": [["  Prime-native Markdown guidance. No runtime package, provider key, installer,\n  server or hook. Implementation and verification use the target project's tools.", "  Markdown guidance; optional Python 3 stdlib catalogue helper. No runtime package,\n  provider key, installer, server or hook. Implementation uses project tools."], ["  version: 1.3.0-prime.1", "  version: 1.4.0-prime.1"]]};
 export function beforeCatalogueSkill(root,owner){
- const b=readFileSync(resolve(root,owner,'SKILL.md'));
+ const b=beforeRampstackSkill(root,owner);
  if(owner!=='hallmark' || sha(b)!==catalogueTransition.current)return b;
  let text=b.toString('utf8');
  for(const [oldText,newText] of catalogueTransition.replacements){

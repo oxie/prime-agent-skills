@@ -1,0 +1,202 @@
+{
+  "repository": "https://github.com/rampstackco/claude-skills",
+  "commit": "a67dd34c609f034c0cfd736a348659bbdf1605bf",
+  "reviewed_on": "2026-09-14",
+  "license": "RAMPSTACK_SOURCES.md",
+  "sources": [
+    {
+      "path": "skills/logo-design/SKILL.md",
+      "bytes": 23396,
+      "sha256": "81f4dce86b45e901a89c93fa1f5f2e82d6ecb1754fe1ac7b6077d78de1db0711",
+      "git_blob": "75d1e26bd754a4913dd7bebfac9dcf566868465d"
+    },
+    {
+      "path": "skills/logo-design/references/client-package.md",
+      "bytes": 10036,
+      "sha256": "47f4ebb7f34ef971a838f2199dc166cd1a7bab7f11646da9755d0233a3660bd6",
+      "git_blob": "e41adf049560a2071db6253a555cd6ecdb4494f6"
+    },
+    {
+      "path": "skills/calculator-design/SKILL.md",
+      "bytes": 23782,
+      "sha256": "8ed49b0354545176dfb7f92f03b487c1b0647dda7a594be21cf31bd0628df9e3",
+      "git_blob": "4beb31f862a915911c9798ca09066f3728984b7f"
+    },
+    {
+      "path": "skills/calculator-design/references/calculation-logic-transparency.md",
+      "bytes": 11693,
+      "sha256": "1e35217d11420184083b2733201483a69ed0e08321390a469683a55336e9b36d",
+      "git_blob": "8afc216a04c45af83e1314a9f9d7a2b1944e7aa7"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "7957f4b291988f21be7cb75637d2efb6edd0369a95d3814cac7ef931f7f10b7c",
+      "git_blob": "9d5acfd7a3ad1c3c164a15834a06ff101197cae4"
+    }
+  ],
+  "adapted_files": {
+    "skills/ab-testing/SKILL.md": {
+      "bytes": 12300,
+      "sha256": "d43b578e5993a32266abb62dc46d8a0a42e33f90ef7c312221650652aafea8d8"
+    },
+    "skills/ab-testing/references/sample-size-guide.md": {
+      "bytes": 8089,
+      "sha256": "6cadac09dc736d98ac7df5834bbb901c1b15c9f22822ea8949d70fc97615a4e2"
+    },
+    "skills/ai-seo/SKILL.md": {
+      "bytes": 31028,
+      "sha256": "b9c01bc9162ff2388dbb3e37c7df68dbccecdd10dd6cd53ae2da6b9b308897d9"
+    },
+    "skills/ai-seo/references/platform-ranking-factors.md": {
+      "bytes": 14560,
+      "sha256": "a55b33b806e81bca6a6f0c1605e7e5f624370a06d7606851432a6640d7dcc186"
+    },
+    "skills/ai-seo/references/agent-readiness.md": {
+      "bytes": 6886,
+      "sha256": "caef2f9c93f3b5c1f39d19bcbb209083be11c809ed1d181290718449b60eb619"
+    },
+    "skills/image/SKILL.md": {
+      "bytes": 17185,
+      "sha256": "e8a5a1abb74a6a56030fbd0081cedce14a340a9a3152e80fb85b50765a26dab6"
+    },
+    "skills/free-tools/SKILL.md": {
+      "bytes": 8031,
+      "sha256": "18e7fff100e91f2ae46a91e4082d3ee5124e00eada7667802ff6186f5fefdc2c"
+    },
+    "skills/image/references/logo-delivery.md": {
+      "bytes": 4345,
+      "sha256": "b3b405c167b7d3f6cd13cc02f75976679e36a06388b89d9ab770ce214864dde5"
+    },
+    "skills/free-tools/references/calculator-methodology.md": {
+      "bytes": 3809,
+      "sha256": "09930dd26a64e7015dc81c61b94ed65252e2ab9cff56052fa8c14f5720c020ee"
+    }
+  },
+  "limits": "Guidance/packaging verification only; no model trials or live policy/recovery operation.",
+  "factual_primary_sources": {
+    "statistics": {
+      "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf",
+      "sha256": "5327785901ea402c063458e9d061b131a2f4a81c8a6d46fd9e217238b61f8ca9",
+      "checked": "2026-09-14",
+      "basis": "ASA Statement on Statistical Significance and P-Values, principle 2; PDF source read with installed pypdfium2; no copy of primary prose bundled."
+    },
+    "crawlers": {
+      "checked_date": "2026-09-14",
+      "method": "Five bounded public primary-document GETs; no provider APIs, model calls, or upstream execution. Quotes extracted from visible HTML text; full documents are not included in payload.",
+      "sources": [
+        {
+          "provider_source": "openai",
+          "requested_url": "https://developers.openai.com/api/docs/bots",
+          "url": "https://developers.openai.com/api/docs/bots",
+          "status": 200,
+          "retrieved_at": "2026-09-14T22:53:52.680417+00:00",
+          "sha256": "e7ce7820fe1ac50bce07aebedeaa79ab6579dad65e42fc0ab0fae78b0fd8b89d",
+          "hash_basis": "SHA-256 of HTTP response content bytes after content decoding by httpx",
+          "quotes": [
+            {
+              "section_locator": "Overview",
+              "quote": "Each setting is independent of the others \u2013 for example, a webmaster can allow OAI-SearchBot in order to appear in search results while disallowing GPTBot to indicate that crawled content should not be used for training OpenAI\u2019s generative AI foundation models."
+            },
+            {
+              "section_locator": "OAI-SearchBot",
+              "quote": "OAI-SearchBot is for search. OAI-SearchBot is used to surface websites in search results in ChatGPT\u2019s search features. Sites that are opted out of OAI-SearchBot will not be shown in ChatGPT search answers, though can still appear as navigational links."
+            },
+            {
+              "section_locator": "GPTBot",
+              "quote": "GPTBot is used to make our generative AI foundation models more useful and safe. It is used to crawl content that may be used in training our generative AI foundation models. Disallowing GPTBot indicates a site\u2019s content should not be used in training generative AI foundation models."
+            },
+            {
+              "section_locator": "ChatGPT-User",
+              "quote": "ChatGPT-User is not used for crawling the web in an automatic fashion. Because these actions are initiated by a user, robots.txt rules may not apply. ChatGPT-User is not used to determine whether content may appear in Search. Please use OAI-SearchBot in robots.txt for managing Search opt outs and automatic crawl."
+            }
+          ]
+        },
+        {
+          "provider_source": "anthropic",
+          "requested_url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+          "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+          "status": 200,
+          "retrieved_at": "2026-09-14T22:53:53.325359+00:00",
+          "sha256": "949ad2e5ff90f063010bb368cbfe28fd1f4a9664423103a452694c91df161e41",
+          "hash_basis": "SHA-256 of HTTP response content bytes after content decoding by httpx",
+          "quotes": [
+            {
+              "section_locator": "Bot table: ClaudeBot",
+              "quote": "ClaudeBot helps enhance the utility and safety of our generative AI models by collecting web content that could potentially contribute to their training. When a site restricts ClaudeBot access, it signals that the site's future materials should be excluded from our AI model training datasets."
+            },
+            {
+              "section_locator": "Bot table: Claude-User",
+              "quote": "Claude-User supports Claude AI users. When individuals ask questions to Claude, it may access websites using a Claude-User agent. Claude-User allows site owners to control which sites can be accessed through these user-initiated requests. Disabling Claude-User on your site prevents our system from retrieving your content in response to a user query, which may reduce your site's visibility for user-directed web search."
+            },
+            {
+              "section_locator": "Bot table: Claude-SearchBot",
+              "quote": "Claude-SearchBot navigates the web to improve search result quality for users. It analyzes online content specifically to enhance the relevance and accuracy of search responses. Disabling Claude-SearchBot on your site prevents our system from indexing your content for search optimization, which may reduce your site's visibility and accuracy in user search results."
+            },
+            {
+              "section_locator": "Principles",
+              "quote": "Anthropic\u2019s Bots respect \u201cdo not crawl\u201d signals by honoring industry standard directives in robots.txt."
+            }
+          ]
+        },
+        {
+          "provider_source": "google_crawlers",
+          "requested_url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+          "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+          "status": 200,
+          "retrieved_at": "2026-09-14T22:53:53.367182+00:00",
+          "sha256": "ab35ff50b43317b5ee40aee36091c11ea23be95cb07509894d01e0280216dece",
+          "hash_basis": "SHA-256 of HTTP response content bytes after content decoding by httpx",
+          "quotes": [
+            {
+              "section_locator": "Google-Extended",
+              "quote": "Google-Extended doesn't have a separate HTTP request user agent string. Crawling is\n            done with existing Google user agent strings; the robots.txt user-agent token is used\n            in a control capacity."
+            },
+            {
+              "section_locator": "Google-Extended: Affected products",
+              "quote": "Google-Extended is a standalone product token that web publishers can use\n              to manage whether content Google crawls from their sites may be used for training future\n              generations of Gemini models that power Gemini Apps and Vertex AI API for Gemini and for grounding (providing content from the Google Search index to the model at prompt\n              time to improve factuality and relevancy) in Gemini Apps and Grounding with Google Search on Vertex AI . Google-Extended does not impact a site's inclusion in Google Search nor is it used as a ranking signal\n              in Google Search."
+            }
+          ]
+        },
+        {
+          "provider_source": "google_ai",
+          "requested_url": "https://developers.google.com/search/docs/appearance/ai-features",
+          "url": "https://developers.google.com/search/docs/appearance/ai-features",
+          "status": 200,
+          "retrieved_at": "2026-09-14T22:53:52.934805+00:00",
+          "sha256": "c1a239971f03d18dbccdc940d28b1fb5ec75e59c94bfe9de159c9cb2c7e8b79f",
+          "hash_basis": "SHA-256 of HTTP response content bytes after content decoding by httpx",
+          "quotes": [
+            {
+              "section_locator": "Controlling your content in AI features in Search",
+              "quote": "AI is built into Search and integral to how Search functions, which is why robots.txt directives\n  for Googlebot is the control\n  for site owners to manage access to how their sites are crawled for Search. To limit the\n  information shown from your pages in Search, use nosnippet , data-nosnippet , max-snippet , or noindex controls. To limit AI training and grounding in some of Google's other systems, read more about Google-Extended ."
+            }
+          ]
+        },
+        {
+          "provider_source": "perplexity",
+          "requested_url": "https://docs.perplexity.ai/guides/bots",
+          "url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers",
+          "status": 200,
+          "retrieved_at": "2026-09-14T22:53:52.780683+00:00",
+          "sha256": "21e1c65367cd24b6b4d737663e32050aec9d3d973cb928476e166f210fcc135b",
+          "hash_basis": "SHA-256 of HTTP response content bytes after content decoding by httpx",
+          "quotes": [
+            {
+              "section_locator": "PerplexityBot",
+              "quote": "PerplexityBot is designed to surface and link websites in search results on Perplexity. It is not used to crawl content for AI foundation models."
+            },
+            {
+              "section_locator": "Perplexity-User",
+              "quote": "Perplexity-User supports user actions within Perplexity. When users ask Perplexity a question, it might visit a web page to help provide an accurate answer and include a link to the page in its response. Perplexity-User controls which sites these user requests can access. It is not used for web crawling or to collect content for training AI foundation models."
+            },
+            {
+              "section_locator": "Perplexity-User robots caveat",
+              "quote": "Since a user requested the fetch, this fetcher generally ignores robots.txt rules."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

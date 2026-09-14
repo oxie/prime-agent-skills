@@ -63,3 +63,8 @@ Later direct Addy retry/migration sections and the telemetry reference have sepa
 [mappings and modification notices](ADDY_SOURCES.md) and addy-provenance.json.
 Original AAS/canonical source identities above are preserved. Current core file
 hashes and their pre-addition hashes are recorded in core-provenance.json.
+
+## RampStack selective adaptation
+
+Corrected guidance from RampStack Co.; see [source notes and MIT attribution](RAMPSTACK_SOURCES.md).
+This does not grant rights to any third-party asset mentioned in the sources.

@@ -31,7 +31,15 @@ Reference for calculating sample sizes and test duration.
 - Implementation cost (worth the effort?)
 - Realistic expectations (what have past tests shown?)
 
-**Statistical significance (95%)**: Means there's less than 5% chance the observed difference is due to random chance.
+**Significance level (alpha = 0.05)**: A pre-specified decision threshold, not a
+probability that a result is real. A p-value is the probability, under the null
+hypothesis and the test assumptions, of a test statistic at least as extreme as
+observed for the chosen tail(s). It is not the probability that the null hypothesis
+is true and not the probability that the result is random. Report effect size and
+uncertainty alongside the threshold; do not infer business value or a winner's
+probability from significance alone. A 95% confidence interval uses a procedure
+with 95% long-run coverage under its assumptions, not a posterior probability for
+this fixed parameter. See the [ASA statement](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
 
 **Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
 

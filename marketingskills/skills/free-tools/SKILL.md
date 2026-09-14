@@ -139,10 +139,10 @@ When: Something good exists, white-label available, not core differentiator
 ### Minimum Viable Tool
 1. Core functionality only—does the one thing, works reliably
 2. Essential UX—clear input, obvious output, mobile works
-3. Basic lead capture—email collection, leads go somewhere useful
+3. Lead capture only if it serves the approved strategy—no required gate for an ungated tool
 
 ### What to Skip Initially
-Account creation, saving results, advanced features, perfect design, every edge case
+Account creation, saving results, advanced features and visual polish not needed for the core job. Do not skip essential input validation, calculation boundaries, security or honest error handling.
 
 ---
 
@@ -188,3 +188,7 @@ Rate each factor 1-5:
 - **seo-audit**: For SEO-optimizing the tool
 - **analytics**: For measuring tool usage
 - **emails**: For nurturing leads from the tool
+
+## Calculator methodology
+
+For a requested calculator or estimator, read [calculator methodology](references/calculator-methodology.md). Make formulas, source assumptions, meaningful precision, independent examples and method versions inspectable; do not promise measured gains or mandate a lead gate.

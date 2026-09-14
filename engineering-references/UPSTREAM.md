@@ -71,3 +71,9 @@ is installed. Existing references and historical provenance remain unchanged.
 See [SUPERPOWERS_SOURCES.md](SUPERPOWERS_SOURCES.md) for the exact pin, MIT notice,
 selected mechanisms and local exclusions. This is an extension under the existing
 owner, not installation of an upstream process bundle or evidence of measured gains.
+
+## Selective RampStack guidance and factual corrections
+
+See [source notes](RAMPSTACK_SOURCES.md) and rampstack-provenance.json for the
+reviewed selection, corrections, exact source/local identities and exclusions.
+No new skill, executable payload or automatic workflow is installed.

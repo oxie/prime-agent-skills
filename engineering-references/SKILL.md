@@ -127,3 +127,7 @@ For requested agent-quality comparisons, use [agent evaluation](references/agent
 ## Commerce boundaries
 
 For cart writes, regional price dependencies, checkout completion or guest-order access, read [commerce boundaries](references/commerce.md). Select only the changed boundary; this does not mandate a full store review.
+
+## Recovery planning
+
+For requested backup or disaster-recovery planning, read [recovery planning](references/recovery-planning.md). Distinguish targets from measured loss/downtime and plan authorized restore verification. This does not authorize backups, restores, drills, schedules or infrastructure changes.

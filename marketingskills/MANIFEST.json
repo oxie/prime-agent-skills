@@ -22,7 +22,7 @@
       "name": "ab-testing",
       "version": "2.0.0",
       "path": "skills/ab-testing",
-      "sha256": "b58fdd5da12a733397062c3bc73a6ef63d52438d03492d0f5e5f95bb17fbc481"
+      "sha256": "c0011b832c39204d8b1a80fb3df26a45513bb3c8cbf64b5b0d568f7161d85c0c"
     },
     {
       "name": "ad-creative",
@@ -40,7 +40,7 @@
       "name": "ai-seo",
       "version": "2.5.0",
       "path": "skills/ai-seo",
-      "sha256": "f794ef255f81166cb53d854fe61e255d8d16c2c2c26bd4b98e407dcb75973cf3"
+      "sha256": "5cc402b980549e6d405529b19265cc23392cffe8a96b05ddaa5bac42a2b6e287"
     },
     {
       "name": "analytics",
@@ -148,13 +148,13 @@
       "name": "free-tools",
       "version": "2.0.1",
       "path": "skills/free-tools",
-      "sha256": "051feb61e0ffeb884b3c9b02d33bcd3426b350ec2c5c32b8fef9e57e1a321ab9"
+      "sha256": "e84949bc95494291dd5fa4f94033293c3679fc1e93d7e9848c7add24b23c85cc"
     },
     {
       "name": "image",
       "version": "2.0.1",
       "path": "skills/image",
-      "sha256": "df84827b3c3d66b1e8143bccb65cf8869560ab834e4c90bacab3433fd51ed621"
+      "sha256": "e9a7ef0fe3d595a3fe03c251cb11a484b9707e921ae036f14b7a1c15b72145c4"
     },
     {
       "name": "influencer-marketing",
@@ -363,6 +363,12 @@
       "commit": "70987bad4ebe9dce1f74858c1c64f3f8810f18e4",
       "scope": "original corrected Search Console diagnosis and restricted Indexing API guide correction",
       "provenance": "skills/seo-audit/gsc-provenance.json"
+    },
+    {
+      "source": "rampstackco/claude-skills",
+      "commit": "a67dd34c609f034c0cfd736a348659bbdf1605bf",
+      "scope": "Image logo delivery; Free Tools calculator methodology; separate primary-sourced p-value/crawler corrections",
+      "provenance": "rampstack-provenance.json"
     }
   ]
 }

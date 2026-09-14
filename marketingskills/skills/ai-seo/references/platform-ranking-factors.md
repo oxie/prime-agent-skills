@@ -10,8 +10,8 @@ Sources cited throughout: Princeton GEO study (KDD 2024), SE Ranking domain auth
 
 Every AI platform shares three baseline requirements:
 
-1. **Your content must be in their index** — Each platform uses a different search backend (Google, Bing, Brave, or their own). If you're not indexed, you can't be cited.
-2. **Your content must be crawlable** — AI bots need access via robots.txt. Block the bot, lose the citation.
+1. **Your content must be discoverable through the relevant retrieval path** — Search indexing and user-requested page retrieval are different paths; the applicable requirements depend on the platform and feature.
+2. **Access controls must match the intended use** — Search, training, and user-requested retrieval have different controls. Check the role table below; allowing access does not guarantee citation.
 3. **Your content must be extractable** — AI systems pull passages, not pages. Clear structure and self-contained paragraphs win.
 
 Beyond these basics, each platform weights different signals. Here's what matters and where.
@@ -72,7 +72,7 @@ Perplexity always cites its sources with clickable links, making it the most tra
 - **Self-contained paragraphs** — Perplexity prefers atomic, semantically complete paragraphs it can extract cleanly
 
 **What to focus on:**
-- Allow PerplexityBot in robots.txt
+- Review `PerplexityBot` search access against the approved site policy; distinguish it from `Perplexity-User` user-requested fetches (see the role table below)
 - Implement FAQPage schema on any page with Q&A content
 - Host PDF resources publicly (whitepapers, guides, reports)
 - Add Article schema with publication and modification timestamps
@@ -93,7 +93,7 @@ Copilot is embedded across Microsoft's ecosystem — Edge, Windows, Microsoft 36
 - Optimize page speed to under 2 seconds
 - Write clear entity definitions — when your content defines a term or concept, make the definition explicit and extractable
 - Build presence on LinkedIn (publish articles, maintain company page) and GitHub if relevant
-- Ensure Bingbot has full crawl access
+- Review `Bingbot` crawl access against the approved site policy
 
 ---
 
@@ -105,7 +105,7 @@ Claude uses Brave Search as its search backend when web search is enabled — no
 
 **What to focus on:**
 - Verify your content appears in Brave Search results (search for your brand and key terms at search.brave.com)
-- Allow ClaudeBot and anthropic-ai user agents in robots.txt
+- Review `Claude-SearchBot` search access and `Claude-User` user-requested retrieval separately from `ClaudeBot` training use, under the approved site policy
 - Maximize factual density — specific numbers, named sources, dated statistics
 - Use clear, extractable structure with descriptive headings
 - Cite authoritative sources within your content
@@ -113,22 +113,26 @@ Claude uses Brave Search as its search backend when web search is enabled — no
 
 ---
 
-## Allowing AI Bots in robots.txt
+## Crawler Controls by Role
 
-If your robots.txt blocks an AI bot, that platform can't cite your content. Here are the user agents to allow:
+Search discovery, model-training use, and user-requested retrieval are separate policy decisions. Use these named roles to review the site's approved policy; this table is not an allow list or a ready-to-deploy robots.txt file.
 
-```
-User-agent: GPTBot           # OpenAI — powers ChatGPT search
-User-agent: ChatGPT-User     # ChatGPT browsing mode
-User-agent: PerplexityBot    # Perplexity AI search
-User-agent: ClaudeBot        # Anthropic Claude
-User-agent: anthropic-ai     # Anthropic Claude (alternate)
-User-agent: Google-Extended   # Google Gemini and AI Overviews
-User-agent: Bingbot          # Microsoft Copilot (via Bing)
-Allow: /
-```
+| Named control | Official role | Scope and caveat |
+|---|---|---|
+| `OAI-SearchBot` | OpenAI search crawler | Surfaces sites in ChatGPT search. Independent of `GPTBot`. OpenAI says opted-out sites are not shown in search answers but may still appear as navigational links. |
+| `GPTBot` | OpenAI training crawler | Crawls content that may be used to train generative AI foundation models. A training opt-out does not require opting out of `OAI-SearchBot`. |
+| `ChatGPT-User` | OpenAI user-requested access | Not automatic web crawling or the Search opt-out control. OpenAI says robots.txt rules may not apply because a user initiates these requests. |
+| `Claude-SearchBot` | Anthropic search crawler | Analyzes content to improve search relevance and accuracy. Blocking it prevents indexing for search optimization and may reduce search visibility. |
+| `Claude-User` | Anthropic user-requested retrieval | Retrieves pages in response to user queries. Blocking it prevents that retrieval. Anthropic says its bots, including this one, honor robots.txt directives. |
+| `ClaudeBot` | Anthropic training crawler | Collects web content that could contribute to model training. Restricting it signals exclusion of future materials from training datasets, not a blanket search opt-out. |
+| `Googlebot` | Google Search crawler | Controls crawling for Search, including AI Overviews and AI Mode. Search preview/indexing controls such as `nosnippet`, `data-nosnippet`, `max-snippet`, and `noindex` have separate effects; consult Google's AI features guide. |
+| `Google-Extended` | Google content-use product token | Controls use for training future Gemini models powering Gemini Apps and Vertex AI API for Gemini, and grounding in Gemini Apps and Grounding with Google Search on Vertex AI. It does not affect Google Search inclusion or ranking. It is a robots.txt token, not a separate HTTP user agent. |
+| `PerplexityBot` | Perplexity search crawler | Surfaces and links sites in search results; not used to crawl content for AI foundation-model training. |
+| `Perplexity-User` | Perplexity user-requested fetcher | Not automatic crawling or foundation-model training. Perplexity says it generally ignores robots.txt because a user requested the fetch. |
 
-**Training vs. search:** Some AI bots are used for both model training and search citation. If you want to be cited but don't want your content used for training, your options are limited — GPTBot handles both for OpenAI. However, you can safely block **CCBot** (Common Crawl) without affecting any AI search citations, since it's only used for training dataset collection.
+**Apply only the approved site policy.** Search access, training permission, and user-requested access remain the user's independent decisions, within each provider's documented controls. Do not default to allowing all bots or change robots.txt, CDN, or WAF rules without explicit authorization. Check relevant access restrictions without weakening security controls. robots.txt is not authentication or a universal content-use enforcement mechanism; the user-requested exceptions differ by provider. Allowing access does not guarantee indexing, citation, or recommendation. Do not promise that blocking any one crawler removes all mentions or citations through other sources.
+
+**Official scope sources — checked 2026-09-14:** [OpenAI crawlers](https://developers.openai.com/api/docs/bots); [Anthropic bots](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler); [Google common crawlers / Google-Extended](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers#google-extended); [Google AI features controls](https://developers.google.com/search/docs/appearance/ai-features#control); [Perplexity bots](https://docs.perplexity.ai/docs/resources/perplexity-crawlers). Recheck these primary docs before advising a policy change; roles and controls can change.
 
 ---
 
@@ -145,7 +149,7 @@ If you're optimizing for AI search for the first time, focus your effort where y
 **Copilot and Claude are lower priority** unless your audience skews enterprise/Microsoft (Copilot) or developer/analyst (Claude). But the fundamentals — structured content, cited sources, schema markup — help across all platforms.
 
 **Actions that help everywhere:**
-1. Allow all AI bots in robots.txt
+1. Review search, training, and user-requested access controls separately against the approved site policy
 2. Implement schema markup (FAQPage, Article, Organization at minimum)
 3. Include statistics with named sources in your content
 4. Update content regularly — monthly for competitive topics
