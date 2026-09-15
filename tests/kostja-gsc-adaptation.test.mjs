@@ -1,3 +1,4 @@
+import {beforeClaudeSeoFile} from './helpers/claude-seo-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,7 +8,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const owner='marketingskills/skills/seo-audit';
 const tool='marketingskills/tools/integrations/google-search-console.md';
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeClaudeSeoFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const route={"previous": {"bytes": 16958, "sha256": "8ffbf008051949d5203ef9ca220b22593fc986f55fbd847f2b12842e46f2c97e"}, "current": {"bytes": 17347, "sha256": "356fb5f7b2a069c609dbf576e2d82f255bee01de68c72f96b7eb141f2539d868"}, "change": "one description sentence plus optional append; previous body intact"};
 const preserved={"marketingskills/skills/seo-audit/evals/evals.json": "b808dfa7ee1e312cda39cfac57f44674bd3cee6eaa151af7008760a9514bb6cf", "marketingskills/skills/seo-audit/references/ai-writing-detection.md": "f1e273f56ce7e2215ff218bf903680ddcec0fd026ab90c3ebfb3439ed0edfaa4", "marketingskills/skills/seo-audit/references/international-seo.md": "d2fc76f40eccc422ae0f1d7e5b770095e89a045f38e1d0370811203da57996ff"};

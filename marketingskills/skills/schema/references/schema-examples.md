@@ -1,6 +1,15 @@
 # Schema Markup Examples
 
-Complete JSON-LD examples for common schema types.
+JSON-LD examples for common schema types. These are fictional illustrations, not facts
+about a real site or deploy-ready offers, ratings, identities or dates. Replace all values
+with verified page content; omit unsupported optional fields. If a required fact is missing,
+report the eligibility gap instead of inventing it. Keep real offer availability and dates current.
+
+Schema.org vocabulary validity, Google feature eligibility, required/recommended properties,
+and actual display are separate checks. Google does not guarantee rich results or ranking gains.
+Feature notes below were checked on 2026-09-15; verify the linked current guidance when using them.
+For product variants, genuine profiles and community formats, use
+[site-type-eligibility.md](site-type-eligibility.md) only when that page type applies.
 
 ## Contents
 - Organization
@@ -18,7 +27,7 @@ Complete JSON-LD examples for common schema types.
 
 ## Organization
 
-For company/brand homepage or about page.
+For company/brand homepage or about page. Google's general Organization guidance has no required properties; provide the recommended identity details that actually apply. Subtypes and specific merchant features can have additional requirements.
 
 ```json
 {
@@ -44,7 +53,11 @@ For company/brand homepage or about page.
 
 ## WebSite (with SearchAction)
 
-For homepage, enables sitelinks search box.
+For a homepage describing a real site search function. Google removed the sitelinks
+search box starting November 21, 2024. SearchAction remains vocabulary, not a way to
+enable that retired feature; omit it if there is no real search function or other need.
+WebSite name and url still support Google's site-name system. Site names are not
+supported by the Rich Results Test. Do not remove useful truthful markup solely due to retirement.
 
 ```json
 {
@@ -67,7 +80,7 @@ For homepage, enables sitelinks search box.
 
 ## Article / BlogPosting
 
-For blog posts and news articles.
+For blog posts and news articles. Google has no required Article properties; headline, image, author and dates are recommended when applicable. The example includes other valid vocabulary, not a universal Google-required property set.
 
 ```json
 {
@@ -102,7 +115,15 @@ For blog posts and news articles.
 
 ## Product
 
-For product pages (e-commerce or SaaS).
+For a specific product page. Choose the Google surface before validating:
+- Product snippets require name and at least one of review, aggregateRating or offers.
+- Merchant listings require name, image and offers (Offer), on a page where shoppers can buy from the merchant.
+- Nested fields have their own requirements. Offer price is required; priceCurrency is
+  recommended for snippets but required for merchant listings. Availability is recommended.
+- The example's rating and offer are fictional. Only emit ratings grounded in real eligible
+  reviews visible on the page. An offers-only snippet can be eligible despite a review warning.
+- Add priceValidUntil only for an actual expiry; a past date can prevent snippet display.
+  Do not use AggregateOffer to group variants; see the focused variant reference.
 
 ```json
 {
@@ -121,8 +142,7 @@ For product pages (e-commerce or SaaS).
     "url": "https://example.com/products/widget",
     "priceCurrency": "USD",
     "price": "99.99",
-    "availability": "https://schema.org/InStock",
-    "priceValidUntil": "2024-12-31"
+    "availability": "https://schema.org/InStock"
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -136,7 +156,9 @@ For product pages (e-commerce or SaaS).
 
 ## SoftwareApplication
 
-For SaaS product pages and app landing pages.
+For actual software app pages, including applicable SaaS apps. Google's software app result
+requires name, offers.price, and aggregateRating or review, including their nested requirements.
+Do not invent a free price or rating to meet this gate; the values below are fictional.
 
 ```json
 {
@@ -162,7 +184,11 @@ For SaaS product pages and app landing pages.
 
 ## FAQPage
 
-For pages with frequently asked questions.
+For pages with publisher-written frequently asked questions. Google retired FAQ rich results
+for **all sites starting May 7, 2026**, superseding the former government/health restriction.
+This remains a vocabulary example for other useful consumers, not a Google rich-result recipe.
+Do not remove truthful existing FAQPage solely because the feature retired. Do not relabel
+this as QAPage; that requires the appropriate genuine question-and-answer page format.
 
 ```json
 {
@@ -193,7 +219,9 @@ For pages with frequently asked questions.
 
 ## HowTo
 
-For instructional content and tutorials.
+For instructional content and tutorials. Google removed HowTo rich results on
+September 13, 2023. This remains a vocabulary example, not a current Google rich-result recipe.
+No removal is needed solely for that retirement; do not promise AI-citation benefits either.
 
 ```json
 {
@@ -229,7 +257,9 @@ For instructional content and tutorials.
 
 ## BreadcrumbList
 
-For any page with breadcrumb navigation.
+For a page with breadcrumb navigation. Google's feature requires at least two ListItem
+entries with position and name (name can instead be on a Thing used as item). The last
+breadcrumb can omit item; Google then uses the containing page URL.
 
 ```json
 {
@@ -300,7 +330,10 @@ For local business location pages.
 
 ## Event
 
-For event pages, webinars, conferences.
+For event vocabulary, including online events. **This online-only example is not eligible
+for Google's event experience**, which currently requires a physical location and address,
+a dedicated single-event page, and events bookable by the general public. Do not invent a
+venue to qualify. Its historical dates and ticket values are illustrations, not current event facts.
 
 ```json
 {
@@ -364,7 +397,10 @@ Combine multiple schema types using @graph.
     },
     {
       "@type": "BreadcrumbList",
-      "itemListElement": [...]
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://example.com" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://example.com/blog" }
+      ]
     }
   ]
 }
@@ -396,3 +432,20 @@ export default function ProductPage({ product }) {
   );
 }
 ```
+
+---
+
+## Feature Sources
+
+Google feature notes checked 2026-09-15. These sources define eligibility, not guarantees.
+
+- [Organization](https://developers.google.com/search/docs/appearance/structured-data/organization)
+- [Site names](https://developers.google.com/search/docs/appearance/site-names) and [sitelinks search-box retirement](https://developers.google.com/search/blog/2024/10/sitelinks-search-box)
+- [Article](https://developers.google.com/search/docs/appearance/structured-data/article)
+- [Product snippets](https://developers.google.com/search/docs/appearance/structured-data/product-snippet) and [merchant listings](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing)
+- [Software apps](https://developers.google.com/search/docs/appearance/structured-data/software-app)
+- [FAQ retirement](https://developers.google.com/search/updates#removing-faq-rich-result) and [HowTo retirement update](https://developers.google.com/search/blog/2023/08/howto-faq-changes)
+- [Breadcrumb](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb)
+- [Local business](https://developers.google.com/search/docs/appearance/structured-data/local-business)
+- [Event](https://developers.google.com/search/docs/appearance/structured-data/event)
+- [Google feature gallery](https://developers.google.com/search/docs/appearance/structured-data/search-gallery)

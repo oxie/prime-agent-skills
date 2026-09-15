@@ -1,0 +1,433 @@
+{
+  "repository": "https://github.com/AgriciDaniel/claude-seo",
+  "commit": "92795530b4cc92c6bf7a2435b82c15b003e71181",
+  "reviewed_on": "2026-09-15",
+  "license": "CLAUDE_SEO_SOURCES.md",
+  "sources": [
+    {
+      "path": "skills/seo-technical/SKILL.md",
+      "git_blob": "7b2d2ad4bc811e2d5249809d322ac54e0514ffc0",
+      "bytes": 17284,
+      "sha256": "cd21e750a27ae5ef764887d0e50ca211254be1fb8bfa3938105828d752988371"
+    },
+    {
+      "path": "skills/seo/references/cwv-thresholds.md",
+      "git_blob": "e58567b3f5cfb6705bd6a0df04391b99e3c48897",
+      "bytes": 7229,
+      "sha256": "3449ada6ea22aaa8697facb56d4cb4c5bc5a20293274d41dadcaaa0722d45428"
+    },
+    {
+      "path": "skills/seo-drift/references/comparison-rules.md",
+      "git_blob": "a3349d7ab21fe06e8f1a0378b4f856b5be8a7ef5",
+      "bytes": 5723,
+      "sha256": "45b806d8cfbc3d3fa03f2095562c84b26bcbad1359d7c45bba7304849f04fc20"
+    },
+    {
+      "path": "skills/seo-sitemap/SKILL.md",
+      "git_blob": "99fce4a07edf73a34e51ff133a16d3a268354351",
+      "bytes": 6106,
+      "sha256": "6bad4a4ba1ce83631ff3ab3de3834481578c21ba8a29d4371c95ed6200ecdcd3"
+    },
+    {
+      "path": "skills/seo-schema/SKILL.md",
+      "git_blob": "24056fd309718a230639aaa7b33b8dbcc02f667f",
+      "bytes": 6425,
+      "sha256": "67b0fa5004e755d148588b8dc555bddae77cb00c5c92bee233cf9e17db7d547c"
+    },
+    {
+      "path": "skills/seo/references/schema-types.md",
+      "git_blob": "2cb3ea508416568c5b57d8773f756994be3ec8e5",
+      "bytes": 8239,
+      "sha256": "e9857819f924fd11c2a49f1320e315f7f2a067cbcb68b53582aa7ea667278896"
+    },
+    {
+      "path": "skills/seo-content-brief/SKILL.md",
+      "git_blob": "d3e2abac5923b051065104982fd387d546049f47",
+      "bytes": 10540,
+      "sha256": "e821f346b0c31f413c6562d0cf83b30130c07ed40371ab80199383eb1e8af21b"
+    },
+    {
+      "path": "scripts/metadata_template.py",
+      "git_blob": "b46571b848ca1bab04e0cf5dee2cbe23f04aa7bc",
+      "bytes": 15458,
+      "sha256": "b830aceed5d629f6da3ad49642406e5f100ea224404e43f8ffd05370153de06f"
+    },
+    {
+      "path": "LICENSE",
+      "git_blob": "94fac7465f1e76414fc59f9fd97cdfd2105e030d",
+      "bytes": 1069,
+      "sha256": "a42b3b0253cecea9af810c5207a67b0be8c9a0cfbf52b9302c3d26b063e7a86b"
+    }
+  ],
+  "adapted_files": {
+    "skills/seo-audit/SKILL.md": {
+      "sha256": "9e1a0b46095ebee853ddc16a66a484dffd54c6b18d2f82feac05bc25a4ae5158",
+      "bytes": 18383
+    },
+    "skills/seo-audit/references/international-seo.md": {
+      "sha256": "deb28f4499cb0938bd36c7ffc5b50643daee6c6b68cf611b82d32390070e10d0",
+      "bytes": 15725
+    },
+    "skills/seo-audit/references/performance-diagnosis.md": {
+      "sha256": "65e6c0c5039e0ee306095d29c674d486fea8df4b50b1d08dd693ce1fbc9f3cbb",
+      "bytes": 4048
+    },
+    "skills/seo-audit/references/release-render-checks.md": {
+      "sha256": "eb4efdce9154309415d2a4d66a48a726b9de7a347b0ad1b5e3a6d68728723a61",
+      "bytes": 5588
+    },
+    "skills/seo-audit/references/xml-sitemaps.md": {
+      "sha256": "876c54dcfe44897bd8b499443ab0dbc1bca58bd2930992b6db8ccd636c59f087",
+      "bytes": 5225
+    },
+    "skills/schema/SKILL.md": {
+      "sha256": "9a135e9bde4f051aabe1bffdc7a8f3ab0492c45f6ffc9f96ca95dff80f037186",
+      "bytes": 9888
+    },
+    "skills/schema/references/schema-examples.md": {
+      "sha256": "921b632e19b59e63382e24366dab77dbf7a90f63b3c74a9ed922827f822da282",
+      "bytes": 13534
+    },
+    "skills/schema/references/site-type-eligibility.md": {
+      "sha256": "66af17e35b800de65bceadefca045f7aeab9a795f1077aa4362d9f505c35df29",
+      "bytes": 13659
+    }
+  },
+  "primary_references": {
+    "titles": {
+      "url": "https://developers.google.com/search/docs/appearance/title-link",
+      "status": 200,
+      "sha256": "971992f3f022721a9557831b3db09e21d9e12c6bb16809ed2830248ed8e31128",
+      "checked": "2026-09-15",
+      "hash_basis": "extracted document text",
+      "bytes": 11703
+    },
+    "snippets": {
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "status": 200,
+      "sha256": "b95925aaf52280e05a53184d20f2eecac9dc34fd992cf7e06a3934ad8782b445",
+      "checked": "2026-09-15",
+      "hash_basis": "extracted document text",
+      "bytes": 8525
+    },
+    "helpful": {
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "status": 200,
+      "sha256": "4b7efc3f6db5cb5566da634d040019958fac00785ebea370aa0fe6af461336ae",
+      "checked": "2026-09-15",
+      "hash_basis": "extracted document text",
+      "bytes": 12011
+    },
+    "images": {
+      "url": "https://developers.google.com/search/docs/appearance/google-images",
+      "status": 200,
+      "sha256": "7e5dd4b6f0e08473ac3fc264ba10c9ed8a4bed8a85df49cf9d5b85bae72ab134",
+      "checked": "2026-09-15",
+      "hash_basis": "extracted document text",
+      "bytes": 12737
+    },
+    "spam": {
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "status": 200,
+      "sha256": "ef97bb7405c1dd961923d7f96d7516451d66774794b261f6bfee916813182fa2",
+      "checked": "2026-09-15",
+      "hash_basis": "extracted document text",
+      "bytes": 32340
+    },
+    "hreflang": {
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "checked": "2026-09-15",
+      "sha256": "1205ab833585735973df712d07ee8a4bf6f1bfa1d628865773fba7dba11dcef1",
+      "hash_basis": "extracted document text",
+      "bytes": 17280
+    },
+    "multiregion": {
+      "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+      "checked": "2026-09-15",
+      "sha256": "0840d4cf2655ad5ccf308e795bb3ace734624dec4301903ac5394a2034920ae2",
+      "hash_basis": "extracted document text",
+      "bytes": 9759
+    },
+    "sitemaps": {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "checked": "2026-09-15",
+      "sha256": "c9097d23d64801e7e2b8ff15845c10b62b34528cf7636e7817ee3e1c2c1d5794",
+      "hash_basis": "extracted document text",
+      "bytes": 12317
+    },
+    "news": {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap",
+      "checked": "2026-09-15",
+      "sha256": "47364fff4f6b219a16f94b2bb315511e7c1c00bd5c504d908204fd3a4433aea3",
+      "hash_basis": "extracted document text",
+      "bytes": 5267
+    },
+    "js": {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "checked": "2026-09-15",
+      "sha256": "a3b8f75c1a7d8fd89e5de1aa98253188c7ccbb6d124e7909a186661d5289bdb9",
+      "hash_basis": "extracted document text",
+      "bytes": 14441
+    },
+    "vitals": {
+      "url": "https://web.dev/articles/vitals",
+      "checked": "2026-09-15",
+      "sha256": "b539b7d17a43f05fcdff26a37167c3af75b405af2e750e30ea776a4f2e08c42b",
+      "hash_basis": "extracted document text",
+      "bytes": 12884
+    },
+    "lcp": {
+      "url": "https://web.dev/articles/optimize-lcp",
+      "checked": "2026-09-15",
+      "sha256": "d64795a35604ba8e33b46dc1ce0ce934d77b8c679c7805944d14723282ca433d",
+      "hash_basis": "extracted document text",
+      "bytes": 30227
+    },
+    "fonts": {
+      "url": "https://web.dev/articles/optimize-cls",
+      "checked": "2026-09-15",
+      "sha256": "1ff54fadbeab2543f5b1001b9e5baeee15f329c627b6836383fdb0dd87bc9f98",
+      "hash_basis": "extracted document text",
+      "bytes": 25061
+    },
+    "gallery": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/search-gallery",
+      "checked": "2026-09-15",
+      "sha256": "eff0480b0e8f0a39321dd7b6281ea7a0143872db56305842dc800ee223664680",
+      "hash_basis": "extracted document text",
+      "bytes": 6002
+    },
+    "course": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/course",
+      "checked": "2026-09-15",
+      "sha256": "286a21f2531e73c8f2a946348355205a85be0d7f577d3d300ee9c382bcc91c4d",
+      "hash_basis": "extracted document text",
+      "bytes": 12811
+    },
+    "faq": {
+      "url": "https://developers.google.com/search/updates#removing-faq-rich-result",
+      "checked": "2026-09-15",
+      "sha256": "ddfc7979a19c4126d74138980ac2974621e808b7645d53769e47834de29b432f",
+      "hash_basis": "extracted document text",
+      "bytes": 121051
+    },
+    "updates": {
+      "url": "https://developers.google.com/search/updates",
+      "checked": "2026-09-15",
+      "sha256": "ddfc7979a19c4126d74138980ac2974621e808b7645d53769e47834de29b432f",
+      "hash_basis": "extracted document text",
+      "bytes": 121051
+    },
+    "pageexperience": {
+      "url": "https://developers.google.com/search/docs/appearance/page-experience",
+      "checked": "2026-09-15",
+      "sha256": "236a30dfdd7febd7fd6c7182ad653eac90bfd85e4f0e6bc0b22302408766bddf",
+      "hash_basis": "extracted document text",
+      "bytes": 4293
+    },
+    "pagination": {
+      "url": "https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading",
+      "checked": "2026-09-15",
+      "sha256": "0b8a79e585449ef1a06cbc8f109761f264c6ccfc3c5465296aae7ceee69cb8a5",
+      "hash_basis": "extracted document text",
+      "bytes": 6721
+    },
+    "noindex": {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "checked": "2026-09-15",
+      "sha256": "3010aeb712999b377d8bfe9808cf5c69957b130e248d1b0539d882ab34344492",
+      "hash_basis": "extracted document text",
+      "bytes": 4462
+    },
+    "review": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/review-snippet",
+      "checked": "2026-09-15",
+      "sha256": "a135a9284d023555ff9654950ee76e04460464519d230a4d9e8d815c725288d9",
+      "hash_basis": "extracted document text",
+      "bytes": 48066
+    },
+    "bfcache": {
+      "url": "https://developer.chrome.com/docs/web-platform/bfcache-ccns",
+      "checked": "2026-09-15",
+      "sha256": "52e82842073feb42133341c6e051f29bea330047f18d301dbd669cf61d74e15b",
+      "hash_basis": "extracted document text",
+      "bytes": 8022
+    },
+    "cruxmetric": {
+      "url": "https://developer.chrome.com/docs/crux/methodology/metrics",
+      "checked": "2026-09-15",
+      "sha256": "bcff5462ba29b3a5801d1d6cbf02dd972777b875a6fe075966866c201914207b",
+      "hash_basis": "extracted document text",
+      "bytes": 11043
+    },
+    "priority": {
+      "url": "https://web.dev/articles/fetch-priority",
+      "checked": "2026-09-15",
+      "sha256": "de68df946a0bd179ad53f5e6b7b2e412b002611bb0b74512c45225825eca8d84",
+      "hash_basis": "extracted document text",
+      "bytes": 21638
+    },
+    "mobiletest": {
+      "url": "https://developers.google.com/search/blog/2023/04/page-experience-in-search",
+      "checked": "2026-09-15",
+      "sha256": "c07b7efd6ae48cab781796ae13d994a4c38ea5ebe2a630a4111cd90bb95c0dee",
+      "hash_basis": "extracted document text",
+      "bytes": 7472
+    },
+    "crawl": {
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+      "checked": "2026-09-15",
+      "sha256": "2c325b864eb9fd204c6d43f40dc3698a1c949043a9f441edf746b3cffee6f08e",
+      "hash_basis": "extracted document text",
+      "bytes": 9367
+    },
+    "product": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
+      "checked": "2026-09-15",
+      "sha256": "3a659c3c06d3ae2f71b33833b6bdc6dddfd46a95d57021b1674d541bbc70a3af",
+      "hash_basis": "extracted document text",
+      "bytes": 48235
+    },
+    "article": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
+      "checked": "2026-09-15",
+      "sha256": "f05af6c4e8d9500445a23a376c9867fa1b7ae13452e7eb40889fd3f3c302f781",
+      "hash_basis": "extracted document text",
+      "bytes": 15477
+    },
+    "sitelink": {
+      "url": "https://developers.google.com/search/blog/2024/10/sitelinks-search-box",
+      "checked": "2026-09-15",
+      "sha256": "0d49ff6f03ce741856ee5f8e5a8b0488ef9680dbc40d94198f713e942bd99435",
+      "hash_basis": "extracted document text",
+      "bytes": 1726
+    },
+    "canonical": {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "checked": "2026-09-15",
+      "sha256": "f603dd1b1bd3cf04507241dbcdff56fdbab40aa4c6c4d30bb883c2bca2ab4a94",
+      "hash_basis": "extracted document text",
+      "bytes": 13943
+    },
+    "retired2025": {
+      "url": "https://developers.google.com/search/blog/2025/06/simplifying-search-results",
+      "checked": "2026-09-15",
+      "sha256": "6827c698ee20b2abd9032118ed41226f806e68d9809a510d87045ea7f06825a5",
+      "hash_basis": "extracted document text",
+      "bytes": 3956
+    },
+    "howto": {
+      "url": "https://developers.google.com/search/blog/2023/08/howto-faq-changes",
+      "checked": "2026-09-15",
+      "sha256": "e8898634b0c97bbe12ecc5191d2a7e7e051f3522c88f17a181dccfdbde79d44e",
+      "hash_basis": "extracted document text",
+      "bytes": 3529
+    },
+    "homepage": {
+      "url": "https://developers.google.com/search/blog/2014/05/creating-right-homepage-for-your",
+      "checked": "2026-09-15",
+      "sha256": "bad25dd1c71cdc490e7314a8d81189541abfb79d7b4f1f4d00d24bfa2bdc48b3",
+      "hash_basis": "extracted document text",
+      "bytes": 5710
+    },
+    "googlebot": {
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/googlebot",
+      "checked": "2026-09-15",
+      "sha256": "a11968a2659cc84084edc6ac4ca31d44b0174e5fda7289eff4abff5922c51004",
+      "hash_basis": "extracted document text",
+      "bytes": 89
+    },
+    "variants": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/product-variants",
+      "checked": "2026-09-15",
+      "sha256": "327bf46b779376082b830f3f9c5b15479eabbc32a735e874e96ff6cc7369f57d",
+      "hash_basis": "extracted document text",
+      "bytes": 53166
+    },
+    "profile": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/profile-page",
+      "checked": "2026-09-15",
+      "sha256": "c07d1382d4707b5dc6a5f1cf58ad68c00bc3abcb223a4aac9a4151c543013376",
+      "hash_basis": "extracted document text",
+      "bytes": 18161
+    },
+    "forum": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/discussion-forum",
+      "checked": "2026-09-15",
+      "sha256": "a60b269785e1494a51a973b0f7c0edd1843a3a13a07338422bb663f8cf0d906f",
+      "hash_basis": "extracted document text",
+      "bytes": 34086
+    },
+    "image": {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps",
+      "checked": "2026-09-15",
+      "sha256": "af18a942a081d0e00fb2f657945f21df698ce06f28d703db05bae839065568d3",
+      "hash_basis": "extracted document text",
+      "bytes": 3190
+    },
+    "video": {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/video-sitemaps",
+      "checked": "2026-09-15",
+      "sha256": "b0307be68aa105265d212b4c07c02d941433d82f1d6071b9045c81d63f241ada",
+      "hash_basis": "extracted document text",
+      "bytes": 19412
+    },
+    "qa": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/qapage",
+      "checked": "2026-09-15",
+      "sha256": "c097d3ea4acb240b99b74f3a0309e0a743b62c04150c99f98388744d76b3087f",
+      "hash_basis": "extracted document text",
+      "bytes": 32187
+    },
+    "merchant": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing",
+      "checked": "2026-09-15",
+      "sha256": "e2765f483c48a31490336c0dc1788694f9c4b8ff45a149cb731311e3f9ae87d3",
+      "hash_basis": "extracted document text",
+      "bytes": 92017
+    },
+    "organization": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/organization",
+      "checked": "2026-09-15",
+      "sha256": "f19de1cf94493abf44413eb549c7585e9d834594c54d6aac8de059edf2222133",
+      "hash_basis": "extracted document text",
+      "bytes": 21337
+    },
+    "software": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/software-app",
+      "checked": "2026-09-15",
+      "sha256": "04fee101b86a3d6cbed12a2c00d35a2ad34b423b2664552fdf54369c2cf73a4a",
+      "hash_basis": "extracted document text",
+      "bytes": 10986
+    },
+    "breadcrumb": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+      "checked": "2026-09-15",
+      "sha256": "6fe916087d439afe70beba4a2597e04045a960d5e3d579487cd234b078b004a2",
+      "hash_basis": "extracted document text",
+      "bytes": 25048
+    },
+    "event": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/event",
+      "checked": "2026-09-15",
+      "sha256": "38a354c4fb9c8e6c169e402297ea71bfa39d2e38d52d30164c13d94d6809c660",
+      "hash_basis": "extracted document text",
+      "bytes": 38150
+    },
+    "sitename": {
+      "url": "https://developers.google.com/search/docs/appearance/site-names",
+      "checked": "2026-09-15",
+      "sha256": "22c2500d8e3a1ec15b95b343171906569152e14d6e06e5b2b0451a4467052bec",
+      "hash_basis": "extracted document text",
+      "bytes": 13566
+    },
+    "local": {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/local-business",
+      "checked": "2026-09-15",
+      "sha256": "2df9f02282895ae398219cde74582d64f902bada2298f261b0d7904465307361",
+      "hash_basis": "extracted document text",
+      "bytes": 26550
+    }
+  },
+  "limits": "Documentation/source/JSON syntax/packaging checks, not live SEO/model/security verification. No upstream execution or runtime imported."
+}

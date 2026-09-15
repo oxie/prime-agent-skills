@@ -280,13 +280,13 @@
       "name": "schema",
       "version": "2.0.0",
       "path": "skills/schema",
-      "sha256": "a45054c4b234f6bd076e4817a6e3faef726e129f844c92720b8e35fe7ae2dddd"
+      "sha256": "d1f0a97b2261e0902e9669768629fc6d8722ab99ed7f93a970420f770f63b468"
     },
     {
       "name": "seo-audit",
       "version": "2.0.1",
       "path": "skills/seo-audit",
-      "sha256": "216857f9519c2b5c1bdae49150d58a3497832711d9e43d58e43ae9093fd2af49"
+      "sha256": "d6b4467fdebdacf70f38ed736d33beb6001650acdb876a5e53129aa13e33a557"
     },
     {
       "name": "signup",

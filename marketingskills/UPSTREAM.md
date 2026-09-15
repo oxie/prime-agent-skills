@@ -78,3 +78,9 @@ visual layout; site-architecture retains hierarchy and page-purpose decisions.
 See [source notes](RAMPSTACK_SOURCES.md) and rampstack-provenance.json for the
 reviewed selection, corrections, exact source/local identities and exclusions.
 No new skill, executable payload or automatic workflow is installed.
+
+## Selective Claude SEO guidance and current feature corrections
+
+See [source notes](CLAUDE_SEO_SOURCES.md) and claude-seo-provenance.json for the
+reviewed source, primary-document corrections, exact identities and exclusions.
+SEO Audit and Schema remain the owners; no new runtime or automatic workflow.

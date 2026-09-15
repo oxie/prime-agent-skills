@@ -10,14 +10,18 @@ Detailed evidence backing the International SEO & Localization section of the SE
 
 Google supports three equivalent methods: HTML `<link>` in `<head>`, HTTP `Link` headers, and XML sitemap `<xhtml:link>` elements. Google confirmed no method is prioritized over another.
 
-Google combines signals from both HTML and sitemaps. If the same language-region pair points to different URLs across methods, Google drops that pair rather than guessing.
+Using multiple methods is allowed, but Google documents no Search benefit and more
+maintenance work. Keep them consistent; report conflicting annotations without
+claiming a guaranteed processing outcome.
 
 - [Google Search Central: Localized Versions](https://developers.google.com/search/docs/specialty/international/localized-versions)
 - [SEJ: Google Combines Hreflang Signals](https://www.searchenginejournal.com/google-combines-hreflang-signals-from-html-sitemaps/389219/)
 
 ### Reciprocal Requirement
 
-Google's docs: "If page X links to page Y, page Y must link back to page X. If not, those annotations may be ignored or not interpreted correctly."
+Google requires self-listing and reciprocal links. It also explicitly allows some
+languages to be omitted on some pages and processes links that point to each other.
+A missing edge is not a whole-cluster failure guarantee; report the affected links.
 
 Every page must include itself (self-referencing) in the hreflang set. Missing self-referencing is the #1 error found by Semrush audits. A study of 374,756 domains found 67% of hreflang implementations had issues.
 
@@ -27,7 +31,10 @@ Every page must include itself (self-referencing) in the hreflang set. Missing s
 
 ### x-default
 
-Introduced April 2013. Designates the fallback page for users whose language/region matches no declared variant. Can point to the same URL as one of the language-specific alternates. Must be included in the complete set of annotations on every variant page.
+Introduced April 2013. Designates a fallback for users whose language/region matches
+no declared variant. It can share a URL with a language-specific alternate. Consider
+it especially for selectors or redirecting home pages; it is not required on every
+multilingual site. If selected, keep that fallback consistent in the related set.
 
 - [Google Blog: x-default hreflang](https://developers.google.com/search/blog/2013/04/x-default-hreflang-for-international-pages)
 - [Google Blog: How x-default can help you (2023)](https://developers.google.com/search/blog/2023/05/x-default)
@@ -43,7 +50,10 @@ You cannot specify a region code alone. Common mistakes: `en-UK` (should be `en-
 
 ### Hreflang at Scale (20+ locales)
 
-With 20 locales, HTML `<head>` hreflang adds ~1.5KB per page for zero user benefit. Sitemap-based hreflang has zero runtime performance impact. `<xhtml:link>` child elements do NOT count toward the 50,000 URL sitemap limit (only `<loc>` elements count).
+Choose HTML, headers or sitemap annotations by maintenance and actual output cost,
+not a fixed locale-count threshold. Sitemap annotations avoid extra page-head bytes
+but still need generation and validation. Alternate `<xhtml:link>` children do not
+count as additional URL entries; their bytes count toward the file-size limit.
 
 John Mueller recommends focusing hreflang on pages receiving wrong-language traffic, not every page: "I wouldn't do it for any of the other pages of the site because it's so complex & hard to manage."
 
@@ -66,16 +76,22 @@ For both engines: implement hreflang (Google/Yandex) + `<html lang="...">` + `<m
 
 ### Self-Referencing Canonicals
 
-Each locale page must canonical to itself. John Mueller: "Don't use a rel=canonical across languages/countries, only use it on a per-country/language basis."
+Genuinely translated, independently useful pages normally identify their own
+canonical URL. Do not collapse translations onto one language by habit. For
+same-language regional duplicates, Google supports a preferred canonical alongside
+hreflang. Decide from actual content and intended regional experience.
 
 Google's docs: "Specify a canonical page in the same language, or the best possible substitute language if a canonical doesn't exist for the same language."
 
 - [John Mueller: hreflang canonical](https://johnmu.com/hreflang-canonical/)
 - [Google: Consolidate Duplicate URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
 
-### Canonical Overrides Hreflang
+### Align Canonical and Hreflang Signals
 
-Mueller: "If your canonical is pointing somewhere else, Google will follow that and ignore your hreflang annotation." The canonical URL must be one of the URLs in the hreflang set, or all hreflang markup is ignored.
+Align the intended canonical and alternate relationships. Canonical declarations
+are signals, not an unconditional override or a guarantee of whole-set rejection.
+Check Google-selected canonical evidence when available; do not infer it from the
+HTML tag alone.
 
 Google also states: "Google prefers URLs that are part of hreflang clusters for canonicalization" -- when signals align, hreflang strengthens canonical selection.
 
@@ -87,14 +103,17 @@ Google also states: "Google prefers URLs that are part of hreflang clusters for 
 
 Mueller (2023 Office Hours): "If the content is completely the same, and we can't tell any difference, then for simplicity and user experience we may just show one version -- even if hreflang is present."
 
-Google's duplicate detection runs BEFORE hreflang evaluation. To keep both versions indexed, you need substantive content differences beyond currency symbols.
+Do not manufacture differences merely to seek multiple indexed copies. For similar
+or duplicate same-language regional pages, Google recommends selecting a preferred
+canonical plus hreflang. Hreflang does not guarantee separate indexing.
 
 - [International Web Mastery: Same-Language Duplicate Pages](https://internationalwebmastery.com/blog/how-google-handles-canonicalization-of-same-language-duplicate-near-duplicate-pages/)
 - [Google: Managing Multi-Regional Sites](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)
 
 ### Pagination Across Locales
 
-Google: "Don't use the first page of a paginated sequence as the canonical page. Instead, give each page its own canonical URL." Each paginated page in each locale gets self-referencing canonical. `rel="next/prev"` deprecated March 2019.
+Google: "Don't use the first page of a paginated sequence as the canonical page. Instead, give each page its own canonical URL." Each paginated page in each locale gets self-referencing canonical. Google no longer uses `rel="next/prev"` for pagination. Provide crawlable links and
+distinct URLs; Google generally does not click load-more buttons.
 
 - [Google: Pagination Best Practices](https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading)
 
@@ -106,27 +125,35 @@ Google: "Don't use the first page of a paginated sequence as the canonical page.
 
 Each `<url>` entry includes `<xhtml:link>` alternates for every locale. Requires `xmlns:xhtml="http://www.w3.org/1999/xhtml"` namespace.
 
-Split sitemaps by content type, not by locale. Splitting by locale creates maintenance problems because every locale sitemap must reference every other locale (reciprocal requirement).
+Split by content type or locale according to maintenance needs. Either is possible;
+keep the actual alternate sets reciprocal and self-listing across the chosen files.
 
 - [Google Search Central: Localized Versions](https://developers.google.com/search/docs/specialty/international/localized-versions)
 - [Lumar: How Google Handles Hreflang](https://www.lumar.io/office-hours/hreflang/)
 
 ### Size Limits
 
-50,000 URLs / 50MB uncompressed per sitemap. Only `<loc>` elements count toward the 50K limit. But with 20 hreflang alternates per entry, the 50MB file size limit becomes the bottleneck. Plan for 2,000-5,000 URLs per sitemap when using full hreflang.
+50,000 URL entries / 50 MB uncompressed per sitemap. Alternate child links do not
+count as extra URL entries. Measure the generated uncompressed bytes, including all
+alternates; do not replace either limit with an assumed 2,000–5,000 URL budget.
+See [XML sitemap checks](xml-sitemaps.md) for extensions and evidence limits.
 
 - [Google: Build and Submit a Sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
 - [SERoundtable: Sitemap 50,000 Limit](https://www.seroundtable.com/google-sitemap-50-000-limit-based-on-location-urls-not-alternative-urls-33843.html)
 
 ### Submission
 
-Submit the sitemap index in Search Console AND reference it in robots.txt. Individual child sitemaps can be submitted separately for per-sitemap reporting.
+Search Console submission and a robots.txt sitemap reference are available discovery
+methods, not a requirement to do both in every audit. Individual child submissions
+can help reporting. Do not submit or change robots.txt without applicable approval.
 
 - [Google: Build and Submit a Sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
 
 ### Next.js Caveat
 
-Next.js `alternates.languages` does NOT automatically include a self-referencing `<xhtml:link>` for the `<loc>` URL. You must explicitly include the `<loc>` URL's own language in the `languages` object.
+Inspect the installed framework version and generated XML. Ensure the emitted set
+includes its own URL and the intended alternates; do not assume a configuration
+property automatically includes or excludes self-listing.
 
 - [Next.js Docs: sitemap.xml](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap)
 
@@ -144,14 +171,20 @@ URL parameters (`?lang=en`) are explicitly "Not recommended" per Google docs.
 
 ### Default Language
 
-Mueller recommends: set `/` as x-default, put each language in its own prefix. Without marking `/` as x-default, "to Google it can look like '/' is a separate page from the others."
+The default language can live at `/` without a prefix. Google documents a default
+locale homepage, a selector or a redirecting homepage as possible strategies. Use
+distinct discoverable variant URLs; do not force a `/en/` migration or x-default
+solely because a framework prefers that convention.
 
 - [Google Blog: x-default](https://developers.google.com/search/blog/2023/05/x-default)
 - [Google Blog: Creating the Right Homepage](https://developers.google.com/search/blog/2014/05/creating-right-homepage-for-your)
 
 ### Content Negotiation / IP Redirects
 
-Google strongly advises against locale-adaptive pages. Googlebot crawls from US IPs and does not send Accept-Language headers. Separate URLs + hreflang are required.
+Locale-adaptive content can leave variants undiscovered. Googlebot generally
+originates in the US and does not send Accept-Language, though Google documents
+geo-distributed crawling. Prefer distinct crawlable URLs and explicit alternate
+links; do not rely solely on inferred visitor location.
 
 - [Google: Locale-Adaptive Pages](https://developers.google.com/search/docs/specialty/international/locale-adaptive-pages)
 
@@ -171,7 +204,10 @@ The International Targeting report is deprecated. Google now relies entirely on 
 
 ### Framework Locale Modes
 
-Use `localePrefix: 'always'` (next-intl) or equivalent. Never hide locale from URLs -- Google needs unique URLs per language. Using `'never'` mode disables alternate links entirely.
+Use the project's routing strategy and inspect actual URLs and emitted alternate
+links for the installed framework version. A default locale without a prefix can
+work. Serving all languages only at one negotiated URL is a different discovery
+problem; a framework option name alone does not establish Google requirements.
 
 - [next-intl: Routing Configuration](https://next-intl.dev/docs/routing/configuration)
 - [Next.js Discussion #18419](https://github.com/vercel/next.js/discussions/18419)
@@ -194,16 +230,23 @@ Reddit scaled AI translations to 35+ languages with Google's knowledge. The key 
 
 Google: "Localized versions of a page are only considered duplicates if the main content of the page remains untranslated." Pages with only translated boilerplate get clustered as duplicates.
 
-Do NOT use noindex for unwanted locale pages (wastes crawl budget). Do NOT canonical cross-locale (conflicts with hreflang). Best approach: don't create locale pages you can't make genuinely helpful.
+Avoid creating pages that cannot help users. For existing unwanted pages, noindex
+can be appropriate to prevent indexing if crawlers can fetch the directive. It is
+not a canonical-selection or crawl-budget optimization method. Choose improving,
+noindexing, removing or canonicalizing true duplicates according to intent, then
+update hreflang and sitemaps consistently. This guidance does not authorize live changes.
+
+- [Google: Block indexing](https://developers.google.com/search/docs/crawling-indexing/block-indexing)
 
 - [Google: Localized Versions](https://developers.google.com/search/docs/specialty/international/localized-versions)
 - [Google: Crawl Budget Management](https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget)
 
 ### Helpful Content System Impact
 
-Merged into core ranking March 2024. Site-wide signal: "any content -- not just unhelpful content -- on sites determined to have relatively high amounts of unhelpful content overall is less likely to perform well in Search."
-
-Low-quality translated pages can drag down the entire site. This is the strongest argument against creating locale pages that aren't genuinely helpful.
+The helpful-content work became part of core ranking in March 2024. The linked 2022
+announcement describes a historical system, not a current formula for diagnosing
+a whole-site penalty. Assess actual usefulness and search evidence; one thin locale
+page does not establish site-wide ranking harm.
 
 - [Google Blog: Helpful Content Update](https://developers.google.com/search/blog/2022/08/helpful-content-update)
 - [Amsive: What Changed in 2024](https://www.amsive.com/insights/seo/googles-helpful-content-update-ranking-system-what-happened-and-what-changed-in-2024/)
