@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "reviewed_repository": "https://github.com/alchaincyf/huashu-design",
+  "commit": "c4b83675d1cdc1a6f43039518db9057749931758",
+  "source_license": "MIT Copyright (c) 2026 alchaincyf (花叔 · 花生); no upstream payload copied",
+  "sources": [
+    {
+      "path": "references/ui-demo-animation.md",
+      "git_blob": "30c0d8061f205a6f98400b9db343ce106e965a25",
+      "sha256": "38a2b52ad03d97442757016f1ef2c4c439d4f3e9f234cdce81cacc6fb60a894c",
+      "bytes": 29109
+    },
+    {
+      "path": "references/storyboard-basics.md",
+      "git_blob": "56a5f03b13e46f233605c7c16de7f5a06d633edf",
+      "sha256": "b8775952ae96bbe3e99f080520896fa9d853d324733c771da5f45da865b6f884",
+      "bytes": 23987
+    },
+    {
+      "path": "references/verification.md",
+      "git_blob": "377e0eadcfdf2e57a02b79825f47ef80c57ef4dc",
+      "sha256": "2481be020d5253efebcc6dd1a3bea80db25c1d03ce92d5a0347124c7407b366c",
+      "bytes": 6998
+    },
+    {
+      "path": "references/hyperframes-backend.md",
+      "git_blob": "8c87a2fd9ad159bc23d1dcfe242278228be0c6d8",
+      "sha256": "247354f0255de2486117783d29cfaa104cd5bdf9ad918c85918a3e78ec04dbca",
+      "bytes": 7491
+    },
+    {
+      "path": "references/typography.md",
+      "git_blob": "7965d1714953edf254eccac0a49f73e71737d3b8",
+      "sha256": "5fbf83b9a916a986d873b6950c2f2e3aeebc0192bdb2a89bcf56d84dc4915e51",
+      "bytes": 18348
+    },
+    {
+      "path": "LICENSE",
+      "git_blob": "ed67368a2a79ed7be97b2a4852330cdac5b8b12a",
+      "sha256": "6d6a2a9caf2e6d2b76974050427053b2892d8aa4c33fd168ce63a537fcee9d96",
+      "bytes": 1086
+    }
+  ],
+  "primary": {
+    "hyperframes_commit": "e2d60cf27c80849cb6c0fa5c22be34c85b8f6e05",
+    "published_version": "0.8.40",
+    "archive_sha256": "c0c5c9a6b25498309cb87f6e6ab03caf2d5e928f4fef2de68f4eee78d29ebaed",
+    "reviewed_commands": {
+      "packages/cli/src/cli.ts": "3901a610a932d1e9152c628e4501e45f7baa73205dac92dc5cba6b810b284a5d",
+      "packages/cli/src/commands/render.ts": "07e2c2a04ef298f871ef25cc43bc41e2e72ef6f5d5971d0a19839d6aa9d57b44",
+      "packages/cli/src/commands/check.ts": "b9b753f769f0c34331c26d7e123ff38dee3bf885f257ff7426e2181824a82aba"
+    },
+    "cjk": {
+      "clreq": {
+        "url": "https://www.w3.org/TR/clreq/",
+        "status": 200,
+        "html_sha256": "b104718cdad5a487b57414b959e78ab2ce5c36b528cda07f55d294e985f26735",
+        "html_bytes": 756078
+      },
+      "inter": {
+        "url": "https://rsms.me/inter/",
+        "status": 200,
+        "html_sha256": "57aa0290314a6027440b3cd7edea3db4ab0e4b3adcff1d4b070ec4fdadcb095c",
+        "html_bytes": 465200
+      },
+      "text-wrap": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-wrap",
+        "status": 200,
+        "html_sha256": "34168fa55ba96d624ff698b1561ddbc65d1d088724a2118c2233beb607a780a5",
+        "html_bytes": 329541
+      },
+      "font-family": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family",
+        "status": 200,
+        "html_sha256": "a15dee2490a591f4ab62d282fb6e057f7ef65b731dffa52e9925a38eac807f55",
+        "html_bytes": 341465
+      },
+      "checked_at_utc": "2026-09-15T17:15:08.127386+00:00"
+    }
+  },
+  "local_original": {
+    "marketingskills/skills/video/SKILL.md": "4a68be1bf7e508567233d564f2a38808ef64b1f7184989f9b11951068f4b2de1",
+    "marketingskills/tools/integrations/hyperframes.md": "2ad7b3bbde18d048cf3d74d28989cb23d6e10d66b2b83dc8a7e4f83f96b9f258",
+    "marketingskills/skills/video/references/ui-demo-delivery.md": "27ca8d7a29b85ac7f20340881fcd664c01d4b037381d74b7623b748946ee24f8",
+    "hallmark/references/ui-localization.md": "531722e8906242e90872a0c78a35b2f2b3210b6f51e890b4743d43c027c082da",
+    "hallmark/HUASHU_SOURCES.md": "b22bff61e64a9730fb862899b69b44688217fce627c33d110b46134ad6da3b8a",
+    "marketingskills/HUASHU_SOURCES.md": "ccd36e9e3d8a1e31e3c5fdc8d3d80e03743657aa1b9b0b1440cb1b5fc294714b"
+  },
+  "limits": "Source/wording/hash/link/discovery checks only. No upstream installation, executable import, model trial, rendering, font download or cloud request."
+}

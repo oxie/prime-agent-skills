@@ -1,3 +1,4 @@
+import {beforeHuashuFile} from "./helpers/huashu-snapshot.mjs";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -71,7 +72,7 @@ test("source/license mapping and hashes are complete for exactly four additions"
   const p=JSON.parse(read(`${owner}/next-provenance.json`));
   assert.equal(p.collection.commit,"bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3");
   assert.equal(p.files.length,2);count+=p.files.length;
-  for(const f of [...p.files,...p.licenses])assert.equal(hash(read(`${owner}/${f.path}`)),f.sha256,f.path);
+  for(const f of [...p.files,...p.licenses])assert.equal(hash(beforeHuashuFile(root,`${owner}/${f.path}`)),f.sha256,f.path);
   for(const f of p.files){assert.ok(contracts[`${owner}/${f.path}`]);assert.ok(f.sources.length>0);}
   for(const s of p.sources){assert.match(s.sha256,/^[a-f0-9]{64}$/);assert.ok(s.url.includes(p.collection.commit));}
   assert.ok(read(`${owner}/NEXT_SOURCES.md`).includes("CC BY 4.0"));

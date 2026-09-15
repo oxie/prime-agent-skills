@@ -1,4 +1,5 @@
 // Deterministic source, packaging and loader checks; not model/rendered design evaluation.
+import {beforeHuashuFile} from './helpers/huashu-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -64,7 +65,7 @@ test('optional helper is narrowly packaged and documentation preserves authority
 test('exact current metadata and upstream transitions preserve prior evidence and reject mutation',t=>{
  assert.equal(sha(fs.readFileSync(path.join(root,'hallmark/SKILL.md'))),catalogueTransition.current);
  assert.equal(sha(beforeCatalogueSkill(root,'hallmark')),catalogueTransition.previous);
- assert.equal(sha(fs.readFileSync(path.join(root,'hallmark/UPSTREAM.md'))),catalogueUpstream.current);
+ assert.equal(sha(beforeHuashuFile(root,'hallmark/UPSTREAM.md')),catalogueUpstream.current);
  assert.equal(sha(beforeCatalogueFile(root,'hallmark/UPSTREAM.md')),catalogueUpstream.previous);
  const temp=fs.mkdtempSync(path.join(os.tmpdir(),'catalogue-history-'));t.after(()=>fs.rmSync(temp,{recursive:true,force:true}));
  fs.mkdirSync(path.join(temp,'hallmark'));

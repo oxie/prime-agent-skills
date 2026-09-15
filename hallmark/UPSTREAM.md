@@ -122,3 +122,10 @@ needs no runtime. No upstream generator, CSS output, MASTER/page persistence, ru
 engine, stack library, installer, companion skills, downloads or auto-update.
 The helper's retrieval checks do not establish design quality or model effectiveness.
 Earlier notices and experimental source identities remain historical, not rerun evidence.
+
+## Scoped CJK localization detail
+
+Original CJK font/locale/rendering considerations extend the existing localization
+reference without a new workflow or SKILL.md trigger. See [source notes](HUASHU_SOURCES.md).
+Earlier source hashes, licenses, versions and pilot evidence are unchanged. No
+Huashu code, media, fonts, installer or automated review is imported.

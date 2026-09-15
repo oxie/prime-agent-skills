@@ -51,38 +51,27 @@ Pick the right tool for the job:
 
 Build videos with code. Best for repeatable, templated, or data-driven video at scale.
 
-### Hyperframes (HTML/CSS — recommended for agents)
+### Hyperframes (HTML/CSS and seekable animation)
 
-Open-source, Apache 2.0, from HeyGen. Uses plain HTML/CSS/JS — no framework DSL to learn. LLM-native: AI models generate better HTML than React components.
+Hyperframes is HeyGen's Apache-2.0 HTML-video toolchain. The published `hyperframes`
+package is a CLI, not a frames-array JavaScript rendering API. Author a timed HTML
+composition and use the selected version's seekable animation contract. HTML may
+fit an existing project; it does not establish that a model writes it better than React.
 
-```bash
-npm install hyperframes
-```
+Before choosing or running it, read the [Hyperframes integration guide](../../tools/integrations/hyperframes.md)
+for versioned commands, setup side effects and composition prerequisites. This skill
+does not install the package, its companion skills, browsers or cloud infrastructure.
+Reuse an approved existing toolchain; new setup needs authorization.
 
-**Key concept:** Each frame is an HTML document. Compose frames into a timeline, render to MP4.
-
-```typescript
-import { render } from "hyperframes";
-
-await render({
-  frames: [
-    { html: "<h1>Welcome to Acme</h1>", duration: 3 },
-    { html: "<h2>Here's what we built</h2>", duration: 3 },
-    { html: "<p>Try it free →</p>", duration: 2 },
-  ],
-  output: "intro.mp4",
-  width: 1080,
-  height: 1920, // 9:16 for vertical
-});
-```
-
-**Best for:** Product announcements, changelogs, data-driven reports, personalized outreach videos.
-
-**Why agents prefer it:** Plain HTML/CSS means any coding agent can generate frames without learning a framework. Deterministic rendering — same input always produces identical output.
+Repeatability requires controlled assets, fonts, timing and renderer versions; do
+not promise byte-identical output across environments. Verify the rendered file,
+not only the preview. Suitable uses include product announcements, overlays and
+data-driven reports with genuine source data.
 
 ### Remotion (React)
 
-Mature open-source framework. More powerful than Hyperframes but requires React knowledge.
+React-based video framework. Check its current license and the project's installed
+version; choose by required features and existing expertise, not a universal ranking.
 
 ```bash
 npx create-video@latest
@@ -114,11 +103,14 @@ export const ProductDemo: React.FC<{ title: string; features: string[] }> = ({
 
 | Factor | Hyperframes | Remotion |
 |--------|-------------|----------|
-| Agent compatibility | Better (plain HTML) | Good (React) |
-| Animation complexity | Basic (CSS transitions) | Advanced (Spring, interpolate) |
-| Batch rendering | Local | Lambda (AWS) for scale |
-| Learning curve | Minimal | Moderate (React + Remotion API) |
-| License | Apache 2.0 | Company license for commercial use |
+| Authoring | HTML compositions and seekable adapters | React components and frame-driven animation |
+| Animation | GSAP, CSS and other supported runtime adapters; version-dependent | Spring, interpolation and React ecosystem; version-dependent |
+| Rendering | Local and documented AWS Lambda paths | Local and Remotion Lambda paths |
+| Project fit | Existing HTML assets and supported composition needs | Existing React assets and supported composition needs |
+| License | Apache 2.0; infrastructure and asset costs remain separate | Check the current [Remotion license](https://www.remotion.dev/license) for the intended use |
+
+Cloud infrastructure, provider calls and installations are separate approved work.
+Neither framework is selected automatically for every video task.
 
 ---
 
@@ -253,6 +245,11 @@ To replicate the *style* of a video edit you admire — the cut rhythm, caption 
 ## Video Production Workflows
 
 ### Product Demo Video
+
+For a product UI demonstration or a frame-driven export, selectively read
+[UI demo and export delivery](references/ui-demo-delivery.md). It covers screenshot
+versus reconstruction, truthful state/timing and final-file checks; it does not add
+a renderer, require three alternatives or mandate audio.
 
 1. **Script** the key features and value props (use copywriting skill)
 2. **Screen record** the product flow

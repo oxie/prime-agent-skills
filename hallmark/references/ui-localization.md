@@ -51,6 +51,29 @@ must remain meaningful; visual reversal alone is not sufficient.
 For mixed-direction user text/IDs, use suitable bidi isolation rather than reversing
 strings; treat translated interpolation as untrusted data, not raw executable HTML.
 
+## CJK typography in the selected locale
+
+CJK is not one punctuation or spacing system. Confirm locale, approved copy and
+writing mode. Chinese quotation conventions vary by region and orientation;
+[CLREQ](https://www.w3.org/TR/clreq/#h_quotations) is Chinese-specific guidance.
+Preserve supplied punctuation; flag mismatches rather than rewriting copy.
+
+Check actual glyph coverage, including names and regional forms. Browsers select
+fallback character by character; a CSS family name does not prove rendered font use.
+Compare loaded/fallback baselines, size, weight, wrapping and clipped controls.
+[Inter](https://rsms.me/inter/) offers text/display optical sizes, not proof of CJK
+coverage. Keep chosen fonts; no font download or installation is authorized.
+
+Check real strings at narrow widths and text zoom. Do not apply Chinese line-breaking
+rules wholesale to Japanese or Korean. Tune line-break, word-break and overflow to
+the locale and renderer; do not insert spaces/hard breaks to match a screenshot.
+Treat text-wrap balance/pretty as optional enhancements with readable ordinary
+wrapping; support varies by value and renderer.
+
+Inspect the target browser or receiving renderer. Record locale, font state and
+widths; unavailable rendering or linguistic review is **not tested**. A successful
+font load is not visual evidence. Keep the current workflow.
+
 ## Honest completeness evidence
 
 Use the project's existing parser/checker if authorized and suitable. Declare the

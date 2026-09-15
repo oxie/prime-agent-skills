@@ -96,3 +96,12 @@ for link compatibility; SEO Audit's link label reflects its corrected purpose.
 No Humanizer text, code, skill, detector, new editing pass or runtime is installed.
 These are original local corrections to the existing MIT-adapted marketing material;
 original source pins, versions, licenses and historical checks remain intact.
+
+## Original selective guidance after Huashu review
+
+Corrects the existing Video/Hyperframes package interface and qualifies repeatability
+and framework comparisons. Adds an optional original UI-demo/time/export reference
+under Video. See [source notes](HUASHU_SOURCES.md) and huashu-provenance.json.
+Only the current Video directory digest changes; upstream pins, versions, licenses
+and previous experimental evidence are preserved. No Huashu runtime, media, cloud
+client, hook, new skill or installation is included.
