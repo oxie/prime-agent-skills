@@ -16,6 +16,19 @@ A skill or standing-instruction change is considered synced only after validatio
 The root `.ignore` excludes only this repository README from loose-Markdown skill parsing.
 Prime Agent discovers directories containing a valid `SKILL.md` recursively. Start a new session or run `/reload` after changes.
 
+
+## Learning from real projects
+
+Task Observer owns [problem-oriented concept recall and extraction](task-observer/references/concept-reuse.md).
+On a material design gap, recall relevant source-backed ideas, check their limits,
+and validate any adaptation in the current project. After meaningful work, refine
+only strong, nonduplicate lessons through Prime's existing continual harness.
+Skills contain reusable instructions; concept memories suggest designs, not new
+permissions. Actual learned entries remain in the installation's global harness
+store. Cloning this Git repository does not transfer those memories or local review
+artifacts. No separate index, automatic repository capture or background service is
+installed by this workflow.
+
 ## Skills
 
 | Skill | Purpose | Upstream |

@@ -74,6 +74,16 @@ instructions. Improve a concrete observed failure, then assess the change on the
 next relevant real task. For the writing method, see
 [skill maintenance](references/prime-skill-maintenance.md#improve-instructions-from-real-work).
 
+
+## Reuse concepts from real projects
+
+When a project has a material design gap or meaningful work yields a reusable
+implementation lesson, follow [concept recall and learning](references/concept-reuse.md).
+Retrieve by the problem, verify the full evidence and fit, then adapt within the
+current task's permissions. At a natural milestone, retain only strong, nonduplicate,
+client-safe concepts through the existing refinement path. This is not mandatory
+research for routine work or permission to install the source project.
+
 ## One persistence path: Prime continual harness
 
 When there is a strong, evidence-backed observation:

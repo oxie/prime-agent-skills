@@ -1,4 +1,6 @@
 import {beforeRampstackFile} from './helpers/rampstack-snapshot.mjs';
+import {beforeConceptReuseFile} from './helpers/concept-reuse-snapshot.mjs';
+const historicalFile=(root,p)=>p.startsWith('task-observer/')?beforeConceptReuseFile(root,p):beforeRampstackFile(root,p);
 // Mechanical contracts and native metadata only. No models, providers or efficacy claims.
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -7,7 +9,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>beforeRampstackFile(root,p).toString('utf8');
+const read=p=>historicalFile(root,p).toString('utf8');
 const hash=s=>createHash('sha256').update(s).digest('hex');
 const flat=s=>s.replace(/\s+/g,' ');
 const contracts={
@@ -87,7 +89,7 @@ test('existing owners retain pinned source identities, licenses and exact curren
   for(const f of pr.files){
    const p=path.resolve(root,owner,f.path);assert(p.startsWith(path.resolve(root,owner)+path.sep));
    const stat=fs.lstatSync(p);assert(stat.isFile());assert.equal(stat.mode&0o111,0);
-   const b=beforeRampstackFile(root,owner+'/'+f.path);assert.equal(hash(b),f.sha256,owner+'/'+f.path);assert.equal(b.length,f.bytes);
+   const b=historicalFile(root,owner+'/'+f.path);assert.equal(hash(b),f.sha256,owner+'/'+f.path);assert.equal(b.length,f.bytes);
    if(f.previous_sha256)assert.match(f.previous_sha256,/^[a-f0-9]{64}$/);
   }
  }

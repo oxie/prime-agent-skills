@@ -46,3 +46,13 @@ CC-BY-4.0 attribution, script-interface guidance and selected format checks.
 The local checker now needs PyYAML to validate actual parsed metadata; it does not
 install dependencies or replace Prime's native loader. Its exact scope and commands
 are documented in [bundle validation](references/bundle-validation.md).
+
+## Original problem-oriented concept reuse
+
+The approved Prime adaptation adds [concept recall and learning](references/concept-reuse.md)
+under Task Observer. It retrieves problem-oriented memories through the existing
+native harness, checks source evidence and fit, and selectively refines lessons from
+real authorized work. These are original workflow instructions, not imported project
+code or an additional memory system. Source-specific concept cards live only in the
+continual harness; this repository does not mirror them or promise their backup.
+No new runtime, dependency, provider, automatic capture or evaluation loop is added.

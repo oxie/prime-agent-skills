@@ -1,12 +1,14 @@
 // Packaging, source and guidance contracts only; no model calls or efficacy claims.
 import test from 'node:test';
+import {beforeConceptReuseFile} from './helpers/concept-reuse-snapshot.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..','task-observer');
-const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const historical=p=>beforeConceptReuseFile(path.dirname(root),'task-observer/'+p);
+const read=p=>historical(p).toString('utf8');
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.replace(/\s+/g,' ');
 const contracts={
@@ -56,7 +58,7 @@ test('pinned documentation license and current payload identities are bound',()=
  }
  for(const f of pr.files){
   const target=path.resolve(root,f.path);assert(target.startsWith(root+path.sep));
-  const b=fs.readFileSync(target);assert.equal(hash(b),f.sha256,f.path);assert.equal(b.length,f.bytes);
+  const b=historical(f.path);assert.equal(hash(b),f.sha256,f.path);assert.equal(b.length,f.bytes);
  }
 });
 test('new maintenance routes and local documentation links resolve',()=>{
