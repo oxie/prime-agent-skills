@@ -181,3 +181,36 @@ assumptions, completed test exits and evidence limits. Do not claim deployment s
 provider performance or measured improvement from the offline example. Source pin,
 saved primary-document identities and adaptation notices belong to the owning skill's
 provenance records; keep this reference optional.
+
+## Comparing instructions without confusing the intervention with the outcome
+
+Use this only within an already authorized comparison and its fixed call/spend budget.
+Turn the selected instruction into an observable claim and record whether each case
+actually exercises it. Keep `not applicable`, `complied`, `violated` and
+`unobservable/error` separate; a task that never reaches a rule supplies no evidence
+for removing it. Observe resulting state when a diff cannot establish the claim.
+
+Record the treatment baseline after the approved instruction change, separately from
+the starting code revision. Measure task output against that baseline: deleting a
+rules file is the intervention, not implementation progress. A no-op in either arm
+must remain a no-op; if the case legitimately requires no change, judge its intended
+outcome rather than require a nonempty diff. Before blind grading, remove treatment-only
+deltas and arm labels, assign opaque IDs and keep the mapping outside grader input.
+Retain the raw artifacts for authorized traceability. If remaining content reveals
+the arm, report limited blinding rather than claim an unbiased comparison.
+
+Separate new-file work from edits with nearby examples. An agent can copy an existing
+convention without its written rule; agreement on that edit does not show that the
+rule is redundant for new modules. For example, both arms might register an endpoint
+beside a similar route while only one registers a new worker in a separate registry.
+Grade the actual registration contract, not code resemblance, and report the contexts
+separately. Neither a few equal outcomes nor an inapplicable case justifies deleting
+a security, approval or release requirement. Any removal needs its own authorization
+and evidence appropriate to that requirement; do not spend more calls to force a
+preferred conclusion.
+
+Use the existing trial ledger: preserve failed starts, nonzero exits, unknown costs
+and incomplete outcomes, even when a diff or response looks useful. Worktrees isolate
+checkout edits, not credentials, network effects, shared Git state or provider spend.
+These are evaluation-design checks, not an ablation runner or permission for automatic
+instruction pruning. See [selection and limits](../COLEAM00_SOURCES.md).

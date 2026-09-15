@@ -91,3 +91,13 @@ Two original, corrected examples extend the existing debugging reference: curren
 attempt/artifact identity and bounded binary-aware search. See
 [selection and MIT notice](WIKISKILL_SOURCES.md) and wikiskill-provenance.json.
 No WikiSkill runtime, additional skill, model trial or Task Observer change is included.
+
+## Selected Coleam00 evaluation and approval examples
+
+Three original additions extend existing agent-evaluation, test-design and API
+authorization references: instruction-comparison confounds, validator controls and
+evidence-path integrity, and revision-bound holds across later entrypoints. See
+[selection and MIT notice](COLEAM00_SOURCES.md) and coleam00-provenance.json.
+No upstream runner, hook, desktop tool, ablation experiment, new skill or memory
+system is installed. Historical source identities and verification limits remain
+unchanged; these examples do not establish model effectiveness or production safety.

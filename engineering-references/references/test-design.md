@@ -132,3 +132,35 @@ its exercised assertions, not all behavior or educational claims about the metho
 
 Source and adaptations: [Matt Pocock](../MATTPOCOCK_SOURCES.md) and
 [selected Superpowers recipes](../SUPERPOWERS_SOURCES.md).
+
+## Validate the detector, including its evidence path
+
+When an authorized mutation or negative fixture is meant to prove detection, first
+run an unchanged positive control in the same disposable environment. Include the
+same required config, dependencies and evaluator revision. If that control fails,
+report broken setup; no mutant in that environment earns detection credit. Verify
+that the intended mutation was actually applied. A missing anchor is not a caught
+defect, and a timeout is not the intended assertion failure.
+
+Fictional example: a refund fixture must reject an amount above the approved limit.
+The unchanged copy passes. Removing the limit check should fail the named
+`rejects-over-limit` assertion. If the copied project instead lacks a required config
+file and fails at startup, classify it as infrastructure failure, not a caught refund
+bug. If another assertion fails, record what it detected but do not credit the claim
+that `rejects-over-limit` protects this behavior. Require the completed process result
+and the specifically expected failure evidence together; a printed success marker
+followed by a nonzero exit is not a passing control.
+
+Follow the entire observation path, not only the expected-value expression. A hidden
+assertion that reads through a candidate-editable adapter can observe fabricated
+success. Identify who can read or write evaluator entrypoints, adapters, config,
+inputs, process-status capture and result artifacts. Keep the trusted evaluator and
+evidence channel outside candidate control using the project's approved isolation;
+if the candidate legitimately changes an adapter, review and validate that boundary
+separately rather than silently trusting it as the oracle. Protecting one file or
+starting a fresh model context does not establish filesystem/process isolation.
+
+This is a proposed test recipe, not an executed refund test, new harness or authority
+to run untrusted audit scripts. Static presence checks and deterministic execution
+are not security certification. Preserve independent expected outcomes and existing
+real-boundary coverage. See [selection and limits](../COLEAM00_SOURCES.md).

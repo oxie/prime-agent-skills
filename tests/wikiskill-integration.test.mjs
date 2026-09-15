@@ -1,4 +1,5 @@
 // Documentation/history contracts only; no upstream or model execution.
+import {beforeColeam00File} from './helpers/coleam00-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {beforeWikiskillFile,wikiskillTransitions} from './helpers/wikiskill-snapshot.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeColeam00File(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=b=>b.toString().replace(/\s+/g,' ');
 const clauses={

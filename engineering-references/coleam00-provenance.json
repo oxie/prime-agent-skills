@@ -1,0 +1,94 @@
+{
+  "repository": "https://github.com/coleam00/skills",
+  "commit": "73ec6524088ab8a9ddf953ff7baa495415c76cd1",
+  "license_notice": "COLEAM00_SOURCES.md",
+  "adaptation": "Three original documentation additions only; source-reviewed, not runtime/model/production proof.",
+  "sources": [
+    {
+      "path": ".claude/skills/ablate-ai-layer/references/comparison.md",
+      "bytes": 6079,
+      "sha256": "c3ab708766a55459cab6f182dae7d54ec6ece9eeeff93741353a3a05a5e3fdce",
+      "git_blob": "a8ffd85cbacccee20285412104d1c6facf0bf51d"
+    },
+    {
+      "path": ".claude/skills/ablate-ai-layer/scripts/run_ablation.py",
+      "bytes": 14306,
+      "sha256": "aa5806cfbba4853bc8b67826704342f97c8a58d7a6853f1a29850f6d2c209ca4",
+      "git_blob": "c158ba3c6c2825e7c91c13127fe24913effb18ef"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/harness/mutations/run.py",
+      "bytes": 4877,
+      "sha256": "0fea79506acc24ea4998b91c953f02f154699108ed73fe647dc467b2abe7ed49",
+      "git_blob": "89dd39a1a04b61c5ca1291cbdb86787a432453ee"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/scripts/_test_runner.py",
+      "bytes": 77309,
+      "sha256": "168417290bf127f9b3ff7e29cf55273909a9d3602bee8482d34a9472bdcfcdb9",
+      "git_blob": "b8a1dfcd440c17e17fbd28e3291aa5c36a4d8fca"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/harness/holdout/run.py",
+      "bytes": 6095,
+      "sha256": "a8f778f290b33b1dad4d224e5a19a0ffb778ce18a81f12fdcc247cd0b7dc5c64",
+      "git_blob": "7f9d5b9ea64515ff150ce714026c885954b425dc"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/runner/factory/guard.py",
+      "bytes": 9634,
+      "sha256": "a4613d3ad5089eb092c25aba6fb427ada9ae289c2fc18e23c3982e324ec19af4",
+      "git_blob": "06d386b63eff4fb96aca08e4a7c9f74d108aa3e8"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/runner/factory/run-workflow.sh",
+      "bytes": 46319,
+      "sha256": "30c53b3857ad9ebc9b826536cab4d919054b07fd977b74f9f56fadf742be6afb",
+      "git_blob": "fb77a1c53598f3e8195e7c6beede80526282cc41"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/runner/factory/gate.sh",
+      "bytes": 15832,
+      "sha256": "a979cc7475b153f70fd739c0d5e8da15119cb9e502c2ebc1011aaee198dc01b6",
+      "git_blob": "d42332f75cafd4ca2fe4fa526ad6371a07916a60"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/runner/factory/state.py",
+      "bytes": 21038,
+      "sha256": "79684ab48f2b9cdbe1415991e2bd64b1538851378d55d0a8f60f7aebf85262ce",
+      "git_blob": "3b6d2340c8a604e874aa99a60f17922650031276"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/runner/factory/orchestrator.sh",
+      "bytes": 24045,
+      "sha256": "f5825472e23c33f14f11256d6b7338fa428a22457b146d2b76d39c6fe13099d1",
+      "git_blob": "6caf1d43d2bd55501f0c321eea91048a237d32f7"
+    },
+    {
+      "path": ".claude/skills/build-dark-factory/templates/runner/factory/merge.sh",
+      "bytes": 14686,
+      "sha256": "b80de3619a85c74b6b5b669234ee03081d3ca88d0cec2716e00321877c63fc22",
+      "git_blob": "08bdf0d1db17b488c22c9c1cd8a670d496f118aa"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1067,
+      "sha256": "845c3fa5cb7115cf152e3c686249008586cea58becccb9790c7542cb02437d26",
+      "git_blob": "6f95664bacd7867d2a46fab92ead7f39edcf0c21"
+    }
+  ],
+  "files": {
+    "references/agent-evaluation.md": {
+      "sha256": "0c9f22ca83b46675718652e228a0a4b0b2b6574675e4f65134b9e03d418b7e34",
+      "bytes": 15749
+    },
+    "references/test-design.md": {
+      "sha256": "23a23ea1edfcee93bd639e3544ac5f305d7e52da9cd4c972626481e3499c8a6a",
+      "bytes": 10712
+    },
+    "references/api-authorization.md": {
+      "sha256": "5469fb84fd1b414ec4ca0a68529428da2c739d12aa20bbdd9e219c8032071f7c",
+      "bytes": 6388
+    }
+  }
+}

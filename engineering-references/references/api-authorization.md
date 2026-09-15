@@ -69,3 +69,33 @@ Passing parser tests is not deployed authorization or a security certification.
 
 Modified for Prime: corrected, task-scoped prose adaptation. See
 [source and license notices](../NEXT_SOURCES.md). No executable implementation copied.
+
+## A hold must survive the next entrypoint
+
+Use this example when a protected action can be reached through approval, retry,
+queue dispatch or an administrative path. Successful validation and permission to act
+are separate facts. Enforce the current policy at the final effect boundary, not
+only in the caller that initially records a hold. Keep the hold durable and bound to
+the intended resource, operation and revision; a generic `passed` status must not
+silently erase it. Missing, stale or unreadable approval evidence cannot authorize
+the protected action. An explicit administrative exception still needs its own policy.
+
+Fictional example: a document export for revision r7 passes validation but awaits a
+reviewer's approval. The first request returns `held`. A retry, the next queue tick
+and a direct supported export endpoint must all leave the protected export and its
+queued delivery unchanged. A test of the first response alone misses a dispatcher
+that treats `passed` as permission. Use the actual shared state and final boundary
+in a disposable fixture; a mocked caller refusal proves only that caller's behavior.
+
+Include an authorized positive case: an allowed reviewer releases the r7 hold and
+export proceeds under the existing duplicate-effect policy. If the document becomes
+r8 before execution, r7 approval cannot authorize r8; require the policy's reapproval
+or refusal. Check revision and permission atomically with the effect, or use the
+service's equivalent expected-revision precondition, so a concurrent change cannot
+slip between check and action. Repeat the denied cases across relevant entrypoints
+and assert both stored state and forbidden delivery/outbox effects, while allowing
+explicitly permitted security logging.
+
+These are proposed regression cases, not proof of a deployed approval system. Use
+existing authorization/state mechanisms; do not introduce a scheduler, approval
+service or automatic merge path. See [selection and limits](../COLEAM00_SOURCES.md).
