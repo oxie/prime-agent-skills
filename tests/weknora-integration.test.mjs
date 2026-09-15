@@ -1,4 +1,5 @@
 // Mechanical wording/history/loading checks, not model or upstream behavior trials.
+import {beforeWikiskillFile} from './helpers/wikiskill-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,7 +9,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import {beforeWeknoraFile,weknoraTransitions} from './helpers/weknora-snapshot.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeWikiskillFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 const clauses={"unlazy/references/research-handoffs.md": ["current evidence", "historical evidence", "navigation reference", "does not promote the underlying source", "does not prove that source supports", "stable document/chunk ID", "A failed search is not evidence of absence", "if omitted text is unreachable", "Credential-visible sources are not", "not a second memory or observation system"], "engineering-references/references/retrieval-contracts.md": ["Reviews remain read-only", "complete-with-hits, complete-empty, partial and failed", "malformed 2xx response is not an empty successful search", "Logs alone do not communicate degraded coverage", "Completion order is not relevance order", "normalizing scores without sorting", "deterministic tie-breaker", "reranker cannot recover candidates already discarded", "Saved content is not necessarily indexed", "Scope checks still apply to hydrated neighbors", "before prerequisites succeed", "assert identical selected IDs and order", "These are proposed cases, not executed tests"]};

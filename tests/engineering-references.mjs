@@ -1,3 +1,4 @@
+import {beforeWikiskillFile} from "./helpers/wikiskill-snapshot.mjs";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -20,7 +21,7 @@ const mattReferences=["debugging.md","domain-modeling.md","interface-design.md",
 const superReferences=["agent-evaluation.md","threat-modeling.md"];
 const references=[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md","api-authorization.md","sql-diagnosis.md","telemetry-evidence.md","commerce.md","recovery-planning.md","retrieval-contracts.md",...mattReferences,...superReferences];
 const inventory={
- ".":["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json","ADDY_SOURCES.md","addy-provenance.json","MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json","SUPERPOWERS_SOURCES.md","superpowers-provenance.json","RAMPSTACK_SOURCES.md","rampstack-provenance.json","WEKNORA_SOURCES.md","weknora-provenance.json"],
+ ".":["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json","ADDY_SOURCES.md","addy-provenance.json","MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json","SUPERPOWERS_SOURCES.md","superpowers-provenance.json","RAMPSTACK_SOURCES.md","rampstack-provenance.json","WEKNORA_SOURCES.md","weknora-provenance.json","WIKISKILL_SOURCES.md","wikiskill-provenance.json"],
  references,
  licenses:["AAS-LICENSE-CONTENT.txt","Apache-2.0.txt","CC-BY-4.0.txt","addyosmani-MIT.txt","operating-kit-MIT.txt","stareezy-1-MIT.txt","mattpocock-MIT.txt","super-skills-MIT.txt","superpowers-MIT.txt","rampstack-MIT.txt"],
 };
@@ -47,7 +48,7 @@ assert.deepEqual(matt.files.filter(f=>f.path.startsWith("references/")).map(f=>p
 assert.deepEqual(Object.keys(superSkills.adapted_files).filter(p=>p.startsWith("references/")).map(p=>path.basename(p)).sort(),[...superReferences].sort());
 for(const name of mattReferences){
  const relative=`references/${name}`;
- assert.equal(hash(read(relative)),matt.files.find(f=>f.path===relative).sha256,relative);
+ assert.equal(hash(beforeWikiskillFile(root,"engineering-references/"+relative)),matt.files.find(f=>f.path===relative).sha256,relative);
 }
 for(const name of superReferences){
  const relative=`references/${name}`;

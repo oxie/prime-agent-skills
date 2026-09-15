@@ -116,3 +116,55 @@ completed exits, and any unresolved reproduction or runtime limits.
 
 Source and adaptations: [Matt Pocock](../MATTPOCOCK_SOURCES.md) and
 [selected Superpowers recipes](../SUPERPOWERS_SOURCES.md).
+
+## Two checks for misleading evidence
+
+Use these examples only when stale artifacts or incomplete search coverage could
+explain the reported symptom. They add no routine trial, new log or tool authority.
+
+### Evidence from this attempt, not a previous one
+
+A proposer fails to launch, but its old proposal file still exists. A runner exports
+its newest session file, which belongs to yesterday's successful run. A task fails,
+but an old output file passes the grader. In each case, artifact presence is not
+proof that the current attempt succeeded.
+
+Before using an artifact as current evidence, bind it to the actual attempt and
+relevant input/configuration revision. Use an existing invocation/session ID and a
+fresh output location or verified reset where the contract needs new output. Check
+the completed execution result and the artifact's expected content together; neither
+an exit code alone nor a plausible file alone establishes success. A timestamp or
+"newest file" heuristic alone does not establish attempt identity. Legitimately reused
+cached output needs its own input/version validity check and must be labeled reused,
+not presented as newly produced.
+
+If no current transcript was captured, keep that status explicit rather than attach
+an older transcript. Zero tool calls alone does not prove launch failure: distinguish
+a valid answer-only run, missing telemetry and a confirmed launch error. Keep old
+artifacts as historical evidence when useful; do not delete unrelated files or rerun
+a model merely to fill the gap. For an authorized implementation, a useful regression
+is a prior successful artifact followed by a failed attempt: assert that the final
+caller cannot promote the stale artifact to current success. See
+[agent evaluation](agent-evaluation.md) for versioned trial and outcome contracts.
+
+### Empty search with incomplete coverage
+
+An expected marker is absent from text-search results, but the relevant file contains
+NUL bytes and may have been treated as binary. The result supports "no match in the
+searched content", not an exhaustive claim about content the tool skipped. First
+check the tool's completed status, search root, filters/ignore rules, permissions,
+encoding and binary handling. An error or excluded file is not a successful no-match.
+
+If needed, inspect only the relevant authorized file using bounded binary-aware
+search or a small safely rendered byte excerpt. Choose the project's existing tool;
+forcing text mode is conditional, not a default search policy. Bound both the files
+and output, and avoid printing raw control characters, secrets or unrelated content.
+Do not disable all exclusions, traverse outside the approved scope, or dump whole
+binary files merely because a search was empty. If required content remains
+unreadable or outside scope, report incomplete coverage rather than "not present".
+A useful authorized regression puts a known marker in an excluded/binary fixture and
+checks that an empty ordinary search is not reported as exhaustive absence.
+
+These are original, corrected examples informed by the
+[WikiSkill source review](../WIKISKILL_SOURCES.md), not installed search or evaluation
+code. Wording checks do not prove runtime behavior or model effectiveness.

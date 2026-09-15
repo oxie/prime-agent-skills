@@ -84,3 +84,10 @@ See [source notes](WEKNORA_SOURCES.md) and weknora-provenance.json for the revie
 mechanisms, original local guidance and exact source identities. No WeKnora runtime,
 connector, memory store, service or automatic ingestion is installed. Historical
 source records keep their original revisions and verification limits.
+
+## WikiSkill debugging examples
+
+Two original, corrected examples extend the existing debugging reference: current
+attempt/artifact identity and bounded binary-aware search. See
+[selection and MIT notice](WIKISKILL_SOURCES.md) and wikiskill-provenance.json.
+No WikiSkill runtime, additional skill, model trial or Task Observer change is included.

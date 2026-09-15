@@ -1,0 +1,50 @@
+{
+  "repository": "https://github.com/ashutoshsinghpr7/wikiskill",
+  "commit": "02fac2c804fe156e43b12c691e4ae527614d63a1",
+  "license_notice": "WIKISKILL_SOURCES.md",
+  "adaptation": "Two original corrected debugging examples only; no runtime or model effectiveness claim.",
+  "sources": [
+    {
+      "path": "wikiskill/harness.py",
+      "git_blob": "0b300c9685f75af08ab9340a710e9a69c2138492",
+      "bytes": 7916,
+      "sha256": "8d883aa2fdb9464872effae4173c8f42a8eaa65ff279c134241886576de62dc6"
+    },
+    {
+      "path": "wikiskill/gating.py",
+      "git_blob": "0d1700c1332a749385fe3d30ee27185dbfb6f9b6",
+      "bytes": 7542,
+      "sha256": "14f29b3a9cee942c56d98349f015d24eb9edd747f987991356e12c8e90f4495c"
+    },
+    {
+      "path": "wikiskill/traces.py",
+      "git_blob": "8dfbbbf9b6a98c82c924ade92e3d756b3adafb92",
+      "bytes": 2754,
+      "sha256": "377503d43414da9f521c4ff5f2003e5b5916bb386fd2760f94cbd8a510689b53"
+    },
+    {
+      "path": "wikiskill/backends/codex.py",
+      "git_blob": "1de1b6b956a4cea7a2f6cf99dea877683d6a40a9",
+      "bytes": 9841,
+      "sha256": "769d22baf123a4478647e63395cf7c722f5784c1197823557f0faa9eededa6d0"
+    },
+    {
+      "path": "skills/search-miss-binary/SKILL.md",
+      "git_blob": "fd92acd00964a165506a510e674c7f18b0b862bd",
+      "bytes": 1309,
+      "sha256": "caa784b6ea0093038c219527cbccd5e7f83764a393edfa48b9113e71b80f8f52"
+    },
+    {
+      "path": "LICENSE",
+      "git_blob": "27e3e752db51ba690babca962704fa90aa87e865",
+      "bytes": 1071,
+      "sha256": "1404362264e1ef1341ac951cbc4b30bc735f1e90387adf4524b6f5e338a54dfb"
+    }
+  ],
+  "files": {
+    "references/debugging.md": {
+      "sha256": "aabde64e5635833179762fb4eae688f28dc64a429ca64dd8c34c7b501c2a350d",
+      "bytes": 10460
+    }
+  }
+}
