@@ -105,3 +105,12 @@ under Video. See [source notes](HUASHU_SOURCES.md) and huashu-provenance.json.
 Only the current Video directory digest changes; upstream pins, versions, licenses
 and previous experimental evidence are preserved. No Huashu runtime, media, cloud
 client, hook, new skill or installation is included.
+
+## Original educational-explainer guidance
+
+Video distinguishes educational understanding from promotional next-action scripts
+and gains one optional original reference. See [source notes](EXPLAINER_SOURCES.md)
+and explainer-provenance.json. Review of anything2explainer identified the gap; no
+restricted upstream prose, code, template, font or media is copied. Existing source
+pins, versions, licenses and historical evidence remain unchanged. Only the current
+Video directory digest is updated; no new skill, TTS client or runtime is installed.

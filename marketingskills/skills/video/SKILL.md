@@ -260,11 +260,19 @@ a renderer, require three alternatives or mandate audio.
 
 ### Explainer Video
 
-1. **Script** the problem → solution → CTA arc
-2. **Choose presenter** — AI avatar (HeyGen) or voiceover + visuals
-3. **Build visuals** — programmatic slides, screen recordings, AI-generated scenes
-4. **Add captions** — always, for accessibility and engagement
-5. **Export** — landscape for YouTube/website, vertical for social
+Choose the purpose before the script:
+- **Educational:** define what the audience should understand or distinguish. For
+  a topic, article or document explanation, selectively read
+  [Educational explainers](references/educational-explainers.md). End with a useful
+  answer or takeaway, not a required sales CTA. Product-marketing context is optional
+  for non-marketing education; use the supplied subject material and audience instead.
+- **Promotional:** use a supported problem → solution → next-action arc when the
+  brief calls for persuasion. Keep demonstrations and claims truthful.
+
+Choose narration/presenter and visuals for that purpose using the approved toolchain.
+Plan captions and access to essential visual information, then verify the delivered
+file using the export checks linked under Product Demo Video. Select the
+aspect ratio and duration from the actual destination, not from a fixed template.
 
 ### Batch Social Clips
 

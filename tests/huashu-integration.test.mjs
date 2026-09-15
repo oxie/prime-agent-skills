@@ -1,3 +1,4 @@
+import {beforeExplainerFile} from './helpers/explainer-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -34,7 +35,7 @@ for(const [p,clauses] of Object.entries(contracts))test('scoped clauses and dele
 test('exact predecessors retained and unknown first/middle/last mutations rejected',()=>{
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'huashu-history-'));
  try{for(const [p,r] of Object.entries(huashuTransitions)){
-  const b=fs.readFileSync(path.join(root,p));assert.equal(sha(b),r.current);
+  const b=beforeExplainerFile(root,p);assert.equal(sha(b),r.current);
   const old=beforeHuashuFile(root,p);assert.equal(sha(old),r.previous);
   if(p.endsWith('SKILL.md')){assert.equal(read(p).split('---',3)[1],old.toString().split('---',3)[1]);assert.equal(read(p).split('\n').find(l=>l.startsWith('> **Prime safety:')),old.toString().split('\n').find(l=>l.startsWith('> **Prime safety:')));}
   fs.mkdirSync(path.dirname(path.join(tmp,p)),{recursive:true});fs.writeFileSync(path.join(tmp,p),b);assert.equal(sha(beforeHuashuFile(tmp,p)),r.previous);
@@ -44,7 +45,7 @@ test('exact predecessors retained and unknown first/middle/last mutations reject
 test('current original payloads, primary identities and affected directory hash',()=>{
  const p=JSON.parse(read('marketingskills/huashu-provenance.json'));assert.equal(p.commit,'c4b83675d1cdc1a6f43039518db9057749931758');assert.equal(p.sources.length,6);
  for(const s of p.sources){assert.match(s.sha256,/^[a-f0-9]{64}$/);assert.match(s.git_blob,/^[a-f0-9]{40}$/);assert(s.bytes>0);}
- for(const [f,h] of Object.entries(p.local_original))assert.equal(sha(fs.readFileSync(path.join(root,f))),h,f);
+ for(const [f,h] of Object.entries(p.local_original))assert.equal(sha(beforeExplainerFile(root,f)),h,f);
  assert.equal(p.primary.published_version,'0.8.40');assert.match(p.primary.archive_sha256,/^[a-f0-9]{64}$/);
  const m=JSON.parse(read('marketingskills/MANIFEST.json'));assert.equal(m.source.commit,'5b2c0007766c6a1cf1d53fd8fc73e979e0821022');
  const dir=path.join(root,'marketingskills/skills/video'),files=[];function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const f=path.join(d,e.name);if(e.isDirectory())walk(f);else files.push(f);}}walk(dir);

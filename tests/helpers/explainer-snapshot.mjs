@@ -1,0 +1,15 @@
+// Exact approved successors only; unknown bytes pass through and fail historical hashes.
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+export const explainerTransitions={"marketingskills/skills/video/SKILL.md": {"previous": "4a68be1bf7e508567233d564f2a38808ef64b1f7184989f9b11951068f4b2de1", "current": "8a8c69a866d5ad2192d9b9d170680ab3cce706e03c791fba6e27d58bbe83edd3", "old": "### Explainer Video\n\n1. **Script** the problem → solution → CTA arc\n2. **Choose presenter** — AI avatar (HeyGen) or voiceover + visuals\n3. **Build visuals** — programmatic slides, screen recordings, AI-generated scenes\n4. **Add captions** — always, for accessibility and engagement\n5. **Export** — landscape for YouTube/website, vertical for social", "new": "### Explainer Video\n\nChoose the purpose before the script:\n- **Educational:** define what the audience should understand or distinguish. For\n  a topic, article or document explanation, selectively read\n  [Educational explainers](references/educational-explainers.md). End with a useful\n  answer or takeaway, not a required sales CTA. Product-marketing context is optional\n  for non-marketing education; use the supplied subject material and audience instead.\n- **Promotional:** use a supported problem → solution → next-action arc when the\n  brief calls for persuasion. Keep demonstrations and claims truthful.\n\nChoose narration/presenter and visuals for that purpose using the approved toolchain.\nPlan captions and access to essential visual information, then verify the delivered\nfile using the export checks linked under Product Demo Video. Select the\naspect ratio and duration from the actual destination, not from a fixed template."}, "marketingskills/UPSTREAM.md": {"previous": "3164c5ef7b69b7616e3e6ea293a2c552cfe4ede97e1b6ebbe7af3f3636111b90", "current": "33b18821ba8821ec2ba77cb8aeb5ba2318bd8d91de2695005472771ee4c76b41", "old": "", "new": "\n## Original educational-explainer guidance\n\nVideo distinguishes educational understanding from promotional next-action scripts\nand gains one optional original reference. See [source notes](EXPLAINER_SOURCES.md)\nand explainer-provenance.json. Review of anything2explainer identified the gap; no\nrestricted upstream prose, code, template, font or media is copied. Existing source\npins, versions, licenses and historical evidence remain unchanged. Only the current\nVideo directory digest is updated; no new skill, TTS client or runtime is installed.\n"}};
+export function beforeExplainerFile(root,relative){
+ const b=fs.readFileSync(path.join(root,relative)),r=explainerTransitions[relative];
+ if(!r || sha(b)!==r.current)return b;
+ let s=b.toString('utf8');
+ if(r.old){assert.equal(s.split(r.new).length,2);s=s.replace(r.new,r.old);}
+ else{assert(s.endsWith(r.new));s=s.slice(0,-r.new.length);}
+ const old=Buffer.from(s);assert.equal(sha(old),r.previous);return old;
+}

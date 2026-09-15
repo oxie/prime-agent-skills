@@ -316,7 +316,7 @@
       "name": "video",
       "version": "2.1.0",
       "path": "skills/video",
-      "sha256": "ca5ac5956dc77b109c9ed5fd8b4132e64391f83fe1c6bce85bbaaaa470183b61"
+      "sha256": "4e910ed2dd83c2470a44db79cf594c069e91fd8d511dfc8e07988fc02a2c5892"
     }
   ],
   "hash_algorithm": "SHA-256 over files sorted by skill-relative POSIX path: UTF-8 relative path + NUL + exact file bytes + NUL, repeated for every regular file in each skill directory.",

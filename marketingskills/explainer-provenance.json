@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "review_repository": "https://github.com/Vincentwei1021/anything2explainer",
+  "review_commit": "5b57239578284385c72ebfb2d1fce3ab61a3950a",
+  "review_license": "PolyForm Noncommercial 1.0.0; no upstream payload copied or relicensed",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 5048,
+      "sha256": "7628c5005328a77cc1f7704dc77d41d15d539e9675ed5cb36d5c95ae7f2e6953",
+      "git_blob": "0674e76c53992e82024c1cbe9091ba643cd94d77"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 16467,
+      "sha256": "d45bb6432437d32fab8360f3f98b798c80a3addc93a7dd43032a460f5b9caccb",
+      "git_blob": "9db647d5ec75d373a5e1e99d302390250d643c9e"
+    },
+    {
+      "path": "reference/narration-guidance.md",
+      "bytes": 6105,
+      "sha256": "ca13f1e56ac3017e05d579284cf5a9c7ce13f8de8c28625bb9b72c6a1c644819",
+      "git_blob": "1fe583b5e8ab5b729cbc044237fa60b51b428f6a"
+    },
+    {
+      "path": "reference/narration-storyboard.md",
+      "bytes": 16578,
+      "sha256": "8f3b02ccfba95c06813269905c20ee9ab97c47712e335dcf4548dc8dcd83b449",
+      "git_blob": "a1fad85ef96c5a1799075d2acff030e1b40b5745"
+    },
+    {
+      "path": "reference/research-brief.md",
+      "bytes": 3477,
+      "sha256": "5b6c21dccb3f88e4db19befba3f4c2cb2eb3fa0d967ef84168e33092614f66a6",
+      "git_blob": "ab0e483b6b3c79024f3e85fba052c12f89d16f9c"
+    },
+    {
+      "path": "template/scripts/selfcheck.py",
+      "bytes": 4808,
+      "sha256": "1d7fe89c4e7001e4c87f6fadb540940020429518732617585d4d113bf539fb05",
+      "git_blob": "f44dbb4d2242c005fa9e5df28757ab38f287b510"
+    },
+    {
+      "path": "template/scripts/tts_build.py",
+      "bytes": 25516,
+      "sha256": "e5dd7560213d78c1da77ba6c8645858d0ca7d90eca05ce3e19b4332251cc67b3",
+      "git_blob": "45b3fab4d570f6d185e305df972b0a7f0b58aaf5"
+    }
+  ],
+  "primary": {
+    "polyform": {
+      "url": "https://polyformproject.org/licenses/noncommercial/1.0.0",
+      "status": 200,
+      "sha256": "8fb635fd3e464830fd511800aaf65966e0855637e98ed8c1545e66a9c47da733"
+    },
+    "audio-description": {
+      "url": "https://www.w3.org/WAI/media/av/description/",
+      "status": 200,
+      "sha256": "9b199da7b539d348239b60dadc925b70af48a8dc9e82131c70b0ac3ed80b0f5f"
+    },
+    "flashes": {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+      "status": 200,
+      "sha256": "28f0bc5e956224f95b617027d1d9f506bd25cb8ec7be20fc2744614a0794ce52"
+    }
+  },
+  "local_original": {
+    "marketingskills/skills/video/SKILL.md": "8a8c69a866d5ad2192d9b9d170680ab3cce706e03c791fba6e27d58bbe83edd3",
+    "marketingskills/skills/video/references/educational-explainers.md": "2fef3996d658186bc1508235ea63e95f167c43b30a877e545b20ca2f4129ca4b",
+    "marketingskills/EXPLAINER_SOURCES.md": "12d7c34731baf00da2399eefa79723448706f416c79f730d0977082fcde2d653"
+  },
+  "limits": "Original local docs only; no upstream runtime/templates/prose/font/media import, model/provider/TTS/render test or accessibility certification."
+}
