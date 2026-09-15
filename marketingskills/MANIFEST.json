@@ -112,7 +112,7 @@
       "name": "copywriting",
       "version": "2.0.2",
       "path": "skills/copywriting",
-      "sha256": "38e678ba1d0f2c5f71d76f1bc0bac17120db194a49b52b8e7838596ecf2b1dd2"
+      "sha256": "d06010a28389509d2bd0c59ff260b1d972d165ec0b5a6830532966f99faad7d0"
     },
     {
       "name": "cro",
@@ -286,7 +286,7 @@
       "name": "seo-audit",
       "version": "2.0.1",
       "path": "skills/seo-audit",
-      "sha256": "d6b4467fdebdacf70f38ed736d33beb6001650acdb876a5e53129aa13e33a557"
+      "sha256": "8c29136d43e83c62c6d18e58d20af0d14fe50caa83b4bae10bacb4930ac9b5f6"
     },
     {
       "name": "signup",

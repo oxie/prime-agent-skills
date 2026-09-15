@@ -1,4 +1,5 @@
 // Documentation contracts only; no SEO, model, crawl or browser outcome claims.
+import {beforeHumanizerCorrections} from './helpers/humanizer-corrections-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -97,7 +98,7 @@ test('all JSON examples parse; site-type examples preserve their stated relation
 test('historical bytes are recovered only for exact approved transitions',()=>{
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'claude-seo-history-'));
  try{for(const [p,r] of Object.entries(claudeSeoTransitions)){
-  const b=fs.readFileSync(path.join(root,p));assert.equal(sha(b),r.current,p);assert.equal(sha(beforeClaudeSeoFile(root,p)),r.previous,p);
+  const b=beforeHumanizerCorrections(root,p);assert.equal(sha(b),r.current,p);assert.equal(sha(beforeClaudeSeoFile(root,p)),r.previous,p);
   fs.mkdirSync(path.dirname(path.join(tmp,p)),{recursive:true});fs.writeFileSync(path.join(tmp,p),b);assert.equal(sha(beforeClaudeSeoFile(tmp,p)),r.previous);
   if(p.endsWith('SKILL.md')){const prev=beforeClaudeSeoFile(tmp,p).toString();assert.equal(read(p).split('---',3).slice(0,2).join('---'),prev.split('---',3).slice(0,2).join('---'));assert.equal(read(p).split('\n').find(l=>l.startsWith('> **Prime safety:')),prev.split('\n').find(l=>l.startsWith('> **Prime safety:')));}
   for(const at of [0,Math.floor(b.length/2),b.length-1]){const bad=Buffer.from(b);bad[at]^=1;fs.writeFileSync(path.join(tmp,p),bad);assert.deepEqual(beforeClaudeSeoFile(tmp,p),bad);assert.notEqual(sha(bad),r.previous);}
@@ -109,7 +110,7 @@ test('selected provenance, links, permissions and current owner hashes are bound
  for(const r of prov.sources){assert.match(r.sha256,/^[a-f0-9]{64}$/);assert.match(r.git_blob,/^[a-f0-9]{40}$/);assert(r.bytes>0);}
  const notes=read('marketingskills/'+prov.license);assert(notes.includes('Copyright (c) 2026 agricidaniel'));assert(notes.includes('THE SOFTWARE IS PROVIDED "AS IS"'));
  for(const [rel,r] of Object.entries(prov.adapted_files)){
-  const p='marketingskills/'+rel,b=fs.readFileSync(path.join(root,p));assert.equal(b.length,r.bytes,p);assert.equal(sha(b),r.sha256,p);assert.equal(fs.statSync(path.join(root,p)).mode&0o111,0);
+  const p='marketingskills/'+rel,b=beforeHumanizerCorrections(root,p);assert.equal(b.length,r.bytes,p);assert.equal(sha(b),r.sha256,p);assert.equal(fs.statSync(path.join(root,p)).mode&0o111,0);
   for(const [,href] of b.toString().replace(/```[\s\S]*?```/g,'').matchAll(/\]\(([^)]+)\)/g)){
    if(/^(https?:|#|mailto:)/.test(href))continue;const target=path.resolve(root,path.dirname(p),href.split('#')[0]);assert(target.startsWith(root+path.sep));assert(fs.statSync(target).isFile(),href);
   }

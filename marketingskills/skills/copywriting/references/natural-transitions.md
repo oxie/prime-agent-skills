@@ -1,6 +1,12 @@
 # Natural Transitions
 
-Transitional phrases to guide readers through your content. Good signposting improves readability, user engagement, and helps search engines understand content structure.
+Transitional phrases can help readers follow a real connection between ideas. These
+are optional examples, not required openers or an SEO performance promise. A phrase
+or cluster of style patterns does not establish authorship.
+
+For general prose edits, use Copy Editing's [Source Fidelity and Clarity](../../copy-editing/references/source-fidelity-and-clarity.md).
+Keep deliberate voice, meaningful uncertainty and exact source claims. Choose a
+transition only when its relationship is supported; omit empty signposting.
 
 Adapted from: University of Manchester Academic Phrasebank (2023), Plain English Campaign, web content best practices
 
@@ -24,7 +30,7 @@ Adapted from: University of Manchester Academic Phrasebank (2023), Plain English
 - List Introductions
 - Hedging Language
 - Best Practice Guidelines
-- Transitions to Avoid (AI Tells)
+- Transitions to review in context
 
 ## Previewing Content Structure
 
@@ -86,7 +92,8 @@ Use to connect ideas and reinforce key points:
 - In addition,...
 - There's also...
 
-**Note:** Use "moreover" and "furthermore" sparingly. They can sound AI-generated when overused.
+**Note:** Use “moreover” and “furthermore” when they fit the register and relationship.
+Repeated transitions may distract, but these words are not authorship evidence.
 
 ---
 
@@ -155,7 +162,9 @@ Use to connect ideas and reinforce key points:
 
 ## Providing Evidence
 
-Use when citing sources, data, or expert opinions:
+Use only when the cited source, data or expert statement supports the actual claim.
+Do not invent evidence by changing “users prefer” into “research shows.” Preserve
+qualifications and attribution; a transition is not proof.
 
 ### Neutral attribution
 - According to [Source],...
@@ -200,13 +209,15 @@ Use when citing sources, data, or expert opinions:
 - Ready to get started?...
 - Now it's your turn.
 
-**Note:** Avoid "In conclusion" at the start of a paragraph. It's overused and signals AI writing.
+**Note:** “In conclusion” can be useful signposting. Omit it when the conclusion is
+already clear; keep it when the genre or reader benefits.
 
 ---
 
 ## Question-Based Transitions
 
-Useful for conversational tone and featured snippet optimization:
+Optional questions for conversational tone, when the next passage answers them.
+They do not guarantee a featured snippet:
 
 - So what does this mean for you?
 - But why does this matter?
@@ -233,7 +244,8 @@ For numbered lists and step-by-step content:
 
 ## Hedging Language
 
-For claims that need qualification or aren't absolute:
+For claims that need qualification or aren't absolute. Preserve the source's actual
+uncertainty. “Many experts believe” still requires a real basis for that attribution:
 
 - may, might, could
 - tends to, generally
@@ -257,9 +269,10 @@ For claims that need qualification or aren't absolute:
 
 ---
 
-## Transitions to Avoid (AI Tells)
+## Transitions to review in context
 
-These phrases are overused in AI-generated content:
+Consider whether these phrases add a useful connection or merely delay the point.
+They are not banned phrases, and their presence does not identify the author:
 
 - "That being said,..."
 - "It's worth noting that..."
@@ -269,4 +282,4 @@ These phrases are overused in AI-generated content:
 - "This begs the question..."
 - "Let's delve into..."
 
-See the seo-audit skill's `references/ai-writing-detection.md` for a complete list of AI writing tells.
+For optional wording and punctuation choices, see [style and clarity checks](../../seo-audit/references/ai-writing-detection.md). Use the source-fidelity check above before and after edits; neither reference is an authorship detector.

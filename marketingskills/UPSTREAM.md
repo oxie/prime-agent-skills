@@ -84,3 +84,15 @@ No new skill, executable payload or automatic workflow is installed.
 See [source notes](CLAUDE_SEO_SOURCES.md) and claude-seo-provenance.json for the
 reviewed source, primary-document corrections, exact identities and exclusions.
 SEO Audit and Schema remain the owners; no new runtime or automatic workflow.
+
+## Source-fidelity consistency correction
+
+Review of blader/humanizer v3.0.0 at `9862685f575c65a8247f90369951df1b3416e3d6`
+exposed conflicting inherited advice in SEO Audit's ai-writing-detection reference
+and Copywriting's natural-transitions reference. Both now treat style suggestions
+as optional, reject authorship inference and punctuation quotas, and link to the
+existing Copy Editing source-fidelity owner. The legacy reference filename remains
+for link compatibility; SEO Audit's link label reflects its corrected purpose.
+No Humanizer text, code, skill, detector, new editing pass or runtime is installed.
+These are original local corrections to the existing MIT-adapted marketing material;
+original source pins, versions, licenses and historical checks remain intact.

@@ -1,53 +1,53 @@
-# AI Writing Detection
+# Optional style and clarity checks
 
-Words, phrases, and punctuation patterns commonly associated with AI-generated text. Avoid these to ensure writing sounds natural and human.
+Use these suggestions only when editing the requested text. A word, punctuation
+mark, or cluster of writing patterns does not establish authorship. This is not an
+AI detector, a ranking rule, or a guarantee that prose will sound human.
 
-Sources: Grammarly (2025), Microsoft 365 Life Hacks (2025), GPTHuman (2025), Walter Writes (2025), Textero (2025), Plagiarism Today (2025), Rolling Stone (2025), MDPI Blog (2025)
+For general prose, use Copy Editing's [Source Fidelity and Clarity](../../copy-editing/references/source-fidelity-and-clarity.md).
+Preserve facts, uncertainty, attribution, exact quotations, technical terms and the
+writer's deliberate voice. Do not invent personal experience or errors to appear human.
+Do not use blanket replacements: the alternatives below are optional and may change
+meaning. Keep the original when it is precise or fits the audience.
 
----
+The inherited source list (Grammarly, Microsoft 365 Life Hacks, GPTHuman, Walter
+Writes, Textero, Plagiarism Today, Rolling Stone and MDPI Blog, 2025) is provenance
+for the original suggestions, not validated evidence of authorship detection.
 
 ## Contents
-- Em Dashes: The Primary AI Tell
-- Overused Verbs
-- Overused Adjectives
-- Overused Transitions and Connectors
-- Phrases That Signal AI Writing (Opening Phrases, Transitional Phrases, Concluding Phrases, Structural Patterns)
-- Filler Words and Empty Intensifiers
-- Academic-Specific AI Tells
-- How to Self-Check
+- Punctuation choices
+- Verb alternatives
+- Adjective alternatives
+- Transition alternatives
+- Phrases to review in context
+- Filler words and intensifiers
+- Academic wording alternatives
+- How to self-check
 
-## Em Dashes: The Primary AI Tell
+## Punctuation choices
 
-**The em dash (—) has become one of the most reliable markers of AI-generated content.**
+Em dashes can mark emphasis, interruptions or parenthetical information. Commas,
+colons and parentheses can express different relationships. Choose for meaning and
+readability; retain deliberate punctuation in a supplied voice sample or source.
+No punctuation quota applies. Preserve en-dash ranges, minus signs, quotations,
+code, commands, paths and link targets rather than treating them as cosmetic noise.
 
-Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, or parenthetical information. While they have legitimate uses in writing, AI models drastically overuse them.
+### Possible alternatives
 
-### Why Em Dashes Signal AI Writing
-- AI models were trained on edited books, academic papers, and style guides where em dashes appear frequently
-- AI uses em dashes as a shortcut for sentence variety instead of commas, colons, or parentheses
-- Most human writers rarely use em dashes because they don't exist as a standard keyboard key
-- The overuse is so consistent that it has become the unofficial signature of ChatGPT writing
+These paired examples are choices, not corrections required by an authorship guess.
 
-### What To Do Instead
-| Instead of | Use |
-|------------|-----|
+| Original | Optional alternative |
+|----------|----------------------|
 | The results—which were surprising—showed... | The results, which were surprising, showed... |
 | This approach—unlike traditional methods—allows... | This approach, unlike traditional methods, allows... |
 | The study found—as expected—that... | The study found, as expected, that... |
 | Communication skills—both written and verbal—are essential | Communication skills (both written and verbal) are essential |
 
-### Guidelines
-- Use commas for most parenthetical information
-- Use colons to introduce explanations or lists
-- Use parentheses for supplementary information
-- Reserve em dashes for rare, deliberate emphasis only
-- If you find yourself using more than one em dash per page, revise
-
 ---
 
-## Overused Verbs
+## Verb alternatives
 
-| Avoid | Use Instead |
+| Original | Possible alternative |
 |-------|-------------|
 | delve (into) | explore, examine, investigate, look at |
 | leverage | use, apply, draw on |
@@ -67,9 +67,9 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 
 ---
 
-## Overused Adjectives
+## Adjective alternatives
 
-| Avoid | Use Instead |
+| Original | Possible alternative |
 |-------|-------------|
 | robust | strong, reliable, thorough, solid |
 | comprehensive | complete, thorough, full, detailed |
@@ -88,9 +88,9 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 
 ---
 
-## Overused Transitions and Connectors
+## Transition alternatives
 
-| Avoid | Use Instead |
+| Original | Possible alternative |
 |-------|-------------|
 | furthermore | also, in addition, and |
 | moreover | also, and, besides |
@@ -105,9 +105,9 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 
 ---
 
-## Phrases That Signal AI Writing
+## Phrases to review in context
 
-### Opening Phrases to Avoid
+### Opening phrases
 - "In today's fast-paced world..."
 - "In today's digital age..."
 - "In an era of..."
@@ -117,7 +117,7 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 - "Let's delve into..."
 - "Imagine a world where..."
 
-### Transitional Phrases to Avoid
+### Transitional phrases
 - "That being said..."
 - "With that in mind..."
 - "It's worth mentioning that..."
@@ -126,7 +126,7 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 - "In essence..."
 - "This begs the question..."
 
-### Concluding Phrases to Avoid
+### Concluding phrases
 - "In conclusion..."
 - "To sum up..."
 - "By [doing X], you can [achieve Y]..."
@@ -134,7 +134,7 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 - "All things considered..."
 - "At the end of the day..."
 
-### Structural Patterns to Avoid
+### Structural patterns
 - "Whether you're a [X], [Y], or [Z]..." (listing three examples after "whether")
 - "It's not just [X], it's also [Y]..."
 - "Think of [X] as [elaborate metaphor]..."
@@ -144,7 +144,9 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 
 ## Filler Words and Empty Intensifiers
 
-These words often add nothing to meaning. Remove them or find specific alternatives:
+Review whether these words add meaning. Keep uncertainty, emphasis or technical
+meaning when the source requires it; for example, “significantly” may report a
+specific statistical claim rather than filler:
 
 - absolutely
 - actually
@@ -171,9 +173,9 @@ These words often add nothing to meaning. Remove them or find specific alternati
 
 ---
 
-## Academic-Specific AI Tells
+## Academic wording alternatives
 
-| Avoid | Use Instead |
+| Original | Possible alternative |
 |-------|-------------|
 | shed light on | clarify, explain, reveal |
 | pave the way for | enable, allow, make possible |
@@ -192,9 +194,9 @@ These words often add nothing to meaning. Remove them or find specific alternati
 
 ## How to Self-Check
 
-1. Read your text aloud. If phrases sound unnatural in speech, revise them
-2. Ask: "Would I say this in a conversation with a colleague?"
-3. Check for repetitive sentence structures
-4. Look for clusters of the words listed above
-5. Ensure varied sentence lengths (not all similar length)
-6. Verify each intensifier adds genuine meaning
+1. Read for the intended audience and genre, not only conversational speech.
+2. Identify a concrete clarity problem before editing; leave suitable wording alone.
+3. Keep repetition, contrasts and three-item lists when their meaning needs them.
+4. Use alternative wording only when it preserves the exact claim and register.
+5. Compare the edit with its source for additions, omissions and changed uncertainty.
+6. Preserve useful signposting and emphasis; do not infer authorship from style.

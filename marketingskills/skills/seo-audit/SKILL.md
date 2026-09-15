@@ -469,7 +469,7 @@ Same format as above
 
 ## References
 
-- [AI Writing Detection](references/ai-writing-detection.md): Common AI writing patterns to avoid (em dashes, overused phrases, filler words)
+- [Optional style and clarity checks](references/ai-writing-detection.md): Context-dependent wording and punctuation suggestions, not authorship detection; general prose stays with Copy Editing
 - [International SEO](references/international-seo.md): Evidence and sources for hreflang, canonical + i18n, sitemaps, URL structure, and content quality across locales
 - For AI search optimization (AEO, GEO, LLMO, AI Overviews), see the **ai-seo** skill
 
