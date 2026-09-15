@@ -1,3 +1,4 @@
+import {beforeWeknoraFile} from './helpers/weknora-snapshot.mjs';
 // Source/wording/native contracts only; not design, model or live recovery evidence.
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -8,7 +9,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
 import {rampstackRoutes,rampstackDocs,beforeRampstackSkill,beforeRampstackFile} from './helpers/rampstack-snapshot.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeWeknoraFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ').toLowerCase();
 const clauses={

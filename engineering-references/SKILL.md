@@ -131,3 +131,9 @@ For cart writes, regional price dependencies, checkout completion or guest-order
 ## Recovery planning
 
 For requested backup or disaster-recovery planning, read [recovery planning](references/recovery-planning.md). Distinguish targets from measured loss/downtime and plan authorized restore verification. This does not authorize backups, restores, drills, schedules or infrastructure changes.
+
+## Retrieval evidence and readiness
+
+For multi-source search coverage, asynchronous ranking or saved-versus-indexed state,
+read [retrieval contracts](references/retrieval-contracts.md). Use only the changed
+boundary; no search service, database, model trial or whole-system audit is implied.

@@ -18,9 +18,9 @@ assert.deepEqual(manifest.files.map(f=>f.path).sort(),expected);
 // additions must update this owner gate after source and scope review.
 const mattReferences=["debugging.md","domain-modeling.md","interface-design.md","test-design.md"];
 const superReferences=["agent-evaluation.md","threat-modeling.md"];
-const references=[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md","api-authorization.md","sql-diagnosis.md","telemetry-evidence.md","commerce.md","recovery-planning.md",...mattReferences,...superReferences];
+const references=[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md","api-authorization.md","sql-diagnosis.md","telemetry-evidence.md","commerce.md","recovery-planning.md","retrieval-contracts.md",...mattReferences,...superReferences];
 const inventory={
- ".":["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json","ADDY_SOURCES.md","addy-provenance.json","MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json","SUPERPOWERS_SOURCES.md","superpowers-provenance.json","RAMPSTACK_SOURCES.md","rampstack-provenance.json"],
+ ".":["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json","ADDY_SOURCES.md","addy-provenance.json","MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json","SUPERPOWERS_SOURCES.md","superpowers-provenance.json","RAMPSTACK_SOURCES.md","rampstack-provenance.json","WEKNORA_SOURCES.md","weknora-provenance.json"],
  references,
  licenses:["AAS-LICENSE-CONTENT.txt","Apache-2.0.txt","CC-BY-4.0.txt","addyosmani-MIT.txt","operating-kit-MIT.txt","stareezy-1-MIT.txt","mattpocock-MIT.txt","super-skills-MIT.txt","superpowers-MIT.txt","rampstack-MIT.txt"],
 };

@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/Tencent/WeKnora",
+  "commit": "bca3a9f448e9936bcf2160d5543a97b86b24ecc7",
+  "reviewed_on": "2026-09-15",
+  "adaptation": "Original focused prose; no upstream executable code or runtime installed. Static contracts, not effectiveness evidence.",
+  "license_notice": "WEKNORA_SOURCES.md",
+  "sources": [
+    {
+      "path": "internal/modelcontext/sources.go",
+      "bytes": 18485,
+      "sha256": "3cc419f774f80614ab29461461459c532960bfc004b2423a673bb8683dfbf650",
+      "git_blob": "11a0d65236bdef3200b7e960f12c9a811f2048ce"
+    },
+    {
+      "path": "internal/modelcontext/citations.go",
+      "bytes": 11166,
+      "sha256": "91252854633b8263e40fc953cb0efb0893ac19059af67a7ea267ba1a8ced4483",
+      "git_blob": "98e690981f20140bf0d5f0182bd391c769022dd7"
+    },
+    {
+      "path": "packages/dsh-weknora/src/tools.ts",
+      "bytes": 25644,
+      "sha256": "b0adb6b9fc060a55ff5b2c9e7631ea10ddcb25950bf52ab1b79b9ba1f9e66f99",
+      "git_blob": "5be1999e38e74cd7d1bdd18551929084c5f2c7f3"
+    },
+    {
+      "path": "packages/dsh-weknora/src/client.ts",
+      "bytes": 15237,
+      "sha256": "d0dd7f970a4c7d1bb325e450cd181eab45009e0510e1da7ff3935de3721d32fb",
+      "git_blob": "1975a972354e6a4ae41c8fbb6638579e52af376d"
+    }
+  ],
+  "adapted_files": {
+    "references/research-handoffs.md": {
+      "bytes": 9354,
+      "sha256": "fe353c562082a9480cb5f646cd2bfe5f388137c1eab9d206fa47e1f6a519585a"
+    }
+  }
+}

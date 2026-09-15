@@ -106,3 +106,43 @@ get a pass. Retain clearer documentation if useful, but defer catalogues, automa
 or semantic retrieval until measured recurring need justifies their added cost.
 Provider-based experiments require applicable approval. No watcher, auto-capture,
 new database or competing learning authority is needed for this manual method.
+
+## Current evidence, history and retrieval limits
+
+For a source-backed answer, distinguish the source's role in the existing report:
+**current evidence** means the relevant content was inspected for this task at the
+stated revision; **historical evidence** supports only its recorded inspection and
+revision; a **navigation reference** is a lead to locate evidence, not claim support.
+Reading a summary or recognizing a source ID does not promote the underlying source
+to current evidence. Reuse valid historical findings with their original limits;
+recheck the actual source when a claim depends on current content. No new registry,
+citation renderer, metadata template or extra read is required for an already
+supported claim. Keep these distinctions in the report's existing evidence section.
+
+A valid citation identifies a source; it does not prove that source supports the
+adjacent claim. Check the relevant passage and qualifications, not merely title,
+identifier or successful retrieval. A stable document/chunk ID can retain its name
+while its content changes: record the inspected revision, digest or immutable
+snapshot when the claim requires exact content. Never silently substitute a newer
+revision for the one actually inspected. Unknown or unavailable evidence stays
+unknown; a navigation link must not become a fabricated citation.
+
+For multi-source retrieval, report the authorized scope and whether coverage was
+complete, partial or failed. A failed search is not evidence of absence. Partial
+hits can support bounded claims about the sources read, not an exhaustive negative
+claim about failed sources. Neither a clipped passage nor an exhausted page cursor
+proves the full document was inspected. Follow an available continuation within
+scope when needed; if omitted text is unreachable, disclose that limit rather than
+claiming complete coverage or widening access. Do not retry indefinitely.
+
+Separate evidence retrieval from delegated answers. A tool that creates sessions,
+runs another model, enables web access or invokes agent tools has effects and costs
+beyond reading passages, even when its name or README says "read-only". Check its
+actual contract and authorization before use. Credential-visible sources are not
+automatically the user's approved corpus. Request only relevant authorized sources;
+do not silently search every accessible workspace or enable background ingestion.
+
+These are manual report conventions, not a second memory or observation system.
+See [WeKnora source notes](../WEKNORA_SOURCES.md) for the reviewed mechanisms and
+excluded runtime. Mechanical wording checks do not prove citation entailment or
+model effectiveness.

@@ -33,3 +33,10 @@ This is a manual convention, not a retrieval engine or measured savings claim.
 Version 2.1.0-prime.2 adds an on-demand planning reference adapted from selected
 Matt Pocock sources. Existing scripts, templates and acceptance mechanisms are
 unchanged. See [MATTPOCOCK_SOURCES.md](MATTPOCOCK_SOURCES.md).
+
+## Selective WeKnora evidence contracts
+
+See [source notes](WEKNORA_SOURCES.md) and weknora-provenance.json for the reviewed
+mechanisms, original local guidance and exact source identities. No WeKnora runtime,
+connector, memory store, service or automatic ingestion is installed. Historical
+source records keep their original revisions and verification limits.

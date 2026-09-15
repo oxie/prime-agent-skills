@@ -77,3 +77,10 @@ owner, not installation of an upstream process bundle or evidence of measured ga
 See [source notes](RAMPSTACK_SOURCES.md) and rampstack-provenance.json for the
 reviewed selection, corrections, exact source/local identities and exclusions.
 No new skill, executable payload or automatic workflow is installed.
+
+## Selective WeKnora evidence contracts
+
+See [source notes](WEKNORA_SOURCES.md) and weknora-provenance.json for the reviewed
+mechanisms, original local guidance and exact source identities. No WeKnora runtime,
+connector, memory store, service or automatic ingestion is installed. Historical
+source records keep their original revisions and verification limits.

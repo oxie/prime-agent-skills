@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/Tencent/WeKnora",
+  "commit": "bca3a9f448e9936bcf2160d5543a97b86b24ecc7",
+  "reviewed_on": "2026-09-15",
+  "adaptation": "Original focused prose; no upstream executable code or runtime installed. Static contracts, not effectiveness evidence.",
+  "license_notice": "WEKNORA_SOURCES.md",
+  "sources": [
+    {
+      "path": "internal/application/service/knowledgebase_search_fanout.go",
+      "bytes": 7995,
+      "sha256": "157892f887c98362c1323948293867cf36ce2b0255738d1dc8957413f2f54a52",
+      "git_blob": "c787006cc84df42c78e601739d35d05881bd3723"
+    },
+    {
+      "path": "internal/application/service/knowledgebase_search_fusion.go",
+      "bytes": 5196,
+      "sha256": "a4a56ac1d8531692ca9a83b2ce71a703509c470b59ae3349043fda633843d498",
+      "git_blob": "9c13eb8f5dff335386910f9f6e21c1da526da6d8"
+    },
+    {
+      "path": "internal/agent/tools/knowledge_search.go",
+      "bytes": 46266,
+      "sha256": "8bb3e9411fd889640d8a4d4d7d250334bf3e56a08b4038eaaf9e905f1362e15c",
+      "git_blob": "a89f8cbdc276e01e6e46019858fa2c7bc3a4aad0"
+    },
+    {
+      "path": "internal/application/service/knowledge_process.go",
+      "bytes": 155552,
+      "sha256": "f6d99a7c79b3f95ac7965e046d932c669da6218923bec372951e72ae8adec64a",
+      "git_blob": "04e2210fb7986a778097dd4d00f73ec7e00846a6"
+    },
+    {
+      "path": "internal/application/service/knowledgebase_search_results.go",
+      "bytes": 12548,
+      "sha256": "2c5b5074ed8a756ef9b07edd1fc99228dc2d7147a52ff24a7159c85c3da3a8dd",
+      "git_blob": "549479bd921f3c19eb203efc63279a6feab2bc2b"
+    }
+  ],
+  "adapted_files": {
+    "SKILL.md": {
+      "bytes": 8457,
+      "sha256": "fbb9af80ec40cb5ee7636a454c51a426f895a141e1e197ed5ed4a82c96340af8"
+    },
+    "references/retrieval-contracts.md": {
+      "bytes": 5298,
+      "sha256": "dd6009ae581f2f6958457f9b0e673598551bcc22354c622e2b9c4597d33ac40e"
+    }
+  }
+}
