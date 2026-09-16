@@ -1,3 +1,4 @@
+import {beforeOuroborosFile} from './helpers/ouroboros-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -6,7 +7,8 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+// Preserve Reticle's exact historical assertions before the approved successor.
+const read=p=>beforeOuroborosFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const clauses=["predicate truth separate from whether it could be evaluated", "actually evaluated coverage", "A declared assertion is not an executed assertion", "ineligible for verified success at the final consumer", "\u201cNone\u201d, \u201cexactly N\u201d and \u201cat most N\u201d", "actual session, document and interval", "A conjunction needs every required branch", "must not award coverage to unproved branches", "explicit read error", "\u201cExactly one\u201d is unknown", "wrapper cannot erase its completeness requirement", "including serialization and reload", "complete-window positive control", "stored status and final gate decision", "unknown observation is not proof of an application defect", "including relevant uncommitted changes", "newest timestamp or matching flow name", "consequence check was empty or skipped", "proposed cases, not executed browser tests"];
 const normalize=t=>t.replace(/\s+/g,' ');

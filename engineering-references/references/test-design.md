@@ -212,3 +212,46 @@ These are proposed cases, not executed browser tests or proof of production safe
 Keep existing authorization, independent oracles and real-boundary coverage. No SDK,
 MCP server, telemetry, provider call or automatic replay is authorized here. See
 [source findings and limits](../RETICLE_SOURCES.md).
+
+## An evidence requirement must reach the approval gate
+
+Use this example when a model or adapter produces a result used for acceptance.
+A prompt saying “show evidence or fail” is not enforcement if another layer defaults
+missing evidence to success. Trace the declared requirement → response schema →
+parser/defaults → stored result → final approval. Inspect the actual consumer and any
+legacy or alternate route, not only the judge's instructions.
+
+Fictional example: a checker may approve an import only after observing the required
+row-count check for the tested input revision. Its model returns `approved: true` but
+omits the check evidence. The parser supplies an empty list for compatibility, and the
+final gate reads only `approved`. The response is parseable, but the required check is
+unverified. A high score or a second judge's agreement cannot supply the missing event.
+
+For an authorized disposable fixture, state the required evidence and exercise these
+cases through parsing, persistence/reload and the real approval consumer:
+
+| Input/evidence case | Required outcome |
+|---|---|
+| Correctly typed result with supported evidence of the required check on the current revision | Eligible to pass this evidence gate; other acceptance and authorization checks still apply |
+| Missing or empty required evidence, even with `approved: true` | Unverified, not a supported pass |
+| Malformed evidence or string `"false"` where a boolean is required | Explicit invalid result, not truthiness-based approval |
+| A declared check was skipped or never configured | Not checked; no credit for having declared it |
+| Valid evidence shows the required row count is wrong | Supported failure, not missing evidence |
+| A legacy result parses but cannot establish required evidence | Explicit legacy/unverified state at final approval |
+
+Validate required field types and semantics at the owning boundary. Nonempty evidence
+is necessary only where the contract requires it, and is not sufficient by itself:
+a citation, copied marker or unrelated successful command may not support the claim.
+Bind evidence to the actual check, attempt and tested revision. Keep unknown observation
+separate from a demonstrated product defect; do not fabricate proof to satisfy a schema.
+
+A compatibility path may preserve readable older results without granting them verified
+status. Ensure serialization, defaults and later aggregation preserve that distinction.
+Pair each rejection with the supported positive case so a gate that rejects everything
+does not pass the test. Assert the stored state and final decision, not just parser
+success, and never weaken the evidence requirement merely to restore green results.
+
+These are proposed regression cases, not a new evaluator, executed model trial or
+production-safety claim. Use the project's existing result contract and approved test
+tools; this example adds no provider calls, dependencies or automatic grading service.
+See [source findings and limits](../OUROBOROS_SOURCES.md).

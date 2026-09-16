@@ -110,3 +110,12 @@ consumers, including completeness-dependent counts and compound predicates. See
 [source findings and license boundaries](RETICLE_SOURCES.md) and reticle-provenance.json.
 No Reticle implementation, SDK, MCP server, permission changes, telemetry or benchmark
 claims are imported. Prior source identities and verification limits remain unchanged.
+
+## Selected Ouroboros requirement and evidence examples
+
+Two original worked examples extend [domain modeling](references/domain-modeling.md)
+and [test design](references/test-design.md): preserve requirement authority through
+relays, and enforce required evidence through parsing and final approval. See
+[source findings and MIT notice](OUROBOROS_SOURCES.md) and ouroboros-provenance.json.
+No Ouroboros runtime, schema, agent persona, installer, telemetry or autonomous loop
+is adopted. Earlier source identities and evidence limits remain unchanged.

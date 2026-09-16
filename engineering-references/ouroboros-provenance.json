@@ -1,0 +1,81 @@
+{
+  "repository": "https://github.com/Q00/ouroboros",
+  "commit": "79a423e80f93d4acc2aa0ee5b98340e86a766476",
+  "selection": "Two original optional worked examples; source-reviewed, not model-effectiveness evidence. No upstream runtime imported.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1060,
+      "sha256": "9f65feab6e93aa95e7a01a34b7f5a8ba11715b0ebadffab91666d80d96b2a07a",
+      "git_blob": "d69340d84e2483291e5142351ff281f90739c689",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/LICENSE"
+    },
+    {
+      "path": "src/ouroboros/bigbang/answer_provenance.py",
+      "bytes": 5876,
+      "sha256": "71da982521051bb001dcbd33df8394166d967299b1a1139525ae446497d67507",
+      "git_blob": "697ad6f1022bb752a03855a64532328e24da5742",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/src/ouroboros/bigbang/answer_provenance.py"
+    },
+    {
+      "path": "src/ouroboros/bigbang/seed_generator.py",
+      "bytes": 104336,
+      "sha256": "323d8ee6436b4d9379a3149ad02f94b88a988a2c9c3d848b3fa7be60ca1299f8",
+      "git_blob": "9a9bc8741f51ac671ca2d24597435458ae661ba4",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/src/ouroboros/bigbang/seed_generator.py"
+    },
+    {
+      "path": "src/ouroboros/evaluation/semantic.py",
+      "bytes": 15240,
+      "sha256": "bab7914e1fea41514587eaa3195eeadbf81be5ab74a4af34b98709a6d2c74811",
+      "git_blob": "752156f0aa32799b3d25149a21fdcf457f352629",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/src/ouroboros/evaluation/semantic.py"
+    },
+    {
+      "path": "src/ouroboros/evaluation/pipeline.py",
+      "bytes": 13557,
+      "sha256": "22450d536f74a7f20e85f5ba78ed704a19e9a369c6379058725bd2cf8f96a9a1",
+      "git_blob": "bd70df7bfecc75adaeffca70391d6e35e241e202",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/src/ouroboros/evaluation/pipeline.py"
+    },
+    {
+      "path": "src/ouroboros/evaluation/checklist.py",
+      "bytes": 8166,
+      "sha256": "64005ef70a8fcf73df5d03671badcdf24fd06908ee60243ce929baf2da52ee99",
+      "git_blob": "df8fd9c5a806aefcaa7358967e52b28e7ac54edd",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/src/ouroboros/evaluation/checklist.py"
+    },
+    {
+      "path": "tests/unit/bigbang/test_answer_provenance.py",
+      "bytes": 16419,
+      "sha256": "5c889880509ddc722c9765d7db5c12302737449b11592e48437b24e1283be5d2",
+      "git_blob": "ae0a23a30d7e378c086fc499becfcc899f37fcf3",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/tests/unit/bigbang/test_answer_provenance.py"
+    },
+    {
+      "path": "tests/unit/evaluation/test_semantic.py",
+      "bytes": 19823,
+      "sha256": "ebddd80044bc441a360ac41f8aa24ce0000ff0aa5b56de2e359b920d795ed680",
+      "git_blob": "eed97956d6bbe90a1d6ded7a265e7a6c003767da",
+      "url": "https://github.com/Q00/ouroboros/blob/79a423e80f93d4acc2aa0ee5b98340e86a766476/tests/unit/evaluation/test_semantic.py"
+    }
+  ],
+  "files": {
+    "references/domain-modeling.md": {
+      "bytes": 8542,
+      "sha256": "78573c0500966706693c967c8162d78aac1d48e38d3339c9ee739629afdb6ba7"
+    },
+    "references/test-design.md": {
+      "bytes": 17051,
+      "sha256": "9a274414496a8d1d05b52a6faa80d512d700d4d6e5e31055be4a2b8d50e4a94f"
+    },
+    "UPSTREAM.md": {
+      "bytes": 6600,
+      "sha256": "a685474ca3410453f96ea2cc3b463b831e175c69eaf6838fbac771396fc5ac05"
+    },
+    "OUROBOROS_SOURCES.md": {
+      "bytes": 4245,
+      "sha256": "bace1b9371ef2ca6745a85702bd57288dafd7b544aa77a01698eca926f9ea537"
+    }
+  }
+}

@@ -95,3 +95,44 @@ Report resolved meanings, material open questions and any proposed decision awai
 acceptance. Do not claim code behavior changed because its glossary was edited.
 
 Source and adaptations: [MATTPOCOCK_SOURCES.md](../MATTPOCOCK_SOURCES.md).
+
+## Preserve requirement authority through a relay
+
+Use this example when research, a summary or another agent supplies a specification.
+Keep origin and acceptance separate: a fact can inform a decision without becoming
+one, and an agent-generated decision is not evidence of human approval. Preserve the
+speaker/source, descriptive or proposed or accepted status, scope, conditions and
+superseding decision in the existing task contract; no new ledger or schema is needed.
+
+Fictional example: the maintainer asks for a retrying client with an overall deadline
+below ten seconds. Research finds that the current client retries three times. An
+agent proposes five retries. A summary that says “implement five retries” has promoted
+a suggestion and dropped the deadline; neither fluency nor repetition grants authority.
+The three statements must remain distinct:
+
+- Observation: the inspected current client retries three times, at the cited revision.
+  That describes current behavior, not the required policy for the new client.
+- Proposal: try five retries, subject to the unchanged overall deadline. It remains
+  proposed until accepted by someone authorized for that decision.
+- Accepted decision: an authorized maintainer chooses five retries while retaining
+  the below-ten-second overall deadline. Record that decision and its scope together.
+
+Trace these distinctions through research → summary → specification → implementation.
+A source citation establishes origin, not approval; a field named `user` may contain
+an automated choice. Check what the producer actually means rather than trusting the
+label. Keep useful observations as context, but do not promote them into hard criteria
+merely because a requirements extractor paraphrases them. Preserve exact material
+constraints and their qualifications even when the surrounding explanation is shortened.
+
+If a later authorized decision changes the retry count, update the canonical task
+contract using the existing supersession convention before implementation. Reconcile
+affected handoffs and checks; a correction only in a private summary leaves downstream
+workers on the old contract. Do not silently replace a user requirement with an easier
+artifact or treat a test pass as acceptance of a changed requirement. Missing authority
+stays unresolved: ask the consequential question, not a full repeat interview.
+
+Review both directions: a relayed proposal must not become accepted, and a valid later
+decision must not be discarded as mere observation. Check the resulting specification
+still contains the count, deadline and actual acceptance status. This is a worked
+review example, not an executed interview or permission to run an autonomous one.
+See [source findings and limits](../OUROBOROS_SOURCES.md).
