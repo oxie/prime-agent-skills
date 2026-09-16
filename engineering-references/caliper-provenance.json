@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/edonadei/caliper",
+  "commit": "fe11ea7ea11d8fcf2b28d163df18d608fc0f591c",
+  "selection": "One original optional skill-routing example; no upstream runtime or model-effectiveness claim.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "b2075a7c452faf779e0522579eb07b896b16090363d03c09884d222a55807ee9",
+      "git_blob": "738768be3c2bf00ef602b440acc62a268cea024b",
+      "url": "https://github.com/edonadei/caliper/blob/fe11ea7ea11d8fcf2b28d163df18d608fc0f591c/LICENSE"
+    },
+    {
+      "path": "skills/grill-skill/REFERENCE.md",
+      "bytes": 12866,
+      "sha256": "aaad968a63c3610b49bd6ec1a4267982f3e4445a18c15ed5cb0fabf5e6835cc6",
+      "git_blob": "a1cf6c2dc86033814d786341752f09afe7b30756",
+      "url": "https://github.com/edonadei/caliper/blob/fe11ea7ea11d8fcf2b28d163df18d608fc0f591c/skills/grill-skill/REFERENCE.md"
+    },
+    {
+      "path": "caliper/activation.py",
+      "bytes": 4140,
+      "sha256": "91f1c2b340467f79cb33403b406188ee09f288700017e69dbf61e0c2e18c8be0",
+      "git_blob": "f02d835afff0f017f3a797406c880d806d4fd918",
+      "url": "https://github.com/edonadei/caliper/blob/fe11ea7ea11d8fcf2b28d163df18d608fc0f591c/caliper/activation.py"
+    },
+    {
+      "path": "caliper/schema/results.py",
+      "bytes": 42723,
+      "sha256": "09902968d8b04a00ec101ece3579e0cac72131759077fd25444c78491d17faec",
+      "git_blob": "b4f42b75f26b3842289fb4fa05b4f816f746c88a",
+      "url": "https://github.com/edonadei/caliper/blob/fe11ea7ea11d8fcf2b28d163df18d608fc0f591c/caliper/schema/results.py"
+    },
+    {
+      "path": "tests/test_activation_scoring.py",
+      "bytes": 10246,
+      "sha256": "ab5a28be377ffb0d9262a9aa70ea59a7da5cdbe92c4824e3aa385ea3afb058c2",
+      "git_blob": "893dbdf22297830fa06e65468dbdf72191eb9eef",
+      "url": "https://github.com/edonadei/caliper/blob/fe11ea7ea11d8fcf2b28d163df18d608fc0f591c/tests/test_activation_scoring.py"
+    }
+  ],
+  "files": {
+    "references/agent-evaluation.md": {
+      "bytes": 18267,
+      "sha256": "d6e61992d3fe7c4ec62a516d848f3e8674a070d40c0f216bdeea04206bb55b9e"
+    },
+    "UPSTREAM.md": {
+      "bytes": 7155,
+      "sha256": "7f4800fb352b07911df128e8f9bcce8f4fde647286bf923d8897c271b0caba4a"
+    },
+    "CALIPER_SOURCES.md": {
+      "bytes": 3115,
+      "sha256": "29152e528244e676f88e8f6008ce1bbc976efa6ad5086823dbf9cbf90f8d6d57"
+    }
+  }
+}

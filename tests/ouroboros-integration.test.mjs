@@ -1,4 +1,5 @@
 // Documentation/history controls only; no upstream runtime or model trials.
+import {beforeCaliperFile} from './helpers/caliper-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,7 +8,7 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeCaliperFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 const clauses={"engineering-references/references/domain-modeling.md": ["Keep origin and acceptance separate", "agent-generated decision is not evidence of human approval", "descriptive or proposed or accepted status", "no new ledger or schema is needed", "retries three times", "agent proposes five retries", "below-ten-second overall deadline", "source citation establishes origin, not approval", "field named `user` may contain an automated choice", "update the canonical task contract", "Reconcile affected handoffs and checks", "Missing authority stays unresolved", "valid later decision must not be discarded", "not an executed interview"], "engineering-references/references/test-design.md": ["declared requirement \u2192 response schema \u2192 parser/defaults \u2192 stored result \u2192 final approval", "reads only `approved`", "high score or a second judge", "parsing, persistence/reload and the real approval consumer", "Supported failure, not missing evidence", "Not checked; no credit", "Explicit invalid result, not truthiness-based approval", "Explicit legacy/unverified state", "necessary only where the contract requires it", "not sufficient by itself", "attempt and tested revision", "unknown observation separate from a demonstrated product defect", "gate that rejects everything", "stored state and final decision", "never weaken the evidence requirement", "proposed regression cases, not a new evaluator"]};

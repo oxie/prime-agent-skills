@@ -119,3 +119,12 @@ relays, and enforce required evidence through parsing and final approval. See
 [source findings and MIT notice](OUROBOROS_SOURCES.md) and ouroboros-provenance.json.
 No Ouroboros runtime, schema, agent persona, installer, telemetry or autonomous loop
 is adopted. Earlier source identities and evidence limits remain unchanged.
+
+## Selected Caliper skill-routing example
+
+One original optional [agent-evaluation example](references/agent-evaluation.md#skill-routing-target-neighbour-and-silence)
+separates target, neighbour and silence cases, loading evidence and outcome grades,
+and recall, precision and unwanted-activation denominators. See
+[source selection and MIT notice](CALIPER_SOURCES.md) and caliper-provenance.json.
+No Caliper runtime, skill pack, model trial or automatic evaluation loop is adopted.
+Historical source identities and verification limits remain unchanged.

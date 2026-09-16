@@ -214,3 +214,43 @@ and incomplete outcomes, even when a diff or response looks useful. Worktrees is
 checkout edits, not credentials, network effects, shared Git state or provider spend.
 These are evaluation-design checks, not an ablation runner or permission for automatic
 instruction pruning. See [selection and limits](../COLEAM00_SOURCES.md).
+
+## Skill routing: target, neighbour and silence
+
+Use this optional example only for an authorized skill-routing question, within the
+existing call/spend budget. Freeze the available skills and descriptions except for
+the stated intervention; retain the task, model, tool and grader identities above.
+When measuring spontaneous selection, do not name the target skill in the prompt.
+Explicit invocation is a different question, not a forbidden kind of task.
+
+Use relevant cases for the target, a neighbouring skill and work needing no skill.
+Declare acceptable selections before observing results. Assert an exact set only
+when the contract requires it; several routes may legitimately satisfy a task.
+Separate candidate discovery, requested loading, successful content loading and
+subsequent instruction use. A path mention or attempted tool call alone does not
+prove successful loading; loading alone does not prove use or task success. Record
+expected and observed selections separately from task-output and safety grades.
+
+Fictional example: ten fully observed cases offer the same skill set. Two want the
+target, which loads successfully in both. Eight do not want it; it nevertheless
+loads in two of those. Here activation means successful content loading, not a
+path-string match. The remaining six do not load it. These counts give:
+
+| Diagnostic | Numerator / denominator | Result |
+|---|---|---|
+| Recall | Wanted activations / wanted opportunities | 2 / 2 = 100% |
+| Precision | Wanted activations / all activations | 2 / 4 = 50% |
+| Unwanted activation rate | Unwanted activations / non-target opportunities | 2 / 8 = 25% |
+
+Perfect recall can coexist with over-triggering. Unwanted activation rate is not
+one minus precision: their denominators answer different questions. With no eligible
+opportunities, report the rate as unmeasured, not zero. Keep missing or incomplete
+observations unknown, report their counts and coverage, and exclude them from claims
+of confirmed silence or exact-set correctness. Do not silently treat a failed read
+as a load, or missing telemetry as proof that no skill loaded.
+
+These are descriptive fictional counts, not model trials, confidence bounds or
+measured improvement. They do not establish instruction compliance. Use the existing
+trial records; no new ledger, automatic testing, extra retries, installation or
+skill pruning is authorized. A valid zero or negative comparison is still a completed
+evaluation. See [source selection and limits](../CALIPER_SOURCES.md).
