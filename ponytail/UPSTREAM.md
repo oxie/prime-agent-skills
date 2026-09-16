@@ -70,3 +70,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+## Selected Anti-slop collection-semantics example
+
+Added one original optional JS/TS collection-refactor example to the implementation
+ladder. It distinguishes sparse holes, callback contracts and timing, truthiness,
+runtime support and accumulator ownership without banning array methods or adding
+a mandatory simplification pass. See [source selection and MIT notice](ANTI_SLOP_SOURCES.md)
+and anti-slop-provenance.json. No upstream lint plugin, installer, Effect rules,
+dependencies or model trials are included. Existing source pins, notices and
+historical AUDIT.md results remain unchanged.

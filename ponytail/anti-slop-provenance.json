@@ -1,0 +1,72 @@
+{
+  "repository": "https://github.com/dmmulroy/anti-slop",
+  "commit": "c44ef22ca116d0ba62a3ff663a0bd13a3f3fa40b",
+  "adaptation": "One original optional Ponytail collection example; no upstream executable code or substantial prose copied. Documentation/local semantic checks, not model efficacy or performance evidence.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/dmmulroy/anti-slop/blob/c44ef22ca116d0ba62a3ff663a0bd13a3f3fa40b/LICENSE",
+      "bytes": 1070,
+      "sha256": "10ed33bf340d6d63dc0633dfc917a346b369b6aa41fe20734aefc6a3fb75ba17",
+      "git_blob": "69239ead1ed4a05db45c0da08d1b8f64c0a76ee4"
+    },
+    {
+      "path": "README.md",
+      "url": "https://github.com/dmmulroy/anti-slop/blob/c44ef22ca116d0ba62a3ff663a0bd13a3f3fa40b/README.md",
+      "bytes": 19200,
+      "sha256": "5ef1df60a7fe292cc512f64ed2c861fd61720f48570a58bce3aa185d9f24eadf",
+      "git_blob": "7293e13eb0680301729a2110080aeb5640909706"
+    },
+    {
+      "path": "src/rules/no-array-filter-map.ts",
+      "url": "https://github.com/dmmulroy/anti-slop/blob/c44ef22ca116d0ba62a3ff663a0bd13a3f3fa40b/src/rules/no-array-filter-map.ts",
+      "bytes": 1475,
+      "sha256": "528bba857b84712c038e35e59079cc1e6c78a0421c65bb3c6117c9d412a2f28a",
+      "git_blob": "dc001b381465420ec98111507f1cde2e6c92fb6f"
+    },
+    {
+      "path": "src/rules/no-reduce-accumulator-copy.ts",
+      "url": "https://github.com/dmmulroy/anti-slop/blob/c44ef22ca116d0ba62a3ff663a0bd13a3f3fa40b/src/rules/no-reduce-accumulator-copy.ts",
+      "bytes": 4990,
+      "sha256": "dce4b08ee7ac4bbedfe743f6fa4a3d423cde50b37691130b899cc4573c05d2ae",
+      "git_blob": "47d8e2cf6b5c640b0a587b65457a543747123bac"
+    }
+  ],
+  "primary_documents": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
+      "status": 200,
+      "bytes": 174019,
+      "sha256": "6c3a887185b42b051f1c0c26a29a4a0a051e7fb90b6b58d2ae58d3ac9f9bfe76",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values",
+      "status": 200,
+      "bytes": 171471,
+      "sha256": "5c7deebf7257077436c702a0e808e4c239f794b949de83c34b5397a9d107183c",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator/filter",
+      "status": 200,
+      "bytes": 161689,
+      "sha256": "2b88bd7866bd3beb1b01d6ad58258c98abd975d9ff5812a8d256f1237797b2cb",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "files": {
+    "SKILL.md": {
+      "bytes": 10455,
+      "sha256": "5f6cb51283ae9928e4c9eacd6ba4f433366e374d8fe22bab2b233798deb1d620"
+    },
+    "UPSTREAM.md": {
+      "bytes": 4831,
+      "sha256": "4ea957ffc8ba70b550537964f47b9fe7cc50864930b05566cf53d50066a683df"
+    },
+    "ANTI_SLOP_SOURCES.md": {
+      "bytes": 4364,
+      "sha256": "92f3c5a3b9fb0589fe7237beb39ca6b9d0c8e348fbcd0691eeb5efc34b386eb1"
+    }
+  }
+}

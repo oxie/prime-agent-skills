@@ -99,6 +99,35 @@ convention or a concise `ponytail:` comment naming the ceiling and revisit trigg
 Do not invent debt or add a comment to every simple solution. A comment does not
 make an unmet requirement acceptable.
 
+### Collection refactors: fewer passes are not equivalent behavior
+
+Use this optional example when simplifying a JS/TS collection pipeline, not as a
+ban on array methods. For a two-slot array with no inherited indexed properties,
+a hole at index 0 and a present `undefined` at index 1, `filter(value => value === undefined)` returns one element.
+Its `values()` iterator visits both positions as `undefined`; applying the same
+predicate to those values yields two. A dense, pure happy-path example would miss
+this difference. Distinguish holes from present values rather than silently filling
+or dropping them.
+
+An eager `filter().map()` finishes filtering before mapping. A fused loop or lazy
+iterator pipeline can interleave the callbacks; laziness also changes when work,
+errors and source reads occur, and whether partial consumption performs all work.
+Check callback order, indexes, the callback's array argument and `thisArg`, as well
+as truthiness: `filter(Boolean)` also removes valid `0`, `false` and empty strings
+when the intended contract removes only missing values. Iterator helpers do not
+supply every Array callback argument or option. Confirm deployed runtime support;
+TypeScript library declarations do not polyfill iterator helpers.
+
+Before replacing repeated reducer copies with mutation, establish that the
+accumulator is fresh and locally owned, with no retained snapshots or shared
+aliases that need its earlier state. Copying a growing accumulator can be quadratic;
+a bounded copy is not automatically a performance defect. Keep required ownership
+and snapshot behavior even when mutation is shorter. Test a distinguishing case
+and a behavior-preserving control in the target environment; fewer allocations or
+passes alone do not prove a speedup. Measure before claiming one. Do not add a lint
+rule, dependency or automatic rewrite for this example. See
+[source selection and limits](ANTI_SLOP_SOURCES.md).
+
 ## Complexity review and audit
 
 Support each finding with a location, observed unnecessary complexity, proposed

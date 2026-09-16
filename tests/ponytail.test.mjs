@@ -43,7 +43,7 @@ test('no savings promise, global coding rewrite or competing observer',()=>{
  'Unlazy retains','Task Observer remains','Hallmark/Variate','creates no lasting mode']);
 });
 test('payload is only reviewed documentation and the full MIT notice',()=>{
- assert.deepEqual(fs.readdirSync(dir).sort(),['AUDIT.md','LICENSE','SKILL.md','UPSTREAM.md']);
+ assert.deepEqual(fs.readdirSync(dir).sort(),['ANTI_SLOP_SOURCES.md','AUDIT.md','LICENSE','SKILL.md','UPSTREAM.md','anti-slop-provenance.json']);
  const license=read('LICENSE');
  assert.match(license,/Copyright \(c\) 2026 DietrichGebert/);
  assert.match(license,/Permission is hereby granted, free of charge/);
