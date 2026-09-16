@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/img2threejs/img2threejs",
+  "commit": "6e60b5e22419464b4853e01ddb6c0e6f6659a733",
+  "adaptation": "original optional reference-driven 3D guidance; no upstream runtime or executable example",
+  "license": {
+    "spdx": "Apache-2.0",
+    "path": "licenses/img2threejs-Apache-2.0.txt",
+    "copyright": "2026 hoainho"
+  },
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 11337,
+      "sha256": "4595055948a67e91177115c57e154804046878e77ff223de22accc880012827a",
+      "git_blob": "a40f4c4e482092730e5faab10cf684229413d9a2"
+    },
+    {
+      "path": "grimoire/intake/image_analysis.md",
+      "bytes": 7347,
+      "sha256": "bebca437a2c18c8f932e0b09b9e64fdfdfcb2daabd109316336b36761030a84f",
+      "git_blob": "5fde9a1861861a712873e982713598471b21ddcd"
+    },
+    {
+      "path": "grimoire/intake/validation_rubric.md",
+      "bytes": 4127,
+      "sha256": "118f06dd75f29593145af5f3401cf568ef9435e9e3165d87fab739112ef16aac",
+      "git_blob": "767ca43ba9f7782bb2ddfa824ae3abc6a6bcf1bc"
+    },
+    {
+      "path": "grimoire/build/geometry_patterns.md",
+      "bytes": 26090,
+      "sha256": "0bdc21470da58b9fcfa600c08d72d9246dd10481368c4e9d8224e1bf90a16235",
+      "git_blob": "90e268f25451ad978d8fd879928d67dab8793bbf"
+    },
+    {
+      "path": "grimoire/review/divine_eye_microscope.md",
+      "bytes": 10869,
+      "sha256": "d8bd0427f7c94865815743dd2625108eadbd1f3f55986b8294dc407cb5258f93",
+      "git_blob": "75731ef1ee375b16e80af3b5032d486f811d8ff7"
+    },
+    {
+      "path": "forge/tests/test_interior_difference.py",
+      "bytes": 7298,
+      "sha256": "74279ab8fc7e1e98974be99cf4eb21b4510e002f98ffcf39b69bad6876f89426",
+      "git_blob": "35e47ee912ee96b49a999e1665be6bc559f1b474"
+    },
+    {
+      "path": "forge/tests/test_structure_gates.py",
+      "bytes": 9279,
+      "sha256": "1d938e71525eea85c2e8b8da5fcdddd8745051dae669f31d117598488f1ed4cb",
+      "git_blob": "407d98a74a21bc99b48e07ad3cd304ad9d3170f3"
+    },
+    {
+      "path": "forge/stage3_build/orchestrate_passes.py",
+      "bytes": 28232,
+      "sha256": "54ab6c372d013a0d8fa1f7c7254b5754dc58c5c2a5502006881c0e9ee1e926a4",
+      "git_blob": "e02b9716d159d189823b043fd4c1bc73f990bf4c"
+    },
+    {
+      "path": "forge/stage4_review/append_review.py",
+      "bytes": 22118,
+      "sha256": "0769f2169ff5e276c191fd16b0df8ebd4be0ea555a0b141135cda7eaac6698bb",
+      "git_blob": "879c5625532dcfa6ebe048889c3f4d68aa3963e7"
+    }
+  ],
+  "files": {
+    "SKILL.md": {
+      "bytes": 7583,
+      "sha256": "01dbf62b1d854e4779b1694ea8c5cc17d522455162cb0d4c8cae9187c2c10348"
+    },
+    "PROVENANCE.md": {
+      "bytes": 2057,
+      "sha256": "d467dd96924c95969074d201fa265b75ce60e173d79c3a038bfb0134f2fde498"
+    },
+    "IMG2THREEJS_SOURCES.md": {
+      "bytes": 3892,
+      "sha256": "db73fb827e00618770daef7a3da63cb7b1966c7136c45eee9166b6df90961f2e"
+    },
+    "references/reference-driven-3d.md": {
+      "bytes": 7750,
+      "sha256": "51e1f6e12fbfc5e87553271fc576a645091b2c2600cb0b6586dbb2f9972630a2"
+    },
+    "licenses/img2threejs-Apache-2.0.txt": {
+      "bytes": 11337,
+      "sha256": "4595055948a67e91177115c57e154804046878e77ff223de22accc880012827a"
+    }
+  }
+}

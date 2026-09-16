@@ -25,3 +25,10 @@ This package's original source/guidance uses the bundled MIT license. Asset-spec
 and dependency-specific rights still require review if a future project adds them.
 No trademark endorsement, legal clearance, unique-design guarantee or clean-room
 legal certification is asserted.
+
+## Selected image-reference modelling guidance
+
+[img2threejs source notes](IMG2THREEJS_SOURCES.md) identify a pinned source review
+and corrections behind the optional reference-driven 3D guidance. This is original
+Prime prose, not an imported generator, renderer, model stack or plugin manager.
+The prior Canvas UI and MengTo provenance and their rights remain unchanged.

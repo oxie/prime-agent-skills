@@ -115,3 +115,11 @@ must not become the mandatory home or authority for every future visualization.
 ## Foliage, laid trails and scoped motion measurements
 
 For tumbling leaves or a pointer-laid trail, use [foliage and trails](references/foliage-trails.md) and its local examples. These add bounded renderers, not a new host or default animation. For a specific animation-cost or lifecycle question, use [motion profiling](references/motion-profiling.md) with the actual project test interface; Browser Check does not expose arbitrary evaluation or traces.
+
+## Reference-driven 3D modelling
+
+When an explicitly requested model or interactive 3D scene must match reference
+images, read [reference-driven 3D inspection](references/reference-driven-3d.md).
+It covers camera matching, inferred geometry and separate appearance/structure
+checks, not a generator or automatic reconstruction workflow. Existing lifecycle,
+accessibility, resource and browser-permission boundaries still apply.
