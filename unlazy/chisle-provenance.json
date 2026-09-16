@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/JayPokale/Chisle",
+  "commit": "c40fc65e2a65ec1285aac2a018568db8af86d41a",
+  "adaptation": "Original optional prose only; no upstream code/runtime or benchmark claims imported. Source-reviewed, not upstream execution or model efficacy.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1067,
+      "sha256": "88a72c998d207645ccc56e1c075929808132c205ca38a0841b27107d6fa406c8",
+      "git_blob": "e4ae89d9ef8da5b12b92db17e2279e4172616ad0",
+      "url": "https://github.com/JayPokale/Chisle/blob/c40fc65e2a65ec1285aac2a018568db8af86d41a/LICENSE"
+    },
+    {
+      "path": "hooks/chisle-compress-output.js",
+      "bytes": 22779,
+      "sha256": "62ad0f301d6bdd600b360def73c1de8715cc2e439d9571f3032da2cc1f567cfb",
+      "git_blob": "a20662d9df418786d7e175d67691e2462483531c",
+      "url": "https://github.com/JayPokale/Chisle/blob/c40fc65e2a65ec1285aac2a018568db8af86d41a/hooks/chisle-compress-output.js"
+    },
+    {
+      "path": "pi-extension/index.js",
+      "bytes": 7217,
+      "sha256": "3178cd1ee0de4bc4f37c67bb3252ac0686ae06e7390ef90d327a3f1bd9247d63",
+      "git_blob": "e116f62e3e6d9555829e9fd11dc3ce0bb91d883c",
+      "url": "https://github.com/JayPokale/Chisle/blob/c40fc65e2a65ec1285aac2a018568db8af86d41a/pi-extension/index.js"
+    },
+    {
+      "path": "tests/test_compress.js",
+      "bytes": 15369,
+      "sha256": "0f88daa3036a2c2f2fc3a21bfcec2beddf64783ccd253834abaed91c1cbcec84",
+      "git_blob": "e2a3f1f5c2aff97ef9fe056992d47a420453e215",
+      "url": "https://github.com/JayPokale/Chisle/blob/c40fc65e2a65ec1285aac2a018568db8af86d41a/tests/test_compress.js"
+    },
+    {
+      "path": "tests/test_pi_extension.js",
+      "bytes": 11603,
+      "sha256": "29c75fd5bf9e223284990f537a042a4eafabbf2c001fa58b55b7385565ead4da",
+      "git_blob": "98ae46fe2f6ff0f3846557d82bdc131247de58f5",
+      "url": "https://github.com/JayPokale/Chisle/blob/c40fc65e2a65ec1285aac2a018568db8af86d41a/tests/test_pi_extension.js"
+    }
+  ],
+  "files": {
+    "references/token-economy.md": {
+      "bytes": 6361,
+      "sha256": "8c8f6df56823f7b7c558b1876693042c476b4e79bcc497c3ed57cd779d3039a8"
+    },
+    "UPSTREAM.md": {
+      "bytes": 2893,
+      "sha256": "6d1dc9d1e77eee321bf3322bfba7a5957932ec09b635cbbf5aaca86bdaca1045"
+    },
+    "CHISLE_SOURCES.md": {
+      "bytes": 3419,
+      "sha256": "08593726acdaa622733d43362b13662173f44cb29d8fd27d6339e3af2b97f5a5"
+    }
+  }
+}

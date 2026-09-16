@@ -40,3 +40,11 @@ See [source notes](WEKNORA_SOURCES.md) and weknora-provenance.json for the revie
 mechanisms, original local guidance and exact source identities. No WeKnora runtime,
 connector, memory store, service or automatic ingestion is installed. Historical
 source records keep their original revisions and verification limits.
+
+## Compact tool views and evidence
+
+An original optional section in references/token-economy.md separates a compact view
+from the evidence needed for verification. See [source notes](CHISLE_SOURCES.md) and
+chisle-provenance.json for the pinned review and exclusions. No Chisle code, runtime,
+installer, persona, hook, extension or benchmark claim is adopted. Existing gate
+evidence, retention rules, routing and historical source records remain unchanged.
