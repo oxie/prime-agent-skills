@@ -76,3 +76,37 @@ principally the no-new-facts rule, fabricated-specifics and gap-filling checks,
 synonym consistency, and voice calibration. This adaptation rejects the upstream
 punctuation bans, authorship claims, invented example details, and core delivery gate.
 See [upstream provenance](../../../UPSTREAM.md) and the [MIT notice](../../../THIRD_PARTY.md).
+
+## Optional example: a clean check of the wrong text
+
+Use this example when an authorized edit already involves a checker or generated
+rewrite. It adds no required tool or extra editing pass. The snippets are fictional,
+not product claims.
+
+Source: “Exports may take up to two minutes during maintenance.”
+
+Suppose a style checker excludes quoted text and code. The export sentence is the
+whole intended passage, but extraction leaves only an internal placeholder. A
+“no matches” result describes that filtered view, not the reader-facing sentence.
+Do not count extractor placeholders as prose or remove meaningful content to make
+a score pass. Empty, partial, unsupported or failed checks are not clean coverage.
+State which text was inspected and which relevant content was excluded, including
+reader-facing labels or alternative text when they are in the requested scope.
+
+Now suppose a rewrite returns “Exports take two minutes. I recommend this service.”
+plus separate editorial notes saying “Kept the timing.” Even if the whole rewritten
+body has no flagged words, it changed “may take up to” into a fixed duration, lost
+“during maintenance” and invented a personal recommendation. Notes claiming fidelity
+are not evidence of it. A supported clarity edit is “During maintenance, exports may
+take up to two minutes.” It preserves the supplied claim; it does not verify that
+the claim is true.
+
+Inspect the exact final body intended for delivery, not an earlier draft, command
+banner or change notes. Keep editorial notes separate without discarding necessary
+qualifiers or visibly labeled unresolved details from the body. If output separation
+is ambiguous, resolve it before calling the deliverable checked. After a later edit,
+recheck the affected text rather than applying an older score to new content.
+Compare that body with the source and supplied evidence using the check above.
+A style score proves neither factual support nor authorship and grants no permission
+to publish. No scanner, automatic model call, new ledger or publication gate is
+introduced. See [source selection and limits](../../../SLOPMONSTER_SOURCES.md).

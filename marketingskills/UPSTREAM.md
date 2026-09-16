@@ -114,3 +114,12 @@ and explainer-provenance.json. Review of anything2explainer identified the gap; 
 restricted upstream prose, code, template, font or media is copied. Existing source
 pins, versions, licenses and historical evidence remain unchanged. Only the current
 Video directory digest is updated; no new skill, TTS client or runtime is installed.
+
+## Original final-copy fidelity example after SlopMonster review
+
+Copy Editing gains one optional original example distinguishing a checker's extracted
+view, the final reader-facing body and source-supported meaning/voice. See
+[source selection and MIT notice](SLOPMONSTER_SOURCES.md) and slopmonster-provenance.json.
+No SlopMonster scanner, model chain, new skill, mandatory pass or publication gate
+is included. Only the current Copy Editing directory digest changes; source pins,
+versions, existing rights and historical pilot evidence remain unchanged.

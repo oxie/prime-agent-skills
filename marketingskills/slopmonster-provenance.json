@@ -1,0 +1,65 @@
+{
+  "repository": "https://github.com/ItsssssJack/SlopMonster",
+  "commit": "f261dbf11c2a206ecd8780c070a46dae64edd8be",
+  "adaptation": "Original optional Copy Editing example; no upstream code or substantial prose, model chain or scanner copied. Source review and documentation checks, not model efficacy.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/ItsssssJack/SlopMonster/blob/f261dbf11c2a206ecd8780c070a46dae64edd8be/LICENSE",
+      "bytes": 1069,
+      "sha256": "c0f18cfb62c0745fc89316fd691678f594dcf06b9a018ee2c78a5f202e214ab0",
+      "git_blob": "79819274e47822b4a112374862c4c05d07e211cc"
+    },
+    {
+      "path": "tools/deslop.py",
+      "url": "https://github.com/ItsssssJack/SlopMonster/blob/f261dbf11c2a206ecd8780c070a46dae64edd8be/tools/deslop.py",
+      "bytes": 18116,
+      "sha256": "d31fd8c9b7013bd857c38afa53b59aa734a9cf96e5026ff69921e43537a9fd5a",
+      "git_blob": "50bf25913730011631cd7a5be2240e410849a9da"
+    },
+    {
+      "path": "tools/cleanse.sh",
+      "url": "https://github.com/ItsssssJack/SlopMonster/blob/f261dbf11c2a206ecd8780c070a46dae64edd8be/tools/cleanse.sh",
+      "bytes": 6157,
+      "sha256": "6d26e9d8f4d80af640dd0485b63efe83edd87e62815c001d5e0f5d36cf82fe37",
+      "git_blob": "0c3113f709f0a56d45293634bbac6306ac3e3fad"
+    },
+    {
+      "path": "prompts/cleanse.txt",
+      "url": "https://github.com/ItsssssJack/SlopMonster/blob/f261dbf11c2a206ecd8780c070a46dae64edd8be/prompts/cleanse.txt",
+      "bytes": 3034,
+      "sha256": "6d1423dbe0e43e9e001ec55e8c179d008e89ddfa80d93efebf82bb9e5901c0e7",
+      "git_blob": "ebcea070d450d5523aa82aa3ae2710cb09934c2f"
+    },
+    {
+      "path": "examples/jasper-live-run.md",
+      "url": "https://github.com/ItsssssJack/SlopMonster/blob/f261dbf11c2a206ecd8780c070a46dae64edd8be/examples/jasper-live-run.md",
+      "bytes": 3723,
+      "sha256": "319699e587395a3f86368414d8a49943926c1eb45237f3b1933d9d4037cb7d26",
+      "git_blob": "f2ef20853a7a286c87273ee84713c830017041be"
+    }
+  ],
+  "owner_digest": {
+    "previous": "c213895bff34bb76497f1959e762733ae52d1133e5cfba430c071eb63625f7eb",
+    "current": "da41efd5c530e3ccec8d444cf4743f23816a60fc50c726f64b49310879285369"
+  },
+  "previous_manifest_sha256": "44f93c1065c6ae2f356b0697fcc9568be7405e78da6f0448e7cd91512c8737b2",
+  "files": {
+    "marketingskills/skills/copy-editing/references/source-fidelity-and-clarity.md": {
+      "bytes": 7755,
+      "sha256": "78702df47d4bb1ff67818bd1f0cc3ffe067278bacac3dc75277ad35e6056c25a"
+    },
+    "marketingskills/UPSTREAM.md": {
+      "bytes": 7731,
+      "sha256": "2ac36e2370f3b57e703342ab3fef36ad1815d9d2d3d69ae8042f854821229727"
+    },
+    "marketingskills/MANIFEST.json": {
+      "bytes": 12162,
+      "sha256": "f233eac74f53136605ac964ba0d9c9ee544d9b327a703946442d738cbd019af7"
+    },
+    "marketingskills/SLOPMONSTER_SOURCES.md": {
+      "bytes": 4315,
+      "sha256": "6bfd8c96d42c011918bbba481e1190cc69fda7ce44997b913615f8b223b39078"
+    }
+  }
+}

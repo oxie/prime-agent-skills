@@ -1,3 +1,4 @@
+import {beforeSlopMonsterFile} from './helpers/slopmonster-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -51,7 +52,7 @@ test('original guidance clauses with independent deletion controls',()=>{
 test('exact pre-integration bytes, metadata and safety survive; unknown mutations do not',t=>{
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'explainer-history-'));t.after(()=>fs.rmSync(tmp,{recursive:true,force:true}));
  for(const [p,r] of Object.entries(explainerTransitions)){
-  const b=fs.readFileSync(path.join(root,p));assert.equal(sha(b),r.current);
+  const b=beforeSlopMonsterFile(root,p);assert.equal(sha(b),r.current);
   const prev=beforeExplainerFile(root,p);assert.equal(sha(prev),r.previous);
   assert.equal(sha(beforeHuashuFile(root,p)),huashuTransitions[p].previous);
   if(p===video){assert.equal(read(p).split('---',3)[1],prev.toString().split('---',3)[1]);
@@ -70,7 +71,7 @@ test('current local provenance and Video directory digest match; historical iden
  assert.equal(p.review_commit,'5b57239578284385c72ebfb2d1fce3ab61a3950a');assert.equal(p.sources.length,7);
  assert.match(p.review_license,/PolyForm Noncommercial/);assert.match(read('marketingskills/EXPLAINER_SOURCES.md'),/not relicense upstream/);
  for(const s of p.sources){assert.match(s.sha256,/^[a-f0-9]{64}$/);assert.match(s.git_blob,/^[a-f0-9]{40}$/);assert(s.bytes>0);}
- for(const [f,h] of Object.entries(p.local_original))assert.equal(sha(fs.readFileSync(path.join(root,f))),h,f);
+ for(const [f,h] of Object.entries(p.local_original))assert.equal(sha(beforeSlopMonsterFile(root,f)),h,f);
  const m=JSON.parse(read('marketingskills/MANIFEST.json'));assert.equal(m.source.commit,'5b2c0007766c6a1cf1d53fd8fc73e979e0821022');
  const dir=path.join(root,'marketingskills/skills/video'),files=[];
  function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){assert(!e.isSymbolicLink());const f=path.join(d,e.name);if(e.isDirectory())walk(f);else{assert(e.isFile());files.push(f);}}}walk(dir);
