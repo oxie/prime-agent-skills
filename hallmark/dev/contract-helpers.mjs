@@ -14,6 +14,7 @@ export const referenceNames = [
 export const dataPayloads = [
   "next-provenance.json", "ui-skills-provenance.json", "refero-provenance.json",
   "aura-reference-intent.json", "mengto-provenance.json", "taste-provenance.json", "catalogue/provenance.json",
+  "fwc-swiftui-provenance.json",
 ];
 export const licensePayloads = [
   "licenses/AAS-LICENSE-CONTENT.txt", "licenses/CC-BY-4.0.txt", "licenses/shadcn-MIT.txt",

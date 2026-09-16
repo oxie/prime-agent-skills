@@ -129,3 +129,11 @@ Original CJK font/locale/rendering considerations extend the existing localizati
 reference without a new workflow or SKILL.md trigger. See [source notes](HUASHU_SOURCES.md).
 Earlier source hashes, licenses, versions and pilot evidence are unchanged. No
 Huashu code, media, fonts, installer or automated review is imported.
+
+## Structural resize continuity
+
+An original optional example extends [app/mobile checks](references/app-quality.md)
+with a compact-to-wide round trip, state continuity and independent edge insets.
+Existing prose is tightened without removing safeguards to retain the reference budget.
+See [FWC source notes](FWC_SWIFTUI_SOURCES.md) and fwc-swiftui-provenance.json.
+No SwiftUI pack, native API recipe, new skill, runtime or model trial is imported.

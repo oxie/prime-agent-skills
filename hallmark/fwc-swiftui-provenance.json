@@ -1,0 +1,42 @@
+{
+  "repository": "https://github.com/FloWritesCode/fwc-swiftui-skills",
+  "commit": "c2454e6948175e25e61c107c6dc7ebf03e291dfe",
+  "selection": "Original optional structural-resize example; no native recipes/runtime/model trials; source review not rendered evidence",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "8e9a399801eb1b940c906fb37ddc0df449463044f1fa43a848cb0eb32e49b283",
+      "git_blob": "1b5fcf5a7e93913187b8c6b5bf1a33ba890964e5",
+      "url": "https://github.com/FloWritesCode/fwc-swiftui-skills/blob/c2454e6948175e25e61c107c6dc7ebf03e291dfe/LICENSE"
+    },
+    {
+      "path": "skills/swiftui-iphone-duo/SKILL.md",
+      "bytes": 11726,
+      "sha256": "689224e5779f172ee55f67673caea4715e26e51a1f9cd43accad944b2c8774e1",
+      "git_blob": "2851090a475b9043a71d557f6a78d1cf9819524a",
+      "url": "https://github.com/FloWritesCode/fwc-swiftui-skills/blob/c2454e6948175e25e61c107c6dc7ebf03e291dfe/skills/swiftui-iphone-duo/SKILL.md"
+    },
+    {
+      "path": "skills/swiftui-iphone-duo/reference.md",
+      "bytes": 16964,
+      "sha256": "67db579de98ef226e30350746759960b496fba6348a9246071d0df1cc39e96de",
+      "git_blob": "f0663ecc429c8f0a6705f99efd2327fd45a6f941",
+      "url": "https://github.com/FloWritesCode/fwc-swiftui-skills/blob/c2454e6948175e25e61c107c6dc7ebf03e291dfe/skills/swiftui-iphone-duo/reference.md"
+    }
+  ],
+  "files": {
+    "references/app-quality.md": {
+      "bytes": 4880,
+      "sha256": "762e0622787a4e992117971e57be2acf38a5eed48aeeaef54b0424cdd69bd5df"
+    },
+    "UPSTREAM.md": {
+      "bytes": 8544,
+      "sha256": "d600825565dba057170a7ff504b7138c1cef1e21e47673fde6989c4579aef437"
+    },
+    "FWC_SWIFTUI_SOURCES.md": {
+      "bytes": 3760,
+      "sha256": "447368076458915cd7197939972fdba08ce60f8e6ef7eb9b8fe7330695936b4a"
+    }
+  }
+}
