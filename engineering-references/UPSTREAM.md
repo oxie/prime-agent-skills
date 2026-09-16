@@ -101,3 +101,12 @@ evidence-path integrity, and revision-bound holds across later entrypoints. See
 No upstream runner, hook, desktop tool, ablation experiment, new skill or memory
 system is installed. Historical source identities and verification limits remain
 unchanged; these examples do not establish model effectiveness or production safety.
+
+## Selected Reticle evidence-validity lesson
+
+One original section in [test design](references/test-design.md) addresses preservation
+of truth, observation validity, evaluated coverage and tested revision through final
+consumers, including completeness-dependent counts and compound predicates. See
+[source findings and license boundaries](RETICLE_SOURCES.md) and reticle-provenance.json.
+No Reticle implementation, SDK, MCP server, permission changes, telemetry or benchmark
+claims are imported. Prior source identities and verification limits remain unchanged.

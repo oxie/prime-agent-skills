@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/reticlehq/reticle",
+  "commit": "3a7785dda4c56712501da4fbf7626b49368fee8d",
+  "adaptation": "One original optional test-design section; no upstream implementation imported",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1899,
+      "sha256": "50f5fd7b80b9d331f2c9c8899f08cadc36e77fc1e6a41bd30d8bdd60e4e3837f",
+      "git_blob": "eb3a60c6c9cec206292a315dfc14c0d1fb8a9931",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/LICENSE"
+    },
+    {
+      "path": "packages/server/LICENSE",
+      "bytes": 3744,
+      "sha256": "f881e3d3f9db29ac3b438a1da529ef756cf0ff0d2ee5dc6c44f108c504ee7467",
+      "git_blob": "08e4baa2e9c08fc44b0c45d0be921b78b80235a6",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/packages/server/LICENSE"
+    },
+    {
+      "path": "packages/server/src/ee/LICENSE",
+      "bytes": 1719,
+      "sha256": "8a742afc17db402836e41caed539a9d3dc1bd5d6334c43594bc83ee53582cdff",
+      "git_blob": "cf45243b6a8b789ce8da89f8e44a363b5b5e67ae",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/packages/server/src/ee/LICENSE"
+    },
+    {
+      "path": "packages/server/src/events/predicate-element.ts",
+      "bytes": 12554,
+      "sha256": "eadf99fdf99fbbd732d7a9ab9912afec3ae3e2dd9e3c06e5ab1dd759557d1ee9",
+      "git_blob": "b1d70edd153583cfa176f957011a9cd288b7a3b0",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/packages/server/src/events/predicate-element.ts"
+    },
+    {
+      "path": "packages/server/src/honesty/blind-spots.ts",
+      "bytes": 16664,
+      "sha256": "af58441145e7a1dff43b5ceab5191853f28a15ff3ef1bce1ba00d6a50596a166",
+      "git_blob": "8f87ff174982018a60b279f702e1642fd493f14c",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/packages/server/src/honesty/blind-spots.ts"
+    },
+    {
+      "path": "packages/server/src/flows/flow-replay.ts",
+      "bytes": 28236,
+      "sha256": "e821e666d9b2d9048fed0905972010ccf1efade8b49315bf880ddb25922a279e",
+      "git_blob": "15ebf36a1b715f35b19f5e4e568d7349f6f48603",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/packages/server/src/flows/flow-replay.ts"
+    },
+    {
+      "path": "packages/server/src/runs/replay-mapping.ts",
+      "bytes": 1900,
+      "sha256": "4603bd7bf3a64dbc5f64958ab2f5b6147837bf77897e1d2fd77c9d065f47a02c",
+      "git_blob": "4ac81457bc40ce0471b49ccd3263504d4ce3b64f",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/packages/server/src/runs/replay-mapping.ts"
+    },
+    {
+      "path": "packages/server/src/cli/cli-flow-commands.ts",
+      "bytes": 13197,
+      "sha256": "bce353cb4dc26f09cc0b01ca2699f329b3dd6c8a0e9cde6b566033925605bd1e",
+      "git_blob": "33b0008b3f3d75db07ee3e1fa8cc8e0c0a8429b8",
+      "url": "https://github.com/reticlehq/reticle/blob/3a7785dda4c56712501da4fbf7626b49368fee8d/packages/server/src/cli/cli-flow-commands.ts"
+    }
+  ],
+  "files": {
+    "references/test-design.md": {
+      "sha256": "cb97e9735779be1591c93894c6ac81b67211e11b4e160618ca4a7198ce56b61e",
+      "bytes": 14021
+    },
+    "UPSTREAM.md": {
+      "sha256": "a4a5ffd65aade5fa9380783db8863671ba466a6a429844dfb109cb3a078f9627",
+      "bytes": 6047
+    },
+    "RETICLE_SOURCES.md": {
+      "sha256": "05c7c13c978bb5c88fd309f218db1a306d30a42b8c23242c85e5e19f271bcd59",
+      "bytes": 4319
+    }
+  }
+}

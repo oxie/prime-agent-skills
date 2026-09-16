@@ -164,3 +164,51 @@ This is a proposed test recipe, not an executed refund test, new harness or auth
 to run untrusted audit scripts. Static presence checks and deterministic execution
 are not security certification. Preserve independent expected outcomes and existing
 real-boundary coverage. See [selection and limits](../COLEAM00_SOURCES.md).
+
+## Preserve evidence validity through the final consumer
+
+Use this when assertions pass through evaluators, replay results, saved artifacts or
+completion gates. Keep predicate truth separate from whether it could be evaluated.
+Carry observation validity, actually evaluated coverage and the tested source/fixture/
+assertion revision through every adapter. Use the project's existing result contract;
+no new evidence service is implied. A declared assertion is not an executed assertion.
+Record failed reads, skipped checks and unknown outcomes explicitly, and keep them
+ineligible for verified success at the final consumer. Successful action dispatch or
+an assertion-free replay cannot fill that gap.
+
+Decide which propositions require a complete observation window. Observing one event
+can support “at least one” despite unrelated loss. “None”, “exactly N” and “at most N”
+need relevant completeness before passing: a lost matching event can disprove them.
+Bound the claim to the actual session, document and interval; a quiet interval does
+not prove that no later event will occur. Preserve these requirements in compound
+predicates. A conjunction needs every required branch; a disjunction may rely on a
+sufficient, validly proved branch, but must not award coverage to unproved branches.
+Do not turn every partial observation into failure or every positive count into proof.
+
+Fictional regression cases for an authorized disposable fixture:
+
+| Case | Required final evidence |
+|---|---|
+| A DOM match command returns an explicit read error | Unknown/unevaluable, not zero matches and a passing absence check |
+| Two matching notifications occurred, one was lost, and one remains | “Exactly one” is unknown; “at least one” can still be supported |
+| An absence predicate is wrapped in a one-branch conjunction | The wrapper cannot erase its completeness requirement |
+| A nested or alternate-locator assertion is declared but skipped | No assertion credit merely because its declaration exists |
+| A flow passes on revision A, then a covered input becomes B | A's artifact cannot authorize B without applicable fresh evidence |
+
+Trace each case through the real consumer boundary, including serialization and
+reload where applicable. Pair negative cases with a complete-window positive control
+and an actual evaluated assertion. Check the stored status and final gate decision,
+not only the inner evaluator's boolean. Carry forward a supported contradiction as
+such; unknown observation is not proof of an application defect.
+
+Bind reusable passing evidence to the bytes actually exercised, including relevant
+uncommitted changes and flow/fixture revisions. A newest timestamp or matching flow
+name is not that binding. Follow [running-revision evidence](release-dependencies.md)
+when the served build can differ from the checkout. Never weaken an expectation to
+recover green or claim that a repaired locator preserved intent when its consequence
+check was empty or skipped.
+
+These are proposed cases, not executed browser tests or proof of production safety.
+Keep existing authorization, independent oracles and real-boundary coverage. No SDK,
+MCP server, telemetry, provider call or automatic replay is authorized here. See
+[source findings and limits](../RETICLE_SOURCES.md).
