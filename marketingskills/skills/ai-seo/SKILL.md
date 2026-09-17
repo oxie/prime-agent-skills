@@ -274,13 +274,13 @@ AI systems don't just cite your website — they cite where you appear.
 
 > **Google's stance**: not required for AI Overviews or AI Mode. Their guide explicitly says you don't need new markup, AI files, or markdown to appear in generative AI search.
 >
-> **Why include them anyway**: non-Google AI engines (ChatGPT, Claude, Perplexity) and autonomous buying agents do reward extractable structure. The files below help with those engines without harming Google.
+> **Why consider them**: a known consumer may benefit from a maintained, parseable export. Assess each format separately; listing it here does not establish adoption, ranking benefit or permission to publish. The OKF option below is a consumer-specific handoff, not a required search file.
 
 AI agents aren't just answering questions — they're becoming buyers. When an AI agent evaluates tools on behalf of a user, it needs structured, parseable information. If your pricing is locked in a JavaScript-rendered page or a "contact sales" wall, agents will skip you and recommend competitors whose information they can actually read.
 
 **Audit this layer first**: [references/agent-readiness.md](references/agent-readiness.md) — the access/discovery/parseability checklist, free scoring tools (`npx is-agentic`, Frase's checker), Markdown content negotiation + `Link` headers, `llms-full.txt`, and the emerging agent-*actionable* layer (WebMCP).
 
-Add these machine-readable files to your site root:
+Consider the following formats only when their intended consumer and maintenance needs justify them. Public hosting requires approval; the optional OKF bundle need not live at the site root.
 
 **`/pricing.md` or `/pricing.txt`** — Structured pricing data for AI agents
 
@@ -320,9 +320,9 @@ Add these machine-readable files to your site root:
 
 If you don't have one yet, add an `llms.txt` that gives AI systems a quick overview of what your product does, who it's for, and links to key pages (including your pricing).
 
-**`/okf/` — Open Knowledge Format bundle (Google-backed, v0.1)**
+**Optional OKF bundle — Open Knowledge Format v0.2**
 
-Google [introduced OKF](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing) in June 2026 — a markdown spec for representing site content as a directory of cross-linked files with YAML frontmatter, agent-readable without scraping. Built primarily for data-team catalog metadata; the site-readable-by-agents repurposing was popularized by Suganthan Mohanadasan. No confirmed AI-search ranking signal today — treat it as protocol-layer registration like early schema.org. **For the full breakdown, implementation paths (free generator, WordPress plugin, by-hand), hosting guidance, and when to skip, see [references/okf.md](references/okf.md).**
+Use OKF when a named recipient or tool needs a portable, connected export of approved website knowledge. It packages Markdown concepts with metadata, source links and optional indexes; `/okf/` is one possible hosting path, not a required registration endpoint. Google Cloud's Knowledge Catalog support is not Google Search adoption. Google Search requires no new machine-readable files for AI Overviews or AI Mode, and this guidance makes no ranking or citation-uplift promise. Choose the consumer, scope, privacy boundary and source-update owner before building. See [references/okf.md](references/okf.md) for the pinned v0.2 contract, a connected website example, delivery choices and revision-bound verification. No generator, plugin or public publication is required.
 
 ### Schema Markup for AI
 

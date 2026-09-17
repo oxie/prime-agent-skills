@@ -9,7 +9,7 @@ description: >
   dependencies or running-revision evidence, API object/tenant authorization and
   denied-write tests, result-preserving SQL diagnosis, or operator-led telemetry
   evidence, exact-symptom debugging, independent test oracles, interface design
-  comparisons, domain terminology and material decision records, stochastic agent
+  comparisons, domain terminology and material decision records, portable project knowledge bundles, stochastic agent
   evaluation, or trust-boundary threat modeling. Not a mandatory
   coding rulebook, routine cleanup pass, or deployment tool.
 license: "MIT for original wrapper/book references; CC-BY-4.0, MIT and Apache-2.0 for selected adaptations (see THIRD_PARTY.md)"
@@ -137,3 +137,10 @@ For requested backup or disaster-recovery planning, read [recovery planning](ref
 For multi-source search coverage, asynchronous ranking or saved-versus-indexed state,
 read [retrieval contracts](references/retrieval-contracts.md). Use only the changed
 boundary; no search service, database, model trial or whole-system audit is implied.
+
+## Portable knowledge handoffs
+
+For a requested OKF or cross-tool project knowledge bundle, read
+[knowledge bundles](references/knowledge-bundles.md). It includes an original
+connected example, source/revision checks and update/delivery guidance. Use only
+when a real recipient benefits; no memory migration, generator or runtime is added.

@@ -123,3 +123,12 @@ view, the final reader-facing body and source-supported meaning/voice. See
 No SlopMonster scanner, model chain, new skill, mandatory pass or publication gate
 is included. Only the current Copy Editing directory digest changes; source pins,
 versions, existing rights and historical pilot evidence remain unchanged.
+
+## OKF v0.2 website-export corrections
+
+AI SEO's existing [OKF reference](skills/ai-seo/references/okf.md) now describes the
+canonical v0.2 format, a connected fictional website example and known-consumer
+handoffs without search-registration promises. Only affected SKILL/ranking passages
+and the AI SEO directory digest change. See [source selection and rights](OKF_SOURCES.md)
+and okf-provenance.json. No generator, plugin, public hosting, cloud/runtime or
+automatic memory export is added; older versions, pins and evidence stay historical.

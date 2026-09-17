@@ -1,0 +1,117 @@
+{
+  "repository": "https://github.com/GoogleCloudPlatform/open-knowledge-format",
+  "commit": "ad30107c31c06aec8a7d5636e0d1058118604e6f",
+  "spec_version": "0.2",
+  "sources": [
+    {
+      "path": "SPEC.md",
+      "bytes": 37748,
+      "sha256": "26aa5da029278939f914e578107242d9607d4f2dc5fe153272b82f9ed1030101",
+      "git_blob": "c06e3eede0c910d0ecf12524c34204156f8795ac",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/SPEC.md"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9814,
+      "sha256": "e7f3bec9a90a5cbf1ba16c91a879d155d7a826f0ecc4fe028df01b7bb13ea786",
+      "git_blob": "0e88bcf81ca9ade7e830f077f9687bb89ec0319c",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/README.md"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 11359,
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+      "git_blob": "6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/LICENSE.md"
+    },
+    {
+      "path": "bundles/acme_retail/metrics/gross-margin.md",
+      "bytes": 2656,
+      "sha256": "912be604fe7f681322b2ba6414b5791e9eb91b73aad1cae7afa666cedfe7d3c9",
+      "git_blob": "1ab58d68726770d1ad34aae3d8fb1e66ce0c57ed",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/bundles/acme_retail/metrics/gross-margin.md"
+    },
+    {
+      "path": "bundles/acme_retail/attesters/sql_equality.py",
+      "bytes": 4496,
+      "sha256": "ef41f8497de5ea3a4415bebc9222424576bfb56e114b2eacab53256aa86c1955",
+      "git_blob": "6637e58f074b471c73d618b29d7dba457c21aa1b",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/bundles/acme_retail/attesters/sql_equality.py"
+    },
+    {
+      "path": "src/reference_agent/bundle/document.py",
+      "bytes": 5131,
+      "sha256": "7d9be6961b38f0fd2196e1cbe630afb1a4682e33ccd43daf3f233401ca62a43b",
+      "git_blob": "b770a92f33adf9942e2932529308d066430b02a6",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/src/reference_agent/bundle/document.py"
+    },
+    {
+      "path": "src/reference_agent/viewer/generator.py",
+      "bytes": 7146,
+      "sha256": "1e2213a4fb4ca3585d75437c674ded19d0eca13a3e16474cf75b4d2fdbd53233",
+      "git_blob": "9b9a4d548bc20f458b4f532aa3facca29869e1ed",
+      "url": "https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/ad30107c31c06aec8a7d5636e0d1058118604e6f/src/reference_agent/viewer/generator.py"
+    }
+  ],
+  "primary_sources": {
+    "announcement": {
+      "url": "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing",
+      "status": 200,
+      "bytes": 270381,
+      "sha256": "d1a7e5b35e048364bf7566a07a1966d81b7ca14b8e3f9cc11f340601951d9a69"
+    },
+    "google_ai": {
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "status": 200,
+      "bytes": 179607,
+      "sha256": "7b5617e824bc104dfd20cec352bcb30a033940007d47bd21edb1c8c15495a903"
+    }
+  },
+  "scope": "Original optional connected project/website guidance; no upstream runtime or model trial.",
+  "files": {
+    "SKILL.md": {
+      "bytes": 8834,
+      "sha256": "7c33875c8b8dcefa54e75fe59bb5fc653318cd2c0a3548cc827d89e87ddaa8bf"
+    },
+    "UPSTREAM.md": {
+      "bytes": 7611,
+      "sha256": "44081cc96de9637327853d5846ce8d463b8fdcbef1c97675bfecb62ec9105ca0"
+    },
+    "references/knowledge-bundles.md": {
+      "bytes": 9637,
+      "sha256": "2b075974f86a1b36d6737fccd55018c082c31cfeabdf13ef0ad8f746bebd12f2"
+    },
+    "examples/okf/index.md": {
+      "bytes": 324,
+      "sha256": "0f36831d56f49018e0e3b080fe734c58517bca516dc80e7c687ea5923190ad5f"
+    },
+    "examples/okf/scope.md": {
+      "bytes": 1765,
+      "sha256": "cc60baa32b368c35a1b4fa46d2065cebef5f786f49886a4250b7ad6afe73e361"
+    },
+    "examples/okf/definitions/index.md": {
+      "bytes": 235,
+      "sha256": "b1752481cf9b91a94a7fcf79104e80915daef66687921b24f37bd4d2b733516a"
+    },
+    "examples/okf/policies/index.md": {
+      "bytes": 112,
+      "sha256": "9c856844041ece6da1d383e55d4233d0fa595a285771fc948c7d9191bd08946d"
+    },
+    "examples/okf/policies/activity.md": {
+      "bytes": 1268,
+      "sha256": "90c1ad0a395737e8b41ca174b5c1f90c02858f9e21ccae329f67c054ac5cccdf"
+    },
+    "examples/okf/definitions/active-workspace.md": {
+      "bytes": 1294,
+      "sha256": "f103734cfe415591073b4fb7b4bb78e82232a3e2eabdcf4ea89d5a135b148656"
+    },
+    "examples/okf/definitions/active-workspace-legacy.md": {
+      "bytes": 966,
+      "sha256": "5893908d66cca2ab9edcb441157cb7d5221201bc8f5033a5901dcc1ef6e7e382"
+    },
+    "OKF_SOURCES.md": {
+      "bytes": 4097,
+      "sha256": "bf2996001a752f00ac99e753678289fec1cad81e7c587a80b7c220c16b52574c"
+    }
+  }
+}

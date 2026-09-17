@@ -1,4 +1,5 @@
 // Documentation and exact historical-byte contracts only; no upstream scanner or model.
+import {beforeOkfFile} from './helpers/okf-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const ref='marketingskills/skills/copy-editing/references/source-fidelity-and-clarity.md';
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeOkfFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 const clauses=["authorized edit already involves a checker", "no required tool or extra editing pass", "snippets are fictional", "only an internal placeholder", "filtered view, not the reader-facing sentence", "Do not count extractor placeholders as prose", "Empty, partial, unsupported or failed checks are not clean coverage", "which relevant content was excluded", "when they are in the requested scope", "changed \u201cmay take up to\u201d into a fixed duration", "lost \u201cduring maintenance\u201d", "invented a personal recommendation", "Notes claiming fidelity are not evidence", "does not verify that the claim is true", "exact final body intended for delivery", "earlier draft, command banner or change notes", "visibly labeled unresolved details", "If output separation is ambiguous", "recheck the affected text", "neither factual support nor authorship", "grants no permission to publish", "No scanner, automatic model call, new ledger or publication gate"];

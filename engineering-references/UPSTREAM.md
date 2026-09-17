@@ -128,3 +128,11 @@ and recall, precision and unwanted-activation denominators. See
 [source selection and MIT notice](CALIPER_SOURCES.md) and caliper-provenance.json.
 No Caliper runtime, skill pack, model trial or automatic evaluation loop is adopted.
 Historical source identities and verification limits remain unchanged.
+
+## Optional OKF project knowledge bundles
+
+Original [knowledge-bundle guidance](references/knowledge-bundles.md) and a connected
+[fictional example](examples/okf/index.md) support explicit project handoffs without
+another memory system. See [source selection and rights](OKF_SOURCES.md) and
+okf-provenance.json. No upstream producer, viewer, executor, cloud dependency or
+model trial is installed. Historical pins, licenses and evidence remain unchanged.

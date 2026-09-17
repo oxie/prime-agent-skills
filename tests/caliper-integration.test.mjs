@@ -1,4 +1,5 @@
 // Local documentation/arithmetic/history checks; no upstream code or models.
+import {beforeOkfFile} from './helpers/okf-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,7 +8,7 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeOkfFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 const clauses=["existing call/spend budget", "Freeze the available skills and descriptions", "do not name the target skill", "Explicit invocation is a different question", "target, a neighbouring skill and work needing no skill", "Declare acceptable selections before observing results", "exact set only when the contract requires it", "candidate discovery, requested loading, successful content loading and subsequent instruction use", "path mention or attempted tool call alone does not prove successful loading", "separately from task-output and safety grades", "ten fully observed cases", "activation means successful content loading", "not one minus precision", "unmeasured, not zero", "missing or incomplete observations unknown", "report their counts and coverage", "confirmed silence or exact-set correctness", "not model trials, confidence bounds or measured improvement", "no new ledger, automatic testing, extra retries, installation or skill pruning", "zero or negative comparison is still a completed evaluation"];
