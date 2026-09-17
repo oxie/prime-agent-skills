@@ -1,3 +1,4 @@
+import {beforeEccFile} from './helpers/ecc-snapshot.mjs';
 import {beforeCollectionsFile} from './helpers/anti-slop-collections-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -50,10 +51,10 @@ test('direct source mapping preserves source pin, notices, baseline and live has
  assert.equal(p.repository,'https://github.com/addyosmani/agent-skills');
  assert.equal(p.sources.length,5);
  assert.deepEqual(p.files.map(f=>f.path).sort(),Object.values(docs).sort());
- for(const f of p.files)assert.equal(hash(beforeCollectionsFile(root,f.path)),f.sha256,f.path);
+ for(const f of p.files)assert.equal(hash(f.path==='engineering-references/references/contract-boundaries.md'?beforeEccFile(root,f.path):beforeCollectionsFile(root,f.path)),f.sha256,f.path);
  for(const s of p.sources){assert.match(s.sha256,/^[a-f0-9]{64}$/);assert.ok(s.url.includes(p.commit));assert.match(s.git_blob,/^[a-f0-9]{40}$/);}
  const core=JSON.parse(read('engineering-references/core-provenance.json'));
- for(const f of core.files){assert.equal(f.pre_addy_sha256,p.files.find(x=>x.path===`engineering-references/${f.path}`).previous_sha256);assert.equal(hash(read(`engineering-references/${f.path}`)),f.sha256);}
+ for(const f of core.files){assert.equal(f.pre_addy_sha256,p.files.find(x=>x.path===`engineering-references/${f.path}`).previous_sha256);assert.equal(hash(beforeEccFile(root,`engineering-references/${f.path}`)),f.sha256);}
  const license=read('engineering-references/licenses/addyosmani-MIT.txt');
  assert.equal(hash(license),p.license_sha256);
  assert.ok(read('ponytail/UPSTREAM.md').includes(license.trim()));

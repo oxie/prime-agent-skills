@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/affaan-m/ECC",
+  "commit": "8321021c54d670126ce3b2969d5deb880b4b0c2a",
+  "version": "2.2.1",
+  "selection": "Original optional contract-first collaboration workflow and fictional ticket cases; no upstream runtime or model-effectiveness claim.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+      "git_blob": "b832b6f642312312367c07688dc7426db40a82ed",
+      "url": "https://github.com/affaan-m/ECC/blob/8321021c54d670126ce3b2969d5deb880b4b0c2a/LICENSE"
+    },
+    {
+      "path": "skills/contract-first/SKILL.md",
+      "bytes": 9521,
+      "sha256": "dc23ee49437e4d914ea9a9e37eec0dfe59dc16b11fcbc3a6e5c72f25dbd3cc5c",
+      "git_blob": "508d90bcae7fe54395759804c0cf31025d90840f",
+      "url": "https://github.com/affaan-m/ECC/blob/8321021c54d670126ce3b2969d5deb880b4b0c2a/skills/contract-first/SKILL.md"
+    },
+    {
+      "path": "skills/ai-regression-testing/SKILL.md",
+      "bytes": 11659,
+      "sha256": "83f2f5c4083af5762dd658f742d4a390eb3a6f969d835f69e8f47efba296c127",
+      "git_blob": "e8dac65b1792ead1289090e3db0326ec00c26fbf",
+      "url": "https://github.com/affaan-m/ECC/blob/8321021c54d670126ce3b2969d5deb880b4b0c2a/skills/ai-regression-testing/SKILL.md"
+    }
+  ],
+  "previous": {
+    "references/contract-boundaries.md": {
+      "bytes": 13083,
+      "sha256": "fc3119b6040f6a5636594cdb440a76e53321828fc1a2d8965e18f66d43c1072f"
+    },
+    "UPSTREAM.md": {
+      "bytes": 7611,
+      "sha256": "44081cc96de9637327853d5846ce8d463b8fdcbef1c97675bfecb62ec9105ca0"
+    },
+    "SKILL.md": {
+      "bytes": 8834,
+      "sha256": "7c33875c8b8dcefa54e75fe59bb5fc653318cd2c0a3548cc827d89e87ddaa8bf"
+    }
+  },
+  "files": {
+    "references/contract-boundaries.md": {
+      "bytes": 17849,
+      "sha256": "b4f438f92ef0455c22d76b7073ab09645e4e51c7465961fe9fd11e911941d82f"
+    },
+    "UPSTREAM.md": {
+      "bytes": 8271,
+      "sha256": "e802d1d30089c4f8150e12e2675ebb0ea76959cbc30ee08be786b99148bf4f2d"
+    },
+    "ECC_SOURCES.md": {
+      "bytes": 4518,
+      "sha256": "ed956872d4e6bcc4f3431c3e6480d4fa97568027eedea7433d92acd11ecaca95"
+    }
+  }
+}

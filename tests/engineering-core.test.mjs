@@ -1,3 +1,4 @@
+import {beforeEccFile} from "./helpers/ecc-snapshot.mjs";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -59,7 +60,7 @@ test("source mappings, license copies and installed reference hashes",()=>{
  assert.equal(p.collection.commit,"bdfbf79ccaabdc31f60ce60ef1703a9abe95f9c3");
  assert.equal(p.sources.length,7);
  assert.deepEqual(p.files.map(x=>x.path).sort(),["references/contract-boundaries.md","references/release-dependencies.md"]);
- for(const f of [...p.files,...p.licenses])assert.equal(hash(read(f.path)),f.sha256,f.path);
+ for(const f of [...p.files,...p.licenses])assert.equal(hash(beforeEccFile(root,"engineering-references/"+f.path)),f.sha256,f.path);
  for(const f of p.files){assert.ok(f.sources.length>=3);assert.ok(read(f.path).includes("Modified for Prime"));}
  assert.ok(read("THIRD_PARTY.md").includes("Whxuan0701"));
  assert.ok(read("THIRD_PARTY.md").includes("Not a blanket MIT grant"));

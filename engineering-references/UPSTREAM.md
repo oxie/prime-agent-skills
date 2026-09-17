@@ -136,3 +136,13 @@ Original [knowledge-bundle guidance](references/knowledge-bundles.md) and a conn
 another memory system. See [source selection and rights](OKF_SOURCES.md) and
 okf-provenance.json. No upstream producer, viewer, executor, cloud dependency or
 model trial is installed. Historical pins, licenses and evidence remain unchanged.
+
+## Selected ECC contract-first collaboration
+
+The original optional [parallel contract workflow](references/contract-boundaries.md#optional-workflow-agree-the-contract-before-parallel-implementation)
+adds consumer/provider/approval ownership, one revision-bound artifact, derived
+parallel fixtures and serialized-response verification. Its fictional example
+separates nullable from optional and avoids vacuous parity checks. Existing
+reference bodies and historical source identities remain unchanged.
+See [source selection and rights](ECC_SOURCES.md) and ecc-provenance.json.
+No ECC installer, hooks, memory, runtime, generator or model workflow is adopted.
