@@ -95,3 +95,72 @@ complexity audit, Ponytail remains the owner; this comparison does not trigger a
 second mandatory review, automatic refactor or publication step.
 
 Source and adaptations: [MATTPOCOCK_SOURCES.md](../MATTPOCOCK_SOURCES.md).
+
+## Optional architecture compatibility check
+
+Use when independently built components share a boundary and the written decisions
+may allow incompatible interpretations. Reuse the existing design or plan; do not
+require a new architecture document or a review for every edit. Read the accepted
+product conditions, required supporting material, callers and code first. Existing
+higher-scope decisions stay binding; a conflict needs its rightful owner's resolution,
+not a silent local override. Code is evidence of current behavior, not proof that a
+bug or accidental convention is an approved requirement.
+
+Try to construct two implementations that obey every written decision yet disagree
+at the shared boundary: data meaning, ownership, state transitions, errors, permission
+timing or protocol semantics. Show the concrete pair and the consequence. If the pair
+violates an existing rule, it is an implementation defect, not a missing architecture
+decision. Fix or verify it through the existing authorized workflow.
+
+For a real gap, record the smallest binding decision in the current artifact:
+
+- **Binds:** which components, capability or boundary must agree.
+- **Prevents:** the specific incompatible choices and resulting failure.
+- **Rule:** the observable constraint both implementations must obey.
+
+Keep material rationale and evidence with the existing decision record; no parallel
+memory log. Recheck the pair against the tightened rule and preserve required
+real-boundary tests. Do not claim that a paper counterexample proves runtime behavior.
+If no consequential gap is supported, add no rule. Do not standardize harmless internal
+choices or turn the current stack, folder tree or library version into a permanent
+invariant. A deliberate deferral names why it is safe and when/whose decision is needed;
+an unresolved shared contract that blocks safe implementation is not safe to defer.
+
+### Connected fictional example: tenant audit export
+
+Continue the product-intent example from Unlazy: tenant isolation, required audit
+columns, deletion by seven days after creation, current access for each new download
+and no scheduled delivery are accepted in this hypothetical plan. The audit-field
+table remains required supporting material. None may disappear from a worker brief.
+
+A weak architecture note says only “Export access must be authorized.” Component A
+checks permission at generation and returns a storage URL that stays usable after
+revocation. Component B expects each new download to check current membership and
+role. Both can follow that weak note, but their timing choices conflict. A already
+violates the fuller product contract; the architectural gap is its missing propagation
+into the shared boundary, not permission to relax the product requirement.
+
+- **Binds:** export worker, download handler and storage delivery boundary.
+- **Prevents:** treating permission at generation or possession of a URL as permission
+  after revocation; leaking content across tenants or after expiry.
+- **Rule:** bind the export to its tenant and creation time. Each new download checks
+  the caller's current tenant membership and administrator role, export ownership
+  and expiry before releasing content. An issued storage URL must not bypass these
+  checks. Delete the generated file by creation time plus seven days; expiry denial
+  alone does not prove deletion.
+
+Under this rule, A's post-revocation URL is no longer compliant. The implementation
+must enforce the delivery boundary, not merely add a permission check to a UI button.
+This does not promise to erase bytes already delivered. Whether to abort an in-flight
+response is a separate product decision; do not infer that guarantee from “new download.”
+Defer helper names and storage-library internals to their implementation owners because
+they do not change this contract. Do not defer authorization timing or required columns.
+
+Proposed boundary checks: generate for tenant A; verify its expected rows/columns;
+attempt tenant B access and get no content; revoke A's caller before a new request and
+get no content, including through any issued URL; at expiry verify denial and actual
+file deletion. Use controlled fixtures and the intended running revision. Link these
+checks to the existing product gates; do not add a separate architecture tracker.
+These are illustrative checks, not executed results or measured agent effectiveness.
+
+Selected source and rights: [BMAD_SOURCES.md](../BMAD_SOURCES.md).

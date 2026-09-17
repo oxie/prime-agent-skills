@@ -1,6 +1,6 @@
 ---
 name: unlazy
-description: Guides completion discipline for substantial agent work by writing acceptance gates before execution, decomposing work with the Depth Tree, running approved checks, and re-verifying evidence before reporting. Use when an agent faces a long or multi-part task, work that has returned half-done, an exhaustive audit or build, parallel leaves or pipelines, decision-to-verification handoffs, or explicit triggers such as /unlazy, $unlazy, "tree N", "gates", and "do not stop until it is done".
+description: Guides completion discipline for substantial agent work by writing acceptance gates before execution, decomposing work with the Depth Tree, running approved checks, and re-verifying evidence before reporting. Use when an agent faces a long or multi-part task, work that has returned half-done, an exhaustive audit or build, parallel leaves or pipelines, decision-to-verification handoffs, shaping rough product intent, or explicit triggers such as /unlazy, $unlazy, "tree N", "gates", and "do not stop until it is done".
 license: MIT
 metadata:
   version: 2.1.0-prime.2
@@ -150,3 +150,11 @@ When review decisions change a substantial task or QA must connect a finding to 
 fix, read [decision-to-verification handoffs](references/decision-verification.md).
 Carry accepted conditions into the existing plan and repeat the actual failing
 path against the intended revision. No new ledger or runtime is required.
+
+## Rough product intent
+
+When a feature request is too rough to build or test without guessing, or a brief
+must preserve consequential detail from several sources, read
+[product-intent shaping](references/product-intent.md). Reuse the existing plan;
+keep accepted requirements, assumptions, exclusions and required supporting material
+distinct. Skip this optional aid for a clear bug fix or an already sufficient brief.

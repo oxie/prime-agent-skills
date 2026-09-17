@@ -1,0 +1,112 @@
+{
+  "repository": "https://github.com/bmad-code-org/BMAD-METHOD",
+  "commit": "0a00053409731db811f2595ceb521dff9dde9a19",
+  "sampled_module_version": "6.13.0-next",
+  "adaptation": "Original optional Prime planning guidance. No upstream runtime execution or measured agent-effectiveness claim.",
+  "sources": [
+    {
+      "path": "skills/bmad-architecture/SKILL.md",
+      "ranges": [
+        [
+          9,
+          35
+        ]
+      ],
+      "bytes": 13939,
+      "sha256": "2c3401fe79e33fc12189f69d3f370db5390b12ae610ff8a14ea3b05bcd263e38",
+      "git_blob": "d8444c5d348816f5e4172b7137fe23a4b33c4a60",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/blob/0a00053409731db811f2595ceb521dff9dde9a19/skills/bmad-architecture/SKILL.md"
+    },
+    {
+      "path": "skills/bmad-architecture/assets/spine-template.md",
+      "ranges": [
+        [
+          24,
+          40
+        ],
+        [
+          52,
+          79
+        ]
+      ],
+      "bytes": 4357,
+      "sha256": "ef4ff795624eb5439fae54a06edb389feb5a0cf79cb01ae007af51109335d198",
+      "git_blob": "56329f4838e97adce4c8971d8e53e25e8df18892",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/blob/0a00053409731db811f2595ceb521dff9dde9a19/skills/bmad-architecture/assets/spine-template.md"
+    },
+    {
+      "path": "skills/bmad-architecture/customize.toml",
+      "ranges": [
+        [
+          87,
+          101
+        ]
+      ],
+      "bytes": 6335,
+      "sha256": "e9c5f75bd6605199f3908d6a1f013d6b42fb12b6f35c9a5e13a44f7f872b7b79",
+      "git_blob": "b8867733fd146b95b66b4c846ce07fab82e24a7a",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/blob/0a00053409731db811f2595ceb521dff9dde9a19/skills/bmad-architecture/customize.toml"
+    },
+    {
+      "path": "LICENSE",
+      "ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "bytes": 1572,
+      "sha256": "0aa79baf6328b4a1e694ce10a12ffc36d7666554da128dff0e8fcda0fc536a66",
+      "git_blob": "557212d307dbed13aa72e8f158c9e4a626a3243a",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/blob/0a00053409731db811f2595ceb521dff9dde9a19/LICENSE"
+    },
+    {
+      "path": "TRADEMARK.md",
+      "ranges": [
+        [
+          1,
+          55
+        ]
+      ],
+      "bytes": 2805,
+      "sha256": "ce57ad749e43277c6021e5d5085980b33c9bf8f67a070bbbf07e041ccdddc58b",
+      "git_blob": "e6ae5784827ee30a0c728e438efa9fbacdac23f2",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/blob/0a00053409731db811f2595ceb521dff9dde9a19/TRADEMARK.md"
+    },
+    {
+      "path": "CONTRIBUTORS.md",
+      "ranges": [
+        [
+          1,
+          32
+        ]
+      ],
+      "bytes": 1331,
+      "sha256": "1f0d0736ff06fcea2c504834b9d13196f37ca57fae5cf9054899dcec4ed36ad4",
+      "git_blob": "f36cc81fb2b54e554282b850c800898aa21ee7b7",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/blob/0a00053409731db811f2595ceb521dff9dde9a19/CONTRIBUTORS.md"
+    }
+  ],
+  "files": {
+    "SKILL.md": {
+      "bytes": 9420,
+      "sha256": "b1dc343c0cb25c98235c2011ac37053f50323856d7f740391d3a3c8678b33f3a"
+    },
+    "UPSTREAM.md": {
+      "bytes": 9181,
+      "sha256": "2ed1831e3761a7d21e148d0363ce8ae05b7c8ca3a8a8297c94c6e6dc514803ab"
+    },
+    "BMAD_SOURCES.md": {
+      "bytes": 2880,
+      "sha256": "83cc3f554a93665a2065d40f755fdfa9d78ec0dc241a99356caf042976df72bc"
+    },
+    "licenses/bmad-MIT.txt": {
+      "bytes": 1572,
+      "sha256": "0aa79baf6328b4a1e694ce10a12ffc36d7666554da128dff0e8fcda0fc536a66"
+    },
+    "references/interface-design.md": {
+      "bytes": 10493,
+      "sha256": "6fd122f55c2b26a928c99fd0c7626c1cf64afbc7f0934ba0025bb525f611c03c"
+    }
+  }
+}

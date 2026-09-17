@@ -9,7 +9,7 @@ description: >
   dependencies or running-revision evidence, API object/tenant authorization and
   denied-write tests, result-preserving SQL diagnosis, or operator-led telemetry
   evidence, exact-symptom debugging, independent test oracles, interface design
-  comparisons, domain terminology and material decision records, portable project knowledge bundles, stochastic agent
+  comparisons and architecture compatibility, domain terminology and material decision records, portable project knowledge bundles, stochastic agent
   evaluation, developer onboarding/first-value journeys, or trust-boundary threat modeling. Not a mandatory
   coding rulebook, routine cleanup pass, or deployment tool.
 license: "MIT for original wrapper/book references; CC-BY-4.0, MIT and Apache-2.0 for selected adaptations (see THIRD_PARTY.md)"
@@ -61,6 +61,8 @@ Read only the reference matching the main risk, not every reference by default:
   slices and observation points while retaining meaningful side-effect coverage.
 - [Interface design](references/interface-design.md): compare real alternatives
   under the same caller contracts; preserve necessary adapters and migration evidence.
+  When independent components may interpret shared decisions differently, use its
+  optional architecture compatibility counterexample to tighten only real gaps.
 - [Domain modeling](references/domain-modeling.md): resolve ambiguous terms against
   scenarios/code and record accepted meanings or material decisions at existing owners.
 

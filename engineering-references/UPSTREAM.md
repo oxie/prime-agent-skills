@@ -154,3 +154,11 @@ traces setup, useful success, errors, recovery and upgrades with explicit eviden
 coverage. See [selected source and rights](GSTACK_SOURCES.md) and
 gstack-provenance.json. No gstack runtime, install, browser authority, scores or
 simulated measurements are adopted. Earlier source identities remain unchanged.
+
+## Selected BMAD planning concepts
+
+Original optional [focused planning guidance](references/interface-design.md) adapts selected
+product-preservation or cross-component compatibility ideas, not the upstream workflow.
+See [source selection and rights](BMAD_SOURCES.md) and bmad-provenance.json. No BMAD
+runtime, memlog, mandatory PRD, architecture ceremony, installer, hook or automatic
+revert is adopted. Previous source identities and execution contracts are unchanged.

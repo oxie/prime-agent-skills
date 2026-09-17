@@ -21,13 +21,13 @@ const mattReferences=["debugging.md","domain-modeling.md","interface-design.md",
 const superReferences=["agent-evaluation.md","threat-modeling.md"];
 const references=[...expected.map(p=>path.basename(p)),"contract-boundaries.md","release-dependencies.md","api-authorization.md","sql-diagnosis.md","telemetry-evidence.md","commerce.md","recovery-planning.md","retrieval-contracts.md","knowledge-bundles.md","developer-first-value.md",...mattReferences,...superReferences];
 const inventory={
- ".":["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json","ADDY_SOURCES.md","addy-provenance.json","MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json","SUPERPOWERS_SOURCES.md","superpowers-provenance.json","RAMPSTACK_SOURCES.md","rampstack-provenance.json","WEKNORA_SOURCES.md","weknora-provenance.json","WIKISKILL_SOURCES.md","wikiskill-provenance.json","COLEAM00_SOURCES.md","coleam00-provenance.json","RETICLE_SOURCES.md","reticle-provenance.json","OUROBOROS_SOURCES.md","ouroboros-provenance.json","CALIPER_SOURCES.md","caliper-provenance.json","OKF_SOURCES.md","okf-provenance.json","ECC_SOURCES.md","ecc-provenance.json","GSTACK_SOURCES.md","gstack-provenance.json","examples"],
+ ".":["LICENSE","SKILL.md","UPSTREAM.md","provenance.json","references","THIRD_PARTY.md","core-provenance.json","licenses","NEXT_SOURCES.md","next-provenance.json","ADDY_SOURCES.md","addy-provenance.json","MATTPOCOCK_SOURCES.md","mattpocock-provenance.json","SUPER_SKILLS_SOURCES.md","super-skills-provenance.json","SUPERPOWERS_SOURCES.md","superpowers-provenance.json","RAMPSTACK_SOURCES.md","rampstack-provenance.json","WEKNORA_SOURCES.md","weknora-provenance.json","WIKISKILL_SOURCES.md","wikiskill-provenance.json","COLEAM00_SOURCES.md","coleam00-provenance.json","RETICLE_SOURCES.md","reticle-provenance.json","OUROBOROS_SOURCES.md","ouroboros-provenance.json","CALIPER_SOURCES.md","caliper-provenance.json","OKF_SOURCES.md","okf-provenance.json","ECC_SOURCES.md","ecc-provenance.json","GSTACK_SOURCES.md","gstack-provenance.json","BMAD_SOURCES.md","bmad-provenance.json","examples"],
  references,
  examples:["okf"],
  "examples/okf":["index.md","scope.md","definitions","policies"],
  "examples/okf/definitions":["index.md","active-workspace.md","active-workspace-legacy.md"],
  "examples/okf/policies":["index.md","activity.md"],
- licenses:["AAS-LICENSE-CONTENT.txt","Apache-2.0.txt","CC-BY-4.0.txt","addyosmani-MIT.txt","operating-kit-MIT.txt","stareezy-1-MIT.txt","mattpocock-MIT.txt","super-skills-MIT.txt","superpowers-MIT.txt","rampstack-MIT.txt","gstack-MIT.txt"],
+ licenses:["AAS-LICENSE-CONTENT.txt","Apache-2.0.txt","CC-BY-4.0.txt","addyosmani-MIT.txt","operating-kit-MIT.txt","stareezy-1-MIT.txt","mattpocock-MIT.txt","super-skills-MIT.txt","superpowers-MIT.txt","rampstack-MIT.txt","gstack-MIT.txt","bmad-MIT.txt"],
 };
 for(const [dir,names] of Object.entries(inventory)){
  assert.deepEqual(fs.readdirSync(path.join(skill,dir)).sort(),[...names].sort(),`Reviewed inventory: ${dir}`);
@@ -99,7 +99,7 @@ assert.throws(()=>checkScope(text.replace("not every reference by default","ever
 assert.throws(()=>checkScope(text.replace("instructions take priority","instructions are optional")));
 assert.throws(()=>checkScope(text.replace("A review is read-only unless edits are authorized","A review always edits")));
 assert.throws(()=>checkScope(text.replace("Preserve required real-boundary tests","Skip real-boundary tests")));
-for(const doc of ["SKILL.md","UPSTREAM.md","MATTPOCOCK_SOURCES.md","SUPER_SKILLS_SOURCES.md","SUPERPOWERS_SOURCES.md","COLEAM00_SOURCES.md","RETICLE_SOURCES.md","GSTACK_SOURCES.md",...references.map(name=>`references/${name}`)]){
+for(const doc of ["SKILL.md","UPSTREAM.md","MATTPOCOCK_SOURCES.md","SUPER_SKILLS_SOURCES.md","SUPERPOWERS_SOURCES.md","COLEAM00_SOURCES.md","RETICLE_SOURCES.md","GSTACK_SOURCES.md","BMAD_SOURCES.md",...references.map(name=>`references/${name}`)]){
  for(const m of read(doc).matchAll(/\[[^\]]*\]\(([^)]+)\)/g)){
   if(/^https?:/.test(m[1]) || m[1].startsWith("#"))continue;
   const target=path.resolve(skill,path.dirname(doc),m[1].split("#")[0]);

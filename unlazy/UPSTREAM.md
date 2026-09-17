@@ -56,3 +56,11 @@ connects accepted obligations, plan identity, reproduction and same-action retes
 It does not change gate digests, approval logic, scripts, templates or execution
 permissions. See [selected source and rights](GSTACK_SOURCES.md) and
 gstack-provenance.json. Earlier source identities remain historical and unchanged.
+
+## Selected BMAD planning concepts
+
+Original optional [focused planning guidance](references/product-intent.md) adapts selected
+product-preservation or cross-component compatibility ideas, not the upstream workflow.
+See [source selection and rights](BMAD_SOURCES.md) and bmad-provenance.json. No BMAD
+runtime, memlog, mandatory PRD, architecture ceremony, installer, hook or automatic
+revert is adopted. Previous source identities and execution contracts are unchanged.
