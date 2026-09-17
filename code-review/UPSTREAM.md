@@ -31,3 +31,13 @@ unrelated owner content. No runtime installation or settings cleanup is needed.
 See [SUPERPOWERS_SOURCES.md](SUPERPOWERS_SOURCES.md) for the exact pin, MIT notice,
 selected mechanisms and local exclusions. This is an extension under the existing
 owner, not installation of an upstream process bundle or evidence of measured gains.
+
+## Original reviewer-to-author example after Claudex Loop review
+
+The existing feedback reference gains one optional original role-transition example:
+a reviewer who makes an authorized fix becomes an author of that delta. Preserve
+revision-specific coverage and disclose mixed authorship or missing independent
+review where required. See [source selection and rights](CLAUDEX_SOURCES.md) and
+claudex-provenance.json. No provider runner, router, new skill, model call, mandatory
+review round or global policy is included. Prior sources, rights and hashes remain
+historical; the entry point is unchanged.

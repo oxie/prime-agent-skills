@@ -1,0 +1,60 @@
+{
+  "repository": "https://github.com/chaseai-yt/claudex-loop",
+  "commit": "8cf5e2c1771c5151d90c12642391d0ba8fa71b0e",
+  "adaptation": "Original optional reviewer-to-author example; no runtime or upstream substantial prose/code copied; checks are not model effectiveness.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1384,
+      "sha256": "711b64801cb8eef29f2083c0a9e0fb2e1abdb35135b642c0945354da509258a0",
+      "git_blob": "46ef040ee13f5999440f7f6b66e6ec1f94d97d11",
+      "upstream_mode": "100644",
+      "url": "https://github.com/chaseai-yt/claudex-loop/blob/8cf5e2c1771c5151d90c12642391d0ba8fa71b0e/LICENSE"
+    },
+    {
+      "path": "skills/claudex-loop/SKILL.md",
+      "bytes": 9411,
+      "sha256": "74fae65905fc9425cbf7c4c406b0a688cc114ff4e60acd7fb52f15061db1ad83",
+      "git_blob": "b9dc4e34d395fd6a4346b5b3f0ce7869ad0942d9",
+      "upstream_mode": "100644",
+      "url": "https://github.com/chaseai-yt/claudex-loop/blob/8cf5e2c1771c5151d90c12642391d0ba8fa71b0e/skills/claudex-loop/SKILL.md"
+    },
+    {
+      "path": "skills/claudex-loop/references/build.md",
+      "bytes": 4693,
+      "sha256": "1704b0f29b6c07ec374e8f2c9b33149d4bff6ecc705652a545647208b20a1015",
+      "git_blob": "77dadbbeba307676f93a85eaa0dde4d4e67a274e",
+      "upstream_mode": "100644",
+      "url": "https://github.com/chaseai-yt/claudex-loop/blob/8cf5e2c1771c5151d90c12642391d0ba8fa71b0e/skills/claudex-loop/references/build.md"
+    },
+    {
+      "path": "skills/codex-build/SKILL.md",
+      "bytes": 2109,
+      "sha256": "7ac9432d5662d3e65e61642dbf33ff2bcdfa3078c2dc91246a1ad0af3cf930b8",
+      "git_blob": "1d0cf01be9b50d203990790489e2671d95ca748b",
+      "upstream_mode": "100644",
+      "url": "https://github.com/chaseai-yt/claudex-loop/blob/8cf5e2c1771c5151d90c12642391d0ba8fa71b0e/skills/codex-build/SKILL.md"
+    }
+  ],
+  "unchanged": {
+    "code-review/SKILL.md": "9c74128df4eb7659eb6000ba45d68f1db86fd2826f25dbad55e5522b811249cc",
+    "code-review/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "code-review/superpowers-provenance.json": "22b234fc360641d0cdbdf2f982ab733625ba569180e5132763b1c7dad759f425",
+    "code-review/mattpocock-provenance.json": "9eca48a949ab90ffbf1c09ee100837cb0751fc2e9abeff8bd5872dce67269a79",
+    "code-review/references/scope.md": "5d36392696aa25eb94d4311ab3fd385d916289c736b5a9b811eaf11a34a26e79"
+  },
+  "files": {
+    "code-review/references/receiving-feedback.md": {
+      "bytes": 4637,
+      "sha256": "580b4707896ddc2a480d2dffacf547fd38e421c174f69d2d44779218910c8bf9"
+    },
+    "code-review/UPSTREAM.md": {
+      "bytes": 2625,
+      "sha256": "978c028d249398703b011a694cf7275c9a0efe1031c7194bc2d545aef678ec92"
+    },
+    "code-review/CLAUDEX_SOURCES.md": {
+      "bytes": 3794,
+      "sha256": "838568b3bdc510ac225ea16fc60c49c83e96965f8141f9102317f31ab1a1c387"
+    }
+  }
+}

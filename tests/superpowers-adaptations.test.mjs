@@ -1,6 +1,7 @@
+import {beforeClaudexFile} from './helpers/claudex-snapshot.mjs';
 import {beforeRampstackFile} from './helpers/rampstack-snapshot.mjs';
 import {beforeConceptReuseFile} from './helpers/concept-reuse-snapshot.mjs';
-const historicalFile=(root,p)=>p.startsWith('task-observer/')?beforeConceptReuseFile(root,p):beforeRampstackFile(root,p);
+const historicalFile=(root,p)=>p.startsWith('code-review/')?beforeClaudexFile(root,p):p.startsWith('task-observer/')?beforeConceptReuseFile(root,p):beforeRampstackFile(root,p);
 // Mechanical contracts and native metadata only. No models, providers or efficacy claims.
 import test from 'node:test';
 import assert from 'node:assert/strict';

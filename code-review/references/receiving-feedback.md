@@ -40,3 +40,36 @@ For a requested draft reply, keep it tied to the comment and evidence. Sending t
 reply needs separate applicable authorization; drafting is not publication.
 
 Source and modifications: [selected Superpowers guidance](../SUPERPOWERS_SOURCES.md).
+
+## Optional example: the reviewer becomes an author
+
+Use this example when an authorized fix changes who wrote the work under review.
+It does not require another review for every edit or authorize implementation.
+
+Fictional case: author A implements an import limit. Reviewer B checks revision R1
+and finds that the limit is applied after a write. With permission to fix it, B
+moves the check before the write, producing R2. B is now an author of that delta,
+not just its reviewer. B's R1 review cannot cover the R2 fix, and B's own check of
+that fix is self-review, not independent review. A passing regression test helps
+verify behavior; it does not change who authored or reviewed the fix.
+
+Recheck the actual final changes, relevant callers and affected proof checks. Bind
+review evidence to those bytes and the stated scope, not merely the role label or
+latest report. Retain earlier coverage only where it still applies; unchanged lines
+can behave differently after a shared check moves. Do not discard valid evidence
+or claim the entire result was independently reviewed because one part was.
+
+Where the task requires independent review, have a reviewer who did not author the
+fix inspect the final delta and its interactions. With mixed authorship, state who
+wrote and reviewed each relevant part. A may review B's fix but that does not make
+A's own implementation independently reviewed. A fresh session or different provider
+alone is not evidence that the required scope was independently checked. There is
+no mandatory provider switch.
+
+Use existing authorized review resources and budgets. If required independent
+coverage is unavailable or the budget is exhausted, disclose the gap and any needed
+user decision rather than claiming approval or launching extra calls. If independent
+review is not required, report the checks actually performed without inventing that
+requirement. Keep authorization to fix, commit or publish separate from review status.
+This example adds no new ledger, model call, runtime or automatic review loop.
+See [source selection and limits](../CLAUDEX_SOURCES.md).
