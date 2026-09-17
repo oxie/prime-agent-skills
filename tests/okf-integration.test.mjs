@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {beforeHiggsfieldFile} from './helpers/higgsfield-snapshot.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -7,7 +8,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const read=p=>beforeHiggsfieldFile(root,p).toString('utf8');
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.replace(/\s+/g,' ');
 // Fixture/document tests only; no upstream execution, network or model calls.

@@ -1,6 +1,6 @@
 ---
 name: image
-description: "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI image generation,' 'generate an image,' 'create a graphic,' 'product mockup,' 'hero image,' 'social media graphic,' 'banner image,' 'cover photo,' 'profile banner,' 'listing screenshot,' 'Flux,' 'Flux Kontext,' 'Midjourney,' 'DALL-E,' 'GPT Image,' 'ChatGPT Images,' 'Ideogram,' 'Gemini image,' 'Nano Banana,' 'Recraft,' 'Stable Diffusion,' 'Canva,' 'Figma,' 'image optimization,' 'compress images,' 'WebP,' or 'OG image.' Use this for general-purpose marketing image creation and optimization. For paid ad image creative and platform-specific ad specs, see ad-creative. For video production, see video."
+description: "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI image generation,' 'Higgsfield,' 'generate an image,' 'create a graphic,' 'product mockup,' 'hero image,' 'social media graphic,' 'banner image,' 'cover photo,' 'profile banner,' 'listing screenshot,' 'Flux,' 'Flux Kontext,' 'Midjourney,' 'DALL-E,' 'GPT Image,' 'ChatGPT Images,' 'Ideogram,' 'Gemini image,' 'Nano Banana,' 'Recraft,' 'Stable Diffusion,' 'Canva,' 'Figma,' 'image optimization,' 'compress images,' 'WebP,' or 'OG image.' Use this for general-purpose marketing image creation and optimization. For paid ad image creative and platform-specific ad specs, see ad-creative. For video production, see video."
 metadata:
   version: 2.0.1
 ---
@@ -350,3 +350,12 @@ For new or explicitly requested identity exploration, use [identity concepts](re
 ## Approved-logo production and delivery
 
 For requested refinement or delivery of an approved logo, read [logo delivery](references/logo-delivery.md). Verify the actual master, exports, rights and handoff; this does not authorize redesign, generation or publication.
+
+## Connected website assets and Higgsfield
+
+For a requested family of website stills and clips, read
+[connected website assets](references/website-asset-workflow.md): shared direction,
+reference roles, connected prompts, bounded production and an original worked pack.
+Use the [Higgsfield guide](../../tools/integrations/higgsfield.md) only when that
+provider is selected. Prompt-only work is valid; no account, upload, paid job or
+website-platform switch is implied.

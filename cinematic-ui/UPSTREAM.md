@@ -86,3 +86,11 @@ scroll-world-provenance.json. Existing static, input and lifecycle contracts rem
 unchanged. No upstream engine, generation pipeline, provider, new skill, mandatory
 rendering round or global policy is included. Earlier pins and payload hashes remain
 historical; the skill entry point and routing are unchanged.
+
+## Higgsfield asset-owner handoff
+
+The optional Image/Video handoff in SKILL.md connects page placement and static
+meaning to asset production without adopting Higgsfield's hosted website defaults.
+This is original routing prose, not an imported renderer or provider client.
+No Cinematic UI reference/runtime, framework, license or historical pin changes.
+See [source boundary](HIGGSFIELD_SOURCES.md).

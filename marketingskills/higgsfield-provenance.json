@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-17",
+  "adaptation": "original connected guidance and fictional document-only pack; no upstream execution code",
+  "sources": [
+    {
+      "repository": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "commit": "c0b73ab946df6658cca513db78bdc3909a655bfd",
+      "path": "LICENSE",
+      "bytes": 1069,
+      "sha256": "e6e9bc83882789dc73f010553e36a138289b4ad6e8cf01ef8a063bc99e0dd4e7",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "commit": "c0b73ab946df6658cca513db78bdc3909a655bfd",
+      "path": "SKILL.md",
+      "bytes": 32070,
+      "sha256": "584620175fa499d957f263a4bd7e6b5796ceec7f9934d7d8cd418e1358c23ad5",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "commit": "c0b73ab946df6658cca513db78bdc3909a655bfd",
+      "path": "skills/higgsfield-prompt/SKILL.md",
+      "bytes": 42035,
+      "sha256": "612dc278e44145155f932989b2294c810da8971ed3591feb318c3422879008c1",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "commit": "c0b73ab946df6658cca513db78bdc3909a655bfd",
+      "path": "skills/higgsfield-shotlist-director/SKILL.md",
+      "bytes": 23284,
+      "sha256": "692401d8685bfecc0b96377898b5bc7ce54ef8d6a257c49ff218d6c81a4e175b",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "commit": "c0b73ab946df6658cca513db78bdc3909a655bfd",
+      "path": "skills/higgsfield-pipeline/SKILL.md",
+      "bytes": 51186,
+      "sha256": "229d4cba3cb187e094939e8e3cf609ad76b6a26f0604af67ef60ceb2cd68db66",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "commit": "c0b73ab946df6658cca513db78bdc3909a655bfd",
+      "path": "skills/higgsfield-gpt-image-2/reference-sheet-workflow.md",
+      "bytes": 16979,
+      "sha256": "3ee4d3c16475f7fb08699afbcdf6234af32f85e2cc246ba66d87eeb2f5ffaf56",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/OSideMedia/higgsfield-ai-prompt-skill",
+      "commit": "c0b73ab946df6658cca513db78bdc3909a655bfd",
+      "path": "skills/higgsfield-stack/SKILL.md",
+      "bytes": 20801,
+      "sha256": "854bd68e74210f8b93cf8b8233f7474234d9a4bfefd0f285df9a9fccf622b3f9",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "9da656d6226936542be59478dbf775057dfdeade2629d35e0832108c2b7aecc0",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "VERSION",
+      "bytes": 7,
+      "sha256": "8a932413d42f95082f8323447652379a4885e328329efca3a67ec9c793c09940",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-generate/SKILL.md",
+      "bytes": 25012,
+      "sha256": "1bdfd5c907f89ccd561816dbb42e31614b08102b2584fba88760b612ee5236f6",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-product-photoshoot/SKILL.md",
+      "bytes": 9438,
+      "sha256": "139c38f3b8a33a4ef37a1066850e4bcddc0976b4143cc6ea0c3b7ad9de3b3b9e",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-soul-id/SKILL.md",
+      "bytes": 3378,
+      "sha256": "1ce57e956e412a4dc9134683bd53a084643c5339a532899a8de5f944e76ef8ef",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-video-explainer/SKILL.md",
+      "bytes": 12533,
+      "sha256": "aef0cd18d919818996cd63a993443fe527627af4a463cb887e6cdf127c36ef09",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-brandkit/SKILL.md",
+      "bytes": 12693,
+      "sha256": "614a3abe1a0ea52f16d04d191959ab1823a8bf4712f67e2ea77ad53a750d4c4b",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-brandkit/references/handoff.md",
+      "bytes": 3839,
+      "sha256": "a3cfb4e23e94954d21659e07a335acecc490accf0ab3e9426584d3c4b41fba31",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-websites/SKILL.md",
+      "bytes": 14951,
+      "sha256": "67951a933e90cb9d42037cc50e84a35a3400dd8b60af4769579e05c9b55f39be",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-websites/references/asset-system.md",
+      "bytes": 13569,
+      "sha256": "366f8b04fae6038c7a6651d6ba36161097e6b2edfc1d97260ae7a33a1878f05d",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    },
+    {
+      "repository": "https://github.com/higgsfield-ai/skills",
+      "commit": "d071406147a37b835bed09543d85ab3e9bd85c7d",
+      "path": "higgsfield-websites/references/scroll-scrub.md",
+      "bytes": 20339,
+      "sha256": "06b7b97e9b0916904fffa5a069301158a60835d3e446661c97c158368b5a120d",
+      "coverage": "selected mechanism/source review; full and selected reading details retained in review artifacts"
+    }
+  ],
+  "primary_sources": {
+    "higgsfield-privacy": {
+      "url": "https://higgsfield.ai/privacy-policy",
+      "final_url": "https://higgsfield.ai/privacy-policy",
+      "status": 200,
+      "bytes": 201346,
+      "sha256": "a48b425c22c55490bfb566e3dcfbebf94b324510f30ee618715d6f908fdb5d20",
+      "coverage": "selected passages, not legal review"
+    },
+    "higgsfield-terms-canonical": {
+      "url": "https://higgsfield.ai/terms-of-use-agreement",
+      "status": 200,
+      "bytes": 268269,
+      "sha256": "e7e36d70dbe270803ac874da0504724dcd3ae306103f5e56613f2e8672f008dd",
+      "coverage": "selected ownership/license/training/commercial clauses, not legal review"
+    }
+  },
+  "limits": [
+    "source-only upstream review",
+    "no model efficacy or live CLI compatibility evidence",
+    "no media delivered",
+    "full Brandkit and hosted website/app runtime deferred"
+  ]
+}

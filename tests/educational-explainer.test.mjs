@@ -1,3 +1,4 @@
+import {beforeHiggsfieldFile} from './helpers/higgsfield-snapshot.mjs';
 import {beforeSlopMonsterFile} from './helpers/slopmonster-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -55,7 +56,7 @@ test('exact pre-integration bytes, metadata and safety survive; unknown mutation
   const b=beforeSlopMonsterFile(root,p);assert.equal(sha(b),r.current);
   const prev=beforeExplainerFile(root,p);assert.equal(sha(prev),r.previous);
   assert.equal(sha(beforeHuashuFile(root,p)),huashuTransitions[p].previous);
-  if(p===video){assert.equal(read(p).split('---',3)[1],prev.toString().split('---',3)[1]);
+  if(p===video){assert.equal(beforeHiggsfieldFile(root,p).toString().split('---',3)[1],prev.toString().split('---',3)[1]);
    const safety=s=>s.split('\n').find(l=>l.startsWith('> **Prime safety:'));
    assert(safety(read(p)));assert.equal(safety(read(p)),safety(prev.toString()));}
   const f=path.join(tmp,p);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,b);assert.equal(sha(beforeExplainerFile(tmp,p)),r.previous);

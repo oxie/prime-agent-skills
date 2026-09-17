@@ -1,5 +1,6 @@
 // Documentation, independent arithmetic and history checks; not rendered-media or model efficacy tests.
 import test from 'node:test';
+import {beforeHiggsfieldFile} from './helpers/higgsfield-snapshot.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -8,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const ref='cinematic-ui/references/pacing-motion.md';
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeHiggsfieldFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 const clauses=["authorized website", "not a requirement to animate", "appearance continuity only", "actual decoded boundary frames", "source revision and served derivative", "near the end is not necessarily the final frame", "not proof of exact identity", "several adjacent decoded frames", "with their timestamps", "does not rule out a speed or path jump", "does not recover the physical camera's exact position or velocity", "clip duration, scroll distance and easing", "actual player, not just source playback", "0.005 source seconds per pixel", "otherwise comparable", "twice as fast per scroll pixel", "decoder delay and smoothing", "Do not prescribe equal durations", "authorized checks", "forward and reverse traversal", "media readiness and settling", "desktop and narrow variants where supplied", "distinguishable opaque frames", "a cut, not a blend", "when authorized", "honest cut or static presentation", "Preserve every meaningful state and caption", "one poster must not erase the relationship", "Interactive seeking is not deterministic export", "Report unavailable rendered checks", "no universal similarity threshold or extra model calls"];

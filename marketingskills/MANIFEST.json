@@ -154,7 +154,7 @@
       "name": "image",
       "version": "2.0.1",
       "path": "skills/image",
-      "sha256": "e9a7ef0fe3d595a3fe03c251cb11a484b9707e921ae036f14b7a1c15b72145c4"
+      "sha256": "cc4a04353092f3289d1ab183a06694b11acac6282b90124bfc52063706d59665"
     },
     {
       "name": "influencer-marketing",
@@ -316,7 +316,7 @@
       "name": "video",
       "version": "2.1.0",
       "path": "skills/video",
-      "sha256": "4e910ed2dd83c2470a44db79cf594c069e91fd8d511dfc8e07988fc02a2c5892"
+      "sha256": "96a39d5fde8cdc29311fd95970a1e0ceac822ab980c3c8672ecff8d390fa8a2b"
     }
   ],
   "hash_algorithm": "SHA-256 over files sorted by skill-relative POSIX path: UTF-8 relative path + NUL + exact file bytes + NUL, repeated for every regular file in each skill directory.",

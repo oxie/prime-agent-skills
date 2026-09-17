@@ -1,0 +1,150 @@
+{
+  "example": "fictional-documentation-only",
+  "project": "luma-desk",
+  "revision": "pack-r1",
+  "media_present": false,
+  "provider": null,
+  "authorization": {
+    "upload": false,
+    "generate": false,
+    "paid_attempt_limit": 0,
+    "deploy": false
+  },
+  "references": [
+    {
+      "id": "object-front",
+      "revision": "r1",
+      "evidence": "hypothetical",
+      "role": "visible-identity",
+      "excludes": [
+        "unseen-geometry",
+        "performance-claims"
+      ]
+    },
+    {
+      "id": "look-board",
+      "revision": "r1",
+      "evidence": "hypothetical",
+      "role": "light-and-composition",
+      "excludes": [
+        "identity",
+        "text",
+        "semantics"
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "id": "S1",
+      "prompt_revision": "r1",
+      "kind": "still",
+      "depends_on": [
+        "object-front",
+        "look-board"
+      ],
+      "status": "planned"
+    },
+    {
+      "id": "V1",
+      "prompt_revision": "r1",
+      "kind": "video",
+      "depends_on": [
+        "S1"
+      ],
+      "requested_duration_seconds": 6,
+      "status": "planned"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "hero-wide",
+      "depends_on": [
+        "S1"
+      ],
+      "proposed_path": "assets/luma-wide.webp",
+      "status": "planned",
+      "approval": "unperformed",
+      "inspection": "unperformed"
+    },
+    {
+      "id": "hero-narrow",
+      "depends_on": [
+        "S1"
+      ],
+      "proposed_path": "assets/luma-narrow.webp",
+      "status": "planned",
+      "approval": "unperformed",
+      "inspection": "unperformed"
+    },
+    {
+      "id": "hero-film",
+      "depends_on": [
+        "V1"
+      ],
+      "proposed_path": "assets/luma.mp4",
+      "status": "planned",
+      "approval": "unperformed",
+      "inspection": "unperformed"
+    },
+    {
+      "id": "film-poster",
+      "depends_on": [
+        "hero-film"
+      ],
+      "proposed_path": "assets/luma-poster.webp",
+      "status": "planned",
+      "approval": "unperformed",
+      "inspection": "unperformed"
+    },
+    {
+      "id": "footer-copy",
+      "depends_on": [],
+      "proposed_path": null,
+      "status": "planned",
+      "approval": "unperformed",
+      "inspection": "unperformed"
+    }
+  ],
+  "timeline": {
+    "asset": "hero-film",
+    "duration_seconds": 6,
+    "chapters": [
+      {
+        "id": "overview",
+        "in": 0,
+        "out": 2
+      },
+      {
+        "id": "detail",
+        "in": 2,
+        "out": 4
+      },
+      {
+        "id": "closing",
+        "in": 4,
+        "out": 6
+      }
+    ]
+  },
+  "checks": {
+    "source_fidelity": "unperformed",
+    "rendered_media": "unperformed",
+    "receiving_site": "unperformed"
+  },
+  "revision_case": {
+    "changed": "object-front",
+    "from": "r1",
+    "to": "r2",
+    "invalidate": [
+      "S1",
+      "V1",
+      "hero-wide",
+      "hero-narrow",
+      "hero-film",
+      "film-poster"
+    ],
+    "retain": [
+      "footer-copy"
+    ]
+  }
+}

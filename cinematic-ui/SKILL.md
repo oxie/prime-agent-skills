@@ -134,3 +134,11 @@ For contact shadows, raised/pressed depth, masked gradient edges or measured bra
 ## Optional nested surfaces and inline media
 
 For plate-in-tray construction, a decorative inset icon or shared one-pixel grid lines, use [nested surfaces](references/nested-surfaces.md). For image fragments within display headings, use [inline-media type](references/inline-media-type.md). These are scoped recipes, not a required style or motion system.
+
+## Connected image and video asset handoff
+
+When a cinematic page needs a related asset family, let installed Image lead its
+connected website-asset workflow and Video lead motion production. Pass page slots,
+copy-safe crops, shared direction and static meaning; receive inspected, versioned
+masters and delivery variants. Higgsfield is an optional provider, not a new website
+platform default. Keep implementation and rendered checks here and in the project.

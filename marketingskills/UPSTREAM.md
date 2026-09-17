@@ -132,3 +132,14 @@ handoffs without search-registration promises. Only affected SKILL/ranking passa
 and the AI SEO directory digest change. See [source selection and rights](OKF_SOURCES.md)
 and okf-provenance.json. No generator, plugin, public hosting, cloud/runtime or
 automatic memory export is added; older versions, pins and evidence stay historical.
+
+## Connected Higgsfield asset production
+
+Original [website asset workflow](skills/image/references/website-asset-workflow.md),
+[worked pack](skills/image/references/website-asset-pack/index.md), Video handoff and
+[optional provider guide](tools/integrations/higgsfield.md) adapt the connected
+reference/shot/revision method, not upstream automation. Image and Video retain
+ownership; no CLI, paid generation, upload, full Brandkit toolchain or hosted builder
+is installed. See [sources and rights](HIGGSFIELD_SOURCES.md) and
+higgsfield-provenance.json. Only Image/Video directory digests change; earlier
+versions, licenses, pins, pilots and historical evidence remain unchanged.

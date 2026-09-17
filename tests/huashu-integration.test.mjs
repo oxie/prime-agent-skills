@@ -1,3 +1,4 @@
+import {beforeHiggsfieldFile} from './helpers/higgsfield-snapshot.mjs';
 import {beforeExplainerFile} from './helpers/explainer-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -37,7 +38,7 @@ test('exact predecessors retained and unknown first/middle/last mutations reject
  try{for(const [p,r] of Object.entries(huashuTransitions)){
   const b=beforeExplainerFile(root,p);assert.equal(sha(b),r.current);
   const old=beforeHuashuFile(root,p);assert.equal(sha(old),r.previous);
-  if(p.endsWith('SKILL.md')){assert.equal(read(p).split('---',3)[1],old.toString().split('---',3)[1]);assert.equal(read(p).split('\n').find(l=>l.startsWith('> **Prime safety:')),old.toString().split('\n').find(l=>l.startsWith('> **Prime safety:')));}
+  if(p.endsWith('SKILL.md')){assert.equal(beforeHiggsfieldFile(root,p).toString().split('---',3)[1],old.toString().split('---',3)[1]);assert.equal(read(p).split('\n').find(l=>l.startsWith('> **Prime safety:')),old.toString().split('\n').find(l=>l.startsWith('> **Prime safety:')));}
   fs.mkdirSync(path.dirname(path.join(tmp,p)),{recursive:true});fs.writeFileSync(path.join(tmp,p),b);assert.equal(sha(beforeHuashuFile(tmp,p)),r.previous);
   for(const at of [0,Math.floor(b.length/2),b.length-1]){const bad=Buffer.from(b);bad[at]^=1;fs.writeFileSync(path.join(tmp,p),bad);assert.deepEqual(beforeHuashuFile(tmp,p),bad);assert.notEqual(sha(beforeHuashuFile(tmp,p)),r.previous);}
  }}finally{fs.rmSync(tmp,{recursive:true,force:true});}
