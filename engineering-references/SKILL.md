@@ -10,7 +10,7 @@ description: >
   denied-write tests, result-preserving SQL diagnosis, or operator-led telemetry
   evidence, exact-symptom debugging, independent test oracles, interface design
   comparisons, domain terminology and material decision records, portable project knowledge bundles, stochastic agent
-  evaluation, or trust-boundary threat modeling. Not a mandatory
+  evaluation, developer onboarding/first-value journeys, or trust-boundary threat modeling. Not a mandatory
   coding rulebook, routine cleanup pass, or deployment tool.
 license: "MIT for original wrapper/book references; CC-BY-4.0, MIT and Apache-2.0 for selected adaptations (see THIRD_PARTY.md)"
 metadata:
@@ -144,3 +144,10 @@ For a requested OKF or cross-tool project knowledge bundle, read
 [knowledge bundles](references/knowledge-bundles.md). It includes an original
 connected example, source/revision checks and update/delivery guidance. Use only
 when a real recipient benefits; no memory migration, generator or runtime is added.
+
+## Developer first value
+
+For developer onboarding or an affected CLI, SDK, API or upgrade journey, read
+[developer first value](references/developer-first-value.md). Trace actual setup,
+useful success, errors and recovery. Separate tested, partial and inferred evidence;
+this optional review does not authorize installation or live service access.

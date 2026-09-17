@@ -1,4 +1,5 @@
 // Documentation/history checks only, not compressor or model-effectiveness tests.
+import {beforeGstackFile} from './helpers/gstack-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,7 +8,7 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeGstackFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 const clauses=["compact view is a derivative", "producer's completed exit status", "filter's zero exit", "Unknown or incomplete execution stays unknown or incomplete", "say what was omitted", "proves neither a clean run nor complete search coverage", "Leave exact-data outputs intact", "Tool names do not establish safe compression", "leave unrecognized result schemas unchanged", "before any lossy transformation", "keep the original view or report the limit", "does not require saving raw successful logs", "recovery link grants no extra access", "Same session and matching bytes are insufficient", "concurrent sibling's undelivered result", "build remains failed", "shorter display may preserve that supported success", "mark evidence unavailable", "not a compressor, hook or savings guarantee"];

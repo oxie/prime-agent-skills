@@ -146,3 +146,11 @@ separates nullable from optional and avoids vacuous parity checks. Existing
 reference bodies and historical source identities remain unchanged.
 See [source selection and rights](ECC_SOURCES.md) and ecc-provenance.json.
 No ECC installer, hooks, memory, runtime, generator or model workflow is adopted.
+
+## Selected gstack developer journey
+
+Original optional [developer-first-value guidance](references/developer-first-value.md)
+traces setup, useful success, errors, recovery and upgrades with explicit evidence
+coverage. See [selected source and rights](GSTACK_SOURCES.md) and
+gstack-provenance.json. No gstack runtime, install, browser authority, scores or
+simulated measurements are adopted. Earlier source identities remain unchanged.

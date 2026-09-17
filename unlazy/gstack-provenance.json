@@ -1,0 +1,126 @@
+{
+  "repository": "https://github.com/garrytan/gstack",
+  "commit": "a6b3a57512ca6d5c6aa5b68f74f736195021f96e",
+  "package_version": "1.87.4",
+  "root_version": "1.87.4.0",
+  "adaptation": "Original optional Prime guidance; no upstream execution or runtime. Source inspection and deterministic contracts do not prove agent effectiveness.",
+  "sources": [
+    {
+      "path": "autoplan/SKILL.md.tmpl",
+      "ranges": [
+        [
+          164,
+          175
+        ]
+      ],
+      "bytes": 26331,
+      "sha256": "f97bf0271ce26d0b877536194b84d95ac872395061b03ebeeee67b9dc2b20048",
+      "git_blob": "1a79b85471df061a3cce219ea1d219c4b84d3b68",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/autoplan/SKILL.md.tmpl"
+    },
+    {
+      "path": "bin/gstack-autoplan-snapshot.ts",
+      "ranges": [
+        [
+          103,
+          181
+        ]
+      ],
+      "bytes": 45018,
+      "sha256": "064a85d5ecf91d392d7ed40ab94c83d2598857260f2aa020f2c352dff44ecc8d",
+      "git_blob": "60ce79b182496e2350ec9d71977b517ad1674f57",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/bin/gstack-autoplan-snapshot.ts"
+    },
+    {
+      "path": "test/autoplan-snapshot.test.ts",
+      "ranges": [
+        [
+          267,
+          295
+        ]
+      ],
+      "bytes": 28138,
+      "sha256": "7b5cb3abd43dd68315e31375699a4a97c58b424c7fcedc4cfcbd08b0b3562455",
+      "git_blob": "59166a0465d2132790c8e951d480990b6fcf4fbe",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/test/autoplan-snapshot.test.ts"
+    },
+    {
+      "path": "plan-eng-review/sections/review-sections.md",
+      "ranges": [
+        [
+          306,
+          337
+        ]
+      ],
+      "bytes": 69212,
+      "sha256": "1c816e44c75142c37506a438c109ec6830bd6ca3c9a5bbb6c490f523cb2743a8",
+      "git_blob": "4a12d9b3d82eb7907cc806866d999f5341907f4e",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/plan-eng-review/sections/review-sections.md"
+    },
+    {
+      "path": "qa/SKILL.md.tmpl",
+      "ranges": [
+        [
+          108,
+          119
+        ],
+        [
+          206,
+          243
+        ]
+      ],
+      "bytes": 13886,
+      "sha256": "1e36d22b188f58d98181a63ba312c317fc8f8bcd15565e3d39824ea4a483d498",
+      "git_blob": "23934afde954c7ee15a27b0e5c63a3098d9655ba",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/qa/SKILL.md.tmpl"
+    },
+    {
+      "path": "LICENSE",
+      "ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "bytes": 1066,
+      "sha256": "e56fbb5b3d95756f3fa1cfefa24732ec79f18ece1ad08a4e79e00df57e8b198c",
+      "git_blob": "35029511144443297cad2d26e4bac17d0e352f93",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/LICENSE"
+    },
+    {
+      "path": "NOTICE.md",
+      "ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "bytes": 2472,
+      "sha256": "879fc62ddab70035c6f697e1bc8afaaf0a380e8b3e4ffe256ca403c28d909f7c",
+      "git_blob": "931bd4b301250baa410ea5347690559d0d745119",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/NOTICE.md"
+    }
+  ],
+  "files": {
+    "SKILL.md": {
+      "bytes": 13015,
+      "sha256": "6fe0a1e8935193e783e401f3ea595b34b212da9c9c4a0ae4df6b346390152f69"
+    },
+    "UPSTREAM.md": {
+      "bytes": 3349,
+      "sha256": "65b6381743ae4531063f7a1e448e72f630f49929e9469b855e9853caaaba3022"
+    },
+    "GSTACK_SOURCES.md": {
+      "bytes": 2350,
+      "sha256": "9152d31a640dc82fe768d7fb70613a6f284df9dbd33035b72857abb2e3b072c3"
+    },
+    "licenses/gstack-MIT.txt": {
+      "bytes": 1066,
+      "sha256": "e56fbb5b3d95756f3fa1cfefa24732ec79f18ece1ad08a4e79e00df57e8b198c"
+    },
+    "references/decision-verification.md": {
+      "bytes": 5086,
+      "sha256": "503a0cbe1e9bbe26a29145608207f38ebe27a42f2d8279c531ed9b6374ea3601"
+    }
+  }
+}

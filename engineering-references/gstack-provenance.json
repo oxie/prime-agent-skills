@@ -1,0 +1,87 @@
+{
+  "repository": "https://github.com/garrytan/gstack",
+  "commit": "a6b3a57512ca6d5c6aa5b68f74f736195021f96e",
+  "package_version": "1.87.4",
+  "root_version": "1.87.4.0",
+  "adaptation": "Original optional Prime guidance; no upstream execution or runtime. Source inspection and deterministic contracts do not prove agent effectiveness.",
+  "sources": [
+    {
+      "path": "plan-devex-review/SKILL.md.tmpl",
+      "ranges": [
+        [
+          347,
+          395
+        ]
+      ],
+      "bytes": 19456,
+      "sha256": "11d29a46121fbb42ea934b6ef1292b6201dd9e1ee5ffd44ee73ae1ae5d386af1",
+      "git_blob": "752354d987537b93c47adea4b772b5233dcb5176",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/plan-devex-review/SKILL.md.tmpl"
+    },
+    {
+      "path": "devex-review/SKILL.md.tmpl",
+      "ranges": [
+        [
+          44,
+          63
+        ],
+        [
+          84,
+          214
+        ]
+      ],
+      "bytes": 8933,
+      "sha256": "a11a0df8280f97f7b79e1118885e58b2ea9c15ee5f5433086afd8cad2bf48713",
+      "git_blob": "0340c69bda95d85106e8e7bbab2008a5e3b4555a",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/devex-review/SKILL.md.tmpl"
+    },
+    {
+      "path": "LICENSE",
+      "ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "bytes": 1066,
+      "sha256": "e56fbb5b3d95756f3fa1cfefa24732ec79f18ece1ad08a4e79e00df57e8b198c",
+      "git_blob": "35029511144443297cad2d26e4bac17d0e352f93",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/LICENSE"
+    },
+    {
+      "path": "NOTICE.md",
+      "ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "bytes": 2472,
+      "sha256": "879fc62ddab70035c6f697e1bc8afaaf0a380e8b3e4ffe256ca403c28d909f7c",
+      "git_blob": "931bd4b301250baa410ea5347690559d0d745119",
+      "url": "https://github.com/garrytan/gstack/blob/a6b3a57512ca6d5c6aa5b68f74f736195021f96e/NOTICE.md"
+    }
+  ],
+  "files": {
+    "SKILL.md": {
+      "bytes": 9227,
+      "sha256": "d7802614ee7be88adfe9fbe2b096a8b4c1a4c668caef7b3fd897a7762e3b5446"
+    },
+    "UPSTREAM.md": {
+      "bytes": 8708,
+      "sha256": "5a72f387f9b1c44e8688bbd366690e731258b30b0bc1583fe19286691443dacb"
+    },
+    "GSTACK_SOURCES.md": {
+      "bytes": 2201,
+      "sha256": "3ef58e3ee449f0d983beabed73a6eee1b441dfa1f9f99fbce1fec8b550cdb0f2"
+    },
+    "licenses/gstack-MIT.txt": {
+      "bytes": 1066,
+      "sha256": "e56fbb5b3d95756f3fa1cfefa24732ec79f18ece1ad08a4e79e00df57e8b198c"
+    },
+    "references/developer-first-value.md": {
+      "bytes": 5802,
+      "sha256": "98b9906ac44ddd257de12c341b7ed31966ecd85dc13fc10b4479d26e3b678242"
+    }
+  }
+}

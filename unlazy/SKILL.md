@@ -1,6 +1,6 @@
 ---
 name: unlazy
-description: Guides completion discipline for substantial agent work by writing acceptance gates before execution, decomposing work with the Depth Tree, running approved checks, and re-verifying evidence before reporting. Use when an agent faces a long or multi-part task, work that has returned half-done, an exhaustive audit or build, parallel leaves or pipelines, or explicit triggers such as /unlazy, $unlazy, "tree N", "gates", and "do not stop until it is done".
+description: Guides completion discipline for substantial agent work by writing acceptance gates before execution, decomposing work with the Depth Tree, running approved checks, and re-verifying evidence before reporting. Use when an agent faces a long or multi-part task, work that has returned half-done, an exhaustive audit or build, parallel leaves or pipelines, decision-to-verification handoffs, or explicit triggers such as /unlazy, $unlazy, "tree N", "gates", and "do not stop until it is done".
 license: MIT
 metadata:
   version: 2.1.0-prime.2
@@ -143,3 +143,10 @@ rules or settings to install this skill.
 Keep leaf briefs to the contract and one ledger. Append status instead of rewriting history. Mark each execution leaf's reasoning `Tier` in the PLAN dispatch table: `judgment` when its own artifact needs design or review, and `mechanical` only when its pattern and gates are fixed. Tier is planner metadata, not a routing guarantee. Map it through documented host-specific model or reasoning controls only when those controls are available; otherwise do not claim a model was selected. Driver planning and dispatch, parent re-verification, branch integration, and the final claim audit remain judgment duties outside the leaf tiers. Read the local `references/token-economy.md` for the detailed rules.
 
 Do not create gates for a trivial edit or factual reply. Use this discipline when the cost of quiet incompleteness justifies the ledger.
+
+## Accepted decisions and QA handoffs
+
+When review decisions change a substantial task or QA must connect a finding to a
+fix, read [decision-to-verification handoffs](references/decision-verification.md).
+Carry accepted conditions into the existing plan and repeat the actual failing
+path against the intended revision. No new ledger or runtime is required.

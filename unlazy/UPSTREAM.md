@@ -48,3 +48,11 @@ from the evidence needed for verification. See [source notes](CHISLE_SOURCES.md)
 chisle-provenance.json for the pinned review and exclusions. No Chisle code, runtime,
 installer, persona, hook, extension or benchmark claim is adopted. Existing gate
 evidence, retention rules, routing and historical source records remain unchanged.
+
+## Selected gstack decision and QA handoffs
+
+Original optional [decision-to-verification guidance](references/decision-verification.md)
+connects accepted obligations, plan identity, reproduction and same-action retesting.
+It does not change gate digests, approval logic, scripts, templates or execution
+permissions. See [selected source and rights](GSTACK_SOURCES.md) and
+gstack-provenance.json. Earlier source identities remain historical and unchanged.
