@@ -76,3 +76,13 @@ static CSS/SVG mesh, grain and ledger recipes. The earlier source map and notice
 above remain historical. [AUTEUR_SOURCES.md](AUTEUR_SOURCES.md) identifies the
 separate source pin, retained license, rewritten methods and local implementation.
 The advanced video engine and upstream browser/sourcing tools are not included.
+
+## Original scroll-seam example after Scroll World review
+
+The existing pacing reference gains one optional original worked example separating
+endpoint appearance, adjacent-frame motion and delivered scroll-to-time mapping.
+See [source selection and rights](SCROLL_WORLD_SOURCES.md) and
+scroll-world-provenance.json. Existing static, input and lifecycle contracts remain
+unchanged. No upstream engine, generation pipeline, provider, new skill, mandatory
+rendering round or global policy is included. Earlier pins and payload hashes remain
+historical; the skill entry point and routing are unchanged.

@@ -1,0 +1,58 @@
+{
+  "repository": "https://github.com/oso95/scroll-world",
+  "commit": "71cc36d3bb150248ae36a2c552f9cbf88802a79c",
+  "source_version": "0.8.0",
+  "treatment": "One original optional continuity example, no upstream runtime or substantial prose",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "bytes": 1060,
+      "sha256": "c4b96a7a050b85026eb68ac5b5fee2778384b14371aaeac50891dbadd848d309",
+      "git_blob": "083f5772340f7228a097bc7716911d3c0f29d0f2",
+      "url": "https://github.com/oso95/scroll-world/blob/71cc36d3bb150248ae36a2c552f9cbf88802a79c/LICENSE"
+    },
+    {
+      "path": "skills/scroll-world/SKILL.md",
+      "bytes": 49544,
+      "sha256": "e56fe396c1fa258278289cfa9cbf17253519f11f4856535f7709dd2368e3e65e",
+      "git_blob": "b4c97cdb7a63d993d45adf87c30cb49eea59a854",
+      "url": "https://github.com/oso95/scroll-world/blob/71cc36d3bb150248ae36a2c552f9cbf88802a79c/skills/scroll-world/SKILL.md"
+    },
+    {
+      "path": "skills/scroll-world/references/pipeline.md",
+      "bytes": 16220,
+      "sha256": "447d642733b527c149c52d303ff9ec3d697ed667e12ea137a2ce40d64d1db304",
+      "git_blob": "61d0ddc3983727b61ca0997c15a7ddb54a466008",
+      "url": "https://github.com/oso95/scroll-world/blob/71cc36d3bb150248ae36a2c552f9cbf88802a79c/skills/scroll-world/references/pipeline.md"
+    },
+    {
+      "path": "skills/scroll-world/references/scrub-engine.js",
+      "bytes": 28697,
+      "sha256": "630bb1ab6101e5ed54eb1a24ab0be3f29e3744a95e156835b89541ea7c04752b",
+      "git_blob": "d7d4c3b5ff8016a51b06d8481255726b9daf955c",
+      "url": "https://github.com/oso95/scroll-world/blob/71cc36d3bb150248ae36a2c552f9cbf88802a79c/skills/scroll-world/references/scrub-engine.js"
+    }
+  ],
+  "files": {
+    "cinematic-ui/references/pacing-motion.md": {
+      "bytes": 11336,
+      "sha256": "662380b6240f0f4bc2282974d1a20a5b15d96adab3f0565f692c7dc28aa5665d"
+    },
+    "cinematic-ui/UPSTREAM.md": {
+      "bytes": 10389,
+      "sha256": "51a88c4e351eb279b77df825543e542dc4cf0f73a36c48f211827abcc0b9adff"
+    },
+    "cinematic-ui/SCROLL_WORLD_SOURCES.md": {
+      "bytes": 4531,
+      "sha256": "ac5a07031b80fed794d35dc124b1b5cb1b88372a13a3e685dc6605815d8b2d86"
+    }
+  },
+  "unchanged": {
+    "cinematic-ui/SKILL.md": "cd7346ca6ddad2d1f898d6b7d9ab5e374157f88c366b87ab9ff05846a0d93572",
+    "cinematic-ui/LICENSE": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+    "cinematic-ui/auteur-provenance.json": "4b5855158edc7b1814da0bb065d36617a4c45f95859f59b56372415bde5ecab9",
+    "cinematic-ui/references/production-scenes.md": "f62045e9364468190c372fbcbe85e37fc49694e29330b9f54692959a5d96048f",
+    "cinematic-ui/references/production-checks.md": "7c96f8fdd0a50948ab2e239b8692da4ae28b4cd0c68421d7566f5b742997f580"
+  },
+  "verification_limits": "Source/doc/arithmetic/history checks only; no upstream execution, model efficacy or rendered result"
+}

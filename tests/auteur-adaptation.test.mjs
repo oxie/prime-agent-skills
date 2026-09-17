@@ -1,3 +1,4 @@
+import {beforeScrollWorldFile} from './helpers/scroll-world-snapshot.mjs';
 import {previousMengtoSkill} from './helpers/mengto-snapshot.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync, existsSync} from 'node:fs';
@@ -26,7 +27,7 @@ test('exact source identity, source license and adaptation payload set',()=>{
  assert.deepEqual(prov.sources,sources);
  const payload=["AUTEUR_SOURCES.md", "SKILL.md", "UPSTREAM.md", "assets/quiet-surfaces/demo.css", "assets/quiet-surfaces/grain.svg", "assets/quiet-surfaces/index.html", "assets/quiet-surfaces/quiet-surfaces.css", "licenses/auteur-MIT.txt", "references/light-material.md", "references/production-scenes.md", "references/quiet-surfaces.md", "references/selection.md", "tests/quiet-surfaces-browser/README.md", "tests/quiet-surfaces-browser/index.html", "tests/quiet-surfaces-browser/probe.js"];
  assert.deepEqual(Object.keys(prov.adapted_files).sort(),payload);
- for(const [path,hash] of Object.entries(prov.adapted_files))assert.equal(sha(path==='SKILL.md'?previousMengtoSkill(skills,'cinematic-ui'):readFileSync(resolve(root,path))),hash,path);
+ for(const [path,hash] of Object.entries(prov.adapted_files))assert.equal(sha(path==='SKILL.md'?previousMengtoSkill(skills,'cinematic-ui'):beforeScrollWorldFile(skills,'cinematic-ui/'+path)),hash,path);
  assert.equal(sha(read('licenses/auteur-MIT.txt')),'030435fc8e382b307cd0d592b43c307634abae20b69da361d356fea230ee0672');
  assert(read('licenses/auteur-MIT.txt').includes('Copyright (c) 2026 agiwhitelist'));
  assert(read('AUTEUR_SOURCES.md').includes('third-party'));
@@ -35,11 +36,11 @@ test('old owners and unchanged Cinematic UI files retain their actual bytes',()=
  const previous={"UPSTREAM.md": "b49e860a9abe13028919dc50ac9677856a4916e3ca5539f8fdc0a42b7b4f1ea1", "LICENSE": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685", "SKILL.md": "5ac4b40f1baf1a170d5793d942fa66a3c21cddeb274b2d8d10ce11dbe89b7c15", "references/light-material.md": "c700d685ab0e406c402d757ed84319306cae69d2980df0ed755ddfcfa2240d93", "references/composition.md": "8b224a8c615d5e5bb1d686fc0c08045152f1e8d164ad831e568f3646372b6dd4", "references/pacing-motion.md": "ca6a50fdbeef467ec4f39477b7b90f7edc443a4248b8f51fd8820b3275bd1c94", "references/worked-directions.md": "94234585788d3c3d0ed1477a1816f7ba49b25923640bb84bb7f5317eb507bead", "references/evidence.md": "b067a8946918c16a05d17a2febb355df9690deae333a5ef7bf65db5f4d27ea7f", "references/typography.md": "0200b606f8b1a954f25bc3fabc41793b6a597bbad6f376966c206a7ea455c132", "references/production-checks.md": "7c96f8fdd0a50948ab2e239b8692da4ae28b4cd0c68421d7566f5b742997f580", "references/selection.md": "2480302c9d084d9e761bbf2816c56becdfd5e376ab8ba401bb01d7963c5f983f", "assets/demo/index.html": "4d1c983d11f47bbce910a1e441752c224ba0b45141cfc1a6d64f2a987829bf97", "assets/demo/scene.js": "9cd825e379c36a5a35448493e21121f2a7d1083798c5c3620b6562bea1220b23", "assets/demo/style.css": "77a4055135f0f31382c2695f91ca4cf6255b5bd8c34039ae3c904c32ba28b513", "tests/BROWSER.md": "4acfca82268ca8fe85d7f6cba90a07fc577bfd90b96de9b64b3894beb8287250", "tests/browser.py": "e832c36325c7a0574ca141d4e07a9d25bb29751f741152ab197eff6a7fc84021", "tests/native-contract.mjs": "e61b0774cf88dc658d98a52acb114d1ae0ffa68579706995671f5f22e88b2883"};
  assert.deepEqual(prov.previous_files,previous);
  const changed=new Set(['SKILL.md','UPSTREAM.md','references/selection.md','references/light-material.md']);
- for(const [path,hash] of Object.entries(previous))if(!changed.has(path))assert.equal(sha(path==='SKILL.md'?previousMengtoSkill(skills,'cinematic-ui'):readFileSync(resolve(root,path))),hash,path);
+ for(const [path,hash] of Object.entries(previous))if(!changed.has(path))assert.equal(sha(path==='SKILL.md'?previousMengtoSkill(skills,'cinematic-ui'):beforeScrollWorldFile(skills,'cinematic-ui/'+path)),hash,path);
  for(const [path,hash] of Object.entries({"hallmark/SKILL.md": "44f66f48f6f367a595653f23e774bd5fcde4ce67c3a10d181f35a10fe1869833", "hallmark/refero-provenance.json": "44df23ec8b2aef3a19510ab72d1e696764ad98e214747aa6ef8b2c3ce14b4f4b", "canvas-effects/SKILL.md": "a6268ba4e5c92eb4caa2feb80d532705d087c548d61f2b62effc30990c3eb1fe"}))assert.equal(sha(path.endsWith('/SKILL.md')?previousMengtoSkill(skills,path.split('/')[0]):readFileSync(resolve(skills,path))),hash,path);
  // Existing reference/provenance bodies stay exact prefixes, not reworded history.
  for(const path of ['UPSTREAM.md','references/selection.md','references/light-material.md']){
-  const bytes=readFileSync(resolve(root,path));const oldLength={"references/selection.md": 4505, "references/light-material.md": 7303, "UPSTREAM.md": 9347}[path];
+  const bytes=beforeScrollWorldFile(skills,'cinematic-ui/'+path);const oldLength={"references/selection.md": 4505, "references/light-material.md": 7303, "UPSTREAM.md": 9347}[path];
   assert.equal(sha(bytes.subarray(0,oldLength)),previous[path],path);
  }
 });

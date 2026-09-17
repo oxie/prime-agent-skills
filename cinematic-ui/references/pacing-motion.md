@@ -122,3 +122,44 @@ Sources: [universal beats](https://github.com/akseolabs-seo/cinematic-ui/blob/24
 [sticky compositions](https://github.com/akseolabs-seo/cinematic-ui/blob/24a66c1d6140c21ec0d0e4d9ef663a97264003de/references/data/compositions.md#L74-L118).
 No source animation code is bundled here. Lifecycle and failure requirements are
 adaptation-authored production constraints, not upstream test results.
+
+## Optional example: matching frames, discontinuous motion
+
+Use this example for an authorized website with scroll-scrubbed, prerendered clips.
+It adds a seam check, not a requirement to animate, generate assets or build a player.
+
+Fictional case: two clips meet on the same doorway image. Both move forward, yet
+the approach feels slow and the next room rushes past. Matching that one image
+supports appearance continuity only; it does not establish continuous motion.
+Inspect three separate things:
+
+- **Displayed endpoints.** Identify the actual decoded boundary frames, source
+  revision and served derivative. A frame extracted near the end is not necessarily
+  the final frame the player shows. Resizing, cropping or re-encoding can change the
+  handoff. Similar pixels or a similarity score are not proof of exact identity.
+- **Motion through the seam.** Compare several adjacent decoded frames on each side
+  with their timestamps. Follow stable landmarks for direction and apparent speed;
+  moving forward on both sides does not rule out a speed or path jump. Image-space
+  motion alone does not recover the physical camera's exact position or velocity.
+- **Delivered scroll mapping.** Inspect clip duration, scroll distance and easing
+  in the actual player, not just source playback. For example, with linear mapping,
+  a four-second clip over 800 CSS pixels advances 0.005 source seconds per pixel;
+  an eight-second clip over the same distance advances 0.01. If source motion is
+  otherwise comparable, the second advances twice as fast per scroll pixel.
+  Easing can change the seam rate again; decoder delay and smoothing can lag the
+  requested frame. Do not prescribe equal durations as a universal fix.
+
+Within the task's authorized checks, inspect forward and reverse traversal and a
+jump across the seam after media readiness and settling. Check the served desktop
+and narrow variants where supplied; a master-only check does not cover a changed
+crop or encode. Use distinguishable opaque frames when checking a claimed dissolve:
+if the incoming fade stays behind a fully opaque outgoing layer until it switches
+on top at full opacity, the viewer sees a cut, not a blend.
+
+Correct the relevant frames, timing or layer behavior when authorized, or choose an
+honest cut or static presentation. Preserve every meaningful state and caption;
+one poster must not erase the relationship. Keep the existing [motion contract](#motion-contract-before-implementation)
+and [production checks](production-checks.md), including static content and controls.
+Interactive seeking is not deterministic export. Report unavailable rendered checks
+and remaining limits; no universal similarity threshold or extra model calls follow
+from this example. See [source selection and limits](../SCROLL_WORLD_SOURCES.md).
