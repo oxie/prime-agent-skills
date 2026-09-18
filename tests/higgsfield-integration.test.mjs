@@ -1,3 +1,4 @@
+import {beforeOriginalGuidanceFile} from './helpers/original-guidance-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -6,7 +7,7 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const read=p=>beforeOriginalGuidanceFile(root,p).toString('utf8');
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=t=>t.replace(/\s+/g,' ');
 const base='marketingskills/skills/image/references/website-asset-pack/';

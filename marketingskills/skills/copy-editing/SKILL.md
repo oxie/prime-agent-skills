@@ -13,6 +13,8 @@ Improve existing text while preserving its meaning and voice. Marketing and conv
 ## Choose the Task Mode First
 
 - **General prose:** For documents, reports, README files, technical explanations, or other non-marketing text, use [Source Fidelity and Clarity](references/source-fidelity-and-clarity.md). Skip product-marketing context, the Seven Sweeps, conversion checklists, and expert personas. Do not add CTAs, emotion, benefits, or social proof to make a document sound like marketing.
+  For a requested engineering update to a different audience or channel, use that
+  reference's optional rewrite example without changing supported facts or status.
 - **Code comments:** For a requested comment cleanup or review, use [Comment Review](references/comment-review.md) and its source-fidelity check. Skip the marketing workflow. This is not a code-correctness or security audit.
 - **Marketing copy:** Continue below. Apply the source-fidelity check before and after edits; use only the depth the task needs. Mixed documents use the appropriate branch per section, not conversion sweeps everywhere.
 

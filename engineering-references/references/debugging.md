@@ -168,3 +168,56 @@ checks that an empty ordinary search is not reported as exhaustive absence.
 These are original, corrected examples informed by the
 [WikiSkill source review](../WIKISKILL_SOURCES.md), not installed search or evaluation
 code. Wording checks do not prove runtime behavior or model effectiveness.
+
+## Optional bug-fix closeout
+
+When a substantive bug write-up is requested or required by the project, assemble
+its existing evidence in the current PR, ticket or document. Do not create a second
+record system or require a write-up for a typo. The purpose is to let a maintainer
+recover the causal explanation without repeating the investigation.
+
+Connect the reported failure to the supported mechanism and the change that removes
+it. Retain useful code locations, revision identifiers and evidence links. Explain
+an earlier ineffective fix only when its history helps distinguish symptom relief
+from correcting the cause. Reuse the existing reproduction and retest handoff: show
+what was observed before and after, the actual tested environment/revision, completed
+outcomes and untested scope. A configuration change that hides the failure can narrow
+the search; it does not alone prove a cause. Do not strengthen a hypothesis merely
+because the report needs a conclusion.
+
+Describe the evidenced detection or coverage gap, not who deserves blame. An unknown
+escape cause stays unknown. Record only warranted follow-ups, with supplied owners
+and tracking links; unknown ownership stays explicit, and no follow-up can be a valid
+outcome. Do not invent a refactor, deadline or new tracking artifact to fill a section.
+There is no required template or separate evidence collection pass.
+
+An incomplete investigation can still have a useful record. Mark an unconfirmed cause,
+missing reproduction or untested patch plainly; reserve verified-fix language for the
+checks actually completed. A local retest is not evidence of deployment or restored
+customer service. Broader incident reporting may need impact, timeline, response and
+ongoing communications before the cause is known; do not delay it for bug closeout.
+Keep the technical record intact if a stakeholder summary is separately requested.
+Writing a draft grants no permission to fetch private tickets or publish it.
+
+### Fictional closeout: a stale report preview
+
+Supplied investigation facts: ticket BUG-42 concerns a report preview showing an old
+title after a rename. At revision `r17`, `previewKey()` in `report/cache.ts` uses only
+report ID, so the rename path reuses the old cached preview. A disposable local test
+`rename_then_preview` returns the old title; trace evidence links that result to the
+unchanged key. Clearing the browser view in an earlier patch did not invalidate the
+server cache. Patch `r18` includes the report revision in the key. The same local
+test now returns the renamed title, and the unchanged-report control still passes.
+The inspected tests previously covered preview creation only, not rename followed by
+preview. Deployment has not occurred; customer exposure remains unknown and multi-worker
+behavior is untested. Follow-up BUG-43 is to check that boundary; its owner is unassigned.
+
+A useful record keeps `previewKey()`, both revisions and the before/after evidence
+with this chain: unchanged cache key → old entry reused after rename → stale title.
+It explains why a revision-aware key addresses that chain and why clearing the view
+did not. It names the missing rename test without asserting this was the only escape
+cause. It says “locally retested at r18; not deployed; multi-worker behavior untested,”
+not “service restored.” BUG-43 stays unassigned; do not infer an owner from commit
+history. This is an invented documentation example, not an executed application test.
+
+Source consideration and original-writing boundary: [UPSTREAM.md](../UPSTREAM.md#original-bug-closeout-guidance).

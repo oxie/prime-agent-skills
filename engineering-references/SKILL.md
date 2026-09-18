@@ -8,7 +8,7 @@ description: >
   parsed network responses, mutation/cache reconciliation, and diff-linked release
   dependencies or running-revision evidence, API object/tenant authorization and
   denied-write tests, result-preserving SQL diagnosis, or operator-led telemetry
-  evidence, exact-symptom debugging, independent test oracles, interface design
+  evidence, exact-symptom debugging and bug-fix closeout, independent test oracles, interface design
   comparisons and architecture compatibility, domain terminology and material decision records, portable project knowledge bundles, stochastic agent
   evaluation, developer onboarding/first-value journeys, or trust-boundary threat modeling. Not a mandatory
   coding rulebook, routine cleanup pass, or deployment tool.
@@ -57,6 +57,8 @@ Read only the reference matching the main risk, not every reference by default:
 
 - [Debugging](references/debugging.md): build evidence for the reported symptom,
   distinguish nearby failures, falsify causes and recheck original callers.
+  For a requested substantive bug write-up, its optional closeout section reuses
+  existing evidence to preserve the causal explanation and remaining limits.
 - [Test design](references/test-design.md): choose independent oracles, behavior
   slices and observation points while retaining meaningful side-effect coverage.
 - [Interface design](references/interface-design.md): compare real alternatives

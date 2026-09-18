@@ -110,3 +110,72 @@ Compare that body with the source and supplied evidence using the check above.
 A style score proves neither factual support nor authorship and grants no permission
 to publish. No scanner, automatic model call, new ledger or publication gate is
 introduced. See [source selection and limits](../../../SLOPMONSTER_SOURCES.md).
+
+## Optional engineering update for a different audience
+
+Use when the user asks to reframe supplied engineering material for a particular
+recipient or channel. This is a non-marketing edit, not permission to research,
+fetch tickets or send messages. Keep the engineering record as the evidence source;
+a shorter update does not replace it. Infer the recipient's needs from the request,
+not their job title. Ask only when missing context prevents a useful, safe draft;
+otherwise state a material gap without making the user complete a questionnaire.
+
+Select the supported state, consequence and next action that answer this reader's
+question. If a decision or recommendation is requested, lead with that need and its
+supported rationale; do not force a neutral status format. Separate observed impact
+from possible exposure. Preserve distinctions such as investigated, locally tested,
+in review, merged, deployed and recovery observed. None implies the next state.
+Unknown impact, cause, owner, timing or validation remains unknown, not plausible filler.
+
+Translate unnecessary implementation detail into causal language only within the
+requested rewrite scope. Keep technical terms the reader needs. A release revision,
+configuration name, identifier or second evidence link may be crucial to a decision;
+do not strip it by category or impose a link quota. Preserve uncertainty and caveats
+in the delivered body, not just editorial notes. Respect the source's audience and
+confidentiality: an internal customer identifier is not automatically safe to share
+with a wider audience. Do not fetch or disclose extra details to make the story vivid.
+
+Choose presentation for the destination, without fixed word or bullet limits. A reply
+can answer the immediate question directly; a new channel post may need brief context.
+An email can put the decision or state in its subject and explain the consequence in
+its body. Spoken notes can use short prompts instead of polished paragraphs. Keep
+required conditions even when that makes the draft longer. A plain paragraph is fine
+when no channel-specific structure helps. Run the existing source-to-edit check on
+the actual final draft; this adds no separate scoring pass or publication workflow.
+
+### Fictional source, two supported views
+
+The complete supplied facts for this example are: BUG-42 concerns stale report titles
+after rename. Engineering traced reuse of an old cached preview. At patch `r18`, the
+local rename check passed. The patch includes report revision in the cache key. PR-42 is in review, not
+merged or deployed. The running revision is `r17`. Customer exposure is unknown and
+multi-worker behavior is untested. Mira owns PR-42. BUG-43 tracks the multi-worker
+check and has no assigned owner. The release lead is asked to assign that check's
+owner before deciding whether to schedule deployment. No ETA or workaround is supplied.
+These are invented input facts, not observed product results.
+
+**Reply to “Is the preview fix live?”**
+
+> No. The running revision is r17. Patch r18 passed the local rename check, but
+> PR-42 is still in review and is neither merged nor deployed. Customer exposure
+> remains unknown; multi-worker behavior is untested.
+
+**Email to the release lead**
+
+> Subject: BUG-42 — assign BUG-43 before the deployment scheduling decision
+>
+> Please assign an owner for BUG-43, the multi-worker check, before deciding whether
+> to schedule deployment. Mira's PR-42 addresses stale titles after rename by making
+> cached previews depend on the report revision. Patch r18 passed the local rename
+> check. PR-42 is in review, not merged or deployed; r17 is still running.
+>
+> Customer exposure remains unknown. Multi-worker behavior is untested, and BUG-43
+> is unassigned. No ETA or workaround has been supplied.
+
+Both views retain what matters to their question. The reply need not repeat every
+owner detail; the email must not assign BUG-43 to Mira merely because she owns PR-42.
+“Fixed for all customers,” a delivery date or a workaround would add unsupported facts.
+If the input instead says the cause is unknown or the patch was not tested, keep that
+limit in both views. If only a typo correction was requested, skip this reframing.
+Neither draft authorizes sending it. Source consideration and original-writing
+boundary: [UPSTREAM.md](../../../UPSTREAM.md#original-engineering-update-guidance).

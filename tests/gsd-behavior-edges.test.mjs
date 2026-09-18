@@ -1,4 +1,5 @@
 // Static guidance/identity controls, not application execution or agent-efficacy trials.
+import {beforeOriginalGuidanceFile} from './helpers/original-guidance-snapshot.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {beforeGsdFile,gsdTransitions} from './helpers/gsd-snapshot.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeOriginalGuidanceFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 function retains(text,phrases){for(const c of phrases)assert(flat(text).includes(c),c);}

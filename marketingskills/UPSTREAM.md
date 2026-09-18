@@ -143,3 +143,17 @@ ownership; no CLI, paid generation, upload, full Brandkit toolchain or hosted bu
 is installed. See [sources and rights](HIGGSFIELD_SOURCES.md) and
 higgsfield-provenance.json. Only Image/Video directory digests change; earlier
 versions, licenses, pins, pilots and historical evidence remain unchanged.
+
+## Original engineering-update guidance
+
+Review of [9arm-skills management-talk](https://github.com/thananon/9arm-skills/blob/a1fc303b274ed06c32d405ba5a6db00ded6e5663/skills/productivity/management-talk/SKILL.md)
+helped identify a channel-specific presentation gap. The optional section in
+[Source Fidelity and Clarity](skills/copy-editing/references/source-fidelity-and-clarity.md#optional-engineering-update-for-a-different-audience)
+is original local writing with a new, fully supplied fictional source and two views.
+No upstream prose, examples, templates or code are copied. No license was declared
+in the reviewed tree; public availability is not treated as permission to copy.
+Existing MIT notices do not grant rights to that source. Earlier pins, rights and
+historical evidence stay unchanged; only the current Copy Editing digest is updated.
+No new skill, marketing workflow, Jira integration, posting permission, model route
+or efficacy claim is introduced. Genuine uncertainty and decision-critical identifiers
+remain protected by the existing non-marketing source-fidelity owner.

@@ -162,3 +162,16 @@ product-preservation or cross-component compatibility ideas, not the upstream wo
 See [source selection and rights](BMAD_SOURCES.md) and bmad-provenance.json. No BMAD
 runtime, memlog, mandatory PRD, architecture ceremony, installer, hook or automatic
 revert is adopted. Previous source identities and execution contracts are unchanged.
+
+## Original bug-closeout guidance
+
+Review of [9arm-skills post-mortem](https://github.com/thananon/9arm-skills/blob/a1fc303b274ed06c32d405ba5a6db00ded6e5663/skills/engineering/post-mortem/SKILL.md)
+identified a useful distinction between a technical bug record and its stakeholder
+summary. The optional section in [debugging](references/debugging.md#optional-bug-fix-closeout)
+is original local writing using existing evidence contracts and a new fictional cache
+example. No upstream prose, example, template or code is copied. The reviewed tree
+has no declared license; this note does not assert copying rights or extend existing
+MIT notices to that source. Earlier licenses and provenance remain unchanged.
+No standalone skill, incident process, mandatory report, Jira access, runtime or
+measured-effectiveness claim is added. Existing debugging and task handoffs remain
+authoritative; source consideration is not adoption of the upstream operating rules.

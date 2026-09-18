@@ -58,5 +58,5 @@ test('exact additions preserve previous reference and history; manifest changes 
  assert.equal(sha(Buffer.from(bytes.toString().replace(current,p.owner_digest.previous))),p.previous_manifest_sha256);
  const dir=path.join(root,'marketingskills/skills/copy-editing'),files=[];
  function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){assert(!e.isSymbolicLink());const f=path.join(d,e.name);if(e.isDirectory())walk(f);else{assert(e.isFile());files.push(f);}}}walk(dir);
- const h=createHash('sha256');for(const f of files.sort()){h.update(path.relative(dir,f).split(path.sep).join('/'));h.update('\0');h.update(fs.readFileSync(f));h.update('\0');}assert.equal(h.digest('hex'),current);
+ const h=createHash('sha256');for(const f of files.sort()){h.update(path.relative(dir,f).split(path.sep).join('/'));h.update('\0');h.update(beforeOkfFile(root,path.relative(root,f).split(path.sep).join('/')));h.update('\0');}assert.equal(h.digest('hex'),current);
 });
