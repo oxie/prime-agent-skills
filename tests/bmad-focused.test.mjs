@@ -7,8 +7,9 @@ import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {beforeBmadFile,bmadTransitions} from './helpers/bmad-snapshot.mjs';
+import {beforeGsdFile} from './helpers/gsd-snapshot.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const read=p=>fs.readFileSync(path.join(root,p));
+const read=p=>beforeGsdFile(root,p);
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const flat=s=>s.toString().replace(/\s+/g,' ');
 function retains(text,phrases){for(const c of phrases)assert(flat(text).includes(c),c);}

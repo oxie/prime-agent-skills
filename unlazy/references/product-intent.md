@@ -31,6 +31,56 @@ Existing identifiers and terminology are enough. No special schema or new ID sys
 is required. A product-level success signal may need real user evidence later;
 passing an implementation test does not prove adoption, satisfaction or business value.
 
+## Discover an unstated behavior rule
+
+Use this optional contrast when a requirement permits materially different results,
+not as a checklist for every change. First inspect accepted requirements, callers and
+domain conventions. Reuse an established rule; do not manufacture ambiguity or ask
+again merely because the current brief is short. Current code can reveal a choice,
+but observed behavior alone does not establish that the choice was approved.
+
+Choose a concrete input that separates plausible meanings. Select only relevant
+questions: do touching intervals merge; which duplicate survives and in what order;
+what happens at a threshold or rounding tie; what counts as a character; what should
+empty input, repetition or interruption do? These are prompts to find missing meaning,
+not an exhaustive taxonomy or authority to add features, limits or prohibitions.
+
+In the existing brief or response, keep the input contrast, accepted rule and its
+source, or the precise unresolved question and decision owner. Explain a consequential
+dismissal rather than silently dropping it. If the answer changes the outcome and is
+not established by authorized evidence, ask the rightful owner; do not invent a test
+expectation to make the plan look complete. Continue independent authorized work.
+Carry the eventual accepted rule into the active plan, affected worker brief and
+observing check using the existing decision-to-verification handoff.
+
+### Fictional contrast: “shorten a name to 12 characters”
+
+Consider 11 ASCII `a` characters, then `e` followed by combining acute accent U+0301,
+then `z`. Counting UTF-16 code units and counting grapheme clusters give different
+cuts: the first 12 code units end at an unaccented `e`; the first 12 grapheme clusters
+retain `e` with its accent. ASCII-only examples cannot distinguish these meanings.
+Neither choice is approved by the word “characters” alone.
+
+Check the actual display-name contract. If it already specifies grapheme clusters,
+use that rule without a new question. Otherwise name the unit choice as unresolved;
+a successful `slice(0, 12)` run is not approval of code-unit truncation. If the owner
+accepts “retain the first 12 grapheme clusters unchanged; add no ellipsis,” preserve
+both conditions. Proposed checks include 11, 12 and 13 clusters, empty input, and the
+combining-mark example. Assert the exact retained text and no ellipsis, not just a
+length measured in the implementation's possibly wrong unit. Keep expected examples
+independent of the production segmentation helper. Do not expand this into a Unicode
+normalization or internationalization project without a requirement.
+
+An unresolved unit is **missing intent**. An accepted unit whose implementation cannot
+be exercised is **missing execution evidence**. A property test or observed output
+cannot supply missing intent; a written acceptance example cannot supply missing
+execution evidence. Keep the affected decision or check pending, not verified. Use
+Engineering References' existing test-design guidance for oracle and observation
+choices once the rule is established; this section adds no test framework or status
+schema. A static heading typo needs none of these questions. This fictional example
+proposes checks; it does not report executed application tests or model-effectiveness
+results. Selected source and limits: [GSD_SOURCES.md](../GSD_SOURCES.md).
+
 ## Check coherence, then preservation
 
 First check whether the stated capabilities and constraints can coexist and whether

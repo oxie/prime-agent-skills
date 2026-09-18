@@ -1,0 +1,73 @@
+{
+  "repository": "https://github.com/open-gsd/gsd-core",
+  "commit": "c9a5cc3e1288b432305aa8eea881fa2eab883083",
+  "package_version": "1.14.0",
+  "adaptation": "Original optional behavior-rule contrast; no upstream execution or measured agent-effectiveness claim.",
+  "sources": [
+    {
+      "path": "gsd-core/references/edge-probe.md",
+      "ranges": [
+        [
+          62,
+          113
+        ],
+        [
+          143,
+          155
+        ],
+        [
+          304,
+          307
+        ]
+      ],
+      "bytes": 19717,
+      "sha256": "d28899e29723d906af53a1c4e0bcf6594714149769b96084edb862fc401cee5d",
+      "git_blob": "ab6c2bf20ee999dfc104f1635c14b0506b9e82f1",
+      "url": "https://github.com/open-gsd/gsd-core/blob/c9a5cc3e1288b432305aa8eea881fa2eab883083/gsd-core/references/edge-probe.md"
+    },
+    {
+      "path": "LICENSE",
+      "ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "bytes": 1065,
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e",
+      "git_blob": "d47f8ea21c0c46de01da7f0f61f92d4bee44631b",
+      "url": "https://github.com/open-gsd/gsd-core/blob/c9a5cc3e1288b432305aa8eea881fa2eab883083/LICENSE"
+    },
+    {
+      "path": "package.json",
+      "ranges": [
+        [
+          1,
+          10
+        ]
+      ],
+      "bytes": 11464,
+      "sha256": "a4a46bd57ba146bd3905d8c3110ad2d47de90f7f79daeb0a8d34a70ae1c77567",
+      "git_blob": "292dba2af65173330bebee9c9f790a2841e05257",
+      "url": "https://github.com/open-gsd/gsd-core/blob/c9a5cc3e1288b432305aa8eea881fa2eab883083/package.json"
+    }
+  ],
+  "files": {
+    "references/product-intent.md": {
+      "bytes": 9630,
+      "sha256": "8122cfc63bc3ef7e8ad8656606698aa8530732a1e81ad46fdde83b36228a12a1"
+    },
+    "UPSTREAM.md": {
+      "bytes": 4278,
+      "sha256": "acb58aaed37223debedb55966d717dc0feb160767658840f808d04cf38a40196"
+    },
+    "GSD_SOURCES.md": {
+      "bytes": 2400,
+      "sha256": "00467c8748cef1b30f1ff82c2a544c713344b8a95cab32bc03d49bf4119ad5a0"
+    },
+    "licenses/gsd-MIT.txt": {
+      "bytes": 1065,
+      "sha256": "3a160aec61eeb28e75e8017346ee190db07986a09c4bd72555cc706f1d99e27e"
+    }
+  }
+}

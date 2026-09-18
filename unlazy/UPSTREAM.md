@@ -64,3 +64,11 @@ product-preservation or cross-component compatibility ideas, not the upstream wo
 See [source selection and rights](BMAD_SOURCES.md) and bmad-provenance.json. No BMAD
 runtime, memlog, mandatory PRD, architecture ceremony, installer, hook or automatic
 revert is adopted. Previous source identities and execution contracts are unchanged.
+
+## Selected GSD behavior-rule discovery
+
+The existing [product-intent reference](references/product-intent.md) gains an optional
+input contrast for consequential unstated behavior. It reuses accepted-decision and
+test-design owners; no new entrypoint, mandatory phase or executable logic is added.
+See [selected source and rights](GSD_SOURCES.md) and gsd-provenance.json. Earlier
+source identities, gate semantics and permission contracts remain unchanged.
